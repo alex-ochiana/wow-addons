@@ -1,0 +1,64 @@
+
+DataStore_AgendaDB = {
+	["profileKeys"] = {
+		["Aegwen - Sylvanas"] = "Aegwen - Sylvanas",
+	},
+	["global"] = {
+		["Options"] = {
+			["WeeklyResetHour"] = 6,
+			["WeeklyResetDay"] = 3,
+			["NextWeeklyReset"] = "2016-04-13",
+		},
+		["Characters"] = {
+			["Default.Sylvanas.Aegwen"] = {
+				["Contacts"] = {
+					["Venkar"] = {
+						["note"] = "",
+					},
+					["Praktik"] = {
+						["note"] = "",
+					},
+					["Amitamotion"] = {
+						["note"] = "",
+					},
+					["Danaérys"] = {
+						["note"] = "",
+					},
+					["Elethiá"] = {
+						["note"] = "",
+					},
+					["Trevors"] = {
+						["note"] = "",
+					},
+					["Darkbrewie"] = {
+						["note"] = "",
+					},
+					["Bananimal"] = {
+						["note"] = "",
+					},
+					["Helzer"] = {
+						["note"] = "",
+					},
+					["Brewie"] = {
+						["note"] = "",
+					},
+					["Elmaylia"] = {
+						["note"] = "",
+					},
+					["Echos"] = {
+						["note"] = "",
+					},
+					["Zéréx"] = {
+						["note"] = "",
+					},
+				},
+				["lastUpdate"] = 1460027706,
+				["DungeonIDs"] = {
+					["Firelands 10 Player|216252664"] = "503084|1460027706|0|1",
+					["The Everbloom Heroic|3480925461"] = "71084|1460027706|0|0",
+					["Upper Blackrock Spire Heroic|3480755397"] = "71084|1460027706|0|0",
+				},
+			},
+		},
+	},
+}

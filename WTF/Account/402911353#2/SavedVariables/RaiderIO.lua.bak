@@ -1,0 +1,22 @@
+
+RaiderIO_Config = {
+}
+RaiderIO_LastCharacter = "eu-Crètz-sylvanas"
+RaiderIO_MissingCharacters = {
+	["eu-Halus-silvermoon"] = true,
+	["eu-Skyrk-stormscale"] = true,
+	["eu-Otexz-the-maelstrom"] = true,
+	["eu-Qldrms-outland"] = true,
+	["eu-Iimrlork-kazzak"] = true,
+	["eu-Evisced-stormscale"] = true,
+	["eu-Nukinfuts-nagrand"] = true,
+	["eu-Kwaliteit-sylvanas"] = true,
+	["eu-Fofen-the-maelstrom"] = true,
+	["eu-Cz-ravencrest"] = true,
+	["eu-Dtrn-sylvanas"] = true,
+	["eu-Loureiro-aggra-português"] = true,
+	["eu-Dummaste-ravencrest"] = true,
+	["eu-Owlcápown-ravencrest"] = true,
+	["eu-Bopin-ravencrest"] = true,
+}
+RaiderIO_CachedRuns = nil

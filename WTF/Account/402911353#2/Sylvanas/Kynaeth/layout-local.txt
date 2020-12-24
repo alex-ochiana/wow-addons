@@ -1,0 +1,8 @@
+Version: 1
+Frame: PlayerPowerBarAlt
+FrameLevel: 1
+Anchor: TOP
+X: -123
+Y: -30
+W: 10
+H: 10

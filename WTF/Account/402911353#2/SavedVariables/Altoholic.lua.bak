@@ -1,0 +1,15 @@
+
+AltoholicDB = {
+	["profileKeys"] = {
+		["Aegwen - Sylvanas"] = "Aegwen - Sylvanas",
+	},
+	["global"] = {
+		["options"] = {
+			["Tabs.Grids.Default.Sylvanas.Column1"] = "Default.Sylvanas.Aegwen",
+			["UI.Tabs.Summary.CurrentMode"] = 6,
+			["UI.Minimap.IconAngle"] = 54.4623193140433,
+			["Tabs.Achievements.Default.Sylvanas.Column1"] = "Default.Sylvanas.Aegwen",
+			["UI.Minimap.ShowIcon"] = false,
+		},
+	},
+}

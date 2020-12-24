@@ -1,0 +1,132 @@
+
+DataStore_TalentsDB = {
+	["profileKeys"] = {
+		["Aegwen - Sylvanas"] = "Aegwen - Sylvanas",
+	},
+	["global"] = {
+		["Characters"] = {
+			["Default.Sylvanas.Aegwen"] = {
+				["Class"] = "DRUID",
+				["lastUpdate"] = 1460027706,
+				["GlyphList"] = {
+					11, -- [1]
+					17882, -- [2]
+					10826, -- [3]
+					6954, -- [4]
+					14986, -- [5]
+					17962, -- [6]
+					10810, -- [7]
+					8826, -- [8]
+					17914, -- [9]
+					2618, -- [10]
+					2906, -- [11]
+					14938, -- [12]
+					14954, -- [13]
+					13306, -- [14]
+					2778, -- [15]
+					2842, -- [16]
+					17898, -- [17]
+					17994, -- [18]
+					10106, -- [19]
+					2602, -- [20]
+					18026, -- [21]
+					19370, -- [22]
+					17946, -- [23]
+					2682, -- [24]
+					2730, -- [25]
+					2762, -- [26]
+					2890, -- [27]
+					19290, -- [28]
+					18010, -- [29]
+					2858, -- [30]
+					10746, -- [31]
+					10762, -- [32]
+					2738, -- [33]
+					10786, -- [34]
+					13, -- [35]
+					6908, -- [36]
+					6940, -- [37]
+					6972, -- [38]
+					17260, -- [39]
+					17228, -- [40]
+					9820, -- [41]
+					6924, -- [42]
+					16876, -- [43]
+					2828, -- [44]
+					14972, -- [45]
+					2636, -- [46]
+					15004, -- [47]
+					18044, -- [48]
+					2812, -- [49]
+					19412, -- [50]
+					19300, -- [51]
+				},
+				["ActiveTalents"] = 2,
+			},
+		},
+		["Reference"] = {
+			["GlyphNames"] = {
+				[180] = "Savage Roar",
+				[181] = "Entangling Roots",
+				[1117] = "Astral Communion",
+				[1121] = "Ninth Life",
+				[1125] = "Shapemender",
+				[432] = "The Chameleon",
+				[433] = "Charm Woodland Creature",
+				[434] = "Blooming",
+				[435] = "Grace",
+				[675] = "Cyclone",
+				[551] = "Dash",
+				[933] = "Fae Silence",
+				[935] = "The Predator",
+				[937] = "The Treant",
+				[1118] = "Imbued Bark",
+				[1122] = "Celestial Alignment",
+				[1126] = "Moonwarding",
+				[163] = "Entangling Energy",
+				[1206] = "The Solstice",
+				[164] = "The Stag",
+				[831] = "Ferocious Bite",
+				[175] = "Untamed Stars",
+				[1213] = "Flapping Owl",
+				[431] = "Aquatic Form",
+				[671] = "Survival Instincts",
+				[167] = "Rake",
+				[1054] = "The Cheetah",
+				[613] = "Stars",
+				[1076] = "Sprouting Mushroom",
+				[1078] = "One with Nature",
+				[1119] = "Enchanted Bark",
+				[170] = "Rebirth",
+				[1127] = "Travel",
+				[171] = "Regrowth",
+				[162] = "Maul",
+				[172] = "Rejuvenation",
+				[674] = "Stampeding Roar",
+				[173] = "Healing Touch",
+				[672] = "Wild Growth",
+				[178] = "Skull Bash",
+				[934] = "Faerie Fire",
+				[936] = "Cat Form",
+				[1205] = "Savagery",
+				[176] = "The Orca",
+				[1210] = "Nature's Cure",
+				[177] = "Hurricane",
+				[631] = "Master Shapeshifter",
+				[1124] = "Maim",
+				[676] = "Barkskin",
+			},
+		},
+	},
+}
+DataStore_TalentsRefDB = {
+	["profileKeys"] = {
+		["Aegwen - Sylvanas"] = "Aegwen - Sylvanas",
+	},
+	["global"] = {
+		["DRUID"] = {
+			["Locale"] = "enUS",
+			["Version"] = 21355,
+		},
+	},
+}

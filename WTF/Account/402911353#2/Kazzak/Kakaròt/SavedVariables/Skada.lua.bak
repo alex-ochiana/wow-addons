@@ -1,0 +1,2895 @@
+
+SkadaPerCharDB = {
+	["sets"] = {
+		{
+			["healingabsorbed"] = 0,
+			["dispells"] = 0,
+			["ccbreaks"] = 0,
+			["time"] = 21,
+			["interrupts"] = 0,
+			["mobdone"] = 197,
+			["mobtaken"] = 1433,
+			["damage"] = 1433,
+			["players"] = {
+				{
+					["last"] = 1509276999,
+					["healingabsorbed"] = 0,
+					["class"] = "MONK",
+					["damaged"] = {
+						["Erlan Drudgemoor"] = 324,
+						["Surena Caledon"] = 240,
+						["Morgan the Collector"] = 587,
+						["Bandit"] = 282,
+					},
+					["dispells"] = 0,
+					["ccbreaks"] = 0,
+					["time"] = 18,
+					["interrupts"] = 0,
+					["role"] = "NONE",
+					["auras"] = {
+					},
+					["damage"] = 1433,
+					["damagespells"] = {
+						["Attack"] = {
+							["hitmin"] = 27,
+							["criticalamount"] = 69,
+							["id"] = 6603,
+							["damage"] = 164,
+							["totalhits"] = 4,
+							["max"] = 69,
+							["min"] = 27,
+							["criticalmax"] = 69,
+							["critical"] = 1,
+							["hit"] = 3,
+							["school"] = 1,
+							["hitmax"] = 36,
+							["criticalmin"] = 69,
+							["hitamount"] = 95,
+						},
+						["Rising Sun Kick"] = {
+							["hitmin"] = 477,
+							["id"] = 185099,
+							["min"] = 477,
+							["damage"] = 477,
+							["hitmax"] = 477,
+							["hit"] = 1,
+							["school"] = 1,
+							["totalhits"] = 1,
+							["max"] = 477,
+							["hitamount"] = 477,
+						},
+						["Blackout Kick"] = {
+							["hitmin"] = 166,
+							["id"] = 100784,
+							["min"] = 166,
+							["damage"] = 604,
+							["hitmax"] = 225,
+							["hit"] = 3,
+							["school"] = 1,
+							["totalhits"] = 3,
+							["max"] = 225,
+							["hitamount"] = 604,
+						},
+						["Tiger Palm"] = {
+							["hitmin"] = 47,
+							["criticalamount"] = 78,
+							["id"] = 100780,
+							["damage"] = 188,
+							["totalhits"] = 3,
+							["max"] = 78,
+							["min"] = 47,
+							["criticalmax"] = 78,
+							["hitmax"] = 63,
+							["hit"] = 2,
+							["school"] = 1,
+							["critical"] = 1,
+							["criticalmin"] = 78,
+							["hitamount"] = 110,
+						},
+					},
+					["healing"] = 121,
+					["healed"] = {
+						["Player-1305-08ACB934"] = {
+							["role"] = "NONE",
+							["name"] = "Kakaròt",
+							["amount"] = 121,
+							["class"] = "MONK",
+							["shielding"] = 0,
+						},
+					},
+					["power"] = {
+						[0] = {
+							["spells"] = {
+								[100780] = 6,
+							},
+							["amount"] = 6,
+						},
+					},
+					["id"] = "Player-1305-08ACB934",
+					["first"] = 1509276981,
+					["shielding"] = 0,
+					["damagetakenspells"] = {
+						["Fireball"] = {
+							["crushing"] = 0,
+							["id"] = 20793,
+							["damage"] = 61,
+							["max"] = 21,
+							["name"] = "Fireball",
+							["min"] = 19,
+							["totalhits"] = 3,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["school"] = 4,
+							["resisted"] = 0,
+							["glancing"] = 0,
+							["absorbed"] = 0,
+						},
+						["Snap Kick"] = {
+							["crushing"] = 0,
+							["id"] = 8646,
+							["damage"] = 15,
+							["max"] = 15,
+							["name"] = "Snap Kick",
+							["min"] = 15,
+							["totalhits"] = 1,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["school"] = 1,
+							["resisted"] = 0,
+							["glancing"] = 0,
+							["absorbed"] = 0,
+						},
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["damage"] = 121,
+							["max"] = 19,
+							["name"] = "Attack",
+							["min"] = 9,
+							["totalhits"] = 10,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["school"] = 1,
+							["resisted"] = 0,
+							["glancing"] = 0,
+							["absorbed"] = 0,
+						},
+					},
+					["healingspells"] = {
+						["Swift Hand of Justice"] = {
+							["shielding"] = 0,
+							["id"] = 59913,
+							["healing"] = 121,
+							["min"] = 15,
+							["name"] = "Swift Hand of Justice",
+							["hits"] = 8,
+							["overhealing"] = 0,
+							["max"] = 16,
+							["critical"] = 0,
+							["absorbed"] = 0,
+						},
+					},
+					["name"] = "Kakaròt",
+					["ffdamagedonetargets"] = {
+					},
+					["overhealing"] = 0,
+					["maxhp"] = 756,
+					["damagetaken"] = 197,
+					["ffdamagedone"] = 0,
+					["ffdamagedonespells"] = {
+					},
+				}, -- [1]
+			},
+			["deaths"] = 0,
+			["mobs"] = {
+				["Erlan Drudgemoor"] = {
+					["players"] = {
+						["Kakaròt"] = {
+							["taken"] = 324,
+							["done"] = 34,
+							["class"] = "MONK",
+							["role"] = "NONE",
+						},
+					},
+					["hdone"] = 0,
+					["hdonespell"] = {
+					},
+					["taken"] = 324,
+					["htakenspell"] = {
+					},
+					["htaken"] = 0,
+					["done"] = 34,
+				},
+				["Surena Caledon"] = {
+					["players"] = {
+						["Kakaròt"] = {
+							["taken"] = 240,
+							["done"] = 93,
+							["class"] = "MONK",
+							["role"] = "NONE",
+						},
+					},
+					["hdone"] = 0,
+					["hdonespell"] = {
+					},
+					["taken"] = 240,
+					["htakenspell"] = {
+					},
+					["htaken"] = 0,
+					["done"] = 93,
+				},
+				["Morgan the Collector"] = {
+					["players"] = {
+						["Kakaròt"] = {
+							["taken"] = 587,
+							["done"] = 12,
+							["class"] = "MONK",
+							["role"] = "NONE",
+						},
+					},
+					["hdone"] = 0,
+					["hdonespell"] = {
+					},
+					["taken"] = 587,
+					["htakenspell"] = {
+					},
+					["htaken"] = 0,
+					["done"] = 12,
+				},
+				["Bandit"] = {
+					["players"] = {
+						["Kakaròt"] = {
+							["taken"] = 282,
+							["done"] = 58,
+							["class"] = "MONK",
+							["role"] = "NONE",
+						},
+					},
+					["hdone"] = 0,
+					["hdonespell"] = {
+					},
+					["taken"] = 282,
+					["htakenspell"] = {
+					},
+					["htaken"] = 0,
+					["done"] = 58,
+				},
+			},
+			["power"] = {
+				[0] = 6,
+			},
+			["ffdamagedone"] = 0,
+			["healing"] = 121,
+			["auras"] = {
+			},
+			["overhealing"] = 0,
+			["shielding"] = 0,
+			["starttime"] = 1509276979,
+			["name"] = "Morgan the Collector",
+			["mobname"] = "Morgan the Collector",
+			["damagetaken"] = 197,
+			["mobhdone"] = 0,
+			["last_action"] = 1509276979,
+			["endtime"] = 1509277000,
+		}, -- [1]
+		{
+			["healingabsorbed"] = 0,
+			["dispells"] = 0,
+			["ccbreaks"] = 0,
+			["time"] = 7,
+			["interrupts"] = 0,
+			["mobdone"] = 20,
+			["mobtaken"] = 779,
+			["damage"] = 779,
+			["players"] = {
+				{
+					["last"] = 1509276972,
+					["healingabsorbed"] = 0,
+					["class"] = "MONK",
+					["damaged"] = {
+						["Bandit"] = 779,
+					},
+					["dispells"] = 0,
+					["ccbreaks"] = 0,
+					["time"] = 4,
+					["interrupts"] = 0,
+					["role"] = "NONE",
+					["auras"] = {
+					},
+					["damage"] = 779,
+					["damagespells"] = {
+						["Attack"] = {
+							["hitmin"] = 34,
+							["id"] = 6603,
+							["min"] = 34,
+							["damage"] = 70,
+							["hitmax"] = 36,
+							["hit"] = 2,
+							["school"] = 1,
+							["totalhits"] = 2,
+							["max"] = 36,
+							["hitamount"] = 70,
+						},
+						["Blackout Kick"] = {
+							["hitmin"] = 224,
+							["criticalamount"] = 426,
+							["id"] = 100784,
+							["damage"] = 650,
+							["totalhits"] = 2,
+							["max"] = 426,
+							["min"] = 224,
+							["criticalmax"] = 426,
+							["hitmax"] = 224,
+							["hit"] = 1,
+							["school"] = 1,
+							["critical"] = 1,
+							["criticalmin"] = 426,
+							["hitamount"] = 224,
+						},
+						["Tiger Palm"] = {
+							["hitmin"] = 59,
+							["id"] = 100780,
+							["min"] = 59,
+							["damage"] = 59,
+							["hitmax"] = 59,
+							["hit"] = 1,
+							["school"] = 1,
+							["totalhits"] = 1,
+							["max"] = 59,
+							["hitamount"] = 59,
+						},
+					},
+					["healing"] = 20,
+					["healed"] = {
+						["Player-1305-08ACB934"] = {
+							["role"] = "NONE",
+							["name"] = "Kakaròt",
+							["amount"] = 20,
+							["class"] = "MONK",
+							["shielding"] = 0,
+						},
+					},
+					["power"] = {
+						[0] = {
+							["spells"] = {
+								[100780] = 2,
+							},
+							["amount"] = 2,
+						},
+					},
+					["id"] = "Player-1305-08ACB934",
+					["first"] = 1509276968,
+					["shielding"] = 0,
+					["damagetakenspells"] = {
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["damage"] = 20,
+							["max"] = 10,
+							["name"] = "Attack",
+							["min"] = 10,
+							["totalhits"] = 2,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["school"] = 1,
+							["resisted"] = 0,
+							["glancing"] = 0,
+							["absorbed"] = 0,
+						},
+					},
+					["healingspells"] = {
+						["Swift Hand of Justice"] = {
+							["shielding"] = 0,
+							["id"] = 59913,
+							["healing"] = 20,
+							["min"] = 0,
+							["name"] = "Swift Hand of Justice",
+							["hits"] = 4,
+							["overhealing"] = 41,
+							["max"] = 10,
+							["critical"] = 0,
+							["absorbed"] = 0,
+						},
+					},
+					["name"] = "Kakaròt",
+					["ffdamagedonetargets"] = {
+					},
+					["overhealing"] = 41,
+					["maxhp"] = 756,
+					["damagetaken"] = 20,
+					["ffdamagedone"] = 0,
+					["ffdamagedonespells"] = {
+					},
+				}, -- [1]
+			},
+			["deaths"] = 0,
+			["mobs"] = {
+				["Bandit"] = {
+					["players"] = {
+						["Kakaròt"] = {
+							["taken"] = 779,
+							["done"] = 20,
+							["class"] = "MONK",
+							["role"] = "NONE",
+						},
+					},
+					["hdone"] = 0,
+					["hdonespell"] = {
+					},
+					["taken"] = 779,
+					["htakenspell"] = {
+					},
+					["htaken"] = 0,
+					["done"] = 20,
+				},
+			},
+			["power"] = {
+				[0] = 2,
+			},
+			["ffdamagedone"] = 0,
+			["healing"] = 20,
+			["auras"] = {
+			},
+			["overhealing"] = 41,
+			["shielding"] = 0,
+			["starttime"] = 1509276967,
+			["name"] = "Bandit (3)",
+			["mobname"] = "Bandit",
+			["damagetaken"] = 20,
+			["mobhdone"] = 0,
+			["last_action"] = 1509276967,
+			["endtime"] = 1509276974,
+		}, -- [2]
+		{
+			["healingabsorbed"] = 0,
+			["dispells"] = 0,
+			["ccbreaks"] = 0,
+			["time"] = 11,
+			["interrupts"] = 0,
+			["mobdone"] = 83,
+			["mobtaken"] = 1848,
+			["damage"] = 1848,
+			["players"] = {
+				{
+					["last"] = 1509276884,
+					["healingabsorbed"] = 0,
+					["class"] = "MONK",
+					["damaged"] = {
+						["Young Forest Bear"] = 548,
+						["Prowler"] = 1300,
+					},
+					["dispells"] = 0,
+					["ccbreaks"] = 0,
+					["time"] = 7,
+					["interrupts"] = 0,
+					["role"] = "NONE",
+					["auras"] = {
+					},
+					["damage"] = 1848,
+					["damagespells"] = {
+						["Attack"] = {
+							["hitmin"] = 32,
+							["id"] = 6603,
+							["min"] = 32,
+							["damage"] = 73,
+							["hitmax"] = 41,
+							["hit"] = 2,
+							["school"] = 1,
+							["totalhits"] = 2,
+							["max"] = 41,
+							["hitamount"] = 73,
+						},
+						["Rising Sun Kick"] = {
+							["criticalamount"] = 954,
+							["id"] = 185099,
+							["min"] = 954,
+							["criticalmax"] = 954,
+							["critical"] = 1,
+							["criticalmin"] = 954,
+							["school"] = 1,
+							["totalhits"] = 1,
+							["max"] = 954,
+							["damage"] = 954,
+						},
+						["Blackout Kick"] = {
+							["hitmin"] = 202,
+							["criticalamount"] = 507,
+							["id"] = 100784,
+							["damage"] = 709,
+							["totalhits"] = 2,
+							["max"] = 507,
+							["min"] = 202,
+							["criticalmax"] = 507,
+							["hitmax"] = 202,
+							["hit"] = 1,
+							["school"] = 1,
+							["critical"] = 1,
+							["criticalmin"] = 507,
+							["hitamount"] = 202,
+						},
+						["Tiger Palm"] = {
+							["criticalamount"] = 112,
+							["id"] = 100780,
+							["min"] = 112,
+							["criticalmax"] = 112,
+							["critical"] = 1,
+							["criticalmin"] = 112,
+							["school"] = 1,
+							["totalhits"] = 1,
+							["max"] = 112,
+							["damage"] = 112,
+						},
+					},
+					["healing"] = 83,
+					["healed"] = {
+						["Player-1305-08ACB934"] = {
+							["role"] = "NONE",
+							["name"] = "Kakaròt",
+							["amount"] = 83,
+							["class"] = "MONK",
+							["shielding"] = 0,
+						},
+					},
+					["power"] = {
+						[0] = {
+							["spells"] = {
+								[100780] = 2,
+							},
+							["amount"] = 2,
+						},
+					},
+					["id"] = "Player-1305-08ACB934",
+					["first"] = 1509276877,
+					["shielding"] = 0,
+					["damagetakenspells"] = {
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["damage"] = 83,
+							["max"] = 17,
+							["name"] = "Attack",
+							["min"] = 8,
+							["totalhits"] = 8,
+							["critical"] = 1,
+							["blocked"] = 0,
+							["school"] = 1,
+							["resisted"] = 0,
+							["glancing"] = 0,
+							["absorbed"] = 0,
+						},
+					},
+					["healingspells"] = {
+						["Swift Hand of Justice"] = {
+							["shielding"] = 0,
+							["id"] = 59913,
+							["healing"] = 83,
+							["min"] = 11,
+							["name"] = "Swift Hand of Justice",
+							["hits"] = 6,
+							["overhealing"] = 8,
+							["max"] = 15,
+							["critical"] = 0,
+							["absorbed"] = 0,
+						},
+					},
+					["name"] = "Kakaròt",
+					["ffdamagedonetargets"] = {
+					},
+					["overhealing"] = 8,
+					["maxhp"] = 756,
+					["damagetaken"] = 83,
+					["ffdamagedone"] = 0,
+					["ffdamagedonespells"] = {
+					},
+				}, -- [1]
+			},
+			["deaths"] = 0,
+			["mobs"] = {
+				["Young Forest Bear"] = {
+					["players"] = {
+						["Kakaròt"] = {
+							["taken"] = 548,
+							["done"] = 0,
+							["class"] = "MONK",
+							["role"] = "NONE",
+						},
+					},
+					["hdone"] = 0,
+					["hdonespell"] = {
+					},
+					["taken"] = 548,
+					["htakenspell"] = {
+					},
+					["htaken"] = 0,
+					["done"] = 0,
+				},
+				["Prowler"] = {
+					["players"] = {
+						["Kakaròt"] = {
+							["taken"] = 1300,
+							["done"] = 83,
+							["class"] = "MONK",
+							["role"] = "NONE",
+						},
+					},
+					["hdone"] = 0,
+					["hdonespell"] = {
+					},
+					["taken"] = 1300,
+					["htakenspell"] = {
+					},
+					["htaken"] = 0,
+					["done"] = 83,
+				},
+			},
+			["power"] = {
+				[0] = 2,
+			},
+			["ffdamagedone"] = 0,
+			["healing"] = 83,
+			["auras"] = {
+			},
+			["overhealing"] = 8,
+			["shielding"] = 0,
+			["starttime"] = 1509276875,
+			["name"] = "Young Forest Bear",
+			["mobname"] = "Young Forest Bear",
+			["damagetaken"] = 83,
+			["mobhdone"] = 0,
+			["last_action"] = 1509276875,
+			["endtime"] = 1509276886,
+		}, -- [3]
+		{
+			["healingabsorbed"] = 0,
+			["dispells"] = 0,
+			["ccbreaks"] = 0,
+			["time"] = 36,
+			["interrupts"] = 0,
+			["mobdone"] = 241,
+			["mobtaken"] = 2145,
+			["damage"] = 2145,
+			["players"] = {
+				{
+					["last"] = 1509276857,
+					["healingabsorbed"] = 0,
+					["class"] = "MONK",
+					["damaged"] = {
+						["Bandit"] = 1232,
+						["Prowler"] = 913,
+					},
+					["dispells"] = 0,
+					["ccbreaks"] = 0,
+					["time"] = 29,
+					["interrupts"] = 0,
+					["role"] = "NONE",
+					["auras"] = {
+					},
+					["damage"] = 2145,
+					["damagespells"] = {
+						["Attack"] = {
+							["hitmin"] = 32,
+							["criticalamount"] = 135,
+							["id"] = 6603,
+							["damage"] = 268,
+							["totalhits"] = 6,
+							["max"] = 68,
+							["min"] = 32,
+							["criticalmax"] = 68,
+							["hitmax"] = 34,
+							["hit"] = 4,
+							["school"] = 1,
+							["critical"] = 2,
+							["criticalmin"] = 67,
+							["hitamount"] = 133,
+						},
+						["Rising Sun Kick"] = {
+							["hitmin"] = 477,
+							["id"] = 185099,
+							["min"] = 477,
+							["damage"] = 477,
+							["hitmax"] = 477,
+							["hit"] = 1,
+							["school"] = 1,
+							["totalhits"] = 1,
+							["max"] = 477,
+							["hitamount"] = 477,
+						},
+						["Blackout Kick"] = {
+							["hitmin"] = 213,
+							["criticalamount"] = 404,
+							["id"] = 100784,
+							["damage"] = 1043,
+							["totalhits"] = 4,
+							["max"] = 404,
+							["min"] = 213,
+							["criticalmax"] = 404,
+							["critical"] = 1,
+							["hit"] = 3,
+							["school"] = 1,
+							["hitmax"] = 213,
+							["criticalmin"] = 404,
+							["hitamount"] = 639,
+						},
+						["Tiger Palm"] = {
+							["hitmin"] = 59,
+							["criticalamount"] = 238,
+							["id"] = 100780,
+							["damage"] = 357,
+							["totalhits"] = 4,
+							["max"] = 119,
+							["min"] = 59,
+							["criticalmax"] = 119,
+							["hitmax"] = 60,
+							["hit"] = 2,
+							["school"] = 1,
+							["critical"] = 2,
+							["criticalmin"] = 119,
+							["hitamount"] = 119,
+						},
+					},
+					["healing"] = 182,
+					["healed"] = {
+						["Player-1305-08ACB934"] = {
+							["role"] = "NONE",
+							["name"] = "Kakaròt",
+							["amount"] = 182,
+							["class"] = "MONK",
+							["shielding"] = 0,
+						},
+					},
+					["power"] = {
+						{
+							["spells"] = {
+								[100780] = 1,
+							},
+							["amount"] = 1,
+						}, -- [1]
+						[0] = {
+							["spells"] = {
+								[100780] = 6,
+							},
+							["amount"] = 6,
+						},
+					},
+					["id"] = "Player-1305-08ACB934",
+					["first"] = 1509276828,
+					["shielding"] = 0,
+					["damagetakenspells"] = {
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["damage"] = 241,
+							["max"] = 16,
+							["name"] = "Attack",
+							["min"] = 8,
+							["totalhits"] = 24,
+							["critical"] = 2,
+							["blocked"] = 0,
+							["school"] = 1,
+							["resisted"] = 0,
+							["glancing"] = 0,
+							["absorbed"] = 0,
+						},
+					},
+					["healingspells"] = {
+						["Swift Hand of Justice"] = {
+							["shielding"] = 0,
+							["id"] = 59913,
+							["healing"] = 182,
+							["min"] = 15,
+							["name"] = "Swift Hand of Justice",
+							["hits"] = 12,
+							["overhealing"] = 0,
+							["max"] = 16,
+							["critical"] = 0,
+							["absorbed"] = 0,
+						},
+					},
+					["name"] = "Kakaròt",
+					["ffdamagedonetargets"] = {
+					},
+					["overhealing"] = 0,
+					["maxhp"] = 756,
+					["damagetaken"] = 241,
+					["ffdamagedone"] = 0,
+					["ffdamagedonespells"] = {
+					},
+				}, -- [1]
+			},
+			["deaths"] = 0,
+			["mobs"] = {
+				["Bandit"] = {
+					["players"] = {
+						["Kakaròt"] = {
+							["taken"] = 1232,
+							["done"] = 46,
+							["class"] = "MONK",
+							["role"] = "NONE",
+						},
+					},
+					["hdone"] = 0,
+					["hdonespell"] = {
+					},
+					["taken"] = 1232,
+					["htakenspell"] = {
+					},
+					["htaken"] = 0,
+					["done"] = 46,
+				},
+				["Prowler"] = {
+					["players"] = {
+						["Kakaròt"] = {
+							["taken"] = 913,
+							["done"] = 195,
+							["class"] = "MONK",
+							["role"] = "NONE",
+						},
+					},
+					["hdone"] = 0,
+					["hdonespell"] = {
+					},
+					["taken"] = 913,
+					["htakenspell"] = {
+					},
+					["htaken"] = 0,
+					["done"] = 195,
+				},
+			},
+			["power"] = {
+				1, -- [1]
+				[0] = 6,
+			},
+			["ffdamagedone"] = 0,
+			["healing"] = 182,
+			["auras"] = {
+			},
+			["overhealing"] = 0,
+			["shielding"] = 0,
+			["starttime"] = 1509276823,
+			["name"] = "Bandit (2)",
+			["mobname"] = "Bandit",
+			["damagetaken"] = 241,
+			["mobhdone"] = 0,
+			["last_action"] = 1509276823,
+			["endtime"] = 1509276859,
+		}, -- [4]
+		{
+			["healingabsorbed"] = 0,
+			["dispells"] = 0,
+			["ccbreaks"] = 0,
+			["time"] = 16,
+			["interrupts"] = 0,
+			["mobdone"] = 197,
+			["mobtaken"] = 1911,
+			["damage"] = 1911,
+			["players"] = {
+				{
+					["last"] = 1509276820,
+					["healingabsorbed"] = 0,
+					["class"] = "MONK",
+					["damaged"] = {
+						["Bandit"] = 1521,
+						["Dead-Tooth Jack"] = 390,
+					},
+					["dispells"] = 0,
+					["ccbreaks"] = 0,
+					["time"] = 13,
+					["interrupts"] = 0,
+					["role"] = "NONE",
+					["auras"] = {
+					},
+					["damage"] = 1911,
+					["damagespells"] = {
+						["Attack"] = {
+							["hitmin"] = 35,
+							["id"] = 6603,
+							["min"] = 35,
+							["damage"] = 144,
+							["hitmax"] = 37,
+							["hit"] = 4,
+							["school"] = 1,
+							["totalhits"] = 4,
+							["max"] = 37,
+							["hitamount"] = 144,
+						},
+						["Rising Sun Kick"] = {
+							["hitmin"] = 531,
+							["id"] = 185099,
+							["min"] = 531,
+							["damage"] = 531,
+							["hitmax"] = 531,
+							["hit"] = 1,
+							["school"] = 1,
+							["totalhits"] = 1,
+							["max"] = 531,
+							["hitamount"] = 531,
+						},
+						["Blackout Kick"] = {
+							["hitmin"] = 213,
+							["criticalamount"] = 839,
+							["id"] = 100784,
+							["damage"] = 1052,
+							["totalhits"] = 3,
+							["max"] = 449,
+							["min"] = 213,
+							["criticalmax"] = 449,
+							["hitmax"] = 213,
+							["hit"] = 1,
+							["school"] = 1,
+							["critical"] = 2,
+							["criticalmin"] = 390,
+							["hitamount"] = 213,
+						},
+						["Tiger Palm"] = {
+							["hitmin"] = 59,
+							["id"] = 100780,
+							["min"] = 59,
+							["damage"] = 184,
+							["hitmax"] = 63,
+							["hit"] = 3,
+							["school"] = 1,
+							["totalhits"] = 3,
+							["max"] = 63,
+							["hitamount"] = 184,
+						},
+					},
+					["healing"] = 122,
+					["healed"] = {
+						["Player-1305-08ACB934"] = {
+							["role"] = "NONE",
+							["name"] = "Kakaròt",
+							["amount"] = 122,
+							["class"] = "MONK",
+							["shielding"] = 0,
+						},
+					},
+					["power"] = {
+						[0] = {
+							["spells"] = {
+								[100780] = 6,
+							},
+							["amount"] = 6,
+						},
+					},
+					["id"] = "Player-1305-08ACB934",
+					["first"] = 1509276807,
+					["shielding"] = 0,
+					["damagetakenspells"] = {
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["damage"] = 181,
+							["max"] = 27,
+							["name"] = "Attack",
+							["min"] = 9,
+							["totalhits"] = 14,
+							["critical"] = 1,
+							["blocked"] = 0,
+							["school"] = 1,
+							["resisted"] = 0,
+							["glancing"] = 0,
+							["absorbed"] = 0,
+						},
+						["Snap Kick"] = {
+							["crushing"] = 0,
+							["id"] = 8646,
+							["damage"] = 16,
+							["max"] = 16,
+							["name"] = "Snap Kick",
+							["min"] = 16,
+							["totalhits"] = 1,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["school"] = 1,
+							["resisted"] = 0,
+							["glancing"] = 0,
+							["absorbed"] = 0,
+						},
+					},
+					["healingspells"] = {
+						["Swift Hand of Justice"] = {
+							["shielding"] = 0,
+							["id"] = 59913,
+							["healing"] = 122,
+							["min"] = 15,
+							["name"] = "Swift Hand of Justice",
+							["hits"] = 8,
+							["overhealing"] = 0,
+							["max"] = 16,
+							["critical"] = 0,
+							["absorbed"] = 0,
+						},
+					},
+					["name"] = "Kakaròt",
+					["ffdamagedonetargets"] = {
+					},
+					["overhealing"] = 0,
+					["maxhp"] = 756,
+					["damagetaken"] = 197,
+					["ffdamagedone"] = 0,
+					["ffdamagedonespells"] = {
+					},
+				}, -- [1]
+			},
+			["deaths"] = 0,
+			["mobs"] = {
+				["Bandit"] = {
+					["players"] = {
+						["Kakaròt"] = {
+							["taken"] = 1521,
+							["done"] = 92,
+							["class"] = "MONK",
+							["role"] = "NONE",
+						},
+					},
+					["hdone"] = 0,
+					["hdonespell"] = {
+					},
+					["taken"] = 1521,
+					["htakenspell"] = {
+					},
+					["htaken"] = 0,
+					["done"] = 92,
+				},
+				["Dead-Tooth Jack"] = {
+					["players"] = {
+						["Kakaròt"] = {
+							["taken"] = 390,
+							["done"] = 105,
+							["class"] = "MONK",
+							["role"] = "NONE",
+						},
+					},
+					["hdone"] = 0,
+					["hdonespell"] = {
+					},
+					["taken"] = 390,
+					["htakenspell"] = {
+					},
+					["htaken"] = 0,
+					["done"] = 105,
+				},
+			},
+			["power"] = {
+				[0] = 6,
+			},
+			["ffdamagedone"] = 0,
+			["healing"] = 122,
+			["auras"] = {
+			},
+			["overhealing"] = 0,
+			["shielding"] = 0,
+			["starttime"] = 1509276805,
+			["name"] = "Bandit",
+			["mobname"] = "Bandit",
+			["damagetaken"] = 197,
+			["mobhdone"] = 0,
+			["last_action"] = 1509276805,
+			["endtime"] = 1509276821,
+		}, -- [5]
+		{
+			["healingabsorbed"] = 0,
+			["dispells"] = 0,
+			["ccbreaks"] = 0,
+			["time"] = 15,
+			["interrupts"] = 0,
+			["mobdone"] = 142,
+			["mobtaken"] = 1321,
+			["damage"] = 1321,
+			["players"] = {
+				{
+					["last"] = 1509276498,
+					["healingabsorbed"] = 0,
+					["class"] = "MONK",
+					["damaged"] = {
+						["Murloc Forager"] = 1025,
+						["Murloc Lurker"] = 296,
+					},
+					["dispells"] = 0,
+					["ccbreaks"] = 0,
+					["time"] = 13,
+					["interrupts"] = 0,
+					["role"] = "NONE",
+					["auras"] = {
+					},
+					["damage"] = 1321,
+					["damagespells"] = {
+						["Attack"] = {
+							["hitmin"] = 30,
+							["criticalamount"] = 60,
+							["id"] = 6603,
+							["damage"] = 183,
+							["totalhits"] = 5,
+							["max"] = 60,
+							["min"] = 30,
+							["criticalmax"] = 60,
+							["critical"] = 1,
+							["hit"] = 4,
+							["school"] = 1,
+							["hitmax"] = 31,
+							["criticalmin"] = 60,
+							["hitamount"] = 123,
+						},
+						["Blackout Kick"] = {
+							["hitmin"] = 184,
+							["criticalamount"] = 367,
+							["id"] = 100784,
+							["damage"] = 930,
+							["totalhits"] = 4,
+							["max"] = 367,
+							["min"] = 184,
+							["criticalmax"] = 367,
+							["hitmax"] = 195,
+							["hit"] = 3,
+							["school"] = 1,
+							["critical"] = 1,
+							["criticalmin"] = 367,
+							["hitamount"] = 563,
+						},
+						["Tiger Palm"] = {
+							["hitmin"] = 51,
+							["criticalamount"] = 103,
+							["id"] = 100780,
+							["damage"] = 208,
+							["totalhits"] = 3,
+							["max"] = 103,
+							["min"] = 51,
+							["criticalmax"] = 103,
+							["critical"] = 1,
+							["hit"] = 2,
+							["school"] = 1,
+							["hitmax"] = 54,
+							["criticalmin"] = 103,
+							["hitamount"] = 105,
+						},
+					},
+					["healing"] = 89,
+					["healed"] = {
+						["Player-1305-08ACB934"] = {
+							["role"] = "NONE",
+							["name"] = "Kakaròt",
+							["amount"] = 89,
+							["class"] = "MONK",
+							["shielding"] = 0,
+						},
+					},
+					["power"] = {
+						[0] = {
+							["spells"] = {
+								[100780] = 6,
+							},
+							["amount"] = 6,
+						},
+					},
+					["id"] = "Player-1305-08ACB934",
+					["first"] = 1509276485,
+					["shielding"] = 0,
+					["damagetakenspells"] = {
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["damage"] = 142,
+							["max"] = 23,
+							["name"] = "Attack",
+							["min"] = 10,
+							["totalhits"] = 11,
+							["critical"] = 1,
+							["blocked"] = 0,
+							["school"] = 1,
+							["resisted"] = 0,
+							["glancing"] = 0,
+							["absorbed"] = 0,
+						},
+					},
+					["healingspells"] = {
+						["Swift Hand of Justice"] = {
+							["shielding"] = 0,
+							["id"] = 59913,
+							["healing"] = 89,
+							["min"] = 0,
+							["name"] = "Swift Hand of Justice",
+							["hits"] = 8,
+							["overhealing"] = 23,
+							["max"] = 14,
+							["critical"] = 0,
+							["absorbed"] = 0,
+						},
+					},
+					["name"] = "Kakaròt",
+					["ffdamagedonetargets"] = {
+					},
+					["overhealing"] = 23,
+					["maxhp"] = 702,
+					["damagetaken"] = 142,
+					["ffdamagedone"] = 0,
+					["ffdamagedonespells"] = {
+					},
+				}, -- [1]
+			},
+			["deaths"] = 0,
+			["mobs"] = {
+				["Murloc Forager"] = {
+					["players"] = {
+						["Kakaròt"] = {
+							["taken"] = 1025,
+							["done"] = 59,
+							["class"] = "MONK",
+							["role"] = "NONE",
+						},
+					},
+					["hdone"] = 0,
+					["hdonespell"] = {
+					},
+					["taken"] = 1025,
+					["htakenspell"] = {
+					},
+					["htaken"] = 0,
+					["done"] = 59,
+				},
+				["Murloc Lurker"] = {
+					["players"] = {
+						["Kakaròt"] = {
+							["taken"] = 296,
+							["done"] = 83,
+							["class"] = "MONK",
+							["role"] = "NONE",
+						},
+					},
+					["hdone"] = 0,
+					["hdonespell"] = {
+					},
+					["taken"] = 296,
+					["htakenspell"] = {
+					},
+					["htaken"] = 0,
+					["done"] = 83,
+				},
+			},
+			["power"] = {
+				[0] = 6,
+			},
+			["ffdamagedone"] = 0,
+			["healing"] = 89,
+			["auras"] = {
+			},
+			["overhealing"] = 23,
+			["shielding"] = 0,
+			["starttime"] = 1509276485,
+			["name"] = "Murloc Forager (6)",
+			["mobname"] = "Murloc Forager",
+			["damagetaken"] = 142,
+			["mobhdone"] = 0,
+			["last_action"] = 1509276485,
+			["endtime"] = 1509276500,
+		}, -- [6]
+		{
+			["healingabsorbed"] = 0,
+			["dispells"] = 0,
+			["ccbreaks"] = 0,
+			["time"] = 17,
+			["interrupts"] = 0,
+			["mobdone"] = 143,
+			["mobtaken"] = 1273,
+			["damage"] = 1273,
+			["players"] = {
+				{
+					["last"] = 1509276476,
+					["healingabsorbed"] = 0,
+					["class"] = "MONK",
+					["damaged"] = {
+						["Murloc Forager"] = 1273,
+					},
+					["dispells"] = 0,
+					["ccbreaks"] = 0,
+					["time"] = 15,
+					["interrupts"] = 0,
+					["role"] = "NONE",
+					["auras"] = {
+					},
+					["damage"] = 1273,
+					["damagespells"] = {
+						["Attack"] = {
+							["hitmin"] = 30,
+							["id"] = 6603,
+							["min"] = 30,
+							["damage"] = 158,
+							["hitmax"] = 33,
+							["hit"] = 5,
+							["school"] = 1,
+							["totalhits"] = 5,
+							["max"] = 33,
+							["hitamount"] = 158,
+						},
+						["Blackout Kick"] = {
+							["hitmin"] = 128,
+							["id"] = 100784,
+							["min"] = 128,
+							["damage"] = 904,
+							["hitmax"] = 194,
+							["hit"] = 5,
+							["school"] = 1,
+							["totalhits"] = 5,
+							["max"] = 194,
+							["hitamount"] = 904,
+						},
+						["Tiger Palm"] = {
+							["hitmin"] = 51,
+							["id"] = 100780,
+							["min"] = 51,
+							["damage"] = 211,
+							["hitmax"] = 54,
+							["hit"] = 4,
+							["school"] = 1,
+							["totalhits"] = 4,
+							["max"] = 54,
+							["hitamount"] = 211,
+						},
+					},
+					["healing"] = 112,
+					["healed"] = {
+						["Player-1305-08ACB934"] = {
+							["role"] = "NONE",
+							["name"] = "Kakaròt",
+							["amount"] = 112,
+							["class"] = "MONK",
+							["shielding"] = 0,
+						},
+					},
+					["power"] = {
+						{
+							["spells"] = {
+								[100780] = 1,
+							},
+							["amount"] = 1,
+						}, -- [1]
+						{
+							["spells"] = {
+								[100780] = 0,
+							},
+							["amount"] = 0,
+						}, -- [2]
+						[0] = {
+							["spells"] = {
+								[100780] = 2,
+							},
+							["amount"] = 2,
+						},
+					},
+					["id"] = "Player-1305-08ACB934",
+					["first"] = 1509276461,
+					["shielding"] = 0,
+					["damagetakenspells"] = {
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["damage"] = 143,
+							["max"] = 14,
+							["name"] = "Attack",
+							["min"] = 9,
+							["totalhits"] = 13,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["school"] = 1,
+							["resisted"] = 0,
+							["glancing"] = 0,
+							["absorbed"] = 0,
+						},
+					},
+					["healingspells"] = {
+						["Swift Hand of Justice"] = {
+							["shielding"] = 0,
+							["id"] = 59913,
+							["healing"] = 112,
+							["min"] = 14,
+							["name"] = "Swift Hand of Justice",
+							["hits"] = 8,
+							["overhealing"] = 0,
+							["max"] = 14,
+							["critical"] = 0,
+							["absorbed"] = 0,
+						},
+					},
+					["name"] = "Kakaròt",
+					["ffdamagedonetargets"] = {
+					},
+					["overhealing"] = 0,
+					["maxhp"] = 702,
+					["damagetaken"] = 143,
+					["ffdamagedone"] = 0,
+					["ffdamagedonespells"] = {
+					},
+				}, -- [1]
+			},
+			["deaths"] = 0,
+			["mobs"] = {
+				["Murloc Forager"] = {
+					["players"] = {
+						["Kakaròt"] = {
+							["taken"] = 1273,
+							["done"] = 143,
+							["class"] = "MONK",
+							["role"] = "NONE",
+						},
+					},
+					["hdone"] = 48,
+					["hdonespell"] = {
+						["Drink Minor Potion"] = {
+							["min"] = 48,
+							["crits"] = 0,
+							["max"] = 48,
+							["healing"] = 48,
+							["overhealing"] = 0,
+							["hits"] = 1,
+						},
+					},
+					["taken"] = 1273,
+					["htakenspell"] = {
+						["Drink Minor Potion"] = {
+							["min"] = 48,
+							["crits"] = 0,
+							["max"] = 48,
+							["healing"] = 48,
+							["overhealing"] = 0,
+							["hits"] = 1,
+						},
+					},
+					["htaken"] = 48,
+					["done"] = 143,
+				},
+			},
+			["power"] = {
+				1, -- [1]
+				0, -- [2]
+				[0] = 2,
+			},
+			["ffdamagedone"] = 0,
+			["healing"] = 112,
+			["auras"] = {
+			},
+			["overhealing"] = 0,
+			["shielding"] = 0,
+			["starttime"] = 1509276460,
+			["name"] = "Murloc Forager (5)",
+			["mobname"] = "Murloc Forager",
+			["damagetaken"] = 143,
+			["mobhdone"] = 48,
+			["last_action"] = 1509276460,
+			["endtime"] = 1509276477,
+		}, -- [7]
+		{
+			["healingabsorbed"] = 0,
+			["dispells"] = 0,
+			["ccbreaks"] = 0,
+			["time"] = 8,
+			["interrupts"] = 0,
+			["mobdone"] = 33,
+			["mobtaken"] = 735,
+			["damage"] = 735,
+			["players"] = {
+				{
+					["last"] = 1509276439,
+					["healingabsorbed"] = 0,
+					["class"] = "MONK",
+					["damaged"] = {
+						["Murloc Forager"] = 735,
+					},
+					["dispells"] = 0,
+					["ccbreaks"] = 0,
+					["time"] = 5,
+					["interrupts"] = 0,
+					["role"] = "NONE",
+					["auras"] = {
+					},
+					["damage"] = 735,
+					["damagespells"] = {
+						["Attack"] = {
+							["hitmin"] = 29,
+							["id"] = 6603,
+							["min"] = 29,
+							["damage"] = 60,
+							["hitmax"] = 31,
+							["hit"] = 2,
+							["school"] = 1,
+							["totalhits"] = 2,
+							["max"] = 31,
+							["hitamount"] = 60,
+						},
+						["Blackout Kick"] = {
+							["hitmin"] = 184,
+							["criticalamount"] = 389,
+							["id"] = 100784,
+							["damage"] = 573,
+							["totalhits"] = 2,
+							["max"] = 389,
+							["min"] = 184,
+							["criticalmax"] = 389,
+							["hitmax"] = 184,
+							["hit"] = 1,
+							["school"] = 1,
+							["critical"] = 1,
+							["criticalmin"] = 389,
+							["hitamount"] = 184,
+						},
+						["Tiger Palm"] = {
+							["hitmin"] = 51,
+							["id"] = 100780,
+							["min"] = 51,
+							["damage"] = 102,
+							["hitmax"] = 51,
+							["hit"] = 2,
+							["school"] = 1,
+							["totalhits"] = 2,
+							["max"] = 51,
+							["hitamount"] = 102,
+						},
+					},
+					["healing"] = 33,
+					["healed"] = {
+						["Player-1305-08ACB934"] = {
+							["role"] = "NONE",
+							["name"] = "Kakaròt",
+							["amount"] = 33,
+							["class"] = "MONK",
+							["shielding"] = 0,
+						},
+					},
+					["power"] = {
+						[0] = {
+							["spells"] = {
+								[100780] = 2,
+							},
+							["amount"] = 2,
+						},
+						[2] = {
+							["spells"] = {
+								[100780] = 0,
+							},
+							["amount"] = 0,
+						},
+					},
+					["id"] = "Player-1305-08ACB934",
+					["first"] = 1509276434,
+					["shielding"] = 0,
+					["damagetakenspells"] = {
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["damage"] = 33,
+							["max"] = 12,
+							["name"] = "Attack",
+							["min"] = 10,
+							["totalhits"] = 3,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["school"] = 1,
+							["resisted"] = 0,
+							["glancing"] = 0,
+							["absorbed"] = 0,
+						},
+					},
+					["healingspells"] = {
+						["Swift Hand of Justice"] = {
+							["shielding"] = 0,
+							["id"] = 59913,
+							["healing"] = 33,
+							["min"] = 0,
+							["name"] = "Swift Hand of Justice",
+							["hits"] = 4,
+							["overhealing"] = 23,
+							["max"] = 14,
+							["critical"] = 0,
+							["absorbed"] = 0,
+						},
+					},
+					["name"] = "Kakaròt",
+					["ffdamagedonetargets"] = {
+					},
+					["overhealing"] = 23,
+					["maxhp"] = 702,
+					["damagetaken"] = 33,
+					["ffdamagedone"] = 0,
+					["ffdamagedonespells"] = {
+					},
+				}, -- [1]
+			},
+			["deaths"] = 0,
+			["mobs"] = {
+				["Murloc Forager"] = {
+					["players"] = {
+						["Kakaròt"] = {
+							["taken"] = 735,
+							["done"] = 33,
+							["class"] = "MONK",
+							["role"] = "NONE",
+						},
+					},
+					["hdone"] = 0,
+					["hdonespell"] = {
+					},
+					["taken"] = 735,
+					["htakenspell"] = {
+					},
+					["htaken"] = 0,
+					["done"] = 33,
+				},
+			},
+			["power"] = {
+				[0] = 2,
+				[2] = 0,
+			},
+			["ffdamagedone"] = 0,
+			["healing"] = 33,
+			["auras"] = {
+			},
+			["overhealing"] = 23,
+			["shielding"] = 0,
+			["starttime"] = 1509276433,
+			["name"] = "Murloc Forager (4)",
+			["mobname"] = "Murloc Forager",
+			["damagetaken"] = 33,
+			["mobhdone"] = 0,
+			["last_action"] = 1509276433,
+			["endtime"] = 1509276441,
+		}, -- [8]
+		{
+			["healingabsorbed"] = 0,
+			["dispells"] = 0,
+			["ccbreaks"] = 0,
+			["time"] = 10,
+			["interrupts"] = 0,
+			["mobdone"] = 44,
+			["mobtaken"] = 575,
+			["damage"] = 575,
+			["players"] = {
+				{
+					["last"] = 1509276408,
+					["healingabsorbed"] = 0,
+					["class"] = "MONK",
+					["damaged"] = {
+						["Murloc Forager"] = 575,
+					},
+					["dispells"] = 0,
+					["ccbreaks"] = 0,
+					["time"] = 6,
+					["interrupts"] = 0,
+					["role"] = "NONE",
+					["auras"] = {
+					},
+					["damage"] = 575,
+					["damagespells"] = {
+						["Attack"] = {
+							["hitmin"] = 29,
+							["id"] = 6603,
+							["min"] = 29,
+							["damage"] = 92,
+							["hitmax"] = 32,
+							["hit"] = 3,
+							["school"] = 1,
+							["totalhits"] = 3,
+							["max"] = 32,
+							["hitamount"] = 92,
+						},
+						["Blackout Kick"] = {
+							["hitmin"] = 184,
+							["id"] = 100784,
+							["min"] = 184,
+							["damage"] = 378,
+							["hitmax"] = 194,
+							["hit"] = 2,
+							["school"] = 1,
+							["totalhits"] = 2,
+							["max"] = 194,
+							["hitamount"] = 378,
+						},
+						["Tiger Palm"] = {
+							["hitmin"] = 51,
+							["id"] = 100780,
+							["min"] = 51,
+							["damage"] = 105,
+							["hitmax"] = 54,
+							["hit"] = 2,
+							["school"] = 1,
+							["totalhits"] = 2,
+							["max"] = 54,
+							["hitamount"] = 105,
+						},
+					},
+					["healing"] = 44,
+					["healed"] = {
+						["Player-1305-08ACB934"] = {
+							["role"] = "NONE",
+							["name"] = "Kakaròt",
+							["amount"] = 44,
+							["class"] = "MONK",
+							["shielding"] = 0,
+						},
+					},
+					["power"] = {
+						[0] = {
+							["spells"] = {
+								[100780] = 4,
+							},
+							["amount"] = 4,
+						},
+					},
+					["id"] = "Player-1305-08ACB934",
+					["first"] = 1509276402,
+					["shielding"] = 0,
+					["damagetakenspells"] = {
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["damage"] = 44,
+							["max"] = 12,
+							["name"] = "Attack",
+							["min"] = 10,
+							["totalhits"] = 4,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["school"] = 1,
+							["resisted"] = 0,
+							["glancing"] = 0,
+							["absorbed"] = 0,
+						},
+					},
+					["healingspells"] = {
+						["Swift Hand of Justice"] = {
+							["shielding"] = 0,
+							["id"] = 59913,
+							["healing"] = 44,
+							["min"] = 1,
+							["name"] = "Swift Hand of Justice",
+							["hits"] = 4,
+							["overhealing"] = 13,
+							["max"] = 15,
+							["critical"] = 0,
+							["absorbed"] = 0,
+						},
+					},
+					["name"] = "Kakaròt",
+					["ffdamagedonetargets"] = {
+					},
+					["overhealing"] = 13,
+					["maxhp"] = 702,
+					["damagetaken"] = 44,
+					["ffdamagedone"] = 0,
+					["ffdamagedonespells"] = {
+					},
+				}, -- [1]
+			},
+			["deaths"] = 0,
+			["mobs"] = {
+				["Murloc Forager"] = {
+					["players"] = {
+						["Kakaròt"] = {
+							["taken"] = 575,
+							["done"] = 44,
+							["class"] = "MONK",
+							["role"] = "NONE",
+						},
+					},
+					["hdone"] = 0,
+					["hdonespell"] = {
+					},
+					["taken"] = 575,
+					["htakenspell"] = {
+					},
+					["htaken"] = 0,
+					["done"] = 44,
+				},
+			},
+			["power"] = {
+				[0] = 4,
+			},
+			["ffdamagedone"] = 0,
+			["healing"] = 44,
+			["auras"] = {
+			},
+			["overhealing"] = 13,
+			["shielding"] = 0,
+			["starttime"] = 1509276400,
+			["name"] = "Murloc Forager (3)",
+			["mobname"] = "Murloc Forager",
+			["damagetaken"] = 44,
+			["mobhdone"] = 0,
+			["last_action"] = 1509276400,
+			["endtime"] = 1509276410,
+		}, -- [9]
+		{
+			["healingabsorbed"] = 0,
+			["dispells"] = 0,
+			["ccbreaks"] = 0,
+			["time"] = 10,
+			["interrupts"] = 0,
+			["mobdone"] = 32,
+			["mobtaken"] = 701,
+			["damage"] = 701,
+			["players"] = {
+				{
+					["last"] = 1509276395,
+					["healingabsorbed"] = 0,
+					["class"] = "MONK",
+					["damaged"] = {
+						["Murloc Forager"] = 701,
+					},
+					["dispells"] = 0,
+					["ccbreaks"] = 0,
+					["time"] = 6,
+					["interrupts"] = 0,
+					["role"] = "NONE",
+					["auras"] = {
+					},
+					["damage"] = 701,
+					["damagespells"] = {
+						["Attack"] = {
+							["hitmin"] = 32,
+							["id"] = 6603,
+							["min"] = 32,
+							["damage"] = 64,
+							["hitmax"] = 32,
+							["hit"] = 2,
+							["school"] = 1,
+							["totalhits"] = 2,
+							["max"] = 32,
+							["hitamount"] = 64,
+						},
+						["Blackout Kick"] = {
+							["hitmin"] = 194,
+							["criticalamount"] = 388,
+							["id"] = 100784,
+							["damage"] = 582,
+							["totalhits"] = 2,
+							["max"] = 388,
+							["min"] = 194,
+							["criticalmax"] = 388,
+							["hitmax"] = 194,
+							["hit"] = 1,
+							["school"] = 1,
+							["critical"] = 1,
+							["criticalmin"] = 388,
+							["hitamount"] = 194,
+						},
+						["Tiger Palm"] = {
+							["hitmin"] = 55,
+							["id"] = 100780,
+							["min"] = 55,
+							["damage"] = 55,
+							["hitmax"] = 55,
+							["hit"] = 1,
+							["school"] = 1,
+							["totalhits"] = 1,
+							["max"] = 55,
+							["hitamount"] = 55,
+						},
+					},
+					["healing"] = 32,
+					["healed"] = {
+						["Player-1305-08ACB934"] = {
+							["role"] = "NONE",
+							["name"] = "Kakaròt",
+							["amount"] = 32,
+							["class"] = "MONK",
+							["shielding"] = 0,
+						},
+					},
+					["power"] = {
+						[0] = {
+							["spells"] = {
+								[100780] = 2,
+							},
+							["amount"] = 2,
+						},
+					},
+					["id"] = "Player-1305-08ACB934",
+					["first"] = 1509276389,
+					["shielding"] = 0,
+					["damagetakenspells"] = {
+						["Attack"] = {
+							["crushing"] = 0,
+							["id"] = 6603,
+							["damage"] = 32,
+							["max"] = 11,
+							["name"] = "Attack",
+							["min"] = 10,
+							["totalhits"] = 3,
+							["critical"] = 0,
+							["blocked"] = 0,
+							["school"] = 1,
+							["resisted"] = 0,
+							["glancing"] = 0,
+							["absorbed"] = 0,
+						},
+					},
+					["healingspells"] = {
+						["Swift Hand of Justice"] = {
+							["shielding"] = 0,
+							["id"] = 59913,
+							["healing"] = 32,
+							["min"] = 0,
+							["name"] = "Swift Hand of Justice",
+							["hits"] = 4,
+							["overhealing"] = 24,
+							["max"] = 14,
+							["critical"] = 0,
+							["absorbed"] = 0,
+						},
+					},
+					["name"] = "Kakaròt",
+					["ffdamagedonetargets"] = {
+					},
+					["overhealing"] = 24,
+					["maxhp"] = 702,
+					["damagetaken"] = 32,
+					["ffdamagedone"] = 0,
+					["ffdamagedonespells"] = {
+					},
+				}, -- [1]
+			},
+			["deaths"] = 0,
+			["mobs"] = {
+				["Murloc Forager"] = {
+					["players"] = {
+						["Kakaròt"] = {
+							["taken"] = 701,
+							["done"] = 32,
+							["class"] = "MONK",
+							["role"] = "NONE",
+						},
+					},
+					["hdone"] = 0,
+					["hdonespell"] = {
+					},
+					["taken"] = 701,
+					["htakenspell"] = {
+					},
+					["htaken"] = 0,
+					["done"] = 32,
+				},
+			},
+			["power"] = {
+				[0] = 2,
+			},
+			["ffdamagedone"] = 0,
+			["healing"] = 32,
+			["auras"] = {
+			},
+			["overhealing"] = 24,
+			["shielding"] = 0,
+			["starttime"] = 1509276386,
+			["name"] = "Murloc Forager (2)",
+			["mobname"] = "Murloc Forager",
+			["damagetaken"] = 32,
+			["mobhdone"] = 0,
+			["last_action"] = 1509276386,
+			["endtime"] = 1509276396,
+		}, -- [10]
+	},
+	["total"] = {
+		["healingabsorbed"] = 0,
+		["dispells"] = 0,
+		["ccbreaks"] = 0,
+		["time"] = 382,
+		["interrupts"] = 0,
+		["damage"] = 44484,
+		["players"] = {
+			{
+				["healingabsorbed"] = 0,
+				["class"] = "MONK",
+				["damaged"] = {
+				},
+				["dispells"] = 0,
+				["ccbreaks"] = 0,
+				["time"] = 429,
+				["interrupts"] = 0,
+				["role"] = "NONE",
+				["auras"] = {
+				},
+				["damage"] = 44484,
+				["damagespells"] = {
+					["Tiger Palm"] = {
+						["hitmin"] = 27,
+						["criticalamount"] = 1471,
+						["id"] = 100780,
+						["damage"] = 5800,
+						["totalhits"] = 100,
+						["max"] = 120,
+						["min"] = 27,
+						["criticalmax"] = 120,
+						["critical"] = 15,
+						["hit"] = 85,
+						["school"] = 1,
+						["hitmax"] = 72,
+						["criticalmin"] = 75,
+						["hitamount"] = 4329,
+					},
+					["Rising Sun Kick"] = {
+						["hitmin"] = 477,
+						["criticalamount"] = 2179,
+						["id"] = 185099,
+						["damage"] = 3664,
+						["totalhits"] = 5,
+						["max"] = 1225,
+						["min"] = 477,
+						["criticalmax"] = 1225,
+						["hitmax"] = 531,
+						["hit"] = 3,
+						["school"] = 1,
+						["critical"] = 2,
+						["criticalmin"] = 954,
+						["hitamount"] = 1485,
+					},
+					["Blackout Kick"] = {
+						["hitmin"] = 128,
+						["criticalamount"] = 10909,
+						["id"] = 100784,
+						["damage"] = 30509,
+						["totalhits"] = 135,
+						["max"] = 507,
+						["min"] = 128,
+						["criticalmax"] = 507,
+						["critical"] = 28,
+						["hit"] = 107,
+						["school"] = 1,
+						["hitmax"] = 259,
+						["criticalmin"] = 276,
+						["hitamount"] = 19600,
+					},
+					["Attack"] = {
+						["damage"] = 4511,
+						["hitmin"] = 7,
+						["criticalamount"] = 1085,
+						["id"] = 6603,
+						["criticalmin"] = 15,
+						["max"] = 83,
+						["school"] = 1,
+						["min"] = 7,
+						["criticalmax"] = 83,
+						["hitmax"] = 42,
+						["hit"] = 123,
+						["totalhits"] = 144,
+						["critical"] = 19,
+						["MISS"] = 2,
+						["hitamount"] = 3426,
+					},
+				},
+				["healing"] = 2163,
+				["healed"] = {
+					["Player-1305-08ACB934"] = {
+						["role"] = "NONE",
+						["name"] = "Kakaròt",
+						["amount"] = 2163,
+						["class"] = "MONK",
+						["shielding"] = 0,
+					},
+				},
+				["power"] = {
+					{
+						["spells"] = {
+							[100780] = 9,
+						},
+						["amount"] = 9,
+					}, -- [1]
+					{
+						["spells"] = {
+							[100780] = 0,
+						},
+						["amount"] = 0,
+					}, -- [2]
+					[0] = {
+						["spells"] = {
+							[100780] = 160,
+						},
+						["amount"] = 160,
+					},
+				},
+				["id"] = "Player-1305-08ACB934",
+				["maxhp"] = 336,
+				["shielding"] = 0,
+				["damagetakenspells"] = {
+					["Fireball"] = {
+						["crushing"] = 0,
+						["id"] = 20793,
+						["damage"] = 80,
+						["max"] = 21,
+						["name"] = "Fireball",
+						["min"] = 19,
+						["totalhits"] = 4,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 4,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+					["Snap Kick"] = {
+						["crushing"] = 0,
+						["id"] = 8646,
+						["damage"] = 31,
+						["max"] = 16,
+						["name"] = "Snap Kick",
+						["min"] = 15,
+						["totalhits"] = 2,
+						["critical"] = 0,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+					["Attack"] = {
+						["crushing"] = 0,
+						["id"] = 6603,
+						["damage"] = 2798,
+						["max"] = 29,
+						["name"] = "Attack",
+						["min"] = 2,
+						["totalhits"] = 292,
+						["critical"] = 5,
+						["blocked"] = 0,
+						["school"] = 1,
+						["resisted"] = 0,
+						["glancing"] = 0,
+						["absorbed"] = 0,
+					},
+				},
+				["healingspells"] = {
+					["Swift Hand of Justice"] = {
+						["shielding"] = 0,
+						["id"] = 59913,
+						["healing"] = 2163,
+						["min"] = 0,
+						["name"] = "Swift Hand of Justice",
+						["hits"] = 302,
+						["overhealing"] = 1536,
+						["max"] = 16,
+						["critical"] = 0,
+						["absorbed"] = 0,
+					},
+				},
+				["name"] = "Kakaròt",
+				["ffdamagedonetargets"] = {
+				},
+				["overhealing"] = 1536,
+				["deathlog"] = {
+					{
+						["ts"] = 1509276990.744,
+						["amount"] = -15,
+						["srcname"] = "Bandit",
+						["hp"] = 702,
+						["spellid"] = 8646,
+					}, -- [1]
+					{
+						["ts"] = 1509276992.264,
+						["amount"] = -21,
+						["srcname"] = "Surena Caledon",
+						["hp"] = 681,
+						["spellid"] = 20793,
+					}, -- [2]
+					{
+						["ts"] = 1509276992.763,
+						["amount"] = -12,
+						["srcname"] = "Bandit",
+						["hp"] = 681,
+						["spellid"] = 88163,
+					}, -- [3]
+					{
+						["ts"] = 1509276994.78,
+						["amount"] = -9,
+						["spellid"] = 88163,
+						["hp"] = 669,
+						["srcname"] = "Bandit",
+					}, -- [4]
+					{
+						["absorb"] = 0,
+						["amount"] = 15,
+						["srcname"] = "Kakaròt",
+						["spellid"] = 59913,
+						["hp"] = 675,
+						["ts"] = 1509276995.072,
+					}, -- [5]
+					{
+						["absorb"] = 0,
+						["amount"] = 15,
+						["srcname"] = "Kakaròt",
+						["spellid"] = 59913,
+						["hp"] = 690,
+						["ts"] = 1509276995.072,
+					}, -- [6]
+					{
+						["ts"] = 1509276996.795,
+						["amount"] = -10,
+						["srcname"] = "Bandit",
+						["hp"] = 690,
+						["spellid"] = 88163,
+					}, -- [7]
+					{
+						["ts"] = 1509276997.204,
+						["amount"] = -21,
+						["srcname"] = "Surena Caledon",
+						["hp"] = 659,
+						["spellid"] = 20793,
+					}, -- [8]
+					{
+						["ts"] = 1509276997.882,
+						["amount"] = 16,
+						["srcname"] = "Kakaròt",
+						["spellid"] = 59913,
+						["hp"] = 675,
+						["absorb"] = 0,
+					}, -- [9]
+					{
+						["absorb"] = 0,
+						["amount"] = 15,
+						["srcname"] = "Kakaròt",
+						["spellid"] = 59913,
+						["hp"] = 690,
+						["ts"] = 1509276997.882,
+					}, -- [10]
+					{
+						["ts"] = 1509277000.806,
+						["amount"] = -19,
+						["srcname"] = "Surena Caledon",
+						["hp"] = 671,
+						["spellid"] = 20793,
+					}, -- [11]
+					{
+						["ts"] = 1509277002.551,
+						["amount"] = -12,
+						["srcname"] = "Surena Caledon",
+						["hp"] = 671,
+						["spellid"] = 88163,
+					}, -- [12]
+					{
+						["ts"] = 1509277004.639,
+						["amount"] = -9,
+						["srcname"] = "Surena Caledon",
+						["hp"] = 659,
+						["spellid"] = 88163,
+					}, -- [13]
+					{
+						["absorb"] = 0,
+						["amount"] = 15,
+						["srcname"] = "Kakaròt",
+						["spellid"] = 59913,
+						["hp"] = 665,
+						["ts"] = 1509277005.404,
+					}, -- [14]
+					{
+						["absorb"] = 0,
+						["amount"] = 15,
+						["srcname"] = "Kakaròt",
+						["spellid"] = 59913,
+						["hp"] = 680,
+						["ts"] = 1509277005.404,
+					}, -- [15]
+					["pos"] = 1,
+				},
+				["damagetaken"] = 2909,
+				["ffdamagedone"] = 0,
+				["ffdamagedonespells"] = {
+				},
+			}, -- [1]
+		},
+		["deaths"] = 0,
+		["mobs"] = {
+			["Blackrock Invader"] = {
+				["players"] = {
+					["Kakaròt"] = {
+						["taken"] = 1466,
+						["done"] = 46,
+						["class"] = "MONK",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 1466,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 46,
+			},
+			["Kobold Tunneler"] = {
+				["players"] = {
+					["Kakaròt"] = {
+						["taken"] = 7334,
+						["done"] = 662,
+						["class"] = "MONK",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 7334,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 662,
+			},
+			["Goblin Assassin"] = {
+				["players"] = {
+					["Kakaròt"] = {
+						["taken"] = 1100,
+						["done"] = 34,
+						["class"] = "MONK",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 1100,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 34,
+			},
+			["Narg the Taskmaster"] = {
+				["players"] = {
+					["Kakaròt"] = {
+						["taken"] = 457,
+						["done"] = 140,
+						["class"] = "MONK",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 457,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 140,
+			},
+			["James Clark"] = {
+				["players"] = {
+					["Kakaròt"] = {
+						["taken"] = 637,
+						["done"] = 22,
+						["class"] = "MONK",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 637,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 22,
+			},
+			["Kurtok the Slayer"] = {
+				["players"] = {
+					["Kakaròt"] = {
+						["taken"] = 330,
+						["done"] = 0,
+						["class"] = "MONK",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 330,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 0,
+			},
+			["Bandit"] = {
+				["players"] = {
+					["Kakaròt"] = {
+						["taken"] = 4299,
+						["done"] = 224,
+						["class"] = "MONK",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 4299,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 224,
+			},
+			["Blackrock Spy"] = {
+				["players"] = {
+					["Kakaròt"] = {
+						["taken"] = 969,
+						["done"] = 32,
+						["class"] = "MONK",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 969,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 32,
+			},
+			["Stonetusk Boar"] = {
+				["players"] = {
+					["Kakaròt"] = {
+						["taken"] = 732,
+						["done"] = 15,
+						["class"] = "MONK",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 732,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 15,
+			},
+			["Blackrock Worg"] = {
+				["players"] = {
+					["Kakaròt"] = {
+						["taken"] = 437,
+						["done"] = 22,
+						["class"] = "MONK",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 437,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 22,
+			},
+			["Erlan Drudgemoor"] = {
+				["players"] = {
+					["Kakaròt"] = {
+						["taken"] = 324,
+						["done"] = 34,
+						["class"] = "MONK",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 324,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 34,
+			},
+			["Denski-Frostmane"] = {
+				["players"] = {
+				},
+				["hdone"] = 3847,
+				["hdonespell"] = {
+					["Ysera's Gift"] = {
+						["min"] = 377,
+						["crits"] = 0,
+						["max"] = 377,
+						["healing"] = 377,
+						["overhealing"] = 0,
+						["hits"] = 1,
+					},
+					["Rejuvenation"] = {
+						["min"] = 276,
+						["crits"] = 1,
+						["max"] = 554,
+						["healing"] = 1107,
+						["overhealing"] = 0,
+						["hits"] = 3,
+					},
+					["Healing Touch"] = {
+						["min"] = 2075,
+						["crits"] = 0,
+						["max"] = 2075,
+						["healing"] = 2075,
+						["overhealing"] = 0,
+						["hits"] = 1,
+					},
+					["Regrowth"] = {
+						["min"] = 57,
+						["crits"] = 1,
+						["max"] = 115,
+						["healing"] = 288,
+						["overhealing"] = 0,
+						["hits"] = 4,
+					},
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+					["Ysera's Gift"] = {
+						["min"] = 377,
+						["crits"] = 0,
+						["max"] = 377,
+						["healing"] = 377,
+						["overhealing"] = 0,
+						["hits"] = 1,
+					},
+					["Rejuvenation"] = {
+						["min"] = 276,
+						["crits"] = 1,
+						["max"] = 554,
+						["healing"] = 1107,
+						["overhealing"] = 0,
+						["hits"] = 3,
+					},
+					["Healing Touch"] = {
+						["min"] = 2075,
+						["crits"] = 0,
+						["max"] = 2075,
+						["healing"] = 2075,
+						["overhealing"] = 0,
+						["hits"] = 1,
+					},
+					["Regrowth"] = {
+						["min"] = 57,
+						["crits"] = 1,
+						["max"] = 115,
+						["healing"] = 288,
+						["overhealing"] = 0,
+						["hits"] = 4,
+					},
+				},
+				["htaken"] = 3847,
+				["done"] = 0,
+			},
+			["Gray Forest Wolf"] = {
+				["players"] = {
+					["Kakaròt"] = {
+						["taken"] = 669,
+						["done"] = 16,
+						["class"] = "MONK",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 669,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 16,
+			},
+			["Mangy Wolf"] = {
+				["players"] = {
+					["Kakaròt"] = {
+						["taken"] = 0,
+						["done"] = 14,
+						["class"] = "MONK",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 14,
+			},
+			["Goldtooth"] = {
+				["players"] = {
+					["Kakaròt"] = {
+						["taken"] = 524,
+						["done"] = 9,
+						["class"] = "MONK",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 524,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 9,
+			},
+			["Murloc Streamrunner"] = {
+				["players"] = {
+					["Kakaròt"] = {
+						["taken"] = 1182,
+						["done"] = 114,
+						["class"] = "MONK",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 1182,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 114,
+			},
+			["Kobold Geomancer"] = {
+				["players"] = {
+					["Kakaròt"] = {
+						["taken"] = 338,
+						["done"] = 19,
+						["class"] = "MONK",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 338,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 19,
+			},
+			["Stormwind Infantry"] = {
+				["players"] = {
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+					["Renew"] = {
+						["min"] = 2,
+						["crits"] = 0,
+						["max"] = 2,
+						["healing"] = 4,
+						["overhealing"] = 0,
+						["hits"] = 2,
+					},
+				},
+				["htaken"] = 4,
+				["done"] = 0,
+			},
+			["Murloc"] = {
+				["players"] = {
+					["Kakaròt"] = {
+						["taken"] = 2121,
+						["done"] = 81,
+						["class"] = "MONK",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 2121,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 81,
+			},
+			["Morgan the Collector"] = {
+				["players"] = {
+					["Kakaròt"] = {
+						["taken"] = 587,
+						["done"] = 12,
+						["class"] = "MONK",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 587,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 12,
+			},
+			["Brother Paxton"] = {
+				["players"] = {
+				},
+				["hdone"] = 4,
+				["hdonespell"] = {
+					["Renew"] = {
+						["min"] = 2,
+						["crits"] = 0,
+						["max"] = 2,
+						["healing"] = 4,
+						["overhealing"] = 0,
+						["hits"] = 2,
+					},
+				},
+				["taken"] = 0,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 0,
+			},
+			["Young Forest Bear"] = {
+				["players"] = {
+					["Kakaròt"] = {
+						["taken"] = 3578,
+						["done"] = 101,
+						["class"] = "MONK",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 3578,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 101,
+			},
+			["Murloc Lurker"] = {
+				["players"] = {
+					["Kakaròt"] = {
+						["taken"] = 2010,
+						["done"] = 143,
+						["class"] = "MONK",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 2010,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 143,
+			},
+			["Murloc Forager"] = {
+				["players"] = {
+					["Kakaròt"] = {
+						["taken"] = 6385,
+						["done"] = 369,
+						["class"] = "MONK",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 48,
+				["hdonespell"] = {
+					["Drink Minor Potion"] = {
+						["min"] = 48,
+						["crits"] = 0,
+						["max"] = 48,
+						["healing"] = 48,
+						["overhealing"] = 0,
+						["hits"] = 1,
+					},
+				},
+				["taken"] = 6385,
+				["htakenspell"] = {
+					["Drink Minor Potion"] = {
+						["min"] = 48,
+						["crits"] = 0,
+						["max"] = 48,
+						["healing"] = 48,
+						["overhealing"] = 0,
+						["hits"] = 1,
+					},
+				},
+				["htaken"] = 48,
+				["done"] = 369,
+			},
+			["Prowler"] = {
+				["players"] = {
+					["Kakaròt"] = {
+						["taken"] = 3647,
+						["done"] = 382,
+						["class"] = "MONK",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 3647,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 382,
+			},
+			["Kobold Miner"] = {
+				["players"] = {
+					["Kakaròt"] = {
+						["taken"] = 4245,
+						["done"] = 199,
+						["class"] = "MONK",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 4245,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 199,
+			},
+			["Surena Caledon"] = {
+				["players"] = {
+					["Kakaròt"] = {
+						["taken"] = 240,
+						["done"] = 93,
+						["class"] = "MONK",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 240,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 93,
+			},
+			["Princess"] = {
+				["players"] = {
+					["Kakaròt"] = {
+						["taken"] = 483,
+						["done"] = 21,
+						["class"] = "MONK",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 483,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 21,
+			},
+			["Dead-Tooth Jack"] = {
+				["players"] = {
+					["Kakaròt"] = {
+						["taken"] = 390,
+						["done"] = 105,
+						["class"] = "MONK",
+						["role"] = "NONE",
+					},
+				},
+				["hdone"] = 0,
+				["hdonespell"] = {
+				},
+				["taken"] = 390,
+				["htakenspell"] = {
+				},
+				["htaken"] = 0,
+				["done"] = 105,
+			},
+		},
+		["mobtaken"] = 44484,
+		["ffdamagedone"] = 0,
+		["healing"] = 2163,
+		["damagetaken"] = 2909,
+		["overhealing"] = 1536,
+		["auras"] = {
+		},
+		["power"] = {
+			9, -- [1]
+			0, -- [2]
+			[0] = 160,
+		},
+		["name"] = "Total",
+		["starttime"] = 1509273913,
+		["shielding"] = 0,
+		["mobhdone"] = 3899,
+		["last_action"] = 1509273913,
+		["mobdone"] = 2909,
+	},
+}

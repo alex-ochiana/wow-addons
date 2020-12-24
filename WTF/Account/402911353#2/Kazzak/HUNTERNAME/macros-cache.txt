@@ -1,0 +1,5 @@
+VER 3 0100000000000001 "Det" "INV_MISC_QUESTIONMARK"
+#showtooltip Deterrence
+/cast Deterrence
+/cancelaura Deterrence
+END

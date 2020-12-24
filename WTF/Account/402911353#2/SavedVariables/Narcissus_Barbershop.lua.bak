@@ -1,0 +1,26 @@
+
+NarciBarberShopDB = {
+	["Hotkeys"] = {
+		["RotateRight"] = "D",
+		["RotateLeft"] = "A",
+		["ZoomOut"] = "S",
+		["ZoomIn"] = "W",
+	},
+	["ToggleNotification"] = true,
+	["PlayerData"] = {
+		["0CFDE7B0"] = {
+			["playerName"] = "Crètz",
+			["realmID"] = "1597",
+			["SavedLooks"] = {
+				[4] = {
+					["male"] = {
+					},
+					["female"] = {
+					},
+				},
+			},
+			["realmName"] = "Sylvanas",
+		},
+	},
+	["ToggleRandomAppearance"] = false,
+}

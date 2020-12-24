@@ -1,0 +1,164 @@
+
+MasterPlanAG = {
+	["Sylvanas"] = {
+		["Cretz"] = {
+			["class"] = "PALADIN",
+			["faction"] = "Alliance",
+		},
+		["Delnaara"] = {
+			["class"] = "PRIEST",
+			["faction"] = "Alliance",
+		},
+		["Jiglèr"] = {
+			["class"] = "WARRIOR",
+			["faction"] = "Alliance",
+		},
+		["Crètz"] = {
+			["lastCacheTime"] = 1587204985,
+			["recruitTime"] = 1542806572,
+			["summary"] = {
+				["lastOilTime"] = 1587671043,
+				["ti2"] = 122486,
+				["inProgress"] = {
+					[305] = 1587699930,
+					[336] = 1587689111,
+					[263] = 1587699932,
+					[373] = 1587707133,
+					[745] = 1587735843,
+					[458] = 1587697520,
+					[649] = 1587751973,
+					[539] = 1587735839,
+					[132] = 1587692725,
+				},
+				["ti3"] = 127855,
+				["tt1"] = 1587488645,
+				["ti1"] = 118529,
+				["tt3"] = 1473277644,
+				["tt2"] = 1586037536,
+			},
+			["faction"] = "Alliance",
+			["cacheSize"] = 1000,
+			["class"] = "DRUID",
+			["curRes"] = 9830,
+			["curOil"] = 7455,
+		},
+		["Kynaeth"] = {
+			["class"] = "DEMONHUNTER",
+			["faction"] = "Alliance",
+		},
+		["Brovar"] = {
+			["faction"] = "Alliance",
+			["class"] = "DEATHKNIGHT",
+		},
+		["Lorktnar"] = {
+			["class"] = "SHAMAN",
+			["faction"] = "Horde",
+		},
+		["Latthrias"] = {
+			["class"] = "PRIEST",
+			["faction"] = "Alliance",
+		},
+		["Envra"] = {
+			["faction"] = "Alliance",
+			["class"] = "ROGUE",
+		},
+		["Egidus"] = {
+			["faction"] = "Alliance",
+			["class"] = "MAGE",
+		},
+		["Sydernea"] = {
+			["class"] = "WARLOCK",
+			["faction"] = "Horde",
+		},
+		["Flundan"] = {
+			["faction"] = "Alliance",
+			["class"] = "MONK",
+		},
+		["Òdin"] = {
+			["faction"] = "Alliance",
+			["class"] = "HUNTER",
+		},
+		["Rillimus"] = {
+			["class"] = "DEMONHUNTER",
+			["faction"] = "Alliance",
+		},
+	},
+	["Argent Dawn"] = {
+		["Jermiene"] = {
+			["class"] = "ROGUE",
+			["faction"] = "Alliance",
+		},
+	},
+	["Ragnaros"] = {
+		["Mugugagagigi"] = {
+			["faction"] = "Horde",
+			["class"] = "WARLOCK",
+		},
+	},
+	["Outland"] = {
+		["Morgrock"] = {
+			["faction"] = "Horde",
+			["class"] = "PRIEST",
+		},
+		["Igormaster"] = {
+			["faction"] = "Alliance",
+			["class"] = "MAGE",
+		},
+		["Suntuncal"] = {
+			["class"] = "MAGE",
+			["faction"] = "Horde",
+		},
+		["Mokacaka"] = {
+			["class"] = "SHAMAN",
+			["faction"] = "Horde",
+		},
+		["Drenogrilari"] = {
+			["class"] = "DEATHKNIGHT",
+			["faction"] = "Alliance",
+		},
+		["Batdingoman"] = {
+			["class"] = "DRUID",
+			["faction"] = "Horde",
+		},
+		["Garwen"] = {
+			["class"] = "WARRIOR",
+			["faction"] = "Alliance",
+		},
+		["Morgulius"] = {
+			["faction"] = "Horde",
+			["class"] = "WARLOCK",
+		},
+		["Granguel"] = {
+			["faction"] = "Horde",
+			["class"] = "WARLOCK",
+		},
+	},
+	["Kazzak"] = {
+		["Kakaròt"] = {
+			["class"] = "MONK",
+			["faction"] = "Alliance",
+		},
+		["Mòloch"] = {
+			["class"] = "DEATHKNIGHT",
+			["faction"] = "Horde",
+		},
+		["Crëtz"] = {
+			["faction"] = "Horde",
+			["class"] = "DEMONHUNTER",
+		},
+		["Mortifèrous"] = {
+			["faction"] = "Horde",
+			["class"] = "WARLOCK",
+		},
+		["Blanitza"] = {
+			["class"] = "ROGUE",
+			["faction"] = "Horde",
+		},
+		["Zulmôjo"] = {
+			["class"] = "HUNTER",
+			["faction"] = "Horde",
+		},
+	},
+	["IgnoreRewards"] = {
+	},
+}

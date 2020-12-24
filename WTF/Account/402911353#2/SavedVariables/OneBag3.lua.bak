@@ -1,0 +1,14 @@
+
+OneBag3DB = {
+	["namespaces"] = {
+		["SimpleSort"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Aegwen - Sylvanas"] = "Aegwen - Sylvanas",
+	},
+	["profiles"] = {
+		["Aegwen - Sylvanas"] = {
+		},
+	},
+}

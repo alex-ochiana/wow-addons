@@ -1,0 +1,260 @@
+
+Accountant_SaveData = {
+	["Sylvanas-Aegwen"] = {
+		["current_tab"] = 1,
+		["show_toons"] = "All Chars",
+		["options"] = {
+			["showAlliance"] = true,
+			["buttonpos"] = 0,
+			["showbutton"] = true,
+			["date"] = "04/07/16",
+			["cachebox"] = 0,
+			["dateweek"] = "04/05/16",
+			["current_tab"] = 1,
+			["show_toons"] = "All Chars",
+			["version"] = "6.02.60200",
+			["faction"] = "Alliance",
+			["totalcash"] = 45032158,
+			["weekdate"] = "",
+			["weekstart"] = 3,
+			["showHorde"] = true,
+		},
+		["data"] = {
+			["TRAIN"] = {
+				["Total"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Week"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Day"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Session"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+			},
+			["TAXI"] = {
+				["Total"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Week"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Day"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Session"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+			},
+			["GARR"] = {
+				["Total"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Week"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Day"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Session"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+			},
+			["BMAH"] = {
+				["Total"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Week"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Day"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Session"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+			},
+			["LOOT"] = {
+				["Total"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Week"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Day"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Session"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+			},
+			["TRADE"] = {
+				["Total"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Week"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Day"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Session"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+			},
+			["AH"] = {
+				["Total"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Week"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Day"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Session"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+			},
+			["TMG"] = {
+				["Total"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Week"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Day"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Session"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+			},
+			["MERCH"] = {
+				["Total"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Week"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Day"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Session"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+			},
+			["MAIL"] = {
+				["Total"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Week"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Day"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Session"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+			},
+			["REPAIRS"] = {
+				["Total"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Week"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Day"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Session"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+			},
+			["OTHER"] = {
+				["Total"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Week"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Day"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Session"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+			},
+			["QUEST"] = {
+				["Total"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Week"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Day"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+				["Session"] = {
+					["In"] = 0,
+					["Out"] = 0,
+				},
+			},
+		},
+	},
+}
+Accountant_Options = nil

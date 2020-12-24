@@ -1,0 +1,45 @@
+
+AucAdvancedConfig = {
+	["users.Sylvanas.Aegwen"] = "Default",
+	["profile.Default"] = {
+		["stat"] = {
+			["sales"] = {
+				["ignoredsigs"] = {
+				},
+			},
+		},
+		["util"] = {
+			["automagic"] = {
+				["SavedMailButtons"] = {
+				},
+			},
+		},
+	},
+	["version"] = 1,
+}
+AucAdvancedData = {
+	["AserArbitrageRealms"] = {
+		["Sylvanas"] = "Aegwen",
+	},
+	["Stats"] = {
+	},
+	["UtilSearchUiData"] = {
+		["Global"] = {
+		},
+		["Current"] = {
+		},
+		["Version"] = 1,
+		["SavedSearches"] = {
+		},
+	},
+}
+AucAdvancedServers = {
+	["Timestamp"] = 1456324957,
+	["KnownRealms"] = {
+		["Sylvanas"] = "Sylvanas",
+	},
+	["KnownServerKeys"] = {
+		["Sylvanas"] = 1456324967,
+	},
+	["Version"] = 1,
+}

@@ -1,0 +1,14 @@
+VER 3 0100000000000002 "CD" "INV_MISC_QUESTIONMARK"
+#showtooltip Ascendance
+/cast Ascendance
+/cast Ancestral Guidance
+/cast Unleash Life
+END
+VER 3 0100000000000001 "DPS" "INV_MISC_QUESTIONMARK"
+/showtooltip Ascendance
+/cast Ascendance
+/cast Ancestral Guidance
+/cast Shamanistic Rage
+/cast Elemental Mastery
+/cast Astral Shift
+END

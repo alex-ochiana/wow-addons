@@ -1,0 +1,37 @@
+VER 3 0100000000000001 "DeathPact" "Spell_Shadow_DeathPact"
+/target pep
+/cast Death Pact
+END
+VER 3 0100000000000004 "dmg" "INV_MISC_QUESTIONMARK"
+#showtooltip Pillar of Frost
+/cast Pillar of Frost
+/cast Lichborne
+/cast Desecrated Ground
+/cast Icebound Fortitude
+/cast Anti-Magic Shell
+/cast Obliteration
+/cast Horn of Winter
+/cast Remorseless Winter
+END
+VER 3 0100000000000005 "dmg2" "INV_MISC_QUESTIONMARK"
+#showtooltip Unholy Blight
+/cast Unholy Blight
+/cast Summon Gargoyle
+/cast Dark Transformation
+END
+VER 3 0100000000000006 "dpsunh" "INV_MISC_QUESTIONMARK"
+#showtooltip Dark Transformation
+/use Dark Transformation
+/use Dark Arbiter
+/use Summon Gargoyle
+/use Icebound Fortitude
+/use Anti-Magic Shell
+END
+VER 3 0100000000000002 "m" "461139"
+/castrandom [nomounted] Winged Steed of the Ebon Blade, Bloodbathed Frostbrood Vanquisher, Corrupted Fire Hawk, Drake of the East Wind, Rusted Proto-Drake, Soaring Skyterror, Thundering Jade Cloud Serpent, Volcanic Stone Drake, Grove Warden
+/dismount
+END
+VER 3 0100000000000003 "mm" "464161"
+/castrandom [nomounted] Acherus Deathcharger, Mudback Riverbeast, Warsong Direfang, Coalfist Gronnling, Garn Nighthowl, Golden King, Black War Mammoth, Armored Razorback, Wild Goretusk, Black Battlestrider
+/dismount
+END

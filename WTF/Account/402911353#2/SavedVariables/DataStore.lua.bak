@@ -1,0 +1,14 @@
+
+DataStoreDB = {
+	["profileKeys"] = {
+		["Aegwen - Sylvanas"] = "Aegwen - Sylvanas",
+	},
+	["global"] = {
+		["Version"] = 1,
+		["Characters"] = {
+			["Default.Sylvanas.Aegwen"] = {
+				["faction"] = "Alliance",
+			},
+		},
+	},
+}

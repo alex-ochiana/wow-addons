@@ -1,0 +1,47 @@
+
+ElvDB = {
+	["profileKeys"] = {
+		["Aegwen - Sylvanas"] = "Aegwen - Sylvanas",
+	},
+	["gold"] = {
+		["Sylvanas"] = {
+			["Aegwen"] = 65807813,
+		},
+	},
+	["namespaces"] = {
+		["LibDualSpec-1.0"] = {
+		},
+	},
+	["global"] = {
+		["unitframe"] = {
+			["ChannelTicks"] = {
+				["Insanity"] = 3,
+				["Mind Flay"] = 3,
+			},
+		},
+	},
+	["profiles"] = {
+		["Aegwen - Sylvanas"] = {
+			["movers"] = {
+				["ElvUF_Raid40Mover"] = "TOPLEFTElvUIParentBOTTOMLEFT4424",
+				["ShiftAB"] = "TOPLEFTElvUIParentBOTTOMLEFT41076",
+				["ElvUF_PartyMover"] = "BOTTOMLEFTElvUIParentBOTTOMLEFT4195",
+				["ElvUF_RaidMover"] = "TOPLEFTElvUIParentBOTTOMLEFT4427",
+				["ElvUF_RaidpetMover"] = "TOPLEFTElvUIParentBOTTOMLEFT4736",
+			},
+			["bagsOffsetFixed"] = true,
+		},
+	},
+}
+ElvPrivateDB = {
+	["profileKeys"] = {
+		["Aegwen - Sylvanas"] = "Aegwen - Sylvanas",
+	},
+	["profiles"] = {
+		["Aegwen - Sylvanas"] = {
+			["nameplate"] = {
+				["enable"] = false,
+			},
+		},
+	},
+}

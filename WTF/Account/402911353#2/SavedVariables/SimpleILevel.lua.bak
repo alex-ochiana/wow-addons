@@ -1,0 +1,21 @@
+
+SIL_Settings = {
+	["global"] = {
+		["version"] = 3,
+	},
+	["profileKeys"] = {
+		["Aegwen - Sylvanas"] = "Default",
+	},
+}
+SIL_CacheGUID = {
+	["Player-3687-0684EBE0"] = {
+		["items"] = false,
+		["time"] = false,
+		["name"] = "Aegwen",
+		["score"] = false,
+		["target"] = "player",
+		["class"] = "DRUID",
+		["level"] = 100,
+		["realm"] = "Sylvanas",
+	},
+}

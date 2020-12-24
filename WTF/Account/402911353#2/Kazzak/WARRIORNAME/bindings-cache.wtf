@@ -1,0 +1,63 @@
+BINDINGMODE 0
+bind BUTTON3 ELVUIBAR6BUTTON4
+bind DOWN NONE
+bind LEFT NONE
+bind Q CLICK LUIBarBottom1Button6:LeftButton
+bind E CLICK LUIBarBottom1Button7:LeftButton
+bind PAGEDOWN NONE
+bind SHIFT-R ACTIONBUTTON7
+bind 1 CLICK LUIBarBottom1Button1:LeftButton
+bind 2 CLICK LUIBarBottom1Button2:LeftButton
+bind 3 CLICK LUIBarBottom1Button3:LeftButton
+bind 4 CLICK LUIBarBottom1Button4:LeftButton
+bind 5 CLICK LUIBarBottom1Button5:LeftButton
+bind 6 ACTIONBUTTON6
+bind 7 NONE
+bind 8 NONE
+bind 9 NONE
+bind 0 NONE
+bind - NONE
+bind = NONE
+bind CTRL-F1 NONE
+bind CTRL-1 CLICK LUIBarBottom6Button9:LeftButton
+bind CTRL-2 CLICK LUIBarBottom6Button10:LeftButton
+bind CTRL-3 CLICK LUIBarBottom6Button11:LeftButton
+bind CTRL-4 CLICK LUIBarBottom6Button12:LeftButton
+bind SHIFT-1 CLICK LUIBarBottom6Button5:LeftButton
+bind SHIFT-2 CLICK LUIBarBottom6Button6:LeftButton
+bind SHIFT-3 CLICK LUIBarBottom6Button7:LeftButton
+bind SHIFT-4 CLICK LUIBarBottom6Button8:LeftButton
+bind SHIFT-5 CLICK BT4Button50:LeftButton
+bind F1 CLICK LUIBarBottom6Button1:LeftButton
+bind F2 CLICK LUIBarBottom6Button2:LeftButton
+bind F3 CLICK LUIBarBottom6Button3:LeftButton
+bind F4 CLICK LUIBarBottom6Button4:LeftButton
+bind F5 NONE
+bind G CLICK LUIBarBottom3Button3:LeftButton
+bind F CLICK LUIBarBottom1Button10:LeftButton
+bind PRINTSCREEN SCREENSHOT
+bind END NONE
+bind CTRL-Q CLICK LUIBarBottom3Button11:LeftButton
+bind CTRL-E CLICK LUIBarBottom3Button12:LeftButton
+bind NUMPAD5 NONE
+bind NUMPAD1 CLICK LUIBarBottom3Button1:LeftButton
+bind NUMPAD3 NONE
+bind SHIFT-G CLICK LUIBarBottom3Button4:LeftButton
+bind ` CLICK LUIBarBottom1Button12:LeftButton
+bind F6 NONE
+bind SHIFT-Q CLICK LUIBarBottom1Button8:LeftButton
+bind SHIFT-E CLICK LUIBarBottom1Button9:LeftButton
+bind SHIFT-F CLICK LUIBarBottom1Button11:LeftButton
+bind CTRL-` SHAPESHIFTBUTTON3
+bind SHIFT-` SHAPESHIFTBUTTON2
+bind NUMPAD2 CLICK LUIBarBottom3Button2:LeftButton
+bind NUMPAD4 NONE
+bind SHIFT-BUTTON3 ELVUIBAR6BUTTON5
+bind NUMPAD6 NONE
+bind NUMPAD7 SCREENSHOT
+bind SHIFT-H NONE
+bind CTRL-NUMPAD1 CLICK LUIBarBottom3Button9:LeftButton
+bind CTRL-NUMPAD2 CLICK LUIBarBottom3Button10:LeftButton
+bind SHIFT-S NONE
+bind SHIFT-D NONE
+modifiedclick SHIFT PICKUPACTION

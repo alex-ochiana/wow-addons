@@ -1,0 +1,62 @@
+VER 3 010000000000000A "blast" "SPELL_ARCANE_BLAST"
+#showtooltip Arcane Blast
+/cast [nochanneling] Presence of Mind
+/cast [nochanneling] Arcane Blast
+END
+VER 3 0100000000000005 "Blink" "135736"
+#showtooltip
+/stopcasting
+/cast Blink
+END
+VER 3 0100000000000002 "DPS" "Ability_Creature_Cursed_02"
+#showtooltip
+/cast arcane power
+/use mana gem
+/cast lifeblood
+/cast mirror image
+/use 13
+/use 14
+END
+VER 3 0100000000000008 "DPS" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast icy veins
+/cast comet storm
+/cast Frozen Orb
+/use 13
+/use 14
+/cast Mirror Image
+END
+VER 3 0100000000000004 "DPS frost" "Ability_Creature_Cursed_02"
+#showtooltip icy veins
+/cast Icy Veins
+/cast lifeblood
+/cast mirror image
+/use 13
+/use 14
+END
+VER 3 010000000000000C "dpsfire" "INV_MISC_QUESTIONMARK"
+#showtooltip Combustion
+/cast Combustion
+END
+VER 3 0100000000000007 "Ice Block" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/stopcasting
+/cancelaura Ice Block
+/cast Ice Block
+END
+VER 3 010000000000000B "missles" "SPELL_NATURE_STARFALL"
+#showtooltip
+/cast [nochanneling] Arcane Missiles
+END
+VER 3 0100000000000001 "Shield" "Ability_Creature_Cursed_01"
+#showtooltip
+/castsequence [0player] reset=10 Ice barrier, Mana shield, Mage ward
+END
+VER 3 0100000000000003 "Shield 2" "Ability_Creature_Cursed_01"
+#showtooltip
+/castsequence [0player] reset=10  Mana shield, Mage ward
+END
+VER 3 0100000000000006 "Slow Fall" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,nodead,help][nodead,help][@player] Slow Fall
+END

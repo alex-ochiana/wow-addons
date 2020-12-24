@@ -1,0 +1,10 @@
+.curseclient
+*.dll
+*.exe
+*.mfil
+.flavor.info
+Cache/
+Errors/
+GPUCache/
+Logs/
+Utils/

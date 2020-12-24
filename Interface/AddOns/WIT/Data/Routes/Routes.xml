@@ -1,0 +1,13 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+    <Script file="Routes.lua"/>
+    
+    <Script file="Herb.lua"/>
+    <Script file="Mining.lua"/>
+    <Script file="Skinning.lua"/>
+    <Script file="Fishing.lua"/>
+    <Script file="Cloth.lua"/>
+    <Script file="Misc.lua"/>
+	<Script file="Mounts.lua"/>
+	<Script file="Toys.lua"/>
+</Ui>

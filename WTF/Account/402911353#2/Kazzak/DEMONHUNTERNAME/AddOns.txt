@@ -1,0 +1,6 @@
+Skada: disabled
+RoguePowerBars: disabled
+Bartender4: disabled
+CrossRealmAssist: enabled
++Wowhead_Looter: disabled
+LUI: enabled

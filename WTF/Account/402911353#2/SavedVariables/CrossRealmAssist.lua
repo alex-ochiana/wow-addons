@@ -1,0 +1,41 @@
+
+CrossRealmAssistDB = {
+	["profileKeys"] = {
+		["Resum - Sylvanas"] = "Resum - Sylvanas",
+		["Razetlar - Sylvanas"] = "Razetlar - Sylvanas",
+		["Ialadriel - Sylvanas"] = "Ialadriel - Sylvanas",
+		["Reomunes - Sylvanas"] = "Reomunes - Sylvanas",
+		["Morgulius - Outland"] = "Morgulius - Outland",
+		["Morgrock - Outland"] = "Morgrock - Outland",
+		["Flundan - Sylvanas"] = "Flundan - Sylvanas",
+		["Suntuncal - Outland"] = "Suntuncal - Outland",
+		["Wandingo - Sylvanas"] = "Wandingo - Sylvanas",
+		["Aegwen - Sylvanas"] = "Aegwen - Sylvanas",
+		["Mugugagagigi - Ragnaros"] = "Mugugagagigi - Ragnaros",
+		["Rillya - Sylvanas"] = "Rillya - Sylvanas",
+		["Envra - Sylvanas"] = "Envra - Sylvanas",
+		["Jermiene - Argent Dawn"] = "Jermiene - Argent Dawn",
+		["Granguel - Outland"] = "Granguel - Outland",
+		["Sydernea - Sylvanas"] = "Sydernea - Sylvanas",
+		["Igormaster - Outland"] = "Igormaster - Outland",
+		["Elliama - Outland"] = "Elliama - Outland",
+		["Garwen - Outland"] = "Garwen - Outland",
+		["Lorktnar - Sylvanas"] = "Lorktnar - Sylvanas",
+		["Delnaara - Sylvanas"] = "Delnaara - Sylvanas",
+		["Ilaka - Sylvanas"] = "Ilaka - Sylvanas",
+		["Mokacaka - Outland"] = "Mokacaka - Outland",
+		["Batdingoman - Outland"] = "Batdingoman - Outland",
+		["Drenogrilari - Outland"] = "Drenogrilari - Outland",
+	},
+	["global"] = {
+		["minimap"] = {
+			["hide"] = true,
+		},
+		["widgetPos"] = {
+			["y"] = 63.4667892456055,
+			["x"] = -79.4666976928711,
+			["to"] = "RIGHT",
+		},
+		["quickJoinHint"] = false,
+	},
+}

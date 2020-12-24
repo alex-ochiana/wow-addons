@@ -1,0 +1,45 @@
+
+DataStore_CraftsDB = {
+	["profileKeys"] = {
+		["Aegwen - Sylvanas"] = "Aegwen - Sylvanas",
+	},
+	["global"] = {
+		["Characters"] = {
+			["Default.Sylvanas.Aegwen"] = {
+				["ArcheologyItems"] = {
+					[88929] = true,
+					[168315] = true,
+				},
+				["Professions"] = {
+					["Cooking"] = {
+						["MaxRank"] = 700,
+						["Rank"] = 519,
+					},
+					["Archaeology"] = {
+						["MaxRank"] = 75,
+						["Rank"] = 27,
+					},
+					["Fishing"] = {
+						["MaxRank"] = 700,
+						["Rank"] = 100,
+					},
+					["Herbalism"] = {
+						["MaxRank"] = 700,
+						["Rank"] = 300,
+					},
+					["First Aid"] = {
+						["MaxRank"] = 700,
+						["Rank"] = 271,
+					},
+					["Alchemy"] = {
+						["MaxRank"] = 700,
+						["Rank"] = 700,
+					},
+				},
+				["Prof2"] = "Herbalism",
+				["lastUpdate"] = 1460027706,
+				["Prof1"] = "Alchemy",
+			},
+		},
+	},
+}

@@ -1,0 +1,236 @@
+
+DataStore_ContainersDB = {
+	["profileKeys"] = {
+		["Aegwen - Sylvanas"] = "Aegwen - Sylvanas",
+	},
+	["global"] = {
+		["Characters"] = {
+			["Default.Sylvanas.Aegwen"] = {
+				["lastUpdate"] = 1460027706,
+				["Containers"] = {
+					["Bag-3"] = {
+						["size"] = 98,
+					},
+					["Bag3"] = {
+						["rarity"] = 2,
+						["ids"] = {
+							[13] = 110639,
+						},
+						["links"] = {
+							[13] = "|cff0070dd|Hitem:110639:0:0:0:0:0:0:0:100:102:0:0:0|h[Enchant Ring - Gift of Haste]|h|r",
+						},
+						["link"] = "|cff1eff00|Hitem:54443:0:0:0:0:0:0:0:100:102:0:0:0|h[Embersilk Bag]|h|r",
+						["icon"] = "Interface\\ICONS\\INV_Misc_Bag_32.blp",
+						["size"] = 22,
+						["freeslots"] = 21,
+					},
+					["Bag4"] = {
+						["rarity"] = 2,
+						["ids"] = {
+							nil, -- [1]
+							nil, -- [2]
+							118297, -- [3]
+							118301, -- [4]
+							125971, -- [5]
+							125801, -- [6]
+							45073, -- [7]
+							113799, -- [8]
+							44792, -- [9]
+							6833, -- [10]
+							19028, -- [11]
+							98080, -- [12]
+							118365, -- [13]
+							115517, -- [14]
+							125798, -- [15]
+							125799, -- [16]
+							125805, -- [17]
+							125803, -- [18]
+							128218, -- [19]
+							113800, -- [20]
+							44803, -- [21]
+							6835, -- [22]
+						},
+						["links"] = {
+							nil, -- [1]
+							nil, -- [2]
+							"|cffa335ee|Hitem:118297:5284:0:0:0:0:0:0:100:102:0:11:0|h[Timeless Solium Band of the Assassin]|h|r", -- [3]
+							"|cffa335ee|Hitem:118301:0:0:0:0:0:0:0:100:102:0:11:0|h[Spellbound Solium Band of the Kirin-Tor]|h|r", -- [4]
+							"|cffa335ee|Hitem:125971:0:0:0:0:0:0:0:100:102:0:14:0|h[Warmongering Gladiator's Insignia of Conquest]|h|r", -- [5]
+							"|cffa335ee|Hitem:125801:5321:0:0:0:0:0:0:100:102:0:14:0|h[Warmongering Gladiator's Necklace of Cruelty]|h|r", -- [6]
+							"|cffffffff|Hitem:45073:0:0:0:0:0:0:0:100:102:0:0:0|h[Spring Flowers]|h|r", -- [7]
+							"|cff0070dd|Hitem:113799:0:0:0:0:0:0:0:100:102:0:14:0|h[Shadowmoon Robes]|h|r", -- [8]
+							"|cffffffff|Hitem:44792:0:0:0:0:0:0:0:100:102:0:0:0|h[Blossoming Branch]|h|r", -- [9]
+							"|cffffffff|Hitem:6833:0:0:0:0:0:0:0:100:102:0:0:0|h[White Tuxedo Shirt]|h|r", -- [10]
+							"|cffffffff|Hitem:19028:0:0:0:0:0:0:0:100:102:0:0:0|h[Elegant Dress]|h|r", -- [11]
+							"|cff0070dd|Hitem:98080:0:0:0:0:0:0:0:100:102:0:11:0|h[Gorgeous Blouse]|h|r", -- [12]
+							"|cff0070dd|Hitem:118365:0:0:0:0:0:0:0:100:102:0:11:0|h[Stormwind Tabard]|h|r", -- [13]
+							"|cff0070dd|Hitem:115517:0:0:0:0:0:0:0:100:102:0:14:0|h[Wrynn's Vanguard Tabard]|h|r", -- [14]
+							"|cffa335ee|Hitem:125798:5330:0:0:0:0:0:0:100:102:0:14:0|h[Warmongering Gladiator's Staff]|h|r", -- [15]
+							"|cffa335ee|Hitem:125799:5314:0:0:0:0:0:0:100:102:0:14:0|h[Warmongering Gladiator's Cape of Cruelty]|h|r", -- [16]
+							"|cffa335ee|Hitem:125805:5328:0:0:0:0:0:0:100:102:0:14:0|h[Warmongering Gladiator's Ring of Triumph]|h|r", -- [17]
+							"|cffa335ee|Hitem:125803:5328:0:0:0:0:0:0:100:102:0:14:0|h[Warmongering Gladiator's Ring of Cruelty]|h|r", -- [18]
+							"|cff1eff00|Hitem:128218:0:0:0:0:0:0:0:100:102:0:0:0|h[Fel-Proof Goggles]|h|r", -- [19]
+							"|cff0070dd|Hitem:113800:0:0:0:0:0:0:0:100:102:0:14:0|h[Shadowmoon Grips]|h|r", -- [20]
+							"|cffffffff|Hitem:44803:0:0:0:0:0:0:0:100:102:0:0:0|h[Spring Circlet]|h|r", -- [21]
+							"|cffffffff|Hitem:6835:0:0:0:0:0:0:0:100:102:0:0:0|h[Black Tuxedo Pants]|h|r", -- [22]
+						},
+						["link"] = "|cff1eff00|Hitem:54443:0:0:0:0:0:0:0:100:102:0:0:0|h[Embersilk Bag]|h|r",
+						["icon"] = "Interface\\ICONS\\INV_Misc_Bag_32.blp",
+						["size"] = 22,
+						["freeslots"] = 2,
+					},
+					["Bag0"] = {
+						["ids"] = {
+							6948, -- [1]
+							110560, -- [2]
+							111603, -- [3]
+							111603, -- [4]
+							108920, -- [5]
+							6662, -- [6]
+							6662, -- [7]
+							85663, -- [8]
+							6256, -- [9]
+							3371, -- [10]
+							108996, -- [11]
+							118922, -- [12]
+							113540, -- [13]
+							79249, -- [14]
+							122453, -- [15]
+							120945, -- [16]
+						},
+						["links"] = {
+							"|cffffffff|Hitem:6948:0:0:0:0:0:0:0:100:102:0:0:0|h[Hearthstone]|h|r", -- [1]
+							"|cffffffff|Hitem:110560:0:0:0:0:0:0:0:100:102:0:11:0|h[Garrison Hearthstone]|h|r", -- [2]
+							"|cffffffff|Hitem:111603:0:0:0:0:0:0:0:100:102:0:0:0|h[Antiseptic Bandage]|h|r", -- [3]
+							"|cffffffff|Hitem:111603:0:0:0:0:0:0:0:100:102:0:0:0|h[Antiseptic Bandage]|h|r", -- [4]
+							"|cffffffff|Hitem:108920:0:0:0:0:0:0:0:100:102:0:0:0|h[Lemon Flower Pudding]|h|r", -- [5]
+							"|cffffffff|Hitem:6662:0:0:0:0:0:0:0:100:102:0:0:0|h[Elixir of Giant Growth]|h|r", -- [6]
+							"|cffffffff|Hitem:6662:0:0:0:0:0:0:0:100:102:0:0:0|h[Elixir of Giant Growth]|h|r", -- [7]
+							"|cffffffff|Hitem:85663:0:0:0:0:0:0:0:100:102:0:14:0|h[Herbalist's Spade]|h|r", -- [8]
+							"|cffffffff|Hitem:6256:0:0:0:0:0:0:0:100:102:0:14:0|h[Fishing Pole]|h|r", -- [9]
+							"|cffffffff|Hitem:3371:0:0:0:0:0:0:0:100:102:0:0:0|h[Crystal Vial]|h|r", -- [10]
+							"|cff1eff00|Hitem:108996:0:0:0:0:0:0:0:100:102:0:0:0|h[Alchemical Catalyst]|h|r", -- [11]
+							"|cff0070dd|Hitem:118922:0:0:0:0:0:0:0:100:102:0:11:0|h[Oralius' Whispering Crystal]|h|r", -- [12]
+							"|cff0070dd|Hitem:113540:0:0:0:0:0:0:0:100:102:0:0:0|h[Ba'ruun's Bountiful Bloom]|h|r", -- [13]
+							"|cffffffff|Hitem:79249:0:0:0:0:0:0:0:100:102:0:0:0|h[Tome of the Clear Mind]|h|r", -- [14]
+							"|cffffffff|Hitem:122453:0:0:0:0:0:0:0:100:102:0:0:0|h[Commander's Draenic Agility Potion]|h|r", -- [15]
+							"|cff1eff00|Hitem:120945:0:0:0:0:0:0:0:100:102:0:0:0|h[Primal Spirit]|h|r", -- [16]
+						},
+						["icon"] = "Interface\\Buttons\\Button-Backpack-Up",
+						["cooldowns"] = {
+							[2] = "4408.331|1200|1",
+						},
+						["size"] = 16,
+						["counts"] = {
+							nil, -- [1]
+							nil, -- [2]
+							20, -- [3]
+							7, -- [4]
+							11, -- [5]
+							20, -- [6]
+							20, -- [7]
+							nil, -- [8]
+							nil, -- [9]
+							33, -- [10]
+							51, -- [11]
+							nil, -- [12]
+							nil, -- [13]
+							65, -- [14]
+							7, -- [15]
+							78, -- [16]
+						},
+					},
+					["Bag1"] = {
+						["rarity"] = 2,
+						["ids"] = {
+							122451, -- [1]
+							112090, -- [2]
+							112090, -- [3]
+							118700, -- [4]
+							116053, -- [5]
+							109693, -- [6]
+							128320, -- [7]
+							127669, -- [8]
+							128510, -- [9]
+							115525, -- [10]
+							128507, -- [11]
+							128506, -- [12]
+							128505, -- [13]
+							87399, -- [14]
+							116415, -- [15]
+							124099, -- [16]
+							113681, -- [17]
+							128373, -- [18]
+							115510, -- [19]
+							122298, -- [20]
+							6662, -- [21]
+							118627, -- [22]
+						},
+						["links"] = {
+							"|cffffffff|Hitem:122451:0:0:0:0:0:0:0:100:102:0:0:0|h[Commander's Draenic Invisibility Potion]|h|r", -- [1]
+							"|cffffffff|Hitem:112090:0:0:0:0:0:0:0:100:102:0:0:0|h[Transmorphic Tincture]|h|r", -- [2]
+							"|cffffffff|Hitem:112090:0:0:0:0:0:0:0:100:102:0:0:0|h[Transmorphic Tincture]|h|r", -- [3]
+							"|cffffffff|Hitem:118700:0:0:0:0:0:0:0:100:102:0:0:0|h[Secret of Draenor Alchemy]|h|r", -- [4]
+							"|cffffffff|Hitem:116053:0:0:0:0:0:0:0:100:102:0:0:0|h[Draenic Seeds]|h|r", -- [5]
+							"|cffffffff|Hitem:109693:0:0:0:0:0:0:0:100:102:0:0:0|h[Draenic Dust]|h|r", -- [6]
+							"|cff0070dd|Hitem:128320:0:0:0:0:0:0:0:100:102:0:0:0|h[Corrupted Primal Obelisk]|h|r", -- [7]
+							"|cff0070dd|Hitem:127669:0:0:0:0:0:0:0:100:102:0:0:0|h[Skull of the Mad Chief]|h|r", -- [8]
+							"|cffa335ee|Hitem:128510:0:0:0:0:0:0:0:100:102:0:0:0|h[Exquisite Costume Set: \"Edwin VanCleef\"]|h|r", -- [9]
+							"|cff0070dd|Hitem:115525:0:0:0:0:0:0:0:100:102:0:0:0|h[Scary Ogre Face]|h|r", -- [10]
+							"|cff0070dd|Hitem:128507:0:0:0:0:0:0:0:100:102:0:0:0|h[Inflatable Thunderfury, Blessed Blade of the Windseeker]|h|r", -- [11]
+							"|cffffffff|Hitem:128506:0:0:0:0:0:0:0:100:102:0:0:0|h[Celebration Wand - Gnoll]|h|r", -- [12]
+							"|cffffffff|Hitem:128505:0:0:0:0:0:0:0:100:102:0:0:0|h[Celebration Wand - Murloc]|h|r", -- [13]
+							"|cffffffff|Hitem:87399:0:0:0:0:0:0:0:100:102:0:0:0|h[Restored Artifact]|h|r", -- [14]
+							"|cffffffff|Hitem:116415:0:0:0:0:0:0:0:100:102:0:0:0|h[Pet Charm]|h|r", -- [15]
+							"|cffffffff|Hitem:124099:0:0:0:0:0:0:0:100:102:0:0:0|h[Blackfang Claw]|h|r", -- [16]
+							"|cffffffff|Hitem:113681:0:0:0:0:0:0:0:100:102:0:0:0|h[Iron Horde Scraps]|h|r", -- [17]
+							"|cffffffff|Hitem:128373:0:0:0:0:0:0:0:100:102:0:0:0|h[Rush Order: Shipyard]|h|r", -- [18]
+							"|cffff8000|Hitem:115510:0:0:0:0:0:0:0:100:102:0:0:0|h[Elemental Rune]|h|r", -- [19]
+							"|cff0070dd|Hitem:122298:0:0:0:0:0:0:0:100:102:0:14:0|h[Bodyguard Miniaturization Device]|h|r", -- [20]
+							"|cffffffff|Hitem:6662:0:0:0:0:0:0:0:100:102:0:0:0|h[Elixir of Giant Growth]|h|r", -- [21]
+							"|cffffffff|Hitem:118627:0:0:0:0:0:0:0:100:102:0:2:0|h[Strangely-Glowing Frond]|h|r", -- [22]
+						},
+						["link"] = "|cff1eff00|Hitem:54443:0:0:0:0:0:0:0:100:102:0:0:0|h[Embersilk Bag]|h|r",
+						["icon"] = "Interface\\ICONS\\INV_Misc_Bag_32.blp",
+						["size"] = 22,
+						["counts"] = {
+							4, -- [1]
+							20, -- [2]
+							2, -- [3]
+							3, -- [4]
+							115, -- [5]
+							25, -- [6]
+							[17] = 115,
+							[15] = 6,
+							[19] = 153,
+							[16] = 97,
+							[21] = 10,
+						},
+					},
+					["Bag2"] = {
+						["rarity"] = 2,
+						["ids"] = {
+							108977, -- [1]
+							118280, -- [2]
+							119181, -- [3]
+							113823, -- [4]
+						},
+						["links"] = {
+							"|cff9d9d9d|Hitem:108977:0:0:0:0:0:0:0:100:102:0:0:0|h[Tangled Vines]|h|r", -- [1]
+							"|cff9d9d9d|Hitem:118280:0:0:0:0:0:0:0:100:102:0:0:0|h[Succulent Offshoot]|h|r", -- [2]
+							"|cff0070dd|Hitem:119181:0:0:0:0:0:0:0:100:102:4:2:2:40:524:529|h[Hoof of Yalnu]|h|r", -- [3]
+							"|cffffffff|Hitem:113823:0:0:0:0:0:0:0:100:102:0:0:0|h[Crusted Iron Horde Pauldrons]|h|r", -- [4]
+						},
+						["link"] = "|cff1eff00|Hitem:54443:0:0:0:0:0:0:0:100:102:0:0:0|h[Embersilk Bag]|h|r",
+						["icon"] = "Interface\\ICONS\\INV_Misc_Bag_32.blp",
+						["size"] = 22,
+						["freeslots"] = 18,
+					},
+				},
+				["numFreeBagSlots"] = 41,
+				["numBagSlots"] = 104,
+			},
+		},
+		["Version"] = 1,
+	},
+}

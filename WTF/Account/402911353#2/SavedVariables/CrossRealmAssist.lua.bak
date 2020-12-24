@@ -1,0 +1,16 @@
+
+CrossRealmAssistDB = {
+	["profileKeys"] = {
+		["Aegwen - Sylvanas"] = "Aegwen - Sylvanas",
+	},
+	["global"] = {
+		["widgetPos"] = {
+			["y"] = -174.622222900391,
+			["x"] = -9.06664085388184,
+			["to"] = "TOPRIGHT",
+		},
+		["minimap"] = {
+			["hide"] = true,
+		},
+	},
+}

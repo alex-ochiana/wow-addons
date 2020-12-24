@@ -1,0 +1,50 @@
+VER 3 0100000000000003 "asd" "INV_MISC_QUESTIONMARK"
+#showtooltip Enraged Regeneration
+/cast Berseker Rage
+/cast Die by the Sword
+/cast Enraged Regeneration
+END
+VER 3 0100000000000005 "dps" "INV_MISC_QUESTIONMARK"
+#showtooltip Avatar
+/cast Avatar
+/cast Berserker Rage
+/cast Battle Cry
+/cast Enraged Regeneration
+/cast Commanding Shout
+/use 13
+END
+VER 3 0100000000000007 "dps prot" "INV_MISC_QUESTIONMARK"
+#showtooltip Avatar
+/cast Avatar
+/cast Berserker Rage
+/cast Battle Cry
+/cast Enraged Regeneration
+/cast Commanding Shout
+/cast Last Stand
+/cast Focused Rage
+/use 13
+END
+VER 3 0100000000000006 "dpsarms" "INV_MISC_QUESTIONMARK"
+#showtooltip Battle Cry
+/use Battle Cry
+/use Die by the Sword
+/use Avatar
+/use 13
+/use Commanding Shout
+END
+VER 3 0100000000000004 "Recklesness" "INV_MISC_QUESTIONMARK"
+#showtooltip Recklessness
+/use Bloodbath
+/use Avatar
+/use Recklessness
+/use Blood Fury
+/use Rallying Cry
+/use 13
+END
+VER 3 0100000000000001 "Recklessness" "INV_MISC_QUESTIONMARK"
+#showtooltip Recklessness
+/use Recklessness
+/use 13
+/use Rallying Cry
+/use Sweeping Strikes
+END

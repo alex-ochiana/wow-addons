@@ -1,0 +1,8 @@
+
+IEF_Config = {
+	["hideTrackingBar"] = false,
+	["hideFrameRateCinematic"] = true,
+	["hideFrameRate"] = true,
+	["hideChatFrame"] = false,
+	["trackingBarAlpha"] = 0.33,
+}

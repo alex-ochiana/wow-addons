@@ -1,0 +1,55 @@
+BINDINGMODE 0
+bind BUTTON3 ACTIONBUTTON6
+bind Q CLICK LUIBarBottom1Button6:LeftButton
+bind E CLICK LUIBarBottom1Button7:LeftButton
+bind BUTTON4 NONE
+bind PAGEDOWN NONE
+bind 1 CLICK LUIBarBottom1Button1:LeftButton
+bind 2 CLICK LUIBarBottom1Button2:LeftButton
+bind 3 CLICK LUIBarBottom1Button3:LeftButton
+bind 4 CLICK LUIBarBottom1Button4:LeftButton
+bind 5 CLICK LUIBarBottom1Button5:LeftButton
+bind 7 NONE
+bind 8 NONE
+bind 9 NONE
+bind 0 NONE
+bind - NONE
+bind = NONE
+bind CTRL-F1 NONE
+bind CTRL-1 CLICK LUIBarBottom6Button9:LeftButton
+bind CTRL-2 CLICK LUIBarBottom6Button10:LeftButton
+bind CTRL-3 CLICK LUIBarBottom6Button11:LeftButton
+bind CTRL-4 CLICK LUIBarBottom6Button12:LeftButton
+bind SHIFT-1 CLICK LUIBarBottom6Button5:LeftButton
+bind SHIFT-2 CLICK LUIBarBottom6Button6:LeftButton
+bind SHIFT-3 CLICK LUIBarBottom6Button7:LeftButton
+bind SHIFT-4 CLICK LUIBarBottom6Button8:LeftButton
+bind SHIFT-5 CLICK BT4Button25:LeftButton
+bind SHIFT-MOUSEWHEELUP BONUSACTIONBUTTON1
+bind SHIFT-MOUSEWHEELDOWN BONUSACTIONBUTTON2
+bind F1 CLICK LUIBarBottom6Button1:LeftButton
+bind F2 CLICK LUIBarBottom6Button2:LeftButton
+bind F3 CLICK LUIBarBottom6Button3:LeftButton
+bind F4 CLICK LUIBarBottom6Button4:LeftButton
+bind F5 NONE
+bind G CLICK LUIBarBottom3Button2:LeftButton
+bind F CLICK LUIBarBottom1Button8:LeftButton
+bind END CLICK LUIBarBottom3Button8:LeftButton
+bind CTRL-Q CLICK LUIBarBottom3Button11:LeftButton
+bind CTRL-E CLICK LUIBarBottom3Button12:LeftButton
+bind NUMPAD5 CLICK LUIBarBottom3Button7:LeftButton
+bind NUMPAD1 CLICK LUIBarBottom3Button1:LeftButton
+bind NUMPAD3 CLICK LUIBarBottom3Button5:LeftButton
+bind SHIFT-G CLICK LUIBarBottom3Button3:LeftButton
+bind SHIFT-C TOGGLECURRENCY
+bind ` CLICK LUIBarBottom1Button12:LeftButton
+bind SHIFT-Q CLICK LUIBarBottom1Button9:LeftButton
+bind SHIFT-E CLICK LUIBarBottom1Button10:LeftButton
+bind SHIFT-F CLICK LUIBarBottom1Button11:LeftButton
+bind NUMPAD4 CLICK LUIBarBottom3Button6:LeftButton
+bind NUMPAD2 CLICK LUIBarBottom3Button4:LeftButton
+bind NUMPAD6 MULTIACTIONBAR2BUTTON12
+bind CTRL-NUMPAD1 CLICK LUIBarBottom3Button9:LeftButton
+bind CTRL-NUMPAD2 CLICK LUIBarBottom3Button10:LeftButton
+bind NUMPAD7 TOGGLEAUTORUN
+modifiedclick NONE _NPCSCAN_BUTTONDRAG

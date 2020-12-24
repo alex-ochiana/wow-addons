@@ -1,0 +1,21 @@
+VER 3 0100000000000001 "a" "INV_MISC_QUESTIONMARK"
+#showtooltip Avenging Wrath
+/cast Avenging Wrath
+/use 13
+/cast Holy Avenger
+/cast Divine Protection
+/cast Execution Sentence
+END
+VER 3 0100000000000002 "b" "INV_MISC_QUESTIONMARK"
+#showtooltip Holy Wrath
+/cast Holy Wrath
+/use 13
+/cast Holy Avenger
+/cast Guardian of Ancient Kings
+/cast Ardent Defender
+END
+VER 3 0100000000000003 "hp" "INV_MISC_QUESTIONMARK"
+#showtooltip Hand of Protection
+/stopcasting
+/cast [@mouseover] Hand of Protection
+END

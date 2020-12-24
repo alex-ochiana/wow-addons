@@ -1,0 +1,221 @@
+
+RoguePowerBarsDB = {
+	["profileKeys"] = {
+		["Aegwen - Sylvanas"] = "Aegwen - Sylvanas",
+	},
+	["profiles"] = {
+		["Aegwen - Sylvanas"] = {
+			["debuffs"] = {
+				["Rake"] = {
+					["Name"] = "Rake",
+					["Color"] = {
+						["a"] = 0.8,
+						["b"] = 0.3,
+						["g"] = 0.3,
+						["r"] = 0.3,
+					},
+					["Priority"] = 0,
+					["Barset"] = 2,
+					["IsEnabled"] = true,
+				},
+				["Rip"] = {
+					["Name"] = "Rip",
+					["Color"] = {
+						["a"] = 0.8,
+						["b"] = 0.3,
+						["g"] = 0.3,
+						["r"] = 0.3,
+					},
+					["Priority"] = 0,
+					["Barset"] = 2,
+					["IsEnabled"] = true,
+				},
+				["Lacerate"] = {
+					["Name"] = "Lacerate",
+					["Color"] = {
+						["a"] = 0.8,
+						["b"] = 0.3,
+						["g"] = 0.3,
+						["r"] = 0.3,
+					},
+					["Priority"] = 0,
+					["Barset"] = 2,
+					["IsEnabled"] = true,
+				},
+				["Sunfire"] = {
+					["Name"] = "Sunfire",
+					["Color"] = {
+						["a"] = 0.8,
+						["b"] = 0.3,
+						["g"] = 0.3,
+						["r"] = 0.3,
+					},
+					["Priority"] = 0,
+					["Barset"] = 2,
+					["IsEnabled"] = true,
+				},
+				["Moonfire"] = {
+					["Name"] = "Moonfire",
+					["Color"] = {
+						["a"] = 0.8,
+						["b"] = 0.3,
+						["g"] = 0.3,
+						["r"] = 0.3,
+					},
+					["Priority"] = 0,
+					["Barset"] = 2,
+					["IsEnabled"] = true,
+				},
+				["Thrash"] = {
+					["Name"] = "Thrash",
+					["Color"] = {
+						["a"] = 0.8,
+						["b"] = 0.3,
+						["g"] = 0.3,
+						["r"] = 0.3,
+					},
+					["Priority"] = 0,
+					["Barset"] = 2,
+					["IsEnabled"] = true,
+				},
+			},
+			["version"] = "20141018153146",
+			["buffs"] = {
+				["Lifebloom"] = {
+					["Name"] = "Lifebloom",
+					["Color"] = {
+						["a"] = 0.8,
+						["b"] = 0.3,
+						["g"] = 0.3,
+						["r"] = 0.3,
+					},
+					["Priority"] = 0,
+					["Barset"] = 1,
+					["IsEnabled"] = true,
+				},
+				["LeaderofthePack"] = {
+					["Name"] = "Leader of the Pack",
+					["Color"] = {
+						["a"] = 0.8,
+						["b"] = 0.3,
+						["g"] = 0.3,
+						["r"] = 0.3,
+					},
+					["Priority"] = 0,
+					["Barset"] = 1,
+					["IsEnabled"] = true,
+				},
+				["MoonkinAura"] = {
+					["Name"] = "Moonkin Aura",
+					["Color"] = {
+						["a"] = 0.8,
+						["b"] = 0.3,
+						["g"] = 0.3,
+						["r"] = 0.3,
+					},
+					["Priority"] = 0,
+					["Barset"] = 1,
+					["IsEnabled"] = true,
+				},
+				["Regrowth"] = {
+					["Name"] = "Regrowth",
+					["Color"] = {
+						["a"] = 0.8,
+						["b"] = 0.3,
+						["g"] = 0.3,
+						["r"] = 0.3,
+					},
+					["Priority"] = 0,
+					["Barset"] = 1,
+					["IsEnabled"] = true,
+				},
+				["Ironbark"] = {
+					["Name"] = "Ironbark",
+					["Color"] = {
+						["a"] = 0.8,
+						["b"] = 0.3,
+						["g"] = 0.3,
+						["r"] = 0.3,
+					},
+					["Priority"] = 0,
+					["Barset"] = 1,
+					["IsEnabled"] = true,
+				},
+				["Rejuvenation"] = {
+					["Name"] = "Rejuvenation",
+					["Color"] = {
+						["a"] = 0.8,
+						["b"] = 0.3,
+						["g"] = 0.3,
+						["r"] = 0.3,
+					},
+					["Priority"] = 0,
+					["Barset"] = 1,
+					["IsEnabled"] = true,
+				},
+				["WildGrowth"] = {
+					["Name"] = "Wild Growth",
+					["Color"] = {
+						["a"] = 0.8,
+						["b"] = 0.3,
+						["g"] = 0.3,
+						["r"] = 0.3,
+					},
+					["Priority"] = 0,
+					["Barset"] = 1,
+					["IsEnabled"] = true,
+				},
+				["MarkoftheWild"] = {
+					["Name"] = "Mark of the Wild",
+					["Color"] = {
+						["a"] = 0.8,
+						["b"] = 0.3,
+						["g"] = 0.3,
+						["r"] = 0.3,
+					},
+					["Priority"] = 0,
+					["Barset"] = 1,
+					["IsEnabled"] = true,
+				},
+			},
+			["othersDebuffs"] = {
+				["Mangle(Cat)"] = {
+					["Name"] = "Mangle (Cat)",
+					["Color"] = {
+						["a"] = 0.8,
+						["b"] = 0,
+						["g"] = 0.8,
+						["r"] = 0.9,
+					},
+					["Priority"] = 0,
+					["Barset"] = 2,
+					["IsEnabled"] = true,
+				},
+				["Mangle(Bear)"] = {
+					["Name"] = "Mangle (Bear)",
+					["Color"] = {
+						["a"] = 0.8,
+						["b"] = 0,
+						["g"] = 0.8,
+						["r"] = 0.9,
+					},
+					["Priority"] = 0,
+					["Barset"] = 2,
+					["IsEnabled"] = true,
+				},
+				["ExposeArmor"] = {
+					["Name"] = "Expose Armor",
+					["Color"] = {
+						["a"] = 0.8,
+						["b"] = 0.7,
+						["g"] = 0.5,
+						["r"] = 0.3,
+					},
+					["Priority"] = 0,
+					["Barset"] = 2,
+					["IsEnabled"] = true,
+				},
+			},
+		},
+	},
+}

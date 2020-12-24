@@ -1,0 +1,30 @@
+
+DataStore_CharactersDB = {
+	["profileKeys"] = {
+		["Aegwen - Sylvanas"] = "Aegwen - Sylvanas",
+	},
+	["global"] = {
+		["Characters"] = {
+			["Default.Sylvanas.Aegwen"] = {
+				["XPMax"] = 854100,
+				["played"] = 1167237,
+				["isResting"] = true,
+				["lastUpdate"] = 1460027866,
+				["class"] = "Druid",
+				["race"] = "Night Elf",
+				["level"] = 100,
+				["XP"] = 0,
+				["RestXP"] = 0,
+				["money"] = 45032158,
+				["gender"] = 3,
+				["subZone"] = "Aegwen's Garrison",
+				["name"] = "Aegwen",
+				["faction"] = "Alliance",
+				["englishRace"] = "NightElf",
+				["zone"] = "Lunarfall",
+				["lastLogoutTimestamp"] = 1460027866,
+				["englishClass"] = "DRUID",
+			},
+		},
+	},
+}

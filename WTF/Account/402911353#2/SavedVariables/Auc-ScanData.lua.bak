@@ -1,0 +1,15 @@
+
+AucScanData = {
+	["Version"] = 1.4,
+	["scans"] = {
+		["Sylvanas"] = {
+			["scanstats"] = {
+				["ImageUpdated"] = 1456325656,
+			},
+			["image"] = "rope",
+			["ropes"] = {
+				"return {}", -- [1]
+			},
+		},
+	},
+}

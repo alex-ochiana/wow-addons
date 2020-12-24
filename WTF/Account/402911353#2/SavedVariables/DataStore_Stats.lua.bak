@@ -1,0 +1,23 @@
+
+DataStore_StatsDB = {
+	["profileKeys"] = {
+		["Aegwen - Sylvanas"] = "Aegwen - Sylvanas",
+	},
+	["global"] = {
+		["Characters"] = {
+			["Default.Sylvanas.Aegwen"] = {
+				["lastUpdate"] = 1460027706,
+				["Stats"] = {
+					["Ranged"] = "1-2|0|0|0|21.381816864014",
+					["HealthMax"] = 368700,
+					["Melee"] = "1441-1727|1.7520000934601|1352|0|21.381816864014|0",
+					["MaxPower"] = "0|160000",
+					["Defense"] = "3738|1|5.3190340995789|0|0|0",
+					["PVP"] = "3381|0",
+					["Base"] = "653|1352|6145|5383|782|3738",
+					["Spell"] = "7398|7398|0|20.381816864014|1276|7334",
+				},
+			},
+		},
+	},
+}
