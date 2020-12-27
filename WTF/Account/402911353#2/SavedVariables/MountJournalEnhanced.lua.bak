@@ -58,6 +58,13 @@ MJEGlobalSettings = {
 			["Reputation"] = true,
 		},
 		["notCollected"] = false,
+		["onlyUsable"] = false,
+		["onlyFavorites"] = false,
+		["faction"] = {
+			["horde"] = true,
+			["alliance"] = true,
+			["noFaction"] = true,
+		},
 		["mountType"] = {
 			["repair"] = true,
 			["flying"] = true,
@@ -65,13 +72,6 @@ MJEGlobalSettings = {
 			["transform"] = true,
 			["ground"] = true,
 			["passenger"] = true,
-		},
-		["onlyFavorites"] = false,
-		["onlyUsable"] = false,
-		["faction"] = {
-			["horde"] = true,
-			["alliance"] = true,
-			["noFaction"] = true,
 		},
 		["onlyTradable"] = false,
 		["collected"] = true,
@@ -156,10 +156,10 @@ MJEGlobalSettings = {
 				["Direhorns"] = true,
 			},
 			["Rays"] = {
-				["Nether Rays"] = true,
 				["Stingrays"] = true,
-				["Mana Rays"] = true,
 				["Fathom Rays"] = true,
+				["Mana Rays"] = true,
+				["Nether Rays"] = true,
 			},
 			["Demons"] = {
 				["Felsabers"] = true,
@@ -198,9 +198,9 @@ MJEGlobalSettings = {
 				["Snapdragons"] = true,
 				["Turtles"] = true,
 				["Crocolisks"] = true,
+				["Mushan"] = true,
 				["Kodos"] = true,
 				["Basilisks"] = true,
-				["Mushan"] = true,
 				["Sea Serpents"] = true,
 				["N'Zoth Serpents"] = true,
 			},
@@ -774,10 +774,10 @@ MJETrackingData = {
 		[5] = 1513850400,
 	},
 	[460] = {
-		104, -- [1]
-		1608762879, -- [2]
+		105, -- [1]
+		1608814692, -- [2]
 		9153, -- [3]
-		13887.21686023104, -- [4]
+		14170.80721515468, -- [4]
 	},
 	[55] = {
 		0, -- [1]

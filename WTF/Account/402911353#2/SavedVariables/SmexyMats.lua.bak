@@ -26,22 +26,32 @@ SmexyMatsDB = {
 		["Sylvanas"] = {
 			["Alliance"] = {
 				["Cooking"] = {
+					["Crètz"] = {
+					},
 				},
 				["Tailoring"] = {
 					["Egidus"] = {
 					},
 				},
 				["Archaeology"] = {
-				},
-				["Fishing"] = {
+					["Crètz"] = {
+					},
 				},
 				["Herbalism"] = {
+					["Crètz"] = {
+					},
+				},
+				["Alchemy"] = {
+					["Crètz"] = {
+					},
 				},
 				["Leatherworking"] = {
 					["Kynaeth"] = {
 					},
 				},
-				["Alchemy"] = {
+				["Fishing"] = {
+					["Crètz"] = {
+					},
 				},
 				["Enchanting"] = {
 					["Egidus"] = {
