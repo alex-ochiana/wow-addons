@@ -310,6 +310,7 @@ local function StrUpper(str, i, j)
     end
 end
 GW.StrUpper = StrUpper
+
 local function StrLower(str, i, j)
     if not str or IsIn(GW.mylocal, "koKR", "zhCN", "zhTW") then
         return str
@@ -539,31 +540,42 @@ local function setItemLevel(button, quality, itemlink, slot)
 end
 GW.setItemLevel = setItemLevel
 
-local function GetPlayerRole()
-    local assignedRole = UnitGroupRolesAssigned("player")
-    if assignedRole == "NONE" then
-        return GW.myspec and GetSpecializationRole(GW.myspec)
-    end
-
-    return assignedRole
-end
-GW.GetPlayerRole = GetPlayerRole
-
-local function CheckRole()
-    GW.myspec = GetSpecialization()
-    GW.myrole = GetPlayerRole()
-
-    -- myrole = group role; TANK, HEALER, DAMAGER
-
-    local dispel = GW.DispelClasses[GW.myclass]
-    if GW.myrole and (GW.myclass ~= "PRIEST" and dispel ~= nil) then
-        dispel.Magic = (GW.myrole == "HEALER")
-    end
-end
-GW.CheckRole = CheckRole
-
 local function IsDispellableByMe(debuffType)
     local dispel = GW.DispelClasses[GW.myclass]
     return dispel and dispel[debuffType]
 end
 GW.IsDispellableByMe = IsDispellableByMe
+
+local function GetScreenQuadrant(frame)
+    local x, y = frame:GetCenter()
+    local screenWidth = GetScreenWidth()
+    local screenHeight = GetScreenHeight()
+
+    if not (x and y) then
+        return "UNKNOWN"
+    end
+
+    local point
+    if (x > (screenWidth / 3) and x < (screenWidth / 3) * 2) and y > (screenHeight / 3) * 2 then
+        point = "TOP"
+    elseif x < (screenWidth / 3) and y > (screenHeight / 3) * 2 then
+        point = "TOPLEFT"
+    elseif x > (screenWidth / 3) * 2 and y > (screenHeight / 3) * 2 then
+        point = "TOPRIGHT"
+    elseif (x > (screenWidth / 3) and x < (screenWidth / 3) * 2) and y < (screenHeight / 3) then
+        point = "BOTTOM"
+    elseif x < (screenWidth / 3) and y < (screenHeight / 3) then
+        point = "BOTTOMLEFT"
+    elseif x > (screenWidth / 3) * 2 and y < (screenHeight / 3) then
+        point = "BOTTOMRIGHT"
+    elseif x < (screenWidth / 3) and (y > (screenHeight / 3) and y < (screenHeight / 3) * 2) then
+        point = "LEFT"
+    elseif x > (screenWidth / 3) * 2 and y < (screenHeight / 3) * 2 and y > (screenHeight / 3) then
+        point = "RIGHT"
+    else
+        point = "CENTER"
+    end
+
+    return point
+end
+GW.GetScreenQuadrant = GetScreenQuadrant

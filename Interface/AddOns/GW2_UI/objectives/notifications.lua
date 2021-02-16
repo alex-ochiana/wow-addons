@@ -212,7 +212,7 @@ local function getBodyPOI()
     local bodyCompass = {}
     bodyCompass.X = x
     bodyCompass.Y = y
-    bodyCompass.TITLE = L["TRACKER_RETRIVE_CORPSE"]
+    bodyCompass.TITLE = L["Retrieve your corpse"]
     bodyCompass.TYPE = "DEAD"
     bodyCompass.ID = "playerDead"
     bodyCompass.COLOR = TRACKER_TYPE_COLOR.DEAD
@@ -316,7 +316,7 @@ local currentCompassData
 local function SetObjectiveNotification()
     if not GetSetting("SHOW_QUESTTRACKER_COMPASS") then return end
 
-    local data
+    local data, dataBefore
     for k, v in pairs(notifications) do
         if not notifications[k].COMPASS and notifications[k] ~= nil then
             if data ~= nil then
@@ -329,7 +329,9 @@ local function SetObjectiveNotification()
         end
     end
     if UnitIsDeadOrGhost("PLAYER") then
+        dataBefore = data
         data = getBodyPOI()
+        if data == nil then data = dataBefore end
     end
 
     if data == nil then

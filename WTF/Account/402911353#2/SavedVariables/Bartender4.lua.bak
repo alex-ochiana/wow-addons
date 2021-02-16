@@ -73,11 +73,21 @@ Bartender4DB = {
 						["y"] = 62,
 					},
 				},
+				["Gnomèrcy - Sylvanas"] = {
+					["enabled"] = true,
+					["version"] = 3,
+					["position"] = {
+						["y"] = 62,
+						["x"] = -515,
+						["point"] = "BOTTOM",
+						["scale"] = 1.264999985694885,
+					},
+				},
 				["Crètz - Sylvanas"] = {
 					["position"] = {
-						["y"] = 1.9998779296875,
-						["x"] = -1.999979019165039,
-						["point"] = "TOPLEFT",
+						["y"] = -10.9443359375,
+						["x"] = -210.8387451171875,
+						["point"] = "TOP",
 						["scale"] = 0.5,
 					},
 					["version"] = 3,
@@ -571,17 +581,91 @@ Bartender4DB = {
 						},
 					},
 				},
+				["Gnomèrcy - Sylvanas"] = {
+					["actionbars"] = {
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 41.75,
+								["x"] = -510,
+								["point"] = "BOTTOM",
+							},
+						}, -- [1]
+						{
+							["enabled"] = false,
+							["version"] = 3,
+							["position"] = {
+								["y"] = -227.4998474121094,
+								["x"] = -231.5001831054688,
+								["point"] = "CENTER",
+							},
+						}, -- [2]
+						{
+							["padding"] = 5,
+							["rows"] = 12,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 610,
+								["x"] = -82,
+								["point"] = "BOTTOMRIGHT",
+							},
+						}, -- [3]
+						{
+							["padding"] = 5,
+							["rows"] = 12,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 610,
+								["x"] = -42,
+								["point"] = "BOTTOMRIGHT",
+							},
+						}, -- [4]
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 110,
+								["x"] = 3,
+								["point"] = "BOTTOM",
+							},
+						}, -- [5]
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 110,
+								["x"] = -510,
+								["point"] = "BOTTOM",
+							},
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						nil, -- [9]
+						{
+						}, -- [10]
+					},
+				},
 				["Crètz - Sylvanas"] = {
 					["actionbars"] = {
 						{
-							["buttons"] = 6,
+							["skin"] = {
+								["Zoom"] = true,
+							},
 							["version"] = 3,
 							["position"] = {
-								["y"] = -4.85552978515625,
-								["x"] = 125.5777587890625,
-								["point"] = "LEFT",
+								["y"] = 60,
+								["x"] = -220.9999694824219,
+								["point"] = "BOTTOM",
 							},
+							["fadeoutalpha"] = 0,
 							["padding"] = 0,
+							["visibility"] = {
+								["overridebar"] = true,
+								["vehicleui"] = true,
+							},
 							["states"] = {
 								["stance"] = {
 									["DRUID"] = {
@@ -592,6 +676,7 @@ Bartender4DB = {
 							},
 						}, -- [1]
 						{
+							["enabled"] = false,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 0.52215576171875,
@@ -612,45 +697,64 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["rows"] = 2,
 							["fadeoutdelay"] = 0,
-							["fadeoutalpha"] = 0,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 129.611083984375,
-								["x"] = -445.2332153320313,
-								["point"] = "CENTER",
+							["skin"] = {
+								["Zoom"] = true,
 							},
+							["buttons"] = 6,
+							["fadeoutalpha"] = 0,
+							["position"] = {
+								["y"] = 100,
+								["x"] = -113.0000228881836,
+								["point"] = "BOTTOM",
+							},
+							["version"] = 3,
 							["padding"] = 0,
+							["visibility"] = {
+								["nocombat"] = false,
+							},
 						}, -- [3]
 						{
 							["rows"] = 12,
-							["enabled"] = false,
+							["skin"] = {
+								["Zoom"] = true,
+							},
 							["version"] = 3,
 							["position"] = {
-								["y"] = 610,
-								["x"] = -42,
-								["point"] = "BOTTOMRIGHT",
+								["y"] = 8.25567626953125,
+								["x"] = -41,
+								["point"] = "RIGHT",
 							},
-							["padding"] = 5,
+							["padding"] = 0,
+							["visibility"] = {
+								["always"] = true,
+							},
 						}, -- [4]
 						{
-							["enabled"] = false,
+							["rows"] = 2,
+							["skin"] = {
+								["Zoom"] = true,
+							},
 							["version"] = 3,
+							["fadeoutalpha"] = 0,
 							["position"] = {
-								["y"] = 110,
-								["x"] = 3,
+								["y"] = 96.0000228881836,
+								["x"] = 216,
 								["point"] = "BOTTOM",
 							},
-							["padding"] = 6,
+							["padding"] = 0,
 						}, -- [5]
 						{
 							["rows"] = 2,
+							["skin"] = {
+								["Zoom"] = true,
+							},
 							["version"] = 3,
+							["fadeoutalpha"] = 0,
 							["position"] = {
-								["y"] = 138.3890380859375,
-								["x"] = 214.6000213623047,
-								["point"] = "LEFT",
+								["y"] = 96.0000228881836,
+								["x"] = -440,
+								["point"] = "BOTTOM",
 							},
 							["padding"] = 0,
 						}, -- [6]
@@ -883,12 +987,19 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
+				["Gnomèrcy - Sylvanas"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -252.4999389648438,
+						["x"] = -63.50006103515625,
+						["point"] = "CENTER",
+					},
+				},
 				["Crètz - Sylvanas"] = {
 					["position"] = {
-						["y"] = 81.81634521484375,
-						["x"] = 454.2667846679688,
-						["point"] = "LEFT",
-						["scale"] = 0.5,
+						["y"] = 249.2499389648438,
+						["x"] = -335.9943237304688,
+						["point"] = "BOTTOM",
 					},
 					["version"] = 3,
 				},
@@ -982,6 +1093,16 @@ Bartender4DB = {
 						["y"] = 41.75,
 					},
 				},
+				["Gnomèrcy - Sylvanas"] = {
+					["padding"] = -2,
+					["version"] = 3,
+					["position"] = {
+						["y"] = 41.75,
+						["x"] = 37.5,
+						["point"] = "BOTTOM",
+						["scale"] = 1,
+					},
+				},
 				["Crètz - Sylvanas"] = {
 					["enabled"] = false,
 					["position"] = {
@@ -1073,15 +1194,23 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
+				["Gnomèrcy - Sylvanas"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
 				["Crètz - Sylvanas"] = {
 					["hideequipped"] = true,
 					["enabled"] = false,
 					["version"] = 3,
 					["position"] = {
 						["y"] = 53.00000381469727,
-						["x"] = -261.0799560546875,
-						["point"] = "BOTTOMRIGHT",
 						["growVertical"] = "UP",
+						["point"] = "BOTTOMRIGHT",
+						["x"] = -261.0799560546875,
 					},
 					["padding"] = 20,
 				},
@@ -1168,12 +1297,23 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Crètz - Sylvanas"] = {
+				["Gnomèrcy - Sylvanas"] = {
+					["enabled"] = true,
+					["version"] = 3,
 					["position"] = {
 						["y"] = 47,
 						["x"] = -512,
 						["point"] = "BOTTOM",
 					},
+				},
+				["Crètz - Sylvanas"] = {
+					["leftCap"] = "HUMAN",
+					["position"] = {
+						["y"] = 73.677734375,
+						["x"] = -255.4999389648438,
+						["point"] = "BOTTOM",
+					},
+					["rightCap"] = "HUMAN",
 					["version"] = 3,
 				},
 				["Brovar - Sylvanas"] = {
@@ -1255,17 +1395,25 @@ Bartender4DB = {
 						["point"] = "CENTER",
 					},
 				},
+				["Gnomèrcy - Sylvanas"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -14.99996185302734,
+						["x"] = -82.5,
+						["point"] = "CENTER",
+					},
+				},
 				["Crètz - Sylvanas"] = {
 					["enabled"] = false,
-					["hidehotkey"] = false,
-					["position"] = {
-						["y"] = 206.70458984375,
-						["x"] = -144.4999389648438,
-						["point"] = "BOTTOM",
-						["scale"] = 1,
-					},
 					["version"] = 3,
-					["padding"] = 20,
+					["position"] = {
+						["y"] = 209,
+						["x"] = -95.00001525878906,
+						["point"] = "BOTTOM",
+						["scale"] = 1.15,
+					},
+					["hidehotkey"] = false,
+					["padding"] = 0,
 					["visibility"] = {
 						["always"] = false,
 					},
@@ -1346,11 +1494,19 @@ Bartender4DB = {
 						["point"] = "CENTER",
 					},
 				},
+				["Gnomèrcy - Sylvanas"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 42.50006103515625,
+						["x"] = 104.5,
+						["point"] = "CENTER",
+					},
+				},
 				["Crètz - Sylvanas"] = {
 					["position"] = {
-						["y"] = 15.5,
-						["x"] = 524.5582885742188,
-						["point"] = "CENTER",
+						["y"] = 143.4978790283203,
+						["x"] = -428.3442993164063,
+						["point"] = "BOTTOM",
 					},
 					["version"] = 3,
 				},
@@ -1430,16 +1586,23 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Crètz - Sylvanas"] = {
-					["fadeout"] = true,
-					["fadeoutdelay"] = 0,
+				["Gnomèrcy - Sylvanas"] = {
+					["version"] = 3,
 					["position"] = {
-						["y"] = 188.869384765625,
-						["x"] = 197.5113525390625,
-						["point"] = "LEFT",
+						["y"] = 143,
+						["x"] = -460,
+						["point"] = "BOTTOM",
 					},
+				},
+				["Crètz - Sylvanas"] = {
+					["fadeoutdelay"] = 0,
 					["fadeoutalpha"] = 0,
-					["padding"] = 20,
+					["position"] = {
+						["y"] = 134.3461761474609,
+						["x"] = -155.0000305175781,
+						["point"] = "BOTTOM",
+					},
+					["padding"] = 0,
 					["version"] = 3,
 				},
 				["Brovar - Sylvanas"] = {
@@ -1505,6 +1668,7 @@ Bartender4DB = {
 		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
 		["Egidus - Sylvanas"] = "Crètz - Sylvanas",
 		["Kynaeth - Sylvanas"] = "Crètz - Sylvanas",
+		["Gnomèrcy - Sylvanas"] = "Crètz - Sylvanas",
 		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
 		["Brovar - Sylvanas"] = "Crètz - Sylvanas",
 		["Cretz - Sylvanas"] = "Cretz - Sylvanas",
@@ -1541,6 +1705,11 @@ Bartender4DB = {
 			["outofrange"] = "hotkey",
 		},
 		["Kynaeth - Sylvanas"] = {
+			["focuscastmodifier"] = false,
+			["blizzardVehicle"] = true,
+			["outofrange"] = "hotkey",
+		},
+		["Gnomèrcy - Sylvanas"] = {
 			["focuscastmodifier"] = false,
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",

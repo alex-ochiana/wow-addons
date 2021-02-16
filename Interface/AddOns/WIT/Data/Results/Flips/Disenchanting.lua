@@ -9,6 +9,7 @@ core.Data.Results.Flips.DEGreenLinenBracers = {
     Content = core.Content.Vanilla,
     Materials = {
         { Id = core.Items.Cloths.LinenCloth, Quantity = 600 },
+		{ Id = core.Items.Cloths.CoarseThread, Quantity = 200 },
     },
     Results = {
         { Id = core.Items.Enchanting.LesserMagicEssence, Quantity = 40 },
@@ -24,6 +25,7 @@ core.Data.Results.Flips.RuneclothBelt = {
     Content = core.Content.Vanilla,
     Materials = {
         { Id = core.Items.Cloths.Runecloth, Quantity = 150 },
+		{ Id = core.Items.Cloths.RuneThread, Quantity = 100 },
     },
     Results = {
         { Id = core.Items.Enchanting.LargeBrilliantShard, Quantity = 20 },
@@ -41,6 +43,7 @@ core.Data.Results.Flips.NetherweaveBracers = {
     Content = core.Content.TBC,
     Materials = {
         { Id = core.Items.Cloths.NetherweaveCloth, Quantity = 1500 },
+		{ Id = core.Items.Cloths.RuneThread, Quantity = 100 },
     },
     Results = {
         { Id = core.Items.Enchanting.ArcaneDust, Quantity = 60 },
@@ -58,6 +61,7 @@ core.Data.Results.Flips.FrostwovenWristwraps = {
     Content = core.Content.WotLK,
     Materials = {
         { Id = core.Items.Cloths.FrostweaveCloth, Quantity = 1500 },
+		{ Id = core.Items.Cloths.EterniumThread, Quantity = 100 },
     },
     Results = {
         { Id = core.Items.Enchanting.LesserCosmicEssence, Quantity = 20 },
@@ -75,6 +79,7 @@ core.Data.Results.Flips.DeathsilkBracers = {
     Content = core.Content.Cata,
     Materials = {
         { Id = core.Items.Cloths.EmbersilkCloth, Quantity = 1000 },
+		{ Id = core.Items.Cloths.EterniumThread, Quantity = 200 },
     },
     Results = {
         { Id = core.Items.Enchanting.LesserCelestialEssence, Quantity = 80 },
@@ -139,6 +144,7 @@ core.Data.Results.Flips.TidesprayBracers = {
     Content = core.Content.BFA,
     Materials = {
         { Id = core.Items.Cloths.TidesprayLinen, Quantity = 1000 },
+		{ Id = core.Items.Cloths.NylonThread, Quantity = 500 },
     },
     Results = {
         
@@ -154,6 +160,7 @@ core.Data.Results.Flips.ShroudedClothBracers = {
     Content = core.Content.Shadowlands,
     Materials = {
         { Id = core.Items.Cloths.ShroudedCloth, Quantity = 300 },
+		{ Id = core.Items.Cloths.PenumbraThread, Quantity = 300 },
     },
     Results = {
         { Id = core.Items.Enchanting.SoulDust, Quantity = 220 },
@@ -168,6 +175,7 @@ core.Data.Results.Flips.ShadowlaceCuffs = {
     Materials = {
         { Id = core.Items.Cloths.ShroudedCloth, Quantity = 1000 },
 		{ Id = core.Items.Cloths.LightlessSilk, Quantity = 200 },
+		{ Id = core.Items.Cloths.PenumbraThread, Quantity = 300 },
     },
     Results = {
         { Id = core.Items.Enchanting.SacredShard, Quantity = 140 },

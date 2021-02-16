@@ -6,6 +6,7 @@ HandyNotes_BrokenShoreDB = {
 		["Crètz - Kazzak"] = "Crètz - Kazzak",
 		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
 		["Kakaròt - Kazzak"] = "Kakaròt - Kazzak",
+		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
 		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
 		["Lastones - Kazzak"] = "Lastones - Kazzak",
 		["Needzafemale - Kazzak"] = "Needzafemale - Kazzak",
@@ -30,6 +31,8 @@ HandyNotes_BrokenShoreDB = {
 		["Crëtz - Kazzak"] = {
 		},
 		["Kakaròt - Kazzak"] = {
+		},
+		["Gnomèrcy - Sylvanas"] = {
 		},
 		["Jiglèr - Sylvanas"] = {
 		},

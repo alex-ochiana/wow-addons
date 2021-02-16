@@ -15,6 +15,6 @@ MADB = {
 	["closeGUIOnEscape"] = false,
 	["squareMM"] = false,
 	["playSound"] = false,
-	["noBags"] = false,
+	["noBags"] = true,
 	["frameListRows"] = 18,
 }

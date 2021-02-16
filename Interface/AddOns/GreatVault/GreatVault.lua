@@ -5,28 +5,23 @@ local _, GreatVault = ...
 GreatVault = LibStub("AceAddon-3.0"):NewAddon(GreatVault, "GreatVault", "AceConsole-3.0", "AceEvent-3.0")
 
 ---Minimap Broker inspired by countless ace3 addons like bugsack, simulationcraft, coolglow and others
-GreatVaultLDB = LibStub("LibDataBroker-1.1"):NewDataObject("GreatVault", {
-	type = "data source",
-	text = "Great Vault",
-	icon = "Interface\\Addons\\GreatVault\\media\\icon.blp",
-	OnClick = function(_, button)
-		if button == "LeftButton" then
-			WeeklyRewardsFrame:Show()
-		elseif button == "RightButton" then
-			WeeklyRewardsFrame:Hide()
-		end
+GreatVaultLDB = LibStub("LibDataBroker-1.1"):NewDataObject("GreatVault", { 
+	type = "data source", 
+	text = "The Great Vault", 
+	icon = "Interface\\Addons\\GreatVault\\media\\icon.blp", 
+	OnClick = function(_, button) 
+		WeeklyRewardsFrame:SetShown(not WeeklyRewardsFrame:IsShown()) 
 	end,
-	OnTooltipShow = function(tt)
-    tt:AddLine("Great Vault")
-    tt:AddLine(" ")
-    tt:AddLine("Left-Click to open the Great Vault.")
-    tt:AddLine("Right-Click to close the Great Vault.")
-	tt:AddLine(" ")
-	tt:AddLine("Toggle minimap button by typing |c33c9fcff/greatvault minimap|r")
-    end
-})
 
-LibDBIcon = LibStub("LibDBIcon-1.0")
+	OnTooltipShow = function(tt)    
+	tt:AddLine("Great Vault")    
+	tt:AddLine(" ")    
+	tt:AddLine("Click to toggle The Great Vault.") 
+	tt:AddLine(" ") 
+	tt:AddLine("Toggle minimap button by typing |c33c9fcff/greatvault minimap|r")
+ end})
+tinsert(UISpecialFrames, "WeeklyRewardsFrame");LibDBIcon = LibStub("LibDBIcon-1.0")
+
 
 -- db implemention copied from simulationcraft
 function GreatVault:OnInitialize()

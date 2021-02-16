@@ -6,12 +6,13 @@ HandyNotes_ArgusDB = {
 		["Crètz - Kazzak"] = "Crètz - Kazzak",
 		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
 		["Kakaròt - Kazzak"] = "Kakaròt - Kazzak",
+		["Òdin - Sylvanas"] = "Òdin - Sylvanas",
 		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
 		["Lastones - Kazzak"] = "Lastones - Kazzak",
-		["Òdin - Sylvanas"] = "Òdin - Sylvanas",
+		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
 		["Needzafemale - Kazzak"] = "Needzafemale - Kazzak",
 		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
-		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
+		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
 		["Mòloch - Kazzak"] = "Mòloch - Kazzak",
 		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
 		["Brovar - Sylvanas"] = "Brovar - Sylvanas",
@@ -28,17 +29,19 @@ HandyNotes_ArgusDB = {
 		},
 		["Kakaròt - Kazzak"] = {
 		},
+		["Òdin - Sylvanas"] = {
+		},
 		["Jiglèr - Sylvanas"] = {
 		},
 		["Lastones - Kazzak"] = {
 		},
-		["Òdin - Sylvanas"] = {
+		["Kynaeth - Sylvanas"] = {
 		},
 		["Needzafemale - Kazzak"] = {
 		},
 		["Egidus - Sylvanas"] = {
 		},
-		["Kynaeth - Sylvanas"] = {
+		["Gnomèrcy - Sylvanas"] = {
 		},
 		["Mòloch - Kazzak"] = {
 		},

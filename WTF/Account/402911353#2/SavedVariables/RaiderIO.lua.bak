@@ -1,8 +1,14 @@
 
 RaiderIO_Config = {
 }
-RaiderIO_LastCharacter = "eu-Crètz-sylvanas"
+RaiderIO_LastCharacter = "eu-Latthrias-sylvanas"
 RaiderIO_MissingCharacters = {
-	["eu-Nautbaldur-sylvanas"] = true,
+	["eu-Anamarria-sylvanas"] = true,
+	["eu-Aburitoarea-sylvanas"] = true,
+	["eu-Mådgåz-outland"] = true,
+	["eu-Drowrangêr-sylvanas"] = true,
+	["eu-Stepbros-sylvanas"] = true,
+	["eu-Burse-sylvanas"] = true,
+	["eu-Psicko-silvermoon"] = true,
 }
 RaiderIO_CachedRuns = nil

@@ -1,0 +1,88 @@
+## Interface: 90002
+## Title: RUF [|c5500DBBDRaeli's Unit Frames|r]
+## Notes: Raeli's Unit Frames. Simple lightweight unitframes using oUF
+## Author: Raeli
+## Version: r253-Release
+## SavedVariables: RUFDB
+## X-SavedVariables: RUFDB
+## OptionalDeps: oUF, Ace3, AceGUI-3.0-SharedMediaWidgets, LibDualSpec-1.0, LibRangeCheck-2.0, LibSharedMedia-3.0, NickTag-1.0
+## X-Credits: Icon Font created with IcoMoon.io using icons from Freepik & Plainicon, from www.flaticon.com
+## X-Curse-Project-ID: 283389
+## X-WOWI-ID: 25717
+
+Embeds.xml
+EmbedAlways.xml
+
+
+Elements\Plugins\Absorb_Plugin.lua
+Elements\Plugins\Aura_Plugin.lua
+Elements\Plugins\BarAnimation_Plugin.lua
+Elements\Plugins\Cast_Plugin.lua
+Elements\Plugins\FakeClassPower_Plugin.lua
+Elements\Plugins\HealPrediction_Plugin.lua
+Elements\Plugins\Range_Plugin.lua
+
+Localisation\enUS.lua
+Localisation\deDE.lua
+Localisation\koKR.lua
+Localisation\zhCN.lua
+
+Fonts.xml
+Initialize.lua
+Defaults.lua
+Utilities.lua
+DisableBlizzard.lua
+
+Elements\Frame\Background.lua
+Elements\Frame\Border.lua
+Elements\Frame\CombatFader.lua
+Elements\Frame\Portrait.lua
+Elements\Frame\RangeCheck.lua
+
+Elements\Bars\Shared.lua
+Elements\Bars\Absorb.lua
+Elements\Bars\Cast.lua
+Elements\Bars\Class.lua
+Elements\Bars\ClassicClass.lua
+Elements\Bars\FakeClass.lua
+Elements\Bars\Health.lua
+Elements\Bars\HealPrediction.lua
+Elements\Bars\Power.lua
+Elements\Bars\Runes.lua
+Elements\Bars\Stagger.lua
+
+Elements\Auras\Shared.lua
+Elements\Auras\Buffs.lua
+Elements\Auras\Debuffs.lua
+
+Elements\Icons\Indicators.lua
+Elements\Icons\Assist.lua
+Elements\Icons\Combat.lua
+Elements\Icons\GroupRole.lua
+Elements\Icons\Honor.lua
+Elements\Icons\Leader.lua
+Elements\Icons\LootMaster.lua
+Elements\Icons\MainTankAssist.lua
+Elements\Icons\PetHappiness.lua
+Elements\Icons\Phase.lua
+Elements\Icons\PvPStatus.lua
+Elements\Icons\QuestObjective.lua
+Elements\Icons\ReadyCheck.lua
+Elements\Icons\Resting.lua
+Elements\Icons\TargetMark.lua
+
+Elements\Text\Parent.lua
+Elements\Text\Tags\Health.lua
+Elements\Text\Tags\Name.lua
+Elements\Text\Tags\Power.lua
+Elements\Text\Tags\Status.lua
+
+Enable.lua
+
+Options\Initialize.lua
+Options\Utilities.lua
+Options\Base.lua
+Options\Bars.lua
+Options\Colors.lua
+Options\Text.lua
+Options\Units.lua

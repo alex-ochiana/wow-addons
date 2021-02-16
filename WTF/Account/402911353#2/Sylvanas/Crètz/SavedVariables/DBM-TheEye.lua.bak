@@ -1,7 +1,7 @@
 
 DBMTheEye_SavedStats = {
 	["KaelThas"] = {
-		["normal25LastTime"] = 236.8740000000689,
+		["normal25LastTime"] = 237.5379999999423,
 		["normalPulls"] = 0,
 		["challengeKills"] = 0,
 		["normal25BestTime"] = 230.9890000000014,
@@ -10,13 +10,13 @@ DBMTheEye_SavedStats = {
 		["lfr25Kills"] = 0,
 		["heroic25Pulls"] = 0,
 		["lfr25Pulls"] = 0,
-		["normal25Pulls"] = 14,
+		["normal25Pulls"] = 16,
 		["normalKills"] = 0,
 		["heroic25Kills"] = 0,
 		["heroicKills"] = 0,
 		["timewalkerPulls"] = 0,
 		["mythicPulls"] = 0,
-		["normal25Kills"] = 14,
+		["normal25Kills"] = 16,
 		["timewalkerKills"] = 0,
 		["heroicPulls"] = 0,
 		["challengePulls"] = 0,

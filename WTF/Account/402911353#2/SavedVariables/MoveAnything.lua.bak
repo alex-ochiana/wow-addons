@@ -14,7 +14,7 @@ MADB = {
 	},
 	["frameListRows"] = 18,
 	["squareMM"] = false,
-	["noBags"] = false,
+	["noBags"] = true,
 	["playSound"] = false,
 	["closeGUIOnEscape"] = false,
 }

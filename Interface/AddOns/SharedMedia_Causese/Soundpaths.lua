@@ -95,7 +95,7 @@ LSM:Register("sound", "|cFFFF0000Taunt|r", [[Interface\Addons\SharedMedia_Causes
 LSM:Register("sound", "|cFFFF0000Transition|r", [[Interface\Addons\SharedMedia_Causese\sound\Transition.ogg]])
 LSM:Register("sound", "|cFFFF0000Trap|r", [[Interface\Addons\SharedMedia_Causese\sound\Trap.ogg]])
 LSM:Register("sound", "|cFFFF0000Turn|r", [[Interface\Addons\SharedMedia_Causese\sound\Turn.ogg]])
-LSM:Register("sound", "|cFFFF0000Yellow|r", [[Interface\Addons\SharedMedia_Causese\sound\Yellow.ogg]]) 
+LSM:Register("sound", "|cFFFF0000Yellow|r", [[Interface\Addons\SharedMedia_Causese\sound\Yellow.ogg]])
 
 -- -----
 --   STATUSBAR

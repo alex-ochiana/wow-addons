@@ -3,7 +3,7 @@
 ## Notes: HUD Replacement addon.
 ## Notes-deDE: Ersetzt die Benutzeroberfläche.
 ## OptionalDeps: MoveAnything, _DebugLog, BugSack, !Stragglers, ACU
-## Version: v5.6.1
+## Version: v5.8.0
 ## X-Website: https://www.curseforge.com/wow/addons/gw2-ui
 ## X-Curse-Project-ID: 94310
 ## DefaultState: Enabled
@@ -16,6 +16,8 @@
 core/TaintLess.xml
 core/debug.lua
 core/errorHandler.lua
+core/locationData.lua
+libs/libs.xml
 
 locales/enUS.lua
 locales/deDE.lua
@@ -29,17 +31,15 @@ locales/frFR.lua
 locales/zhCN.lua
 locales/itIT.lua
 
-libs/libs.xml
-
 core/consts.lua
+core/init.lua
+core/raid_debuffs.lua
 core/toolkit.lua
 core/utils.lua
 core/itemlevel.lua
 core/shared.xml
 core/fonts.lua
 core/storage.lua
-core/locationData.lua
-core/init.lua
 core/statusReport.lua
 core/slashcommands.lua
 
@@ -88,7 +88,7 @@ mainbar/micromenu.xml
 mainbar/micromenu.lua
 mainbar/orderbar.xml
 mainbar/orderbar.lua
-
+mainbar/mirrortimer.lua
 mainbar/experiencebar.xml
 mainbar/hudart.xml
 mainbar/aurabar_legacy.xml

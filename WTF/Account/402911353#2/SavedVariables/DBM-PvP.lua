@@ -5,11 +5,9 @@ DBMPvP_AllSavedVars = {
 			{
 				["Enabled"] = true,
 			}, -- [1]
-		},
-		["z2106"] = {
-			{
+			[3] = {
 				["Enabled"] = true,
-			}, -- [1]
+			},
 		},
 		["z727"] = {
 			{
@@ -21,11 +19,39 @@ DBMPvP_AllSavedVars = {
 				["TimerCart"] = true,
 				["TimerRespawn"] = true,
 			}, -- [1]
+			[3] = {
+				["TimerRespawnCVoice"] = 0,
+				["TimerCartTColor"] = 0,
+				["Enabled"] = true,
+				["TimerCartCVoice"] = 0,
+				["TimerRespawnTColor"] = 0,
+				["TimerCart"] = true,
+				["TimerRespawn"] = true,
+			},
+		},
+		["z2106"] = {
+			{
+				["Enabled"] = true,
+			}, -- [1]
+			[3] = {
+				["Enabled"] = true,
+			},
 		},
 		["z998"] = {
 			{
 				["Enabled"] = true,
 			}, -- [1]
+			[3] = {
+				["Enabled"] = true,
+			},
+		},
+		["z566"] = {
+			{
+				["Enabled"] = true,
+			}, -- [1]
+			[3] = {
+				["Enabled"] = true,
+			},
 		},
 		["z30"] = {
 			{
@@ -35,59 +61,32 @@ DBMPvP_AllSavedVars = {
 				["AutoTurnIn"] = true,
 				["TimerBossCVoice"] = 0,
 			}, -- [1]
+			[3] = {
+				["Enabled"] = true,
+				["TimerBossTColor"] = 0,
+				["TimerBoss"] = true,
+				["AutoTurnIn"] = true,
+				["TimerBossCVoice"] = 0,
+			},
 		},
 		["z726"] = {
 			{
 				["Enabled"] = true,
 			}, -- [1]
+			[3] = {
+				["Enabled"] = true,
+			},
 		},
 		["z628"] = {
 			{
 				["Enabled"] = true,
 			}, -- [1]
-		},
-		["z566"] = {
-			{
+			[3] = {
 				["Enabled"] = true,
-			}, -- [1]
+			},
 		},
+		["talent3"] = "Guardian",
 		["talent1"] = "Balance",
-		["PvPGeneral"] = {
-			{
-				["TimerRemaining"] = true,
-				["TimerFlagCVoice"] = 0,
-				["ShowRelativeGameTime"] = true,
-				["TimerRemainingTColor"] = 0,
-				["AutoSpirit"] = false,
-				["ShowBasesToWin"] = false,
-				["Timer110310cast"] = true,
-				["TimerWinCVoice"] = 0,
-				["TimerFlagTColor"] = 0,
-				["TimerCap"] = true,
-				["Timer46392nextTColor"] = 0,
-				["TimerFlag"] = true,
-				["TimerWinTColor"] = 0,
-				["TimerCapCVoice"] = 0,
-				["TimerWin"] = true,
-				["Timer46392next"] = true,
-				["Enabled"] = true,
-				["Timer46392nextCVoice"] = 0,
-				["Timer34709nextCVoice"] = 0,
-				["HideBossEmoteFrame"] = false,
-				["TimerRemainingCVoice"] = 0,
-				["ShowEstimatedPoints"] = true,
-				["Timer34709nextTColor"] = 0,
-				["TimerCapTColor"] = 0,
-				["Timer110310castCVoice"] = 0,
-				["Timer110310castTColor"] = 0,
-				["Timer34709next"] = true,
-			}, -- [1]
-		},
-		["z761"] = {
-			{
-				["Enabled"] = true,
-			}, -- [1]
-		},
 		["z1803"] = {
 			{
 				["TimerSpawn"] = true,
@@ -95,11 +94,84 @@ DBMPvP_AllSavedVars = {
 				["TimerSpawnTColor"] = 0,
 				["TimerSpawnCVoice"] = 0,
 			}, -- [1]
+			[3] = {
+				["TimerSpawnCVoice"] = 0,
+				["Enabled"] = true,
+				["TimerSpawnTColor"] = 0,
+				["TimerSpawn"] = true,
+			},
+		},
+		["z761"] = {
+			{
+				["Enabled"] = true,
+			}, -- [1]
+			[3] = {
+				["Enabled"] = true,
+			},
+		},
+		["PvPGeneral"] = {
+			{
+				["TimerRemaining"] = true,
+				["TimerFlagCVoice"] = 0,
+				["ShowRelativeGameTime"] = true,
+				["TimerRemainingTColor"] = 0,
+				["TimerWinCVoice"] = 0,
+				["AutoSpirit"] = false,
+				["TimerFlagTColor"] = 0,
+				["TimerCap"] = true,
+				["Timer46392nextTColor"] = 0,
+				["TimerFlag"] = true,
+				["TimerWinTColor"] = 0,
+				["TimerCapCVoice"] = 0,
+				["Timer110310cast"] = true,
+				["TimerWin"] = true,
+				["Enabled"] = true,
+				["HideBossEmoteFrame"] = false,
+				["Timer46392nextCVoice"] = 0,
+				["Timer34709nextCVoice"] = 0,
+				["TimerRemainingCVoice"] = 0,
+				["Timer46392next"] = true,
+				["Timer34709nextTColor"] = 0,
+				["TimerCapTColor"] = 0,
+				["Timer110310castCVoice"] = 0,
+				["Timer110310castTColor"] = 0,
+				["Timer34709next"] = true,
+			}, -- [1]
+			[3] = {
+				["TimerRemaining"] = true,
+				["TimerFlagCVoice"] = 0,
+				["ShowRelativeGameTime"] = true,
+				["TimerRemainingTColor"] = 0,
+				["HideBossEmoteFrame"] = false,
+				["AutoSpirit"] = false,
+				["TimerFlagTColor"] = 0,
+				["TimerCap"] = true,
+				["Timer46392nextTColor"] = 0,
+				["Enabled"] = true,
+				["TimerWinTColor"] = 0,
+				["TimerCapCVoice"] = 0,
+				["Timer110310cast"] = true,
+				["TimerWin"] = true,
+				["TimerWinCVoice"] = 0,
+				["TimerFlag"] = true,
+				["Timer46392nextCVoice"] = 0,
+				["Timer34709nextCVoice"] = 0,
+				["TimerRemainingCVoice"] = 0,
+				["Timer46392next"] = true,
+				["Timer34709nextTColor"] = 0,
+				["TimerCapTColor"] = 0,
+				["Timer110310castCVoice"] = 0,
+				["Timer110310castTColor"] = 0,
+				["Timer34709next"] = true,
+			},
 		},
 		["z2245"] = {
 			{
 				["Enabled"] = true,
 			}, -- [1]
+			[3] = {
+				["Enabled"] = true,
+			},
 		},
 	},
 }

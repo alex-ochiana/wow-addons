@@ -9,6 +9,7 @@ HandyNotes_LorewalkersDB = {
 		["Needzafemale - Kazzak"] = "Needzafemale - Kazzak",
 		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
 		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
+		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
 		["Mortifèrous - Kazzak"] = "Mortifèrous - Kazzak",
 	},
 	["profiles"] = {
@@ -29,6 +30,8 @@ HandyNotes_LorewalkersDB = {
 		["Kynaeth - Sylvanas"] = {
 		},
 		["Crètz - Sylvanas"] = {
+		},
+		["Gnomèrcy - Sylvanas"] = {
 		},
 		["Mortifèrous - Kazzak"] = {
 		},

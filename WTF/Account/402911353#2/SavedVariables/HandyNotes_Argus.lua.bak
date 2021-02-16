@@ -6,6 +6,7 @@ HandyNotes_ArgusDB = {
 		["Crètz - Kazzak"] = "Crètz - Kazzak",
 		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
 		["Kakaròt - Kazzak"] = "Kakaròt - Kazzak",
+		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
 		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
 		["Lastones - Kazzak"] = "Lastones - Kazzak",
 		["Needzafemale - Kazzak"] = "Needzafemale - Kazzak",
@@ -27,6 +28,8 @@ HandyNotes_ArgusDB = {
 		["Crëtz - Kazzak"] = {
 		},
 		["Kakaròt - Kazzak"] = {
+		},
+		["Gnomèrcy - Sylvanas"] = {
 		},
 		["Jiglèr - Sylvanas"] = {
 		},

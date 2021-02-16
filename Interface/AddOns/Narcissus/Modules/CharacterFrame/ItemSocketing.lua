@@ -1,5 +1,5 @@
 local L = Narci.L;
-local CUSTOM_QUALITY_COLORS = Narci.customQualityColors;
+local GetItemQualityColor = NarciAPI.GetItemQualityColor;
 local Narci_GemInfo = Narci_GemInfo;
 local GetGemBonus = NarciAPI.GetGemBonus; --(Gem's itemID or hyperlink)
 local max = math.max;
@@ -206,7 +206,7 @@ local function DisplayButtons(itemCountList, disabledID, rootFrame, buttonTempla
             local _, _, _, _, icon, _, itemSubClassID = GetItemInfoInstant(itemID);
             local name = C_Item.GetItemNameByID(itemID);
             local quality = C_Item.GetItemQualityByID(itemID);
-            local r, g, b = unpack(CUSTOM_QUALITY_COLORS[quality]);
+            local r, g, b = GetItemQualityColor(quality);
             button.r, button.g, button.b = r, g, b;
             button.GemID = itemID;
             button.ColorID = itemSubClassID;
@@ -436,7 +436,7 @@ function NarciGemSlotMixin:OnEnter()
         icon = 458977;
     end
 
-	local r, g, b = unpack(CUSTOM_QUALITY_COLORS[quality]);
+	local r, g, b = GetItemQualityColor(quality);
 
 	tooltip.ArtFrame.Icon:SetTexture(icon);
 	tooltip.ArtFrame.ItemName:SetText(name);

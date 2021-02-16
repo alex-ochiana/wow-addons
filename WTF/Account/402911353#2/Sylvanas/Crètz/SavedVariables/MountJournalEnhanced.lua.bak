@@ -9,7 +9,6 @@ MJEPersonalSettings = {
 		["compactMountList"] = true,
 		["enableCursorKeys"] = true,
 		["showPersonalCount"] = true,
-		["enableSortOptions"] = true,
 		["moveEquipmentSlot"] = true,
 		["previewButton"] = true,
 		["showShopButton"] = false,
@@ -23,10 +22,11 @@ MJEPersonalSettings = {
 	["favoredMounts"] = {
 	},
 	["sort"] = {
-		["favoritesOnTop"] = true,
 		["unownedOnBottom"] = true,
 		["descending"] = false,
 		["by"] = "name",
+		["favoritesOnTop"] = true,
+		["unusableToBottom"] = false,
 	},
 	["filter"] = {
 		["expansion"] = {
@@ -58,7 +58,14 @@ MJEPersonalSettings = {
 			["Quest"] = true,
 			["Instance"] = true,
 		},
+		["hiddenIngame"] = false,
 		["notCollected"] = true,
+		["faction"] = {
+			["horde"] = true,
+			["alliance"] = true,
+			["noFaction"] = true,
+		},
+		["onlyFavorites"] = false,
 		["mountType"] = {
 			["repair"] = true,
 			["flying"] = true,
@@ -67,13 +74,7 @@ MJEPersonalSettings = {
 			["ground"] = true,
 			["passenger"] = true,
 		},
-		["onlyFavorites"] = false,
 		["onlyUsable"] = false,
-		["faction"] = {
-			["horde"] = true,
-			["alliance"] = true,
-			["noFaction"] = true,
-		},
 		["family"] = {
 			["Arachnids"] = {
 				["Scorpions"] = true,
@@ -155,10 +156,10 @@ MJEPersonalSettings = {
 				["Direhorns"] = true,
 			},
 			["Rays"] = {
-				["Nether Rays"] = true,
-				["Stingrays"] = true,
-				["Mana Rays"] = true,
 				["Fathom Rays"] = true,
+				["Nether Rays"] = true,
+				["Mana Rays"] = true,
+				["Stingrays"] = true,
 			},
 			["Demons"] = {
 				["Felsabers"] = true,
@@ -187,9 +188,9 @@ MJEPersonalSettings = {
 				["Snapdragons"] = true,
 				["Turtles"] = true,
 				["Crocolisks"] = true,
-				["Kodos"] = true,
 				["Basilisks"] = true,
 				["Mushan"] = true,
+				["Kodos"] = true,
 				["Sea Serpents"] = true,
 				["N'Zoth Serpents"] = true,
 			},
@@ -261,4 +262,5 @@ MJEPersonalSettings = {
 		["hidden"] = false,
 	},
 	["personalHiddenMounts"] = false,
+	["searchInDescription"] = true,
 }

@@ -1,12 +1,13 @@
 
 NarciBarberShopDB = {
+	["ToggleRandomAppearance"] = false,
+	["ToggleNotification"] = true,
 	["Hotkeys"] = {
 		["RotateRight"] = "D",
 		["RotateLeft"] = "A",
 		["ZoomOut"] = "S",
 		["ZoomIn"] = "W",
 	},
-	["ToggleNotification"] = true,
 	["PlayerData"] = {
 		["0CFDE7B0"] = {
 			["playerName"] = "Crètz",
@@ -22,5 +23,4 @@ NarciBarberShopDB = {
 			["realmName"] = "Sylvanas",
 		},
 	},
-	["ToggleRandomAppearance"] = false,
 }

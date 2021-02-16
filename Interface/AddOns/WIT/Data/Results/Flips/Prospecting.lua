@@ -222,3 +222,44 @@ core.Data.Results.Flips.ProspectingLaestriteOre = {
 
     }
 }
+
+
+
+core.Data.Results.Flips.ProspectingElethiumOre = {
+    ItemId = core.Items.Ores.ElethiumOre,
+    Quantity = 200,
+    Content = core.Content.Shadowlands,
+    Materials = {
+        { Id = core.Items.Ores.ElethiumOre, Quantity = 200 },
+    },
+    Results = {
+        { Id = core.Items.Gems.EssenceofServitude, Quantity = 22 },
+        { Id = core.Items.Gems.EssenceofRebirth, Quantity = 9 },
+		{ Id = core.Items.Gems.EssenceofValor, Quantity = 14 },
+		{ Id = core.Items.Gems.EssenceofTorment, Quantity = 15 },
+        { Id = core.Items.Gems.Umbryl, Quantity = 44 },
+        { Id = core.Items.Gems.Angerseye, Quantity = 35 },
+        { Id = core.Items.Gems.Oriblase, Quantity = 37 },
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

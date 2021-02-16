@@ -25,7 +25,7 @@ local CR_ConvertRatio = {      --Combat Rating number/percent
     ["stamina"] = 20,              -- 1 stamina = 20 HP
 };
 
-local CUSTOM_QUALITY_COLORS = Narci.customQualityColors;
+local GetItemQualityColor = NarciAPI.GetItemQualityColor;
 
 local function SetCombatRatingRatio()
 	local mastery, bonusCoeff = GetMasteryEffect();
@@ -469,7 +469,7 @@ function Narci_Comparison_SetComparison(itemLocation, itemButton)
     local itemIcon = GetItemIcon(itemLocation);
     local name = GetItemName(itemLocation);
     local quality = GetItemQuality(itemLocation);
-    local r, g, b = unpack(CUSTOM_QUALITY_COLORS[quality]);
+    local r, g, b = GetItemQualityColor(quality);
 
     local stats = ItemStats(itemLocation);
     local baseStats = ItemStats(FlyOut.BaseItem);

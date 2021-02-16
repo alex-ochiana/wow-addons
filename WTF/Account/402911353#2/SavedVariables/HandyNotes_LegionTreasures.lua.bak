@@ -10,35 +10,44 @@ HandyNotes_LegionTreasuresDB = {
 		},
 	},
 	["profileKeys"] = {
-		["Blanitza - Kazzak"] = "Blanitza - Kazzak",
-		["Mòloch - Kazzak"] = "Mòloch - Kazzak",
 		["Crètz - Kazzak"] = "Crètz - Kazzak",
-		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
 		["Kakaròt - Kazzak"] = "Kakaròt - Kazzak",
 		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
+		["Òdin - Sylvanas"] = "Òdin - Sylvanas",
+		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
+		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
+		["Cretz - Sylvanas"] = "Cretz - Sylvanas",
+		["Blanitza - Kazzak"] = "Blanitza - Kazzak",
+		["Mortifèrous - Kazzak"] = "Mortifèrous - Kazzak",
+		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
 		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
 		["Lastones - Kazzak"] = "Lastones - Kazzak",
 		["Needzafemale - Kazzak"] = "Needzafemale - Kazzak",
-		["Òdin - Sylvanas"] = "Òdin - Sylvanas",
-		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
 		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
-		["Mortifèrous - Kazzak"] = "Mortifèrous - Kazzak",
 		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
 		["Brovar - Sylvanas"] = "Brovar - Sylvanas",
-		["Cretz - Sylvanas"] = "Cretz - Sylvanas",
+		["Mòloch - Kazzak"] = "Mòloch - Kazzak",
 	},
 	["profiles"] = {
-		["Blanitza - Kazzak"] = {
-		},
-		["Mòloch - Kazzak"] = {
-		},
 		["Crètz - Kazzak"] = {
-		},
-		["Crëtz - Kazzak"] = {
 		},
 		["Kakaròt - Kazzak"] = {
 		},
 		["Latthrias - Sylvanas"] = {
+		},
+		["Òdin - Sylvanas"] = {
+		},
+		["Egidus - Sylvanas"] = {
+		},
+		["Gnomèrcy - Sylvanas"] = {
+		},
+		["Cretz - Sylvanas"] = {
+		},
+		["Blanitza - Kazzak"] = {
+		},
+		["Mortifèrous - Kazzak"] = {
+		},
+		["Crëtz - Kazzak"] = {
 		},
 		["Jiglèr - Sylvanas"] = {
 		},
@@ -46,19 +55,13 @@ HandyNotes_LegionTreasuresDB = {
 		},
 		["Needzafemale - Kazzak"] = {
 		},
-		["Òdin - Sylvanas"] = {
-		},
-		["Egidus - Sylvanas"] = {
-		},
 		["Kynaeth - Sylvanas"] = {
-		},
-		["Mortifèrous - Kazzak"] = {
 		},
 		["Crètz - Sylvanas"] = {
 		},
 		["Brovar - Sylvanas"] = {
 		},
-		["Cretz - Sylvanas"] = {
+		["Mòloch - Kazzak"] = {
 		},
 	},
 }

@@ -1,90 +1,64 @@
-2.1.9 Release Notes
+2.2.3 Release Notes
 Contributions made by Gold:
-
-Contributions made by slumber:
-* mortanis WQ questID + coords, missing zone reward in maldraxxus, a couple for HQT
-* final dead blanchy quest + marked the daily trigger as a daily, duh
-* IDK MAN JUST THE DAILY HAPPENINGS
-* anima trash, maldraxxus treasures, more venthyr quests
-* when will i remember to mark treasure chests as dailies
-* more traysure, added a maw achieve
-* delete the ember court
-* :slumberclown:
-* some small treasure/rare/anima things
-* added a missing toy, a missing wq, some other small things
-* some hqt
-* 2 mawchievements
-* more maw junk
-* finished adding abhorrent adversaries criteria to zones
-* various little SL things
-* tanglewood thorn is now a dagger
-* more torghast mappies, hqt, some little legion stuff
-* a couple small #errors and a batch of kyrian quests submitted by nohh
-* Circus Theme Song 10 Hours - YouTube
-* added bored dredger vendor + its wares
-* another batch of #errors
-* more #errors, added 'what we ride in the shadows' achievement
-* added pvp achievements to zones, commented removed (?) pvp meta, attached pvp achieve crit to their WQs
-* family exorcist in zones
-* 3 hqt, 1 to-do done
-* today's nonsense
-* more nonsense
+* isyearly update for cots
+* removed torghast layer9
 
 Contributions made by mogwai316:
-* Added new quests available in Oribos
-* Made Regenerating Slime Vial collectible and added to Toy Box. Added Favor: Perfected Hand Mirror and an Inscription WQ.
-* Updated some Necrolord covenant intro quests
-* Added various quests
-* Added Necrolord intro questline for Abomination Factory and some weekly/other quests.
-* Various quests added.  Can't run parser on my machine anymore but checking in the .lua changes for now.
-* Fixed Animaflow Stabilizer quest id; added a few quests.
-* Night Fae chapter 4 quests updated
-* Added Bondable Val'kyr Diadem toy
-* Added a couple Night Fae things.
-* Updated many covenant-specific mounts. Moved a couple Bastion vendors into Kyrian Covenant section.
-* Added Nathria AotC/CE feats of strength. Marked some BfA feats of strength as unobtainable.
-* Updated all of Zo'sorg's gear and costs (Sinful Gladiator's conquest gear)
-* Added Chalkyth
-* Updated the Torghast section under Achievements to use the current names and known info. Added some missing ones. The layer 2-9 achieves remain commented out, likely those were in beta but not in the release version of SL.
-* Spindlenose (Court of Night) vendor updates and some zone reward updates
-* Bonebound Chest and other various minor things updated
-* Necrolord chapter 4 questline added. - Some Necrolord achieves and other quests added. - In Achievements - Expansion Features - Covenant Sanctums, started putting covenant-specific achieves under covenant headers to make it more visible.
-* Added some Necrolord quests and one Night Fae quest. - Fixed Tower Power coords
-* More Necrolord achievement updates (enjoy the criteria numbers)
-* Various minor updates
-* Added some Revendreth rare drops, zone drops/rewards. Made rare achieve criteria formatting consistent.
-* Crafter's Mark III = Never Implemented (maybe they will add them in the future). Alphabetized a treasure.
+* Added Locked Toolbox and a couple HQTs
+* Added Velkein (Necrolord follower from Torghast)
+* Added Malfunctioning Goliath Gauntlet - Moved Mark of Purity from Toys-Drops to Toys-Emissary Quests - Added Empowerment quest in Shadowmourne questline
+* Added some new weeklies
+* Added Flexing Phalanges
+* Necrolord weekly and HQTs
+* Added Bloodfeaster Spiderling to Queen's Conservatory drops, and a couple more Necrolord HQTs
+* Added Forgemaster Madalav questID/coords - Updated tier 3 version of "A Rare and Unusual Spirit"
+* Moved Grand Marshal Mudrag from Venthyr vendors to Revendreth vendors
+* Phylactery of the Dead Conniver is obtainable now
+
+Contributions made by Dmitry Volodin:
+* The Alliance Dun Morogh quest "The Public Servant" is now marked as a Yearly quest to match the behaviour of the game.
 
 Contributions made by ImUnicke:
-* couple maps in castle nathria (so far)
-* conduit from calling box
-* simplified caching functionality - added option to search for data only using cached data - skip refreshing windows before the game is even loaded - simplified logic for moving/resizing the windows - modified scrollbar logic to only move by 1 instead of fractionally - simplified scrollbar value change logic due to step constraint - consolidated reagent cache state value
-* do not auto-collapse a character's saved groups when Account Mode is enabled (fixes #632, fixes #629)
-* account-wide reputation collection returns the proper other-character saved value (fixes #629 for real) - minilist sorting will now only be performed if the top-level header is NOT tied to an Instance since relying on current difficulty is not super reliable (fixes #628)
-* moved encounter tooltip progress summary onto its own line since it seems basically impossible to account for overlapping text with how tooltips work (fixes #645)
-* priest calling conduit
-* what is going on with BuildContains....
-* fixed 'Contains' logic for the 925th time
-* clean up
-* modified in-game harvester to re-try harvesting item sources if the existing source is now non-existent
-* re-harvest + re-parse (fixes #634)
-* used the same logic for pulling 'task' from the map APIs into /attwq as for 'storyline' quest objects so that static quests with no rewards don't show up by themselves in the window - tagged mystery quest 49369 as world quest since it comes back from the 'task' API even though it's not a real quest
+* fixed/consolidated logic for collecting factions and items tied to factions
+* fixed Necrolord Tier 1 stiching table group
+* minor additions and fixes
+* 'maps' tech now handles Faction groups appropriately - moved the dynamic 'Guild' Faction into the Factions category instead of being under Outdoor Zones - consolidated A/H faction tagging via sharedData
+* added descriptions of requirement for rank 3 workshop quest (marked removed on wowhead but what do they know, I just did it today!)
+* modified minilist to remember whether it was fully-collapsed by the user so that it will not re-expand itself when changing location
+* modified logic for coloring group names to be more consistent - fixed sorting of the top-level groups in the minilist when groups are colorized
+* couple random things from today's travels in the shadowlands...
+* added/stubbed remaining 'Return Lost Souls' sanctum weeklies
+* consolidated covenant layouts/callings
+* Merge branch 'master' of https://github.com/DFortun81/AllTheThings - reparse
+* added version number to the current 'mode' string (maybe people like this?)
 * various SL updates
-* the 'Not in ATT' line for Accepted/Completed quests is now Red for easier visibility - playing catch up of my many screenshots taken over the last week...
-* added ability to create a generic Dropdown in the Settings - added Tooltip Setting to require a key modifier for showing Tooltip info (closes #646)
-* tooltip modifier key now only affects some UI-based tooltips (items/spells/etc) not World-based tooltips
-* fixed the BRF Blackhand quest items which still had nested Quest objects - yet another revision to 'Contains'/Search logic! tune in next time for the next problem that shows up... - modified SearchForObjectClone to try to find a filter-inclusive group first
-* fixed source quest list for things which have source quests but are not quests
-* necrolord treasure coord - reverted some 'Contains' changes because it made other things not work as expected.... tune in again next time
-* added some zone drops for CN (though they don't seem to have source ID's currently...) - added sire denathrius quest item - couple conduits from calling box - revendreth zone drop
-* commented out the temp DB from Beta which had things in it that have changed in live - fixed difficulties/sourceIDs for castle nathria - harvested again to fix sourceIDs for stuff
-* crs for Grand Theft Shadehound
-* quite a revamp to the Contains/Search consolidation logic, hopefully this works for everything...? - fixed the quest chain requirements window to only perform quest chain logic for root quest objects, or objects with a source quest (this way rares/etc. with a questID attached don't show in a quest chain requirements window when popped out) - removed currency build logic in popout groups for now since it became broken at some point - a questID for Maw rare
-* fixed tooltip progress text for standalone collectible items - fixed achievement criteria showing 'Contains' as if they were their parent achievement - removed extra logic from Contains which excluded listing the same group as was originally searched (since the search logic now properly collapses the matching group prior to hitting Contains)
-* added sourceQuests to the Dead Blanchy mount unlock to help show the order of obtaining to those who do not track quests/enable debug - modified some descriptions for Blanchy due to varying costs of the blanket
+* Merge branch 'master' of https://github.com/DFortun81/AllTheThings
+* testing mount collection logic/fanfare
+* mount testing
+* fixed mount collection logic with rare find sound
+* some 'new pet' comments snuck in
+* questID for the Skeletal Hand Fragments
+* added an Ember Court Tier 3 quest - added info/note about 'Forgotten Village'
+* plotting TomTom waypoints from ATT groups will now include any description for those groups
 
 Contributions made by Gromwind:
-* Moved some achievements into OZ > Bastion and added some coordinates / descriptions.
-* Adding achievements erroneously removed in previous commit.
-* Added additional Buckled <armour type> Belt items to All-in-One Belt Repair Kit.
+* Added quest A Spirit's Duty to Queen's Conservatory.
+* Added HQTs relating to WQ 'A Few Bumps Along the Way' in Maldraxxus.
+* Added HQT for two weapon enchantment illusions.
+* Removed Gormbore trash loot description post hotfix.
+* Added HQT for Gormbore.
+
+Contributions made by slumber:
+* added reverent sets for kyrian's trial of humility
+* more unsorted.  why did i start doing this lmfao
+* let me reiterate that i am dumb
+* moved twisting corridors quests to hqt since they apparently do not reset
+* added a couple missing illusions
+
+Contributions made by Crieve:
+* The field "reqlvl" has been baked into the "lvl" field as an alternate. They are now functionally and logically identical between Classic, TBC, and Retail versions of ATT.
+* Now exporting the filter field "f" for items. (Needed for Classic.)
+
+Contributions made by henbe:
+* Update enUS.lua (#675)
 

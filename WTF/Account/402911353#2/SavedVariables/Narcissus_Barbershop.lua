@@ -1,13 +1,5 @@
 
 NarciBarberShopDB = {
-	["ToggleRandomAppearance"] = false,
-	["ToggleNotification"] = true,
-	["Hotkeys"] = {
-		["ZoomIn"] = "W",
-		["RotateLeft"] = "A",
-		["ZoomOut"] = "S",
-		["RotateRight"] = "D",
-	},
 	["PlayerData"] = {
 		["0CFDE7B0"] = {
 			["playerName"] = "Crètz",
@@ -22,5 +14,13 @@ NarciBarberShopDB = {
 			},
 			["realmName"] = "Sylvanas",
 		},
+	},
+	["ToggleNotification"] = true,
+	["ToggleRandomAppearance"] = false,
+	["Hotkeys"] = {
+		["ZoomIn"] = "W",
+		["RotateLeft"] = "A",
+		["ZoomOut"] = "S",
+		["RotateRight"] = "D",
 	},
 }

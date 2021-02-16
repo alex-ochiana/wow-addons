@@ -30,6 +30,7 @@ FarmHudDB = {
 	["tracking^136457"] = "client",
 	["tracking^535616"] = "client",
 	["tracking^136463"] = "client",
+	["player_dot"] = "blizz",
 	["tracking^3852099"] = "client",
 	["gathercircle_color"] = {
 		0, -- [1]
@@ -40,10 +41,16 @@ FarmHudDB = {
 	["tracking^1863940"] = "client",
 	["rotation"] = true,
 	["buttons_alpha"] = 0.6,
-	["player_dot"] = "blizz",
-	["tracking^524051"] = "client",
-	["hud_size"] = 1,
 	["cardinalpoints_show"] = true,
+	["hud_size"] = 1,
+	["tracking^524051"] = "client",
+	["healcircle_color"] = {
+		0, -- [1]
+		0.7, -- [2]
+		1, -- [3]
+		0.5, -- [4]
+	},
+	["coords_radius"] = 0.51,
 	["mouseoverinfo_color"] = {
 		1, -- [1]
 		0.82, -- [2]
@@ -51,20 +58,20 @@ FarmHudDB = {
 		0.7, -- [4]
 	},
 	["buttons_show"] = false,
-	["tracking^136464"] = "client",
+	["SuperTrackedQuest"] = true,
 	["coords_show"] = true,
 	["tracking^457292"] = "client",
 	["showDummy"] = true,
-	["coords_radius"] = 0.51,
-	["showDummyBg"] = true,
-	["SuperTrackedQuest"] = true,
-	["tracking^136453"] = "client",
 	["gathercircle_show"] = true,
+	["showDummyBg"] = true,
+	["tracking^136466"] = "client",
+	["tracking^136453"] = "client",
+	["tracking^535615"] = "client",
 	["tracking^613074"] = "client",
 	["cardinalpoints_radius"] = 0.47,
-	["tracking^535615"] = "client",
-	["tracking^133939"] = "client",
-	["buttons_buttom"] = false,
+	["tracking^136454"] = "client",
+	["text_scale"] = 1.4,
+	["tracking^133888"] = "client",
 	["time_bottom"] = false,
 	["tracking^237607"] = "client",
 	["MinimapIcon"] = {
@@ -72,22 +79,22 @@ FarmHudDB = {
 		["radius"] = 80,
 		["hide"] = true,
 	},
-	["tracking^136454"] = "client",
+	["tracking^133939"] = "client",
+	["tracking^524052"] = "client",
+	["time_show"] = true,
 	["time_color"] = {
 		1, -- [1]
 		0.82, -- [2]
 		0, -- [3]
 		0.7, -- [4]
 	},
-	["time_show"] = true,
-	["text_scale"] = 1.4,
-	["tracking^524052"] = "client",
+	["buttons_buttom"] = false,
 	["coords_bottom"] = false,
-	["tracking^133888"] = "client",
+	["healcircle_show"] = true,
 	["time_radius"] = 0.48,
-	["tracking^136466"] = "client",
 	["background_alpha"] = 0,
 	["tracking^1598183"] = "client",
+	["tracking^136464"] = "client",
 	["time_local"] = true,
 	["tracking^136452"] = "client",
 	["QuestArrowInfoMsg"] = false,

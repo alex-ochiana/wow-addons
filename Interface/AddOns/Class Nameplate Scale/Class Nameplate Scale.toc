@@ -1,0 +1,6 @@
+## Interface: 70000
+## Title: Class Nameplate Scale
+## Notes: 1.0
+## Author: ql4au04_TW
+
+Class Nameplate Scale.lua

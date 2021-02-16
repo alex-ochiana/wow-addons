@@ -8,354 +8,206 @@ ADDON.isMetric = true -- is the metric or imperial/us unit system used?
 local L = ADDON.L or {}
 
 L["Black Market"] = "Mercado Negro"
+L["Family"] = "Família"
+L["FAVOR_DISPLAYED"] = "Exibir todos"
+L["FAVOR_PER_CHARACTER"] = "Por personagem"
 --[[Translation missing --]]
---[[ L["Family"] = "Family"--]] 
+--[[ L["FILTER_SECRET"] = "Hidden by the game"--]] 
+L["Flying"] = "Voador"
+L["Ground"] = "Terrestre"
+L["Hidden"] = "Oculto"
+L["Only tradable"] = "Apenas negociável"
+L["Passenger"] = "Passageiro"
+L["Reset filters"] = "Resetar filtros "
+L["ROTATE_DOWN"] = "Girar para Baixo"
+L["ROTATE_UP"] = "Girar para Cima"
+L["Show in Collections"] = "Mostrar nas Coleções"
 --[[Translation missing --]]
---[[ L["FAVOR_DISPLAYED"] = "All Displayed"--]] 
+--[[ L["SORT_BY_LAST_USAGE"] = "Last usage"--]] 
 --[[Translation missing --]]
---[[ L["FAVOR_PER_CHARACTER"] = "Per Character"--]] 
+--[[ L["SORT_BY_LEARNED_DATE"] = "Date of receipt"--]] 
 --[[Translation missing --]]
---[[ L["Flying"] = "Flying"--]] 
+--[[ L["SORT_BY_TRAVEL_DISTANCE"] = "Travelled distance"--]] 
 --[[Translation missing --]]
---[[ L["Ground"] = "Ground"--]] 
+--[[ L["SORT_BY_TRAVEL_DURATION"] = "Travelled duration"--]] 
 --[[Translation missing --]]
---[[ L["Hidden"] = "Hidden"--]] 
+--[[ L["SORT_BY_USAGE_COUNT"] = "Count of usage"--]] 
+L["SORT_FAVORITES_FIRST"] = "Favoritos Primeiro"
+L["SORT_REVERSE"] = "Ordem Inversa"
+L["SORT_UNOWNED_BOTTOM"] = "Não aprendidos por último"
 --[[Translation missing --]]
---[[ L["Only tradable"] = "Only tradable"--]] 
---[[Translation missing --]]
---[[ L["Only usable"] = "Only usable"--]] 
---[[Translation missing --]]
---[[ L["Passenger"] = "Passenger"--]] 
---[[Translation missing --]]
---[[ L["Reset filters"] = "Reset filters"--]] 
---[[Translation missing --]]
---[[ L["ROTATE_DOWN"] = "Rotate Down"--]] 
---[[Translation missing --]]
---[[ L["ROTATE_UP"] = "Rotate Up"--]] 
---[[Translation missing --]]
---[[ L["Show in Collections"] = "Show in Collections"--]] 
---[[Translation missing --]]
---[[ L["SORT_FAVORITES_FIRST"] = "Favorites First"--]] 
---[[Translation missing --]]
---[[ L["SORT_REVERSE"] = "Reverse Sort"--]] 
---[[Translation missing --]]
---[[ L["SORT_UNOWNED_BOTTOM"] = "Unowned at Bottom"--]] 
---[[Translation missing --]]
---[[ L["TASK_END"] = "[MJE] Phew! I'm done."--]] 
---[[Translation missing --]]
---[[ L["TASK_FAVOR_START"] = "[MJE] Reapplying stars all over your mounts. Please wait a few seconds until I'm finished."--]] 
---[[Translation missing --]]
---[[ L["Transform"] = "Transform"--]] 
---[[Translation missing --]]
---[[ L["Underwater"] = "Underwater"--]] 
+--[[ L["SORT_UNUSABLE_BOTTOM"] = "Unusable after Usable"--]] 
+L["TASK_END"] = "[MJE] Ufa! Terminei."
+L["TASK_FAVOR_START"] = "[MJE] Reaplicando estrelas em todas as suas montagens. Por favor, espere alguns segundos até eu terminar."
+L["Transform"] = "Transformar"
+L["Underwater"] = "Embaixo d'água "
 
 -- Settings
+L["SETTING_ACHIEVEMENT_POINTS"] = "Mostrar Pontos de Conquista"
+L["SETTING_COMPACT_LIST"] = "Lista de Montarias Compacta"
+L["SETTING_CURSOR_KEYS"] = "Ativar as teclas para cima e para baixo para navegar pelas montarias"
+L["SETTING_FAVORITE_PER_CHAR"] = "Montarias favoritas por personagem"
+L["SETTING_HEAD_BEHAVIOUR"] = "Comportamento"
+L["SETTING_MOUNT_COUNT"] = "Mostrar contagem de montaria pessoal"
+L["SETTING_MOVE_EQUIPMENT"] = "Mova o slot do equipamento para a tela"
+L["SETTING_PERSONAL_FILTER"] = "Aplicar filtros apenas para este personagem"
+L["SETTING_PERSONAL_HIDDEN_MOUNTS"] = "Aplicar montarias ocultas apenas para este personagem"
+L["SETTING_PERSONAL_UI"] = "Aplicar configurações de inferface apenas para este personagem"
+L["SETTING_PREVIEW_LINK"] = "Mostrar Botão de Coleção na pré-visualização de montaria"
 --[[Translation missing --]]
---[[ L["SETTING_ACHIEVEMENT_POINTS"] = "Show achievement points"--]] 
---[[Translation missing --]]
---[[ L["SETTING_COMPACT_LIST"] = "Compact mount list"--]] 
---[[Translation missing --]]
---[[ L["SETTING_CURSOR_KEYS"] = "Enable Up&Down keys to browse mounts"--]] 
---[[Translation missing --]]
---[[ L["SETTING_CUSTOM_SORT_OPTIONS"] = "Enable more sort options"--]] 
---[[Translation missing --]]
---[[ L["SETTING_FAVORITE_PER_CHAR"] = "Favorite mounts per character"--]] 
---[[Translation missing --]]
---[[ L["SETTING_HEAD_BEHAVIOUR"] = "Behavior"--]] 
---[[Translation missing --]]
---[[ L["SETTING_MOUNT_COUNT"] = "Show personal mount count"--]] 
---[[Translation missing --]]
---[[ L["SETTING_MOVE_EQUIPMENT"] = "Move equipment slot into display"--]] 
---[[Translation missing --]]
---[[ L["SETTING_PERSONAL_FILTER"] = "Apply filters only to this character"--]] 
---[[Translation missing --]]
---[[ L["SETTING_PERSONAL_HIDDEN_MOUNTS"] = "Apply hidden mounts only to this character"--]] 
---[[Translation missing --]]
---[[ L["SETTING_PERSONAL_UI"] = "Apply Interface settings only to this character"--]] 
---[[Translation missing --]]
---[[ L["SETTING_PREVIEW_LINK"] = "Show Collection button in mount preview"--]] 
---[[Translation missing --]]
---[[ L["SETTING_SHOP_BUTTON"] = "Show shop button at untrained shop mounts"--]] 
---[[Translation missing --]]
---[[ L["SETTING_SHOW_USAGE"] = "Display mount usage statistics"--]] 
---[[Translation missing --]]
---[[ L["SETTING_TRACK_USAGE"] = "Track mount usage behavior on all characters"--]] 
---[[Translation missing --]]
---[[ L["SETTING_YCAMERA"] = "Unlock Y rotation with mouse in display"--]] 
+--[[ L["SETTING_SEARCH_MORE"] = "Search also in description text"--]] 
+L["SETTING_SHOP_BUTTON"] = "Mostrar o botão de loja em montarias de loja não aprendidas"
+L["SETTING_SHOW_USAGE"] = "Exibir estatísticas de uso de montarias"
+L["SETTING_TRACK_USAGE"] = "Rastreie o comportamento de uso da montaria em todos os personagens"
+L["SETTING_YCAMERA"] = "Desbloquear rotação vertical com o mouse na tela"
 
 -- Families
 L["Airplanes"] = "Aviões"
-L["Airships"] = "Aeronaus"
+L["Airships"] = "Dirigíveis"
 L["Alpacas"] = "Alpacas"
 L["Amphibian"] = "Anfíbios"
---[[Translation missing --]]
---[[ L["Animite"] = "Animite"--]] 
---[[Translation missing --]]
---[[ L["Aqir Flyers"] = "Aqir Flyers"--]] 
+L["Animite"] = "Animácaros"
+L["Aqir Flyers"] = "Aqir Voadores "
 L["Arachnids"] = "Aracnídeos"
---[[Translation missing --]]
---[[ L["Assault Wagons"] = "Assault Wagons"--]] 
+L["Assault Wagons"] = "Carroças de Assalto"
 L["Basilisks"] = "Basiliscos"
 L["Bats"] = "Morcegos"
 L["Bears"] = "Ursos"
 L["Bees"] = "Abelhas"
 L["Birds"] = "Aves"
---[[Translation missing --]]
---[[ L["Blood Ticks"] = "Blood Ticks"--]] 
+L["Blood Ticks"] = "Tiques Sangrentos"
 L["Boars"] = "Javalis"
---[[Translation missing --]]
---[[ L["Bovids"] = "Bovids"--]] 
+L["Bovids"] = "Bovídeos"
 L["Brutosaurs"] = "Brutossauros"
 L["Camels"] = "Camelos"
---[[Translation missing --]]
---[[ L["Carnivorans"] = "Carnivorans"--]] 
+L["Carnivorans"] = "Carnívoros"
 L["Carpets"] = "Tapetes"
---[[Translation missing --]]
---[[ L["Cats"] = "Cats"--]] 
+L["Cats"] = "Gatos"
 L["Chargers"] = "Corcéis"
 L["Chickens"] = "Galinhas"
---[[Translation missing --]]
---[[ L["Clefthooves"] = "Clefthooves"--]] 
---[[Translation missing --]]
---[[ L["Cloud Serpents"] = "Cloud Serpents"--]] 
---[[Translation missing --]]
---[[ L["Core Hounds"] = "Core Hounds"--]] 
+L["Clefthooves"] = "Fenocerontes"
+L["Cloud Serpents"] = "Serpentes das Nuvens"
+L["Core Hounds"] = "Cães-Magma"
 L["Crabs"] = "Caranguejos"
---[[Translation missing --]]
---[[ L["Cranes"] = "Cranes"--]] 
---[[Translation missing --]]
---[[ L["Crawgs"] = "Crawgs"--]] 
+L["Cranes"] = "Garças"
+L["Crawgs"] = "Crorgs"
 L["Crocolisks"] = "Crocoliscos"
 L["Crows"] = "Corvos"
---[[Translation missing --]]
---[[ L["Demonic Hounds"] = "Demonic Hounds"--]] 
---[[Translation missing --]]
---[[ L["Demonic Steeds"] = "Demonic Steeds"--]] 
+L["Demonic Hounds"] = "Cães Demoníacos"
+L["Demonic Steeds"] = "Corcéis Demoníacos"
 L["Demons"] = "Demônios"
 L["Dinosaurs"] = "Dinossauros"
---[[Translation missing --]]
---[[ L["Dire Wolves"] = "Dire Wolves"--]] 
---[[Translation missing --]]
---[[ L["Direhorns"] = "Direhorns"--]] 
+L["Dire Wolves"] = "Lobos Hediondos"
+L["Direhorns"] = "Escornantes"
 L["Discs"] = "Discos"
---[[Translation missing --]]
---[[ L["Dragonhawks"] = "Dragonhawks"--]] 
---[[Translation missing --]]
---[[ L["Drakes"] = "Drakes"--]] 
---[[Translation missing --]]
---[[ L["Dread Ravens"] = "Dread Ravens"--]] 
---[[Translation missing --]]
---[[ L["Elekks"] = "Elekks"--]] 
---[[Translation missing --]]
---[[ L["Elementals"] = "Elementals"--]] 
---[[Translation missing --]]
---[[ L["Falcosaurs"] = "Falcosaurs"--]] 
---[[Translation missing --]]
---[[ L["Fathom Rays"] = "Fathom Rays"--]] 
---[[Translation missing --]]
---[[ L["Feathermanes"] = "Feathermanes"--]] 
---[[Translation missing --]]
---[[ L["Felsabers"] = "Felsabers"--]] 
---[[Translation missing --]]
---[[ L["Fish"] = "Fish"--]] 
---[[Translation missing --]]
---[[ L["Flying Steeds"] = "Flying Steeds"--]] 
---[[Translation missing --]]
---[[ L["Foxes"] = "Foxes"--]] 
---[[Translation missing --]]
---[[ L["Gargon"] = "Gargon"--]] 
---[[Translation missing --]]
---[[ L["Goats"] = "Goats"--]] 
---[[Translation missing --]]
---[[ L["Gorger"] = "Gorger"--]] 
---[[Translation missing --]]
---[[ L["Gorm"] = "Gorm"--]] 
---[[Translation missing --]]
---[[ L["Grand Drakes"] = "Grand Drakes"--]] 
---[[Translation missing --]]
---[[ L["Gronnlings"] = "Gronnlings"--]] 
---[[Translation missing --]]
---[[ L["Gryphons"] = "Gryphons"--]] 
---[[Translation missing --]]
---[[ L["Gyrocopters"] = "Gyrocopters"--]] 
---[[Translation missing --]]
---[[ L["Hawkstriders"] = "Hawkstriders"--]] 
---[[Translation missing --]]
---[[ L["Hippogryphs"] = "Hippogryphs"--]] 
---[[Translation missing --]]
---[[ L["Horned Steeds"] = "Horned Steeds"--]] 
---[[Translation missing --]]
---[[ L["Horses"] = "Horses"--]] 
---[[Translation missing --]]
---[[ L["Hounds"] = "Hounds"--]] 
---[[Translation missing --]]
---[[ L["Hovercraft"] = "Hovercraft"--]] 
---[[Translation missing --]]
---[[ L["Humanoids"] = "Humanoids"--]] 
---[[Translation missing --]]
---[[ L["Hyenas"] = "Hyenas"--]] 
---[[Translation missing --]]
---[[ L["Infernals"] = "Infernals"--]] 
---[[Translation missing --]]
---[[ L["Insects"] = "Insects"--]] 
---[[Translation missing --]]
---[[ L["Jellyfish"] = "Jellyfish"--]] 
---[[Translation missing --]]
---[[ L["Jet Aerial Units"] = "Jet Aerial Units"--]] 
---[[Translation missing --]]
---[[ L["Kites"] = "Kites"--]] 
---[[Translation missing --]]
---[[ L["Kodos"] = "Kodos"--]] 
---[[Translation missing --]]
---[[ L["Krolusks"] = "Krolusks"--]] 
---[[Translation missing --]]
---[[ L["Larion"] = "Larion"--]] 
---[[Translation missing --]]
---[[ L["Lions"] = "Lions"--]] 
---[[Translation missing --]]
---[[ L["Mammoths"] = "Mammoths"--]] 
---[[Translation missing --]]
---[[ L["Mana Rays"] = "Mana Rays"--]] 
---[[Translation missing --]]
---[[ L["Manasabers"] = "Manasabers"--]] 
---[[Translation missing --]]
---[[ L["Mechanical Animals"] = "Mechanical Animals"--]] 
---[[Translation missing --]]
---[[ L["Mechanical Birds"] = "Mechanical Birds"--]] 
---[[Translation missing --]]
---[[ L["Mechanical Cats"] = "Mechanical Cats"--]] 
---[[Translation missing --]]
---[[ L["Mechanical Steeds"] = "Mechanical Steeds"--]] 
---[[Translation missing --]]
---[[ L["Mechanostriders"] = "Mechanostriders"--]] 
---[[Translation missing --]]
---[[ L["Mecha-suits"] = "Mecha-suits"--]] 
---[[Translation missing --]]
---[[ L["Moose"] = "Moose"--]] 
---[[Translation missing --]]
---[[ L["Moth"] = "Moth"--]] 
---[[Translation missing --]]
---[[ L["Motorcycles"] = "Motorcycles"--]] 
---[[Translation missing --]]
---[[ L["Mountain Horses"] = "Mountain Horses"--]] 
---[[Translation missing --]]
---[[ L["Mushan"] = "Mushan"--]] 
---[[Translation missing --]]
---[[ L["Nether Drakes"] = "Nether Drakes"--]] 
---[[Translation missing --]]
---[[ L["Nether Rays"] = "Nether Rays"--]] 
---[[Translation missing --]]
---[[ L["N'Zoth Serpents"] = "N'Zoth Serpents"--]] 
---[[Translation missing --]]
---[[ L["Others"] = "Others"--]] 
---[[Translation missing --]]
---[[ L["Pandaren Phoenixes"] = "Pandaren Phoenixes"--]] 
---[[Translation missing --]]
---[[ L["Parrots"] = "Parrots"--]] 
---[[Translation missing --]]
---[[ L["Phoenixes"] = "Phoenixes"--]] 
---[[Translation missing --]]
---[[ L["Proto-Drakes"] = "Proto-Drakes"--]] 
---[[Translation missing --]]
---[[ L["Pterrordaxes"] = "Pterrordaxes"--]] 
---[[Translation missing --]]
---[[ L["Quilen"] = "Quilen"--]] 
---[[Translation missing --]]
---[[ L["Rams"] = "Rams"--]] 
---[[Translation missing --]]
---[[ L["Raptors"] = "Raptors"--]] 
---[[Translation missing --]]
---[[ L["Rats"] = "Rats"--]] 
---[[Translation missing --]]
---[[ L["Ravagers"] = "Ravagers"--]] 
---[[Translation missing --]]
---[[ L["Rays"] = "Rays"--]] 
---[[Translation missing --]]
---[[ L["Reptiles"] = "Reptiles"--]] 
---[[Translation missing --]]
---[[ L["Rhinos"] = "Rhinos"--]] 
---[[Translation missing --]]
---[[ L["Riverbeasts"] = "Riverbeasts"--]] 
---[[Translation missing --]]
---[[ L["Roc"] = "Roc"--]] 
---[[Translation missing --]]
---[[ L["Rockets"] = "Rockets"--]] 
---[[Translation missing --]]
---[[ L["Ruinstriders"] = "Ruinstriders"--]] 
---[[Translation missing --]]
---[[ L["Runestag"] = "Runestag"--]] 
---[[Translation missing --]]
---[[ L["Rylaks"] = "Rylaks"--]] 
---[[Translation missing --]]
---[[ L["Sabers"] = "Sabers"--]] 
---[[Translation missing --]]
---[[ L["Scorpions"] = "Scorpions"--]] 
---[[Translation missing --]]
---[[ L["Sea Serpents"] = "Sea Serpents"--]] 
---[[Translation missing --]]
---[[ L["Seahorses"] = "Seahorses"--]] 
---[[Translation missing --]]
---[[ L["Seat"] = "Seat"--]] 
---[[Translation missing --]]
---[[ L["Silithids"] = "Silithids"--]] 
---[[Translation missing --]]
---[[ L["Snapdragons"] = "Snapdragons"--]] 
---[[Translation missing --]]
---[[ L["Spider Tanks"] = "Spider Tanks"--]] 
---[[Translation missing --]]
---[[ L["Spiders"] = "Spiders"--]] 
---[[Translation missing --]]
---[[ L["Steeds"] = "Steeds"--]] 
---[[Translation missing --]]
---[[ L["Stingrays"] = "Stingrays"--]] 
---[[Translation missing --]]
---[[ L["Stone Cats"] = "Stone Cats"--]] 
---[[Translation missing --]]
---[[ L["Stone Drakes"] = "Stone Drakes"--]] 
---[[Translation missing --]]
---[[ L["Talbuks"] = "Talbuks"--]] 
---[[Translation missing --]]
---[[ L["Tallstriders"] = "Tallstriders"--]] 
---[[Translation missing --]]
---[[ L["Talonbirds"] = "Talonbirds"--]] 
---[[Translation missing --]]
---[[ L["Tauralus"] = "Tauralus"--]] 
---[[Translation missing --]]
---[[ L["Tigers"] = "Tigers"--]] 
---[[Translation missing --]]
---[[ L["Toads"] = "Toads"--]] 
---[[Translation missing --]]
---[[ L["Turtles"] = "Turtles"--]] 
---[[Translation missing --]]
---[[ L["Undead Drakes"] = "Undead Drakes"--]] 
---[[Translation missing --]]
---[[ L["Undead Steeds"] = "Undead Steeds"--]] 
---[[Translation missing --]]
---[[ L["Undead Wolves"] = "Undead Wolves"--]] 
---[[Translation missing --]]
---[[ L["Ungulates"] = "Ungulates"--]] 
---[[Translation missing --]]
---[[ L["Ur'zul"] = "Ur'zul"--]] 
---[[Translation missing --]]
---[[ L["Vehicles"] = "Vehicles"--]] 
---[[Translation missing --]]
---[[ L["Vulpin"] = "Vulpin"--]] 
---[[Translation missing --]]
---[[ L["Vultures"] = "Vultures"--]] 
---[[Translation missing --]]
---[[ L["War Wolves"] = "War Wolves"--]] 
---[[Translation missing --]]
---[[ L["Water Striders"] = "Water Striders"--]] 
---[[Translation missing --]]
---[[ L["Wind Drakes"] = "Wind Drakes"--]] 
---[[Translation missing --]]
---[[ L["Wolfhawks"] = "Wolfhawks"--]] 
---[[Translation missing --]]
---[[ L["Wolves"] = "Wolves"--]] 
---[[Translation missing --]]
---[[ L["Wyverns"] = "Wyverns"--]] 
---[[Translation missing --]]
---[[ L["Yaks"] = "Yaks"--]] 
---[[Translation missing --]]
---[[ L["Yetis"] = "Yetis"--]] 
+L["Dragonhawks"] = "Falcodragos"
+L["Drakes"] = "Dracos"
+L["Dread Ravens"] = "Corvos Medonhos"
+L["Elekks"] = "Elekks"
+L["Elementals"] = "Elementais"
+L["Falcosaurs"] = "Falcossauros"
+L["Fathom Rays"] = "Raias-Profundas"
+L["Feathermanes"] = "Aquifélix"
+L["Felsabers"] = "Sabrevis"
+L["Fish"] = "Peixe"
+L["Flying Steeds"] = "Corcéis Voadores"
+L["Foxes"] = "Raposas"
+L["Gargon"] = "Gargono"
+L["Goats"] = "Bodes"
+L["Gorger"] = "Engolidor"
+L["Gorm"] = "Gorm"
+L["Grand Drakes"] = "Dracos Grandes"
+L["Gronnlings"] = "Gronnídeos"
+L["Gryphons"] = "Grifos"
+L["Gyrocopters"] = "Girocóptero"
+L["Hawkstriders"] = "Falcostruzes"
+L["Hippogryphs"] = "Hipogrifos"
+L["Horned Steeds"] = "Corcéis com Chifres"
+L["Horses"] = "Cavalos"
+L["Hounds"] = "Cães"
+L["Hovercraft"] = "Aerodeslizador"
+L["Humanoids"] = "Humanoides"
+L["Hyenas"] = "Hienas"
+L["Infernals"] = "Infernais"
+L["Insects"] = "Insetos"
+L["Jellyfish"] = "Água-viva"
+L["Jet Aerial Units"] = "Unidades Aéreas a Jato"
+L["Kites"] = "Pipas"
+L["Kodos"] = "Kodos"
+L["Krolusks"] = "Croluscos"
+L["Larion"] = "Larião"
+L["Lions"] = "Leões"
+L["Mammoths"] = "Mamutes"
+L["Mana Rays"] = "Arraias de Mana"
+L["Manasabers"] = "Manassabres"
+L["Mechanical Animals"] = "Animais Mecânicos"
+L["Mechanical Birds"] = "Pássaros Mecânicos"
+L["Mechanical Cats"] = "Gatos Mecânicos"
+L["Mechanical Steeds"] = "Corcéis Mecânicos"
+L["Mechanostriders"] = "Mecanostruzes"
+L["Mecha-suits"] = "Mecatrajes"
+L["Moose"] = "Alce"
+L["Moth"] = "Mariposa"
+L["Motorcycles"] = "Motocicletas"
+L["Mountain Horses"] = "Cavalos da Montanha"
+L["Mushan"] = "Mushan"
+L["Nether Drakes"] = "Dracos Etéreos"
+L["Nether Rays"] = "Arraias Etéreas "
+L["N'Zoth Serpents"] = "Serpentes de N'Zoth"
+L["Others"] = "Outros"
+L["Pandaren Phoenixes"] = "Fênix Pandarênicas"
+L["Parrots"] = "Papagaios"
+L["Phoenixes"] = "Fênix"
+L["Proto-Drakes"] = "Protodracos"
+L["Pterrordaxes"] = "Pterrordaxes"
+L["Quilen"] = "Quílen"
+L["Rams"] = "Carneiros"
+L["Raptors"] = "Raptores"
+L["Rats"] = "Ratos"
+L["Ravagers"] = "Assoladores"
+L["Rays"] = "Arraias"
+L["Reptiles"] = "Répteis"
+L["Rhinos"] = "Rinocerontes"
+L["Riverbeasts"] = "Feras-do-rio"
+L["Roc"] = "Rocas"
+L["Rockets"] = "Foguetes"
+L["Ruinstriders"] = "Andarilho das Ruínas"
+L["Runestag"] = "Runicervo"
+L["Rylaks"] = "Rylaks"
+L["Sabers"] = "Sabres"
+L["Scorpions"] = "Escorpiões"
+L["Sea Serpents"] = "Serpente Marinha"
+L["Seahorses"] = "Cavalos-marinhos"
+L["Seat"] = "Assento"
+L["Silithids"] = "Silitídeos"
+L["Snapdragons"] = "Dracoliscos"
+L["Spider Tanks"] = "Tanques Aranha"
+L["Spiders"] = "Aranhas"
+L["Steeds"] = "Corcéis"
+L["Stingrays"] = "Arraias Aguilhantes"
+L["Stone Cats"] = "Gatos de Pedra"
+L["Stone Drakes"] = "Dracos de Pedra"
+L["Talbuks"] = "Talbulques"
+L["Tallstriders"] = "Moas"
+L["Talonbirds"] = "Pássaros-garra"
+L["Tauralus"] = "Tauralus"
+L["Tigers"] = "Tigres"
+L["Toads"] = "Sapos"
+L["Turtles"] = "Tartarugas"
+L["Undead Drakes"] = "Dracos Mortos-vivos"
+L["Undead Steeds"] = "Corcéis Mortos-vivos"
+L["Undead Wolves"] = "Lobos Mortos-vivos"
+L["Ungulates"] = "Ungulados"
+L["Ur'zul"] = "Ur'zul"
+L["Vehicles"] = "Veículos"
+L["Vulpin"] = "Vulpino"
+L["Vultures"] = "Abutres"
+L["War Wolves"] = "Lobos de Guerra"
+L["Water Striders"] = "Caminhante das Águas "
+L["Wind Drakes"] = "Dracos do Vento"
+L["Wolfhawks"] = "Falcolobos"
+L["Wolves"] = "Lobos"
+L["Wyverns"] = "Mantícoras"
+L["Yaks"] = "Iaques"
+L["Yetis"] = "Yetis"
 

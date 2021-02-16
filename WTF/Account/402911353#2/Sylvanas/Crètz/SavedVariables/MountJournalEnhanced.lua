@@ -8,7 +8,6 @@ MJEPersonalSettings = {
 		["showAchievementPoints"] = true,
 		["compactMountList"] = true,
 		["enableCursorKeys"] = true,
-		["enableSortOptions"] = true,
 		["showPersonalCount"] = true,
 		["moveEquipmentSlot"] = true,
 		["previewButton"] = true,
@@ -23,10 +22,11 @@ MJEPersonalSettings = {
 	["favoredMounts"] = {
 	},
 	["sort"] = {
-		["favoritesOnTop"] = true,
 		["unownedOnBottom"] = true,
 		["descending"] = false,
 		["by"] = "name",
+		["favoritesOnTop"] = true,
+		["unusableToBottom"] = false,
 	},
 	["filter"] = {
 		["expansion"] = {
@@ -58,17 +58,15 @@ MJEPersonalSettings = {
 			["Quest"] = true,
 			["Promotion"] = true,
 		},
+		["hiddenIngame"] = false,
 		["notCollected"] = true,
 		["hidden"] = false,
 		["onlyFavorites"] = false,
 		["onlyTradable"] = false,
-		["mountType"] = {
-			["repair"] = true,
-			["flying"] = true,
-			["underwater"] = true,
-			["passenger"] = true,
-			["ground"] = true,
-			["transform"] = true,
+		["faction"] = {
+			["horde"] = true,
+			["alliance"] = true,
+			["noFaction"] = true,
 		},
 		["family"] = {
 			["Arachnids"] = {
@@ -134,10 +132,10 @@ MJEPersonalSettings = {
 				["Undead Steeds"] = true,
 			},
 			["Rays"] = {
-				["Fathom Rays"] = true,
-				["Nether Rays"] = true,
-				["Mana Rays"] = true,
 				["Stingrays"] = true,
+				["Fathom Rays"] = true,
+				["Mana Rays"] = true,
+				["Nether Rays"] = true,
 			},
 			["Cats"] = {
 				["Sabers"] = true,
@@ -204,9 +202,9 @@ MJEPersonalSettings = {
 				["Snapdragons"] = true,
 				["Turtles"] = true,
 				["Crocolisks"] = true,
-				["Basilisks"] = true,
 				["Mushan"] = true,
 				["Kodos"] = true,
+				["Basilisks"] = true,
 				["Sea Serpents"] = true,
 				["N'Zoth Serpents"] = true,
 			},
@@ -253,12 +251,16 @@ MJEPersonalSettings = {
 			["Bats"] = true,
 		},
 		["collected"] = true,
-		["faction"] = {
-			["horde"] = true,
-			["alliance"] = true,
-			["noFaction"] = true,
-		},
 		["onlyUsable"] = false,
+		["mountType"] = {
+			["repair"] = true,
+			["flying"] = true,
+			["underwater"] = true,
+			["passenger"] = true,
+			["ground"] = true,
+			["transform"] = true,
+		},
 	},
 	["personalHiddenMounts"] = false,
+	["searchInDescription"] = true,
 }

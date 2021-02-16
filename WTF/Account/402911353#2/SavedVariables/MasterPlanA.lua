@@ -5,6 +5,10 @@ MasterPlanAG = {
 			["faction"] = "Alliance",
 			["class"] = "PALADIN",
 		},
+		["Gnomèrcy"] = {
+			["class"] = "WARLOCK",
+			["faction"] = "Alliance",
+		},
 		["Delnaara"] = {
 			["faction"] = "Alliance",
 			["class"] = "PRIEST",
@@ -13,9 +17,9 @@ MasterPlanAG = {
 			["faction"] = "Alliance",
 			["class"] = "WARRIOR",
 		},
-		["Egidus"] = {
-			["class"] = "MAGE",
-			["faction"] = "Alliance",
+		["Lorktnar"] = {
+			["faction"] = "Horde",
+			["class"] = "SHAMAN",
 		},
 		["Kynaeth"] = {
 			["faction"] = "Alliance",
@@ -25,8 +29,8 @@ MasterPlanAG = {
 			["class"] = "DEATHKNIGHT",
 			["faction"] = "Alliance",
 		},
-		["Òdin"] = {
-			["class"] = "HUNTER",
+		["Flundan"] = {
+			["class"] = "MONK",
 			["faction"] = "Alliance",
 		},
 		["Latthrias"] = {
@@ -38,14 +42,14 @@ MasterPlanAG = {
 			["faction"] = "Alliance",
 		},
 		["Crètz"] = {
-			["curOil"] = 7455,
+			["faction"] = "Alliance",
 			["recruitTime"] = 1542806572,
 			["summary"] = {
 				["lastOilTime"] = 1587671043,
 				["tt2"] = 1586037536,
 				["tt3"] = 1473277644,
-				["ti1"] = 118529,
 				["tt1"] = 1587488645,
+				["ti1"] = 118529,
 				["ti3"] = 127855,
 				["inProgress"] = {
 					[305] = 1587699930,
@@ -60,30 +64,28 @@ MasterPlanAG = {
 				},
 				["ti2"] = 122486,
 			},
-			["faction"] = "Alliance",
+			["curOil"] = 7455,
 			["cacheSize"] = 1000,
-			["lastCacheTime"] = 1587204985,
-			["curRes"] = 9830,
 			["class"] = "DRUID",
-		},
-		["Lorktnar"] = {
-			["faction"] = "Horde",
-			["class"] = "SHAMAN",
-		},
-		["Flundan"] = {
-			["class"] = "MONK",
-			["faction"] = "Alliance",
+			["curRes"] = 9830,
+			["lastCacheTime"] = 1587204985,
 		},
 		["Sydernea"] = {
 			["faction"] = "Horde",
 			["class"] = "WARLOCK",
 		},
+		["Òdin"] = {
+			["class"] = "HUNTER",
+			["faction"] = "Alliance",
+		},
+		["Egidus"] = {
+			["class"] = "MAGE",
+			["faction"] = "Alliance",
+		},
 		["Rillimus"] = {
 			["faction"] = "Alliance",
 			["class"] = "DEMONHUNTER",
 		},
-	},
-	["IgnoreRewards"] = {
 	},
 	["Ragnaros"] = {
 		["Mugugagagigi"] = {

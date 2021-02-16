@@ -1,23 +1,9 @@
 # <DBM> PvP
 
-## [r100](https://github.com/DeadlyBossMods/DBM-PvP/tree/r100) (2020-12-16)
-[Full Changelog](https://github.com/DeadlyBossMods/DBM-PvP/compare/r99...r100) [Previous Releases](https://github.com/DeadlyBossMods/DBM-PvP/releases)
+## [r115](https://github.com/DeadlyBossMods/DBM-PvP/tree/r115) (2021-02-04)
+[Full Changelog](https://github.com/DeadlyBossMods/DBM-PvP/compare/r114...r115) [Previous Releases](https://github.com/DeadlyBossMods/DBM-PvP/releases)
 
-- Arty3 (#46)  
-    * Implement #33  
-- Arty3 (#45)  
-    * Add shadowlands arena ID  
-    * Fix some silvershard mine issues  
-    * Fix #34  
-    * Might as well clean up some locales  
-- Arty3 (#44)  
-    * Add shadowlands arena ID  
-    * Fix some silvershard mine issues  
-- Add shadowlands arena ID (#43)  
-- Update CI  
-- Update README.md  
-- Delete .travis.yml  
-- Update ci.yml  
-- Create ci.yml  
-- Classic batch syncs, knock off an extra 1.5 seconds (#41)  
-- custom classic rule  
+- Add Arathi final value (#79)  
+    Also fixed a major longstanding bug... We calculate in "resources per second", but blizzard awards them per tick (every 2 seconds). All the values had to be halved.  
+    This may also make classic scores a little "more in line", and could possibly be removed in the future?  
+- Update localization.en.lua (#78)  

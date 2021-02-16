@@ -11,11 +11,12 @@ L["Black Market"] = "암시장"
 L["Family"] = "종류"
 L["FAVOR_DISPLAYED"] = "모두 표시"
 L["FAVOR_PER_CHARACTER"] = "캐릭터별 표시"
+--[[Translation missing --]]
+--[[ L["FILTER_SECRET"] = "Hidden by the game"--]] 
 L["Flying"] = "비행"
 L["Ground"] = "지상"
 L["Hidden"] = "숨김"
 L["Only tradable"] = "교환가능"
-L["Only usable"] = "사용가능"
 L["Passenger"] = "승객"
 L["Reset filters"] = "필터 초기화"
 --[[Translation missing --]]
@@ -24,11 +25,23 @@ L["Reset filters"] = "필터 초기화"
 --[[ L["ROTATE_UP"] = "Rotate Up"--]] 
 L["Show in Collections"] = "모음집에서 보기"
 --[[Translation missing --]]
+--[[ L["SORT_BY_LAST_USAGE"] = "Last usage"--]] 
+--[[Translation missing --]]
+--[[ L["SORT_BY_LEARNED_DATE"] = "Date of receipt"--]] 
+--[[Translation missing --]]
+--[[ L["SORT_BY_TRAVEL_DISTANCE"] = "Travelled distance"--]] 
+--[[Translation missing --]]
+--[[ L["SORT_BY_TRAVEL_DURATION"] = "Travelled duration"--]] 
+--[[Translation missing --]]
+--[[ L["SORT_BY_USAGE_COUNT"] = "Count of usage"--]] 
+--[[Translation missing --]]
 --[[ L["SORT_FAVORITES_FIRST"] = "Favorites First"--]] 
 --[[Translation missing --]]
 --[[ L["SORT_REVERSE"] = "Reverse Sort"--]] 
 --[[Translation missing --]]
 --[[ L["SORT_UNOWNED_BOTTOM"] = "Unowned at Bottom"--]] 
+--[[Translation missing --]]
+--[[ L["SORT_UNUSABLE_BOTTOM"] = "Unusable after Usable"--]] 
 L["TASK_END"] = "[MJE] 작업 완료"
 L["TASK_FAVOR_START"] = "[MJE] 탈것 목록 즐겨찾기 재설정을 시작합니다"
 L["Transform"] = "변환"
@@ -39,8 +52,6 @@ L["Underwater"] = "수중"
 --[[ L["SETTING_ACHIEVEMENT_POINTS"] = "Show achievement points"--]] 
 L["SETTING_COMPACT_LIST"] = "간소한 목록"
 L["SETTING_CURSOR_KEYS"] = "위 아래 화살표 키로 목록 탐색하기"
---[[Translation missing --]]
---[[ L["SETTING_CUSTOM_SORT_OPTIONS"] = "Enable more sort options"--]] 
 L["SETTING_FAVORITE_PER_CHAR"] = "캐릭터별 즐겨찾기"
 --[[Translation missing --]]
 --[[ L["SETTING_HEAD_BEHAVIOUR"] = "Behavior"--]] 
@@ -55,6 +66,8 @@ L["SETTING_MOVE_EQUIPMENT"] = "착용 장비 표시 이동"
 --[[ L["SETTING_PERSONAL_UI"] = "Apply Interface settings only to this character"--]] 
 --[[Translation missing --]]
 --[[ L["SETTING_PREVIEW_LINK"] = "Show Collection button in mount preview"--]] 
+--[[Translation missing --]]
+--[[ L["SETTING_SEARCH_MORE"] = "Search also in description text"--]] 
 L["SETTING_SHOP_BUTTON"] = "구매 버튼 활성화"
 --[[Translation missing --]]
 --[[ L["SETTING_SHOW_USAGE"] = "Display mount usage statistics"--]] 

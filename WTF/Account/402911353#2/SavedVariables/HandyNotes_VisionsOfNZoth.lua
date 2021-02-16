@@ -12,6 +12,7 @@ HandyNotes_VisionsOfNZothDB = {
 		["Òdin - Sylvanas"] = "Default",
 		["Egidus - Sylvanas"] = "Default",
 		["Kynaeth - Sylvanas"] = "Default",
+		["Gnomèrcy - Sylvanas"] = "Default",
 		["Crètz - Sylvanas"] = "Default",
 		["Brovar - Sylvanas"] = "Default",
 		["Cretz - Sylvanas"] = "Default",

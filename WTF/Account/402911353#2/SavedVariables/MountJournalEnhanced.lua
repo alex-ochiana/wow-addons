@@ -8,7 +8,6 @@ MJEGlobalSettings = {
 		["compactMountList"] = true,
 		["enableCursorKeys"] = true,
 		["showPersonalCount"] = true,
-		["enableSortOptions"] = true,
 		["moveEquipmentSlot"] = true,
 		["previewButton"] = true,
 		["showShopButton"] = false,
@@ -22,44 +21,59 @@ MJEGlobalSettings = {
 	["favoredMounts"] = {
 	},
 	["sort"] = {
-		["favoritesOnTop"] = true,
 		["unownedOnBottom"] = true,
 		["descending"] = false,
 		["by"] = "name",
+		["favoritesOnTop"] = true,
+		["unusableToBottom"] = false,
 	},
 	["filter"] = {
 		["expansion"] = {
-			false, -- [1]
-			false, -- [2]
-			false, -- [3]
-			false, -- [4]
-			false, -- [5]
-			false, -- [6]
-			false, -- [7]
+			true, -- [1]
+			true, -- [2]
+			true, -- [3]
+			true, -- [4]
+			true, -- [5]
+			true, -- [6]
+			true, -- [7]
 			true, -- [8]
-			[0] = false,
+			[0] = true,
 		},
 		["source"] = {
-			["Reputation"] = true,
+			["Garrison"] = true,
 			["Black Market"] = true,
-			["World Event"] = true,
-			["Island Expedition"] = true,
-			["Instance"] = true,
-			["PVP"] = true,
 			["Promotion"] = true,
-			["Profession"] = true,
-			["Achievement"] = true,
+			["Vendor"] = true,
+			["Reputation"] = true,
+			["PVP"] = true,
+			["World Event"] = true,
+			["Class"] = true,
+			["Island Expedition"] = true,
 			["Shop"] = true,
 			["Covenants"] = true,
+			["Profession"] = true,
 			["Drop"] = true,
-			["Class"] = true,
-			["Vendor"] = true,
+			["Achievement"] = true,
 			["Quest"] = true,
-			["Garrison"] = true,
+			["Instance"] = true,
 		},
+		["hiddenIngame"] = false,
 		["notCollected"] = false,
-		["hidden"] = false,
+		["faction"] = {
+			["horde"] = true,
+			["alliance"] = true,
+			["noFaction"] = true,
+		},
 		["onlyFavorites"] = false,
+		["mountType"] = {
+			["repair"] = true,
+			["flying"] = true,
+			["underwater"] = true,
+			["transform"] = true,
+			["ground"] = true,
+			["passenger"] = true,
+		},
+		["onlyUsable"] = false,
 		["family"] = {
 			["Arachnids"] = {
 				["Scorpions"] = true,
@@ -68,21 +82,21 @@ MJEGlobalSettings = {
 			},
 			["Vehicles"] = {
 				["Mecha-suits"] = true,
-				["Airplanes"] = true,
+				["Discs"] = true,
 				["Jet Aerial Units"] = true,
 				["Kites"] = true,
 				["Seat"] = true,
+				["Carpets"] = true,
+				["Rockets"] = true,
 				["Gyrocopters"] = true,
-				["Airships"] = true,
-				["Assault Wagons"] = true,
 				["Mechanostriders"] = true,
 				["Spider Tanks"] = true,
 				["Motorcycles"] = true,
 				["Mechanical Animals"] = true,
-				["Rockets"] = true,
-				["Carpets"] = true,
+				["Airships"] = true,
+				["Assault Wagons"] = true,
 				["Hovercraft"] = true,
-				["Discs"] = true,
+				["Airplanes"] = true,
 			},
 			["Feathermanes"] = {
 				["Wolfhawks"] = true,
@@ -103,14 +117,14 @@ MJEGlobalSettings = {
 				["Phoenixes"] = true,
 				["Crows"] = true,
 				["Roc"] = true,
-				["Dread Ravens"] = true,
-				["Talonbirds"] = true,
+				["Cranes"] = true,
 				["Mechanical Birds"] = true,
+				["Talonbirds"] = true,
 				["Hawkstriders"] = true,
 				["Tallstriders"] = true,
 				["Pandaren Phoenixes"] = true,
 				["Parrots"] = true,
-				["Cranes"] = true,
+				["Dread Ravens"] = true,
 				["Vultures"] = true,
 			},
 			["Horses"] = {
@@ -119,56 +133,45 @@ MJEGlobalSettings = {
 				["Flying Steeds"] = true,
 				["Mechanical Steeds"] = true,
 				["Chargers"] = true,
-				["Steeds"] = true,
-				["Horned Steeds"] = true,
 				["Undead Steeds"] = true,
-			},
-			["Rays"] = {
-				["Nether Rays"] = true,
-				["Stingrays"] = true,
-				["Mana Rays"] = true,
-				["Fathom Rays"] = true,
-			},
-			["Cats"] = {
-				["Sabers"] = true,
-				["Stone Cats"] = true,
-				["Others"] = true,
-				["Tigers"] = true,
-				["Lions"] = true,
-				["Mechanical Cats"] = true,
-				["Manasabers"] = true,
-			},
-			["Dinosaurs"] = {
-				["Direhorns"] = true,
-				["Brutosaurs"] = true,
-				["Raptors"] = true,
-				["Falcosaurs"] = true,
-				["Pterrordaxes"] = true,
+				["Horned Steeds"] = true,
+				["Steeds"] = true,
 			},
 			["Carnivorans"] = {
 				["Bears"] = true,
 				["Foxes"] = true,
 				["Hounds"] = true,
-				["Hyenas"] = true,
-				["Gargon"] = true,
-				["Vulpin"] = true,
 				["Quilen"] = true,
+				["Vulpin"] = true,
+				["Gargon"] = true,
+				["Hyenas"] = true,
 			},
-			["Drakes"] = {
-				["Drakes"] = true,
-				["Wind Drakes"] = true,
-				["Stone Drakes"] = true,
-				["Grand Drakes"] = true,
-				["Undead Drakes"] = true,
-				["Cloud Serpents"] = true,
-				["Proto-Drakes"] = true,
-				["Nether Drakes"] = true,
-				["Others"] = true,
+			["Rylaks"] = true,
+			["Dinosaurs"] = {
+				["Pterrordaxes"] = true,
+				["Brutosaurs"] = true,
+				["Raptors"] = true,
+				["Falcosaurs"] = true,
+				["Direhorns"] = true,
 			},
-			["Humanoids"] = {
-				["Gronnlings"] = true,
-				["Gorger"] = true,
-				["Yetis"] = true,
+			["Rays"] = {
+				["Fathom Rays"] = true,
+				["Nether Rays"] = true,
+				["Mana Rays"] = true,
+				["Stingrays"] = true,
+			},
+			["Demons"] = {
+				["Felsabers"] = true,
+				["Ur'zul"] = true,
+				["Demonic Hounds"] = true,
+				["Demonic Steeds"] = true,
+				["Infernals"] = true,
+			},
+			["Wolves"] = {
+				["Undead Wolves"] = true,
+				["Dire Wolves"] = true,
+				["Wolves"] = true,
+				["War Wolves"] = true,
 			},
 			["Bovids"] = {
 				["Yaks"] = true,
@@ -179,24 +182,14 @@ MJEGlobalSettings = {
 				["Ruinstriders"] = true,
 				["Goats"] = true,
 			},
-			["Insects"] = {
-				["Water Striders"] = true,
-				["Gorm"] = true,
-				["Silithids"] = true,
-				["Ravagers"] = true,
-				["Krolusks"] = true,
-				["Bees"] = true,
-				["Aqir Flyers"] = true,
-				["Animite"] = true,
-				["Moth"] = true,
-			},
+			["Crabs"] = true,
 			["Reptiles"] = {
 				["Snapdragons"] = true,
 				["Turtles"] = true,
 				["Crocolisks"] = true,
-				["Kodos"] = true,
 				["Basilisks"] = true,
 				["Mushan"] = true,
+				["Kodos"] = true,
 				["Sea Serpents"] = true,
 				["N'Zoth Serpents"] = true,
 			},
@@ -212,6 +205,7 @@ MJEGlobalSettings = {
 				["Runestag"] = true,
 			},
 			["Jellyfish"] = true,
+			["Rats"] = true,
 			["Elementals"] = {
 				["Sabers"] = true,
 				["Elementals"] = true,
@@ -224,49 +218,57 @@ MJEGlobalSettings = {
 				["Crawgs"] = true,
 				["Toads"] = true,
 			},
-			["Rats"] = true,
-			["Crabs"] = true,
-			["Wolves"] = {
-				["Undead Wolves"] = true,
-				["Dire Wolves"] = true,
-				["Wolves"] = true,
-				["War Wolves"] = true,
+			["Insects"] = {
+				["Water Striders"] = true,
+				["Gorm"] = true,
+				["Silithids"] = true,
+				["Ravagers"] = true,
+				["Krolusks"] = true,
+				["Bees"] = true,
+				["Aqir Flyers"] = true,
+				["Animite"] = true,
+				["Moth"] = true,
 			},
-			["Demons"] = {
-				["Felsabers"] = true,
-				["Ur'zul"] = true,
-				["Demonic Hounds"] = true,
-				["Demonic Steeds"] = true,
-				["Infernals"] = true,
+			["Humanoids"] = {
+				["Gronnlings"] = true,
+				["Gorger"] = true,
+				["Yetis"] = true,
 			},
-			["Rylaks"] = true,
+			["Drakes"] = {
+				["Drakes"] = true,
+				["Wind Drakes"] = true,
+				["Stone Drakes"] = true,
+				["Grand Drakes"] = true,
+				["Undead Drakes"] = true,
+				["Cloud Serpents"] = true,
+				["Proto-Drakes"] = true,
+				["Others"] = true,
+				["Nether Drakes"] = true,
+			},
+			["Cats"] = {
+				["Sabers"] = true,
+				["Stone Cats"] = true,
+				["Others"] = true,
+				["Tigers"] = true,
+				["Lions"] = true,
+				["Mechanical Cats"] = true,
+				["Manasabers"] = true,
+			},
 			["Bats"] = true,
 		},
-		["onlyUsable"] = false,
-		["onlyTradable"] = false,
 		["collected"] = true,
-		["mountType"] = {
-			["repair"] = true,
-			["flying"] = true,
-			["underwater"] = true,
-			["passenger"] = true,
-			["ground"] = true,
-			["transform"] = true,
-		},
-		["faction"] = {
-			["horde"] = true,
-			["alliance"] = true,
-			["noFaction"] = true,
-		},
+		["onlyTradable"] = false,
+		["hidden"] = false,
 	},
 	["personalHiddenMounts"] = false,
+	["searchInDescription"] = true,
 }
 MJETrackingData = {
 	[1396] = {
-		78, -- [1]
-		1608721615, -- [2]
-		2941, -- [3]
-		3323.213659378891, -- [4]
+		97, -- [1]
+		1609587770, -- [2]
+		3504, -- [3]
+		6016.64801405745, -- [4]
 		1607733886, -- [5]
 	},
 	[1285] = {
@@ -308,9 +310,9 @@ MJETrackingData = {
 		10846.00956968403, -- [4]
 	},
 	[552] = {
-		38, -- [1]
-		1606660358, -- [2]
-		1710, -- [3]
+		39, -- [1]
+		1611864417, -- [2]
+		1743, -- [3]
 		14146.21253923227, -- [4]
 	},
 	[286] = {
@@ -330,6 +332,12 @@ MJETrackingData = {
 		1603658255, -- [2]
 		581, -- [3]
 		8044.422972227492, -- [4]
+	},
+	[1303] = {
+		0, -- [1]
+		[3] = 0,
+		[4] = 0,
+		[5] = 1610727073,
 	},
 	[600] = {
 		28, -- [1]
@@ -351,10 +359,10 @@ MJETrackingData = {
 		1563354000, -- [5]
 	},
 	[1240] = {
-		32, -- [1]
-		1606939698, -- [2]
-		1454, -- [3]
-		8748.38492393147, -- [4]
+		33, -- [1]
+		1612466120, -- [2]
+		1456, -- [3]
+		8750.789190573796, -- [4]
 		1573293600, -- [5]
 	},
 	[521] = {
@@ -364,11 +372,23 @@ MJETrackingData = {
 		[5] = 1532422800,
 	},
 	[168] = {
-		4, -- [1]
-		1606662159, -- [2]
-		110, -- [3]
+		5, -- [1]
+		1611862191, -- [2]
+		123, -- [3]
 		507.0071142686562, -- [4]
 		1476349200, -- [5]
+	},
+	[477] = {
+		0, -- [1]
+		[3] = 0,
+		[4] = 0,
+		[5] = 1612346400,
+	},
+	[1400] = {
+		0, -- [1]
+		[3] = 0,
+		[4] = 0,
+		[5] = 1609598647,
 	},
 	[1289] = {
 		3, -- [1]
@@ -417,6 +437,12 @@ MJETrackingData = {
 		1606653774, -- [2]
 		536, -- [3]
 		5062.640808770088, -- [4]
+	},
+	[1291] = {
+		2, -- [1]
+		1612466782, -- [2]
+		620, -- [3]
+		1100.341908348677, -- [4]
 	},
 	[594] = {
 		38, -- [1]
@@ -497,17 +523,43 @@ MJETrackingData = {
 		[4] = 0,
 		[5] = 1596186000,
 	},
+	[1414] = {
+		112, -- [1]
+		1612172680, -- [2]
+		4534, -- [3]
+		9879.49918875913, -- [4]
+		1611058951, -- [5]
+	},
 	[268] = {
 		0, -- [1]
 		[3] = 0,
 		[4] = 0,
 		[5] = 1471683600,
 	},
+	[1415] = {
+		75, -- [1]
+		1607731128, -- [2]
+		5241, -- [3]
+		9788.31065047793, -- [4]
+		1606681330, -- [5]
+	},
 	[548] = {
 		0, -- [1]
 		[3] = 0,
 		[4] = 0,
 		[5] = 1561194000,
+	},
+	[949] = {
+		24, -- [1]
+		1606604656, -- [2]
+		470, -- [3]
+		3736.689469081237, -- [4]
+	},
+	[1221] = {
+		41, -- [1]
+		1612466680, -- [2]
+		1203, -- [3]
+		13328.27362686135, -- [4]
 	},
 	[826] = {
 		1, -- [1]
@@ -522,35 +574,29 @@ MJETrackingData = {
 		1133, -- [3]
 		13944.87817631373, -- [4]
 	},
-	[949] = {
-		24, -- [1]
-		1606604656, -- [2]
-		470, -- [3]
-		3736.689469081237, -- [4]
+	[1193] = {
+		5, -- [1]
+		1612466124, -- [2]
+		671, -- [3]
+		2210.879114218724, -- [4]
 	},
-	[291] = {
+	[523] = {
+		31, -- [1]
+		1605393916, -- [2]
+		1083, -- [3]
+		12477.75736130935, -- [4]
+	},
+	[55] = {
 		0, -- [1]
 		[3] = 0,
 		[4] = 0,
-		[5] = 1513850400,
-	},
-	[522] = {
-		2, -- [1]
-		1605090424, -- [2]
-		10, -- [3]
-		32.72880175195338, -- [4]
+		[5] = 1568538000,
 	},
 	[1216] = {
-		11, -- [1]
-		1606939541, -- [2]
-		300, -- [3]
-		3865.359139212356, -- [4]
-	},
-	[678] = {
-		0, -- [1]
-		[3] = 0,
-		[4] = 0,
-		[5] = 1474189200,
+		15, -- [1]
+		1612466130, -- [2]
+		315, -- [3]
+		3868.683566832322, -- [4]
 	},
 	[1009] = {
 		4, -- [1]
@@ -559,6 +605,12 @@ MJETrackingData = {
 		12711.32088544621, -- [4]
 		1533632400, -- [5]
 	},
+	[443] = {
+		0, -- [1]
+		[3] = 0,
+		[4] = 0,
+		[5] = 1478080800,
+	},
 	[763] = {
 		6, -- [1]
 		1606603991, -- [2]
@@ -566,28 +618,28 @@ MJETrackingData = {
 		903.2590156486754, -- [4]
 	},
 	[517] = {
-		14, -- [1]
-		1603662313, -- [2]
-		605, -- [3]
-		3461.424558657274, -- [4]
+		16, -- [1]
+		1611756770, -- [2]
+		767, -- [3]
+		5338.456519052153, -- [4]
 	},
-	[55] = {
+	[419] = {
 		0, -- [1]
 		[3] = 0,
 		[4] = 0,
-		[5] = 1568538000,
+		[5] = 1532422800,
 	},
-	[961] = {
-		54, -- [1]
-		1607511097, -- [2]
-		3442, -- [3]
-		24956.10249092756, -- [4]
+	[551] = {
+		33, -- [1]
+		1603658463, -- [2]
+		865, -- [3]
+		9716.872959175149, -- [4]
 	},
-	[292] = {
-		0, -- [1]
-		[3] = 0,
-		[4] = 0,
-		[5] = 1513850400,
+	[996] = {
+		10, -- [1]
+		1611863337, -- [2]
+		159, -- [3]
+		743.9537807532713, -- [4]
 	},
 	[549] = {
 		0, -- [1]
@@ -602,30 +654,30 @@ MJETrackingData = {
 		274.085465381618, -- [4]
 		1606678790, -- [5]
 	},
-	[1292] = {
-		0, -- [1]
-		[3] = 0,
-		[4] = 0,
-		[5] = 1574935200,
-	},
 	[446] = {
 		22, -- [1]
 		1603661884, -- [2]
 		666, -- [3]
 		4617.983517119038, -- [4]
 	},
-	[413] = {
-		35, -- [1]
-		1603963219, -- [2]
-		1814, -- [3]
-		6321.927951183453, -- [4]
-		1547632800, -- [5]
+	[1223] = {
+		32, -- [1]
+		1611859436, -- [2]
+		967, -- [3]
+		8300.200498297061, -- [4]
 	},
-	[986] = {
-		0, -- [1]
-		[3] = 0,
-		[4] = 0,
-		[5] = 1588410000,
+	[593] = {
+		23, -- [1]
+		1606678148, -- [2]
+		1050, -- [3]
+		10887.3565016863, -- [4]
+	},
+	[1424] = {
+		1, -- [1]
+		1612342334, -- [2]
+		21, -- [3]
+		95.35371576794837, -- [4]
+		1612342277, -- [5]
 	},
 	[364] = {
 		0, -- [1]
@@ -639,23 +691,23 @@ MJETrackingData = {
 		[4] = 0,
 		[5] = 1582711200,
 	},
-	[593] = {
-		23, -- [1]
-		1606678148, -- [2]
-		1050, -- [3]
-		10887.3565016863, -- [4]
+	[1044] = {
+		0, -- [1]
+		[3] = 0,
+		[4] = 0,
+		[5] = 1603221959,
 	},
 	[376] = {
-		27, -- [1]
-		1606743811, -- [2]
-		1907, -- [3]
+		28, -- [1]
+		1611862236, -- [2]
+		1918, -- [3]
 		7948.915704836978, -- [4]
 	},
 	[883] = {
-		30, -- [1]
-		1607926081, -- [2]
+		31, -- [1]
+		1611748720, -- [2]
 		442, -- [3]
-		7088.490808513374, -- [4]
+		7093.938489901422, -- [4]
 	},
 	[1266] = {
 		3, -- [1]
@@ -669,11 +721,12 @@ MJETrackingData = {
 		[4] = 0,
 		[5] = 1541671200,
 	},
-	[1044] = {
-		0, -- [1]
-		[3] = 0,
-		[4] = 0,
-		[5] = 1603221959,
+	[1425] = {
+		5, -- [1]
+		1610415000, -- [2]
+		1792, -- [3]
+		1101.093753368274, -- [4]
+		1609592826, -- [5]
 	},
 	[537] = {
 		0, -- [1]
@@ -681,11 +734,11 @@ MJETrackingData = {
 		[4] = 0,
 		[5] = 1597827600,
 	},
-	[679] = {
-		0, -- [1]
-		[3] = 0,
-		[4] = 0,
-		[5] = 1474189200,
+	[1267] = {
+		18, -- [1]
+		1603699479, -- [2]
+		394, -- [3]
+		4111.904165360437, -- [4]
 	},
 	[1346] = {
 		29, -- [1]
@@ -724,17 +777,17 @@ MJETrackingData = {
 		2083.106463525472, -- [4]
 		1471942800, -- [5]
 	},
-	[1267] = {
-		18, -- [1]
-		1603699479, -- [2]
-		394, -- [3]
-		4111.904165360437, -- [4]
-	},
-	[443] = {
+	[986] = {
 		0, -- [1]
 		[3] = 0,
 		[4] = 0,
-		[5] = 1478080800,
+		[5] = 1588410000,
+	},
+	[679] = {
+		0, -- [1]
+		[3] = 0,
+		[4] = 0,
+		[5] = 1474189200,
 	},
 	[741] = {
 		35, -- [1]
@@ -742,59 +795,60 @@ MJETrackingData = {
 		834, -- [3]
 		9256.218203442524, -- [4]
 	},
-	[1223] = {
-		31, -- [1]
-		1606743109, -- [2]
-		859, -- [3]
-		6918.669935023564, -- [4]
+	[413] = {
+		38, -- [1]
+		1612788219, -- [2]
+		1853, -- [3]
+		6321.927951183453, -- [4]
+		1547632800, -- [5]
 	},
 	[1011] = {
-		40, -- [1]
-		1606938964, -- [2]
-		1372, -- [3]
-		11428.87782704753, -- [4]
+		42, -- [1]
+		1611863246, -- [2]
+		1415, -- [3]
+		11803.30975039599, -- [4]
 	},
-	[996] = {
-		9, -- [1]
-		1606662995, -- [2]
-		146, -- [3]
-		743.9537807532713, -- [4]
-	},
-	[551] = {
-		33, -- [1]
-		1603658463, -- [2]
-		865, -- [3]
-		9716.872959175149, -- [4]
-	},
-	[419] = {
+	[1292] = {
 		0, -- [1]
 		[3] = 0,
 		[4] = 0,
-		[5] = 1532422800,
+		[5] = 1574935200,
+	},
+	[292] = {
+		0, -- [1]
+		[3] = 0,
+		[4] = 0,
+		[5] = 1513850400,
+	},
+	[961] = {
+		54, -- [1]
+		1607511097, -- [2]
+		3442, -- [3]
+		24956.10249092756, -- [4]
 	},
 	[460] = {
-		105, -- [1]
-		1608814692, -- [2]
-		9153, -- [3]
-		14170.80721515468, -- [4]
+		258, -- [1]
+		1612217800, -- [2]
+		25332, -- [3]
+		49405.37151571912, -- [4]
 	},
-	[523] = {
-		31, -- [1]
-		1605393916, -- [2]
-		1083, -- [3]
-		12477.75736130935, -- [4]
+	[522] = {
+		24, -- [1]
+		1610976085, -- [2]
+		2112, -- [3]
+		19084.4126865284, -- [4]
 	},
-	[1221] = {
-		40, -- [1]
-		1606743477, -- [2]
-		1177, -- [3]
-		13043.18202997998, -- [4]
+	[678] = {
+		0, -- [1]
+		[3] = 0,
+		[4] = 0,
+		[5] = 1474189200,
 	},
-	[1193] = {
-		3, -- [1]
-		1606291537, -- [2]
-		650, -- [3]
-		2000.460393039373, -- [4]
+	[291] = {
+		0, -- [1]
+		[3] = 0,
+		[4] = 0,
+		[5] = 1513850400,
 	},
 	[476] = {
 		25, -- [1]
@@ -802,11 +856,10 @@ MJETrackingData = {
 		1010, -- [3]
 		11188.03107923614, -- [4]
 	},
-	[1415] = {
-		75, -- [1]
-		1607731128, -- [2]
-		5241, -- [3]
-		9788.31065047793, -- [4]
-		1606681330, -- [5]
+	[1302] = {
+		0, -- [1]
+		[3] = 0,
+		[4] = 0,
+		[5] = 1610212576,
 	},
 }

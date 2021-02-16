@@ -13,6 +13,7 @@ local prospectData = {
     core.Data.Results.Flips.ProspectingMoneliteOre,
     core.Data.Results.Flips.ProspectingOsmeniteOre,
 	core.Data.Results.Flips.ProspectingLaestriteOre,
+	core.Data.Results.Flips.ProspectingElethiumOre,
 }
 
 table.insert(core.Modules, core.DestroyingResultModule('Prospecting', prospectData, 'Flipping'))

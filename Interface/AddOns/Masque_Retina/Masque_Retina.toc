@@ -1,0 +1,14 @@
+## Interface: 90002
+## Title: Masque: Retina
+## Notes: High resolution, pixel perfect skin for Masque, that blends in well with the default Blizzard UI
+
+## Version: 1.0.4
+## Author: jmxd
+## Dependencies: Masque
+## DefaultState: Enabled
+
+## X-Category: Interface Enhancements
+## X-Credits: jmxd
+## X-Curse-Project-ID: 415741
+
+Skins.lua

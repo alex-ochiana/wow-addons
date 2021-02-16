@@ -1,14 +1,26 @@
 
 HandyNotes_CovenantSanctumDB = {
 	["profileKeys"] = {
+		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
+		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
+		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
+		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
 		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
 	},
 	["profiles"] = {
+		["Egidus - Sylvanas"] = {
+		},
+		["Kynaeth - Sylvanas"] = {
+		},
+		["Latthrias - Sylvanas"] = {
+		},
+		["Gnomèrcy - Sylvanas"] = {
+		},
 		["Crètz - Sylvanas"] = {
 			["show_renown"] = false,
 			["show_innkeeper"] = false,
-			["show_stablemaster"] = false,
 			["show_mail"] = false,
+			["show_stablemaster"] = false,
 		},
 	},
 }

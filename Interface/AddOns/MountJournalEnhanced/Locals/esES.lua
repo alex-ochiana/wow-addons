@@ -11,19 +11,32 @@ L["Black Market"] = "Mercado Negro"
 L["Family"] = "Familia"
 L["FAVOR_DISPLAYED"] = "Todas mostradas"
 L["FAVOR_PER_CHARACTER"] = "Por personaje"
+--[[Translation missing --]]
+--[[ L["FILTER_SECRET"] = "Hidden by the game"--]] 
 L["Flying"] = "Volador"
 L["Ground"] = "Terrestre"
 L["Hidden"] = "Oculto"
 L["Only tradable"] = "Sólo comerciable"
-L["Only usable"] = "Sólo usable"
 L["Passenger"] = "Pasajero"
 L["Reset filters"] = "Restablecer filtros"
 L["ROTATE_DOWN"] = "Girar hacia abajo"
 L["ROTATE_UP"] = "Girar hacia arriba"
 L["Show in Collections"] = "Mostrar en las Colecciones"
+--[[Translation missing --]]
+--[[ L["SORT_BY_LAST_USAGE"] = "Last usage"--]] 
+--[[Translation missing --]]
+--[[ L["SORT_BY_LEARNED_DATE"] = "Date of receipt"--]] 
+--[[Translation missing --]]
+--[[ L["SORT_BY_TRAVEL_DISTANCE"] = "Travelled distance"--]] 
+--[[Translation missing --]]
+--[[ L["SORT_BY_TRAVEL_DURATION"] = "Travelled duration"--]] 
+--[[Translation missing --]]
+--[[ L["SORT_BY_USAGE_COUNT"] = "Count of usage"--]] 
 L["SORT_FAVORITES_FIRST"] = "Favoritas primero"
 L["SORT_REVERSE"] = "Ordenación inversa"
 L["SORT_UNOWNED_BOTTOM"] = "Faltantes al final"
+--[[Translation missing --]]
+--[[ L["SORT_UNUSABLE_BOTTOM"] = "Unusable after Usable"--]] 
 L["TASK_END"] = "[MJE] ¡Fiuuu! He acabado."
 L["TASK_FAVOR_START"] = "[MJE] Reaplicando estrellas a tus monturas. Por favor, espera unos segundos hasta que haya acabado."
 L["Transform"] = "Transformaciones"
@@ -33,8 +46,6 @@ L["Underwater"] = "Submarino"
 L["SETTING_ACHIEVEMENT_POINTS"] = "Mostrar puntos de logros"
 L["SETTING_COMPACT_LIST"] = "Compactar la lista de monturas"
 L["SETTING_CURSOR_KEYS"] = "Habilitar las teclas Arriba y Abajo para explorar las monturas"
---[[Translation missing --]]
---[[ L["SETTING_CUSTOM_SORT_OPTIONS"] = "Enable more sort options"--]] 
 L["SETTING_FAVORITE_PER_CHAR"] = "Monturas favoritas por personaje"
 L["SETTING_HEAD_BEHAVIOUR"] = "Comportamiento"
 L["SETTING_MOUNT_COUNT"] = "Mostrar el número personal de monturas"
@@ -43,6 +54,8 @@ L["SETTING_PERSONAL_FILTER"] = "Aplicar filtros sólo para este personaje"
 L["SETTING_PERSONAL_HIDDEN_MOUNTS"] = "Aplicar monturas ocultas sólo para este personaje"
 L["SETTING_PERSONAL_UI"] = "Aplicar opciones de interfaz sólo para este personaje"
 L["SETTING_PREVIEW_LINK"] = "Mostrar el botón Colección en la vista previa de la montura"
+--[[Translation missing --]]
+--[[ L["SETTING_SEARCH_MORE"] = "Search also in description text"--]] 
 L["SETTING_SHOP_BUTTON"] = "Mostrar el botón de la tienda en las monturas que no se tienen"
 L["SETTING_SHOW_USAGE"] = "Mostrar las estadísticas de uso de las monturas"
 L["SETTING_TRACK_USAGE"] = "Seguimiento del comportamiento de uso de las monturas en todos los personajes"
