@@ -155,6 +155,8 @@ L["Nether Drakes"] = "灵翼幼龙"
 L["Nether Rays"] = "虚空鳐"
 L["N'Zoth Serpents"] = "恩佐斯蛇"
 L["Others"] = "其他"
+--[[Translation missing --]]
+--[[ L["Ox"] = "Ox"--]] 
 L["Pandaren Phoenixes"] = "熊猫人凤凰"
 L["Parrots"] = "鹦鹉"
 L["Phoenixes"] = "凤凰"

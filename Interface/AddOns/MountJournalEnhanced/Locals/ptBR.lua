@@ -155,6 +155,8 @@ L["Nether Drakes"] = "Dracos Etéreos"
 L["Nether Rays"] = "Arraias Etéreas "
 L["N'Zoth Serpents"] = "Serpentes de N'Zoth"
 L["Others"] = "Outros"
+--[[Translation missing --]]
+--[[ L["Ox"] = "Ox"--]] 
 L["Pandaren Phoenixes"] = "Fênix Pandarênicas"
 L["Parrots"] = "Papagaios"
 L["Phoenixes"] = "Fênix"

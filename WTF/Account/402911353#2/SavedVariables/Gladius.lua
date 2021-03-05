@@ -4,8 +4,9 @@ Gladius2DB = {
 		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
 		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
 		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
-		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
 		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
+		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
+		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
 	},
 	["profiles"] = {
 		["Egidus - Sylvanas"] = {
@@ -29,17 +30,25 @@ Gladius2DB = {
 			},
 		},
 		["Crètz - Sylvanas"] = {
+			["tagsVersion"] = 4,
 			["y"] = {
-				["arena1"] = 590.222366722428,
+				["arena1"] = 480.7113397651301,
 			},
 			["x"] = {
-				["arena1"] = 223.2889593998607,
+				["arena1"] = 968.5337908135625,
 			},
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
 			["announcements"] = {
 				["enemies"] = false,
 			},
+			["auraVersion"] = 1,
+		},
+		["Latthrias - Sylvanas"] = {
+			["auraVersion"] = 1,
+			["tagsVersion"] = 4,
+		},
+		["Jiglèr - Sylvanas"] = {
+			["auraVersion"] = 1,
+			["tagsVersion"] = 4,
 		},
 		["Gnomèrcy - Sylvanas"] = {
 			["auraVersion"] = 1,
@@ -50,10 +59,6 @@ Gladius2DB = {
 			["y"] = {
 				["arena1"] = 517.6889448271868,
 			},
-		},
-		["Latthrias - Sylvanas"] = {
-			["tagsVersion"] = 4,
-			["auraVersion"] = 1,
 		},
 	},
 }

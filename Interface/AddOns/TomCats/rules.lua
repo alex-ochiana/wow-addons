@@ -17,7 +17,12 @@ local timeSinceLastUpdate = 0
 
 local mapActivationRules = {
 	[14] = loadstring(rulePrepend .. "return g.arathiVisible"),
-	[62] = loadstring(rulePrepend .. "return g.darkshoreVisible")
+	[62] = loadstring(rulePrepend .. "return g.darkshoreVisible"),
+	[1533] = loadstring(rulePrepend .. "return g.betaEnabled"),
+	[1565] = loadstring(rulePrepend .. "return g.betaEnabled"),
+	[1525] = loadstring(rulePrepend .. "return g.betaEnabled"),
+	[1536] = loadstring(rulePrepend .. "return g.betaEnabled"),
+	[1543] = loadstring(rulePrepend .. "return g.betaEnabled")
 }
 
 local visibilityRules = {
@@ -104,6 +109,7 @@ local function OnUpdate(_, elapsed)
 		end
 		addon.globals.arathiVisible = not C_QuestLog.IsQuestFlaggedCompleted(52781)
 		addon.globals.darkshoreVisible = not C_QuestLog.IsQuestFlaggedCompleted(54411)
+		addon.globals.betaEnabled = addon.IsBetaEnabled and addon.IsBetaEnabled()
 	end
 	NotifyRuleListeners()
 end

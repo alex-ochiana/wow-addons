@@ -41,7 +41,11 @@ VER 3 0000000000000009 "Solar Beam" "INV_MISC_QUESTIONMARK"
 #showtooltip Solar Beam
 /cast [@focus, exists, nodead] Solar Beam;Solar Beam
 END
-VER 3 000000000000000A "Trinket" "INV_MISC_QUESTIONMARK"
+VER 3 0000000000000011 "T1" "INV_MISC_QUESTIONMARK"
+#showtooltip 13
+/use 13
+END
+VER 3 000000000000000A "T2" "INV_MISC_QUESTIONMARK"
 #showtooltip 14
 /use 14
 END

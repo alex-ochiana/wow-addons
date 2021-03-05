@@ -3110,7 +3110,12 @@ SmexyMats.Sources = {
 	[7] = {
 		--ShadowLands
 		[8] = {
-		
+			173035,
+			173032,
+			173041,
+			173033,
+			173034,
+			173036,
 		},
 		--BFA
 		[7] = {
@@ -4811,6 +4816,7 @@ SmexyMats.Sources = {
 			170554,
 			173057,
 			173056,
+			168583,
 		},
 		--BFA
 		[7] = {
@@ -5554,6 +5560,11 @@ SmexyMats.Sources = {
 			173171,
 			173172,
 			173173,
+			--Prospecting
+			173110,
+			173109,
+			173108,
+			
 		},
 		--BFA
 		[7] = {
@@ -12002,7 +12013,8 @@ SmexyMats.Reagents = {
 	[7] = {
 		--ShadowLands
 		[8] = {
-		
+			173041,
+			173042,
 		},
 		--BFA
 		[7] = {
@@ -13547,7 +13559,12 @@ SmexyMats.Reagents = {
 --These item reagents can be obtained from Drops
 SmexyMats.Drop = {
 	--ShadowLands
-
+		179314,
+		172053,
+		179315,
+		172054,
+		172052,
+		172055,
 	--8.3.0
 		174353, -- Questionable Meat
 	--8.2.0
@@ -14258,6 +14275,13 @@ SmexyMats.Vendor = {
 		183953,
 		183954,
 		184203,
+		177061,
+		173038,
+		173041,
+		173042,
+		173040,
+		173039,
+		173043,
 
 	--8.3.0
 	

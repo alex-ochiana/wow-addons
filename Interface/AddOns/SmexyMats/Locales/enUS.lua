@@ -14,7 +14,7 @@ L["Mists of Pandaria"] = true;
 L["Warlords of Draenor"] = true;
 L["Legion"] = true;
 L["Battle for Azeroth"] = true;
-L["ShadowLands"] = true;
+L["Shadowlands"] = true;
 L["|cFFFF0000Battle |cFFE6CC80for |cFF2E6FF2Azeroth"] = true;
 
 --Professions Names

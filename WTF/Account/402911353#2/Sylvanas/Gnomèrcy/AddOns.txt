@@ -65,9 +65,9 @@ Overachiever_Tabs: enabled
 Overachiever_Trade: enabled
 Routes: disabled
 RoutesImportExport: disabled
-TomCats: disabled
+TomCats: enabled
 TomCats-Bundled-DeathsRising: disabled
-VenturePlan: disabled
+VenturePlan: enabled
 XPractice: disabled
 WIT: disabled
 TradeSkillMaster: disabled
@@ -85,10 +85,10 @@ Details_TinyThreat: enabled
 Details_Vanguard: enabled
 Details_Covenants: enabled
 GreatVault: enabled
-Kui_Media: enabled
-Kui_Nameplates: enabled
-Kui_Nameplates_Core_Config: enabled
-Kui_Nameplates_Core: enabled
+Kui_Media: disabled
+Kui_Nameplates: disabled
+Kui_Nameplates_Core_Config: disabled
+Kui_Nameplates_Core: disabled
 Leatrix_Plus: enabled
 Masque: enabled
 Masque_Renaitre: enabled
@@ -99,8 +99,8 @@ RaiderIO_DB_EU_A: enabled
 RaiderIO_DB_EU_H: enabled
 RaiderIO_DB_EU_A_R: enabled
 RaiderIO_DB_EU_H_R: enabled
-Rarity: disabled
-Rarity_Options: disabled
+Rarity: enabled
+Rarity_Options: enabled
 RSA: enabled
 RSA_Options: enabled
 RSA_Reminders: enabled

@@ -2,14 +2,6 @@
 CliqueDB = nil
 CliqueDB3 = {
 	["char"] = {
-		["Mortifèrous - Kazzak"] = {
-			["spec1_profileKey"] = "Mortifèrous - Kazzak",
-			["spec2_profileKey"] = "Mortifèrous - Kazzak",
-			["downclick"] = false,
-			["fastooc"] = false,
-			["specswap"] = false,
-			["spec3_profileKey"] = "Mortifèrous - Kazzak",
-		},
 		["Crëtz - Kazzak"] = {
 			["spec1_profileKey"] = "Crëtz - Kazzak",
 			["spec2_profileKey"] = "Crëtz - Kazzak",
@@ -17,15 +9,23 @@ CliqueDB3 = {
 			["fastooc"] = false,
 			["specswap"] = false,
 		},
+		["Mortifèrous - Kazzak"] = {
+			["spec1_profileKey"] = "Mortifèrous - Kazzak",
+			["spec3_profileKey"] = "Mortifèrous - Kazzak",
+			["downclick"] = false,
+			["fastooc"] = false,
+			["spec2_profileKey"] = "Mortifèrous - Kazzak",
+			["specswap"] = false,
+		},
 		["Crètz - Sylvanas"] = {
 			["spec1_profileKey"] = "Crètz - Sylvanas",
+			["fastooc"] = false,
 			["spec2_profileKey"] = "Crètz - Sylvanas",
 			["downclick"] = false,
+			["spec4_profileKey"] = "Crètz - Sylvanas",
 			["alerthidden"] = true,
-			["fastooc"] = false,
 			["spec3_profileKey"] = "Crètz - Sylvanas",
 			["specswap"] = false,
-			["spec4_profileKey"] = "Crètz - Sylvanas",
 		},
 		["Kynaeth - Sylvanas"] = {
 			["spec1_profileKey"] = "Kynaeth - Sylvanas",
@@ -36,15 +36,35 @@ CliqueDB3 = {
 		},
 	},
 	["profileKeys"] = {
+		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
 		["Mortifèrous - Kazzak"] = "Mortifèrous - Kazzak",
 		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
-		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
-		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
-		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
 		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
+		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
+		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
+		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
 		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
 	},
 	["profiles"] = {
+		["Kynaeth - Sylvanas"] = {
+			["bindings"] = {
+				{
+					["type"] = "target",
+					["sets"] = {
+						["default"] = true,
+					},
+					["key"] = "BUTTON1",
+					["unit"] = "mouseover",
+				}, -- [1]
+				{
+					["type"] = "menu",
+					["key"] = "BUTTON2",
+					["sets"] = {
+						["default"] = true,
+					},
+				}, -- [2]
+			},
+		},
 		["Mortifèrous - Kazzak"] = {
 			["bindings"] = {
 				{
@@ -83,7 +103,26 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Kynaeth - Sylvanas"] = {
+		["Crëtz - Kazzak"] = {
+			["bindings"] = {
+				{
+					["type"] = "target",
+					["sets"] = {
+						["default"] = true,
+					},
+					["key"] = "BUTTON1",
+					["unit"] = "mouseover",
+				}, -- [1]
+				{
+					["type"] = "menu",
+					["key"] = "BUTTON2",
+					["sets"] = {
+						["default"] = true,
+					},
+				}, -- [2]
+			},
+		},
+		["Latthrias - Sylvanas"] = {
 			["bindings"] = {
 				{
 					["type"] = "target",
@@ -130,26 +169,7 @@ CliqueDB3 = {
 				}, -- [3]
 			},
 		},
-		["Latthrias - Sylvanas"] = {
-			["bindings"] = {
-				{
-					["type"] = "target",
-					["sets"] = {
-						["default"] = true,
-					},
-					["key"] = "BUTTON1",
-					["unit"] = "mouseover",
-				}, -- [1]
-				{
-					["type"] = "menu",
-					["key"] = "BUTTON2",
-					["sets"] = {
-						["default"] = true,
-					},
-				}, -- [2]
-			},
-		},
-		["Crëtz - Kazzak"] = {
+		["Jiglèr - Sylvanas"] = {
 			["bindings"] = {
 				{
 					["type"] = "target",

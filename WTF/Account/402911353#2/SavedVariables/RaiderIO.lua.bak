@@ -1,14 +1,33 @@
 
 RaiderIO_Config = {
 }
-RaiderIO_LastCharacter = "eu-Latthrias-sylvanas"
+RaiderIO_LastCharacter = "eu-Crètz-sylvanas"
 RaiderIO_MissingCharacters = {
-	["eu-Anamarria-sylvanas"] = true,
-	["eu-Aburitoarea-sylvanas"] = true,
-	["eu-Mådgåz-outland"] = true,
-	["eu-Drowrangêr-sylvanas"] = true,
-	["eu-Stepbros-sylvanas"] = true,
-	["eu-Burse-sylvanas"] = true,
-	["eu-Psicko-silvermoon"] = true,
+	["eu-Magimagi-ragnaros"] = true,
+	["eu-Osker-sylvanas"] = true,
+	["eu-Miramiss-ravencrest"] = true,
+	["eu-Gurubäshi-nemesis"] = true,
+	["eu-Cofilix-silvermoon"] = true,
+	["eu-Rankku-kazzak"] = true,
+	["eu-Vocci-silvermoon"] = true,
+	["eu-Pyroxix-silvermoon"] = true,
+	["eu-Scalp-sylvanas"] = true,
+	["eu-Torbizz-ragnaros"] = true,
+	["eu-Tracywhitney-ravencrest"] = true,
+	["eu-Whispes-silvermoon"] = true,
+	["eu-Nalexei-ravencrest"] = true,
+	["eu-Pahu-outland"] = true,
+	["eu-Blockongcd-auchindoun"] = true,
+	["eu-Scuta-sylvanas"] = true,
+	["eu-Lodarko-silvermoon"] = true,
+	["eu-Uga-ravencrest"] = true,
+	["eu-Legobakje-silvermoon"] = true,
+	["eu-Dallean-silvermoon"] = true,
+	["eu-Deathfighter-sylvanas"] = true,
+	["eu-Mitchconner-arathor"] = true,
+	["eu-Dayabolyq-ravencrest"] = true,
+	["eu-Huxo-ravencrest"] = true,
+	["eu-Clawsandpaws-outland"] = true,
+	["eu-Kapelica-outland"] = true,
 }
 RaiderIO_CachedRuns = nil

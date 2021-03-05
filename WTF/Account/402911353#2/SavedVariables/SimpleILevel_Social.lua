@@ -6,6 +6,7 @@ SIL_Social = {
 		["Envra - Sylvanas"] = "Default",
 		["Razetlar - Sylvanas"] = "Default",
 		["Ialadriel - Sylvanas"] = "Default",
+		["Jiglèr - Sylvanas"] = "Default",
 		["Crëtz - Kazzak"] = "Default",
 		["Gnomèrcy - Sylvanas"] = "Default",
 		["Egidus - Sylvanas"] = "Default",

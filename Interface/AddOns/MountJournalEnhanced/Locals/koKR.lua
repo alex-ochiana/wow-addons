@@ -175,6 +175,8 @@ L["Nether Drakes"] = "황천의 비룡"
 L["Nether Rays"] = "황천 가오리"
 L["N'Zoth Serpents"] = "느조스 뱀"
 L["Others"] = "기타"
+--[[Translation missing --]]
+--[[ L["Ox"] = "Ox"--]] 
 L["Pandaren Phoenixes"] = "판다렌 불사조"
 L["Parrots"] = "앵무새"
 L["Phoenixes"] = "불사조"

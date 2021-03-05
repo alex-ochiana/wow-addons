@@ -104,12 +104,19 @@ local function OnUpdate(_, elapsed)
 					local vignetteID = vignetteInfoCache[v]
 					if (not vignetteID) then
 						local vignetteInfo = C_VignetteInfo.GetVignetteInfo(v)
-						vignetteID = vignetteInfo.vignetteID
-						vignetteInfoCache[v] = vignetteID
+						if (vignetteInfo) then
+							vignetteID = vignetteInfo.vignetteID
+							vignetteInfoCache[v] = vignetteID
+						else
+							vignetteID = -1
+							vignetteInfoCache[v] = -1
+						end
 					end
-					vignetteGUIDsByVignetteID = vignetteGUIDsByVignetteID or { }
-					vignetteGUIDsByVignetteID[vignetteID] = vignetteGUIDsByVignetteID[vignetteID] or { }
-					table.insert(vignetteGUIDsByVignetteID[vignetteID], v)
+					if (vignetteID >= 0) then
+						vignetteGUIDsByVignetteID = vignetteGUIDsByVignetteID or { }
+						vignetteGUIDsByVignetteID[vignetteID] = vignetteGUIDsByVignetteID[vignetteID] or { }
+						table.insert(vignetteGUIDsByVignetteID[vignetteID], v)
+					end
 				end
 			end
 			for vignetteID in pairs(affectedMaps[1].pins) do
@@ -263,7 +270,6 @@ function TomCatsMapCanvasPinMixin:OnAcquired(vignette)
 	mapData.pins[vignette.ID] = self
 	self:SetPosition(vignette:GetLocation())
 	updateVignettePin(self)
-	--todo: remove
 	rescale(self)
 	self:ApplyCurrentScale()
 end

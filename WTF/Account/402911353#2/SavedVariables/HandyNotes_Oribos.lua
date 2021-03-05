@@ -3,22 +3,25 @@ HandyNotes_OribosDB = {
 	["profileKeys"] = {
 		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
 		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
-		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
-		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
 		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
+		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
+		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
+		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
 	},
 	["profiles"] = {
 		["Egidus - Sylvanas"] = {
 		},
 		["Kynaeth - Sylvanas"] = {
 		},
-		["Latthrias - Sylvanas"] = {
+		["Gnomèrcy - Sylvanas"] = {
 		},
 		["Crètz - Sylvanas"] = {
-			["show_onlymytrainers"] = true,
 			["fmaster_waypoint_dropdown"] = 3,
+			["show_onlymytrainers"] = true,
 		},
-		["Gnomèrcy - Sylvanas"] = {
+		["Jiglèr - Sylvanas"] = {
+		},
+		["Latthrias - Sylvanas"] = {
 		},
 	},
 }

@@ -1,0 +1,10 @@
+## Interface: 80100
+## Author: Klix
+## Version: 0.6
+## Title: |cff1784d1ElvUI |r|cfffb4f4fSkullflower Texture Pack|r
+## Notes: All |cfffb4f4fSkullflower's|r textures for |cff1784d1ElvUI|r.
+## RequiredDeps: ElvUI
+## DefaultState: enabled
+
+ElvUI_SkullflowerTP.lua
+media\load_media.xml

@@ -30,25 +30,20 @@ local function FavorMounts(mountIds, finishedCallback)
         starButton:SetDisabled(true)
     end
 
-    local MJ_GetNumDisplayedMounts = ADDON.hooks["GetNumDisplayedMounts"] or C_MountJournal.GetNumDisplayedMounts
-    local MJ_GetDisplayedMountInfo = ADDON.hooks["GetDisplayedMountInfo"] or C_MountJournal.GetDisplayedMountInfo
-    local MJ_GetIsFavorite = ADDON.hooks["GetIsFavorite"] or C_MountJournal.GetIsFavorite
-    local MJ_SetIsFavorite = ADDON.hooks["SetIsFavorite"] or C_MountJournal.SetIsFavorite
-
     local hasUpdate
     local isEmptyIdList = (#mountIds == 0)
-    for index = 1, MJ_GetNumDisplayedMounts() do
-        local _, _, _, _, _, _, _, _, _, _, isCollected, mountId = MJ_GetDisplayedMountInfo(index)
+    for index = 1, C_MountJournal.GetNumDisplayedMounts() do
+        local _, _, _, _, _, _, _, _, _, _, isCollected, mountId = C_MountJournal.GetDisplayedMountInfo(index)
         if isCollected then
-            local isFavorite, canFavorite = MJ_GetIsFavorite(index)
+            local isFavorite, canFavorite = C_MountJournal.GetIsFavorite(index)
             if canFavorite then
                 local shouldFavor = tContains(mountIds, mountId)
                 if isFavorite and not shouldFavor then
-                    MJ_SetIsFavorite(index, false)
+                    C_MountJournal.SetIsFavorite(index, false)
                     index = index - 1
                     hasUpdate = true
                 elseif not isFavorite and shouldFavor then
-                    MJ_SetIsFavorite(index, true)
+                    C_MountJournal.SetIsFavorite(index, true)
                     hasUpdate = true
                 elseif not isFavorite and isEmptyIdList then
                     break
@@ -68,8 +63,8 @@ local function FavorMounts(mountIds, finishedCallback)
             starButton:SetDisabled(false)
         end
         if ADDON.initialized then
-            ADDON:UpdateIndex()
-            MountJournal_UpdateMountList()
+            ADDON.Api:UpdateIndex()
+            ADDON.UI:UpdateMountList()
         end
         finishedCallback()
     end
@@ -86,8 +81,8 @@ end
 
 local function FetchDisplayedMountIds()
     local mountIds = {}
-    for index = 1, C_MountJournal.GetNumDisplayedMounts() do
-        local _, _, _, _, _, _, _, _, _, _, isCollected, mountId = C_MountJournal.GetDisplayedMountInfo(index)
+    for index = 1, ADDON.Api:GetNumDisplayedMounts() do
+        local _, _, _, _, _, _, _, _, _, _, isCollected, mountId = ADDON.Api:GetDisplayedMountInfo(index)
         if isCollected then
             mountIds[#mountIds + 1] = mountId
         end
@@ -127,9 +122,6 @@ local function InitializeDropDown(menu, level)
 end
 
 local function BuildStarButton()
-    local menu = CreateFrame("Frame", ADDON_NAME .. "FavorMenu", MountJournal, "UIDropDownMenuTemplate")
-    UIDropDownMenu_Initialize(menu, InitializeDropDown, "MENU")
-
     local AceGUI = LibStub("AceGUI-3.0")
 
     starButton = AceGUI:Create("Icon")
@@ -152,7 +144,14 @@ local function BuildStarButton()
     starButton:SetCallback("OnLeave", function()
         tooltip:Hide()
     end)
+
+    local menu
     starButton:SetCallback("OnClick", function()
+        if menu == nil then
+            menu = CreateFrame("Frame", ADDON_NAME .. "FavorMenu", MountJournal, "UIDropDownMenuTemplate")
+            UIDropDownMenu_Initialize(menu, InitializeDropDown, "MENU")
+        end
+
         ToggleDropDownMenu(1, nil, menu, starButton.frame, 0, 10)
     end)
 
@@ -169,7 +168,7 @@ end
 ADDON:RegisterBehaviourSetting('favoritePerChar', false, L.SETTING_FAVORITE_PER_CHAR, CollectFavoredMounts)
 
 -- resetting personal favored mounts
-ADDON:RegisterLoginCallback(function()
+ADDON.Events:RegisterCallback("OnLogin", function()
     if ADDON.settings.favoritePerChar then
         FavorMounts(ADDON.settings.favoredMounts, function()
             -- not quite performant but so far best solution
@@ -178,6 +177,6 @@ ADDON:RegisterLoginCallback(function()
     else
         hooksecurefunc(C_MountJournal, "SetIsFavorite", CollectFavoredMounts)
     end
-end)
+end, "favorite hooks")
 
-ADDON:RegisterLoadUICallback(BuildStarButton)
+ADDON.Events:RegisterCallback("loadUI", BuildStarButton, "favorites")

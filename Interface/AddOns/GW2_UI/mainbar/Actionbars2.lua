@@ -342,14 +342,10 @@ local function updateHotkey(self, actionButtonType)
     text = string.gsub(text, "(Up Arrow)", "UP")
     text = string.gsub(text, "(Down Arrow)", "DN")
 
-    if hotkey:GetText() == RANGE_INDICATOR then
+    if hotkey:GetText() == RANGE_INDICATOR or not GetSetting("BUTTON_ASSIGNMENTS") then
         hotkey:SetText("")
     else
-        if GetSetting("BUTTON_ASSIGNMENTS") then
-            hotkey:SetText(text)
-        else
-            hotkey:SetText("")
-        end
+        hotkey:SetText(text)
     end
 end
 GW.updateHotkey = updateHotkey
@@ -465,11 +461,6 @@ local function updateMainBar(toggle)
     fmActionbar.rangeTimer = -1
     fmActionbar.fadeTimer = -1
     fmActionbar.elapsedTimer = -1
-    local btn_yOff = 0
-
-    if not GetSetting("XPBAR_ENABLED") then
-        btn_yOff = -14
-    end
 
     local rangeIndicatorSetting = GetSetting("MAINBAR_RANGEINDICATOR")
     for i = 1, 12 do
@@ -506,7 +497,7 @@ local function updateMainBar(toggle)
             if IsEquippedAction(btn.action) then
                 local borname = "ActionButton" .. i .. "Border"
                 if _G[borname] then
-                    _G[borname]:SetVertexColor(0, 1.0, 0, 1)
+                    _G[borname]:SetVertexColor(0, 1, 0, 1)
                 end
             end
 
@@ -521,13 +512,7 @@ local function updateMainBar(toggle)
             btn["gw_HotKey"] = hotkey
 
             if GetSetting("BUTTON_ASSIGNMENTS") then
-                local hkBg =
-                    CreateFrame(
-                    "Frame",
-                    "GwHotKeyBackDropActionButton" .. i,
-                    hotkey:GetParent(),
-                    "GwActionHotkeyBackdropTmpl"
-                )
+                local hkBg = CreateFrame("Frame", "GwHotKeyBackDropActionButton" .. i, hotkey:GetParent(), "GwActionHotkeyBackdropTmpl")
 
                 hkBg:SetPoint("CENTER", hotkey, "CENTER", 0, 0)
                 _G["GwHotKeyBackDropActionButton" .. i .. "Texture"]:SetParent(hotkey:GetParent())
@@ -539,10 +524,10 @@ local function updateMainBar(toggle)
                 fmActionbar,
                 "LEFT",
                 btn_padding - MAIN_MENU_BAR_BUTTON_MARGIN - MAIN_MENU_BAR_BUTTON_SIZE,
-                btn_yOff
+                (GetSetting("XPBAR_ENABLED") and 0 or -14)
             )
 
-            if i == 6 then
+            if i == 6 and not GetSetting("PLAYER_AS_TARGET_FRAME") then
                 btn_padding = btn_padding + 108
             end
         end
@@ -677,25 +662,30 @@ local function updateMultiBar(lm, barName, buttonName, actionPage, state)
     fmMultibar:SetSize(used_width, used_height)
 
     if barName == "MultiBarLeft" then
-        RegisterMovableFrame(fmMultibar, SHOW_MULTIBAR4_TEXT, barName, "VerticalActionBarDummy", nil, nil, {"scaleable"}, nil, FlyoutDirection)
+        RegisterMovableFrame(fmMultibar, SHOW_MULTIBAR4_TEXT, barName, "VerticalActionBarDummy", nil, nil, {"default", "scaleable"}, nil, FlyoutDirection)
     elseif barName == "MultiBarRight" then
-        RegisterMovableFrame(fmMultibar, SHOW_MULTIBAR3_TEXT, barName, "VerticalActionBarDummy", nil, nil, {"scaleable"}, nil, FlyoutDirection)
+        RegisterMovableFrame(fmMultibar, SHOW_MULTIBAR3_TEXT, barName, "VerticalActionBarDummy", nil, nil, {"default", "scaleable"}, nil, FlyoutDirection)
     elseif barName == "MultiBarBottomLeft" then
         lm:RegisterMultiBarLeft(fmMultibar)
-        RegisterMovableFrame(fmMultibar, SHOW_MULTIBAR1_TEXT, barName, "VerticalActionBarDummy", nil, true, {"scaleable"}, true, FlyoutDirection)
+        RegisterMovableFrame(fmMultibar, SHOW_MULTIBAR1_TEXT, barName, "VerticalActionBarDummy", nil, true, {"default", "scaleable"}, true, FlyoutDirection)
     elseif barName == "MultiBarBottomRight" then
         lm:RegisterMultiBarRight(fmMultibar)
-        RegisterMovableFrame(fmMultibar, SHOW_MULTIBAR2_TEXT, barName, "VerticalActionBarDummy", nil, true, {"scaleable"}, true, FlyoutDirection)
+        RegisterMovableFrame(fmMultibar, SHOW_MULTIBAR2_TEXT, barName, "VerticalActionBarDummy", nil, true, {"default", "scaleable"}, true, FlyoutDirection)
     end
 
     fmMultibar:ClearAllPoints()
     fmMultibar:SetPoint("TOPLEFT", fmMultibar.gwMover)
 
     -- position mover
-    if (barName == "MultiBarBottomLeft" or barName == "MultiBarBottomRight") and not GetSetting("XPBAR_ENABLED") and not fmMultibar.isMoved  then
+    if (barName == "MultiBarBottomLeft" or barName == "MultiBarBottomRight") and (not GetSetting("XPBAR_ENABLED") or GetSetting("PLAYER_AS_TARGET_FRAME")) and not fmMultibar.isMoved  then
         local framePoint = GetSetting(barName)
+        local yOff = not GetSetting("XPBAR_ENABLED") and 14 or 0
         fmMultibar.gwMover:ClearAllPoints()
-        fmMultibar.gwMover:SetPoint(framePoint.point, UIParent, framePoint.relativePoint, framePoint.xOfs, framePoint.yOfs - 14)
+        if barName == "MultiBarBottomLeft" then
+            fmMultibar.gwMover:SetPoint(framePoint.point, UIParent, framePoint.relativePoint, framePoint.xOfs + 56, framePoint.yOfs - yOff)
+        elseif barName == "MultiBarBottomRight" then
+            fmMultibar.gwMover:SetPoint(framePoint.point, UIParent, framePoint.relativePoint, framePoint.xOfs - 56, framePoint.yOfs - yOff)
+        end
     end
 
     -- set fader logic

@@ -1,3 +1,26 @@
+5.9.1
+FIXES
+    - Torghast tooltip issue
+    - Fix M+ timer overlapping (Thanks to Sethos)
+
+5.9.0
+NEW
+    - Added "player frame in target frame style"
+    - Immersive Questing: Trigger "Next Gossip" with space
+    - Show cooldowns at bags and character correct by using our own cooldown system
+    - Added toggle for player PvP indicator
+    - Added "World Quest Addon"-Skin (embedded into objectives tracker)
+    - Added option to invert target/focus frame
+    - Immersive Questing: Now works with auto accepting quest addons like AAP
+    - Added Ember Court to the objectives tracker (Big thanks to Belazor for all the testing)
+    - Added Credits
+
+FIXES
+    - Update "Raid Debuffs"
+    - Guild auto repair if not in guild
+    - Gamemenu fixes to better interact with ElvUI
+    - Immersive Questing: "Ignore"-Button now only shows if applicable
+
 5.8.0
 NEW
     - Added Talent Set Manager support (button on hero panel)
@@ -34,8 +57,8 @@ FIXES
 
 5.7.0
 NEW
-    - Dropdown in GW2 Settings habe now scrolling
-    - "Importend Raid & Dungeon" Debuffs can now be disable/enabled per debuffs
+    - Dropdown in GW2 Settings have now scrolling
+    - "Important Raid & Dungeon" Debuffs can now be disable/enabled per debuffs
     - Added ingame notification if a new addon update is available (icon at the micromenu)
     - Added missing types at GW2 floating combat text
     - We now use blizzards heropanel itemslots, that means that now everything can applyed to that buttons and the can be used, if they have "use" attributes

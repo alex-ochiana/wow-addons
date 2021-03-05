@@ -17,7 +17,7 @@ Overachiever_Trade: enabled
 Paste: disabled
 Skada: enabled
 SmexyMats: enabled
-TomCats: disabled
+TomCats: enabled
 HandyNotes: enabled
 WeakAurasCompanion: enabled
 !BugGrabber: disabled
@@ -71,8 +71,8 @@ AAP-EasternKingdoms: enabled
 AAP-Shadowlands: enabled
 InactiveReputationHeaders: disabled
 MountJournalEnhanced: disabled
-Rarity: disabled
-Rarity_Options: disabled
+Rarity: enabled
+Rarity_Options: enabled
 TomTom: enabled
 Narcissus: enabled
 Narcissus_Database: enabled
@@ -149,3 +149,17 @@ SimpleILevel: enabled
 SimpleILevel_Group: enabled
 SimpleILevel_Social: enabled
 Simulationcraft: enabled
+VenturePlan: enabled
+Kui_Media: disabled
+Kui_Nameplates: disabled
+Kui_Nameplates_Core_Config: disabled
+Kui_Nameplates_Core: disabled
+TomCats-ArathiHighlandsRares: disabled
+TomCats-DarkshoreRares: disabled
+TomCats-WarfrontsCommandCenter: disabled
+TomCats-Complete: disabled
+TomCats-ChildrensWeek: disabled
+TomCats-HallowsEnd: disabled
+TomCats-LoveIsInTheAir: disabled
+TomCats-LunarFestival: disabled
+TomCats-Noblegarden: disabled

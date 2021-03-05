@@ -241,6 +241,8 @@ L["Mushan"] = "Mushans"
 --[[Translation missing --]]
 --[[ L["Others"] = "Others"--]] 
 --[[Translation missing --]]
+--[[ L["Ox"] = "Ox"--]] 
+--[[Translation missing --]]
 --[[ L["Pandaren Phoenixes"] = "Pandaren Phoenixes"--]] 
 L["Parrots"] = "Psittaciformes"
 L["Phoenixes"] = "Phénix"

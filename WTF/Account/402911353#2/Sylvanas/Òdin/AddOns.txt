@@ -90,7 +90,7 @@ NPCScan: disabled
 Paste: disabled
 SmexyMats: enabled
 WeakAuras: enabled
-TomCats: disabled
+TomCats: enabled
 TomCats-Mechagon: disabled
 TomCats-Nazjatar: disabled
 WeakAurasCompanion: enabled
@@ -133,8 +133,8 @@ AAP-BfA: disabled
 Azeroth Auto Pilot: disabled
 InactiveReputationHeaders: disabled
 MountJournalEnhanced: disabled
-Rarity: disabled
-Rarity_Options: disabled
+Rarity: enabled
+Rarity_Options: enabled
 Narcissus: enabled
 Narcissus_Database: enabled
 Narcissus_Barbershop: enabled
@@ -190,3 +190,8 @@ SimpleILevel: enabled
 SimpleILevel_Group: enabled
 SimpleILevel_Social: enabled
 Simulationcraft: enabled
+VenturePlan: enabled
+Kui_Media: disabled
+Kui_Nameplates: disabled
+Kui_Nameplates_Core_Config: disabled
+Kui_Nameplates_Core: disabled

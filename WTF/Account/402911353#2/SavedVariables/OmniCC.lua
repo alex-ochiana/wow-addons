@@ -1,12 +1,13 @@
 
 OmniCCDB = {
 	["profileKeys"] = {
-		["Egidus - Sylvanas"] = "Default",
 		["Kynaeth - Sylvanas"] = "Default",
-		["Crëtz - Kazzak"] = "Default",
+		["Egidus - Sylvanas"] = "Default",
+		["Gnomèrcy - Sylvanas"] = "Default",
 		["Latthrias - Sylvanas"] = "Default",
 		["Crètz - Sylvanas"] = "Default",
-		["Gnomèrcy - Sylvanas"] = "Default",
+		["Jiglèr - Sylvanas"] = "Default",
+		["Crëtz - Kazzak"] = "Default",
 	},
 	["global"] = {
 		["addonVersion"] = "9.0.5",

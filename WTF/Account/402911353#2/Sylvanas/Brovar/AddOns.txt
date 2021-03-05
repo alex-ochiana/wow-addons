@@ -39,8 +39,8 @@ Azeroth Auto Pilot: disabled
 AllTheThings: disabled
 InactiveReputationHeaders: disabled
 MountJournalEnhanced: disabled
-Rarity: disabled
-Rarity_Options: disabled
+Rarity: enabled
+Rarity_Options: enabled
 TomTom: enabled
 Narcissus: enabled
 Narcissus_Database: enabled
@@ -60,7 +60,7 @@ AAP-Shadowlands: enabled
 WeakAuras: enabled
 HandyNotes_BattleForAzerothTreasures: disabled
 HandyNotes_LegionTreasures: disabled
-TomCats: disabled
+TomCats: enabled
 AzeriteUI: enabled
 GW2_UI: enabled
 SexyMap: disabled
@@ -119,3 +119,8 @@ SimpleILevel: enabled
 SimpleILevel_Group: enabled
 SimpleILevel_Social: enabled
 Simulationcraft: enabled
+VenturePlan: enabled
+Kui_Media: disabled
+Kui_Nameplates: disabled
+Kui_Nameplates_Core_Config: disabled
+Kui_Nameplates_Core: disabled

@@ -1,0 +1,2 @@
+
+TomCats_Character = nil

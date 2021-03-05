@@ -18,13 +18,20 @@ function SmexyMats:rtrim(s)
 end;
 
 function SmexyMats:Gear_ExpackID(obj)
+	--[[
 	if (obj.ff == "Armor") or (obj.ff == "Weapon") or (obj.gg == "Artifact Relic") then 
 		return true, tonumber(obj.oo), SmexyMats.ExPacks[obj.oo].color;
 	end;
 	if (obj.ff == L["Armor"]) or (obj.ff == L["Weapon"]) or (obj.gg == L["Artifact Relic"]) then 
 		return true, tonumber(obj.oo), SmexyMats.ExPacks[obj.oo].color;
 	end;
-	return false, -1, SmexyMats.ExPacks[-1].color;
+	]]--
+	
+	if obj.oo then
+		return true, tonumber(obj.oo), SmexyMats.ExPacks[obj.oo].color;
+	else
+		return false, -1, SmexyMats.ExPacks[-1].color;
+	end;
 end;
 
 SmexyMats.Colors = {
@@ -33,9 +40,10 @@ SmexyMats.Colors = {
 	WOTLK		= "|cFF66ccff",
 	CATA		= "|cFFff3300",
 	MOP			= "|cFF00FF96",
-	WOD			= "|cFFff8c1a",
+	WOD			= "|cFFff8C1A",
 	LEGION		= "|cFFA335EE",
 	BFA 		= "|cFFFF7D0A",
+	SHADOWLANDS = "|cFFE6CC80",
 	
 	yellow 		= "|cFFFFFF00",
 	white 		= "|cFFFFFFFF",
@@ -100,8 +108,8 @@ SmexyMats.ExPacks = {
 		color = SmexyMats.Colors.BFA,
 		},
 	[8]  = {
-		name = L["ShadowLands"],
-		color = SmexyMats.Colors.artifact,
+		name = L["Shadowlands"],
+		color = SmexyMats.Colors.SHADOWLANDS,
 		},
 };
 

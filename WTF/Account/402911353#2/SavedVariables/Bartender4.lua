@@ -402,8 +402,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -412,8 +412,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -656,9 +656,9 @@ Bartender4DB = {
 							},
 							["version"] = 3,
 							["position"] = {
-								["y"] = 60,
-								["x"] = -220.9999694824219,
-								["point"] = "BOTTOM",
+								["y"] = -237.8365478515625,
+								["x"] = -221,
+								["point"] = "CENTER",
 							},
 							["fadeoutalpha"] = 0,
 							["padding"] = 0,
@@ -700,13 +700,13 @@ Bartender4DB = {
 							["skin"] = {
 								["Zoom"] = true,
 							},
-							["buttons"] = 6,
-							["fadeoutalpha"] = 0,
+							["buttons"] = 7,
 							["version"] = 3,
+							["fadeoutalpha"] = 0,
 							["position"] = {
-								["y"] = 100,
-								["x"] = -113.0000228881836,
-								["point"] = "BOTTOM",
+								["y"] = 221.4474945068359,
+								["x"] = -262.6539306640625,
+								["point"] = "BOTTOMRIGHT",
 							},
 							["fadeoutdelay"] = 0,
 							["padding"] = 0,
@@ -715,19 +715,21 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
+							["showgrid"] = true,
 							["rows"] = 12,
 							["skin"] = {
 								["Zoom"] = true,
 							},
+							["buttons"] = 6,
 							["version"] = 3,
 							["position"] = {
-								["y"] = 8.25567626953125,
-								["x"] = -41,
-								["point"] = "RIGHT",
+								["y"] = 221.0000152587891,
+								["x"] = -300.654052734375,
+								["point"] = "BOTTOMRIGHT",
 							},
 							["padding"] = 0,
 							["visibility"] = {
-								["always"] = true,
+								["always"] = false,
 							},
 						}, -- [4]
 						{
@@ -735,12 +737,12 @@ Bartender4DB = {
 							["skin"] = {
 								["Zoom"] = true,
 							},
-							["fadeoutalpha"] = 0,
 							["version"] = 3,
+							["fadeoutalpha"] = 0,
 							["position"] = {
-								["y"] = 96.0000228881836,
-								["x"] = 216,
-								["point"] = "BOTTOM",
+								["y"] = -163,
+								["x"] = 138,
+								["point"] = "CENTER",
 							},
 							["padding"] = 0,
 						}, -- [5]
@@ -749,12 +751,12 @@ Bartender4DB = {
 							["skin"] = {
 								["Zoom"] = true,
 							},
-							["fadeoutalpha"] = 0,
 							["version"] = 3,
+							["fadeoutalpha"] = 0,
 							["position"] = {
-								["y"] = 96.0000228881836,
-								["x"] = -440,
-								["point"] = "BOTTOM",
+								["y"] = -163,
+								["x"] = -365,
+								["point"] = "CENTER",
 							},
 							["padding"] = 0,
 						}, -- [6]
@@ -997,9 +999,9 @@ Bartender4DB = {
 				},
 				["Crètz - Sylvanas"] = {
 					["position"] = {
-						["y"] = 249.2499389648438,
-						["x"] = -335.9943237304688,
-						["point"] = "BOTTOM",
+						["y"] = -142.6688232421875,
+						["x"] = 458.9406433105469,
+						["point"] = "LEFT",
 					},
 					["version"] = 3,
 				},
@@ -1208,9 +1210,9 @@ Bartender4DB = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 53.00000381469727,
-						["x"] = -261.0799560546875,
-						["point"] = "BOTTOMRIGHT",
 						["growVertical"] = "UP",
+						["point"] = "BOTTOMRIGHT",
+						["x"] = -261.0799560546875,
 					},
 					["padding"] = 20,
 				},
@@ -1313,8 +1315,8 @@ Bartender4DB = {
 						["x"] = -255.4999389648438,
 						["point"] = "BOTTOM",
 					},
-					["rightCap"] = "HUMAN",
 					["version"] = 3,
+					["rightCap"] = "HUMAN",
 				},
 				["Brovar - Sylvanas"] = {
 					["enabled"] = true,
@@ -1441,14 +1443,14 @@ Bartender4DB = {
 				},
 				["Crètz - Sylvanas"] = {
 					["enabled"] = false,
-					["hidehotkey"] = false,
+					["version"] = 3,
 					["position"] = {
 						["y"] = 209,
 						["x"] = -95.00001525878906,
 						["point"] = "BOTTOM",
 						["scale"] = 1.15,
 					},
-					["version"] = 3,
+					["hidehotkey"] = false,
 					["padding"] = 0,
 					["visibility"] = {
 						["always"] = false,
@@ -1540,14 +1542,14 @@ Bartender4DB = {
 				},
 				["Crètz - Sylvanas"] = {
 					["fadeoutdelay"] = 0,
-					["fadeoutalpha"] = 0,
+					["version"] = 3,
 					["position"] = {
-						["y"] = 134.3461761474609,
+						["y"] = 264,
 						["x"] = -155.0000305175781,
 						["point"] = "BOTTOM",
 					},
 					["padding"] = 0,
-					["version"] = 3,
+					["fadeoutalpha"] = 0,
 				},
 				["Brovar - Sylvanas"] = {
 					["version"] = 3,
@@ -1635,9 +1637,9 @@ Bartender4DB = {
 				},
 				["Crètz - Sylvanas"] = {
 					["position"] = {
-						["y"] = 143.4978790283203,
-						["x"] = -428.3442993164063,
-						["point"] = "BOTTOM",
+						["y"] = -206.834716796875,
+						["x"] = -15.50003051757813,
+						["point"] = "CENTER",
 					},
 					["version"] = 3,
 				},

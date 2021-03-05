@@ -244,6 +244,8 @@ L["Nether Rays"] = "Скаты Пустоты"
 --[[Translation missing --]]
 --[[ L["Others"] = "Others"--]] 
 --[[Translation missing --]]
+--[[ L["Ox"] = "Ox"--]] 
+--[[Translation missing --]]
 --[[ L["Pandaren Phoenixes"] = "Pandaren Phoenixes"--]] 
 --[[Translation missing --]]
 --[[ L["Parrots"] = "Parrots"--]] 

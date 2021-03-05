@@ -2,74 +2,52 @@
 AstralKeys = {
 	{
 		["source"] = "guild",
-		["weekly_best"] = 15,
-		["class"] = "DRUID",
-		["key_level"] = 13,
-		["unit"] = "Crètz-Sylvanas",
-		["dungeon_id"] = 381,
-		["week"] = 186,
+		["weekly_best"] = 0,
+		["class"] = "DEMONHUNTER",
+		["key_level"] = 15,
+		["unit"] = "Eferalgan-Sylvanas",
+		["dungeon_id"] = 380,
+		["week"] = 189,
 		["faction"] = 0,
-		["time_stamp"] = 435709,
+		["time_stamp"] = 44152,
 	}, -- [1]
 	{
 		["source"] = "guild",
 		["weekly_best"] = 0,
 		["class"] = "DEMONHUNTER",
 		["key_level"] = 16,
-		["unit"] = "Eferalgan-Sylvanas",
-		["dungeon_id"] = 376,
-		["week"] = 186,
+		["unit"] = "Achilless-Sylvanas",
+		["dungeon_id"] = 377,
+		["week"] = 189,
 		["faction"] = 0,
-		["time_stamp"] = 45944,
+		["time_stamp"] = 37224,
 	}, -- [2]
 	{
 		["source"] = "guild",
-		["weekly_best"] = 15,
-		["class"] = "DEMONHUNTER",
-		["key_level"] = 13,
-		["unit"] = "Achilless-Sylvanas",
+		["weekly_best"] = 0,
+		["class"] = "HUNTER",
+		["key_level"] = 12,
+		["unit"] = "Shenaa-Sylvanas",
 		["dungeon_id"] = 375,
-		["week"] = 186,
+		["week"] = 189,
 		["faction"] = 0,
-		["time_stamp"] = 398872,
+		["time_stamp"] = 30097,
 	}, -- [3]
 	{
 		["source"] = "guild",
 		["weekly_best"] = 0,
 		["class"] = "PALADIN",
-		["key_level"] = 10,
+		["key_level"] = 11,
 		["unit"] = "Spandexx-Sylvanas",
-		["dungeon_id"] = 382,
-		["week"] = 186,
+		["dungeon_id"] = 376,
+		["week"] = 189,
 		["faction"] = 0,
-		["time_stamp"] = 384436,
+		["time_stamp"] = 50532,
 	}, -- [4]
-	{
-		["source"] = "guild",
-		["weekly_best"] = 0,
-		["class"] = "MONK",
-		["key_level"] = 14,
-		["unit"] = "Leshinata-Sylvanas",
-		["dungeon_id"] = 382,
-		["week"] = 186,
-		["faction"] = 0,
-		["time_stamp"] = 396396,
-	}, -- [5]
-	{
-		["source"] = "guild",
-		["weekly_best"] = 10,
-		["class"] = "HUNTER",
-		["key_level"] = 9,
-		["unit"] = "Shenaa-Sylvanas",
-		["dungeon_id"] = 379,
-		["week"] = 186,
-		["faction"] = 0,
-		["time_stamp"] = 393414,
-	}, -- [6]
 }
 AstralCharacters = {
 	{
-		["weekly_best"] = 15,
+		["weekly_best"] = 0,
 		["class"] = "DRUID",
 		["unit"] = "Crètz-Sylvanas",
 		["faction"] = 0,
@@ -81,7 +59,7 @@ AstralKeysSettings = {
 		["show_minimap_button"] = {
 			["isEnabled"] = true,
 		},
-		["init_time"] = 1613545200,
+		["init_time"] = 1615359600,
 		["expanded_tooltip"] = {
 			["isEnabled"] = true,
 		},
@@ -139,28 +117,31 @@ AstralKeysSettings = {
 }
 AstralMinimap = {
 	["profileKeys"] = {
+		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
 		["Mortifèrous - Kazzak"] = "Mortifèrous - Kazzak",
 		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
-		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
 		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
 		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
-		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
 		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
+		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
+		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
 	},
 	["profiles"] = {
+		["Kynaeth - Sylvanas"] = {
+		},
 		["Mortifèrous - Kazzak"] = {
 		},
 		["Egidus - Sylvanas"] = {
-		},
-		["Kynaeth - Sylvanas"] = {
 		},
 		["Gnomèrcy - Sylvanas"] = {
 		},
 		["Latthrias - Sylvanas"] = {
 		},
-		["Crëtz - Kazzak"] = {
-		},
 		["Crètz - Sylvanas"] = {
+		},
+		["Jiglèr - Sylvanas"] = {
+		},
+		["Crëtz - Kazzak"] = {
 		},
 	},
 }
@@ -175,6 +156,7 @@ AstralLists = {
 		["name"] = "GUILD",
 		["units"] = {
 			["Zelax-Sylvanas"] = true,
+			["Andreeya-Sylvanas"] = true,
 			["Shenaa-Sylvanas"] = true,
 			["Crètz-Sylvanas"] = true,
 			["Leshinata-Sylvanas"] = true,

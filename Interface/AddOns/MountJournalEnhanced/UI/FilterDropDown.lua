@@ -34,8 +34,8 @@ local function CreateFilterInfo(text, filterKey, filterSettings, toggleButtons)
         end
         info.func = function(self, arg1, arg2, value)
             arg1[filterKey] = arg2 or value
-            ADDON:UpdateIndex()
-            MountJournal_UpdateMountList()
+            ADDON.Api:UpdateIndex()
+            ADDON.UI:UpdateMountList()
             UIDropDownMenu_RefreshAll(_G[ADDON_NAME .. "FilterMenu"])
 
             if toggleButtons then
@@ -105,8 +105,8 @@ local function SetAllSubFilters(settings, switch)
     end
 
     UIDropDownMenu_RefreshAll(_G[ADDON_NAME .. "FilterMenu"])
-    ADDON:UpdateIndex()
-    MountJournal_UpdateMountList()
+    ADDON.Api:UpdateIndex()
+    ADDON.UI:UpdateMountList()
 end
 
 local function RefreshCategoryButton(button, isNotRadio)
@@ -237,8 +237,8 @@ local function InitializeFilterDropDown(filterMenu, level)
         info.keepShownOnClick = false
         info.func = function(_, _, _, value)
             ADDON:ResetFilterSettings()
-            ADDON:UpdateIndex()
-            MountJournal_UpdateMountList()
+            ADDON.Api:UpdateIndex()
+            ADDON.UI:UpdateMountList()
         end
         UIDropDownMenu_AddButton(info, level)
     elseif UIDROPDOWNMENU_MENU_VALUE == SETTING_SOURCE then
@@ -355,20 +355,25 @@ local function InitializeFilterDropDown(filterMenu, level)
         info.keepShownOnClick = false
         info.func = function(_, _, _, value)
             ADDON:ResetSortSettings()
-            ADDON:UpdateIndex()
-            MountJournal_UpdateMountList()
+            ADDON.Api:UpdateIndex()
+            ADDON.UI:UpdateMountList()
         end
         UIDropDownMenu_AddButton(info, level)
     end
 end
 
-ADDON:RegisterLoadUICallback(function()
-    local menu = CreateFrame("Frame", ADDON_NAME .. "FilterMenu", MountJournalFilterButton, "UIDropDownMenuTemplate")
-    UIDropDownMenu_Initialize(menu, InitializeFilterDropDown, "MENU")
+ADDON.Events:RegisterCallback("loadUI", function()
+    local menu
 
     MountJournalFilterButton:SetScript("OnMouseDown", function(sender, button)
         UIMenuButtonStretchMixin.OnMouseDown(sender, button);
         PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON)
+
+        if menu == nil then
+            menu = CreateFrame("Frame", ADDON_NAME .. "FilterMenu", MountJournalFilterButton, "UIDropDownMenuTemplate")
+            UIDropDownMenu_Initialize(menu, InitializeFilterDropDown, "MENU")
+        end
+
         ToggleDropDownMenu(1, nil, menu, sender, 74, 15)
     end)
-end)
+end, "filter dropdown")
