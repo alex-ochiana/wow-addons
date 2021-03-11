@@ -76,29 +76,41 @@ do
 end
 
 local function updateGuildButton(self, event)
-    if event ~= "GUILD_ROSTER_UPDATE" then
-        return
-    end
-
-    local gmb = GuildMicroButton
-    if gmb == nil then
-        return
-    end
-
-    local _, _, numOnlineMembers = GetNumGuildMembers()
-
-    if numOnlineMembers ~= nil and numOnlineMembers > 0 then
-        gmb.GwNotifyDark:Show()
-
-        if numOnlineMembers > 9 then
-            gmb.GwNotifyText:SetText(numOnlineMembers)
-        else
-            gmb.GwNotifyText:SetText(numOnlineMembers .. " ")
+    if event == "GUILD_ROSTER_UPDATE" then
+        local gmb = GuildMicroButton
+        if gmb == nil then
+            return
         end
-        gmb.GwNotifyText:Show()
-    else
-        gmb.GwNotifyDark:Hide()
-        gmb.GwNotifyText:Hide()
+
+        local _, _, numOnlineMembers = GetNumGuildMembers()
+
+        if numOnlineMembers ~= nil and numOnlineMembers > 0 then
+            gmb.GwNotifyDark:Show()
+
+            if numOnlineMembers > 9 then
+                gmb.GwNotifyText:SetText(numOnlineMembers)
+            else
+                gmb.GwNotifyText:SetText(numOnlineMembers .. " ")
+            end
+            gmb.GwNotifyText:Show()
+        else
+            gmb.GwNotifyDark:Hide()
+            gmb.GwNotifyText:Hide()
+        end
+
+        GW.FetchGuildMembers()
+
+        if GetMouseFocus() == self then
+            GW.Guild_OnEnter(self)
+        end
+    elseif event == "MODIFIER_STATE_CHANGED" then
+        if not IsAltKeyDown() and GetMouseFocus() == self then
+			GW.Guild_OnEnter(self)
+		end
+    elseif event == "GUILD_MOTD" then
+        if GetMouseFocus() == self then
+            GW.Guild_OnEnter(self)
+        end
     end
 end
 GW.AddForProfiling("micromenu", "updateGuildButton", updateGuildButton)
@@ -129,7 +141,7 @@ local function updateQuestLogButton(self, event)
         qlmb.GwNotifyText:Hide()
     end
 end
-GW.AddForProfiling("micromenu", "updateGuildButton", updateGuildButton)
+GW.AddForProfiling("micromenu", "updateQuestLogButton", updateQuestLogButton)
 
 local function bag_OnUpdate(self, elapsed)
     self.interval = self.interval - elapsed
@@ -301,6 +313,7 @@ local function setupMicroButtons(mbf)
     bref:HookScript("OnClick", ToggleAllBags)
     bref.interval = 0
     bref:HookScript("OnUpdate", bag_OnUpdate)
+    bref:HookScript("OnEnter", GW.Bags_OnEnter)
 
     -- determine if we are using the default spell & talent buttons
     -- or if we need our custom talent button for the hero panel
@@ -369,8 +382,11 @@ local function setupMicroButtons(mbf)
         end
     )
     GuildMicroButton:RegisterEvent("GUILD_ROSTER_UPDATE")
+    GuildMicroButton:RegisterEvent("MODIFIER_STATE_CHANGED")
+    GuildMicroButton:RegisterEvent("GUILD_MOTD")
     GuildMicroButton:HookScript("OnEvent", updateGuildButton)
-    updateGuildButton()
+    GuildMicroButton:HookScript("OnEnter", GW.Guild_OnEnter)
+    updateGuildButton(GuildMicroButton, "GUILD_ROSTER_UPDATE")
 
     -- LFDMicroButton
     LFDMicroButton.GwSetAnchorPoint = function(self)
@@ -432,7 +448,7 @@ local function setupMicroButtons(mbf)
         GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
         GameTooltip_SetTitle(GameTooltip, L["GW2 UI Update"])
         GameTooltip:AddLine(self.tooltipText)
-		GameTooltip:Show()
+        GameTooltip:Show()
     end)
 end
 GW.AddForProfiling("micromenu", "setupMicroButtons", setupMicroButtons)

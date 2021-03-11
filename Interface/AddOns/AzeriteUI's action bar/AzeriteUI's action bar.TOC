@@ -1,6 +1,0 @@
-## Interface: 80205
-## Title: hide AzeriteUI's action bar
-## Author: Gonkast
-## Version: 1.0
-
-actionbars.lua

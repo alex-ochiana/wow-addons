@@ -9,7 +9,7 @@ local IsFrameModified = GW.IsFrameModified
 local Debug = GW.Debug
 local LibSharedMedia = GW.Libs.LSM
 
-GW.VERSION_STRING = "GW2_UI v5.9.1"
+GW.VERSION_STRING = "GW2_UI v5.11.2"
 
 -- setup Binding Header color
 _G.BINDING_HEADER_GW2UI = GetAddOnMetadata(..., "Title")
@@ -443,70 +443,34 @@ local function loadAddon(self)
             hooksecurefunc("GameMenuFrame_UpdateVisibleButtons", GW.PositionGameMenuButton)
         end
     end
-    if GetSetting("STATICPOPUP_SKIN_ENABLED") then
-        GW.SkinStaticPopup()
-    end
-    if GetSetting("BNTOASTFRAME_SKIN_ENABLED") then
-        GW.SkinBNToastFrame()
-    end
-    if GetSetting("DEATHRECAPFRAME_SKIN_ENABLED") then
-        GW.SkinDeathRecapFrame()
-    end
-    if GetSetting("DROPDOWN_SKIN_ENABLED") then
-        GW.SkinDropDown()
-    end
-    if GetSetting("LFG_FRAMES_SKIN_ENABLED") then
-        GW.SkinLFGFrames()
-    end
-    if GetSetting("READYCHECK_SKIN_ENABLED") then
-        GW.SkinReadyCheck()
-    end
-    if GetSetting("TALKINGHEAD_SKIN_ENABLED") then
-        GW.SkinAndPositionTalkingHeadFrame()
-    end
-    if GetSetting("MISC_SKIN_ENABLED") then
-        GW.SkinTimerTrackerFrame()
-        GW.SkinGhostFrame()
-    end
-    if GetSetting("IMMERSIONADDON_SKIN_ENABLED") then
-        GW.SkinImmersionAddonFrame()
-    end
-    if GetSetting("FLIGHTMAP_SKIN_ENABLED") then
-        GW.SkinFlightMap()
-    end
-    if GetSetting("ADDONLIST_SKIN_ENABLED") then
-        GW.SkinAddonList()
-    end
-    if GetSetting("BINDINGS_SKIN_ENABLED") then
-        GW.SkinBindingsUI()
-    end
-    if GetSetting("BLIZZARD_OPTIONS_SKIN_ENABLED") then
-        GW.SkinBlizzardOptions()
-    end
-    if GetSetting("MACRO_SKIN_ENABLED") then
-        GW.SkinMacroOptions()
-    end
-    if GetSetting("MAIL_SKIN_ENABLED") then
-        GW.SkinMail()
-        GW.SkinPostalAddonFrame()
-    end
-    if GetSetting("BARBERSHOP_SKIN_ENABLED") then
-        GW.SkinBarShopUI()
-    end
-    if GetSetting("INSPECTION_SKIN_ENABLED") then
-        GW.SkinInspectFrame()
-    end
-    if GetSetting("INSPECTION_SKIN_ENABLED") then
-        GW.SkinDressUpFrame()
-    end
-    if GetSetting("HELPFRAME_SKIN_ENABLED") then
-        GW.skinHelpFrameOnEvent()
-    end
 
-    if GetSetting("WORLDMAP_COORDS_TOGGLE") then
-        GW.AddCoordsToWorldMap()
-    end
+    -- Skins: BLizzard & Addons
+    GW.LoadStaticPopupSkin()
+    GW.LoadBNToastSkin()
+    GW.LoadDeathRecapSkin()
+    GW.LoadDropDownSkin()
+    GW.LoadLFGSkins()
+    GW.LoadReadyCheckSkin()
+    GW.LoadTalkingHeadSkin()
+    GW.LoadMiscBlizzardFrameSkins()
+    GW.LoadFlightMapSkin()
+    GW.LoadAddonListSkin()
+    GW.LoadBindingsUISkin()
+    GW.LoadBlizzardOptionsSkin()
+    GW.LoadMacroOptionsSkin()
+    GW.LoadMailSkin()
+    GW.LoadBarShopUISkin()
+    GW.LoadInspectFrameSkin()
+    GW.LoadDressUpFrameSkin()
+    GW.LoadHelperFrameSkin()
+    GW.LoadSocketUISkin()
+    GW.LoadWorldMapSkin()
+    GW.LoadGossipSkin()
+    GW.LoadItemUpgradeSkin()
 
+    GW.LoadImmersionAddonSkin()
+
+    GW.AddCoordsToWorldMap()
     GW.LoadVehicleButton()
     GW.MakeAltPowerBarMovable()
     GW.WidgetUISetup()
@@ -736,7 +700,6 @@ local function gw_OnEvent(self, event, ...)
         GW.inWorld = false
     elseif event == "PLAYER_ENTERING_WORLD" or event == "PLAYER_ENTERING_BATTLEGROUND" then
         GW.inWorld = true
-        GW.myeffectivelevel = UnitEffectiveLevel("player")
         GW.CheckRole()
         if GetSetting("PIXEL_PERFECTION") and not GetCVarBool("useUiScale") and not UnitAffectingCombat("player") then
             PixelPerfection()
@@ -754,8 +717,6 @@ local function gw_OnEvent(self, event, ...)
         Debug("New faction:", GW.myfaction, GW.myLocalizedFaction)
     elseif event == "PLAYER_SPECIALIZATION_CHANGED" then
         GW.CheckRole()
-    elseif event == "PLAYER_LEVEL_CHANGED" then
-        GW.myeffectivelevel = UnitEffectiveLevel("player")
     end
 end
 GW.AddForProfiling("index", "gw_OnEvent", gw_OnEvent)
@@ -768,7 +729,6 @@ l:RegisterEvent("UI_SCALE_CHANGED")
 l:RegisterEvent("PLAYER_LEVEL_UP")
 l:RegisterEvent("NEUTRAL_FACTION_SELECT_RESULT")
 l:RegisterEvent("PLAYER_SPECIALIZATION_CHANGED")
-l:RegisterEvent("PLAYER_LEVEL_CHANGED")
 
 local function AddToClique(frame)
     if type(frame) == "string" then

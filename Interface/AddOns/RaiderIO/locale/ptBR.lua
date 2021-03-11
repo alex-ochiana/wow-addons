@@ -1,3 +1,4 @@
+-- Generated from CurseForge on Thu Mar 11 07:11:43 UTC 2021
 local _, ns = ...
 
 if ns:IsSameLocale("ptBR") then
@@ -463,7 +464,6 @@ L["USE_ENGLISH_ABBREVIATION"] = "Forçar Abreviações em Inglês para Masmorras
 --[[ L["WARNING_DEBUG_MODE_ENABLE"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["WARNING_LOCK_POSITION_FRAME_AUTO"] = ""--]] 
-
 
 	ns.L = L
 end

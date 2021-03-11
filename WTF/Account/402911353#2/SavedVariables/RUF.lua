@@ -15,7 +15,7 @@ RUFDB = {
 		},
 		["Egidus - Sylvanas"] = {
 			["NickCache"] = {
-				["nextreset"] = 1614437045,
+				["nextreset"] = 1616448217,
 				["last_version"] = 14,
 			},
 		},
@@ -27,8 +27,17 @@ RUFDB = {
 		},
 		["Crètz - Sylvanas"] = {
 			["NickCache"] = {
-				["nextreset"] = 1615029426,
 				["last_version"] = 14,
+				["nextreset"] = 1616368392,
+				["Crètz"] = {
+					"CrèTz", -- [1]
+					false, -- [2]
+					false, -- [3]
+					false, -- [4]
+					false, -- [5]
+					false, -- [6]
+					3, -- [7]
+				},
 			},
 		},
 		["Latthrias - Sylvanas"] = {
@@ -3341,29 +3350,29 @@ RUFDB = {
 				},
 				["Bars"] = {
 					["Cast"] = {
-						["Texture"] = "Details Flat",
+						["Texture"] = "GW2_UI_RUF",
 					},
 					["Absorb"] = {
-						["Texture"] = "Details Flat",
+						["Texture"] = "GW2_UI_RUF",
 					},
 					["Health"] = {
 						["Color"] = {
 							["Class"] = true,
 						},
-						["Texture"] = "Details Flat",
+						["Texture"] = "GW2_UI_RUF",
 					},
 					["Power"] = {
-						["Texture"] = "Details Flat",
+						["Texture"] = "GW2_UI_RUF",
 					},
 					["Class"] = {
-						["Texture"] = "Details Flat",
+						["Texture"] = "GW2_UI_RUF",
 					},
 					["HealPrediction"] = {
 						["Player"] = {
-							["Texture"] = "Details Flat",
+							["Texture"] = "GW2_UI_RUF",
 						},
 						["Others"] = {
-							["Texture"] = "Details Flat",
+							["Texture"] = "GW2_UI_RUF",
 						},
 					},
 				},
@@ -3380,10 +3389,9 @@ RUFDB = {
 							},
 						},
 						["Position"] = {
-							["y"] = -5,
-							["x"] = 5,
+							["y"] = -6,
 							["AnchorTo"] = "BOTTOMRIGHT",
-							["AnchorFrom"] = "TOPLEFT",
+							["AnchorFrom"] = "TOPRIGHT",
 						},
 						["Bars"] = {
 							["Power"] = {
@@ -3406,8 +3414,8 @@ RUFDB = {
 							},
 						},
 						["Size"] = {
-							["Height"] = 26,
-							["Width"] = 150,
+							["Height"] = 28,
+							["Width"] = 190,
 						},
 					},
 				},
@@ -3484,10 +3492,38 @@ RUFDB = {
 				},
 				["pet"] = {
 					["Frame"] = {
+						["Indicators"] = {
+							["TargetMark"] = {
+								["Enabled"] = false,
+								["Size"] = 15,
+							},
+						},
 						["Position"] = {
-							["y"] = -5,
+							["y"] = -6,
+							["AnchorTo"] = "BOTTOMLEFT",
+							["AnchorFrom"] = "TOPLEFT",
+						},
+						["Text"] = {
+							["Name"] = {
+								["Enabled"] = false,
+							},
+							["Health"] = {
+								["Position"] = {
+									["y"] = 0,
+									["x"] = 0,
+									["AnchorTo"] = "CENTER",
+									["Anchor"] = "CENTER",
+								},
+								["Size"] = 16,
+							},
+						},
+						["Bars"] = {
+							["Power"] = {
+								["Enabled"] = 0,
+							},
 						},
 						["Size"] = {
+							["Height"] = 28,
 							["Width"] = 190,
 						},
 					},
@@ -3529,11 +3565,10 @@ RUFDB = {
 							},
 						},
 						["Position"] = {
-							["y"] = -5,
-							["x"] = 0,
-							["AnchorTo"] = "BOTTOMLEFT",
-							["AnchorFrom"] = "TOPLEFT",
-							["AnchorFrame"] = "oUF_RUF_TargetTarget",
+							["y"] = -120,
+							["x"] = -540,
+							["AnchorTo"] = "RIGHT",
+							["AnchorFrom"] = "RIGHT",
 						},
 						["Bars"] = {
 							["Cast"] = {
@@ -3599,18 +3634,19 @@ RUFDB = {
 							["Objective"] = {
 								["Size"] = 15,
 								["Position"] = {
-									["y"] = 10,
-									["AnchorTo"] = "BOTTOMRIGHT",
+									["y"] = 0,
+									["x"] = 0,
 								},
 							},
 							["TargetMark"] = {
 								["Position"] = {
 									["AnchorTo"] = "RIGHT",
-									["AnchorFrom"] = "LEFT",
+									["AnchorFrom"] = "CENTER",
 									["AnchorFrame"] = "Frame",
 								},
 							},
 							["Lead"] = {
+								["Enabled"] = false,
 								["Position"] = {
 									["x"] = 10,
 								},
@@ -3623,56 +3659,91 @@ RUFDB = {
 									["AnchorFrame"] = "Frame",
 								},
 							},
+							["MainTankAssist"] = {
+								["Enabled"] = false,
+							},
 							["PvPCombat"] = {
+								["Enabled"] = false,
 								["Size"] = 20,
 								["Position"] = {
 									["AnchorTo"] = "TOP",
 								},
+							},
+							["Assist"] = {
+								["Enabled"] = false,
 							},
 							["Ready"] = {
 								["Enabled"] = false,
 							},
 						},
 						["Position"] = {
-							["y"] = -95,
-							["x"] = 265,
+							["y"] = 109,
+							["x"] = 233,
+							["AnchorTo"] = "BOTTOM",
+							["AnchorFrom"] = "BOTTOM",
 						},
 						["Bars"] = {
 							["Cast"] = {
+								["Time"] = {
+									["Size"] = 20,
+								},
 								["Position"] = {
-									["y"] = -5,
-									["AnchorTo"] = "BOTTOMLEFT",
-									["AnchorFrom"] = "TOPLEFT",
+									["y"] = 0,
+									["AnchorFrom"] = "BOTTOM",
+								},
+								["Height"] = 20,
+								["Text"] = {
+									["Size"] = 20,
 								},
 								["Fill"] = "STANDARD",
-								["Width"] = 190,
+								["Width"] = 230,
+							},
+							["Power"] = {
+								["Position"] = {
+									["Anchor"] = "TOP",
+								},
+								["Height"] = 20,
 							},
 						},
 						["Text"] = {
 							["Health"] = {
-								["CustomWidth"] = false,
 								["Position"] = {
-									["y"] = -4,
+									["y"] = 10,
+									["x"] = 0,
+									["AnchorTo"] = "CENTER",
+									["Anchor"] = "CENTER",
 								},
-								["Size"] = 20,
+								["CustomWidth"] = false,
+								["Size"] = 25,
 							},
 							["Power"] = {
-								["Size"] = 14,
-							},
-							["Name"] = {
 								["Position"] = {
-									["y"] = -10,
-									["x"] = 4,
+									["y"] = -2,
+									["x"] = 0,
 									["AnchorTo"] = "TOPLEFT",
 									["Anchor"] = "TOPLEFT",
 								},
-								["Size"] = 16,
+							},
+							["Name"] = {
+								["Justify"] = "LEFT",
+								["Width"] = 220,
+								["Position"] = {
+									["y"] = 0,
+									["x"] = 0,
+									["AnchorTo"] = "LEFT",
+									["AnchorFrame"] = "Level",
+								},
+								["CustomWidth"] = false,
+								["Size"] = 20,
 							},
 							["Level"] = {
 								["Position"] = {
-									["y"] = 4,
+									["y"] = -20,
+									["x"] = 2,
+									["AnchorTo"] = "RIGHT",
+									["Anchor"] = "RIGHT",
 								},
-								["Size"] = 14,
+								["Size"] = 20,
 							},
 							["Mana"] = {
 								["Outline"] = "OUTLINE",
@@ -3680,15 +3751,15 @@ RUFDB = {
 								["Width"] = 100,
 								["Position"] = {
 									["y"] = 0,
-									["x"] = 1,
+									["x"] = 0,
 									["AnchorTo"] = "RIGHT",
 									["Anchor"] = "LEFT",
 									["AnchorFrame"] = "Power",
 								},
-								["Size"] = 14,
 								["Enabled"] = true,
 								["Shadow"] = 0,
-								["Tag"] = "[RUF:CurMana]",
+								["Tag"] = "[RUF:CurManaPerc]",
+								["Size"] = 18,
 							},
 							["AFKDND"] = {
 								["Position"] = {
@@ -3727,7 +3798,8 @@ RUFDB = {
 							},
 						},
 						["Size"] = {
-							["Width"] = 190,
+							["Height"] = 100,
+							["Width"] = 230,
 						},
 					},
 					["Debuffs"] = {
@@ -3831,14 +3903,13 @@ RUFDB = {
 					["Debuffs"] = {
 						["Icons"] = {
 							["Max"] = 32,
-							["Width"] = 19,
+							["Width"] = 25,
 							["Position"] = {
-								["y"] = 1,
 								["x"] = 0,
-								["AnchorTo"] = "BOTTOMLEFT",
+								["AnchorTo"] = "TOPRIGHT",
 								["AnchorFrom"] = "TOPLEFT",
 							},
-							["Height"] = 19,
+							["Height"] = 25,
 							["Spacing"] = {
 								["y"] = 1,
 							},
@@ -3847,10 +3918,10 @@ RUFDB = {
 					["Frame"] = {
 						["Indicators"] = {
 							["TargetMark"] = {
-								["Size"] = 15,
+								["Size"] = 20,
 								["Position"] = {
-									["AnchorTo"] = "TOP",
-									["AnchorFrom"] = "CENTER",
+									["AnchorTo"] = "LEFT",
+									["AnchorFrom"] = "RIGHT",
 									["AnchorFrame"] = "Frame",
 								},
 							},
@@ -3880,23 +3951,36 @@ RUFDB = {
 							},
 						},
 						["Position"] = {
-							["AnchorTo"] = "CENTER",
-							["AnchorFrom"] = "CENTER",
-							["growthDirection"] = "HORIZONTAL",
-							["y"] = -350,
-							["x"] = 0,
+							["offsety"] = -30,
+							["AnchorFrom"] = "LEFT",
+							["y"] = 120,
+							["x"] = 350,
 							["offsetx"] = 20,
 						},
 						["Text"] = {
 							["Health"] = {
+								["Position"] = {
+									["y"] = 0,
+									["x"] = 0,
+									["AnchorTo"] = "CENTER",
+									["Anchor"] = "CENTER",
+								},
 								["Size"] = 20,
 							},
 							["Power"] = {
+								["Position"] = {
+									["y"] = 0,
+									["x"] = 0,
+								},
 								["Size"] = 16,
 								["Tag"] = "[RUF:PowerPerc]",
 							},
 							["Level"] = {
-								["Size"] = 14,
+								["Position"] = {
+									["y"] = 0,
+									["x"] = 0,
+								},
+								["Size"] = 16,
 							},
 							["Name"] = {
 								["Position"] = {
@@ -3911,6 +3995,11 @@ RUFDB = {
 								["Enabled"] = false,
 							},
 						},
+						["Bars"] = {
+							["Power"] = {
+								["Height"] = 16,
+							},
+						},
 						["Portrait"] = {
 							["Model"] = {
 								["Animation"] = {
@@ -3919,7 +4008,7 @@ RUFDB = {
 							},
 						},
 						["Size"] = {
-							["Width"] = 100,
+							["Width"] = 150,
 						},
 					},
 					["showPlayer"] = true,
@@ -3930,17 +4019,15 @@ RUFDB = {
 							["Growth"] = {
 								["y"] = "DOWN",
 							},
-							["Width"] = 19,
+							["Width"] = 25,
 							["Filter"] = {
 								["Time"] = {
 									["Unlimited"] = true,
 								},
 							},
-							["Height"] = 19,
+							["Height"] = 25,
 							["Position"] = {
-								["y"] = 1,
 								["x"] = 0,
-								["AnchorTo"] = "BOTTOMLEFT",
 							},
 						},
 					},
@@ -3978,7 +4065,7 @@ RUFDB = {
 							["TargetMark"] = {
 								["Position"] = {
 									["AnchorTo"] = "LEFT",
-									["AnchorFrom"] = "RIGHT",
+									["AnchorFrom"] = "CENTER",
 									["AnchorFrame"] = "Frame",
 								},
 							},
@@ -3986,16 +4073,16 @@ RUFDB = {
 								["Size"] = 15,
 								["Position"] = {
 									["AnchorTo"] = "RIGHT",
-									["AnchorFrom"] = "LEFT",
-									["AnchorFrame"] = "Role",
 								},
 							},
 							["Lead"] = {
 								["Position"] = {
-									["x"] = -10,
+									["x"] = 3,
+									["AnchorTo"] = "TOPLEFT",
 								},
 							},
 							["Role"] = {
+								["Enabled"] = false,
 								["Size"] = 15,
 								["Position"] = {
 									["AnchorTo"] = "TOPLEFT",
@@ -4003,11 +4090,22 @@ RUFDB = {
 									["AnchorFrame"] = "Frame",
 								},
 							},
+							["MainTankAssist"] = {
+								["Position"] = {
+									["y"] = -3,
+									["AnchorTo"] = "BOTTOM",
+									["AnchorFrom"] = "TOP",
+								},
+							},
 							["PvPCombat"] = {
+								["Enabled"] = false,
 								["Size"] = 20,
 								["Position"] = {
 									["AnchorTo"] = "TOP",
 								},
+							},
+							["Rest"] = {
+								["Enabled"] = false,
 							},
 							["Ready"] = {
 								["Enabled"] = false,
@@ -4017,8 +4115,10 @@ RUFDB = {
 							},
 						},
 						["Position"] = {
-							["y"] = -95.000244140625,
-							["x"] = -265,
+							["y"] = 109,
+							["x"] = -233,
+							["AnchorTo"] = "BOTTOM",
+							["AnchorFrom"] = "BOTTOM",
 						},
 						["Portrait"] = {
 							["Alpha"] = 1,
@@ -4048,42 +4148,67 @@ RUFDB = {
 							["Cast"] = {
 								["Enabled"] = false,
 							},
+							["Power"] = {
+								["Enabled"] = 0,
+								["Height"] = 20,
+							},
+							["Class"] = {
+								["Height"] = 20,
+							},
 						},
 						["Text"] = {
 							["Health"] = {
 								["CustomWidth"] = false,
 								["Position"] = {
-									["y"] = -4,
+									["y"] = 10,
+									["x"] = 0,
+									["AnchorTo"] = "CENTER",
+									["Anchor"] = "CENTER",
 								},
-								["Size"] = 20,
+								["Size"] = 25,
 							},
 							["Power"] = {
-								["Size"] = 14,
-							},
-							["Name"] = {
 								["Position"] = {
-									["y"] = -10,
-									["x"] = -4,
+									["y"] = -2,
+									["x"] = 0,
 									["AnchorTo"] = "TOPRIGHT",
 									["Anchor"] = "TOPRIGHT",
 								},
-								["Size"] = 16,
+							},
+							["Name"] = {
+								["Justify"] = "LEFT",
+								["Width"] = 220,
+								["CustomWidth"] = false,
+								["Position"] = {
+									["y"] = 0,
+									["x"] = 0,
+									["AnchorTo"] = "RIGHT",
+									["AnchorFrame"] = "Level",
+								},
+								["Size"] = 20,
 							},
 							["Level"] = {
 								["Position"] = {
-									["y"] = 4,
+									["y"] = -20,
+									["x"] = 2,
+									["AnchorTo"] = "LEFT",
+									["Anchor"] = "LEFT",
 								},
-								["Size"] = 14,
+								["Size"] = 20,
 							},
 							["Mana"] = {
-								["Size"] = 14,
+								["Position"] = {
+									["x"] = 0,
+								},
+								["Tag"] = "[RUF:CurManaPerc]",
 							},
 							["AFKDND"] = {
 								["Enabled"] = false,
 							},
 						},
 						["Size"] = {
-							["Width"] = 190,
+							["Height"] = 100,
+							["Width"] = 230,
 						},
 					},
 					["toggleForVehicle"] = true,

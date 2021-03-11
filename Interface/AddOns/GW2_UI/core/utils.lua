@@ -1,6 +1,22 @@
 local _, GW = ...
 local CLASS_COLORS_RAIDFRAME = GW.CLASS_COLORS_RAIDFRAME
 
+
+-- Easy menu
+GW.EasyMenu = CreateFrame("Frame", "GWEasyMenu", UIParent, "UIDropDownMenuTemplate")
+
+local function SetEasyMenuAnchor(menu, frame)
+    local point = GW.GetScreenQuadrant(frame)
+    local bottom = point and strfind(point, "BOTTOM")
+    local left = point and strfind(point, "LEFT")
+
+    local anchor1 = (bottom and left and "BOTTOMLEFT") or (bottom and "BOTTOMRIGHT") or (left and "TOPLEFT") or "TOPRIGHT"
+    local anchor2 = (bottom and left and "TOPLEFT") or (bottom and "TOPRIGHT") or (left and "BOTTOMLEFT") or "BOTTOMRIGHT"
+
+    UIDropDownMenu_SetAnchor(menu, 0, 0, anchor1, frame, anchor2)
+end
+GW.SetEasyMenuAnchor = SetEasyMenuAnchor
+
 if UnitIsTapDenied == nil then
     function UnitIsTapDenied()
         if (UnitIsTapped("target")) and (not UnitIsTappedByPlayer("target")) then
@@ -38,13 +54,13 @@ local function FormatMoneyForChat(amount)
     local copper = mod(value, COPPER_PER_SILVER)
 
     if gold > 0 then
-        str = format("%s%s|r|TInterface/MoneyFrame/UI-GoldIcon:12:12|t%s", goldcolor, GW.CommaValue(gold), (silver > 0 or copper > 0) and " " or "")
+        str = format("%s%s |r|TInterface/MoneyFrame/UI-GoldIcon:12:12|t%s", goldcolor, GW.CommaValue(gold), " ")
     end
-    if silver > 0 then
-        str = format("%s%s%d|r|TInterface/MoneyFrame/UI-SilverIcon:12:12|t%s", str, silvercolor, silver, copper > 0 and " " or "")
+    if silver > 0 or gold > 0 then
+        str = format("%s%s%d |r|TInterface/MoneyFrame/UI-SilverIcon:12:12|t%s", str, silvercolor, silver, (copper > 0 or gold > 0) and " " or "")
     end
-    if copper > 0 or value == 0 then
-        str = format("%s%s%d|r|TInterface/MoneyFrame/UI-CopperIcon:12:12|t", str, coppercolor, copper)
+    if copper > 0 or value == 0 or value > 0 then
+        str = format("%s%s%d |r|TInterface/MoneyFrame/UI-CopperIcon:12:12|t", str, coppercolor, copper)
     end
 
     return str
@@ -505,19 +521,19 @@ end
 GW.StopFlash = StopFlash
 
 local function FrameFlash(frame, duration, fadeOutAlpha, fadeInAlpha, loop)
-	if not frame.flasher then
-		SetUpFrameFlash(frame,loop)
-	end
+    if not frame.flasher then
+        SetUpFrameFlash(frame,loop)
+    end
 
-	if not frame.flasher:IsPlaying() then
+    if not frame.flasher:IsPlaying() then
         frame.flasher.fadein:SetDuration(duration)
         frame.flasher.fadein:SetFromAlpha(fadeOutAlpha or 0)
         frame.flasher.fadein:SetToAlpha(fadeInAlpha or 1)
         frame.flasher.fadeout:SetDuration(duration)
         frame.flasher.fadeout:SetFromAlpha(fadeInAlpha or 1)
         frame.flasher.fadeout:SetToAlpha(fadeOutAlpha or 0)
-		frame.flasher:Play()
-	end
+        frame.flasher:Play()
+    end
 end
 GW.FrameFlash = FrameFlash
 
@@ -579,3 +595,26 @@ local function GetScreenQuadrant(frame)
     return point
 end
 GW.GetScreenQuadrant = GetScreenQuadrant
+
+do
+    local a1, a2, a3, a4, a5 = "", "|c[fF][fF]%x%x%x%x%x%x", "|r", "|[TA].-|[ta]", "^%s*"
+    local function StripString(s)
+        return gsub(gsub(gsub(gsub(s, a2, a1), a3, a1), a4, a1) , a5, a1)
+    end
+    GW.StripString = StripString
+end
+
+local function ColorGradient(perc, ...)
+	if perc >= 1 then
+		return select(select("#", ...) - 2, ...)
+	elseif perc <= 0 then
+		return ...
+	end
+
+	local num = select("#", ...) / 3
+	local segment, relperc = math.modf(perc * (num - 1))
+	local r1, g1, b1, r2, g2, b2 = select((segment * 3) + 1, ...)
+
+	return r1 + (r2 - r1) * relperc, g1 + (g2 - g1) * relperc, b1 + (b2 - b1) * relperc
+end
+GW.ColorGradient = ColorGradient

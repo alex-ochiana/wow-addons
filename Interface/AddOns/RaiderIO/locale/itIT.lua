@@ -1,3 +1,4 @@
+-- Generated from CurseForge on Thu Mar 11 07:11:41 UTC 2021
 local _, ns = ...
 
 if ns:IsSameLocale("itIT") then
@@ -276,7 +277,6 @@ L["USE_RAIDERIO_CLIENT_LIVE_TRACKING_SETTINGS"] = "Permetti al Client di Raider.
 L["USE_RAIDERIO_CLIENT_LIVE_TRACKING_SETTINGS_DESC"] = "Permetti al Client di Raider.IO (quando presente) di controllare le impostazioni del Logging di Combattimento automaticamente."
 L["WARNING_DEBUG_MODE_ENABLE"] = "|cffFFFFFF%s|r La modalità Debug è abilitata. Per disabilitarla digita /raiderio debug|r"
 L["WARNING_LOCK_POSITION_FRAME_AUTO"] = "RaiderIO: Devi prima Disabilitare \"Posizionamento Automatico\" per il Profilo RaiderIO."
-
 
 	ns.L = L
 end

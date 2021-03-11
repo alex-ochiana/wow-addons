@@ -1,3 +1,4 @@
+-- Generated from CurseForge on Thu Mar 11 07:11:47 UTC 2021
 local _, ns = ...
 
 if ns:IsSameLocale("zhTW") then
@@ -277,7 +278,6 @@ L["USE_RAIDERIO_CLIENT_LIVE_TRACKING_SETTINGS"] = "允許Raider.IO客戶端控�
 L["USE_RAIDERIO_CLIENT_LIVE_TRACKING_SETTINGS_DESC"] = "允許Raider.IO客戶端(當有安裝時)來自動控制您的戰鬥紀錄設定。"
 L["WARNING_DEBUG_MODE_ENABLE"] = "|cffFFFFFF%s|r偵錯模式已啟用。您如果想停用請輸入|cffFFFFFF/raiderio debug|r。"
 L["WARNING_LOCK_POSITION_FRAME_AUTO"] = "RaiderIO：您必須先取消M+紀錄的自動定位。"
-
 
 	ns.L = L
 end

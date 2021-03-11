@@ -19,8 +19,8 @@ BattleGroundEnemiesDB = {
 					["Enabled"] = false,
 				},
 				["15"] = {
-					["Position_Y"] = 598.7557436651696,
-					["Position_X"] = 994.1339650445661,
+					["Position_Y"] = 576.7112552841536,
+					["Position_X"] = 1148.445253503342,
 				},
 			},
 			["Font"] = "GW2_UI Headlines",

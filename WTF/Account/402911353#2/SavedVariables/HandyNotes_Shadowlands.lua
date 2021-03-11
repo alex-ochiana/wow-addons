@@ -4,9 +4,9 @@ HandyNotes_ShadowlandsDB = {
 		["Egidus - Sylvanas"] = "Default",
 		["Kynaeth - Sylvanas"] = "Default",
 		["Gnomèrcy - Sylvanas"] = "Default",
-		["Latthrias - Sylvanas"] = "Default",
-		["Jiglèr - Sylvanas"] = "Default",
 		["Crètz - Sylvanas"] = "Default",
+		["Jiglèr - Sylvanas"] = "Default",
+		["Latthrias - Sylvanas"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -24,8 +24,8 @@ HandyNotes_ShadowlandsDB = {
 			["icon_display_slime_cat"] = true,
 			["icon_display_rares"] = true,
 			["icon_display_sinrunners"] = false,
-			["icon_display_stygian_caches"] = false,
 			["icon_display_inquisitors"] = false,
+			["icon_display_stygian_caches"] = false,
 			["icon_display_dredbats"] = false,
 		},
 	},

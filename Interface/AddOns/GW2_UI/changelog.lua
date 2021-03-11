@@ -1,6 +1,46 @@
 local _, GW = ...
 local v = GW.vernotes
 
+v("5.11.2", [=[
+FIXES
+    - Fix some gossip skin issues
+    - Some reputation issues
+
+MISC
+    - Update toc
+]=])
+
+v("5.11.1", [=[
+FIXES
+    - Some setting dropdowns are not accessible
+]=])
+
+v("5.11.0", [=[
+NEW
+    - Added more info to bag and guild micromenu icons
+
+FIXES
+    - Fix some gossip skin issues
+    - Module buttons are not inactive anymore
+    - Fix UTF8 issue if font module is deactivated (for any reason blizzard is not supporting UTF8 if we set a default blizzard font)
+]=])
+
+v("5.10.0", [=[
+NEW
+    - Added socket frame skin
+    - Added layout and functions to money tooltip (bags)
+    - Immersive Questing: Right click to go one gossip back
+    - Immersive Questing: Accept quest with space
+    - Added worldmap skin
+    - Added gossip skin
+    - Added itemupgrade skin
+
+FIXES
+    - Objective tracker improvments
+    - Focus frame invert is now working
+    - Fix auto repair
+]=])
+
 v("5.9.1", [=[
 FIXES
     - Torghast tooltip issue

@@ -231,8 +231,8 @@ end
 
 local function OnEvent(event, arg1)
 	if (event == "PLAYER_STARTED_MOVING") then
-		if (TomCats_Account.lastVersionSeen ~= "2.2.3") then
-			TomCats_Account.lastVersionSeen = "2.2.3"
+		if (TomCats_Account.lastVersionSeen ~= "2.2.6") then
+			TomCats_Account.lastVersionSeen = "2.2.6"
 			if (addon.minimapButton:IsVisible() and not addon.minimapButton.GetPreferences().hidden) then
 				addon.minimapButton.AlertText:SetText("TomCat's Tours has been updated!")
 				PlaySound(SOUNDKIT.UI_AZERITE_EMPOWERED_ITEM_LOOT_TOAST)

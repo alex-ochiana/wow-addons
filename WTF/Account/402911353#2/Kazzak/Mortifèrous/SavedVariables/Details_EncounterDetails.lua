@@ -1,30 +1,21 @@
 
 EncounterDetailsDB = {
-	["encounter_spells"] = {
-		[18431] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Onyxia",
-		},
-		[68868] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Onyxia",
-		},
-		[18392] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Onyxia",
-		},
-	},
 	["emotes"] = {
+		{
+			{
+				5.678000000072643, -- [1]
+				"This meaningless exertion bores me. I'll incinerate you all from above!", -- [2]
+				"Onyxia", -- [3]
+				7, -- [4]
+			}, -- [1]
+			{
+				39.66500000003725, -- [1]
+				"It seems you'll need another lesson, mortals!", -- [2]
+				"Onyxia", -- [3]
+				7, -- [4]
+			}, -- [2]
+			["boss"] = "Onyxia",
+		}, -- [1]
 		{
 			{
 				4.337999999988824, -- [1]
@@ -39,7 +30,7 @@ EncounterDetailsDB = {
 				7, -- [4]
 			}, -- [2]
 			["boss"] = "Onyxia",
-		}, -- [1]
+		}, -- [2]
 		{
 			{
 				5.498999999952503, -- [1]
@@ -54,6 +45,30 @@ EncounterDetailsDB = {
 				7, -- [4]
 			}, -- [2]
 			["boss"] = "Onyxia",
-		}, -- [2]
+		}, -- [3]
+	},
+	["encounter_spells"] = {
+		[18431] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Onyxia",
+		},
+		[18392] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Onyxia",
+		},
+		[68868] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Onyxia",
+		},
 	},
 }

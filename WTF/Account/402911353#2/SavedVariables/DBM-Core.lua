@@ -105,7 +105,7 @@ DBM_AllSavedOptions = {
 		["RangeFrameRadarY"] = -175.0006866455078,
 		["HUDAlpha1"] = 0.5,
 		["StatusEnabled"] = true,
-		["CoreSavedRevision"] = 20210219045155,
+		["CoreSavedRevision"] = 20210309192103,
 		["RangeFrameX"] = 75.00061798095703,
 		["AlwaysShowSpeedKillTimer"] = true,
 		["RangeFrameY"] = -170.0003204345703,
@@ -146,7 +146,7 @@ DBM_AllSavedOptions = {
 			0, -- [3]
 		},
 		["EventSoundEngage2"] = "None",
-		["InfoFrameY"] = -158,
+		["InfoFrameY"] = -194.0000762939453,
 		["SpecialWarningSound"] = 8174,
 		["HealthFrameLocked"] = false,
 		["UseSoundChannel"] = "Master",
@@ -197,7 +197,7 @@ DBM_AllSavedOptions = {
 		["WarningIconRight"] = true,
 		["HUDAlpha2"] = 0.5,
 		["AutoReplySound"] = true,
-		["GUIX"] = 144.0009918212891,
+		["GUIX"] = 101.0019989013672,
 		["SpecialWarningFlashCol5"] = {
 			0.2, -- [1]
 			1, -- [2]
@@ -230,7 +230,7 @@ DBM_AllSavedOptions = {
 		["InfoFrameFontSize"] = 12,
 		["SpecialWarningFlash2"] = true,
 		["SWarningAlphabetical"] = true,
-		["InfoFrameX"] = 230.4996490478516,
+		["InfoFrameX"] = 235.4996490478516,
 		["BlockNoteShare"] = false,
 		["MISTSTWMessageShown"] = false,
 		["FilterInterruptNoteName"] = false,
@@ -299,7 +299,7 @@ DBM_AllSavedOptions = {
 		["HealthFrameGrowUp"] = false,
 		["AutoRespond"] = true,
 		["EventDungMusicMythicFilter"] = true,
-		["GUIY"] = -48.00009536743164,
+		["GUIY"] = -26.00012969970703,
 		["RangeFrameFrames"] = "radar",
 		["DisableStatusWhisper"] = false,
 		["ShowBigBrotherOnCombatStart"] = false,

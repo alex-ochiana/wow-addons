@@ -7,8 +7,8 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 17,
 					["tipo"] = 2,
+					["combatId"] = 17,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -21,27 +21,25 @@ _detalhes_database = {
 								["Onyxian Whelp"] = 4185045,
 								["Onyxia"] = 7401293,
 							},
-							["end_time"] = 1614161372,
+							["custom"] = 0,
 							["pets"] = {
 								"Rhuufenn <Mortifèrous>", -- [1]
 								"Darkglare <Mortifèrous>", -- [2]
 							},
+							["damage_taken"] = 36.004713,
+							["aID"] = "1305-089F3029",
 							["friendlyfire_total"] = 0,
-							["boss_fight_component"] = true,
-							["classe"] = "WARLOCK",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 9227101.004712999,
-							["colocacao"] = 1,
-							["aID"] = "1305-089F3029",
+							["tipo"] = 1,
+							["classe"] = "WARLOCK",
 							["dps_started"] = false,
+							["end_time"] = 1614161372,
+							["delay"] = 0,
 							["total"] = 11586338.004713,
-							["friendlyfire"] = {
-							},
-							["on_hold"] = false,
-							["nome"] = "Mortifèrous",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[980] = {
 										["c_amt"] = 6,
@@ -60,16 +58,16 @@ _detalhes_database = {
 										["c_max"] = 91331,
 										["id"] = 980,
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 27398,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 10,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 32,
 									},
 									[316099] = {
 										["c_amt"] = 2,
@@ -88,16 +86,16 @@ _detalhes_database = {
 										["c_max"] = 155552,
 										["id"] = 316099,
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 98987,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 12,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 32,
 									},
 									[146739] = {
 										["c_amt"] = 6,
@@ -117,16 +115,16 @@ _detalhes_database = {
 										["c_max"] = 87498,
 										["id"] = 146739,
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 87497,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 17,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 32,
 									},
 									[269889] = {
 										["c_amt"] = 1,
@@ -145,16 +143,16 @@ _detalhes_database = {
 										["c_max"] = 163036,
 										["id"] = 269889,
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 163036,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 8,
 									},
 									[324540] = {
 										["c_amt"] = 1,
@@ -173,16 +171,16 @@ _detalhes_database = {
 										["c_max"] = 679695,
 										["id"] = 324540,
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 679695,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 32,
 									},
 									[27285] = {
 										["c_amt"] = 9,
@@ -201,55 +199,57 @@ _detalhes_database = {
 										["c_max"] = 275833,
 										["id"] = 27285,
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 263927,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 12,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 32,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
+							["on_hold"] = false,
+							["nome"] = "Mortifèrous",
 							["spec"] = 265,
-							["serial"] = "Player-1305-089F3029",
-							["last_dps"] = 285786.0491517062,
-							["custom"] = 0,
+							["colocacao"] = 1,
 							["last_event"] = 1614161372,
-							["damage_taken"] = 36.004713,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1614161333,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Player-1305-089F3029",
+							["last_dps"] = 285786.0491517063,
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
 							["totalabsorbed"] = 0.001411,
-							["aID"] = "103673",
 							["damage_from"] = {
 							},
 							["targets"] = {
 								["Onyxia"] = 1343420,
 							},
-							["serial"] = "Creature-0-3890-249-2398-103673-00003625B6",
+							["delay"] = 1614161354,
 							["pets"] = {
 							},
-							["boss_fight_component"] = true,
-							["on_hold"] = false,
-							["classe"] = "PET",
+							["friendlyfire"] = {
+							},
+							["tipo"] = 1,
+							["aID"] = "103673",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1343420.001411,
+							["friendlyfire_total"] = 0,
 							["dps_started"] = false,
 							["end_time"] = 1614161372,
-							["friendlyfire_total"] = 0,
+							["damage_taken"] = 0.001411,
 							["ownerName"] = "Mortifèrous",
-							["nome"] = "Darkglare <Mortifèrous>",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[205231] = {
 										["c_amt"] = 3,
@@ -268,56 +268,55 @@ _detalhes_database = {
 										["c_max"] = 194592,
 										["id"] = 205231,
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 191746,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 8,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 32,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
-							["total"] = 1343420.001411,
+							["nome"] = "Darkglare <Mortifèrous>",
 							["last_dps"] = 0,
+							["total"] = 1343420.001411,
 							["custom"] = 0,
 							["last_event"] = 1614161354,
-							["damage_taken"] = 0.001411,
+							["on_hold"] = false,
 							["start_time"] = 1614161353,
-							["delay"] = 1614161354,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-3890-249-2398-103673-00003625B6",
+							["classe"] = "PET",
 						}, -- [2]
 						{
 							["flag_original"] = 4369,
 							["totalabsorbed"] = 0.002891,
-							["total"] = 1015817.002891,
 							["damage_from"] = {
 							},
 							["targets"] = {
 								["Onyxian Whelp"] = 110511,
 								["Onyxia"] = 905306,
 							},
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["boss_fight_component"] = true,
+							["aID"] = "Pet-0-4234-1-124-417-0103047977",
+							["tipo"] = 1,
 							["classe"] = "PET",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1015817.002891,
-							["on_hold"] = false,
-							["serial"] = "Pet-0-4234-1-124-417-0103047977",
-							["dps_started"] = false,
-							["end_time"] = 1614161372,
 							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["total"] = 1015817.002891,
+							["damage_taken"] = 0.002891,
 							["ownerName"] = "Mortifèrous",
-							["nome"] = "Rhuufenn <Mortifèrous>",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 4,
@@ -337,16 +336,16 @@ _detalhes_database = {
 										["c_max"] = 73674,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 72227,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 9,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									}, -- [1]
 									[54049] = {
 										["c_amt"] = 0,
@@ -365,29 +364,30 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 54049,
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 32,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "Pet-0-4234-1-124-417-0103047977",
+							["nome"] = "Rhuufenn <Mortifèrous>",
+							["last_dps"] = 0,
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1614161371,
-							["damage_taken"] = 0.002891,
+							["on_hold"] = false,
 							["start_time"] = 1614161334,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Pet-0-4234-1-124-417-0103047977",
+							["end_time"] = 1614161372,
 						}, -- [3]
 						{
 							["flag_original"] = 68168,
@@ -400,24 +400,22 @@ _detalhes_database = {
 							["targets"] = {
 								["Mortifèrous"] = 28,
 							},
-							["total"] = 28.005694,
+							["delay"] = 1614161337,
 							["pets"] = {
 							},
-							["friendlyfire"] = {
-							},
+							["last_dps"] = 0,
+							["tipo"] = 1,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 28.005694,
-							["boss_fight_component"] = true,
-							["monster"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1614161372,
 							["on_hold"] = false,
+							["monster"] = true,
+							["total"] = 28.005694,
+							["damage_taken"] = 7401293.005694,
 							["friendlyfire_total"] = 0,
-							["nome"] = "Onyxia",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -436,16 +434,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
 									}, -- [1]
 									[68868] = {
 										["c_amt"] = 0,
@@ -464,15 +462,15 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 68868,
 										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 1,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["extra"] = {
+										},
 									},
 									[18392] = {
 										["c_amt"] = 0,
@@ -491,27 +489,29 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 18392,
 										["r_dmg"] = 0,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 1,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["extra"] = {
+										},
 									},
 								},
+								["tipo"] = 2,
 							},
+							["nome"] = "Onyxia",
+							["end_time"] = 1614161372,
 							["aID"] = "10184",
-							["serial"] = "Creature-0-3890-249-2398-10184-0000362557",
-							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1614161364,
-							["damage_taken"] = 7401293.005694,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1614161362,
-							["delay"] = 1614161337,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-3890-249-2398-10184-0000362557",
+							["dps_started"] = false,
 						}, -- [4]
 						{
 							["flag_original"] = 2632,
@@ -523,24 +523,22 @@ _detalhes_database = {
 							["targets"] = {
 								["Mortifèrous"] = 8,
 							},
-							["total"] = 8.005307,
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["friendlyfire"] = {
-							},
+							["last_dps"] = 0,
+							["tipo"] = 1,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 8.005307,
-							["boss_fight_component"] = true,
-							["monster"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1614161372,
 							["on_hold"] = false,
+							["monster"] = true,
+							["total"] = 8.005307,
+							["damage_taken"] = 4185045.005307,
 							["friendlyfire_total"] = 0,
-							["nome"] = "Onyxian Whelp",
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -558,47 +556,50 @@ _detalhes_database = {
 										["counter"] = 34,
 										["total"] = 8,
 										["c_max"] = 0,
-										["DODGE"] = 4,
+										["r_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["MISS"] = 22,
+										["b_dmg"] = 0,
 										["spellschool"] = 1,
-										["extra"] = {
-										},
+										["a_amt"] = 0,
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["extra"] = {
+										},
 										["n_amt"] = 8,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
+										["MISS"] = 22,
+										["DODGE"] = 4,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
+							["nome"] = "Onyxian Whelp",
+							["end_time"] = 1614161372,
 							["aID"] = "11262",
-							["serial"] = "Creature-0-3890-249-2398-11262-0000B625B9",
-							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1614161367,
-							["damage_taken"] = 4185045.005307,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1614161353,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-3890-249-2398-11262-0000B625B9",
+							["dps_started"] = false,
 						}, -- [5]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 17,
 					["tipo"] = 3,
+					["combatId"] = 17,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["targets_overheal"] = {
+							["healing_from"] = {
+								["Mortifèrous"] = true,
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "WARLOCK",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 0.006154,
 							["total_without_pet"] = 36.006154,
 							["total"] = 36.006154,
@@ -616,15 +617,13 @@ _detalhes_database = {
 							},
 							["totalover_without_pet"] = 0.006154,
 							["healing_taken"] = 36.006154,
-							["boss_fight_component"] = true,
+							["spec"] = 265,
 							["end_time"] = 1614161372,
-							["healing_from"] = {
-								["Mortifèrous"] = true,
+							["last_event"] = 1614161364,
+							["targets_overheal"] = {
 							},
-							["heal_enemy_amt"] = 0,
 							["nome"] = "Mortifèrous",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									[108366] = {
 										["c_amt"] = 0,
@@ -644,31 +643,32 @@ _detalhes_database = {
 										["targets_absorbs"] = {
 											["Mortifèrous"] = 36,
 										},
-										["n_amt"] = 11,
-										["c_min"] = 0,
 										["c_curado"] = 0,
+										["c_min"] = 0,
 										["n_curado"] = 36,
 										["totaldenied"] = 0,
+										["n_amt"] = 11,
 										["is_shield"] = true,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["start_time"] = 1614161351,
-							["spec"] = 265,
+							["totaldenied"] = 0.006154,
+							["aID"] = "1305-089F3029",
 							["custom"] = 0,
 							["tipo"] = 2,
-							["aID"] = "1305-089F3029",
-							["totaldenied"] = 0.006154,
+							["classe"] = "WARLOCK",
+							["start_time"] = 1614161351,
 							["delay"] = 1614161337,
-							["last_event"] = 1614161364,
+							["boss_fight_component"] = true,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 17,
 					["tipo"] = 7,
+					["combatId"] = 17,
 					["_ActorTable"] = {
 						{
 							["received"] = 0.001821,
@@ -681,56 +681,66 @@ _detalhes_database = {
 							["classe"] = "WARLOCK",
 							["passiveover"] = 0.001821,
 							["total"] = 0.001821,
-							["boss_fight_component"] = true,
-							["resource_type"] = 7,
 							["nome"] = "Mortifèrous",
+							["totalover"] = 0.001821,
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["spec"] = 265,
-							["flag_original"] = 1297,
+							["tipo"] = 3,
+							["aID"] = "1305-089F3029",
 							["alternatepower"] = 0.001821,
 							["last_event"] = 1614161372,
-							["aID"] = "1305-089F3029",
-							["tipo"] = 3,
+							["flag_original"] = 1297,
+							["spec"] = 265,
 							["serial"] = "Player-1305-089F3029",
-							["totalover"] = 0.001821,
+							["resource_type"] = 7,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 17,
 					["tipo"] = 9,
+					["combatId"] = 17,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[980] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = -1,
+										["refreshamt"] = 9,
 										["id"] = 980,
+										["uptime"] = 38,
 										["targets"] = {
 										},
-										["uptime"] = 38,
 										["appliedamt"] = 2,
-										["refreshamt"] = 9,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[27243] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 0,
 										["id"] = 27243,
+										["uptime"] = 2,
 										["targets"] = {
 										},
-										["uptime"] = 2,
 										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
+									},
+									[146739] = {
 										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = -1,
+										["refreshamt"] = 0,
+										["id"] = 146739,
+										["uptime"] = 5,
+										["targets"] = {
+										},
+										["appliedamt"] = 22,
 									},
 									[316099] = {
 										["activedamt"] = -1,
@@ -739,155 +749,145 @@ _detalhes_database = {
 										},
 										["actived_at"] = 1614161355,
 										["uptime"] = 0,
+										["counter"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
 										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[146739] = {
-										["activedamt"] = -1,
-										["id"] = 146739,
-										["targets"] = {
-										},
-										["uptime"] = 5,
-										["appliedamt"] = 22,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 137,
 							["aID"] = "1305-089F3029",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[108366] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 108366,
-										["targets"] = {
-										},
 										["uptime"] = 39,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[205180] = {
-										["activedamt"] = 1,
-										["id"] = 205180,
 										["targets"] = {
 										},
-										["uptime"] = 20,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[335148] = {
-										["activedamt"] = 1,
-										["id"] = 335148,
-										["targets"] = {
-										},
-										["uptime"] = 39,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[186401] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 186401,
+										["uptime"] = 39,
 										["targets"] = {
 										},
-										["uptime"] = 39,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
+									},
+									[335148] = {
 										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 335148,
+										["uptime"] = 39,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[205180] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 205180,
+										["uptime"] = 20,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 45,
+							["tipo"] = 4,
 							["boss_fight_component"] = true,
-							["nome"] = "Mortifèrous",
 							["spec"] = 265,
 							["grupo"] = true,
 							["spell_cast"] = {
 								[172] = 2,
 								[324536] = 4,
-								[980] = 2,
-								[27243] = 2,
 								[205180] = 1,
+								[27243] = 2,
+								[980] = 2,
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["buff_uptime_targets"] = {
-							},
+							["classe"] = "WARLOCK",
 							["last_event"] = 1614161372,
 							["pets"] = {
 								"Rhuufenn <Mortifèrous>", -- [1]
 								"Darkglare <Mortifèrous>", -- [2]
 							},
-							["classe"] = "WARLOCK",
+							["buff_uptime_targets"] = {
+							},
 							["serial"] = "Player-1305-089F3029",
-							["tipo"] = 4,
+							["nome"] = "Mortifèrous",
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
+							["tipo"] = 4,
 							["ownerName"] = "Mortifèrous",
 							["nome"] = "Rhuufenn <Mortifèrous>",
-							["classe"] = "PET",
 							["pets"] = {
 							},
-							["boss_fight_component"] = true,
+							["last_event"] = 0,
 							["spell_cast"] = {
 								[54049] = 6,
 							},
-							["tipo"] = 4,
+							["classe"] = "PET",
 							["aID"] = "Pet-0-4234-1-124-417-0103047977",
 							["serial"] = "Pet-0-4234-1-124-417-0103047977",
-							["last_event"] = 0,
+							["boss_fight_component"] = true,
 						}, -- [2]
 						{
 							["flag_original"] = 8465,
-							["classe"] = "PET",
+							["tipo"] = 4,
 							["ownerName"] = "Mortifèrous",
 							["nome"] = "Darkglare <Mortifèrous>",
 							["pets"] = {
 							},
-							["boss_fight_component"] = true,
+							["last_event"] = 0,
 							["spell_cast"] = {
 								[205231] = 11,
 							},
-							["tipo"] = 4,
+							["classe"] = "PET",
 							["aID"] = "103673",
 							["serial"] = "Creature-0-3890-249-2398-103673-00003625B6",
-							["last_event"] = 0,
+							["boss_fight_component"] = true,
 						}, -- [3]
 						{
 							["monster"] = true,
+							["last_event"] = 0,
 							["boss_fight_component"] = true,
-							["flag_original"] = 68168,
+							["aID"] = "10184",
 							["spell_cast"] = {
 								[68868] = 1,
 								[18392] = 1,
 							},
-							["classe"] = "UNKNOW",
 							["nome"] = "Onyxia",
-							["last_event"] = 0,
+							["tipo"] = 4,
+							["classe"] = "UNKNOW",
 							["pets"] = {
 							},
-							["tipo"] = 4,
 							["serial"] = "Creature-0-3890-249-2398-10184-0000362557",
-							["aID"] = "10184",
+							["flag_original"] = 68168,
 						}, -- [4]
 						{
 							["flag_original"] = 2632,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 9,
 							},
 							["pets"] = {
 							},
@@ -897,43 +897,41 @@ _detalhes_database = {
 							["debuff_uptime"] = 0,
 							["spellschool"] = 4,
 							["nome"] = "Flame Lash",
-							["boss_fight_component"] = true,
+							["last_event"] = 1614161354,
+							["serial"] = "Creature-0-3890-249-2398-12129-0000B62557",
+							["aID"] = "12129",
+							["tipo"] = 4,
+							["damage_twin"] = "Onyxian Warder",
 							["debuff_uptime_targets"] = {
 								["Mortifèrous"] = {
 									["uptime"] = 0,
-									["actived_at"] = 1614161354,
+									["refreshamt"] = 0,
 									["appliedamt"] = 0,
 									["activedamt"] = -1,
 									["actived"] = false,
-									["refreshamt"] = 0,
+									["actived_at"] = 1614161354,
 								},
 							},
 							["damage_spellid"] = 18958,
-							["tipo"] = 4,
-							["damage_twin"] = "Onyxian Warder",
-							["aID"] = "12129",
-							["serial"] = "Creature-0-3890-249-2398-12129-0000B62557",
-							["last_event"] = 1614161354,
+							["boss_fight_component"] = true,
 						}, -- [5]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 17,
 					["tipo"] = 2,
+					["combatId"] = 17,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
 					["Mortifèrous"] = true,
 				},
-				["overall_added"] = true,
+				["tempo_start"] = 1614161333,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 74,
 				["playing_solo"] = true,
 				["totals"] = {
 					11586374, -- [1]
@@ -942,21 +940,21 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
 				["totals_grupo"] = {
 					9227101, -- [1]
@@ -965,22 +963,23 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "raid",
+				["hasSaved"] = true,
 				["data_fim"] = "12:09:33",
 				["cleu_timeline"] = {
 				},
@@ -991,32 +990,13 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Mortifèrous"] = 36.006154,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Mortifèrous"] = 11586338.004713,
-						}, -- [1]
-					},
-				},
+				["data_inicio"] = "12:08:54",
 				["end_time"] = 770092.973,
 				["combat_id"] = 17,
-				["tempo_start"] = 1614161333,
-				["combat_counter"] = 74,
 				["player_last_events"] = {
 				},
+				["contra"] = "Onyxia",
+				["overall_added"] = true,
 				["spells_cast_timeline"] = {
 				},
 				["is_boss"] = {
@@ -1028,20 +1008,41 @@ _detalhes_database = {
 					["try_number"] = 1,
 					["name"] = "Onyxia",
 					["diff"] = 4,
-					["id"] = 1084,
 					["ej_instance_id"] = 760,
+					["id"] = 1084,
 					["killed"] = true,
 				},
-				["data_inicio"] = "12:08:54",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["CombatSkillCache"] = {
 				},
-				["frags"] = {
-					["Onyxian Whelp"] = 24,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Mortifèrous"] = 11586338.004713,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Mortifèrous"] = 36.006154,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
 				},
 				["start_time"] = 770052.431,
 				["TimeData"] = {
 				},
-				["contra"] = "Onyxia",
+				["frags"] = {
+					["Onyxian Whelp"] = 24,
+				},
 			}, -- [1]
 			{
 				{
@@ -1051,19 +1052,6 @@ _detalhes_database = {
 						{
 							["flag_original"] = 1297,
 							["totalabsorbed"] = 0.004373,
-							["pets"] = {
-								"Rhuufenn <Mortifèrous>", -- [1]
-								"Darkglare <Mortifèrous>", -- [2]
-							},
-							["classe"] = "WARLOCK",
-							["total_without_pet"] = 8071274.004373,
-							["dps_started"] = false,
-							["total"] = 10147005.004373,
-							["spec"] = 265,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["serial"] = "Player-1305-089F3029",
 							["damage_from"] = {
 								["Onyxian Whelp"] = true,
 								["Onyxia"] = true,
@@ -1072,13 +1060,28 @@ _detalhes_database = {
 								["Onyxian Whelp"] = 3253169,
 								["Onyxia"] = 6893836,
 							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
+							["custom"] = 0,
+							["pets"] = {
+								"Rhuufenn <Mortifèrous>", -- [1]
+								"Darkglare <Mortifèrous>", -- [2]
 							},
-							["end_time"] = 1614008725,
+							["last_dps"] = 269422.893217832,
 							["damage_taken"] = 39.004373,
 							["aID"] = "1305-089F3029",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 8071274.004373,
+							["boss_fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["total"] = 10147005.004373,
+							["delay"] = 0,
+							["end_time"] = 1614008725,
 							["nome"] = "Mortifèrous",
+							["spec"] = 265,
+							["grupo"] = true,
+							["classe"] = "WARLOCK",
+							["last_event"] = 1614008725,
 							["spells"] = {
 								["_ActorTable"] = {
 									[980] = {
@@ -1098,16 +1101,16 @@ _detalhes_database = {
 										["c_max"] = 91330,
 										["id"] = 980,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 91330,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 15,
-										["extra"] = {
-										},
-										["spellschool"] = 32,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									[316099] = {
 										["c_amt"] = 5,
@@ -1126,16 +1129,16 @@ _detalhes_database = {
 										["c_max"] = 155552,
 										["id"] = 316099,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 121155,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 9,
-										["extra"] = {
-										},
-										["spellschool"] = 32,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									[146739] = {
 										["c_amt"] = 6,
@@ -1155,16 +1158,16 @@ _detalhes_database = {
 										["c_max"] = 87498,
 										["id"] = 146739,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 87498,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 17,
-										["extra"] = {
-										},
-										["spellschool"] = 32,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									[269889] = {
 										["c_amt"] = 2,
@@ -1183,16 +1186,16 @@ _detalhes_database = {
 										["c_max"] = 163036,
 										["id"] = 269889,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 163036,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 0,
-										["extra"] = {
-										},
-										["spellschool"] = 8,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									[324540] = {
 										["c_amt"] = 2,
@@ -1211,16 +1214,16 @@ _detalhes_database = {
 										["c_max"] = 679696,
 										["id"] = 324540,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 679696,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 0,
-										["extra"] = {
-										},
-										["spellschool"] = 32,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									[27285] = {
 										["c_amt"] = 5,
@@ -1239,52 +1242,49 @@ _detalhes_database = {
 										["c_max"] = 273441,
 										["id"] = 27285,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 264788,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 13,
-										["extra"] = {
-										},
-										["spellschool"] = 32,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["grupo"] = true,
+							["colocacao"] = 1,
 							["tipo"] = 1,
-							["on_hold"] = false,
-							["custom"] = 0,
-							["last_event"] = 1614008725,
-							["last_dps"] = 269422.893217832,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1614008690,
-							["delay"] = 0,
-							["boss_fight_component"] = true,
+							["serial"] = "Player-1305-089F3029",
+							["on_hold"] = false,
 						}, -- [1]
 						{
 							["flag_original"] = 8465,
 							["totalabsorbed"] = 0.008903,
-							["end_time"] = 1614008725,
 							["damage_from"] = {
 							},
 							["targets"] = {
 								["Onyxia"] = 1437437,
 							},
+							["serial"] = "Creature-0-3061-249-27786-103673-000033D174",
 							["pets"] = {
 							},
-							["delay"] = 1614008711,
+							["friendlyfire_total"] = 0,
+							["last_dps"] = 0,
 							["classe"] = "PET",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1437437.008903,
-							["friendlyfire"] = {
-							},
-							["tipo"] = 1,
-							["dps_started"] = false,
-							["total"] = 1437437.008903,
 							["aID"] = "103673",
+							["dps_started"] = false,
+							["end_time"] = 1614008725,
+							["on_hold"] = false,
 							["ownerName"] = "Mortifèrous",
 							["nome"] = "Darkglare <Mortifèrous>",
 							["spells"] = {
@@ -1306,52 +1306,54 @@ _detalhes_database = {
 										["c_max"] = 195001,
 										["id"] = 205231,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 187927,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 7,
-										["extra"] = {
-										},
-										["spellschool"] = 32,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["friendlyfire_total"] = 0,
-							["damage_taken"] = 0.008903,
-							["boss_fight_component"] = true,
-							["custom"] = 0,
 							["last_event"] = 1614008711,
-							["on_hold"] = false,
+							["boss_fight_component"] = true,
+							["damage_taken"] = 0.008903,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1614008706,
-							["serial"] = "Creature-0-3061-249-27786-103673-000033D174",
-							["last_dps"] = 0,
+							["delay"] = 1614008711,
+							["total"] = 1437437.008903,
 						}, -- [2]
 						{
 							["flag_original"] = 4369,
 							["totalabsorbed"] = 0.005122,
-							["damage_taken"] = 0.005122,
 							["damage_from"] = {
 							},
 							["targets"] = {
 								["Onyxian Whelp"] = 110511,
 								["Onyxia"] = 527783,
 							},
+							["serial"] = "Pet-0-3103-1-26-417-0103047977",
 							["pets"] = {
 							},
-							["delay"] = 0,
+							["total"] = 638294.005122,
+							["friendlyfire"] = {
+							},
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 638294.005122,
-							["aID"] = "Pet-0-3103-1-26-417-0103047977",
-							["tipo"] = 1,
+							["classe"] = "PET",
 							["dps_started"] = false,
 							["end_time"] = 1614008725,
-							["classe"] = "PET",
+							["on_hold"] = false,
 							["ownerName"] = "Mortifèrous",
 							["nome"] = "Rhuufenn <Mortifèrous>",
 							["spells"] = {
@@ -1374,16 +1376,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 11,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
 									[54049] = {
 										["c_amt"] = 0,
@@ -1402,30 +1404,29 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 54049,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 3,
-										["extra"] = {
-										},
-										["spellschool"] = 32,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["total"] = 638294.005122,
-							["boss_fight_component"] = true,
-							["last_dps"] = 0,
-							["custom"] = 0,
 							["last_event"] = 1614008721,
-							["on_hold"] = false,
+							["last_dps"] = 0,
+							["boss_fight_component"] = true,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.005122,
 							["start_time"] = 1614008691,
-							["serial"] = "Pet-0-3103-1-26-417-0103047977",
-							["friendlyfire"] = {
-							},
+							["delay"] = 0,
+							["aID"] = "Pet-0-3103-1-26-417-0103047977",
 						}, -- [3]
 						{
 							["flag_original"] = 68168,
@@ -1438,19 +1439,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Mortifèrous"] = 27,
 							},
+							["serial"] = "Creature-0-3061-249-27786-10184-000033D127",
 							["pets"] = {
 							},
-							["delay"] = 1614008693,
+							["friendlyfire_total"] = 0,
+							["boss_fight_component"] = true,
 							["aID"] = "10184",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 27.002129,
-							["last_dps"] = 0,
-							["tipo"] = 1,
+							["on_hold"] = false,
 							["dps_started"] = false,
 							["end_time"] = 1614008725,
-							["classe"] = "UNKNOW",
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
+							["last_event"] = 1614008693,
 							["nome"] = "Onyxia",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -1471,16 +1474,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["extra"] = {
-										},
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
 									[68868] = {
 										["c_amt"] = 0,
@@ -1499,30 +1502,28 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = 68868,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["b_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 1,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["extra"] = {
-										},
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["monster"] = true,
-							["total"] = 27.002129,
 							["damage_taken"] = 6893836.002129,
-							["friendlyfire_total"] = 0,
+							["total"] = 27.002129,
 							["custom"] = 0,
-							["last_event"] = 1614008693,
-							["friendlyfire"] = {
-							},
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["start_time"] = 1614008722,
-							["serial"] = "Creature-0-3061-249-27786-10184-000033D127",
-							["boss_fight_component"] = true,
+							["delay"] = 1614008693,
+							["classe"] = "UNKNOW",
 						}, -- [4]
 						{
 							["flag_original"] = 2632,
@@ -1534,19 +1535,21 @@ _detalhes_database = {
 							["targets"] = {
 								["Mortifèrous"] = 12,
 							},
+							["serial"] = "Creature-0-3061-249-27786-11262-000233D178",
 							["pets"] = {
 							},
-							["delay"] = 0,
+							["friendlyfire_total"] = 0,
+							["boss_fight_component"] = true,
 							["aID"] = "11262",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 12.008498,
-							["last_dps"] = 0,
-							["tipo"] = 1,
+							["on_hold"] = false,
 							["dps_started"] = false,
 							["end_time"] = 1614008725,
-							["classe"] = "UNKNOW",
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
+							["last_event"] = 1614008720,
 							["nome"] = "Onyxian Whelp",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -1565,35 +1568,33 @@ _detalhes_database = {
 										["counter"] = 36,
 										["total"] = 12,
 										["c_max"] = 0,
-										["r_amt"] = 0,
+										["MISS"] = 22,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["b_dmg"] = 0,
+										["DODGE"] = 3,
 										["spellschool"] = 1,
-										["a_amt"] = 0,
+										["extra"] = {
+										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["extra"] = {
-										},
+										["a_amt"] = 0,
 										["n_amt"] = 11,
-										["DODGE"] = 3,
-										["MISS"] = 22,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
 								},
 								["tipo"] = 2,
 							},
 							["monster"] = true,
-							["total"] = 12.008498,
 							["damage_taken"] = 3253169.008498,
-							["friendlyfire_total"] = 0,
+							["total"] = 12.008498,
 							["custom"] = 0,
-							["last_event"] = 1614008720,
-							["friendlyfire"] = {
-							},
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["start_time"] = 1614008709,
-							["serial"] = "Creature-0-3061-249-27786-11262-000233D178",
-							["boss_fight_component"] = true,
+							["delay"] = 0,
+							["classe"] = "UNKNOW",
 						}, -- [5]
 					},
 				}, -- [1]
@@ -1603,19 +1604,16 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["healing_from"] = {
-								["Mortifèrous"] = true,
+							["targets_overheal"] = {
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["aID"] = "1305-089F3029",
 							["totalover"] = 0.008738,
 							["total_without_pet"] = 39.008738,
 							["total"] = 39.008738,
-							["targets_absorbs"] = {
-								["Mortifèrous"] = 39,
-							},
+							["spec"] = 265,
 							["heal_enemy"] = {
 							},
 							["on_hold"] = false,
@@ -1627,10 +1625,11 @@ _detalhes_database = {
 							},
 							["totalover_without_pet"] = 0.008738,
 							["healing_taken"] = 39.008738,
-							["spec"] = 265,
+							["tipo"] = 2,
 							["end_time"] = 1614008725,
-							["last_event"] = 1614008717,
-							["targets_overheal"] = {
+							["boss_fight_component"] = true,
+							["healing_from"] = {
+								["Mortifèrous"] = true,
 							},
 							["nome"] = "Mortifèrous",
 							["spells"] = {
@@ -1655,9 +1654,9 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["c_min"] = 0,
-										["n_curado"] = 39,
 										["totaldenied"] = 0,
 										["n_amt"] = 13,
+										["n_curado"] = 39,
 										["is_shield"] = true,
 										["absorbed"] = 0,
 									},
@@ -1665,14 +1664,16 @@ _detalhes_database = {
 								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["totaldenied"] = 0.008738,
-							["aID"] = "1305-089F3029",
-							["custom"] = 0,
-							["tipo"] = 2,
-							["classe"] = "WARLOCK",
 							["start_time"] = 1614008707,
+							["classe"] = "WARLOCK",
+							["custom"] = 0,
+							["last_event"] = 1614008717,
+							["heal_enemy_amt"] = 0,
+							["totaldenied"] = 0.008738,
 							["delay"] = 1614008693,
-							["boss_fight_component"] = true,
+							["targets_absorbs"] = {
+								["Mortifèrous"] = 39,
+							},
 						}, -- [1]
 					},
 				}, -- [2]
@@ -1691,23 +1692,23 @@ _detalhes_database = {
 							["classe"] = "WARLOCK",
 							["passiveover"] = 0.004434,
 							["total"] = 0.004434,
-							["nome"] = "Mortifèrous",
-							["totalover"] = 0.004434,
 							["boss_fight_component"] = true,
+							["resource_type"] = 7,
+							["nome"] = "Mortifèrous",
 							["spells"] = {
 								["_ActorTable"] = {
 								},
 								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["tipo"] = 3,
-							["aID"] = "1305-089F3029",
-							["alternatepower"] = 0.004434,
-							["last_event"] = 1614008714,
-							["flag_original"] = 1297,
 							["spec"] = 265,
+							["flag_original"] = 1297,
+							["last_event"] = 1614008714,
+							["tipo"] = 3,
+							["alternatepower"] = 0.004434,
+							["aID"] = "1305-089F3029",
 							["serial"] = "Player-1305-089F3029",
-							["resource_type"] = 7,
+							["totalover"] = 0.004434,
 						}, -- [1]
 					},
 				}, -- [3]
@@ -1720,38 +1721,26 @@ _detalhes_database = {
 							["debuff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[980] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 9,
-										["id"] = 980,
-										["uptime"] = 27,
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
-										["appliedamt"] = 2,
+										["activedamt"] = 0,
+										["uptime"] = 27,
+										["id"] = 980,
+										["refreshamt"] = 9,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									[27243] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = 27243,
-										["uptime"] = 3,
-										["targets"] = {
-										},
 										["appliedamt"] = 2,
-									},
-									[146739] = {
-										["activedamt"] = -1,
-										["id"] = 146739,
 										["targets"] = {
 										},
-										["actived_at"] = 1614008725,
-										["uptime"] = 2,
-										["counter"] = 0,
+										["activedamt"] = 0,
+										["uptime"] = 3,
+										["id"] = 27243,
 										["refreshamt"] = 0,
 										["actived"] = false,
-										["appliedamt"] = 20,
+										["counter"] = 0,
 									},
 									[316099] = {
 										["activedamt"] = -1,
@@ -1760,10 +1749,22 @@ _detalhes_database = {
 										},
 										["actived_at"] = 1614008712,
 										["uptime"] = 0,
-										["counter"] = 0,
+										["appliedamt"] = 0,
 										["refreshamt"] = 0,
 										["actived"] = false,
-										["appliedamt"] = 0,
+										["counter"] = 0,
+									},
+									[146739] = {
+										["activedamt"] = -1,
+										["id"] = 146739,
+										["targets"] = {
+										},
+										["actived_at"] = 1614008725,
+										["uptime"] = 2,
+										["appliedamt"] = 20,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 								},
 								["tipo"] = 9,
@@ -1773,124 +1774,124 @@ _detalhes_database = {
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									[108366] = {
-										["counter"] = 0,
-										["actived"] = false,
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
 										["activedamt"] = 1,
-										["refreshamt"] = 0,
+										["uptime"] = 35,
 										["id"] = 108366,
-										["uptime"] = 35,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[205180] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
 										["refreshamt"] = 0,
-										["id"] = 205180,
-										["uptime"] = 20,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									[335151] = {
-										["counter"] = 0,
 										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 335151,
-										["uptime"] = 35,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
+										["counter"] = 0,
 									},
 									[269887] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = 269887,
-										["uptime"] = 15,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
+										["uptime"] = 15,
+										["id"] = 269887,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[335151] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 35,
+										["id"] = 335151,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[205180] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 20,
+										["id"] = 205180,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 								},
 								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 32,
-							["tipo"] = 4,
+							["nome"] = "Mortifèrous",
 							["boss_fight_component"] = true,
 							["spec"] = 265,
 							["grupo"] = true,
 							["spell_cast"] = {
 								[980] = 2,
 								[324536] = 2,
-								[205180] = 1,
-								[27243] = 2,
 								[172] = 2,
-							},
-							["debuff_uptime_targets"] = {
+								[27243] = 2,
+								[205180] = 1,
 							},
 							["classe"] = "WARLOCK",
-							["last_event"] = 1614008725,
+							["buff_uptime_targets"] = {
+							},
+							["tipo"] = 4,
 							["pets"] = {
 								"Rhuufenn <Mortifèrous>", -- [1]
 								"Darkglare <Mortifèrous>", -- [2]
 							},
-							["buff_uptime_targets"] = {
-							},
+							["last_event"] = 1614008725,
 							["serial"] = "Player-1305-089F3029",
-							["nome"] = "Mortifèrous",
+							["debuff_uptime_targets"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
-							["tipo"] = 4,
+							["classe"] = "PET",
 							["ownerName"] = "Mortifèrous",
 							["nome"] = "Rhuufenn <Mortifèrous>",
 							["pets"] = {
 							},
-							["last_event"] = 0,
+							["boss_fight_component"] = true,
 							["spell_cast"] = {
 								[54049] = 5,
 							},
-							["classe"] = "PET",
+							["tipo"] = 4,
 							["aID"] = "Pet-0-3103-1-26-417-0103047977",
 							["serial"] = "Pet-0-3103-1-26-417-0103047977",
-							["boss_fight_component"] = true,
+							["last_event"] = 0,
 						}, -- [2]
 						{
 							["flag_original"] = 8465,
-							["tipo"] = 4,
+							["classe"] = "PET",
 							["ownerName"] = "Mortifèrous",
 							["nome"] = "Darkglare <Mortifèrous>",
 							["pets"] = {
 							},
-							["last_event"] = 0,
+							["boss_fight_component"] = true,
 							["spell_cast"] = {
 								[205231] = 11,
 							},
-							["classe"] = "PET",
+							["tipo"] = 4,
 							["aID"] = "103673",
 							["serial"] = "Creature-0-3061-249-27786-103673-000033D174",
-							["boss_fight_component"] = true,
+							["last_event"] = 0,
 						}, -- [3]
 						{
 							["monster"] = true,
-							["last_event"] = 0,
+							["tipo"] = 4,
 							["boss_fight_component"] = true,
-							["aID"] = "10184",
+							["flag_original"] = 68168,
 							["spell_cast"] = {
 								[68868] = 1,
 							},
 							["nome"] = "Onyxia",
-							["tipo"] = 4,
-							["classe"] = "UNKNOW",
 							["pets"] = {
 							},
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
 							["serial"] = "Creature-0-3061-249-27786-10184-000033D127",
-							["flag_original"] = 68168,
+							["aID"] = "10184",
 						}, -- [4]
 					},
 				}, -- [4]
@@ -1918,21 +1919,21 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[6] = 0,
 						[3] = 0,
+						[6] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
 				["player_last_events"] = {
 				},
@@ -1952,10 +1953,12 @@ _detalhes_database = {
 				["data_inicio"] = "17:44:50",
 				["end_time"] = 617446.591,
 				["combat_id"] = 15,
-				["cleu_events"] = {
-					["n"] = 1,
+				["frags"] = {
+					["Onyxian Whelp"] = 22,
+					["Onyxia"] = 1,
 				},
-				["contra"] = "Onyxia",
+				["TimeData"] = {
+				},
 				["overall_added"] = true,
 				["spells_cast_timeline"] = {
 				},
@@ -1968,32 +1971,9 @@ _detalhes_database = {
 					["try_number"] = 1,
 					["name"] = "Onyxia",
 					["diff"] = 4,
-					["ej_instance_id"] = 760,
 					["id"] = 1084,
+					["ej_instance_id"] = 760,
 					["killed"] = true,
-				},
-				["totals_grupo"] = {
-					8071274, -- [1]
-					39, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["CombatSkillCache"] = {
 				},
 				["PhaseData"] = {
 					{
@@ -2004,13 +1984,7 @@ _detalhes_database = {
 						3, -- [1]
 						5.508999999961816, -- [2]
 					}, -- [2]
-					["damage"] = {
-						{
-							["Mortifèrous"] = 1937947.004373,
-						}, -- [1]
-						[3] = {
-							["Mortifèrous"] = 8209057.999999999,
-						},
+					["damage_section"] = {
 					},
 					["heal_section"] = {
 					},
@@ -2022,15 +1996,42 @@ _detalhes_database = {
 							["Mortifèrous"] = 12,
 						},
 					},
-					["damage_section"] = {
+					["damage"] = {
+						{
+							["Mortifèrous"] = 1937947.004373,
+						}, -- [1]
+						[3] = {
+							["Mortifèrous"] = 8209057.999999999,
+						},
 					},
 				},
-				["start_time"] = 617408.929,
-				["TimeData"] = {
+				["CombatSkillCache"] = {
 				},
-				["frags"] = {
-					["Onyxian Whelp"] = 22,
-					["Onyxia"] = 1,
+				["totals_grupo"] = {
+					8071274, -- [1]
+					39, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["start_time"] = 617408.929,
+				["contra"] = "Onyxia",
+				["cleu_events"] = {
+					["n"] = 1,
 				},
 			}, -- [2]
 		},
@@ -2081,17 +2082,17 @@ _detalhes_database = {
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["updatespeed"] = 1,
-			["enabled"] = true,
+			["animate"] = false,
 			["showamount"] = false,
 			["useplayercolor"] = false,
-			["author"] = "Details! Team",
 			["useclasscolors"] = false,
+			["author"] = "Details! Team",
 			["playercolor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["animate"] = false,
+			["enabled"] = true,
 		},
 		["DETAILS_PLUGIN_RAIDCHECK"] = {
 			["enabled"] = true,
@@ -2128,11 +2129,11 @@ _detalhes_database = {
 			["last_section_selected"] = "main",
 			["author"] = "Details! Team",
 			["window_scale"] = 1,
-			["encounter_timers_dbm"] = {
-			},
+			["hide_on_combat"] = false,
 			["show_icon"] = 5,
 			["opened"] = 0,
-			["hide_on_combat"] = false,
+			["encounter_timers_dbm"] = {
+			},
 		},
 		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
 			["use_square_mode"] = false,
@@ -2153,22 +2154,22 @@ _detalhes_database = {
 				["radius"] = 160,
 				["hide"] = false,
 			},
-			["arrow_anchor_y"] = 0,
+			["scale"] = 1,
 			["arrow_anchor_x"] = 0,
-			["main_frame_locked"] = false,
+			["row_height"] = 20,
 			["row_texture"] = "Details Serenity",
-			["row_color"] = {
-				0.1, -- [1]
-				0.1, -- [2]
-				0.1, -- [3]
-				0.4, -- [4]
+			["font_color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
-			["use_spark"] = true,
-			["author"] = "Details! Team",
+			["point"] = "CENTER",
+			["main_frame_strata"] = "LOW",
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["y"] = 0.000244140625,
+			["font_size"] = 10,
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -2176,9 +2177,13 @@ _detalhes_database = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["row_color"] = {
+				0.1, -- [1]
+				0.1, -- [2]
+				0.1, -- [3]
+				0.4, -- [4]
+			},
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
-			["font_size"] = 10,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -2186,25 +2191,26 @@ _detalhes_database = {
 				["font_shadow"] = true,
 				["y"] = 0.000244140625,
 				["x"] = 3.0517578125e-05,
-				["attribute_type"] = 1,
-				["update_speed"] = 0.05,
 				["size"] = 32,
+				["update_speed"] = 0.05,
+				["attribute_type"] = 1,
 			},
+			["use_spark"] = true,
 			["x"] = 0,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
-			["point"] = "CENTER",
-			["font_color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["row_height"] = 20,
-			["scale"] = 1,
+			["y"] = 0.000244140625,
+			["author"] = "Details! Team",
+			["main_frame_locked"] = false,
+			["arrow_anchor_y"] = 0,
 		},
 	},
-	["last_day"] = "24",
+	["announce_prepots"] = {
+		["enabled"] = false,
+		["channel"] = "SELF",
+		["reverse"] = false,
+	},
+	["last_day"] = "26",
 	["last_encounter"] = "Onyxia",
 	["mythic_dungeon_currentsaved"] = {
 		["dungeon_name"] = "",
@@ -2217,14 +2223,1049 @@ _detalhes_database = {
 		["dungeon_zone_id"] = 0,
 		["previous_boss_killed_at"] = 0,
 	},
-	["announce_prepots"] = {
-		["enabled"] = false,
+	["announce_firsthit"] = {
+		["enabled"] = true,
 		["channel"] = "SELF",
-		["reverse"] = false,
 	},
-	["character_data"] = {
-		["logons"] = 20,
+	["benchmark_db"] = {
+		["frame"] = {
+		},
 	},
+	["combat_id"] = 17,
+	["savedStyles"] = {
+	},
+	["combat_counter"] = 75,
+	["cached_talents"] = {
+	},
+	["announce_deaths"] = {
+		["enabled"] = false,
+		["last_hits"] = 1,
+		["only_first"] = 5,
+		["where"] = 1,
+	},
+	["tabela_overall"] = {
+		{
+			["tipo"] = 2,
+			["_ActorTable"] = {
+				{
+					["flag_original"] = 1297,
+					["totalabsorbed"] = 0.012601,
+					["damage_from"] = {
+						["Onyxian Whelp"] = true,
+						["Onyxia"] = true,
+					},
+					["targets"] = {
+						["Onyxian Whelp"] = 7438214,
+						["Onyxia"] = 14295129,
+					},
+					["pets"] = {
+						"Rhuufenn <Mortifèrous>", -- [1]
+						"Darkglare <Mortifèrous>", -- [2]
+					},
+					["end_time"] = 1614008726,
+					["spec"] = 265,
+					["classe"] = "WARLOCK",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 17298375.012601,
+					["on_hold"] = false,
+					["serial"] = "Player-1305-089F3029",
+					["dps_started"] = false,
+					["total"] = 21733343.012601,
+					["aID"] = "1305-089F3029",
+					["friendlyfire"] = {
+					},
+					["nome"] = "Mortifèrous",
+					["spells"] = {
+						["_ActorTable"] = {
+							[980] = {
+								["c_amt"] = 7,
+								["b_amt"] = 0,
+								["c_dmg"] = 481558,
+								["g_amt"] = 0,
+								["n_max"] = 45666,
+								["targets"] = {
+									["Onyxia"] = 1289293,
+								},
+								["n_dmg"] = 807735,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 32,
+								["total"] = 1289293,
+								["c_max"] = 91331,
+								["id"] = 980,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 25,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+							[316099] = {
+								["c_amt"] = 7,
+								["b_amt"] = 0,
+								["c_dmg"] = 997902,
+								["g_amt"] = 0,
+								["n_max"] = 77776,
+								["targets"] = {
+									["Onyxia"] = 2631190,
+								},
+								["n_dmg"] = 1633288,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 28,
+								["total"] = 2631190,
+								["c_max"] = 155552,
+								["id"] = 316099,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 21,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+							[146739] = {
+								["c_amt"] = 12,
+								["b_amt"] = 0,
+								["c_dmg"] = 1049975,
+								["g_amt"] = 0,
+								["n_max"] = 43750,
+								["targets"] = {
+									["Onyxian Whelp"] = 87499,
+									["Onyxia"] = 2449926,
+								},
+								["n_dmg"] = 1487450,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 46,
+								["total"] = 2537425,
+								["c_max"] = 87498,
+								["id"] = 146739,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 34,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+							[269889] = {
+								["c_amt"] = 3,
+								["b_amt"] = 0,
+								["c_dmg"] = 489108,
+								["g_amt"] = 0,
+								["n_max"] = 81518,
+								["targets"] = {
+									["Onyxia"] = 652144,
+								},
+								["n_dmg"] = 163036,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 5,
+								["total"] = 652144,
+								["c_max"] = 163036,
+								["id"] = 269889,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 2,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+							[324540] = {
+								["c_amt"] = 3,
+								["b_amt"] = 0,
+								["c_dmg"] = 2039087,
+								["g_amt"] = 0,
+								["n_max"] = 339849,
+								["targets"] = {
+									["Onyxia"] = 3058630,
+								},
+								["n_dmg"] = 1019543,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 6,
+								["total"] = 3058630,
+								["c_max"] = 679696,
+								["id"] = 324540,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 3,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+							[27285] = {
+								["c_amt"] = 14,
+								["b_amt"] = 0,
+								["c_dmg"] = 3762927,
+								["g_amt"] = 0,
+								["n_max"] = 138363,
+								["targets"] = {
+									["Onyxian Whelp"] = 7129693,
+								},
+								["n_dmg"] = 3366766,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 39,
+								["total"] = 7129693,
+								["c_max"] = 275833,
+								["id"] = 27285,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 25,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["grupo"] = true,
+					["last_event"] = 0,
+					["friendlyfire_total"] = 0,
+					["boss_fight_component"] = true,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1614008649,
+					["delay"] = 0,
+					["damage_taken"] = 75.012601,
+				}, -- [1]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 55.016811,
+					["damage_from"] = {
+						["Rhuufenn <Mortifèrous>"] = true,
+						["Mortifèrous"] = true,
+						["Darkglare <Mortifèrous>"] = true,
+					},
+					["targets"] = {
+						["Mortifèrous"] = 55,
+					},
+					["serial"] = "Creature-0-3061-249-27786-10184-000033D127",
+					["pets"] = {
+					},
+					["friendlyfire_total"] = 0,
+					["on_hold"] = false,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 55.016811,
+					["damage_taken"] = 14295129.016811,
+					["dps_started"] = false,
+					["end_time"] = 1614008726,
+					["friendlyfire"] = {
+					},
+					["last_event"] = 0,
+					["nome"] = "Onyxia",
+					["spells"] = {
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 13,
+								["targets"] = {
+									["Mortifèrous"] = 26,
+								},
+								["n_dmg"] = 26,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 2,
+								["total"] = 26,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 2,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							}, -- [1]
+							[68868] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 14,
+								["targets"] = {
+									["Mortifèrous"] = 27,
+								},
+								["n_dmg"] = 27,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 2,
+								["total"] = 27,
+								["c_max"] = 0,
+								["id"] = 68868,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 2,
+								["a_amt"] = 0,
+								["n_amt"] = 2,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+							[18392] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 2,
+								["targets"] = {
+									["Mortifèrous"] = 2,
+								},
+								["n_dmg"] = 2,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 1,
+								["total"] = 2,
+								["c_max"] = 0,
+								["id"] = 18392,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 1,
+								["a_amt"] = 0,
+								["n_amt"] = 1,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+						},
+						["tipo"] = 2,
+					},
+					["boss_fight_component"] = true,
+					["aID"] = "10184",
+					["total"] = 55.016811,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1614008710,
+					["delay"] = 0,
+					["monster"] = true,
+				}, -- [2]
+				{
+					["flag_original"] = 4369,
+					["totalabsorbed"] = 0.011834,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Onyxian Whelp"] = 221022,
+						["Onyxia"] = 1433089,
+					},
+					["serial"] = "Pet-0-3103-1-26-417-0103047977",
+					["pets"] = {
+					},
+					["friendlyfire_total"] = 0,
+					["friendlyfire"] = {
+					},
+					["classe"] = "PET",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 1654111.011834,
+					["boss_fight_component"] = true,
+					["dps_started"] = false,
+					["total"] = 1654111.011834,
+					["on_hold"] = false,
+					["ownerName"] = "Mortifèrous",
+					["nome"] = "Rhuufenn <Mortifèrous>",
+					["spells"] = {
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 4,
+								["b_amt"] = 0,
+								["c_dmg"] = 290359,
+								["g_amt"] = 0,
+								["n_max"] = 36837,
+								["targets"] = {
+									["Onyxian Whelp"] = 221022,
+									["Onyxia"] = 794501,
+								},
+								["n_dmg"] = 725164,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 24,
+								["total"] = 1015523,
+								["c_max"] = 73674,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 20,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							}, -- [1]
+							[54049] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 81608,
+								["targets"] = {
+									["Onyxia"] = 638588,
+								},
+								["n_dmg"] = 638588,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 8,
+								["total"] = 638588,
+								["c_max"] = 0,
+								["id"] = 54049,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 8,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["last_event"] = 0,
+					["last_dps"] = 0,
+					["end_time"] = 1614008726,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["damage_taken"] = 0.011834,
+					["start_time"] = 1614008651,
+					["delay"] = 0,
+					["aID"] = "Pet-0-3103-1-26-417-0103047977",
+				}, -- [3]
+				{
+					["flag_original"] = 8465,
+					["totalabsorbed"] = 0.0141,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Onyxia"] = 2780857,
+					},
+					["serial"] = "Creature-0-3061-249-27786-103673-000033D174",
+					["pets"] = {
+					},
+					["friendlyfire_total"] = 0,
+					["classe"] = "PET",
+					["aID"] = "103673",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 2780857.0141,
+					["boss_fight_component"] = true,
+					["dps_started"] = false,
+					["total"] = 2780857.0141,
+					["on_hold"] = false,
+					["ownerName"] = "Mortifèrous",
+					["nome"] = "Darkglare <Mortifèrous>",
+					["spells"] = {
+						["_ActorTable"] = {
+							[205231] = {
+								["c_amt"] = 7,
+								["b_amt"] = 0,
+								["c_dmg"] = 1344970,
+								["g_amt"] = 0,
+								["n_max"] = 98303,
+								["targets"] = {
+									["Onyxia"] = 2780857,
+								},
+								["n_dmg"] = 1435887,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 22,
+								["total"] = 2780857,
+								["c_max"] = 195001,
+								["id"] = 205231,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 15,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["last_event"] = 0,
+					["friendlyfire"] = {
+					},
+					["last_dps"] = 0,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["damage_taken"] = 0.0141,
+					["start_time"] = 1614008685,
+					["delay"] = 0,
+					["end_time"] = 1614008726,
+				}, -- [4]
+				{
+					["flag_original"] = 2632,
+					["totalabsorbed"] = 20.016463,
+					["damage_from"] = {
+						["Rhuufenn <Mortifèrous>"] = true,
+						["Mortifèrous"] = true,
+					},
+					["targets"] = {
+						["Mortifèrous"] = 20,
+					},
+					["serial"] = "Creature-0-3061-249-27786-11262-000233D178",
+					["pets"] = {
+					},
+					["friendlyfire_total"] = 0,
+					["on_hold"] = false,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 20.016463,
+					["damage_taken"] = 7438214.016463,
+					["dps_started"] = false,
+					["end_time"] = 1614008726,
+					["friendlyfire"] = {
+					},
+					["last_event"] = 0,
+					["nome"] = "Onyxian Whelp",
+					["spells"] = {
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 2,
+								["targets"] = {
+									["Rhuufenn"] = 0,
+									["Mortifèrous"] = 20,
+								},
+								["n_dmg"] = 20,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 70,
+								["total"] = 20,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["DODGE"] = 7,
+								["MISS"] = 44,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 19,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							}, -- [1]
+						},
+						["tipo"] = 2,
+					},
+					["boss_fight_component"] = true,
+					["aID"] = "11262",
+					["total"] = 20.016463,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1614008688,
+					["delay"] = 0,
+					["monster"] = true,
+				}, -- [5]
+			},
+		}, -- [1]
+		{
+			["tipo"] = 3,
+			["_ActorTable"] = {
+				{
+					["flag_original"] = 1297,
+					["healing_from"] = {
+						["Mortifèrous"] = true,
+					},
+					["pets"] = {
+					},
+					["iniciar_hps"] = false,
+					["aID"] = "1305-089F3029",
+					["totalover"] = 0.023451,
+					["total_without_pet"] = 75.023451,
+					["total"] = 75.023451,
+					["targets_absorbs"] = {
+						["Mortifèrous"] = 0,
+					},
+					["heal_enemy"] = {
+					},
+					["on_hold"] = false,
+					["serial"] = "Player-1305-089F3029",
+					["totalabsorb"] = 75.023451,
+					["last_hps"] = 0,
+					["targets"] = {
+						["Mortifèrous"] = 0,
+					},
+					["totalover_without_pet"] = 0.023451,
+					["healing_taken"] = 75.023451,
+					["last_event"] = 0,
+					["end_time"] = 1614008726,
+					["boss_fight_component"] = true,
+					["targets_overheal"] = {
+					},
+					["nome"] = "Mortifèrous",
+					["spells"] = {
+						["_ActorTable"] = {
+							[108366] = {
+								["c_amt"] = 0,
+								["totalabsorb"] = 75,
+								["targets_overheal"] = {
+								},
+								["n_max"] = 14,
+								["targets"] = {
+									["Mortifèrous"] = 75,
+								},
+								["n_min"] = 0,
+								["counter"] = 24,
+								["overheal"] = 0,
+								["total"] = 75,
+								["c_max"] = 0,
+								["id"] = 108366,
+								["targets_absorbs"] = {
+									["Mortifèrous"] = 75,
+								},
+								["c_min"] = 0,
+								["c_curado"] = 0,
+								["totaldenied"] = 0,
+								["n_amt"] = 24,
+								["n_curado"] = 75,
+								["absorbed"] = 0,
+							},
+						},
+						["tipo"] = 3,
+					},
+					["grupo"] = true,
+					["start_time"] = 1614008684,
+					["classe"] = "WARLOCK",
+					["custom"] = 0,
+					["tipo"] = 2,
+					["heal_enemy_amt"] = 0,
+					["totaldenied"] = 0.023451,
+					["delay"] = 0,
+					["spec"] = 265,
+				}, -- [1]
+			},
+		}, -- [2]
+		{
+			["tipo"] = 7,
+			["_ActorTable"] = {
+				{
+					["received"] = 0.013001,
+					["resource"] = 20.02369,
+					["targets"] = {
+					},
+					["pets"] = {
+					},
+					["powertype"] = 0,
+					["classe"] = "WARLOCK",
+					["passiveover"] = 0.006746,
+					["resource_type"] = 7,
+					["totalover"] = 0.006746,
+					["total"] = 0.013001,
+					["boss_fight_component"] = true,
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 7,
+					},
+					["grupo"] = true,
+					["nome"] = "Mortifèrous",
+					["spec"] = 265,
+					["tipo"] = 3,
+					["last_event"] = 0,
+					["flag_original"] = 1297,
+					["alternatepower"] = 0.013001,
+					["serial"] = "Player-1305-089F3029",
+					["aID"] = "1305-089F3029",
+				}, -- [1]
+			},
+		}, -- [3]
+		{
+			["tipo"] = 9,
+			["_ActorTable"] = {
+				{
+					["flag_original"] = 1047,
+					["debuff_uptime_spells"] = {
+						["_ActorTable"] = {
+							[980] = {
+								["refreshamt"] = 18,
+								["activedamt"] = -1,
+								["appliedamt"] = 4,
+								["id"] = 980,
+								["uptime"] = 65,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[27243] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 0,
+								["appliedamt"] = 4,
+								["id"] = 27243,
+								["uptime"] = 5,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[146739] = {
+								["refreshamt"] = 0,
+								["appliedamt"] = 42,
+								["activedamt"] = -2,
+								["uptime"] = 7,
+								["id"] = 146739,
+								["actived_at"] = 1614008725,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[316099] = {
+								["refreshamt"] = 0,
+								["appliedamt"] = 0,
+								["activedamt"] = -2,
+								["uptime"] = 0,
+								["id"] = 316099,
+								["actived_at"] = 3228170067,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+						},
+						["tipo"] = 9,
+					},
+					["pets"] = {
+						"Rhuufenn <Mortifèrous>", -- [1]
+						"Darkglare <Mortifèrous>", -- [2]
+					},
+					["classe"] = "WARLOCK",
+					["buff_uptime_spells"] = {
+						["_ActorTable"] = {
+							[205180] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 2,
+								["appliedamt"] = 2,
+								["id"] = 205180,
+								["uptime"] = 40,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[269887] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 1,
+								["appliedamt"] = 1,
+								["id"] = 269887,
+								["uptime"] = 15,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[335151] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 1,
+								["appliedamt"] = 1,
+								["id"] = 335151,
+								["uptime"] = 35,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[335148] = {
+								["counter"] = 0,
+								["activedamt"] = 1,
+								["appliedamt"] = 1,
+								["id"] = 335148,
+								["uptime"] = 39,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
+							[108366] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 2,
+								["appliedamt"] = 2,
+								["id"] = 108366,
+								["uptime"] = 74,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[186401] = {
+								["counter"] = 0,
+								["activedamt"] = 1,
+								["appliedamt"] = 1,
+								["id"] = 186401,
+								["uptime"] = 39,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
+						},
+						["tipo"] = 9,
+					},
+					["debuff_uptime"] = 77,
+					["boss_fight_component"] = true,
+					["debuff_uptime_targets"] = {
+					},
+					["spec"] = 265,
+					["grupo"] = true,
+					["spell_cast"] = {
+						[172] = 4,
+						[324536] = 6,
+						[205180] = 2,
+						[27243] = 4,
+						[980] = 4,
+					},
+					["buff_uptime_targets"] = {
+					},
+					["tipo"] = 4,
+					["last_event"] = 0,
+					["buff_uptime"] = 242,
+					["nome"] = "Mortifèrous",
+					["serial"] = "Player-1305-089F3029",
+					["aID"] = "1305-089F3029",
+				}, -- [1]
+				{
+					["flag_original"] = 4369,
+					["classe"] = "PET",
+					["ownerName"] = "Mortifèrous",
+					["nome"] = "Rhuufenn <Mortifèrous>",
+					["spell_cast"] = {
+						[54049] = 11,
+					},
+					["tipo"] = 4,
+					["pets"] = {
+					},
+					["aID"] = "Pet-0-3103-1-26-417-0103047977",
+					["last_event"] = 0,
+					["serial"] = "Pet-0-3103-1-26-417-0103047977",
+					["boss_fight_component"] = true,
+				}, -- [2]
+				{
+					["flag_original"] = 8465,
+					["classe"] = "PET",
+					["ownerName"] = "Mortifèrous",
+					["nome"] = "Darkglare <Mortifèrous>",
+					["spell_cast"] = {
+						[205231] = 22,
+					},
+					["tipo"] = 4,
+					["pets"] = {
+					},
+					["aID"] = "103673",
+					["last_event"] = 0,
+					["serial"] = "Creature-0-3061-249-27786-103673-000033D174",
+					["boss_fight_component"] = true,
+				}, -- [3]
+				{
+					["monster"] = true,
+					["last_event"] = 0,
+					["nome"] = "Onyxia",
+					["aID"] = "10184",
+					["pets"] = {
+					},
+					["spell_cast"] = {
+						[68868] = 2,
+						[18392] = 1,
+					},
+					["boss_fight_component"] = true,
+					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-3061-249-27786-10184-000033D127",
+					["flag_original"] = 68168,
+				}, -- [4]
+				{
+					["flag_original"] = 2632,
+					["debuff_uptime_spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 9,
+					},
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["boss_debuff"] = true,
+					["monster"] = true,
+					["debuff_uptime"] = 0,
+					["spellschool"] = 4,
+					["debuff_uptime_targets"] = {
+						["Mortifèrous"] = {
+							["uptime"] = 0,
+							["refreshamt"] = 0,
+							["activedamt"] = -1,
+							["actived"] = false,
+							["appliedamt"] = 0,
+						},
+					},
+					["aID"] = "12129",
+					["serial"] = "Creature-0-3890-249-2398-12129-0000B62557",
+					["nome"] = "Flame Lash",
+					["last_event"] = 0,
+					["damage_twin"] = "Onyxian Warder",
+					["tipo"] = 4,
+					["damage_spellid"] = 18958,
+					["boss_fight_component"] = true,
+				}, -- [5]
+			},
+		}, -- [4]
+		{
+			["tipo"] = 2,
+			["_ActorTable"] = {
+			},
+		}, -- [5]
+		["raid_roster"] = {
+		},
+		["tempo_start"] = 1614008725,
+		["last_events_tables"] = {
+		},
+		["alternate_power"] = {
+		},
+		["spells_cast_timeline"] = {
+		},
+		["combat_counter"] = 71,
+		["totals"] = {
+			26168386.049041, -- [1]
+			75.014892, -- [2]
+			{
+				0, -- [1]
+				[0] = 0.006254999999999999,
+				["alternatepower"] = 0,
+				[3] = 0,
+				[6] = 0,
+			}, -- [3]
+			{
+				["buff_uptime"] = 0,
+				["ress"] = 0,
+				["cooldowns_defensive"] = 0,
+				["dispell"] = 0,
+				["interrupt"] = 0,
+				["debuff_uptime"] = 0,
+				["cc_break"] = 0,
+				["dead"] = 0,
+			}, -- [4]
+			["frags_total"] = 0,
+			["voidzone_damage"] = 0,
+		},
+		["player_last_events"] = {
+		},
+		["frags_need_refresh"] = false,
+		["aura_timeline"] = {
+		},
+		["__call"] = {
+		},
+		["data_inicio"] = "17:44:50",
+		["end_time"] = 770092.973,
+		["cleu_events"] = {
+			["n"] = 1,
+		},
+		["totals_grupo"] = {
+			21733343.009086, -- [1]
+			75.014892, -- [2]
+			{
+				0, -- [1]
+				[0] = 0.006254999999999999,
+				["alternatepower"] = 0,
+				[3] = 0,
+				[6] = 0,
+			}, -- [3]
+			{
+				["buff_uptime"] = 0,
+				["ress"] = 0,
+				["cooldowns_defensive"] = 0,
+				["dispell"] = 0,
+				["interrupt"] = 0,
+				["debuff_uptime"] = 0,
+				["cc_break"] = 0,
+				["dead"] = 0,
+			}, -- [4]
+		},
+		["overall_refreshed"] = true,
+		["frags"] = {
+		},
+		["hasSaved"] = true,
+		["segments_added"] = {
+			{
+				["elapsed"] = 40.54200000001583,
+				["type"] = 8,
+				["name"] = "Onyxia",
+				["clock"] = "12:08:54",
+			}, -- [1]
+			{
+				["elapsed"] = 37.66200000001118,
+				["type"] = 8,
+				["name"] = "Onyxia",
+				["clock"] = "17:44:50",
+			}, -- [2]
+		},
+		["data_fim"] = "12:09:33",
+		["overall_enemy_name"] = "Onyxia",
+		["CombatSkillCache"] = {
+		},
+		["PhaseData"] = {
+			{
+				1, -- [1]
+				1, -- [2]
+			}, -- [1]
+			["damage_section"] = {
+			},
+			["heal_section"] = {
+			},
+			["heal"] = {
+			},
+			["damage"] = {
+			},
+		},
+		["start_time"] = 770014.769,
+		["TimeData"] = {
+			["Raid Damage Done"] = {
+			},
+		},
+		["cleu_timeline"] = {
+		},
+	},
+	["force_font_outline"] = "",
 	["local_instances_config"] = {
 		{
 			["modo"] = 2,
@@ -2261,1053 +3302,13 @@ _detalhes_database = {
 			},
 		}, -- [1]
 	},
-	["combat_id"] = 17,
-	["savedStyles"] = {
-	},
-	["force_font_outline"] = "",
-	["cached_talents"] = {
-	},
-	["announce_deaths"] = {
-		["enabled"] = false,
-		["last_hits"] = 1,
-		["only_first"] = 5,
-		["where"] = 1,
-	},
-	["tabela_overall"] = {
-		{
-			["tipo"] = 2,
-			["_ActorTable"] = {
-				{
-					["flag_original"] = 1297,
-					["totalabsorbed"] = 0.012601,
-					["tipo"] = 1,
-					["damage_from"] = {
-						["Onyxian Whelp"] = true,
-						["Onyxia"] = true,
-					},
-					["targets"] = {
-						["Onyxian Whelp"] = 7438214,
-						["Onyxia"] = 14295129,
-					},
-					["pets"] = {
-						"Rhuufenn <Mortifèrous>", -- [1]
-						"Darkglare <Mortifèrous>", -- [2]
-					},
-					["aID"] = "1305-089F3029",
-					["total"] = 21733343.012601,
-					["classe"] = "WARLOCK",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 17298375.012601,
-					["last_dps"] = 0,
-					["delay"] = 0,
-					["dps_started"] = false,
-					["end_time"] = 1614008726,
-					["friendlyfire_total"] = 0,
-					["damage_taken"] = 75.012601,
-					["boss_fight_component"] = true,
-					["spells"] = {
-						["_ActorTable"] = {
-							[980] = {
-								["c_amt"] = 7,
-								["b_amt"] = 0,
-								["c_dmg"] = 481558,
-								["g_amt"] = 0,
-								["n_max"] = 45666,
-								["targets"] = {
-									["Onyxia"] = 1289293,
-								},
-								["n_dmg"] = 807735,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 32,
-								["total"] = 1289293,
-								["c_max"] = 91331,
-								["id"] = 980,
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 25,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
-							},
-							[316099] = {
-								["c_amt"] = 7,
-								["b_amt"] = 0,
-								["c_dmg"] = 997902,
-								["g_amt"] = 0,
-								["n_max"] = 77776,
-								["targets"] = {
-									["Onyxia"] = 2631190,
-								},
-								["n_dmg"] = 1633288,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 28,
-								["total"] = 2631190,
-								["c_max"] = 155552,
-								["id"] = 316099,
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 21,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
-							},
-							[146739] = {
-								["c_amt"] = 12,
-								["b_amt"] = 0,
-								["c_dmg"] = 1049975,
-								["g_amt"] = 0,
-								["n_max"] = 43750,
-								["targets"] = {
-									["Onyxian Whelp"] = 87499,
-									["Onyxia"] = 2449926,
-								},
-								["n_dmg"] = 1487450,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 46,
-								["total"] = 2537425,
-								["c_max"] = 87498,
-								["id"] = 146739,
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 34,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
-							},
-							[269889] = {
-								["c_amt"] = 3,
-								["b_amt"] = 0,
-								["c_dmg"] = 489108,
-								["g_amt"] = 0,
-								["n_max"] = 81518,
-								["targets"] = {
-									["Onyxia"] = 652144,
-								},
-								["n_dmg"] = 163036,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 5,
-								["total"] = 652144,
-								["c_max"] = 163036,
-								["id"] = 269889,
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 2,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
-							},
-							[324540] = {
-								["c_amt"] = 3,
-								["b_amt"] = 0,
-								["c_dmg"] = 2039087,
-								["g_amt"] = 0,
-								["n_max"] = 339849,
-								["targets"] = {
-									["Onyxia"] = 3058630,
-								},
-								["n_dmg"] = 1019543,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 6,
-								["total"] = 3058630,
-								["c_max"] = 679696,
-								["id"] = 324540,
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 3,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
-							},
-							[27285] = {
-								["c_amt"] = 14,
-								["b_amt"] = 0,
-								["c_dmg"] = 3762927,
-								["g_amt"] = 0,
-								["n_max"] = 138363,
-								["targets"] = {
-									["Onyxian Whelp"] = 7129693,
-								},
-								["n_dmg"] = 3366766,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 39,
-								["total"] = 7129693,
-								["c_max"] = 275833,
-								["id"] = 27285,
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 25,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
-							},
-						},
-						["tipo"] = 2,
-					},
-					["grupo"] = true,
-					["nome"] = "Mortifèrous",
-					["spec"] = 265,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
-					["start_time"] = 1614008649,
-					["serial"] = "Player-1305-089F3029",
-					["on_hold"] = false,
-				}, -- [1]
-				{
-					["flag_original"] = 68168,
-					["totalabsorbed"] = 55.016811,
-					["damage_from"] = {
-						["Rhuufenn <Mortifèrous>"] = true,
-						["Mortifèrous"] = true,
-						["Darkglare <Mortifèrous>"] = true,
-					},
-					["targets"] = {
-						["Mortifèrous"] = 55,
-					},
-					["last_dps"] = 0,
-					["pets"] = {
-					},
-					["nome"] = "Onyxia",
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 55.016811,
-					["delay"] = 0,
-					["dps_started"] = false,
-					["monster"] = true,
-					["end_time"] = 1614008726,
-					["damage_taken"] = 14295129.016811,
-					["aID"] = "10184",
-					["boss_fight_component"] = true,
-					["spells"] = {
-						["_ActorTable"] = {
-							{
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 13,
-								["targets"] = {
-									["Mortifèrous"] = 26,
-								},
-								["n_dmg"] = 26,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 2,
-								["total"] = 26,
-								["c_max"] = 0,
-								["id"] = 1,
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 2,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
-							}, -- [1]
-							[68868] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 14,
-								["targets"] = {
-									["Mortifèrous"] = 27,
-								},
-								["n_dmg"] = 27,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 2,
-								["total"] = 27,
-								["c_max"] = 0,
-								["id"] = 68868,
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 2,
-								["a_amt"] = 0,
-								["n_amt"] = 2,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
-							},
-							[18392] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 2,
-								["targets"] = {
-									["Mortifèrous"] = 2,
-								},
-								["n_dmg"] = 2,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 1,
-								["total"] = 2,
-								["c_max"] = 0,
-								["id"] = 18392,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 1,
-								["a_amt"] = 0,
-								["n_amt"] = 1,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["total"] = 55.016811,
-					["tipo"] = 1,
-					["friendlyfire_total"] = 0,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
-					["start_time"] = 1614008710,
-					["serial"] = "Creature-0-3061-249-27786-10184-000033D127",
-					["on_hold"] = false,
-				}, -- [2]
-				{
-					["flag_original"] = 4369,
-					["totalabsorbed"] = 0.011834,
-					["classe"] = "PET",
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["Onyxian Whelp"] = 221022,
-						["Onyxia"] = 1433089,
-					},
-					["tipo"] = 1,
-					["pets"] = {
-					},
-					["delay"] = 0,
-					["aID"] = "Pet-0-3103-1-26-417-0103047977",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 1654111.011834,
-					["nome"] = "Rhuufenn <Mortifèrous>",
-					["dps_started"] = false,
-					["total"] = 1654111.011834,
-					["damage_taken"] = 0.011834,
-					["ownerName"] = "Mortifèrous",
-					["boss_fight_component"] = true,
-					["spells"] = {
-						["_ActorTable"] = {
-							{
-								["c_amt"] = 4,
-								["b_amt"] = 0,
-								["c_dmg"] = 290359,
-								["g_amt"] = 0,
-								["n_max"] = 36837,
-								["targets"] = {
-									["Onyxian Whelp"] = 221022,
-									["Onyxia"] = 794501,
-								},
-								["n_dmg"] = 725164,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 24,
-								["total"] = 1015523,
-								["c_max"] = 73674,
-								["id"] = 1,
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 20,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
-							}, -- [1]
-							[54049] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 81608,
-								["targets"] = {
-									["Onyxia"] = 638588,
-								},
-								["n_dmg"] = 638588,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 8,
-								["total"] = 638588,
-								["c_max"] = 0,
-								["id"] = 54049,
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 8,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
-							},
-						},
-						["tipo"] = 2,
-					},
-					["friendlyfire_total"] = 0,
-					["end_time"] = 1614008726,
-					["last_dps"] = 0,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1614008651,
-					["serial"] = "Pet-0-3103-1-26-417-0103047977",
-					["friendlyfire"] = {
-					},
-				}, -- [3]
-				{
-					["flag_original"] = 8465,
-					["totalabsorbed"] = 0.0141,
-					["total"] = 2780857.0141,
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["Onyxia"] = 2780857,
-					},
-					["tipo"] = 1,
-					["pets"] = {
-					},
-					["delay"] = 0,
-					["aID"] = "103673",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 2780857.0141,
-					["nome"] = "Darkglare <Mortifèrous>",
-					["dps_started"] = false,
-					["end_time"] = 1614008726,
-					["damage_taken"] = 0.0141,
-					["ownerName"] = "Mortifèrous",
-					["boss_fight_component"] = true,
-					["spells"] = {
-						["_ActorTable"] = {
-							[205231] = {
-								["c_amt"] = 7,
-								["b_amt"] = 0,
-								["c_dmg"] = 1344970,
-								["g_amt"] = 0,
-								["n_max"] = 98303,
-								["targets"] = {
-									["Onyxia"] = 2780857,
-								},
-								["n_dmg"] = 1435887,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 22,
-								["total"] = 2780857,
-								["c_max"] = 195001,
-								["id"] = 205231,
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 15,
-								["a_dmg"] = 0,
-								["extra"] = {
-								},
-							},
-						},
-						["tipo"] = 2,
-					},
-					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
-					["friendlyfire"] = {
-					},
-					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1614008685,
-					["serial"] = "Creature-0-3061-249-27786-103673-000033D174",
-					["classe"] = "PET",
-				}, -- [4]
-				{
-					["flag_original"] = 2632,
-					["totalabsorbed"] = 20.016463,
-					["damage_from"] = {
-						["Rhuufenn <Mortifèrous>"] = true,
-						["Mortifèrous"] = true,
-					},
-					["targets"] = {
-						["Mortifèrous"] = 20,
-					},
-					["last_dps"] = 0,
-					["pets"] = {
-					},
-					["nome"] = "Onyxian Whelp",
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 20.016463,
-					["delay"] = 0,
-					["dps_started"] = false,
-					["monster"] = true,
-					["end_time"] = 1614008726,
-					["damage_taken"] = 7438214.016463,
-					["aID"] = "11262",
-					["boss_fight_component"] = true,
-					["spells"] = {
-						["_ActorTable"] = {
-							{
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 2,
-								["targets"] = {
-									["Rhuufenn"] = 0,
-									["Mortifèrous"] = 20,
-								},
-								["n_dmg"] = 20,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 70,
-								["total"] = 20,
-								["c_max"] = 0,
-								["id"] = 1,
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["b_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_amt"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_dmg"] = 0,
-								["n_amt"] = 19,
-								["MISS"] = 44,
-								["DODGE"] = 7,
-							}, -- [1]
-						},
-						["tipo"] = 2,
-					},
-					["total"] = 20.016463,
-					["tipo"] = 1,
-					["friendlyfire_total"] = 0,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
-					["start_time"] = 1614008688,
-					["serial"] = "Creature-0-3061-249-27786-11262-000233D178",
-					["on_hold"] = false,
-				}, -- [5]
-			},
-		}, -- [1]
-		{
-			["tipo"] = 3,
-			["_ActorTable"] = {
-				{
-					["flag_original"] = 1297,
-					["targets_overheal"] = {
-					},
-					["pets"] = {
-					},
-					["iniciar_hps"] = false,
-					["heal_enemy_amt"] = 0,
-					["totalover"] = 0.023451,
-					["total_without_pet"] = 75.023451,
-					["total"] = 75.023451,
-					["targets_absorbs"] = {
-						["Mortifèrous"] = 36,
-					},
-					["heal_enemy"] = {
-					},
-					["on_hold"] = false,
-					["serial"] = "Player-1305-089F3029",
-					["totalabsorb"] = 75.023451,
-					["last_hps"] = 0,
-					["targets"] = {
-						["Mortifèrous"] = 36,
-					},
-					["totalover_without_pet"] = 0.023451,
-					["healing_taken"] = 75.023451,
-					["aID"] = "1305-089F3029",
-					["end_time"] = 1614008726,
-					["tipo"] = 2,
-					["healing_from"] = {
-						["Mortifèrous"] = true,
-					},
-					["nome"] = "Mortifèrous",
-					["spells"] = {
-						["_ActorTable"] = {
-							[108366] = {
-								["c_amt"] = 0,
-								["totalabsorb"] = 75,
-								["targets_overheal"] = {
-								},
-								["n_max"] = 14,
-								["targets"] = {
-									["Mortifèrous"] = 75,
-								},
-								["n_min"] = 0,
-								["counter"] = 24,
-								["overheal"] = 0,
-								["total"] = 75,
-								["c_max"] = 0,
-								["id"] = 108366,
-								["targets_absorbs"] = {
-									["Mortifèrous"] = 75,
-								},
-								["c_min"] = 0,
-								["c_curado"] = 0,
-								["n_amt"] = 24,
-								["n_curado"] = 75,
-								["totaldenied"] = 0,
-								["absorbed"] = 0,
-							},
-						},
-						["tipo"] = 3,
-					},
-					["grupo"] = true,
-					["totaldenied"] = 0.023451,
-					["spec"] = 265,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["classe"] = "WARLOCK",
-					["start_time"] = 1614008684,
-					["delay"] = 0,
-					["boss_fight_component"] = true,
-				}, -- [1]
-			},
-		}, -- [2]
-		{
-			["tipo"] = 7,
-			["_ActorTable"] = {
-				{
-					["received"] = 0.013001,
-					["resource"] = 12.017435,
-					["targets"] = {
-					},
-					["pets"] = {
-					},
-					["powertype"] = 0,
-					["classe"] = "WARLOCK",
-					["passiveover"] = 0.006746,
-					["resource_type"] = 7,
-					["aID"] = "1305-089F3029",
-					["totalover"] = 0.006746,
-					["boss_fight_component"] = true,
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 7,
-					},
-					["grupo"] = true,
-					["last_event"] = 0,
-					["alternatepower"] = 0.013001,
-					["flag_original"] = 1297,
-					["tipo"] = 3,
-					["spec"] = 265,
-					["nome"] = "Mortifèrous",
-					["serial"] = "Player-1305-089F3029",
-					["total"] = 0.013001,
-				}, -- [1]
-			},
-		}, -- [3]
-		{
-			["tipo"] = 9,
-			["_ActorTable"] = {
-				{
-					["flag_original"] = 1047,
-					["debuff_uptime_spells"] = {
-						["_ActorTable"] = {
-							[980] = {
-								["counter"] = 0,
-								["activedamt"] = -1,
-								["appliedamt"] = 4,
-								["id"] = 980,
-								["uptime"] = 65,
-								["targets"] = {
-								},
-								["refreshamt"] = 18,
-							},
-							[27243] = {
-								["counter"] = 0,
-								["activedamt"] = 0,
-								["appliedamt"] = 4,
-								["id"] = 27243,
-								["uptime"] = 5,
-								["targets"] = {
-								},
-								["refreshamt"] = 0,
-							},
-							[316099] = {
-								["counter"] = 0,
-								["appliedamt"] = 0,
-								["activedamt"] = -2,
-								["actived_at"] = 3228170067,
-								["id"] = 316099,
-								["uptime"] = 0,
-								["targets"] = {
-								},
-								["refreshamt"] = 0,
-							},
-							[146739] = {
-								["counter"] = 0,
-								["appliedamt"] = 42,
-								["activedamt"] = -2,
-								["actived_at"] = 1614008725,
-								["id"] = 146739,
-								["uptime"] = 7,
-								["targets"] = {
-								},
-								["refreshamt"] = 0,
-							},
-						},
-						["tipo"] = 9,
-					},
-					["pets"] = {
-						"Rhuufenn <Mortifèrous>", -- [1]
-						"Darkglare <Mortifèrous>", -- [2]
-					},
-					["classe"] = "WARLOCK",
-					["buff_uptime_spells"] = {
-						["_ActorTable"] = {
-							[205180] = {
-								["counter"] = 0,
-								["activedamt"] = 2,
-								["appliedamt"] = 2,
-								["id"] = 205180,
-								["uptime"] = 40,
-								["targets"] = {
-								},
-								["refreshamt"] = 0,
-							},
-							[269887] = {
-								["counter"] = 0,
-								["activedamt"] = 1,
-								["appliedamt"] = 1,
-								["id"] = 269887,
-								["uptime"] = 15,
-								["targets"] = {
-								},
-								["refreshamt"] = 0,
-							},
-							[186401] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 1,
-								["appliedamt"] = 1,
-								["id"] = 186401,
-								["uptime"] = 39,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[335148] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 1,
-								["appliedamt"] = 1,
-								["id"] = 335148,
-								["uptime"] = 39,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							[108366] = {
-								["counter"] = 0,
-								["activedamt"] = 2,
-								["appliedamt"] = 2,
-								["id"] = 108366,
-								["uptime"] = 74,
-								["targets"] = {
-								},
-								["refreshamt"] = 0,
-							},
-							[335151] = {
-								["counter"] = 0,
-								["activedamt"] = 1,
-								["appliedamt"] = 1,
-								["id"] = 335151,
-								["uptime"] = 35,
-								["targets"] = {
-								},
-								["refreshamt"] = 0,
-							},
-						},
-						["tipo"] = 9,
-					},
-					["debuff_uptime"] = 77,
-					["aID"] = "1305-089F3029",
-					["debuff_uptime_targets"] = {
-					},
-					["spec"] = 265,
-					["grupo"] = true,
-					["spell_cast"] = {
-						[172] = 4,
-						[324536] = 6,
-						[980] = 4,
-						[27243] = 4,
-						[205180] = 2,
-					},
-					["buff_uptime_targets"] = {
-					},
-					["nome"] = "Mortifèrous",
-					["last_event"] = 0,
-					["buff_uptime"] = 242,
-					["tipo"] = 4,
-					["serial"] = "Player-1305-089F3029",
-					["boss_fight_component"] = true,
-				}, -- [1]
-				{
-					["flag_original"] = 4369,
-					["ownerName"] = "Mortifèrous",
-					["nome"] = "Rhuufenn <Mortifèrous>",
-					["aID"] = "Pet-0-3103-1-26-417-0103047977",
-					["spell_cast"] = {
-						[54049] = 11,
-					},
-					["boss_fight_component"] = true,
-					["pets"] = {
-					},
-					["classe"] = "PET",
-					["last_event"] = 0,
-					["serial"] = "Pet-0-3103-1-26-417-0103047977",
-					["tipo"] = 4,
-				}, -- [2]
-				{
-					["flag_original"] = 8465,
-					["ownerName"] = "Mortifèrous",
-					["nome"] = "Darkglare <Mortifèrous>",
-					["aID"] = "103673",
-					["spell_cast"] = {
-						[205231] = 22,
-					},
-					["boss_fight_component"] = true,
-					["pets"] = {
-					},
-					["classe"] = "PET",
-					["last_event"] = 0,
-					["serial"] = "Creature-0-3061-249-27786-103673-000033D174",
-					["tipo"] = 4,
-				}, -- [3]
-				{
-					["monster"] = true,
-					["pets"] = {
-					},
-					["nome"] = "Onyxia",
-					["flag_original"] = 68168,
-					["spell_cast"] = {
-						[68868] = 2,
-						[18392] = 1,
-					},
-					["tipo"] = 4,
-					["last_event"] = 0,
-					["classe"] = "UNKNOW",
-					["boss_fight_component"] = true,
-					["serial"] = "Creature-0-3061-249-27786-10184-000033D127",
-					["aID"] = "10184",
-				}, -- [4]
-				{
-					["flag_original"] = 2632,
-					["debuff_uptime_spells"] = {
-						["tipo"] = 9,
-						["_ActorTable"] = {
-						},
-					},
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
-					["boss_debuff"] = true,
-					["monster"] = true,
-					["debuff_uptime"] = 0,
-					["spellschool"] = 4,
-					["debuff_uptime_targets"] = {
-						["Mortifèrous"] = {
-							["uptime"] = 0,
-							["appliedamt"] = 0,
-							["activedamt"] = -1,
-							["actived"] = false,
-							["refreshamt"] = 0,
-						},
-					},
-					["damage_spellid"] = 18958,
-					["boss_fight_component"] = true,
-					["last_event"] = 0,
-					["tipo"] = 4,
-					["damage_twin"] = "Onyxian Warder",
-					["nome"] = "Flame Lash",
-					["serial"] = "Creature-0-3890-249-2398-12129-0000B62557",
-					["aID"] = "12129",
-				}, -- [5]
-			},
-		}, -- [4]
-		{
-			["tipo"] = 2,
-			["_ActorTable"] = {
-			},
-		}, -- [5]
-		["raid_roster"] = {
-		},
-		["tempo_start"] = 1614008725,
-		["last_events_tables"] = {
-		},
-		["alternate_power"] = {
-		},
-		["cleu_timeline"] = {
-		},
-		["combat_counter"] = 71,
-		["totals"] = {
-			26168386.049041, -- [1]
-			75.014892, -- [2]
-			{
-				0, -- [1]
-				[0] = 0.006254999999999999,
-				["alternatepower"] = 0,
-				[6] = 0,
-				[3] = 0,
-			}, -- [3]
-			{
-				["buff_uptime"] = 0,
-				["ress"] = 0,
-				["dead"] = 0,
-				["cc_break"] = 0,
-				["interrupt"] = 0,
-				["debuff_uptime"] = 0,
-				["dispell"] = 0,
-				["cooldowns_defensive"] = 0,
-			}, -- [4]
-			["voidzone_damage"] = 0,
-			["frags_total"] = 0,
-		},
-		["player_last_events"] = {
-		},
-		["frags_need_refresh"] = false,
-		["aura_timeline"] = {
-		},
-		["__call"] = {
-		},
-		["data_inicio"] = "17:44:50",
-		["end_time"] = 770092.973,
-		["totals_grupo"] = {
-			21733343.009086, -- [1]
-			75.014892, -- [2]
-			{
-				0, -- [1]
-				[0] = 0.006254999999999999,
-				["alternatepower"] = 0,
-				[6] = 0,
-				[3] = 0,
-			}, -- [3]
-			{
-				["buff_uptime"] = 0,
-				["ress"] = 0,
-				["dead"] = 0,
-				["cc_break"] = 0,
-				["interrupt"] = 0,
-				["debuff_uptime"] = 0,
-				["dispell"] = 0,
-				["cooldowns_defensive"] = 0,
-			}, -- [4]
-		},
-		["overall_refreshed"] = true,
-		["PhaseData"] = {
-			{
-				1, -- [1]
-				1, -- [2]
-			}, -- [1]
-			["damage"] = {
-			},
-			["heal_section"] = {
-			},
-			["heal"] = {
-			},
-			["damage_section"] = {
-			},
-		},
-		["segments_added"] = {
-			{
-				["elapsed"] = 40.54200000001583,
-				["type"] = 8,
-				["name"] = "Onyxia",
-				["clock"] = "12:08:54",
-			}, -- [1]
-			{
-				["elapsed"] = 37.66200000001118,
-				["type"] = 8,
-				["name"] = "Onyxia",
-				["clock"] = "17:44:50",
-			}, -- [2]
-		},
-		["hasSaved"] = true,
-		["spells_cast_timeline"] = {
-		},
-		["data_fim"] = "12:09:33",
-		["overall_enemy_name"] = "Onyxia",
-		["CombatSkillCache"] = {
-		},
-		["frags"] = {
-		},
-		["start_time"] = 770014.769,
-		["TimeData"] = {
-			["Raid Damage Done"] = {
-			},
-		},
-		["cleu_events"] = {
-			["n"] = 1,
-		},
-	},
-	["combat_counter"] = 74,
-	["benchmark_db"] = {
-		["frame"] = {
-		},
-	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
+	["character_data"] = {
+		["logons"] = 21,
 	},
 	["announce_cooldowns"] = {
+		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
-		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},

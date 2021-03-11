@@ -1,9 +1,9 @@
-## Interface: 90002
+## Interface: 90005
 ## Title: |cffffedbaGW2 UI|r
 ## Notes: HUD Replacement addon.
 ## Notes-deDE: Ersetzt die Benutzeroberfläche.
 ## OptionalDeps: MoveAnything, _DebugLog, BugSack, !Stragglers, ACU
-## Version: v5.9.1
+## Version: v5.11.2
 ## X-Website: https://www.curseforge.com/wow/addons/gw2-ui
 ## X-Curse-Project-ID: 94310
 ## DefaultState: Enabled
@@ -11,7 +11,7 @@
 ## Author: deadend06, Nils89, nezroy
 
 ## SavedVariablesPerCharacter: GW2UI_SETTINGS_DB_03
-## SavedVariables: GW2UI_STORAGE, GW2UI_SETTINGS_PROFILES
+## SavedVariables: GW2UI_STORAGE, GW2UI_SETTINGS_PROFILES, GW2UI_STORAGE2
 
 core/TaintLess.xml
 core/debug.lua
@@ -67,6 +67,10 @@ settings/welcome.xml
 settings/welcome.lua
 settings/moveableFrameHandler.lua
 settings/credits.lua
+
+dataInfo/money.lua
+dataInfo/guild.lua
+dataInfo/bags.lua
 
 core/auras.lua
 

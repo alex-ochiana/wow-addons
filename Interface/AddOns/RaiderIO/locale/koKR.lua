@@ -1,3 +1,4 @@
+-- Generated from CurseForge on Thu Mar 11 07:11:42 UTC 2021
 local _, ns = ...
 
 if ns:IsSameLocale("koKR") then
@@ -283,7 +284,6 @@ L["USE_ENGLISH_ABBREVIATION_DESC"] = "설정하면, 던전에 현재 사용중�
 --[[ L["USE_RAIDERIO_CLIENT_LIVE_TRACKING_SETTINGS_DESC"] = ""--]] 
 L["WARNING_DEBUG_MODE_ENABLE"] = "|cffFFFFFF%s|r 디버그 모드가 활성화되었습니다. |cffFFFFFF/raiderio debug|r을 입력하여 기능을 비활성화 할 수 있습니다."
 L["WARNING_LOCK_POSITION_FRAME_AUTO"] = "RaiderIO: 먼저 내 프로필 위치 자동화 설정을 비활성화해야 합니다."
-
 
 	ns.L = L
 end

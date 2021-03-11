@@ -74,7 +74,7 @@ SlideBar: disabled
 Stubby: disabled
 ChocolateBar_Options: disabled
 iReputation: disabled
-GarrisonMissionManager: disabled
+GarrisonMissionManager: enabled
 BestInSlot_Legion: disabled
 BestInSlot_LegionDungeons: disabled
 BestInSlot: disabled
@@ -196,7 +196,7 @@ LucidNightmareHelper: enabled
 HHPH: enabled
 WeakAurasCompanion: enabled
 HandyNotes_BattleForAzerothTreasures: disabled
-NPCScan: disabled
+NPCScan: enabled
 Paste: disabled
 TomCats: enabled
 TomCats-Mechagon: disabled
@@ -336,3 +336,4 @@ TomCats-HallowsEnd: disabled
 TomCats-LoveIsInTheAir: disabled
 TomCats-LunarFestival: disabled
 TomCats-Noblegarden: disabled
+Masque_Caith: disabled

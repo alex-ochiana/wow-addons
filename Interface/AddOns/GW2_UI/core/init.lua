@@ -37,7 +37,6 @@ GW.myname = UnitName("player")
 GW.myrealm = GetRealmName()
 GW.mysex = UnitSex("player")
 GW.mylevel = UnitLevel("player")
-GW.myeffectivelevel = UnitEffectiveLevel("player")
 GW.myspec = GetSpecialization()
 GW.CheckRole()
 GW.screenwidth, GW.screenHeight = GetPhysicalScreenSize()
@@ -59,6 +58,10 @@ GW.locationData = {}
 GW.MOVABLE_FRAMES = {}
 GW.scaleableFrames = {}
 GW.scaleableMainHudFrames = {}
+
+-- money
+GW.earnedMoney = 0
+GW.spentMoney = 0
 
 -- Init global function
 GW.InitLocationDataHandler()

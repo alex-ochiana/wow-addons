@@ -1,3 +1,4 @@
+-- Generated from CurseForge on Thu Mar 11 07:11:44 UTC 2021
 local _, ns = ...
 
 if ns:IsSameLocale("ruRU") then
@@ -282,7 +283,6 @@ L["USE_ENGLISH_ABBREVIATION_DESC"] = "Если включено, то аббре
 --[[ L["USE_RAIDERIO_CLIENT_LIVE_TRACKING_SETTINGS_DESC"] = ""--]] 
 L["WARNING_DEBUG_MODE_ENABLE"] = "|cffFFFFFF%s|r Режим отладки включен. Вы можете отключить его, набрав |cffFFFFFF/raiderio debug|r."
 L["WARNING_LOCK_POSITION_FRAME_AUTO"] = "Raider.IO: Для начала вы должны отключить автоматическое позиционирование Raider.IO профиля."
-
 
 	ns.L = L
 end
