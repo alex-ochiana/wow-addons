@@ -9,7 +9,7 @@ AstralKeys = {
 		["dungeon_id"] = 379,
 		["week"] = 190,
 		["faction"] = 0,
-		["time_stamp"] = 100387,
+		["time_stamp"] = 203914,
 	}, -- [1]
 	{
 		["source"] = "guild",
@@ -60,8 +60,8 @@ AstralCharacters = {
 	{
 		["weekly_best"] = 0,
 		["class"] = "DRUID",
-		["unit"] = "Crètz-Sylvanas",
 		["faction"] = 0,
+		["unit"] = "Crètz-Sylvanas",
 	}, -- [1]
 }
 AstralKeysSettings = {
@@ -75,10 +75,10 @@ AstralKeysSettings = {
 			["isEnabled"] = true,
 		},
 		["report_on_message"] = {
-			["raid"] = false,
-			["party"] = true,
 			["no_key"] = false,
+			["party"] = true,
 			["guild"] = false,
+			["raid"] = false,
 		},
 		["show_tooltip_key"] = {
 			["isEnabled"] = true,
@@ -103,7 +103,9 @@ AstralKeysSettings = {
 			true, -- [9]
 			true, -- [10]
 		},
-		["current_list"] = "GUILD",
+		["show_offline"] = {
+			["isEnabled"] = true,
+		},
 		["isCollapsed"] = {
 			["isEnabled"] = false,
 		},
@@ -112,11 +114,8 @@ AstralKeysSettings = {
 			["isEnabled"] = false,
 		},
 		["sorth_method"] = "character_name",
-		["show_offline"] = {
-			["isEnabled"] = true,
-		},
+		["current_list"] = "GUILD",
 	},
-	["new_settings_config"] = true,
 	["friendOptions"] = {
 		["friend_sync"] = {
 			["isEnabled"] = true,
@@ -125,6 +124,7 @@ AstralKeysSettings = {
 			["isEnabled"] = true,
 		},
 	},
+	["new_settings_config"] = true,
 }
 AstralMinimap = {
 	["profileKeys"] = {
@@ -132,8 +132,8 @@ AstralMinimap = {
 		["Mortifèrous - Kazzak"] = "Mortifèrous - Kazzak",
 		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
 		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
-		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
 		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
+		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
 		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
 		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
 	},
@@ -146,9 +146,9 @@ AstralMinimap = {
 		},
 		["Gnomèrcy - Sylvanas"] = {
 		},
-		["Latthrias - Sylvanas"] = {
-		},
 		["Crètz - Sylvanas"] = {
+		},
+		["Latthrias - Sylvanas"] = {
 		},
 		["Jiglèr - Sylvanas"] = {
 		},
@@ -174,9 +174,9 @@ AstralLists = {
 			["Nevé-Sylvanas"] = true,
 			["Abity-Sylvanas"] = true,
 			["Aburitoarea-Sylvanas"] = true,
-			["Anamarria-Sylvanas"] = true,
-			["Spandexx-Sylvanas"] = true,
 			["Eferalgan-Sylvanas"] = true,
+			["Spandexx-Sylvanas"] = true,
+			["Anamarria-Sylvanas"] = true,
 			["Achilless-Sylvanas"] = true,
 		},
 	}, -- [1]

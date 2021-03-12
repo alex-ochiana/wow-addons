@@ -13,41 +13,31 @@ SmexyMatsDB = {
 		["cbOneB"] = 1,
 		["cbOneG"] = 1,
 		["SMText"] = true,
-		["cbTwoG"] = 1,
+		["SM_EP_One_Text"] = "|cFFFFFF00",
 		["AllRealms"] = true,
 		["IDs"] = {
 		},
 		["Professions"] = true,
 		["cbTwoR"] = 1,
 		["SM_EP_One_Title"] = "|cFF00CCFF",
-		["SM_EP_One_Text"] = "|cFFFFFF00",
+		["cbTwoG"] = 1,
 	},
 	["ProTree"] = {
 		["Sylvanas"] = {
 			["Alliance"] = {
 				["Cooking"] = {
-					["Crètz"] = {
-					},
 				},
 				["Tailoring"] = {
 				},
 				["Archaeology"] = {
-					["Crètz"] = {
-					},
 				},
 				["Herbalism"] = {
-					["Crètz"] = {
-					},
 				},
 				["Alchemy"] = {
-					["Crètz"] = {
-					},
 				},
 				["Leatherworking"] = {
 				},
 				["Fishing"] = {
-					["Crètz"] = {
-					},
 				},
 				["Enchanting"] = {
 				},
@@ -67,11 +57,11 @@ SmexyMatsDB = {
 					["Mortifèrous"] = {
 					},
 				},
-				["Fishing"] = {
+				["Engineering"] = {
 					["Mortifèrous"] = {
 					},
 				},
-				["Engineering"] = {
+				["Fishing"] = {
 					["Mortifèrous"] = {
 					},
 				},
@@ -79,8 +69,8 @@ SmexyMatsDB = {
 		},
 	},
 	["profileKeys"] = {
-		["Crètz - Sylvanas"] = "profile",
 		["Mòloch - Kazzak"] = "profile",
+		["Crètz - Sylvanas"] = "profile",
 	},
 	["profiles"] = {
 		["profile"] = {

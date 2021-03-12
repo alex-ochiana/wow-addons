@@ -137,8 +137,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -147,8 +147,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -204,8 +204,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -214,8 +214,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -270,8 +270,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -280,8 +280,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -336,8 +336,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -346,8 +346,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -402,8 +402,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -412,8 +412,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["rows"] = 12,
 							["padding"] = 5,
+							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -469,8 +469,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -479,8 +479,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -536,8 +536,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -546,8 +546,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -602,8 +602,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -612,8 +612,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -655,16 +655,16 @@ Bartender4DB = {
 							["skin"] = {
 								["Zoom"] = true,
 							},
-							["fadeoutalpha"] = 0,
 							["version"] = 3,
+							["fadeoutalpha"] = 0,
 							["position"] = {
 								["y"] = 108,
 								["x"] = -154,
 								["point"] = "BOTTOM",
 								["scale"] = 1.5,
 							},
-							["hidemacrotext"] = true,
 							["padding"] = -4,
+							["hidemacrotext"] = true,
 							["visibility"] = {
 								["customdata"] = "[petbattle]hide;[overridebar]hide;[vehicleui]hide;show",
 								["overridebar"] = true,
@@ -673,8 +673,8 @@ Bartender4DB = {
 							["states"] = {
 								["stance"] = {
 									["DRUID"] = {
-										["prowl"] = 7,
 										["moonkin"] = 10,
+										["prowl"] = 7,
 									},
 								},
 							},
@@ -692,8 +692,8 @@ Bartender4DB = {
 								["enabled"] = true,
 								["stance"] = {
 									["DRUID"] = {
-										["prowl"] = 7,
 										["moonkin"] = 10,
+										["prowl"] = 7,
 										["cat"] = 7,
 										["bear"] = 9,
 									},
@@ -707,13 +707,13 @@ Bartender4DB = {
 								["Zoom"] = true,
 							},
 							["buttons"] = 7,
-							["fadeoutalpha"] = 0,
+							["version"] = 3,
 							["position"] = {
 								["y"] = 260,
 								["x"] = -300,
 								["point"] = "BOTTOMRIGHT",
 							},
-							["version"] = 3,
+							["fadeoutalpha"] = 0,
 							["padding"] = 0,
 							["visibility"] = {
 								["nocombat"] = false,
@@ -742,8 +742,8 @@ Bartender4DB = {
 							["skin"] = {
 								["Zoom"] = true,
 							},
-							["fadeoutalpha"] = 0,
 							["version"] = 3,
+							["fadeoutalpha"] = 0,
 							["position"] = {
 								["y"] = 74,
 								["x"] = 150,
@@ -756,8 +756,8 @@ Bartender4DB = {
 							["skin"] = {
 								["Zoom"] = true,
 							},
-							["fadeoutalpha"] = 0,
 							["version"] = 3,
+							["fadeoutalpha"] = 0,
 							["position"] = {
 								["y"] = 74,
 								["x"] = -354,
@@ -820,8 +820,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -830,8 +830,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -886,8 +886,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -896,8 +896,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -1215,9 +1215,9 @@ Bartender4DB = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 53.00000381469727,
-						["x"] = -261.0799560546875,
-						["point"] = "BOTTOMRIGHT",
 						["growVertical"] = "UP",
+						["point"] = "BOTTOMRIGHT",
+						["x"] = -261.0799560546875,
 					},
 					["padding"] = 20,
 				},
@@ -1343,102 +1343,38 @@ Bartender4DB = {
 				},
 			},
 		},
-		["StanceBar"] = {
+		["ZoneAbilityBar"] = {
 			["profiles"] = {
-				["Blanitza - Kazzak"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 143,
-						["x"] = -460,
-						["point"] = "BOTTOM",
-						["scale"] = 1,
-					},
-				},
-				["Mortifèrous - Kazzak"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = -14.99998474121094,
-						["x"] = -82.50003051757812,
-						["point"] = "CENTER",
-					},
-				},
-				["Crëtz - Kazzak"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = -14.99998474121094,
-						["x"] = -82.50003051757812,
-						["point"] = "CENTER",
-					},
-				},
-				["Latthrias - Sylvanas"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = -14.99998474121094,
-						["x"] = -82.50003051757812,
-						["point"] = "CENTER",
-					},
-				},
-				["Jiglèr - Sylvanas"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = -14.99998474121094,
-						["x"] = -82.50003051757812,
-						["point"] = "CENTER",
-					},
-				},
 				["Egidus - Sylvanas"] = {
 					["version"] = 3,
 					["position"] = {
-						["y"] = -14.99998474121094,
-						["x"] = -82.50003051757812,
-						["point"] = "CENTER",
-					},
-				},
-				["Kynaeth - Sylvanas"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = -14.99998474121094,
-						["x"] = -82.50003051757812,
-						["point"] = "CENTER",
-					},
-				},
-				["Gnomèrcy - Sylvanas"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = -14.99996185302734,
-						["x"] = -82.5,
-						["point"] = "CENTER",
+						["y"] = 222.9999847412109,
+						["x"] = -31.49990844726563,
+						["point"] = "BOTTOM",
 					},
 				},
 				["Crètz - Sylvanas"] = {
-					["enabled"] = false,
-					["hidehotkey"] = false,
-					["position"] = {
-						["y"] = 209,
-						["x"] = -95.00001525878906,
-						["point"] = "BOTTOM",
-						["scale"] = 1.15,
-					},
 					["version"] = 3,
-					["padding"] = 0,
-					["visibility"] = {
-						["always"] = false,
+					["position"] = {
+						["y"] = 222,
+						["x"] = 265,
+						["point"] = "BOTTOM",
 					},
 				},
 				["Brovar - Sylvanas"] = {
 					["version"] = 3,
 					["position"] = {
-						["y"] = -14.99998474121094,
-						["x"] = -82.50003051757812,
-						["point"] = "CENTER",
+						["y"] = 222.9999847412109,
+						["x"] = -31.49990844726563,
+						["point"] = "BOTTOM",
 					},
 				},
-				["Cretz - Sylvanas"] = {
+				["Kynaeth - Sylvanas"] = {
 					["version"] = 3,
 					["position"] = {
-						["y"] = -14.99998474121094,
-						["x"] = -82.50003051757812,
-						["point"] = "CENTER",
+						["y"] = 222.9999847412109,
+						["x"] = -31.49990844726563,
+						["point"] = "BOTTOM",
 					},
 				},
 			},
@@ -1630,38 +1566,102 @@ Bartender4DB = {
 				},
 			},
 		},
-		["ZoneAbilityBar"] = {
+		["StanceBar"] = {
 			["profiles"] = {
-				["Brovar - Sylvanas"] = {
+				["Blanitza - Kazzak"] = {
 					["version"] = 3,
 					["position"] = {
-						["y"] = 222.9999847412109,
-						["x"] = -31.49990844726563,
+						["y"] = 143,
+						["x"] = -460,
 						["point"] = "BOTTOM",
+						["scale"] = 1,
 					},
 				},
-				["Crètz - Sylvanas"] = {
+				["Mortifèrous - Kazzak"] = {
 					["version"] = 3,
 					["position"] = {
-						["y"] = 222,
-						["x"] = 265,
-						["point"] = "BOTTOM",
+						["y"] = -14.99998474121094,
+						["x"] = -82.50003051757812,
+						["point"] = "CENTER",
+					},
+				},
+				["Crëtz - Kazzak"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -14.99998474121094,
+						["x"] = -82.50003051757812,
+						["point"] = "CENTER",
+					},
+				},
+				["Latthrias - Sylvanas"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -14.99998474121094,
+						["x"] = -82.50003051757812,
+						["point"] = "CENTER",
+					},
+				},
+				["Jiglèr - Sylvanas"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -14.99998474121094,
+						["x"] = -82.50003051757812,
+						["point"] = "CENTER",
 					},
 				},
 				["Egidus - Sylvanas"] = {
 					["version"] = 3,
 					["position"] = {
-						["y"] = 222.9999847412109,
-						["x"] = -31.49990844726563,
-						["point"] = "BOTTOM",
+						["y"] = -14.99998474121094,
+						["x"] = -82.50003051757812,
+						["point"] = "CENTER",
 					},
 				},
 				["Kynaeth - Sylvanas"] = {
 					["version"] = 3,
 					["position"] = {
-						["y"] = 222.9999847412109,
-						["x"] = -31.49990844726563,
+						["y"] = -14.99998474121094,
+						["x"] = -82.50003051757812,
+						["point"] = "CENTER",
+					},
+				},
+				["Gnomèrcy - Sylvanas"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -14.99996185302734,
+						["x"] = -82.5,
+						["point"] = "CENTER",
+					},
+				},
+				["Crètz - Sylvanas"] = {
+					["enabled"] = false,
+					["version"] = 3,
+					["position"] = {
+						["y"] = 209,
+						["x"] = -95.00001525878906,
 						["point"] = "BOTTOM",
+						["scale"] = 1.15,
+					},
+					["hidehotkey"] = false,
+					["padding"] = 0,
+					["visibility"] = {
+						["always"] = false,
+					},
+				},
+				["Brovar - Sylvanas"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -14.99998474121094,
+						["x"] = -82.50003051757812,
+						["point"] = "CENTER",
+					},
+				},
+				["Cretz - Sylvanas"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -14.99998474121094,
+						["x"] = -82.50003051757812,
+						["point"] = "CENTER",
 					},
 				},
 			},

@@ -2,9 +2,9 @@
 CliqueDB = nil
 CliqueDB3 = {
 	["char"] = {
-		["Crëtz - Kazzak"] = {
-			["spec1_profileKey"] = "Crëtz - Kazzak",
-			["spec2_profileKey"] = "Crëtz - Kazzak",
+		["Kynaeth - Sylvanas"] = {
+			["spec1_profileKey"] = "Kynaeth - Sylvanas",
+			["spec2_profileKey"] = "Kynaeth - Sylvanas",
 			["downclick"] = false,
 			["fastooc"] = false,
 			["specswap"] = false,
@@ -14,22 +14,22 @@ CliqueDB3 = {
 			["spec2_profileKey"] = "Mortifèrous - Kazzak",
 			["downclick"] = false,
 			["fastooc"] = false,
-			["specswap"] = false,
 			["spec3_profileKey"] = "Mortifèrous - Kazzak",
+			["specswap"] = false,
 		},
 		["Crètz - Sylvanas"] = {
 			["spec1_profileKey"] = "Crètz - Sylvanas",
 			["fastooc"] = false,
-			["alerthidden"] = true,
+			["spec3_profileKey"] = "Crètz - Sylvanas",
 			["downclick"] = false,
 			["spec4_profileKey"] = "Crètz - Sylvanas",
-			["spec3_profileKey"] = "Crètz - Sylvanas",
-			["specswap"] = false,
+			["alerthidden"] = true,
 			["spec2_profileKey"] = "Crètz - Sylvanas",
+			["specswap"] = false,
 		},
-		["Kynaeth - Sylvanas"] = {
-			["spec1_profileKey"] = "Kynaeth - Sylvanas",
-			["spec2_profileKey"] = "Kynaeth - Sylvanas",
+		["Crëtz - Kazzak"] = {
+			["spec1_profileKey"] = "Crëtz - Kazzak",
+			["spec2_profileKey"] = "Crëtz - Kazzak",
 			["downclick"] = false,
 			["fastooc"] = false,
 			["specswap"] = false,
@@ -40,8 +40,8 @@ CliqueDB3 = {
 		["Mortifèrous - Kazzak"] = "Mortifèrous - Kazzak",
 		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
 		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
-		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
 		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
+		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
 		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
 		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
 	},
@@ -49,10 +49,10 @@ CliqueDB3 = {
 		["Kynaeth - Sylvanas"] = {
 			["bindings"] = {
 				{
-					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -68,10 +68,10 @@ CliqueDB3 = {
 		["Mortifèrous - Kazzak"] = {
 			["bindings"] = {
 				{
+					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
-					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -87,10 +87,10 @@ CliqueDB3 = {
 		["Egidus - Sylvanas"] = {
 			["bindings"] = {
 				{
+					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
-					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -106,29 +106,10 @@ CliqueDB3 = {
 		["Crëtz - Kazzak"] = {
 			["bindings"] = {
 				{
+					["sets"] = {
+						["default"] = true,
+					},
 					["type"] = "target",
-					["sets"] = {
-						["default"] = true,
-					},
-					["key"] = "BUTTON1",
-					["unit"] = "mouseover",
-				}, -- [1]
-				{
-					["type"] = "menu",
-					["key"] = "BUTTON2",
-					["sets"] = {
-						["default"] = true,
-					},
-				}, -- [2]
-			},
-		},
-		["Latthrias - Sylvanas"] = {
-			["bindings"] = {
-				{
-					["type"] = "target",
-					["sets"] = {
-						["default"] = true,
-					},
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -144,10 +125,10 @@ CliqueDB3 = {
 		["Crètz - Sylvanas"] = {
 			["bindings"] = {
 				{
+					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
-					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -169,13 +150,32 @@ CliqueDB3 = {
 				}, -- [3]
 			},
 		},
-		["Jiglèr - Sylvanas"] = {
+		["Latthrias - Sylvanas"] = {
 			["bindings"] = {
 				{
-					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
+					["type"] = "target",
+					["key"] = "BUTTON1",
+					["unit"] = "mouseover",
+				}, -- [1]
+				{
+					["type"] = "menu",
+					["key"] = "BUTTON2",
+					["sets"] = {
+						["default"] = true,
+					},
+				}, -- [2]
+			},
+		},
+		["Jiglèr - Sylvanas"] = {
+			["bindings"] = {
+				{
+					["sets"] = {
+						["default"] = true,
+					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -191,10 +191,10 @@ CliqueDB3 = {
 		["Gnomèrcy - Sylvanas"] = {
 			["bindings"] = {
 				{
-					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]

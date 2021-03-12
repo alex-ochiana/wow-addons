@@ -49,10 +49,10 @@ TomTomWaypointsM = {
 		["Kakaròt - Kazzak"] = "Kakaròt - Kazzak",
 		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
 		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
-		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
+		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
 		["Òdin - Sylvanas"] = "Òdin - Sylvanas",
 		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
-		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
+		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
 		["Mortifèrous - Kazzak"] = "Mortifèrous - Kazzak",
 		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
 		["Brovar - Sylvanas"] = "Brovar - Sylvanas",
@@ -71,13 +71,13 @@ TomTomWaypointsM = {
 		},
 		["Jiglèr - Sylvanas"] = {
 		},
-		["Kynaeth - Sylvanas"] = {
+		["Gnomèrcy - Sylvanas"] = {
 		},
 		["Òdin - Sylvanas"] = {
 		},
 		["Egidus - Sylvanas"] = {
 		},
-		["Gnomèrcy - Sylvanas"] = {
+		["Kynaeth - Sylvanas"] = {
 		},
 		["Mortifèrous - Kazzak"] = {
 		},

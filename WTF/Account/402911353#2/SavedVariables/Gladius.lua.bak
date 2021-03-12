@@ -3,40 +3,30 @@ Gladius2DB = {
 	["profileKeys"] = {
 		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
 		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
-		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
 		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
-		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
 		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
+		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
+		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
 	},
 	["profiles"] = {
 		["Egidus - Sylvanas"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
-			["y"] = {
-				["arena1"] = 468.6223203751797,
-			},
 			["x"] = {
 				["arena1"] = 946.48917222421,
+			},
+			["y"] = {
+				["arena1"] = 468.6223203751797,
 			},
 		},
 		["Kynaeth - Sylvanas"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
-			["x"] = {
-				["arena1"] = 984.8889127373695,
-			},
 			["y"] = {
 				["arena1"] = 561.7777913808823,
 			},
-		},
-		["Gnomèrcy - Sylvanas"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
 			["x"] = {
-				["arena1"] = 1002.666604140068,
-			},
-			["y"] = {
-				["arena1"] = 517.6889448271868,
+				["arena1"] = 984.8889127373695,
 			},
 		},
 		["Crètz - Sylvanas"] = {
@@ -52,13 +42,23 @@ Gladius2DB = {
 			},
 			["auraVersion"] = 1,
 		},
+		["Latthrias - Sylvanas"] = {
+			["auraVersion"] = 1,
+			["tagsVersion"] = 4,
+		},
 		["Jiglèr - Sylvanas"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
 		},
-		["Latthrias - Sylvanas"] = {
+		["Gnomèrcy - Sylvanas"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
+			["y"] = {
+				["arena1"] = 517.6889448271868,
+			},
+			["x"] = {
+				["arena1"] = 1002.666604140068,
+			},
 		},
 	},
 }

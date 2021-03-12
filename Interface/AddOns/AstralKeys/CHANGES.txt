@@ -1,42 +1,16 @@
-lightweight tag d3078d997a57dceab1b2b1593cf41110ec95620c 3.39
-Author:	GitHub <noreply@github.com>
-Date:	Wed Mar 10 23:51:01 2021 -0500
+lightweight tag f068c65cd40f39472d833fa7bac459915ae6c471 3.39-archived
+Author:	sinfonianartist <sinfonianartist@gmail.com>
+Date:	Thu Mar 11 09:10:08 2021 -0500
 
-commit a8569ed4e3df591b0b215d7bcd8f503be11fd028
+commit 6c72da7ad67d0cc87286dc4af502d7fa670c04de
 Author: sinfonianartist <sinfonianartist@gmail.com>
-Date:   Wed Mar 10 23:42:06 2021 -0500
+Date:   Thu Mar 11 09:09:33 2021 -0500
 
-    Add Great Vault to Main UI
+    Updated German Localization
 
-commit a8569ed4e3df591b0b215d7bcd8f503be11fd028
+commit 6c72da7ad67d0cc87286dc4af502d7fa670c04de
 Author: sinfonianartist <sinfonianartist@gmail.com>
-Date:   Wed Mar 10 23:42:06 2021 -0500
+Date:   Thu Mar 11 09:09:33 2021 -0500
 
-    Add Great Vault to Main UI
-
-commit 87eaaa1fd165bfca6738f76a51ef8cf51e3f8807
-Author: Aaron <45137170+maestrohdude@users.noreply.github.com>
-Date:   Sun Feb 28 16:16:54 2021 -0800
-
-    Update deDE.lua
-
-commit 87eaaa1fd165bfca6738f76a51ef8cf51e3f8807
-Author: Aaron <45137170+maestrohdude@users.noreply.github.com>
-Date:   Sun Feb 28 16:16:54 2021 -0800
-
-    Update deDE.lua
-
-commit b213991d317b7744e90dca3da743556292d1679e
-Author: Aaron <45137170+maestrohdude@users.noreply.github.com>
-Date:   Sat Feb 20 22:49:52 2021 -0800
-
-    Update deDE.lua
-    
-    Fixed small error
-
-commit 4885cb3827c572b3d4d9bdc4ae09c5fa3ec0f644
-Author: Aaron <45137170+maestrohdude@users.noreply.github.com>
-Date:   Sat Feb 20 17:15:10 2021 -0800
-
-    Update deDE.lua
+    Updated German Localization
 

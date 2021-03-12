@@ -1,30 +1,30 @@
 
 VWQL = {
 	["Crëtz-Kazzak"] = {
-		["Filter"] = 63,
+		["VERSION"] = 99,
 		["FilterType"] = {
 		},
 		["Quests"] = {
 		},
-		["VERSION"] = 99,
+		["Filter"] = 63,
 	},
 	["Gnomèrcy-Sylvanas"] = {
-		["VERSION"] = 99,
+		["Filter"] = 63,
 		["FilterType"] = {
 		},
 		["Quests"] = {
 		},
-		["Filter"] = 63,
+		["VERSION"] = 99,
 	},
 	["AzeriteFormat"] = 20,
 	["Scale"] = 0.8,
 	["Egidus-Sylvanas"] = {
-		["Filter"] = 63,
+		["VERSION"] = 99,
 		["FilterType"] = {
 		},
 		["Quests"] = {
 		},
-		["VERSION"] = 99,
+		["Filter"] = 63,
 	},
 	["SortPrio"] = {
 	},
@@ -34,7 +34,7 @@ VWQL = {
 	["DisableIconsGeneralMap947"] = true,
 	["Sort"] = 5,
 	["VERSION"] = 100,
-	["Mortifèrous-Kazzak"] = {
+	["Kynaeth-Sylvanas"] = {
 		["VERSION"] = 99,
 		["FilterType"] = {
 		},
@@ -43,7 +43,8 @@ VWQL = {
 		["Filter"] = 63,
 	},
 	["Crètz-Sylvanas"] = {
-		["Filter"] = 63,
+		["FilterType"] = {
+		},
 		["VERSION"] = 100,
 		["Quests"] = {
 			[60872] = true,
@@ -59,16 +60,15 @@ VWQL = {
 			[61883] = true,
 			[60770] = true,
 			[61949] = true,
-			[45379] = true,
+			[60786] = true,
 			[61477] = true,
 			[61623] = true,
 			[43943] = true,
-			[60786] = true,
+			[45379] = true,
 		},
-		["FilterType"] = {
-		},
+		["Filter"] = 63,
 	},
-	["Kynaeth-Sylvanas"] = {
+	["Mortifèrous-Kazzak"] = {
 		["Filter"] = 63,
 		["FilterType"] = {
 		},
