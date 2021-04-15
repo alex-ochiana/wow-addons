@@ -6,7 +6,7 @@ local InitPanel = GW.InitPanel
 local SetSetting = GW.SetSetting
 local AddForProfiling = GW.AddForProfiling
 
-local welcome_OnClick = function(self, button)
+local welcome_OnClick = function(self)
     if self.settings then
         self.settings:Hide()
     end
@@ -16,7 +16,7 @@ local welcome_OnClick = function(self, button)
 end
 AddForProfiling("panel_modules", "welcome_OnClick", welcome_OnClick)
 
-local statusReport_OnClick = function(self, button)
+local statusReport_OnClick = function(self)
     if self.settings then
         self.settings:Hide()
     end
@@ -24,7 +24,7 @@ local statusReport_OnClick = function(self, button)
 end
 AddForProfiling("panel_modules", "statusReport_OnClick", statusReport_OnClick)
 
-local creditst_OnClick = function(self, button)
+local creditst_OnClick = function(self)
     if self.settings then
         self.settings:Hide()
     end
@@ -56,7 +56,7 @@ local function LoadModulesPanel(sWindow)
     p.credits:SetText(L["Credits"])
     p.credits:SetScript("OnClick", creditst_OnClick)
 
-    createCat(L["MODULES"], L["Enable and disable components"], p, 0, nil, true)
+    createCat(L["MODULES"], L["Enable and disable components"], p, 0, nil, {p})
 
     addOption(p.scroll.scrollchild, XPBAR_LABEL, nil, "XPBAR_ENABLED")
     addOption(p.scroll.scrollchild, L["Health Globe"], L["Enable the health bar replacement."], "HEALTHGLOBE_ENABLED")

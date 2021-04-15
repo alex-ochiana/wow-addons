@@ -1,31 +1,34 @@
 
 SimulationCraftDB = {
 	["profileKeys"] = {
-		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
 		["Mortifèrous - Kazzak"] = "Mortifèrous - Kazzak",
-		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
-		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
-		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
+		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
 		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
 		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
-		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
+		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
+		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
+		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
+		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
+		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
 	},
 	["profiles"] = {
-		["Kynaeth - Sylvanas"] = {
-		},
 		["Mortifèrous - Kazzak"] = {
 		},
-		["Egidus - Sylvanas"] = {
-		},
-		["Gnomèrcy - Sylvanas"] = {
-		},
-		["Crètz - Sylvanas"] = {
+		["Crëtz - Kazzak"] = {
 		},
 		["Latthrias - Sylvanas"] = {
 		},
 		["Jiglèr - Sylvanas"] = {
 		},
-		["Crëtz - Kazzak"] = {
+		["Egidus - Sylvanas"] = {
+		},
+		["Kynaeth - Sylvanas"] = {
+		},
+		["Crètz - Sylvanas"] = {
+		},
+		["Gnomèrcy - Sylvanas"] = {
+		},
+		["Vòlkmer - Kazzak"] = {
 		},
 	},
 }

@@ -1,0 +1,12 @@
+
+TSV_DB = {
+	["profileKeys"] = {
+		["Mortifèrous - Kazzak"] = "Mortifèrous - Kazzak",
+		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
+		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
+		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
+		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
+		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
+		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
+	},
+}

@@ -31,11 +31,11 @@ Class Nameplate Scale: disabled
 Clique: enabled
 FarmHud: disabled
 FarmHud_QuestArrow: disabled
-GarrisonMissionManager: disabled
+GarrisonMissionManager: enabled
 GarrisonCommander: disabled
 GarrisonCommander-Broker: disabled
-GatherMate2: disabled
-GatherMate2_Data: disabled
+GatherMate2: enabled
+GatherMate2_Data: enabled
 HandyNotes: enabled
 HandyNotes_Argus: disabled
 HandyNotes_BrokenShore: disabled
@@ -47,7 +47,7 @@ HandyNotes_VisionsOfNZoth: disabled
 HandyNotes_LegionTreasures: disabled
 HandyNotes_Lorewalkers: disabled
 AzeriteUI's action bar: disabled
-Ace3: disabled
+Ace3: enabled
 Masque_Caith: disabled
 Masque_Entropy: disabled
 Masque_Retina: disabled
@@ -57,7 +57,7 @@ MasterPlan: disabled
 MasterPlanA: disabled
 MountJournalEnhanced: disabled
 MoveAnything: disabled
-NPCScan: disabled
+NPCScan: enabled
 OrderHallCommander: disabled
 Overachiever: enabled
 Overachiever_Cache: enabled

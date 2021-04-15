@@ -1,9 +1,0 @@
-## Interface: 90005
-## Author: Eltreum
-## Version: 1.06
-## Title: Great |c2695B8ffVault|r
-## Notes: Adds a Minimap Button for the Great Vault
-## SavedVariables: GreatVaultDB
-
-libs\load_libs.xml
-GreatVault.lua

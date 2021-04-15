@@ -9,7 +9,7 @@ local IsFrameModified = GW.IsFrameModified
 local Debug = GW.Debug
 local LibSharedMedia = GW.Libs.LSM
 
-GW.VERSION_STRING = "GW2_UI v5.11.2"
+GW.VERSION_STRING = "GW2_UI v5.13.1"
 
 -- setup Binding Header color
 _G.BINDING_HEADER_GW2UI = GetAddOnMetadata(..., "Title")
@@ -28,6 +28,7 @@ local forcedMABags = false
 
 local swimAnimation = 0
 local lastSwimState = true
+local hudArtFrame
 
 if Profiler then
     _G.GW_Addon_Scope = GW
@@ -254,9 +255,9 @@ GW.StopAnimation = StopAnimation
 local l = CreateFrame("Frame", nil, UIParent)
 
 local function swimAnim()
-    local r, g, b = GwActionBarHud.RightSwim:GetVertexColor()
-    GwActionBarHud.RightSwim:SetVertexColor(r, g, b, animations["swimAnimation"]["progress"])
-    GwActionBarHud.LeftSwim:SetVertexColor(r, g, b, animations["swimAnimation"]["progress"])
+    local r, g, b = hudArtFrame.actionBarHud.RightSwim:GetVertexColor()
+    hudArtFrame.actionBarHud.RightSwim:SetVertexColor(r, g, b, animations["swimAnimation"]["progress"])
+    hudArtFrame.actionBarHud.LeftSwim:SetVertexColor(r, g, b, animations["swimAnimation"]["progress"])
 end
 GW.AddForProfiling("index", "swimAnim", swimAnim)
 
@@ -276,10 +277,10 @@ local function AddUpdateCB(func, payload)
 end
 GW.AddUpdateCB = AddUpdateCB
 
-local function gw_OnUpdate(self, elapsed)
+local function gw_OnUpdate(_, elapsed)
     local foundAnimation = false
     local count = 0
-    for k, v in pairs(animations) do
+    for _, v in pairs(animations) do
         count = count + 1
         if v["completed"] == false and GetTime() >= (v["start"] + v["duration"]) then
             if v["easeing"] == nil then
@@ -347,7 +348,7 @@ GW.PixelPerfection = PixelPerfection
 local SCALE_HUD_FRAMES = {}
 local function UpdateHudScale()
     local hudScale = GetSetting("HUD_SCALE")
-    for i, f in ipairs(SCALE_HUD_FRAMES) do
+    for _, f in ipairs(SCALE_HUD_FRAMES) do
         if f then
             local fm = f.gwMover
             local sf = 1.0
@@ -439,7 +440,7 @@ local function loadAddon(self)
 
         if not IsAddOnLoaded("ConsolePortUI_Menu") then
             GwMainMenuFrame:SetSize(GameMenuButtonMacros:GetWidth(), GameMenuButtonMacros:GetHeight())
-            GwMainMenuFrame:SetPoint("TOPLEFT", GameMenuButtonMacros, "BOTTOMLEFT", 0, -1)
+            GwMainMenuFrame:SetPoint("TOPLEFT", GameMenuButtonUIOptions, "BOTTOMLEFT", 0, -1)
             hooksecurefunc("GameMenuFrame_UpdateVisibleButtons", GW.PositionGameMenuButton)
         end
     end
@@ -467,6 +468,7 @@ local function loadAddon(self)
     GW.LoadWorldMapSkin()
     GW.LoadGossipSkin()
     GW.LoadItemUpgradeSkin()
+    GW.LoadTimeManagerSkin()
 
     GW.LoadImmersionAddonSkin()
 
@@ -476,20 +478,20 @@ local function loadAddon(self)
     GW.WidgetUISetup()
 
     --Create hud art
-    GW.LoadHudArt()
+    hudArtFrame = GW.LoadHudArt()
 
     --Create experiencebar
     if GetSetting("XPBAR_ENABLED") then
         GW.LoadXPBar()
     else
-        GwActionBarHud:ClearAllPoints()
-        GwActionBarHud:SetPoint("BOTTOM", UIParent, "BOTTOM", 0, 0)
-        GwHudArtFrame.edgeTintBottom1:ClearAllPoints()
-        GwHudArtFrame.edgeTintBottom1:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", 0, 0)
-        GwHudArtFrame.edgeTintBottom1:SetPoint("BOTTOMRIGHT", UIParent, "BOTTOM", 0, 0)
-        GwHudArtFrame.edgeTintBottom2:ClearAllPoints()
-        GwHudArtFrame.edgeTintBottom2:SetPoint("BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", 0, 0)
-        GwHudArtFrame.edgeTintBottom2:SetPoint("BOTTOMLEFT", UIParent, "BOTTOM", 0, 0)
+        hudArtFrame.actionBarHud:ClearAllPoints()
+        hudArtFrame.actionBarHud:SetPoint("BOTTOM", UIParent, "BOTTOM", 0, 0)
+        hudArtFrame.edgeTintBottom1:ClearAllPoints()
+        hudArtFrame.edgeTintBottom1:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", 0, 0)
+        hudArtFrame.edgeTintBottom1:SetPoint("BOTTOMRIGHT", UIParent, "BOTTOM", 0, 0)
+        hudArtFrame.edgeTintBottom2:ClearAllPoints()
+        hudArtFrame.edgeTintBottom2:SetPoint("BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", 0, 0)
+        hudArtFrame.edgeTintBottom2:SetPoint("BOTTOMLEFT", UIParent, "BOTTOM", 0, 0)
     end
 
     if GetSetting("FONTS_ENABLED") then
@@ -744,7 +746,7 @@ GW.AddToClique = AddToClique
 
 local waitTable = {}
 local waitFrame = nil
-local function wait_OnUpdate(self, elapse)
+local function wait_OnUpdate(_, elapse)
     local count = #waitTable
     local i = 1
     while (i <= count) do

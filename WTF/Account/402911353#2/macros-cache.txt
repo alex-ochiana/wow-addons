@@ -25,7 +25,7 @@ VER 3 0000000000000008 "Innervate" "INV_MISC_QUESTIONMARK"
 END
 VER 3 000000000000000C "Kill" "254857"
 /cast Celestial Alignment
-/use Inscrutable Quantum Device
+/use 14
 /use Potion of Spectral Intellect
 /cast Convoke the Spirits
 END
@@ -48,4 +48,9 @@ END
 VER 3 000000000000000A "T2" "INV_MISC_QUESTIONMARK"
 #showtooltip 14
 /use 14
+END
+VER 3 0000000000000012 "turn in" "132722"
+/script  C_GossipInfo.SelectAvailableQuest(2)
+/script CompleteQuest()
+/script GetQuestReward()
 END

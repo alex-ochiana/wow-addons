@@ -4,21 +4,22 @@ RSADB = {
 		["LibDualSpec-1.0"] = {
 		},
 	},
+	["profileKeys"] = {
+		["Mortifèrous - Kazzak"] = "WARLOCK",
+		["Crëtz - Kazzak"] = "DEMONHUNTER",
+		["Latthrias - Sylvanas"] = "PRIEST",
+		["Jiglèr - Sylvanas"] = "WARRIOR",
+		["Egidus - Sylvanas"] = "MAGE",
+		["Kynaeth - Sylvanas"] = "DEMONHUNTER",
+		["Crètz - Sylvanas"] = "DRUID",
+		["Gnomèrcy - Sylvanas"] = "WARLOCK",
+		["Vòlkmer - Kazzak"] = "SHAMAN",
+	},
 	["global"] = {
 		["ID"] = "424325992782",
 		["revision"] = "544",
 		["version"] = 4,
 		["releaseType"] = "Release",
-	},
-	["profileKeys"] = {
-		["Kynaeth - Sylvanas"] = "DEMONHUNTER",
-		["Mortifèrous - Kazzak"] = "WARLOCK",
-		["Egidus - Sylvanas"] = "MAGE",
-		["Gnomèrcy - Sylvanas"] = "WARLOCK",
-		["Latthrias - Sylvanas"] = "PRIEST",
-		["Crètz - Sylvanas"] = "DRUID",
-		["Jiglèr - Sylvanas"] = "WARRIOR",
-		["Crëtz - Kazzak"] = "DEMONHUNTER",
 	},
 	["profiles"] = {
 		["WARRIOR"] = {
@@ -103,6 +104,17 @@ RSADB = {
 				},
 			},
 			["Fixed"] = true,
+		},
+		["SHAMAN"] = {
+			["Modules"] = {
+				["Racials"] = true,
+				["Utilities"] = true,
+				["Shaman"] = true,
+			},
+			["Fixed"] = true,
+			["General"] = {
+				["Class"] = "SHAMAN",
+			},
 		},
 		["PRIEST"] = {
 			["Modules"] = {

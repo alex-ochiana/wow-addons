@@ -2,7 +2,7 @@ ACP: disabled
 AngryKeystones: enabled
 BonusRollPreview: enabled
 ChampionCommander: disabled
-GarrisonMissionManager: disabled
+GarrisonMissionManager: enabled
 GarrisonCommander: disabled
 GarrisonCommander-Broker: disabled
 HandyNotes_Argus: disabled
@@ -14,7 +14,7 @@ MasterPlan: disabled
 MasterPlanA: disabled
 MBB: disabled
 MoveAnything: disabled
-NPCScan: disabled
+NPCScan: enabled
 OrderHallCommander: disabled
 Overachiever: enabled
 Overachiever_Cache: enabled
@@ -161,3 +161,4 @@ TomCats-HallowsEnd: disabled
 TomCats-LoveIsInTheAir: disabled
 TomCats-LunarFestival: disabled
 TomCats-Noblegarden: disabled
+Ace3: enabled

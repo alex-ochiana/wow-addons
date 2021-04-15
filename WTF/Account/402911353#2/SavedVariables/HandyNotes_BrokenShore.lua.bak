@@ -1,38 +1,45 @@
 
 HandyNotes_BrokenShoreDB = {
 	["profileKeys"] = {
-		["Blanitza - Kazzak"] = "Blanitza - Kazzak",
-		["Mortifèrous - Kazzak"] = "Mortifèrous - Kazzak",
 		["Crètz - Kazzak"] = "Crètz - Kazzak",
-		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
 		["Kakaròt - Kazzak"] = "Kakaròt - Kazzak",
+		["Òdin - Sylvanas"] = "Òdin - Sylvanas",
+		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
 		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
+		["Cretz - Sylvanas"] = "Cretz - Sylvanas",
+		["Blanitza - Kazzak"] = "Blanitza - Kazzak",
+		["Mòloch - Kazzak"] = "Mòloch - Kazzak",
+		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
 		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
 		["Lastones - Kazzak"] = "Lastones - Kazzak",
 		["Needzafemale - Kazzak"] = "Needzafemale - Kazzak",
-		["Òdin - Sylvanas"] = "Òdin - Sylvanas",
-		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
 		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
-		["Mòloch - Kazzak"] = "Mòloch - Kazzak",
+		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
 		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
 		["Brovar - Sylvanas"] = "Brovar - Sylvanas",
-		["Cretz - Sylvanas"] = "Cretz - Sylvanas",
+		["Mortifèrous - Kazzak"] = "Mortifèrous - Kazzak",
 	},
 	["profiles"] = {
-		["Blanitza - Kazzak"] = {
-		},
-		["Mortifèrous - Kazzak"] = {
-		},
 		["Crètz - Kazzak"] = {
 			["show_netherPortals"] = false,
 			["show_tamer"] = false,
 			["show_shrine"] = false,
 		},
-		["Crëtz - Kazzak"] = {
-		},
 		["Kakaròt - Kazzak"] = {
 		},
+		["Òdin - Sylvanas"] = {
+		},
+		["Egidus - Sylvanas"] = {
+		},
 		["Gnomèrcy - Sylvanas"] = {
+		},
+		["Cretz - Sylvanas"] = {
+		},
+		["Blanitza - Kazzak"] = {
+		},
+		["Mòloch - Kazzak"] = {
+		},
+		["Crëtz - Kazzak"] = {
 		},
 		["Jiglèr - Sylvanas"] = {
 		},
@@ -40,19 +47,15 @@ HandyNotes_BrokenShoreDB = {
 		},
 		["Needzafemale - Kazzak"] = {
 		},
-		["Òdin - Sylvanas"] = {
-		},
-		["Egidus - Sylvanas"] = {
-		},
 		["Kynaeth - Sylvanas"] = {
 		},
-		["Mòloch - Kazzak"] = {
+		["Vòlkmer - Kazzak"] = {
 		},
 		["Crètz - Sylvanas"] = {
 		},
 		["Brovar - Sylvanas"] = {
 		},
-		["Cretz - Sylvanas"] = {
+		["Mortifèrous - Kazzak"] = {
 		},
 	},
 }

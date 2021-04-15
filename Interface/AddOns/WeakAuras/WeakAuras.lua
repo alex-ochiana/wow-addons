@@ -1,6 +1,6 @@
 local AddonName, Private = ...
 
-local internalVersion = 44
+local internalVersion = 45
 
 -- Lua APIs
 local insert = table.insert
@@ -1356,6 +1356,18 @@ local function GetInstanceTypeAndSize()
     local difficultyInfo = Private.difficulty_info[difficultyIndex]
     if difficultyInfo then
       size, difficulty = difficultyInfo.size, difficultyInfo.difficulty
+    else
+      if not WeakAuras.IsClassic() then
+        if size == "arena" then
+          if C_PvP.IsRatedArena() and not IsArenaSkirmish() then
+            size = "ratedarena"
+          end
+        elseif size == "pvp" then
+          if C_PvP.IsRatedBattleground() then
+            size = "ratedpvp"
+          end
+        end
+      end
     end
     return size, difficulty, instanceType, ZoneMapID, difficultyIndex
   end
@@ -3816,7 +3828,7 @@ end
 
 local function startStopTimers(id, cloneId, triggernum, state)
   if (state.show) then
-    if (state.autoHide and state.duration and state.duration > 0) then -- autohide, update timer
+    if (state.autoHide and state.duration and state.duration > 0 and not state.paused) then -- autohide, update timer
       timers[id] = timers[id] or {};
       timers[id][triggernum] = timers[id][triggernum] or {};
       timers[id][triggernum][cloneId] = timers[id][triggernum][cloneId] or {};

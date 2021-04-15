@@ -1,2 +1,7 @@
 
-TomCats_Character = nil
+TomCats_Character = {
+	["loveisintheair"] = {
+		["preferences"] = {
+		},
+	},
+}

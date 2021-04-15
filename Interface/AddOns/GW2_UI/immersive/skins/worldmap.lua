@@ -83,6 +83,10 @@ local function QuestInfo_Display(template)
         questItem.Name:SetTextColor(1, 1, 1)
     end
 
+    for _, questItem in ipairs(QuestInfoRewardsFrame.RewardButtons) do
+        HandleReward(questItem)
+    end
+
     local numSpellRewards = isQuestLog and GetNumQuestLogRewardSpells() or GetNumRewardSpells()
     if numSpellRewards > 0 then
         for spellHeader in rewardsFrame.spellHeaderPool:EnumerateActive() do
@@ -331,7 +335,7 @@ local function LoadWorldMapSkin()
 
     local ExecuteSessionCommand = QuestMapFrame.QuestSessionManagement.ExecuteSessionCommand
     ExecuteSessionCommand:CreateBackdrop()
-    ExecuteSessionCommand:SkinButton(false, true)
+    ExecuteSessionCommand:SkinButton(false, true, false, true)
 
     local icon = ExecuteSessionCommand:CreateTexture(nil, "ARTWORK")
     icon:SetPoint("TOPLEFT", 0, 0)

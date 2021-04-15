@@ -181,21 +181,21 @@ local function healthBarAnimation(self, powerPrec, norm)
         self.frameInvert and "RIGHT" or "LEFT",
         hbbg,
         self.frameInvert and "RIGHT" or "LEFT",
-        (math.max(0, math.min(powerBarWidth - bit, math.floor(spark))) - (self.frameInvert and 0.6 or 0))* (self.frameInvert and -1 or 1),
+        (math.max(0, math.min(powerBarWidth - bit, math.floor(spark))) - (self.frameInvert and 0.6 or 0)) * (self.frameInvert and -1 or 1),
         0
     )
     hb:SetPoint(
         self.frameInvert and "LEFT" or "RIGHT",
         hbbg,
         self.frameInvert and "RIGHT" or "LEFT",
-        (math.max(0, math.min(powerBarWidth, spark)) * (self.frameInvert and -1 or 1)) + 1,
+        (math.max(0, math.min(powerBarWidth, spark)) * (self.frameInvert and -1 or 1)) + (self.frameInvert and -1 or 1),
         0
     )
 end
 GW.healthBarAnimation = healthBarAnimation
 GW.AddForProfiling("unitframes", "healthBarAnimation", healthBarAnimation)
 
-local function setUnitPortraitFrame(self, event)
+local function setUnitPortraitFrame(self)
     if self.portrait == nil or self.background == nil then
         return
     end
@@ -251,7 +251,7 @@ local function setUnitPortraitFrame(self, event)
         local npcId = GW.GetUnitCreatureId(self.unit)
 
         for modId, _ in pairs(DBM.ModLists) do
-            for i, id in ipairs(DBM.ModLists[modId]) do
+            for _, id in ipairs(DBM.ModLists[modId]) do
                 local mod = DBM:GetModByName(id)
                 if mod.creatureId ~= nil and mod.creatureId == npcId then
                     foundBossMod = true
@@ -313,7 +313,7 @@ local function updateAvgItemLevel(self, event, guid)
 end
 GW.AddForProfiling("unitframes", "updateAvgItemLevel", updateAvgItemLevel)
 
-local function updateRaidMarkers(self, event)
+local function updateRaidMarkers(self)
     local i = GetRaidTargetIndex(self.unit)
     if i == nil then
         self.raidmarker:SetTexture(nil)
@@ -376,7 +376,7 @@ local function protectedCastAnimation(self, powerPrec)
 end
 GW.AddForProfiling("unitframes", "protectedCastAnimation", protectedCastAnimation)
 
-local function hideCastBar(self, event)
+local function hideCastBar(self)
     self.castingbarBackground:Hide()
     self.castingString:Hide()
 
@@ -474,7 +474,7 @@ local function updateCastValues(self, event)
 end
 GW.AddForProfiling("unitframes", "updateCastValues", updateCastValues)
 
-local function updatePowerValues(self, event, hideAt0)
+local function updatePowerValues(self, hideAt0)
     local powerType, powerToken, _ = UnitPowerType(self.unit)
     local power = UnitPower(self.unit, powerType)
     local powerMax = UnitPowerMax(self.unit, powerType)
@@ -497,7 +497,7 @@ local function updatePowerValues(self, event, hideAt0)
         self.powerbar:SetVertexColor(pwcolor.r, pwcolor.g, pwcolor.b)
     end
 
-    self.powerbar:SetWidth(math.min(self.barWidth, math.max(1, self.barWidth * powerPrecentage)))
+    self.powerbar:SetWidth(math.min(self.barWidth - 1, math.max(1, self.barWidth * powerPrecentage)))
 end
 GW.updatePowerValues = updatePowerValues
 GW.AddForProfiling("unitframes", "updatePowerValues", updatePowerValues)
@@ -566,7 +566,7 @@ local function updateHealthValues(self, event)
         absbar:SetWidth(math.min(self.barWidth, math.max(1, self.barWidth * absorbAmount2)))
 
         absbarbg:SetTexCoord(0, math.min(1, 1 * absorbAmount), 0, 1)
-        absbar:SetTexCoord(0, math.min(1, 1 * absorbAmount), 0, 1)
+        absbar:SetTexCoord(0, math.min(1, 1 * absorbAmount2), 0, 1)
 
         absbarbg:SetAlpha(math.max(0, math.min(1, (1 * (absorbPrecentage / 0.1)))))
         absbar:SetAlpha(math.max(0, math.min(1, (1 * (absorbPrecentage / 0.1)))))
@@ -641,8 +641,8 @@ local function target_OnEvent(self, event, unit)
         if (ttf) then unitFrameData(ttf, event) end
         updateHealthValues(self, event)
         if (ttf) then updateHealthValues(ttf, event) end
-        updatePowerValues(self, event)
-        if (ttf) then updatePowerValues(ttf, event) end
+        updatePowerValues(self)
+        if (ttf) then updatePowerValues(ttf) end
         updateCastValues(self, event)
         if (ttf) then updateCastValues(ttf, event) end
         updateRaidMarkers(self, event)
@@ -667,7 +667,7 @@ local function target_OnEvent(self, event, unit)
             if UnitExists("targettarget") then
                 unitFrameData(ttf, event)
                 updateHealthValues(ttf, event)
-                updatePowerValues(ttf, event)
+                updatePowerValues(ttf)
                 updateCastValues(ttf, event)
                 updateRaidMarkers(ttf, event)
             end
@@ -691,7 +691,7 @@ local function target_OnEvent(self, event, unit)
         elseif IsIn(event, "UNIT_MAXHEALTH", "UNIT_ABSORB_AMOUNT_CHANGED", "UNIT_HEALTH", "UNIT_HEAL_PREDICTION") then
             updateHealthValues(self, event)
         elseif IsIn(event, "UNIT_MAXPOWER", "UNIT_POWER_FREQUENT") then
-            updatePowerValues(self, event)
+            updatePowerValues(self)
         elseif IsIn(event, "UNIT_SPELLCAST_START", "UNIT_SPELLCAST_CHANNEL_START") then
             updateCastValues(self, event)
         elseif IsIn(event, "UNIT_SPELLCAST_CHANNEL_STOP", "UNIT_SPELLCAST_STOP", "UNIT_SPELLCAST_INTERRUPTED", "UNIT_SPELLCAST_FAILED") then
@@ -711,8 +711,8 @@ local function focus_OnEvent(self, event, unit)
         if (ttf) then unitFrameData(ttf, event) end
         updateHealthValues(self, event)
         if (ttf) then updateHealthValues(ttf, event) end
-        updatePowerValues(self, event)
-        if (ttf) then updatePowerValues(ttf, event) end
+        updatePowerValues(self)
+        if (ttf) then updatePowerValues(ttf) end
         updateCastValues(self, event)
         if (ttf) then updateCastValues(ttf, event) end
         updateRaidMarkers(self, event)
@@ -737,7 +737,7 @@ local function focus_OnEvent(self, event, unit)
             if UnitExists("focustarget") then
                 unitFrameData(ttf, event)
                 updateHealthValues(ttf, event)
-                updatePowerValues(ttf, event)
+                updatePowerValues(ttf)
                 updateCastValues(ttf, event)
                 updateRaidMarkers(ttf, event)
             end
@@ -750,7 +750,7 @@ local function focus_OnEvent(self, event, unit)
         elseif IsIn(event, "UNIT_MAXHEALTH", "UNIT_ABSORB_AMOUNT_CHANGED", "UNIT_HEALTH", "UNIT_HEAL_PREDICTION") then
             updateHealthValues(self, event)
         elseif IsIn(event, "UNIT_MAXPOWER", "UNIT_POWER_FREQUENT") then
-            updatePowerValues(self, event)
+            updatePowerValues(self)
         elseif IsIn(event, "UNIT_SPELLCAST_START", "UNIT_SPELLCAST_CHANNEL_START") then
             updateCastValues(self, event)
         elseif IsIn(event, "UNIT_SPELLCAST_CHANNEL_STOP", "UNIT_SPELLCAST_STOP", "UNIT_SPELLCAST_INTERRUPTED", "UNIT_SPELLCAST_FAILED") then
@@ -805,19 +805,18 @@ local function LoadTarget()
     NewUnitFrame:ClearAllPoints()
     NewUnitFrame:SetPoint("TOPLEFT", NewUnitFrame.gwMover)
 
+    NewUnitFrame.portrait.mask = NewUnitFrame:CreateMaskTexture()
+    NewUnitFrame.portrait.mask:SetPoint("CENTER", NewUnitFrame.portrait, "CENTER", 0, 0)
+    NewUnitFrame.portrait.mask:SetTexture(186178, "CLAMPTOBLACKADDITIVE", "CLAMPTOBLACKADDITIVE")
+    NewUnitFrame.portrait.mask:SetSize(58, 58)
+    NewUnitFrame.portrait:AddMaskTexture(NewUnitFrame.portrait.mask)
+
     NewUnitFrame:SetAttribute("*type1", "target")
     NewUnitFrame:SetAttribute("*type2", "togglemenu")
     NewUnitFrame:SetAttribute("unit", "target")
     RegisterUnitWatch(NewUnitFrame)
     NewUnitFrame:EnableMouse(true)
     NewUnitFrame:RegisterForClicks("AnyDown")
-
-    local mask = UIParent:CreateMaskTexture()
-    mask:SetPoint("CENTER", NewUnitFrame.portrait, "CENTER", 0, 0)
-
-    mask:SetTexture(186178, "CLAMPTOBLACKADDITIVE", "CLAMPTOBLACKADDITIVE")
-    mask:SetSize(58, 58)
-    NewUnitFrame.portrait:AddMaskTexture(mask)
 
     AddToClique(NewUnitFrame)
 
@@ -828,11 +827,14 @@ local function LoadTarget()
 
     NewUnitFrame.displayBuffs = GetSetting("target_BUFFS")
     NewUnitFrame.displayDebuffs = GetSetting("target_DEBUFFS")
-    
+
     NewUnitFrame.showThreat = GetSetting("target_THREAT_VALUE_ENABLED")
 
-    NewUnitFrame.debuffFilter = "player"
-
+    -- priority: All > Important > Player
+    NewUnitFrame.debuffFilter = "PLAYER"
+    if GetSetting("target_BUFFS_FILTER_IMPORTANT") then
+        NewUnitFrame.debuffFilter = "IMPORTANT"
+    end
     if GetSetting("target_BUFFS_FILTER_ALL") then
         NewUnitFrame.debuffFilter = nil
     end
@@ -868,7 +870,7 @@ local function LoadTarget()
         local fctf = CreateFrame("Frame", nil, NewUnitFrame)
         fctf:SetFrameLevel(NewUnitFrame:GetFrameLevel() + 3)
         fctf:RegisterEvent("UNIT_COMBAT")
-        fctf:SetScript("OnEvent", function(self, event, unit, ...)
+        fctf:SetScript("OnEvent", function(self, _, unit, ...)
             if self.unit == unit then
                 CombatFeedback_OnCombatEvent(self, ...)
             end
@@ -899,12 +901,11 @@ local function LoadFocus()
     NewUnitFrame:ClearAllPoints()
     NewUnitFrame:SetPoint("TOPLEFT", NewUnitFrame.gwMover)
 
-    local mask = UIParent:CreateMaskTexture()
-    mask:SetPoint("CENTER", NewUnitFrame.portrait, "CENTER", 0, 0)
-
-    mask:SetTexture(186178, "CLAMPTOBLACKADDITIVE", "CLAMPTOBLACKADDITIVE")
-    mask:SetSize(58, 58)
-    NewUnitFrame.portrait:AddMaskTexture(mask)
+    NewUnitFrame.portrait.mask = NewUnitFrame:CreateMaskTexture()
+    NewUnitFrame.portrait.mask:SetPoint("CENTER", NewUnitFrame.portrait, "CENTER", 0, 0)
+    NewUnitFrame.portrait.mask:SetTexture(186178, "CLAMPTOBLACKADDITIVE", "CLAMPTOBLACKADDITIVE")
+    NewUnitFrame.portrait.mask:SetSize(58, 58)
+    NewUnitFrame.portrait:AddMaskTexture(NewUnitFrame.portrait.mask)
 
     NewUnitFrame:SetAttribute("*type1", "target")
     NewUnitFrame:SetAttribute("*type2", "togglemenu")
@@ -923,8 +924,12 @@ local function LoadFocus()
     NewUnitFrame.displayBuffs = GetSetting("focus_BUFFS")
     NewUnitFrame.displayDebuffs = GetSetting("focus_DEBUFFS")
 
-    NewUnitFrame.debuffFilter = "player"
-    if GetSetting("focus_BUFFS_FILTER_ALL") == true then
+    -- priority: All > Important > Player
+    NewUnitFrame.debuffFilter = "PLAYER"
+    if GetSetting("focus_BUFFS_FILTER_IMPORTANT") then
+        NewUnitFrame.debuffFilter = "IMPORTANT"
+    end
+    if GetSetting("focus_BUFFS_FILTER_ALL") then
         NewUnitFrame.debuffFilter = nil
     end
 

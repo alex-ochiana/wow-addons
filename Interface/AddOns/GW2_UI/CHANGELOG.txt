@@ -1,3 +1,42 @@
+5.13.1
+FIXES
+    - Fix an error that raid buffs not disapearing
+    - Fix an error with conduits datatext if you havent a soulbind
+    - Raise PetBattleFrame so auras are not overlapping them anymore
+
+5.13.0
+NEW
+    - Added option for important debuffs to target and focus frame
+
+FIXES
+    - Fix some lua errors
+
+MISC
+    - Code clean up
+
+5.12.1
+FIXES
+    - Fix target/focus mask overlapping
+    - Fix Great Vault micro menu button interaction with dominos
+
+MISC
+    - Update locals
+    - Code clean up
+
+5.12.0
+NEW
+    - Added "Great Vault" Button to micromenu
+    - Added datatext to gametime (hover the time on minimap)
+    - Added datatext to talent micro button
+
+FIXES
+    - Fix rare ember court and chatframe lua error
+    - Fix some target/foucs overlapping
+
+MISC
+    - Remove auto sell junk chat output: Blizzard os doing this now
+    - Right click guild micromenu button to invite or whisper guild mebers
+
 5.11.2
 FIXES
     - Fix some gossip skin issues

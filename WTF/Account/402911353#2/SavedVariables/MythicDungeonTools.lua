@@ -1,10 +1,21 @@
 
 MythicDungeonToolsDB = {
 	["profileKeys"] = {
+		["Mortifèrous - Kazzak"] = "Mortifèrous - Kazzak",
+		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
+		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
+		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
 		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
+		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
+		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
 	},
 	["global"] = {
 		["anchorTo"] = "CENTER",
+		["currentDungeonIdx"] = 35,
+		["anchorFrom"] = "CENTER",
+		["nonFullscreenScale"] = 1,
+		["MDI"] = {
+		},
 		["colorPaletteInfo"] = {
 			["customPaletteValues"] = {
 				{
@@ -69,30 +80,20 @@ MythicDungeonToolsDB = {
 				}, -- [12]
 			},
 		},
-		["anchorFrom"] = "CENTER",
-		["currentPreset"] = {
-			[34] = 2,
-			[35] = 2,
-		},
-		["MDI"] = {
-		},
-		["currentDungeonIdx"] = 35,
 		["maximized"] = false,
 		["presets"] = {
 			[33] = {
 				{
 					["mdiEnabled"] = true,
 					["week"] = 1,
-					["mdi"] = {
-						["freeholdJoined"] = false,
-						["beguiling"] = 1,
-						["freehold"] = 1,
+					["objects"] = {
 					},
 					["value"] = {
 						["currentPull"] = 1,
 						["currentSublevel"] = 1,
-						["riftOffsets"] = {
+						["pulls"] = {
 							{
+								["color"] = "ff3eff",
 							}, -- [1]
 						},
 						["currentDungeonIdx"] = 33,
@@ -100,14 +101,16 @@ MythicDungeonToolsDB = {
 						["selection"] = {
 							1, -- [1]
 						},
-						["pulls"] = {
+						["riftOffsets"] = {
 							{
-								["color"] = "ff3eff",
 							}, -- [1]
 						},
 					},
 					["difficulty"] = 10,
-					["objects"] = {
+					["mdi"] = {
+						["freeholdJoined"] = false,
+						["freehold"] = 1,
+						["beguiling"] = 1,
 					},
 				}, -- [1]
 			},
@@ -115,13 +118,13 @@ MythicDungeonToolsDB = {
 				{
 					["mdiEnabled"] = false,
 					["week"] = 1,
-					["objects"] = {
-					},
+					["difficulty"] = 10,
 					["value"] = {
 						["currentPull"] = 1,
 						["currentSublevel"] = 1,
-						["riftOffsets"] = {
+						["pulls"] = {
 							{
+								["color"] = "ff3eff",
 							}, -- [1]
 						},
 						["currentDungeonIdx"] = 34,
@@ -129,22 +132,23 @@ MythicDungeonToolsDB = {
 						["selection"] = {
 							1, -- [1]
 						},
-						["pulls"] = {
+						["riftOffsets"] = {
 							{
-								["color"] = "ff3eff",
 							}, -- [1]
 						},
 					},
 					["mdi"] = {
 						["freeholdJoined"] = false,
-						["beguiling"] = 1,
 						["freehold"] = 1,
+						["beguiling"] = 1,
 					},
-					["difficulty"] = 10,
+					["objects"] = {
+					},
 				}, -- [1]
 				{
 					["objects"] = {
 						{
+							["n"] = true,
 							["d"] = {
 								548.0699245896622, -- [1]
 								-183.4676404714589, -- [2]
@@ -152,9 +156,9 @@ MythicDungeonToolsDB = {
 								true, -- [4]
 								"Make sure to interrupt Rebelious Fist.", -- [5]
 							},
-							["n"] = true,
 						}, -- [1]
 						{
+							["n"] = true,
 							["d"] = {
 								333.4395978934259, -- [1]
 								-356.4923168202223, -- [2]
@@ -162,9 +166,9 @@ MythicDungeonToolsDB = {
 								true, -- [4]
 								"CC Forsowrn Vanguard 6 and play it after the CC breaks with the Prideful (Focus Prideful).", -- [5]
 							},
-							["n"] = true,
 						}, -- [2]
 						{
+							["n"] = true,
 							["d"] = {
 								413.3684477388819, -- [1]
 								-385.9147142860647, -- [2]
@@ -172,9 +176,9 @@ MythicDungeonToolsDB = {
 								true, -- [4]
 								"Play Prideful with Kyrian Dark-Praetor (Focus Prideful).", -- [5]
 							},
-							["n"] = true,
 						}, -- [3]
 						{
+							["n"] = true,
 							["d"] = {
 								568.2584060732227, -- [1]
 								-298.8391210836597, -- [2]
@@ -182,7 +186,6 @@ MythicDungeonToolsDB = {
 								true, -- [4]
 								"On low keys, focusing on Squad-Leader to eliminate his protection aura. On higher keys, ask your teammates to CC several adds first. This is going to be the hardest trash in the whole dungeon, especially during inspiring/necrotic week because there is no place to drop stacks if mobs are not slowed.", -- [5]
 							},
-							["n"] = true,
 						}, -- [4]
 						{
 							["d"] = {
@@ -193,26 +196,17 @@ MythicDungeonToolsDB = {
 								"ff0058", -- [5]
 								-8, -- [6]
 							},
+							["t"] = {
+								-0.8960365439006102, -- [1]
+							},
 							["l"] = {
 								"354.2", -- [1]
 								"-398.8", -- [2]
 								"353.1", -- [3]
 								"-397.4", -- [4]
 							},
-							["t"] = {
-								-0.8960365439006102, -- [1]
-							},
 						}, -- [5]
 						{
-							["d"] = {
-								3, -- [1]
-								1.1, -- [2]
-								3, -- [3]
-								true, -- [4]
-								"ff0058", -- [5]
-								-7, -- [6]
-								true, -- [7]
-							},
 							["l"] = {
 								"350.8", -- [1]
 								"-398.3", -- [2]
@@ -351,8 +345,18 @@ MythicDungeonToolsDB = {
 								"383.6", -- [135]
 								"-336.9", -- [136]
 							},
+							["d"] = {
+								3, -- [1]
+								1.1, -- [2]
+								3, -- [3]
+								true, -- [4]
+								"ff0058", -- [5]
+								-7, -- [6]
+								true, -- [7]
+							},
 						}, -- [6]
 						{
+							["n"] = true,
 							["d"] = {
 								390.0016329106362, -- [1]
 								-310.5048628461857, -- [2]
@@ -360,7 +364,6 @@ MythicDungeonToolsDB = {
 								true, -- [4]
 								"Lots of routes choose to skip this pack, but really it's not that hard. Just interrupt Goliath's Rebellious Fist", -- [5]
 							},
-							["n"] = true,
 						}, -- [7]
 						{
 							["d"] = {
@@ -371,26 +374,17 @@ MythicDungeonToolsDB = {
 								"ff0058", -- [5]
 								-6, -- [6]
 							},
+							["t"] = {
+								-3.108817532227519, -- [1]
+							},
 							["l"] = {
 								"382.8", -- [1]
 								"-336.1", -- [2]
 								"433.6", -- [3]
 								"-334.4", -- [4]
 							},
-							["t"] = {
-								-3.108817532227519, -- [1]
-							},
 						}, -- [8]
 						{
-							["d"] = {
-								3, -- [1]
-								1.1, -- [2]
-								3, -- [3]
-								true, -- [4]
-								"ff0058", -- [5]
-								-5, -- [6]
-								true, -- [7]
-							},
 							["l"] = {
 								"432.6", -- [1]
 								"-334.0", -- [2]
@@ -457,17 +451,17 @@ MythicDungeonToolsDB = {
 								"473.5", -- [63]
 								"-306.0", -- [64]
 							},
-						}, -- [9]
-						{
 							["d"] = {
 								3, -- [1]
 								1.1, -- [2]
 								3, -- [3]
 								true, -- [4]
 								"ff0058", -- [5]
-								-7, -- [6]
+								-5, -- [6]
 								true, -- [7]
 							},
+						}, -- [9]
+						{
 							["l"] = {
 								"473.5", -- [1]
 								"-302.5", -- [2]
@@ -482,8 +476,18 @@ MythicDungeonToolsDB = {
 								"477.5", -- [11]
 								"-305.6", -- [12]
 							},
+							["d"] = {
+								3, -- [1]
+								1.1, -- [2]
+								3, -- [3]
+								true, -- [4]
+								"ff0058", -- [5]
+								-7, -- [6]
+								true, -- [7]
+							},
 						}, -- [10]
 						{
+							["n"] = true,
 							["d"] = {
 								484.1675801595112, -- [1]
 								-298.0355044066884, -- [2]
@@ -491,10 +495,8 @@ MythicDungeonToolsDB = {
 								true, -- [4]
 								"Ask your teammates to LoS. They die fast. In general we just burst it down since they don't have much health, but this is a tricky pack on Spiteful week.", -- [5]
 							},
-							["n"] = true,
 						}, -- [11]
 						{
-							["n"] = true,
 							["d"] = {
 								428.3391642995559, -- [1]
 								-369.4082705855066, -- [2]
@@ -502,6 +504,7 @@ MythicDungeonToolsDB = {
 								true, -- [4]
 								"Do this one first, then middle, then Klotos on the other side.", -- [5]
 							},
+							["n"] = true,
 						}, -- [12]
 						{
 							["d"] = {
@@ -512,14 +515,14 @@ MythicDungeonToolsDB = {
 								"ff2bd8", -- [5]
 								-8, -- [6]
 							},
-							["t"] = {
-								-0.9768230483926051, -- [1]
-							},
 							["l"] = {
 								"377.2", -- [1]
 								"-296.6", -- [2]
 								"361.4", -- [3]
 								"-273.3", -- [4]
+							},
+							["t"] = {
+								-0.9768230483926051, -- [1]
 							},
 						}, -- [13]
 						{
@@ -531,18 +534,17 @@ MythicDungeonToolsDB = {
 								"ff2bd8", -- [5]
 								-7, -- [6]
 							},
-							["t"] = {
-								2.06473793194577, -- [1]
-							},
 							["l"] = {
 								"356.3", -- [1]
 								"-280.8", -- [2]
 								"398.7", -- [3]
 								"-359.6", -- [4]
 							},
+							["t"] = {
+								2.06473793194577, -- [1]
+							},
 						}, -- [14]
 						[24] = {
-							["n"] = true,
 							["d"] = {
 								388.1043579272522, -- [1]
 								-360.2437479922206, -- [2]
@@ -550,9 +552,9 @@ MythicDungeonToolsDB = {
 								true, -- [4]
 								"You WILL have teammates who body pull those, so you might as well just pull it first. Use Spectral Sight.", -- [5]
 							},
+							["n"] = true,
 						},
 						[25] = {
-							["n"] = true,
 							["d"] = {
 								389.3304939351835, -- [1]
 								-360.7021850556772, -- [2]
@@ -560,9 +562,9 @@ MythicDungeonToolsDB = {
 								false, -- [4]
 								"Pull the left ones first, because someone always body pulls them. Use Spectral Sight.\n", -- [5]
 							},
+							["n"] = true,
 						},
 						[26] = {
-							["n"] = true,
 							["d"] = {
 								609.7029173736636, -- [1]
 								-440.2332925901743, -- [2]
@@ -570,6 +572,7 @@ MythicDungeonToolsDB = {
 								false, -- [4]
 								"Those 2 groups patrol nearby. Pull whichever group you engage first ALL THE WAY TO THE BOTTOM of the stairs, otherwise you'll aggro the other pack when they come over. Almost always a wipe.", -- [5]
 							},
+							["n"] = true,
 						},
 						[27] = {
 							["d"] = {
@@ -580,14 +583,14 @@ MythicDungeonToolsDB = {
 								"ff2bd8", -- [5]
 								-8, -- [6]
 							},
-							["t"] = {
-								-0.8341393355318847, -- [1]
-							},
 							["l"] = {
 								"470.1", -- [1]
 								"-294.7", -- [2]
 								"442.7", -- [3]
 								"-264.6", -- [4]
+							},
+							["t"] = {
+								-0.8341393355318847, -- [1]
 							},
 						},
 						[28] = {
@@ -599,12 +602,12 @@ MythicDungeonToolsDB = {
 								"ffffff", -- [5]
 								-8, -- [6]
 							},
-							["t"] = {
-								0, -- [1]
-							},
 							["l"] = {
 								"491.1", -- [1]
 								"-283.5", -- [2]
+							},
+							["t"] = {
+								0, -- [1]
 							},
 						},
 						[29] = {
@@ -616,12 +619,12 @@ MythicDungeonToolsDB = {
 								"ff2bd8", -- [5]
 								-8, -- [6]
 							},
-							["t"] = {
-								0, -- [1]
-							},
 							["l"] = {
 								"477.1", -- [1]
 								"-280.7", -- [2]
+							},
+							["t"] = {
+								0, -- [1]
 							},
 						},
 						[17] = {
@@ -633,18 +636,17 @@ MythicDungeonToolsDB = {
 								"ff2bd8", -- [5]
 								-8, -- [6]
 							},
-							["t"] = {
-								-0.7853981633974492, -- [1]
-							},
 							["l"] = {
 								"475.3", -- [1]
 								"-297.9", -- [2]
 								"443.0", -- [3]
 								"-265.6", -- [4]
 							},
+							["t"] = {
+								-0.7853981633974492, -- [1]
+							},
 						},
 						[18] = {
-							["n"] = true,
 							["d"] = {
 								613.6675699651237, -- [1]
 								-411.3335411647961, -- [2]
@@ -652,8 +654,10 @@ MythicDungeonToolsDB = {
 								true, -- [4]
 								"These 2 packs pat around. Whichever one you pull first, pull them ALL THE WAY TO THE BOTTOM of the stairs, otherwise you'll aggro the other one soon and that's a wipe.", -- [5]
 							},
+							["n"] = true,
 						},
 						[19] = {
+							["n"] = true,
 							["d"] = {
 								470.572334370349, -- [1]
 								-273.2178954945701, -- [2]
@@ -661,9 +665,9 @@ MythicDungeonToolsDB = {
 								true, -- [4]
 								"If on high Fortified week, pull these 2 together and use Lust. Don't bother if lower key.", -- [5]
 							},
-							["n"] = true,
 						},
 						[20] = {
+							["n"] = true,
 							["d"] = {
 								500.0837258447001, -- [1]
 								-497.6767935460763, -- [2]
@@ -671,9 +675,9 @@ MythicDungeonToolsDB = {
 								true, -- [4]
 								"If you do have a Kyrian in your group, you can use the Spear of Destiny!", -- [5]
 							},
-							["n"] = true,
 						},
 						[21] = {
+							["n"] = true,
 							["d"] = {
 								352.6399019464034, -- [1]
 								-426.5474188197903, -- [2]
@@ -681,10 +685,8 @@ MythicDungeonToolsDB = {
 								true, -- [4]
 								"If you do have a Kyrian in your group, you can use the Spear of Destiny!", -- [5]
 							},
-							["n"] = true,
 						},
 						[22] = {
-							["n"] = true,
 							["d"] = {
 								343.2953103820734, -- [1]
 								-284.8424077871206, -- [2]
@@ -692,9 +694,9 @@ MythicDungeonToolsDB = {
 								true, -- [4]
 								"You can also do the other Skirmisher pack, but they tend to Disengage and possibly pull the Squad-Leader pack, so this one is the easiest.", -- [5]
 							},
+							["n"] = true,
 						},
 						[23] = {
-							["n"] = true,
 							["d"] = {
 								405.470880587824, -- [1]
 								-299.6495377434142, -- [2]
@@ -702,28 +704,15 @@ MythicDungeonToolsDB = {
 								false, -- [4]
 								"Boss is going to do Overhead Slash at 100 energy; even if you side step it successfully (with 1 sec cast it's very hard) you still take 50% damage. Try your best, otherwise you can get 1 shot at high Tyrannical keys. Don't stand in the beam connecting the boss and her minion.\n\n", -- [5]
 							},
+							["n"] = true,
 						},
 					},
 					["week"] = 1,
-					["mdi"] = {
-						["freehold"] = 1,
-						["freeholdJoined"] = false,
-						["beguiling"] = 1,
-					},
 					["value"] = {
 						["selection"] = {
 							27, -- [1]
 						},
 						["currentSublevel"] = 2,
-						["riftOffsets"] = {
-							{
-							}, -- [1]
-							[4] = {
-							},
-						},
-						["currentDungeonIdx"] = 34,
-						["teeming"] = false,
-						["currentPull"] = 27,
 						["pulls"] = {
 							{
 								{
@@ -819,13 +808,13 @@ MythicDungeonToolsDB = {
 								[11] = {
 									7, -- [1]
 								},
-								[12] = {
-									2, -- [1]
-								},
+								["color"] = "3e3eff",
 								[7] = {
 									4, -- [1]
 								},
-								["color"] = "3e3eff",
+								[12] = {
+									2, -- [1]
+								},
 							}, -- [10]
 							{
 								[3] = {
@@ -852,14 +841,14 @@ MythicDungeonToolsDB = {
 								[8] = {
 									6, -- [1]
 								},
-								[9] = {
-									2, -- [1]
-								},
+								["color"] = "3eff9e",
 								[7] = {
 									8, -- [1]
 									9, -- [2]
 								},
-								["color"] = "3eff9e",
+								[9] = {
+									2, -- [1]
+								},
 							}, -- [13]
 							{
 								["color"] = "ff3e3e",
@@ -879,11 +868,11 @@ MythicDungeonToolsDB = {
 									5, -- [1]
 								},
 								["color"] = "3e9eff",
-								[13] = {
-									1, -- [1]
-								},
 								[12] = {
 									5, -- [1]
+								},
+								[13] = {
+									1, -- [1]
 								},
 							}, -- [15]
 							{
@@ -905,13 +894,13 @@ MythicDungeonToolsDB = {
 								[12] = {
 									7, -- [1]
 								},
-								[7] = {
-									16, -- [1]
-								},
+								["color"] = "3eff3e",
 								[9] = {
 									3, -- [1]
 								},
-								["color"] = "3eff3e",
+								[7] = {
+									16, -- [1]
+								},
 							}, -- [17]
 							{
 								["color"] = "ff3e9e",
@@ -985,22 +974,36 @@ MythicDungeonToolsDB = {
 								[8] = {
 									1, -- [1]
 								},
-								["color"] = "fffb3e",
+								[18] = {
+								},
 								[7] = {
 									1, -- [1]
 									2, -- [2]
 									3, -- [3]
 								},
-								[18] = {
-								},
+								["color"] = "fffb3e",
 							}, -- [27]
 						},
+						["currentDungeonIdx"] = 34,
+						["teeming"] = false,
+						["currentPull"] = 27,
+						["riftOffsets"] = {
+							{
+							}, -- [1]
+							[4] = {
+							},
+						},
 					},
-					["text"] = "Pineapple",
-					["difficulty"] = 15,
 					["colorPaletteInfo"] = {
 						["autoColoring"] = true,
 						["colorPaletteIdx"] = 4,
+					},
+					["text"] = "Pineapple",
+					["difficulty"] = 15,
+					["mdi"] = {
+						["freehold"] = 1,
+						["beguiling"] = 1,
+						["freeholdJoined"] = false,
 					},
 				}, -- [2]
 				{
@@ -1015,8 +1018,9 @@ MythicDungeonToolsDB = {
 					["value"] = {
 						["currentPull"] = 1,
 						["currentSublevel"] = 1,
-						["riftOffsets"] = {
+						["pulls"] = {
 							{
+								["color"] = "ff3eff",
 							}, -- [1]
 						},
 						["currentDungeonIdx"] = 35,
@@ -1024,40 +1028,27 @@ MythicDungeonToolsDB = {
 						["selection"] = {
 							1, -- [1]
 						},
-						["pulls"] = {
+						["riftOffsets"] = {
 							{
-								["color"] = "ff3eff",
 							}, -- [1]
 						},
 					},
-					["objects"] = {
-					},
 					["mdi"] = {
 						["freeholdJoined"] = false,
-						["beguiling"] = 1,
 						["freehold"] = 1,
+						["beguiling"] = 1,
+					},
+					["objects"] = {
 					},
 				}, -- [1]
 				{
 					["difficulty"] = 10,
 					["week"] = 1,
-					["mdi"] = {
-						["freehold"] = 1,
-						["beguiling"] = 1,
-						["freeholdJoined"] = false,
-					},
 					["value"] = {
 						["selection"] = {
 							9, -- [1]
 						},
 						["currentSublevel"] = 1,
-						["riftOffsets"] = {
-							{
-							}, -- [1]
-						},
-						["currentDungeonIdx"] = 35,
-						["teeming"] = false,
-						["currentPull"] = 9,
 						["pulls"] = {
 							{
 								{
@@ -1176,13 +1167,13 @@ MythicDungeonToolsDB = {
 									4, -- [1]
 									3, -- [2]
 								},
-								["color"] = "3effff",
 								[15] = {
 									1, -- [1]
 								},
 								[9] = {
 									2, -- [1]
 								},
+								["color"] = "3effff",
 							}, -- [8]
 							{
 								[13] = {
@@ -1306,13 +1297,13 @@ MythicDungeonToolsDB = {
 									2, -- [2]
 									3, -- [3]
 								},
-								["color"] = "3eff3e",
-								[23] = {
-									1, -- [1]
-								},
 								[6] = {
 									2, -- [1]
 								},
+								[23] = {
+									1, -- [1]
+								},
+								["color"] = "3eff3e",
 							}, -- [17]
 							{
 								[24] = {
@@ -1361,10 +1352,22 @@ MythicDungeonToolsDB = {
 								},
 							}, -- [22]
 						},
+						["currentDungeonIdx"] = 35,
+						["teeming"] = false,
+						["currentPull"] = 9,
+						["riftOffsets"] = {
+							{
+							}, -- [1]
+						},
+					},
+					["colorPaletteInfo"] = {
+						["autoColoring"] = true,
+						["colorPaletteIdx"] = 4,
 					},
 					["text"] = "NW Prideful",
 					["objects"] = {
 						{
+							["n"] = true,
 							["d"] = {
 								589.817333403004, -- [1]
 								-148.7254591319442, -- [2]
@@ -1372,9 +1375,9 @@ MythicDungeonToolsDB = {
 								true, -- [4]
 								"Spear here!", -- [5]
 							},
-							["n"] = true,
 						}, -- [1]
 						{
+							["n"] = true,
 							["d"] = {
 								487.1921258556797, -- [1]
 								-141.8040348131104, -- [2]
@@ -1382,9 +1385,9 @@ MythicDungeonToolsDB = {
 								true, -- [4]
 								"Kyrian players can charge up this Colossus with their stewards to get 5 Anima balls that the group can pick up for a 1 minute buff!", -- [5]
 							},
-							["n"] = true,
 						}, -- [2]
 						{
+							["n"] = true,
 							["d"] = {
 								490.9214563465371, -- [1]
 								-476.9912126209607, -- [2]
@@ -1392,9 +1395,9 @@ MythicDungeonToolsDB = {
 								true, -- [4]
 								"Anima Orb here!", -- [5]
 							},
-							["n"] = true,
 						}, -- [3]
 						{
+							["n"] = true,
 							["d"] = {
 								380.0479573944053, -- [1]
 								-385.6702674502652, -- [2]
@@ -1402,9 +1405,9 @@ MythicDungeonToolsDB = {
 								true, -- [4]
 								"Spear here!", -- [5]
 							},
-							["n"] = true,
 						}, -- [4]
 						{
+							["n"] = true,
 							["d"] = {
 								343.4334697710669, -- [1]
 								-416.228192373272, -- [2]
@@ -1412,9 +1415,9 @@ MythicDungeonToolsDB = {
 								true, -- [4]
 								"Hammer here!", -- [5]
 							},
-							["n"] = true,
 						}, -- [5]
 						{
+							["n"] = true,
 							["d"] = {
 								142.6405946041176, -- [1]
 								-159.9323994841097, -- [2]
@@ -1422,9 +1425,9 @@ MythicDungeonToolsDB = {
 								true, -- [4]
 								"Anima Orb here!", -- [5]
 							},
-							["n"] = true,
 						}, -- [6]
 						{
+							["n"] = true,
 							["d"] = {
 								522.5507287735924, -- [1]
 								-437.2145825642822, -- [2]
@@ -1432,10 +1435,8 @@ MythicDungeonToolsDB = {
 								true, -- [4]
 								"Kyrian players can charge up this Colossus with their stewards to get 5 Anima balls that the group can pick up for a 1 minute buff!", -- [5]
 							},
-							["n"] = true,
 						}, -- [7]
 						{
-							["n"] = true,
 							["d"] = {
 								301.5396913451501, -- [1]
 								-173.1299692929713, -- [2]
@@ -1443,8 +1444,18 @@ MythicDungeonToolsDB = {
 								true, -- [4]
 								"Spear Here", -- [5]
 							},
+							["n"] = true,
 						}, -- [8]
 						{
+							["d"] = {
+								3, -- [1]
+								1.1, -- [2]
+								1, -- [3]
+								false, -- [4]
+								"ff9bdf", -- [5]
+								-8, -- [6]
+								true, -- [7]
+							},
 							["l"] = {
 								"454.3", -- [1]
 								"-163.5", -- [2]
@@ -1487,6 +1498,8 @@ MythicDungeonToolsDB = {
 								"455.9", -- [39]
 								"-166.3", -- [40]
 							},
+						}, -- [9]
+						{
 							["d"] = {
 								3, -- [1]
 								1.1, -- [2]
@@ -1496,8 +1509,6 @@ MythicDungeonToolsDB = {
 								-8, -- [6]
 								true, -- [7]
 							},
-						}, -- [9]
-						{
 							["l"] = {
 								"389.3", -- [1]
 								"-441.9", -- [2]
@@ -1556,6 +1567,8 @@ MythicDungeonToolsDB = {
 								"444.6", -- [55]
 								"-431.4", -- [56]
 							},
+						}, -- [10]
+						{
 							["d"] = {
 								3, -- [1]
 								1.1, -- [2]
@@ -1565,8 +1578,6 @@ MythicDungeonToolsDB = {
 								-8, -- [6]
 								true, -- [7]
 							},
-						}, -- [10]
-						{
 							["l"] = {
 								"467.4", -- [1]
 								"-467.9", -- [2]
@@ -1645,6 +1656,8 @@ MythicDungeonToolsDB = {
 								"391.8", -- [75]
 								"-479.3", -- [76]
 							},
+						}, -- [11]
+						{
 							["d"] = {
 								3, -- [1]
 								1.1, -- [2]
@@ -1654,8 +1667,6 @@ MythicDungeonToolsDB = {
 								-8, -- [6]
 								true, -- [7]
 							},
-						}, -- [11]
-						{
 							["l"] = {
 								"398.3", -- [1]
 								"-476.1", -- [2]
@@ -1694,20 +1705,12 @@ MythicDungeonToolsDB = {
 								"390.6", -- [35]
 								"-482.2", -- [36]
 							},
-							["d"] = {
-								3, -- [1]
-								1.1, -- [2]
-								1, -- [3]
-								false, -- [4]
-								"ff9bdf", -- [5]
-								-8, -- [6]
-								true, -- [7]
-							},
 						}, -- [12]
 					},
-					["colorPaletteInfo"] = {
-						["autoColoring"] = true,
-						["colorPaletteIdx"] = 4,
+					["mdi"] = {
+						["freehold"] = 1,
+						["freeholdJoined"] = false,
+						["beguiling"] = 1,
 					},
 				}, -- [2]
 				{
@@ -1718,7 +1721,10 @@ MythicDungeonToolsDB = {
 		},
 		["version"] = 349,
 		["xoffset"] = 27.00000381469727,
-		["nonFullscreenScale"] = 1,
+		["currentPreset"] = {
+			[34] = 2,
+			[35] = 2,
+		},
 		["yoffset"] = 98.50004577636719,
 	},
 }

@@ -1,0 +1,240 @@
+== v3.05 - 3rd July 2019
+* (65.68,84.19) south-west changed to north-east
+* Patch 8.2.0 version number change
+* Removed multi patch support as Curse doesn't support it anymore (and WoW Interface never really did)
+
+== v3.04 - 23rd February 2019
+* NEW egg at (74.20,82.39)!
+* NEW egg at (75.22,82.48)! Thanks to Etherwood for confirming!
+* reinstate booleanTrue code
+* Adjust a couple of build version checks
+* Removed one unused zhTW translation
+* Remove duplicated code from AssignWorldMapPins()
+* A Resize bug noticed while updated my AHN AddOn. Impact depends on previous DB save states of size parameters I think
+* round() removed as not needed
+
+== v3.03 - 13th January 2019
+* NEW egg at (72.59,83.73)
+* VERIFIED egg at (69.10,88.22) with double precision
+* Undocumented from v3.02: build number test is now properly numeric. Once we hit build "10" (currently "8" for BfA) my string equation logic would have failed
+* Removed pre-BfA code from ResetPins function (as ResetPins only invoked for 8.0+)
+* Fix fatal error if attempt to resize prior to first view of the World Map
+* Missing translation "Default" added
+* Coordinates now appear uniform and nicer. Trailing decimal zeros are now forced on
+* Small change to printPC
+* Abandoned trying to be compatible from Classic to retail. Starts from TBC now
+
+== v3.02 - 2nd January 2019
+* Egg at (71.45,86.45) VERIFIED!
+* Undocumented change from v3.00 and first appeared in v3.01: the Quest/Daily textures are now a separate (smaller) list. This to avoid confusion
+* Fix for players who had used a high numbered Special texture prior to v3.01
+* Removed the egg marked as "Wowhead data". Obviously it was never correct, given the strange location
+
+== v3.01 - 1st January 2019
+* Patch 8.1.0 version number change
+* Minor bugs fixed as I normalised the code from my LongForgottenHippogryph AddOn
+* Pin Hide/Show logic more efficient
+* Translations complete for World Map popup menus. Only tip descriptions remain untranslated
+* Removed unnecessary string.upper
+* Expansion check now actually can occur if running Vanilla
+* 6th Icon (the blue flying boot) replaced with a better "mana orb". Looks much better
+* Added 14th "Screw" icon. This to establish a common / useful set across all my AddOns
+* Renamed "Dragon's Eye" to just "Eye" for the same reason (as also the default for my Raptor AddOn)
+* numTextures renamed to num for same reason
+* Small adjustments to perfect size normalisation across all textures
+
+== v3.00 - 20th October 2018
+* Tons of changes to enable BfA compatibility. Still backwards compatible to TBC
+* Lots of new functionality added. Too much to mention here
+* Code cleanup too
+* (71.45,86.45) is now verified and with new coordinates
+* (72.82,90.32) is now double precision
+* Description changes here and there probably
+
+== v2.03 - 19th May 2018
+* NEW location at (70.96,89.11)!!!
+* Localised tonumber and tostring
+* 2.0.1 changed to 2.4.3
+* Location at (66.096,83.88) now verified!
+* Location at (68.14,94.67) now verified!
+* Description at (68.13,81.82) improved.
+* Small changes to coordinates, for example (69.62,58.53) to (69.62,58.535)
+* Small changes to descriptions
+
+== v2.02 - 14th April 2018
+* OMG! New location in the Mine! (73.295,85.73)
+* Removed an unverified Ledge location of (73.3,85.7) for obvious reasons
+* Solution for a TBC server possibly not able to HookScript the Minimap
+* The Mine locations at (70.27,83.92) and (68.31,79.32) are now double precision
+* There is now a second daily quest location, for players able to cheese it
+* Usual precision adjustments
+* Updated the Read Me
+* Handle "upvalue" problem for players running Vanilla / Lua 5.0 and whom wish to at least include this AddOn in their collection
+* Fix for problem of Instance maps not behaving like normal maps and thus breaking OnUpdate register/deregister event code
+
+== v2.01 - 5th April 2018
+* OMG! New location in the Mine! (67.95,82.47)
+* Major fix for the calculation of map coordinates, necessary to display Minimap icons
+* Several Mine locations have had an accuracy adjustment of about 0.01. I have a new and more accurate way of recording locations
+* Bug with author specific code
+* Sorted Mine locations by X,Y coordinates. Purely to assist programming and checking
+* Removed two events, PLAYER_ENTERING_WORLD and ZONE_CHANGED_NEW_AREA as now the AddOn is not so "hacked" it doesn't need them, lol
+* Removed a couple of unnecessary or duplicated API calls
+* Made a global function call local
+* Added the Read Me file
+* Added a "Requires TBC or higher" message
+
+== v2.00 - 31st March 2018
+* Rewrite. Lots of programming improvements
+* This version also attempts to work with any WoW build, focusing on Vanilla/TBC and WoD/Legion for now
+* When you alter the icon, the previous icon becomes the "special" icon (for the daily quest)
+* I.e.: Can now set the "special" icon. It will be the previous general use icon
+* Special icon may now use the "eye" and blink too!
+* When indoors, the minimap icons now consistently disappear
+* For TBC specific, I had to code around a much more limited and inferior set of icons
+* For TBC specific, most icons had to be resized so that their appearance would match
+* For TBC specific, I now have to allow for parts of an icon to be displayed
+* For Vanilla specific, allow AddOn to get through basic loading, player can see menu and version, and that is it
+* Localised the title text in the TOC file
+* The easter egg was changed. It is now prepared to thematically match nearby environs
+
+== v1.24 - 3rd September 2017
+* TOC version bump for Patch 7.3 Shadows of Argus
+* PlaySoundKitID removed as of Patch 7.3.0. Replaced by PlaySound
+
+== v1.23 - 26th August 2017
+* Recalibrate scaling factors within the mines. Now uses unique data for each zoom level = less stutter of icons on minimap
+
+== v1.22 - 29th July 2017
+* One additional double precision in the mine
+* Double precision of hatchling nesting area confirmed (previously based off an old screen cap)
+* Slight adjustment to one of the two new locations due to the author encountering first-hand (previously based off Diaxes' screen-cap)
+* Corrected/improved two mine descriptions
+
+== v1.21 - 9th July 2017
+* TWO new locations - thank you to Curse member Diaxes
+* Tooltips now anchor cursor
+* Tidy up chat format
+* Removed left over / unnecessary x and y attributes for Mini frame
+* AdjustCoordinates is no longer defined within another local - less memory used
+* Mini[ i ]:ClearAllPoints() now in line with my LFH AddOn. Smoother Minimap icon movement
+* A few minor text format tweaks
+
+== v1.20 - 19th June 2017
+* 1 x Double precision in the Fortress
+* Zeroed alpha immediately Minimap frames are allocated = no more "flashing" or "stuck" icons on login
+
+== v1.19 - 9th May 2017
+* 1 x NEW MINE! (An unverified Ledge had similar coordinates so it was deleted)
+* 1 x mine and 1 x Fortress now double precision
+* Standardised with other of my AddOns: When Control key is down, NO NEED for "show coordinates" option to be on. I.e. link in chat (with coordinates) regardless
+* Visibilty check for index [1] before Hide/Show of all icons = aids efficiency / fps
+* Menu allows an option to be enquired upon and not just changed
+* "Macro Commands" in the command menu, whilst technically correct, has been renamed to the more sensible "Commands"
+* Double quotes used by both World Map and Minimap in chat, for consistency
+
+== v1.18 - 29th April 2017
+* Now using unregister/register code for GetCurrentMapAreaID as per some other AddOns. This to solve a Reputation mouse over bug in the Character frame!
+
+== v1.17 - 16th April 2017
+* Added Ledge 69.67, 84.34
+* +1 double precision
+* Mine 73.80,85.99 now says south-south-east from south-east
+
+== v1.16 - 28th March 2017
+* Patch 7.2 Update
+
+== v1.15 - 21st March 2017
+* Lots more Double precision in Fortress / Mine / Ledge. Now over 80% completed as double precision
+* 1 x Distance estimation recalibrated
+* Moved 3x unverified from mine to Ledge as they seem more likely there
+* Deleted one unverified which was quite close to a verified
+
+== v1.14 - 4th March 2017
+* New FPS preservation code requires a fudge for when players log into "unusual" zones such as Moonglade
+* Adjustments to a few locations from single to double precision. About 75% are double now
+* Minor tweaks to locations, +/- 1/00th for example
+* The Not-So-Friendly Skies... Tooltip would error from minimap due to bad array index
+
+== v1.13 - 29th January 2017
+* Typo in a description
+* Coding error causing chat link truncation from the World Map. Doh! (Mini-map no problems)
+
+== v1.12 - 26th January 2017
+* Possibly improve impact of this AddOn on higher FPS players who also have lots of Minimap stress
+* Remove "world" from the "h" command description
+* Tighten the testing to prevent multiple egg links in chat
+* Also check for nil return values from GetItemInfo for the eggs. Extremely rare but possible right after a log in
+
+== v1.11 - 13th January 2017
+* Prevent player from linking the same location more than once into a chat edit frame, same as I did with my AHN AddOn
+* A couple of new locations so now over 100
+* More double precision recordings (done with me shrunken with Nogger and standing, centred, on the eggs). Now over 70% completed
+* Changed a reference to "metres" to yards.
+* Adjusted some distance calculations (using my Hard Yards AddOn)
+* A previously Unverified is now verified
+
+== v1.10 - 11th January 2017
+* Added ability to send a link to a channel actively being edited
+* Map Coordinates can appear in Tooltips. They will always appear in chat
+* Usual titivation with coordinates. 58% now double precision
+* One less generic Wowhead entry
+* Raptor Eye changed to Dragon's eye as it just seems a more appropriate title
+* Added L["Show / Hide map coordinates"] command
+
+== v1.09 - 6th January 2017
+* New locations added. We have hit 100!
+* Existing locations to double precision - now more than 50% complete!
+* Localisation for "Please stand here, facing north."
+* Localisation for "Dragonmaw Fortress"
+* Now shows Tooltips when inside a room in Dragonmaw Fortress
+
+== v1.08 - 4th January 2017
+* I found 73.21,84.28 in the mine
+* I found 70.71,85.68 in the mine
+* Unverified location 68.13,81.81 now verified per reports by Shimatta123 and Chaosrde
+* Unverified location 72.27,86.39 now verified per report by Shimatta123
+* Double precision in many more locations
+* Removed unverified mine at 68,85 - totally lacking in precision and probably impossible location
+* LUA function calls localised
+* zhTW added!
+* Much more language Localisation (all that remains is the text descriptions)
+* Overhauling of chat commands
+* Use new schema for loading in saved variables (auto delete of redundant saves)
+* Standardisation of coding across my AddOns to facilitate updates/maintenance
+* Now remembers setting for "hide" and "show"
+* Choosing the Raptor Eye now results in the eye "looking" at you and occasionally blinking!
+
+== v1.07 - 25th October 2016
+* Version update to support Patch 7.1 "Return to Karahzan"
+
+== v1.06 - 1st October 2016
+* New Netherwing Ledge locations / verified location from SuchRenzi: 65.63,87.73 (Mine,new), 71.56,84.11 (Mine,verified), 67.88,85.44 (Mine,New)
+* Commenced recording to TWO decimal places
+
+== v1.05 - 15th September 2016
+* New Netherwing Ledge location 64.0,86.0 from Dave Walden
+
+== v1.04 - 4th September 2016
+* New Netherwing Ledge location 66.1, 83.9 from Dave Walden
+* Removed 65,84 and 78,83 as unlikely. Both were "Unverified"
+
+== v1.03 - 23rd July 2016
+* New mines location
+* Interface Version now 70000
+
+== v1.02 - 14th July 2016
+* Localised SetMapToCurrentZone
+* Language support commenced. Initially four phrases/words
+* Added break to mouseover tooltip test "for" loop
+* Few minor text enhancements
+* Couple of new locations
+* Some unverified/Wowhead now personally verified
+
+== v1.01 - 6th July 2016
+* Improved the scaling factors for horizontal and vertical within the mine
+* New / verified spawn points. On the Ledge but mostly in the mine
+* Minor tweaks to a couple of previously wowhead/unverified locations - 1/10 of a map point
+
+== v1.00 - 29th June 2016
+* Initial release

@@ -3,7 +3,7 @@
 ## Notes: HUD Replacement addon.
 ## Notes-deDE: Ersetzt die Benutzeroberfläche.
 ## OptionalDeps: MoveAnything, _DebugLog, BugSack, !Stragglers, ACU
-## Version: v5.11.2
+## Version: v5.13.1
 ## X-Website: https://www.curseforge.com/wow/addons/gw2-ui
 ## X-Curse-Project-ID: 94310
 ## DefaultState: Enabled
@@ -71,6 +71,9 @@ settings/credits.lua
 dataInfo/money.lua
 dataInfo/guild.lua
 dataInfo/bags.lua
+dataInfo/time.lua
+dataInfo/spec.lua
+dataInfo/conduits.lua
 
 core/auras.lua
 

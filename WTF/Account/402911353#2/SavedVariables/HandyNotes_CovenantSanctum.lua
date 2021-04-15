@@ -1,19 +1,22 @@
 
 HandyNotes_CovenantSanctumDB = {
 	["profileKeys"] = {
+		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
 		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
 		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
-		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
+		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
 		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
 		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
-		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
+		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
 	},
 	["profiles"] = {
+		["Vòlkmer - Kazzak"] = {
+		},
 		["Egidus - Sylvanas"] = {
 		},
 		["Kynaeth - Sylvanas"] = {
 		},
-		["Latthrias - Sylvanas"] = {
+		["Gnomèrcy - Sylvanas"] = {
 		},
 		["Crètz - Sylvanas"] = {
 			["show_renown"] = false,
@@ -23,7 +26,7 @@ HandyNotes_CovenantSanctumDB = {
 		},
 		["Jiglèr - Sylvanas"] = {
 		},
-		["Gnomèrcy - Sylvanas"] = {
+		["Latthrias - Sylvanas"] = {
 		},
 	},
 }

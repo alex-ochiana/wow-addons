@@ -4,7 +4,7 @@ BonusRollPreview: enabled
 !BugGrabber: disabled
 BugSack: disabled
 ErrorFilter: disabled
-GarrisonMissionManager: disabled
+GarrisonMissionManager: enabled
 HandyNotes: enabled
 HandyNotes_Argus: disabled
 HandyNotes_BrokenShore: disabled
@@ -14,7 +14,7 @@ HandyNotes_Lorewalkers: disabled
 ACP: disabled
 MasterPlan: disabled
 MasterPlanA: disabled
-NPCScan: disabled
+NPCScan: enabled
 WeakAurasArchive: enabled
 TradeSkillMaster: disabled
 TomCats-Mechagon: disabled
@@ -36,7 +36,7 @@ WeakAurasModelPaths: enabled
 WeakAurasOptions: enabled
 WeakAurasTemplates: enabled
 TradeSkillMaster_AppHelper: disabled
-Ace3: disabled
+Ace3: enabled
 WIT: disabled
 AllTheThings: disabled
 AceGUI-3.0_SFX-Widgets: disabled

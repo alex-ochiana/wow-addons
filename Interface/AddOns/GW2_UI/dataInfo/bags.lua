@@ -1,8 +1,7 @@
 local _, GW = ...
 local GetSetting = GW.GetSetting
 
-local iconString = "|T%s:14:14:0:0:64:64:4:60:4:60|t  %s"
-local bagIcon = "Interface/Buttons/Button-Backpack-Up"
+local iconString = "|T%s:14:14:0:0:64:64:4:60:4:60|t "
 
 local function Bags_OnEnter(self)
     GameTooltip:ClearLines()
@@ -19,14 +18,15 @@ local function Bags_OnEnter(self)
             GameTooltip:AddLine(disabledTooltipText, RED_FONT_COLOR.r, RED_FONT_COLOR.g, RED_FONT_COLOR.b, true)
         end
     end
-    GameTooltip_AddBlankLineToTooltip(GameTooltip)
+    GameTooltip:AddLine(" ")
 
     for i = 0, NUM_BAG_SLOTS do
         local bagName = GetBagName(i)
         if bagName then
             local numSlots = GetContainerNumSlots(i)
             local freeSlots = GetContainerNumFreeSlots(i)
-            local usedSlots, sumNum = numSlots - freeSlots, 19 + i
+            local usedSlots = numSlots - freeSlots
+            local sumNum = 19 + i
 
             local r2, g2, b2 = GW.ColorGradient(usedSlots / numSlots, 0.1, 1, 0.1, 1, 1, 0.1, 1, 0.1, 0.1)
             local r, g, b, icon
@@ -38,7 +38,7 @@ local function Bags_OnEnter(self)
 
             bagName = GetSetting("BAG_SEPARATE_BAGS") and strlen(GetSetting("BAG_HEADER_NAME" .. i)) > 0 and GetSetting("BAG_HEADER_NAME" .. i) or bagName
 
-            GameTooltip:AddDoubleLine(format(iconString, icon or bagIcon, bagName), format("%d/%d", usedSlots, numSlots), r or 1, g or 1, b or 1, r2, g2, b2)
+            GameTooltip:AddDoubleLine(format(iconString, icon or "Interface/Buttons/Button-Backpack-Up") .. bagName, format("%d/%d", usedSlots, numSlots), r or 1, g or 1, b or 1, r2, g2, b2)
         end
     end
 
@@ -46,11 +46,11 @@ local function Bags_OnEnter(self)
         local info = C_CurrencyInfo.GetBackpackCurrencyInfo(i)
         if info then
             if i == 1 then
-                GameTooltip_AddBlankLineToTooltip(GameTooltip)
+                GameTooltip:AddLine(" ")
                 GameTooltip:AddLine(CURRENCY)
             end
             if info.quantity then
-                GameTooltip:AddDoubleLine(format(iconString, info.iconFileID, info.name), info.quantity)
+                GameTooltip:AddDoubleLine(format(iconString, info.iconFileID) .. info.name, info.quantity)
             end
         end
     end

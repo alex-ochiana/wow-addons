@@ -8,7 +8,6 @@ local GetSetting = GW.GetSetting
 
 local CPWR_FRAME
 local CPF_HOOKED_TO_TARGETFRAME = false
-local hasMover = false
 
 local function updateTextureBasedOnCondition(self)
     if GW.myClassID == 9 then -- Warlock
@@ -53,7 +52,7 @@ local function animFlare(f, scale, offset, duration, rotate)
         end
     )
 end
-GW.AddForProfiling("classpowers", "powerFlare", powerFlare)
+GW.AddForProfiling("classpowers", "animFlare", animFlare)
 
 local function decayCounter_OnAnim()
     local f = CPWR_FRAME
@@ -164,7 +163,7 @@ GW.AddForProfiling("classpowers", "findBuffs", findBuffs)
 local function powerMana(self, event, ...)
     local ptype = select(2, ...)
     if event == "CLASS_POWER_INIT" or ptype == "MANA" then
-        UpdatePowerData(self.exbar, 0, "MANA", "GwExtraPowerBar")
+        UpdatePowerData(self.exbar, 0, "MANA")
 
         C_Timer.After(0.12, function()
             if GwPlayerPowerBar and GwPlayerPowerBar.powerType == 0 then
@@ -182,7 +181,7 @@ GW.AddForProfiling("classpowers", "powerMana", powerMana)
 local function powerLittleMana(self, event, ...)
     local ptype = select(2, ...)
     if event == "CLASS_POWER_INIT" or ptype == "MANA" then
-        UpdatePowerData(self:GetParent().lmb, 0, "MANA", "GwLittlePowerBar")
+        UpdatePowerData(self:GetParent().lmb, 0, "MANA")
     end
 end
 GW.AddForProfiling("classpowers", "powerLittleMana", powerLittleMana)
@@ -331,7 +330,7 @@ end
 GW.AddForProfiling("classpowers", "setComboBar", setComboBar)
 
 -- DEAMONHUNTER
-local function timerMetamorphosis(self, event, ...)
+local function timerMetamorphosis(self)
     local _, _, duration, expires = findBuff("player", 162264)
     if duration ~= nil then
         self.decay:Show()
@@ -344,7 +343,7 @@ end
 GW.AddForProfiling("classpowers", "timerMetamorphosis", timerMetamorphosis)
 
 -- WARRIOR
-local function powerEnrage(self, event, ...)
+local function powerEnrage()
     local _, _, duration, expires = findBuff("player", 184362)
     if duration ~= nil then
         local pre = (expires - GetTime()) / duration
@@ -353,7 +352,7 @@ local function powerEnrage(self, event, ...)
 end
 GW.AddForProfiling("classpowers", "powerEnrage", powerEnrage)
 
-local function powerSBlock(self, event, ...)
+local function powerSBlock(self)
     local results
     if self.gw_BolsterSelected then
         results = findBuffs("player", 132404, 871, 12975)
@@ -411,7 +410,7 @@ end
 GW.AddForProfiling("classpowers", "setWarrior", setWarrior)
 
 -- PALADIN
-local function powerSotR(self, event, ...)
+local function powerSotR()
     local results = findBuffs("player", 132403, 31850, 212641)
     if results == nil then
         return
@@ -602,7 +601,7 @@ RUNE_TIMER_ANIMATIONS[3] = 0
 RUNE_TIMER_ANIMATIONS[4] = 0
 RUNE_TIMER_ANIMATIONS[5] = 0
 RUNE_TIMER_ANIMATIONS[6] = 0
-local function powerRune(self, event, ...)
+local function powerRune(self)
     local f = self
     local fr = self.runeBar
     for i = 1, 6 do
@@ -693,9 +692,8 @@ end
 GW.AddForProfiling("classpowers", "setDeathKnight", setDeathKnight)
 
 -- SHAMAN
-local function powerMaelstrom(self, event, ...)
-    local fdc = self.maelstrom
-    local _, count, duration, expires = findBuff("player", 344179)
+local function powerMaelstrom(self)
+    local _, count, duration, _ = findBuff("player", 344179)
 
     if duration == nil then
         self.gwPower = -1
@@ -929,7 +927,7 @@ local function setWarlock(f)
     if GW.myspec == 3 then -- Destruction
         f.warlock.shardFragment.amount = -1
         f.warlock.shardFragment:Show()
-        flarAnimationMap = {
+        local flarAnimationMap = {
             width = 512,
             height = 512,
             colums = 2,

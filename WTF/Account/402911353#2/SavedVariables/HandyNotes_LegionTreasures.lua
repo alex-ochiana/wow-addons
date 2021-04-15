@@ -24,9 +24,10 @@ HandyNotes_LegionTreasuresDB = {
 		["Lastones - Kazzak"] = "Lastones - Kazzak",
 		["Needzafemale - Kazzak"] = "Needzafemale - Kazzak",
 		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
+		["Mòloch - Kazzak"] = "Mòloch - Kazzak",
 		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
 		["Brovar - Sylvanas"] = "Brovar - Sylvanas",
-		["Mòloch - Kazzak"] = "Mòloch - Kazzak",
+		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
 	},
 	["profiles"] = {
 		["Crètz - Kazzak"] = {
@@ -57,11 +58,13 @@ HandyNotes_LegionTreasuresDB = {
 		},
 		["Kynaeth - Sylvanas"] = {
 		},
+		["Mòloch - Kazzak"] = {
+		},
 		["Crètz - Sylvanas"] = {
 		},
 		["Brovar - Sylvanas"] = {
 		},
-		["Mòloch - Kazzak"] = {
+		["Vòlkmer - Kazzak"] = {
 		},
 	},
 }

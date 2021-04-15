@@ -1,14 +1,15 @@
 
 Details_StreamerDB = {
 	["characters"] = {
-		["Kynaeth - Sylvanas"] = "Crètz - Sylvanas",
 		["Mortifèrous - Kazzak"] = "Crètz - Sylvanas",
-		["Egidus - Sylvanas"] = "Crètz - Sylvanas",
-		["Gnomèrcy - Sylvanas"] = "Crètz - Sylvanas",
-		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
+		["Crëtz - Kazzak"] = "Crètz - Sylvanas",
 		["Latthrias - Sylvanas"] = "Crètz - Sylvanas",
 		["Jiglèr - Sylvanas"] = "Crètz - Sylvanas",
-		["Crëtz - Kazzak"] = "Crètz - Sylvanas",
+		["Egidus - Sylvanas"] = "Crètz - Sylvanas",
+		["Kynaeth - Sylvanas"] = "Crètz - Sylvanas",
+		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
+		["Gnomèrcy - Sylvanas"] = "Crètz - Sylvanas",
+		["Vòlkmer - Kazzak"] = "Crètz - Sylvanas",
 	},
 	["profiles"] = {
 		["Crètz - Sylvanas"] = {
@@ -40,12 +41,12 @@ Details_StreamerDB = {
 			["row_height"] = 20,
 			["row_texture"] = "Details Serenity",
 			["point"] = "CENTER",
-			["author"] = "Details! Team",
 			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["font_size"] = 10,
+			["y"] = 0.000244140625,
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -60,6 +61,11 @@ Details_StreamerDB = {
 				0.4, -- [4]
 			},
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
+			["font_size"] = 10,
+			["use_spark"] = true,
+			["x"] = 0,
+			["font_face"] = "Friz Quadrata TT",
+			["square_size"] = 32,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -71,11 +77,6 @@ Details_StreamerDB = {
 				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
 			},
-			["y"] = 0.000244140625,
-			["x"] = 0,
-			["font_face"] = "Friz Quadrata TT",
-			["square_size"] = 32,
-			["use_spark"] = true,
 			["arrow_anchor_y"] = 0,
 			["main_frame_locked"] = false,
 			["use_square_mode"] = false,

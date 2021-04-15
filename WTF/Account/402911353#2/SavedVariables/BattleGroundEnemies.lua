@@ -1,14 +1,15 @@
 
 BattleGroundEnemiesDB = {
 	["profileKeys"] = {
-		["Kynaeth - Sylvanas"] = "Default",
 		["Mortifèrous - Kazzak"] = "Default",
-		["Egidus - Sylvanas"] = "Default",
 		["Crëtz - Kazzak"] = "Default",
 		["Latthrias - Sylvanas"] = "Default",
-		["Crètz - Sylvanas"] = "Default",
 		["Jiglèr - Sylvanas"] = "Default",
+		["Egidus - Sylvanas"] = "Default",
+		["Kynaeth - Sylvanas"] = "Default",
+		["Crètz - Sylvanas"] = "Default",
 		["Gnomèrcy - Sylvanas"] = "Default",
+		["Vòlkmer - Kazzak"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -19,8 +20,8 @@ BattleGroundEnemiesDB = {
 					["Enabled"] = false,
 				},
 				["15"] = {
-					["Position_Y"] = 576.7112552841536,
-					["Position_X"] = 1148.445253503342,
+					["Position_Y"] = 554.6668103059164,
+					["Position_X"] = 1036.089608421607,
 				},
 			},
 			["Font"] = "GW2_UI Headlines",
@@ -31,8 +32,8 @@ BattleGroundEnemiesDB = {
 					["Enabled"] = false,
 				},
 				["15"] = {
-					["Position_Y"] = 610.1334783156744,
-					["Position_X"] = 224.7110948509635,
+					["Position_Y"] = 494.222320995068,
+					["Position_X"] = 215.4666935854493,
 				},
 			},
 		},

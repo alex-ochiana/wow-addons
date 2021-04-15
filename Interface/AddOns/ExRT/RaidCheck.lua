@@ -4,7 +4,7 @@ local IsEncounterInProgress, GetTime = IsEncounterInProgress, GetTime
 
 local VExRT = nil
 
-local module = ExRT.mod:New("RaidCheck",ExRT.L.raidcheck)
+local module = ExRT:New("RaidCheck",ExRT.L.raidcheck)
 local ELib,L = ExRT.lib,ExRT.L
 
 module.db.tableFood = not ExRT.isClassic and {
@@ -1082,6 +1082,17 @@ function module.options:Load()
 		end
 	end)
 
+	self.chkReadyCheckColDecLine = ELib:DecorationLine(self.tab.tabs[2]):Point("TOP",self.chkReadyCheckFrameClassSort,"BOTTOM",0,-5):Size(0,1):Point("LEFT",0,0):Point("RIGHT",0,0)
+
+	self.chkReadyCheckColText = ELib:Text(self.tab.tabs[2],L.cd2Columns..":",12):Point("TOPLEFT",self.chkReadyCheckFrameClassSort,"BOTTOMLEFT",0,-10)
+	
+	self.chkReadyCheckColSoulstone = ELib:Check(self.tab.tabs[2],GetSpellInfo(20707) or "Soulstone",VExRT.RaidCheck.ReadyCheckSoulstone):Point("TOPLEFT",self.chkReadyCheckFrameClassSort,"BOTTOMLEFT",0,-30):OnClick(function(self) 
+		if self:GetChecked() then
+			VExRT.RaidCheck.ReadyCheckSoulstone = true
+		else
+			VExRT.RaidCheck.ReadyCheckSoulstone = nil
+		end
+	end)	
 
 	self.chkReadyCheckConsumables = ELib:Check(self.tab.tabs[3],L.Enable,not VExRT.RaidCheck.DisableConsumables):Point(15,-10):AddColorState():OnClick(function(self) 
 		if self:GetChecked() then
@@ -1103,6 +1114,10 @@ function module.options:Load()
 		self.tab.tabs[2].button:ClearAllPoints()
 		self.tab.tabs[2].button:SetPoint("TOPLEFT", 10, 24)
 		self.tab:SetTo(2)
+
+		self.chkReadyCheckColDecLine:Hide()
+		self.chkReadyCheckColText:Hide()
+		self.chkReadyCheckColSoulstone:Hide()
 	end
 end
 
@@ -1316,6 +1331,8 @@ function module:slash(arg)
 		GetRaidBuffs(1)
 	elseif arg == "check" then
 		module:ReadyCheckWindow(nil,nil,true)
+	elseif arg == "help" then
+		print("|cff00ff00/rt check|r - show raid buffs window")
 	end
 end
 
@@ -1579,6 +1596,73 @@ local function RCW_AddIcon(parent,texture)
 	return icon
 end
 
+local function CreateCol(line,key,i)
+	line[key.."pointer"] = CreateFrame("Frame",nil,line)
+	line[key.."pointer"]:SetSize(RCW_iconsListWide[i] and 60 or 30,14)
+
+	if i==1 then
+		line[key.."pointer"]:SetPoint("CENTER",line.name,"RIGHT",15 - 5,0)
+	else
+		line[key.."pointer"]:SetPoint("CENTER",line[ RCW_iconsList[i-1].."pointer" ],"CENTER",30+(RCW_iconsListWide[i-1] and 15 or 0)+(RCW_iconsListWide[i] and 15 or 0),0)
+	end
+
+	line[key] = RCW_AddIcon(line,RCW_iconsListDebugIcons[i])
+	line[key]:Point("CENTER",line[key.."pointer"],"CENTER",0,0)
+
+	line[key].UpdatePos = function(self,pointFrame)
+		line[key.."pointer"]:ClearAllPoints()
+		line[key.."pointer"]:SetPoint("CENTER",pointFrame,"CENTER",30,0)
+		return line[key.."pointer"]
+	end
+
+	for j=2,4 do
+		line[key..j] = RCW_AddIcon(line,RCW_iconsListDebugIcons[i])
+		line[key..j]:Point("LEfT",line[key..((j-1) == 1 and "" or tostring(j-1))],"RIGHT",0,0)
+		line[key..j]:Hide()
+	end
+end
+
+local RCW_iconsList_ORIGIN = #RCW_iconsList
+function module.frame:UpdateCols()
+	for i=RCW_iconsList_ORIGIN+1,#RCW_iconsList do
+		RCW_iconsList[i] = nil
+		if module.frame.headers[i] then
+			module.frame.headers[i]:SetText("")
+		end
+	end
+	local colsAdd = 0
+	if VExRT.RaidCheck.ReadyCheckSoulstone then
+		colsAdd = colsAdd + 1
+		RCW_iconsList[RCW_iconsList_ORIGIN+colsAdd] = "ss"
+		RCW_iconsListHeaders[RCW_iconsList_ORIGIN+colsAdd] = GetSpellInfo(20707) or "Soulstone"
+		RCW_iconsListDebugIcons[RCW_iconsList_ORIGIN+colsAdd] = 136210
+		local header = module.frame.headers[RCW_iconsList_ORIGIN+colsAdd]
+		if not header then
+			header = ELib:Text(module.frame.headers,"",10):Color(1,1,1):Point("BOTTOMLEFT",module.frame.headers[RCW_iconsList_ORIGIN+colsAdd-1],"BOTTOMLEFT",30,0)
+			module.frame.headers[RCW_iconsList_ORIGIN+colsAdd] = header
+		end
+		header:SetText(RCW_iconsListHeaders[RCW_iconsList_ORIGIN+colsAdd])
+	end
+	for i=1,40 do
+		local line = module.frame.lines[i]
+		line:SetSize(420+(ExRT.isClassic and 30*RCW_liveToClassicDiff or 0)+RCW_liveToslDiff+colsAdd*30,14)
+
+		local prevPointer = line[ RCW_iconsList[RCW_iconsList_ORIGIN].."pointer" ]
+
+		if VExRT.RaidCheck.ReadyCheckSoulstone then
+			if not line["ss"] then
+				CreateCol(line,"ss",RCW_iconsList_ORIGIN+1)
+			end
+			prevPointer = line["ss"]:UpdatePos(prevPointer)
+			line["ss"]:Show()
+		elseif line["ss"] then
+			line["ss"]:Hide()
+		end
+		
+	end	
+	module.frame:SetWidth(430+(ExRT.isClassic and 30*RCW_liveToClassicDiff or 0)+RCW_liveToslDiff+colsAdd*30)
+end
+
 function module.frame:Create()
 	if self.isCreated then
 		return
@@ -1603,23 +1687,7 @@ function module.frame:Create()
 		line.icon = ELib:Icon(line,"Interface\\RaidFrame\\ReadyCheck-Waiting",14):Point("LEFT",0,0)
 
 		for i,key in pairs(RCW_iconsList) do
-			line[key.."pointer"] = CreateFrame("Frame",nil,line)
-			line[key.."pointer"]:SetSize(RCW_iconsListWide[i] and 60 or 30,14)
-
-			if i==1 then
-				line[key.."pointer"]:SetPoint("CENTER",line.name,"RIGHT",15 - 5,0)
-			else
-				line[key.."pointer"]:SetPoint("CENTER",line[ RCW_iconsList[i-1].."pointer" ],"CENTER",30+(RCW_iconsListWide[i-1] and 15 or 0)+(RCW_iconsListWide[i] and 15 or 0),0)
-			end
-
-			line[key] = RCW_AddIcon(line,RCW_iconsListDebugIcons[i])
-			line[key]:Point("CENTER",line[key.."pointer"],"CENTER",0,0)
-
-			for j=2,4 do
-				line[key..j] = RCW_AddIcon(line,RCW_iconsListDebugIcons[i])
-				line[key..j]:Point("LEfT",line[key..((j-1) == 1 and "" or tostring(j-1))],"RIGHT",0,0)
-				line[key..j]:Hide()
-			end
+			CreateCol(line,key,i)
 		end
 
 		if i%2 == 0 then
@@ -2032,7 +2100,7 @@ function module.frame:UpdateData(onlyLine)
 						line[key..j].subIcon:Hide()
 					end
 				end
-				for i=1,40 do
+				for i=1,60 do
 					local name,icon,_,_,duration,expirationTime,_,_,_,spellId,_,_,_,_,_,val1 = UnitAura(line.unit, i,"HELPFUL")
 					if not spellId then
 						break
@@ -2149,6 +2217,8 @@ function module.frame:UpdateData(onlyLine)
 						line[key].text:SetText(val or "")
 
 						line[key].tooltip = "spell:"..spellId
+					elseif spellId == 20707 and line.ss then
+						line.ss.texture:SetTexture(136210)
 					end
 				end
 				if line.dur and not self.isTest then
@@ -2358,6 +2428,15 @@ function module:ReadyCheckWindow(starter,isTest,manual)
 	self.frame:Create()
 
 	module.db.RaidCheckReadyCheckTime = nil
+
+	local colsAdd = 0
+	if VExRT.RaidCheck.ReadyCheckSoulstone then
+		colsAdd = bit.bor(colsAdd,0x1)
+	end
+	if (self.frame.colsAdd or 0) ~= colsAdd then
+		self.frame.colsAdd = colsAdd
+		self.frame:UpdateCols()
+	end
 
 	self.frame.isManual = manual
 
@@ -2720,7 +2799,7 @@ if (not ExRT.isClassic) and UnitLevel'player' >= 60 then
 	local consumables_size = 44
 
 	local lastWeaponEnchantItem
-	
+
 	module.consumables = CreateFrame("Frame","ExRTConsumables",ReadyCheckListenerFrame)
 	module.consumables:SetPoint("BOTTOM",ReadyCheckListenerFrame,"TOP",0,5)
 	module.consumables:SetSize(consumables_size*5,consumables_size)
@@ -2736,8 +2815,8 @@ if (not ExRT.isClassic) and UnitLevel'player' >= 60 then
 
 	module.consumables.state = CreateFrame('Frame', nil, nil, 'SecureHandlerStateTemplate')
 	module.consumables.state:SetAttribute('_onstate-combat', [=[
-		for i=1,6 do
-			if i == 2 or i == 3 or i == 4 or i == 5 then
+		for i=1,7 do
+			if i == 2 or i == 3 or i == 4 or i == 5 or i == 7 then
 				if self:GetFrameRef("Button"..i) then
 					if newstate == 'hide' then
 						self:GetFrameRef("Button"..i):Hide()
@@ -2752,11 +2831,15 @@ if (not ExRT.isClassic) and UnitLevel'player' >= 60 then
 	]=])
 	RegisterStateDriver(module.consumables.state, 'combat', '[combat] hide; [nocombat] show')
 
-	for i=1,6 do
+	for i=1,7 do
 		local button = CreateFrame("Frame",nil,module.consumables)
 		module.consumables.buttons[i] = button
 		button:SetSize(consumables_size,consumables_size)
-		button:SetPoint("LEFT",(i-1)*consumables_size,0)
+		if i == 1 then
+			button:SetPoint("LEFT",0,0)
+		else
+			button:SetPoint("LEFT",module.consumables.buttons[i-1],"RIGHT",0,0)
+		end
 	
 		button.texture = button:CreateTexture()
 		button.texture:SetAllPoints()
@@ -2775,12 +2858,17 @@ if (not ExRT.isClassic) and UnitLevel'player' >= 60 then
 		button.count:SetFont(button.timeleft:GetFont(),10,"OUTLINE")
 		--button.count:SetTextColor(0,1,0,1)
 
-		if i == 2 or i == 3 or i == 4 or i == 5 then
+		if i == 2 or i == 3 or i == 4 or i == 5 or i == 7 then
 			button.click = CreateFrame("Button",nil,button,"SecureActionButtonTemplate")
 			button.click:SetAllPoints()
 			button.click:Hide()
 			button.click:RegisterForClicks("AnyDown")
-			button.click:SetAttribute("type", "macro")
+			if i == 4 or i == 7 then
+				button.click:SetAttribute("type", "item")
+				button.click:SetAttribute("target-slot", i == 4 and "16" or "17")
+			else
+				button.click:SetAttribute("type", "macro")
+			end
 	
 			button.click:SetScript("OnEnter",ButtonOnEnter)
 			button.click:SetScript("OnLeave",ButtonOnLeave)
@@ -2806,6 +2894,10 @@ if (not ExRT.isClassic) and UnitLevel'player' >= 60 then
 		elseif i == 6 then
 			button.texture:SetTexture(538745)
 			module.consumables.buttons.hs = button
+		elseif i == 7 then
+			button.texture:SetTexture(463543)
+			module.consumables.buttons.oiloh = button
+			button:Hide()
 		end
 	end
 	
@@ -2842,9 +2934,6 @@ if (not ExRT.isClassic) and UnitLevel'player' >= 60 then
 			self.buttons.hs:Hide()
 			totalButtons = totalButtons - 1
 		end
-		if not InCombatLockdown() then
-			self:SetWidth(consumables_size*totalButtons)
-		end
 
 		for i=1,#self.buttons do
 			self.buttons[i].statustexture:SetTexture("Interface\\RaidFrame\\ReadyCheck-NotReady")
@@ -2877,7 +2966,7 @@ if (not ExRT.isClassic) and UnitLevel'player' >= 60 then
 				self.buttons.flask.texture:SetDesaturated(false)
 				self.buttons.flask.timeleft:SetFormattedText(GARRISON_DURATION_MINUTES,ceil((expires-now)/60))
 				isFlask = true
-				if expires - now <= 900 then
+				if expires - now <= 600 then
 					isFlask = false
 				end
 			elseif module.db.tableRunes[spellId] then
@@ -2968,11 +3057,34 @@ if (not ExRT.isClassic) and UnitLevel'player' >= 60 then
 
 		lastWeaponEnchantItem = lastWeaponEnchantItem or VExRT.RaidCheck.WeaponEnch[ExRT.SDB.charKey]
 
-		local hasMainHandEnchant, mainHandExpiration, mainHandCharges, mainHandEnchantID = GetWeaponEnchantInfo()
+		local offhandCanBeEnchanted
+		local offhandItemID = GetInventoryItemID("player", 17)
+		if offhandItemID then
+			local _, _, _, _, _, itemClassID, itemSubClassID = GetItemInfoInstant(offhandItemID)
+			if itemClassID == 2 then
+				offhandCanBeEnchanted = true
+			end
+		end
+		if not InCombatLockdown() then
+			if offhandCanBeEnchanted then
+				self.buttons.oiloh:Show()
+				totalButtons = totalButtons + 1
+				self.buttons.oiloh:ClearAllPoints()
+				self.buttons.oiloh:SetPoint("LEFT",self.buttons.oil,"RIGHT",0,0)
+				self.buttons.rune:ClearAllPoints()
+				self.buttons.rune:SetPoint("LEFT",self.buttons.oiloh,"RIGHT",0,0)
+			else
+				self.buttons.oiloh:Hide()
+				self.buttons.rune:ClearAllPoints()
+				self.buttons.rune:SetPoint("LEFT",self.buttons.oil,"RIGHT",0,0)
+			end
+		end
+
+		local hasMainHandEnchant, mainHandExpiration, mainHandCharges, mainHandEnchantID, hasOffHandEnchant, offHandExpiration, offHandCharges, offHandEnchantID = GetWeaponEnchantInfo()
 		if hasMainHandEnchant then
 			self.buttons.oil.statustexture:SetTexture("Interface\\RaidFrame\\ReadyCheck-Ready")
 			self.buttons.oil.texture:SetDesaturated(false)
-			self.buttons.oil.timeleft:SetFormattedText(GARRISON_DURATION_MINUTES,ceil(mainHandExpiration/1000/60))
+			self.buttons.oil.timeleft:SetFormattedText(GARRISON_DURATION_MINUTES,ceil((mainHandExpiration or 0)/1000/60))
 
 			if mainHandEnchantID == 6190 then
 				lastWeaponEnchantItem = 171286
@@ -2988,18 +3100,29 @@ if (not ExRT.isClassic) and UnitLevel'player' >= 60 then
 				lastWeaponEnchantItem = 171438
 			end
 		end
+		if offhandCanBeEnchanted and hasOffHandEnchant then
+			self.buttons.oiloh.statustexture:SetTexture("Interface\\RaidFrame\\ReadyCheck-Ready")
+			self.buttons.oiloh.texture:SetDesaturated(false)
+			self.buttons.oiloh.timeleft:SetFormattedText(GARRISON_DURATION_MINUTES,ceil((offHandExpiration or 0)/1000/60))
+		end
 		if lastWeaponEnchantItem == 171286 then
 			self.buttons.oil.texture:SetTexture(463544)
+			self.buttons.oiloh.texture:SetTexture(463544)
 		elseif lastWeaponEnchantItem == 171285 then
 			self.buttons.oil.texture:SetTexture(463543)
+			self.buttons.oiloh.texture:SetTexture(463543)
 		elseif lastWeaponEnchantItem == 171437 then
 			self.buttons.oil.texture:SetTexture(3528422)
+			self.buttons.oiloh.texture:SetTexture(3528422)
 		elseif lastWeaponEnchantItem == 171436 then
 			self.buttons.oil.texture:SetTexture(3528424)
+			self.buttons.oiloh.texture:SetTexture(3528424)
 		elseif lastWeaponEnchantItem == 171439 then
 			self.buttons.oil.texture:SetTexture(3528423)
+			self.buttons.oiloh.texture:SetTexture(3528423)
 		elseif lastWeaponEnchantItem == 171438 then
 			self.buttons.oil.texture:SetTexture(3528425)
+			self.buttons.oiloh.texture:SetTexture(3528425)
 		end
 
 		VExRT.RaidCheck.WeaponEnch[ExRT.SDB.charKey] = lastWeaponEnchantItem
@@ -3007,26 +3130,39 @@ if (not ExRT.isClassic) and UnitLevel'player' >= 60 then
 		if lastWeaponEnchantItem then
 			local oilCount = GetItemCount(lastWeaponEnchantItem,false,true)
 			self.buttons.oil.count:SetText(oilCount)
+			self.buttons.oiloh.count:SetText(oilCount)
 			if oilCount and oilCount > 0 then
 				if not InCombatLockdown() then
 					local itemName = GetItemInfo(lastWeaponEnchantItem)
 					if itemName then
-						if mainHandExpiration and mainHandExpiration <= 300000 then
-							self.buttons.oil.click:SetAttribute("macrotext1", format("/stopmacro [combat]\n/use %s", itemName))
-						else
-							self.buttons.oil.click:SetAttribute("macrotext1", format("/stopmacro [combat]\n/use %s", itemName))
-						end
+						self.buttons.oil.click:SetAttribute("item", itemName)
 						self.buttons.oil.click:Show()
 						self.buttons.oil.click.IsON = true
+						if 
+							mainHandExpiration and 
+							(lastWeaponEnchantItem == 171285 or lastWeaponEnchantItem == 171286) and
+							offhandItemID and not offhandCanBeEnchanted
+						then
+							self.buttons.oil.click:SetAttribute("type", "cancelaura")
+						else
+							self.buttons.oil.click:SetAttribute("type", "item")
+						end
+						self.buttons.oiloh.click:SetAttribute("item", itemName)
+						self.buttons.oiloh.click:Show()
+						self.buttons.oiloh.click.IsON = true
 					else
 						self.buttons.oil.click:Hide()
 						self.buttons.oil.click.IsON = false
+						self.buttons.oiloh.click:Hide()
+						self.buttons.oiloh.click.IsON = false
 					end
 				end
 			else
 				if not InCombatLockdown() then
 					self.buttons.oil.click:Hide()
 					self.buttons.oil.click.IsON = false
+					self.buttons.oiloh.click:Hide()
+					self.buttons.oiloh.click.IsON = false
 				end
 			end
 
@@ -3035,6 +3171,11 @@ if (not ExRT.isClassic) and UnitLevel'player' >= 60 then
 					LCG.PixelGlow_Start(self.buttons.oil)
 				else
 					LCG.PixelGlow_Stop(self.buttons.oil)
+				end
+				if oilCount and oilCount > 0 and (not hasOffHandEnchant or (offHandExpiration and offHandExpiration <= 300000)) then
+					LCG.PixelGlow_Start(self.buttons.oiloh)
+				else
+					LCG.PixelGlow_Stop(self.buttons.oiloh)
 				end
 			end
 		end
@@ -3067,6 +3208,11 @@ if (not ExRT.isClassic) and UnitLevel'player' >= 60 then
 			else
 				LCG.PixelGlow_Stop(self.buttons.rune)
 			end
+		end
+
+
+		if not InCombatLockdown() then
+			self:SetWidth(consumables_size*totalButtons)
 		end
 	end
 

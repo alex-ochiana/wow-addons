@@ -9,6 +9,7 @@ HandyNotes_VisionsOfNZothDB = {
 		["Blanitza - Kazzak"] = "Default",
 		["Mortifèrous - Kazzak"] = "Default",
 		["Jiglèr - Sylvanas"] = "Default",
+		["Vòlkmer - Kazzak"] = "Default",
 		["Òdin - Sylvanas"] = "Default",
 		["Egidus - Sylvanas"] = "Default",
 		["Kynaeth - Sylvanas"] = "Default",

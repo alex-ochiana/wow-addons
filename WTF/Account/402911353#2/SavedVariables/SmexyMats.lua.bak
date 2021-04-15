@@ -12,44 +12,70 @@ SmexyMatsDB = {
 		["Enabled"] = true,
 		["cbOneB"] = 1,
 		["cbOneG"] = 1,
+		["IconsEnabled"] = false,
+		["SM_EP_One_Title"] = "|cFF00CCFF",
 		["SMText"] = true,
+		["cbTwoR"] = 1,
 		["cbTwoG"] = 1,
+		["SM_EP_One_Text"] = "|cFFFFFF00",
 		["AllRealms"] = true,
 		["IDs"] = {
 		},
 		["Professions"] = true,
-		["cbTwoR"] = 1,
-		["SM_EP_One_Title"] = "|cFF00CCFF",
-		["SM_EP_One_Text"] = "|cFFFFFF00",
+		["SMMsg"] = false,
+		["ExpackIconsEnabled"] = false,
+		["TooltipIconSize"] = 20,
 	},
 	["ProTree"] = {
+		["Cooking"] = {
+			["Alliance"] = {
+				["Sylvanas"] = {
+					["Crètz"] = {
+					},
+				},
+			},
+		},
 		["Sylvanas"] = {
 			["Alliance"] = {
 				["Cooking"] = {
-					["Crètz"] = {
-					},
 				},
 				["Tailoring"] = {
 				},
 				["Archaeology"] = {
-					["Crètz"] = {
-					},
+				},
+				["Herbalism"] = {
 				},
 				["Alchemy"] = {
-					["Crètz"] = {
-					},
-				},
-				["Fishing"] = {
-					["Crètz"] = {
-					},
 				},
 				["Leatherworking"] = {
 				},
-				["Herbalism"] = {
+				["Fishing"] = {
+				},
+				["Enchanting"] = {
+				},
+			},
+		},
+		["Fishing"] = {
+			["Alliance"] = {
+				["Sylvanas"] = {
 					["Crètz"] = {
 					},
 				},
-				["Enchanting"] = {
+			},
+		},
+		["Herbalism"] = {
+			["Alliance"] = {
+				["Sylvanas"] = {
+					["Crètz"] = {
+					},
+				},
+			},
+		},
+		["Archaeology"] = {
+			["Alliance"] = {
+				["Sylvanas"] = {
+					["Crètz"] = {
+					},
 				},
 			},
 		},
@@ -67,20 +93,28 @@ SmexyMatsDB = {
 					["Mortifèrous"] = {
 					},
 				},
+				["Engineering"] = {
+					["Mortifèrous"] = {
+					},
+				},
 				["Fishing"] = {
 					["Mortifèrous"] = {
 					},
 				},
-				["Engineering"] = {
-					["Mortifèrous"] = {
+			},
+		},
+		["Alchemy"] = {
+			["Alliance"] = {
+				["Sylvanas"] = {
+					["Crètz"] = {
 					},
 				},
 			},
 		},
 	},
 	["profileKeys"] = {
-		["Crètz - Sylvanas"] = "profile",
 		["Mòloch - Kazzak"] = "profile",
+		["Crètz - Sylvanas"] = "profile",
 	},
 	["profiles"] = {
 		["profile"] = {
@@ -88,6 +122,4 @@ SmexyMatsDB = {
 			["Sources"] = false,
 		},
 	},
-}
-SmexyMatsAuto = {
 }

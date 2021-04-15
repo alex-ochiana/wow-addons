@@ -9,7 +9,7 @@ local settings_cat = {}
 local all_options = {}
 
 local function switchCat(index)
-    for i, l in ipairs(settings_cat) do
+    for _, l in ipairs(settings_cat) do
         l.iconbg:Hide()
         l.cat_panel:Hide()
     end
@@ -18,10 +18,12 @@ local function switchCat(index)
     if l then
         l.iconbg:Show()
         l.cat_panel:Show()
-        if l.cat_hasScroll then
-            l.cat_panel.scroll.slider:SetShown(l.cat_panel.scroll.maxScroll > 0)
-            l.cat_panel.scroll.scrollUp:SetShown(l.cat_panel.scroll.maxScroll > 0)
-            l.cat_panel.scroll.scrollDown:SetShown(l.cat_panel.scroll.maxScroll > 0)
+        if l.cat_crollFrames then
+            for _, v in pairs(l.cat_crollFrames) do 
+                v.scroll.slider:SetShown(v.scroll.maxScroll > 0)
+                v.scroll.scrollUp:SetShown(v.scroll.maxScroll > 0)
+                v.scroll.scrollDown:SetShown(v.scroll.maxScroll > 0)
+            end
         end
         UIFrameFadeIn(l.cat_panel, 0.2, 0, 1)
     end
@@ -44,12 +46,12 @@ local fnF_OnLeave = function(self)
 end
 AddForProfiling("settings", "fnF_OnLeave", fnF_OnLeave)
 
-local fnF_OnClick = function(self, button)
+local fnF_OnClick = function(self)
     switchCat(self.cat_id)
 end
 AddForProfiling("settings", "fnF_OnClick", fnF_OnClick)
 
-local function CreateCat(name, desc, panel, icon, bg, hasScroll)
+local function CreateCat(name, desc, panel, icon, bg, scrollFrames)
     local i = #settings_cat + 1
 
     -- create and position a new button/label for this category
@@ -58,7 +60,7 @@ local function CreateCat(name, desc, panel, icon, bg, hasScroll)
     f.cat_name = name
     f.cat_desc = desc
     f.cat_id = i
-    f.cat_hasScroll = hasScroll
+    f.cat_crollFrames = scrollFrames
     settings_cat[i] = f
     f:SetPoint("TOPLEFT", -40, -32 + (-40 * (i - 1)))
 
@@ -222,7 +224,7 @@ local function checkDependenciesOnLoad()
     local options = all_options
     local allOptionsSet = false
 
-    for k, v in pairs(options) do
+    for _, v in pairs(options) do
         if v.dependence then
             allOptionsSet = false
             for sn, sv in pairs(v.dependence) do
@@ -314,7 +316,7 @@ local function InitPanel(panel, hasScroll)
     local padding = {x = box_padding, y = (hasScroll and panel.scroll.scrollchild.sub:GetText() or panel.sub:GetText()) and -55 or -35}
     local first = true
 
-    for k, v in pairs(options) do
+    for _, v in pairs(options) do
         local newLine = false
         local optionFrameType = "GwOptionBoxTmpl"
         if v.optionType == "slider" then
@@ -374,6 +376,7 @@ local function InitPanel(panel, hasScroll)
             scrollFrame.scrollBar:SetPoint("BOTTOMRIGHT", -3, 12)
             scrollFrame.scrollBar.scrollUp:SetPoint("TOPRIGHT", 0, 12)
             scrollFrame.scrollBar.scrollDown:SetPoint("BOTTOMRIGHT", 0, -12)
+            scrollFrame.scrollBar:SetFrameLevel(scrollFrame:GetFrameLevel() + 5)
             
             scrollFrame.data = GW.copyTable(nil, v)
             scrollFrame.of = of
@@ -433,7 +436,7 @@ local function InitPanel(panel, hasScroll)
             of.button.string:SetFont(UNIT_NAME_FONT, 12)
             of.button:SetScript(
                 "OnClick",
-                function(self, button)
+                function(self)
                     local dd = self:GetParent()
                     if dd.container:IsShown() then
                         dd.container:Hide()
@@ -507,7 +510,7 @@ local function InitPanel(panel, hasScroll)
             of.checkbutton:SetChecked(GetSetting(v.optionName, v.perSpec))
             of.checkbutton:SetScript(
                 "OnClick",
-                function(self, button)
+                function(self)
                     local toSet = false
                     if self:GetChecked() then
                         toSet = true
@@ -541,7 +544,7 @@ local function InitPanel(panel, hasScroll)
         elseif v.optionType == "button" then
             of:SetScript(
                 "OnClick",
-                function(self, button)
+                function()
                     if v.callback ~= nil then
                         v.callback()
                     end
@@ -621,13 +624,13 @@ local function LoadSettings()
     fmGWP.input:SetScript("OnEditFocusGained", nil)
     fmGWP.input:SetScript("OnEditFocusLost", nil)
     fmGWP.input:SetScript("OnEnterPressed", fnGWP_input_OnEnterPressed)
-    local fnGWP_accept_OnClick = function(self, button)
+    local fnGWP_accept_OnClick = function(self)
         if self:GetParent().method ~= nil then
             self:GetParent().method()
         end
         self:GetParent():Hide()
     end
-    local fnGWP_cancel_OnClick = function(self, button)
+    local fnGWP_cancel_OnClick = function(self)
         self:GetParent():Hide()
     end
     fmGWP.acceptButton:SetScript("OnClick", fnGWP_accept_OnClick)
@@ -690,20 +693,20 @@ local function LoadSettings()
         preferredIndex = 3
     }
 
-    local fnGSWMH_OnClick = function(self, button)
+    local fnGSWMH_OnClick = function()
         if InCombatLockdown() then
             DEFAULT_CHAT_FRAME:AddMessage("|cffffedbaGW2 UI:|r " .. L["You can not move elements during combat!"])
             return
         end
         GW.moveHudObjects(GW.MoveHudScaleableFrame)
     end
-    local fnGSWS_OnClick = function(self, button)
+    local fnGSWS_OnClick = function()
         C_UI.Reload()
     end
-    local fnGSWD_OnClick = function(self, button)
+    local fnGSWD_OnClick = function()
         StaticPopup_Show("JOIN_DISCORD")
     end
-    local fmGSWKB_OnClick = function(self, button)
+    local fmGSWKB_OnClick = function()
         GwSettingsWindow:Hide()
         GW.DisplayHoverBinding()
     end

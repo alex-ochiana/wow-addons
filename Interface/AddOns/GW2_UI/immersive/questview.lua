@@ -74,7 +74,7 @@ local function styleRewards()
     GwQuestviewFrameContainerDialogRequired:SetShadowColor(0, 0, 0, 1)
     GwQuestviewFrameContainerDialogRequired:SetText(L["Required Items:"])
 
-    for i, questItem in ipairs(QuestInfoRewardsFrame.RewardButtons) do
+    for _, questItem in ipairs(QuestInfoRewardsFrame.RewardButtons) do
         GW.HandleReward(questItem)
     end
 end
@@ -169,9 +169,13 @@ local function showRewards()
     local items = GetNumQuestRewards()
     local spells = GetNumRewardSpells()
     local choices = GetNumQuestChoices()
+    local honor = GetRewardHonor()
+    local questID = GetQuestID()
+    local hasChanceForQuestSessionBonusReward = C_QuestLog.QuestHasQuestSessionBonus(questID)
 
     local qinfoHeight = 300
     local qinfoTop = -20
+    local itemReqOffset = ((items > 0 or currency > 0 or money > 0 or xp > 0 or honor > 0 or hasChanceForQuestSessionBonusReward) and (choices > 0 or spells > 0 or title)) and 50 or 9
 
     styleRewards()
 
@@ -179,6 +183,8 @@ local function showRewards()
         qinfoHeight = 150
         qinfoTop = 55
 
+        GwQuestviewFrameContainerDialogRequired:ClearAllPoints()
+        GwQuestviewFrameContainerDialogRequired:SetPoint("CENTER", GwQuestviewFrameContainerDialog, "CENTER", 40, (itemReqOffset == 50 and -80 or -30))
         UIFrameFadeIn(GwQuestviewFrameContainerDialogRequired, 0.1, 0, 1)
 
         if QUESTREQ["money"] > 0 then
@@ -194,7 +200,6 @@ local function showRewards()
         for i = 1, itemReq, 1 do
             local frame = _G["QuestProgressItem" .. i]
             if frame then
-                local icon = _G[frame:GetName() .. "IconTexture"]
                 if itemHeight == 0 then
                     itemHeight = math.ceil(frame:GetHeight())
                 end
@@ -202,6 +207,7 @@ local function showRewards()
                     itemWidth = math.ceil(frame:GetWidth())
                 end
                 UIFrameFadeIn(frame, 0.1, 0, 1)
+                if i > 2 and itemReqOffset == 50 then itemReqOffset = (itemHeight - 9) end -- reset yOffset if itemReq > 2
                 frame:SetParent(GwQuestviewFrame)
                 frame:ClearAllPoints()
                 frame:SetPoint(
@@ -209,7 +215,7 @@ local function showRewards()
                     GwQuestviewFrame,
                     "CENTER",
                     (((i + 1) % 2) * (itemWidth + 20) - 160),
-                    -(itemHeight + 9) * (math.ceil(i / 2))
+                    -(itemHeight + itemReqOffset) * (math.ceil(i / 2))
                 )
                 frame:SetFrameLevel(5)
                 frame:SetScript(
@@ -255,7 +261,7 @@ GW.AddForProfiling("questview", "questTextCompleted", questTextCompleted)
 local function nextGossip()
     QUESTSTRINGINT = QUESTSTRINGINT + 1
     local count = 0
-    for k, v in pairs(QUESTSTRING) do
+    for k, _ in pairs(QUESTSTRING) do
         count = count + 1
     end
     if QUESTSTRINGINT <= count then
@@ -278,7 +284,7 @@ GW.AddForProfiling("questview", "nextGossip", nextGossip)
 local function lastGossip()
     QUESTSTRINGINT = max(QUESTSTRINGINT - 1, 1)
     local count = 0
-    for k, v in pairs(QUESTSTRING) do
+    for k, _ in pairs(QUESTSTRING) do
         count = count + 1
     end
     if QUESTSTRINGINT <= count then
@@ -287,12 +293,16 @@ local function lastGossip()
         if QUESTSTRINGINT ~= 1 then
             PlaySound(906)
         end
-        if QUESTSTRINGINT == count then
-            questTextCompleted()
-        else
-            GwQuestviewFrameContainerAcceptButton:SetText(L["Skip"])
-            QuestInfoRewardsFrame:SetShown(false)
-            questStateSet = false
+        GwQuestviewFrameContainerAcceptButton:SetText(L["Skip"])
+        QuestInfoRewardsFrame:SetShown(false)
+        GwQuestviewFrameContainerDialogRequired:Hide()
+        questStateSet = false
+        local itemReq = #QUESTREQ["currency"] + #QUESTREQ["stuff"]
+        for i = 1, itemReq, 1 do
+            local frame = _G["QuestProgressItem" .. i]
+            if frame then
+                frame:Hide()
+            end
         end
     else
         questTextCompleted()
@@ -542,7 +552,7 @@ local function LoadQuestview()
                 if key == "SPACE" then
                     self:SetPropagateKeyboardInput(false)
                     local Stringcount = 0
-                    for k, v in pairs(QUESTSTRING) do
+                    for k, _ in pairs(QUESTSTRING) do
                         Stringcount = Stringcount + 1
                     end
 
@@ -572,7 +582,7 @@ local function LoadQuestview()
 
     GwQuestviewFrame:SetScript(
         "OnEvent",
-        function(self, event, ...)
+        function(_, event, ...)
             if event == "QUEST_PROGRESS" then
                 hideBlizzardQuestFrame()
                 clearQuestReq()
@@ -669,7 +679,7 @@ local function LoadQuestview()
 
     GwQuestviewFrameContainerDialog:SetScript(
         "OnClick",
-        function(self, button, addon)
+        function(_, button)
             if button == "RightButton" then
                 lastGossip()
             else
@@ -679,15 +689,15 @@ local function LoadQuestview()
     )
     GwQuestviewFrameContainerDeclineQuest:SetScript(
         "OnClick",
-        function(self, event, addon)
+        function()
             CloseQuest()
         end
     )
     GwQuestviewFrameContainerAcceptButton:SetScript(
         "OnClick",
-        function(self, button, addon)
+        function()
             local Stringcount = 0
-            for k, v in pairs(QUESTSTRING) do
+            for k, _ in pairs(QUESTSTRING) do
                 Stringcount = Stringcount + 1
             end
 

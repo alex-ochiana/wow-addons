@@ -1,14 +1,15 @@
 
 GladiatorlosSADB = {
 	["profileKeys"] = {
-		["Kynaeth - Sylvanas"] = "Default",
 		["Mortifèrous - Kazzak"] = "Default",
-		["Egidus - Sylvanas"] = "Default",
 		["Crëtz - Kazzak"] = "Default",
 		["Latthrias - Sylvanas"] = "Default",
-		["Crètz - Sylvanas"] = "Default",
 		["Jiglèr - Sylvanas"] = "Default",
+		["Egidus - Sylvanas"] = "Default",
 		["Gnomèrcy - Sylvanas"] = "Default",
+		["Crètz - Sylvanas"] = "Default",
+		["Vòlkmer - Kazzak"] = "Default",
+		["Kynaeth - Sylvanas"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

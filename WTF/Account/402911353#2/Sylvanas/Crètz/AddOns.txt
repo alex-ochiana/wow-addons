@@ -165,7 +165,7 @@ LibChatAnims: enabled
 DBM: enabled
 ConsolePort: enabled
 Wasabi: enabled
-Ace3: disabled
+Ace3: enabled
 LibDBIcon-1.0: enabled
 LibSink-2.0: enabled
 LibDataBroker-1.1: enabled

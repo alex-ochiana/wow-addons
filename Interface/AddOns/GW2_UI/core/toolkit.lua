@@ -1,9 +1,6 @@
 local _, GW = ...
 
 ----- Added API to Frames -----
-local STRIP_TEX = "Texture"
-local STRIP_FONT = "FontString"
-
 local BlizzardRegions = {
     "Left",
     "Middle",
@@ -99,9 +96,9 @@ local function StripRegion(which, object, kill, alpha)
         object:Kill()
     elseif alpha then
         object:SetAlpha(0)
-    elseif which == STRIP_TEX then
+    elseif which == "Texture" then
         object:SetTexture()
-    elseif which == STRIP_FONT then
+    elseif which == "FontString" then
         object:SetText("")
     end
 end
@@ -110,7 +107,7 @@ local function StripType(which, object, kill, alpha)
     if object:IsObjectType(which) then
         StripRegion(which, object, kill, alpha)
     else
-        if which == STRIP_TEX then
+        if which == "Texture" then
             local FrameName = object.GetName and object:GetName()
             for _, Blizzard in pairs(StripTexturesBlizzFrames) do
                 local BlizzFrame = object[Blizzard] or (FrameName and _G[FrameName .. Blizzard])
@@ -132,7 +129,7 @@ local function StripType(which, object, kill, alpha)
 end
 
 local function StripTextures(object, kill, alpha)
-    StripType(STRIP_TEX, object, kill, alpha)
+    StripType("Texture", object, kill, alpha)
 end
 
 local function Kill(object)
@@ -191,7 +188,7 @@ function SkinSliderFrame(frame)
 
     local thumb = frame:GetThumbTexture()
     thumb:SetSize(SIZE - 2, SIZE - 2)
-    
+
     local tex = frame:CreateTexture("bg", "BACKGROUND")
     tex:SetTexture("Interface/AddOns/GW2_UI/textures/uistuff/sliderbg")
     frame.tex = tex
@@ -238,7 +235,7 @@ local function CreateBackdrop(frame, backdropTexture)
     end
 end
 
-local function SkinButton(button, isXButton, setTextColor, onlyHover)
+local function SkinButton(button, isXButton, setTextColor, onlyHover, noHover)
     if not button then return end
 
     local name = button.GetName and button:GetName()
@@ -277,7 +274,7 @@ local function SkinButton(button, isXButton, setTextColor, onlyHover)
         end
     end
 
-    if not isXButton or onlyHover then
+    if (not isXButton or onlyHover) and not noHover then
         button:AddHover()
     end
 end
@@ -295,14 +292,12 @@ local function SkinTab(tabButton, direction)
     if tabButton.SetDisabledTexture then tabButton:SetDisabledTexture("Interface/AddOns/GW2_UI/textures/units/unittab" .. direction) end
 
     if tabButton.Text then
-        --tabButton.Text:SetTextColor(0, 0, 0, 1)
         tabButton.Text:SetShadowOffset(0, 0)
     end
 
     local r = {tabButton:GetRegions()}
     for _,c in pairs(r) do
         if c:GetObjectType() == "FontString" then
-            --c:SetTextColor(0, 0, 0, 1)
             c:SetShadowOffset(0, 0)
         end
     end
@@ -347,6 +342,17 @@ local function SkinScrollFrame(frame)
         _G[frame:GetName() .. "Middle"]:ClearAllPoints()
         _G[frame:GetName() .. "Middle"]:SetPoint("TOPLEFT", frame, "TOPRIGHT", 12, -10)
         _G[frame:GetName() .. "Middle"]:SetPoint("BOTTOMLEFT", frame,"BOTTOMRIGHT", 12, 10)
+    end
+
+    if _G[frame:GetName() .. "ScrollBar"] and _G[frame:GetName() .. "ScrollBar"].Top then _G[frame:GetName() .. "ScrollBar"].Top:Hide() end
+    if _G[frame:GetName() .. "ScrollBar"] and _G[frame:GetName() .. "ScrollBar"].Bottom then _G[frame:GetName() .. "ScrollBar"].Bottom:Hide()end
+    if _G[frame:GetName() .. "ScrollBar"] and _G[frame:GetName() .. "ScrollBar"].Background then _G[frame:GetName() .. "ScrollBar"].Background:Hide() end
+    if _G[frame:GetName() .. "ScrollBar"] and _G[frame:GetName() .. "ScrollBar"].Middle then
+        _G[frame:GetName() .. "ScrollBar"].Middle:SetTexture("Interface/AddOns/GW2_UI/textures/uistuff/scrollbg")
+        _G[frame:GetName() .. "ScrollBar"].Middle:SetSize(3, _G[frame:GetName() .. "ScrollBar"].Middle:GetSize())
+        _G[frame:GetName() .. "ScrollBar"].Middle:ClearAllPoints()
+        _G[frame:GetName() .. "ScrollBar"].Middle:SetPoint("TOPLEFT", frame, "TOPRIGHT", 12, -10)
+        _G[frame:GetName() .. "ScrollBar"].Middle:SetPoint("BOTTOMLEFT", frame,"BOTTOMRIGHT", 12, 10)
     end
 end
 
@@ -458,7 +464,7 @@ local function HandleNextPrevButton(button, arrowDir)
     end
 
     button:StripTextures()
-    
+
     button:SetNormalTexture("Interface/AddOns/GW2_UI/Textures/uistuff/arrowup_down")
     button:SetPushedTexture("Interface/AddOns/GW2_UI/Textures/uistuff/arrowup_down")
     button:SetDisabledTexture("Interface/AddOns/GW2_UI/Texturesuistuff//arrowup_down")
@@ -516,6 +522,5 @@ while object do
     object = EnumerateFrames(object)
 end
 
---Hacky fix for issue on 7.1 PTR where scroll frames no longer seem to inherit the methods from the 'Frame' widget
 local scrollFrame = CreateFrame("ScrollFrame")
 addapi(scrollFrame)

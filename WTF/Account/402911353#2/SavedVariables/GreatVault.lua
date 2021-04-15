@@ -1,23 +1,23 @@
 
 GreatVaultDB = {
 	["profileKeys"] = {
-		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
+		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
 		["Mortifèrous - Kazzak"] = "Mortifèrous - Kazzak",
 		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
-		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
+		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
 		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
 		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
 		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
-		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
+		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
 	},
 	["profiles"] = {
-		["Kynaeth - Sylvanas"] = {
+		["Gnomèrcy - Sylvanas"] = {
 		},
 		["Mortifèrous - Kazzak"] = {
 		},
 		["Egidus - Sylvanas"] = {
 		},
-		["Gnomèrcy - Sylvanas"] = {
+		["Crëtz - Kazzak"] = {
 		},
 		["Crètz - Sylvanas"] = {
 		},
@@ -25,7 +25,7 @@ GreatVaultDB = {
 		},
 		["Jiglèr - Sylvanas"] = {
 		},
-		["Crëtz - Kazzak"] = {
+		["Kynaeth - Sylvanas"] = {
 		},
 	},
 }

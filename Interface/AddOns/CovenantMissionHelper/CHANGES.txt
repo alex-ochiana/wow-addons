@@ -1,3 +1,31 @@
+commit 6de8f09c7cce2bcc0aa96590463a2aa186786aeb
+Author: Kreolix <kreolix@yandex.ru>
+Date:   Wed Mar 24 23:39:44 2021 +0700
+
+    Hotfix
+
+commit 6de8f09c7cce2bcc0aa96590463a2aa186786aeb
+Author: Kreolix <kreolix@yandex.ru>
+Date:   Wed Mar 24 23:39:44 2021 +0700
+
+    Hotfix
+
+commit 4a1f4abed91ba133bfc412630e590dce670d5412
+Author: Kreolix <kreolix@yandex.ru>
+Date:   Wed Mar 24 22:54:49 2021 +0700
+
+    - Added blizzard's 9.0.5 changes
+    - Fixed memory leak
+    - Fixed scaling bug
+
+commit 4a1f4abed91ba133bfc412630e590dce670d5412
+Author: Kreolix <kreolix@yandex.ru>
+Date:   Wed Mar 24 22:54:49 2021 +0700
+
+    - Added blizzard's 9.0.5 changes
+    - Fixed memory leak
+    - Fixed scaling bug
+
 commit 7df4700d57e944207be1d42c16278936835b814c
 Author: Kreolix <kreolix@yandex.ru>
 Date:   Wed Feb 10 18:05:21 2021 +0700

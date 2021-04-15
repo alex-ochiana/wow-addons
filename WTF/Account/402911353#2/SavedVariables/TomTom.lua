@@ -15,9 +15,10 @@ TomTomDB = {
 		["Lastones - Kazzak"] = "Default",
 		["Needzafemale - Kazzak"] = "Default",
 		["Kynaeth - Sylvanas"] = "Default",
+		["Mortifèrous - Kazzak"] = "Default",
 		["Crètz - Sylvanas"] = "Default",
 		["Brovar - Sylvanas"] = "Default",
-		["Mortifèrous - Kazzak"] = "Default",
+		["Vòlkmer - Kazzak"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -49,10 +50,11 @@ TomTomWaypointsM = {
 		["Kakaròt - Kazzak"] = "Kakaròt - Kazzak",
 		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
 		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
-		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
+		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
+		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
 		["Òdin - Sylvanas"] = "Òdin - Sylvanas",
 		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
-		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
+		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
 		["Mortifèrous - Kazzak"] = "Mortifèrous - Kazzak",
 		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
 		["Brovar - Sylvanas"] = "Brovar - Sylvanas",
@@ -71,13 +73,15 @@ TomTomWaypointsM = {
 		},
 		["Jiglèr - Sylvanas"] = {
 		},
-		["Gnomèrcy - Sylvanas"] = {
+		["Vòlkmer - Kazzak"] = {
+		},
+		["Kynaeth - Sylvanas"] = {
 		},
 		["Òdin - Sylvanas"] = {
 		},
 		["Egidus - Sylvanas"] = {
 		},
-		["Kynaeth - Sylvanas"] = {
+		["Gnomèrcy - Sylvanas"] = {
 		},
 		["Mortifèrous - Kazzak"] = {
 		},

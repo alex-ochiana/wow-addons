@@ -2,6 +2,14 @@
 CliqueDB = nil
 CliqueDB3 = {
 	["char"] = {
+		["Mortifèrous - Kazzak"] = {
+			["spec1_profileKey"] = "Mortifèrous - Kazzak",
+			["spec2_profileKey"] = "Mortifèrous - Kazzak",
+			["downclick"] = false,
+			["fastooc"] = false,
+			["specswap"] = false,
+			["spec3_profileKey"] = "Mortifèrous - Kazzak",
+		},
 		["Kynaeth - Sylvanas"] = {
 			["spec1_profileKey"] = "Kynaeth - Sylvanas",
 			["spec2_profileKey"] = "Kynaeth - Sylvanas",
@@ -9,22 +17,30 @@ CliqueDB3 = {
 			["fastooc"] = false,
 			["specswap"] = false,
 		},
-		["Mortifèrous - Kazzak"] = {
-			["spec1_profileKey"] = "Mortifèrous - Kazzak",
-			["spec2_profileKey"] = "Mortifèrous - Kazzak",
+		["Vòlkmer - Kazzak"] = {
+			["spec1_profileKey"] = "Vòlkmer - Kazzak",
+			["spec2_profileKey"] = "Vòlkmer - Kazzak",
 			["downclick"] = false,
 			["fastooc"] = false,
-			["spec3_profileKey"] = "Mortifèrous - Kazzak",
 			["specswap"] = false,
+			["spec3_profileKey"] = "Vòlkmer - Kazzak",
 		},
 		["Crètz - Sylvanas"] = {
 			["spec1_profileKey"] = "Crètz - Sylvanas",
 			["fastooc"] = false,
-			["spec3_profileKey"] = "Crètz - Sylvanas",
+			["spec2_profileKey"] = "Crètz - Sylvanas",
 			["downclick"] = false,
 			["spec4_profileKey"] = "Crètz - Sylvanas",
 			["alerthidden"] = true,
-			["spec2_profileKey"] = "Crètz - Sylvanas",
+			["spec3_profileKey"] = "Crètz - Sylvanas",
+			["specswap"] = false,
+		},
+		["Gnomèrcy - Sylvanas"] = {
+			["spec1_profileKey"] = "Gnomèrcy - Sylvanas",
+			["spec3_profileKey"] = "Gnomèrcy - Sylvanas",
+			["downclick"] = false,
+			["fastooc"] = false,
+			["spec2_profileKey"] = "Gnomèrcy - Sylvanas",
 			["specswap"] = false,
 		},
 		["Crëtz - Kazzak"] = {
@@ -36,17 +52,18 @@ CliqueDB3 = {
 		},
 	},
 	["profileKeys"] = {
-		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
 		["Mortifèrous - Kazzak"] = "Mortifèrous - Kazzak",
-		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
 		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
-		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
 		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
 		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
+		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
+		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
+		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
 		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
+		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
 	},
 	["profiles"] = {
-		["Kynaeth - Sylvanas"] = {
+		["Mortifèrous - Kazzak"] = {
 			["bindings"] = {
 				{
 					["sets"] = {
@@ -65,7 +82,45 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Mortifèrous - Kazzak"] = {
+		["Crëtz - Kazzak"] = {
+			["bindings"] = {
+				{
+					["type"] = "target",
+					["sets"] = {
+						["default"] = true,
+					},
+					["key"] = "BUTTON1",
+					["unit"] = "mouseover",
+				}, -- [1]
+				{
+					["type"] = "menu",
+					["key"] = "BUTTON2",
+					["sets"] = {
+						["default"] = true,
+					},
+				}, -- [2]
+			},
+		},
+		["Latthrias - Sylvanas"] = {
+			["bindings"] = {
+				{
+					["type"] = "target",
+					["sets"] = {
+						["default"] = true,
+					},
+					["key"] = "BUTTON1",
+					["unit"] = "mouseover",
+				}, -- [1]
+				{
+					["type"] = "menu",
+					["key"] = "BUTTON2",
+					["sets"] = {
+						["default"] = true,
+					},
+				}, -- [2]
+			},
+		},
+		["Jiglèr - Sylvanas"] = {
 			["bindings"] = {
 				{
 					["type"] = "target",
@@ -87,10 +142,10 @@ CliqueDB3 = {
 		["Egidus - Sylvanas"] = {
 			["bindings"] = {
 				{
-					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -103,13 +158,13 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Crëtz - Kazzak"] = {
+		["Kynaeth - Sylvanas"] = {
 			["bindings"] = {
 				{
+					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
-					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -125,10 +180,10 @@ CliqueDB3 = {
 		["Crètz - Sylvanas"] = {
 			["bindings"] = {
 				{
-					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -148,53 +203,24 @@ CliqueDB3 = {
 					["icon"] = 136048,
 					["spell"] = "Innervate",
 				}, -- [3]
-			},
-		},
-		["Latthrias - Sylvanas"] = {
-			["bindings"] = {
 				{
+					["type"] = "spell",
+					["key"] = "ALT-MOUSEWHEELDOWN",
 					["sets"] = {
 						["default"] = true,
 					},
-					["type"] = "target",
-					["key"] = "BUTTON1",
-					["unit"] = "mouseover",
-				}, -- [1]
-				{
-					["type"] = "menu",
-					["key"] = "BUTTON2",
-					["sets"] = {
-						["default"] = true,
-					},
-				}, -- [2]
-			},
-		},
-		["Jiglèr - Sylvanas"] = {
-			["bindings"] = {
-				{
-					["sets"] = {
-						["default"] = true,
-					},
-					["type"] = "target",
-					["key"] = "BUTTON1",
-					["unit"] = "mouseover",
-				}, -- [1]
-				{
-					["type"] = "menu",
-					["key"] = "BUTTON2",
-					["sets"] = {
-						["default"] = true,
-					},
-				}, -- [2]
+					["icon"] = 135952,
+					["spell"] = "Remove Corruption",
+				}, -- [4]
 			},
 		},
 		["Gnomèrcy - Sylvanas"] = {
 			["bindings"] = {
 				{
+					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
-					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -205,6 +231,34 @@ CliqueDB3 = {
 						["default"] = true,
 					},
 				}, -- [2]
+			},
+		},
+		["Vòlkmer - Kazzak"] = {
+			["bindings"] = {
+				{
+					["type"] = "target",
+					["sets"] = {
+						["default"] = true,
+					},
+					["key"] = "BUTTON1",
+					["unit"] = "mouseover",
+				}, -- [1]
+				{
+					["type"] = "menu",
+					["key"] = "BUTTON2",
+					["sets"] = {
+						["default"] = true,
+					},
+				}, -- [2]
+				{
+					["type"] = "spell",
+					["key"] = "ALT-MOUSEWHEELDOWN",
+					["sets"] = {
+						["default"] = true,
+					},
+					["icon"] = 236288,
+					["spell"] = "Cleanse Spirit",
+				}, -- [3]
 			},
 		},
 	},

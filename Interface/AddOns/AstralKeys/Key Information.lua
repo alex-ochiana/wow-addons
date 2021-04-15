@@ -21,7 +21,7 @@ local function UpdateWeekly()
 	else
 		local id = e.UnitID(e.Player())
 		if id then
-			AstralKeys[id][5] = characterWeeklyBest
+			AstralKeys[id].weekly_best = characterWeeklyBest
 			e.UpdateFrames()
 		end
 	end
@@ -59,7 +59,20 @@ function e.CreateKeyLink(mapID, keyLevel)
 	else
 		mapName = e.GetMapName(mapID)
 	end
-	return strformat('|c' .. COLOUR[3] .. '|Hkeystone:158923:%d:%d:%d:%d:%d:%d|h[Keystone: %s (%d)]|h|r', mapID, keyLevel, e.AffixOne(), e.AffixTwo(), e.AffixThree(), e.AffixFour(), mapName, keyLevel):gsub('\124\124', '\124')
+	local thisAff1, thisAff2, thisAff3, thisAff4 = 0
+	if keyLevel > 1 then
+	 thisAff1 = e.AffixOne()
+	end
+	if keyLevel > 3 then
+	 thisAff2 = e.AffixTwo()
+	end
+	if keyLevel > 6 then
+	 thisAff3 = e.AffixThree()
+	end
+	if keyLevel > 8 then
+	 thisAff4 = e.AffixFour()
+	end
+	return strformat('|c' .. COLOUR[3] .. '|Hkeystone:180653:%d:%d:%d:%d:%d:%d|h[%s %s (%d)]|h|r', mapID, keyLevel, thisAff1, thisAff2, thisAff3, thisAff4, L['KEYSTONE'], mapName, keyLevel):gsub('\124\124', '\124')
 end
 
 AstralEvents:Register('CHALLENGE_MODE_COMPLETED', function()
@@ -127,12 +140,19 @@ function e.FindKeyStone(sendUpdate, anounceKey)
 		else -- Not in a guild, who are you people? Whatever, gotta make it work for them as well
 			local id = e.UnitID(e.Player())
 			if id then -- Are we in the DB already?
-				AstralKeys[id][3] = tonumber(mapID)
-				AstralKeys[id][4] = tonumber(keyLevel)
-				AstralKeys[id][6] = e.Week
-				AstralKeys[id][7] = e.WeekTime()
+				AstralKeys[id].dungeon_id = tonumber(mapID)
+				AstralKeys[id].key_level = tonumber(keyLevel)
+				AstralKeys[id].week = e.Week
+				AstralKeys[id].time_stamp = e.WeekTime()
 			else -- Nope, ok, let's add them to the DB manually.
-				AstralKeys[#AstralKeys + 1] = {e.Player(), e.PlayerClass(), tonumber(mapID), tonumber(keyLevel), e.Week, e.WeekTime()}
+				AstralKeys[#AstralKeys + 1] = {
+					unit = e.Player(),
+					class = e.PlayerClass(),
+					dungeon_id = tonumber(mapID),
+					key_level = tonumber(keyLevel),
+					week = e.Week,
+					time_stamp = e.WeekTime(),
+				}
 				e.SetUnitID(e.Player(), #AstralKeys)
 			end
 		end

@@ -21,7 +21,7 @@ do
     local myRealm = gsub(GW.myrealm, "[%s%-]", "")
     local myName = GW.myname .. "-" .. myRealm
     local printChatMessage = false
-    local function SendRecieve(self, event, prefix, message, _, sender)
+    local function SendRecieve(_, event, prefix, message, _, sender)
         if event == "CHAT_MSG_ADDON" then
             if sender == myName then return end
             if prefix == "GW2UI_VERSIONCHK" then
@@ -115,7 +115,7 @@ local function updateGuildButton(self, event)
 end
 GW.AddForProfiling("micromenu", "updateGuildButton", updateGuildButton)
 
-local function updateQuestLogButton(self, event)
+local function updateQuestLogButton(_, event)
     if event ~= "QUEST_LOG_UPDATE" then
         return
     end
@@ -326,17 +326,23 @@ local function setupMicroButtons(mbf)
         tref:ClearAllPoints()
         tref:SetPoint("BOTTOMLEFT", bref, "BOTTOMRIGHT", 4, 0)
 
+        tref:RegisterForClicks("LeftButtonUp", "RightButtonUp")
         tref:SetFrameRef("GwCharacterWindow", GwCharacterWindow)
         tref:SetAttribute(
             "_onclick",
             [=[
-            local f = self:GetFrameRef("GwCharacterWindow")
-            f:SetAttribute("keytoggle", "1")
-            f:SetAttribute("windowpanelopen", "talents")
+            if button == "LeftButton" then
+                local f = self:GetFrameRef("GwCharacterWindow")
+                f:SetAttribute("keytoggle", "1")
+                f:SetAttribute("windowpanelopen", "talents")
+            end
             ]=]
         )
         tref:SetScript("OnEnter", MainMenuBarMicroButtonMixin.OnEnter)
+        tref:SetScript("OnLeave", GameTooltip_Hide)
         tref:SetScript("OnHide", GameTooltip_Hide)
+        tref:HookScript("OnEnter", GW.TalentButton_OnEnter)
+        tref:HookScript("OnClick", GW.TalentButton_OnClick)
 
         disableMicroButton(SpellbookMicroButton)
         disableMicroButton(TalentMicroButton, true)
@@ -347,8 +353,11 @@ local function setupMicroButtons(mbf)
 
         -- TalentMicroButton
         tref = TalentMicroButton
+        tref:RegisterForClicks("LeftButtonUp", "RightButtonUp")
         tref:ClearAllPoints()
         tref:SetPoint("BOTTOMLEFT", SpellbookMicroButton, "BOTTOMRIGHT", 4, 0)
+        tref:HookScript("OnEnter", GW.TalentButton_OnEnter)
+        tref:SetScript("OnClick", GW.TalentButton_OnClick)
 
         -- we've added an extra button so expand the container a bit
         mbf:SetWidth(mbf:GetWidth() + 28)
@@ -386,6 +395,7 @@ local function setupMicroButtons(mbf)
     GuildMicroButton:RegisterEvent("GUILD_MOTD")
     GuildMicroButton:HookScript("OnEvent", updateGuildButton)
     GuildMicroButton:HookScript("OnEnter", GW.Guild_OnEnter)
+    GuildMicroButton:SetScript("OnClick", GW.Guild_OnClick)
     updateGuildButton(GuildMicroButton, "GUILD_ROSTER_UPDATE")
 
     -- LFDMicroButton
@@ -435,13 +445,55 @@ local function setupMicroButtons(mbf)
     StoreMicroButton:ClearAllPoints()
     StoreMicroButton:SetPoint("BOTTOMLEFT", HelpMicroButton, "BOTTOMRIGHT", 4, 0)
 
+    -- great vault icom
+    local greatVaultIcon = CreateFrame("Button", nil, mbf, "MainMenuBarMicroButton")
+    greatVaultIcon.newbieText = nil
+    greatVaultIcon.tooltipText = RATED_PVP_WEEKLY_VAULT
+    reskinMicroButton(greatVaultIcon, "GreatVaultMicroButton", mbf)
+    greatVaultIcon:ClearAllPoints()
+    greatVaultIcon:SetPoint("BOTTOMLEFT", IsAddOnLoaded("Dominos") and HelpMicroButton or StoreMicroButton, "BOTTOMRIGHT", 4, 0)
+    greatVaultIcon:SetScript("OnMouseUp", function(self, button, upInside)
+        if button == "LeftButton" and upInside and self:IsEnabled() then
+            GW.StopFlash(self) -- Hide flasher if playing
+            if WeeklyRewardsFrame and WeeklyRewardsFrame:IsShown() then
+                HideUIPanel(WeeklyRewardsFrame)
+            else
+                WeeklyRewards_ShowUI()
+            end
+        end
+    end)
+    -- Disable icon till level 60 then lets flash it one time
+    greatVaultIcon:SetEnabled(IsPlayerAtEffectiveMaxLevel())
+    greatVaultIcon:RegisterEvent("PLAYER_LEVEL_UP")
+    greatVaultIcon:RegisterEvent("WEEKLY_REWARDS_UPDATE")
+    greatVaultIcon:RegisterEvent("PLAYER_ENTERING_WORLD")
+    greatVaultIcon:SetScript("OnEvent", function(self, event, ...)
+        if event == "PLAYER_LEVEL_UP" then
+            local level = ...
+            if level >= GetMaxLevelForPlayerExpansion() then
+                self:SetEnabled(true)
+                GW.FrameFlash(self, 1, 0.3, 1, true)
+            end
+        elseif event == "WEEKLY_REWARDS_UPDATE" or event == "PLAYER_ENTERING_WORLD" then
+            C_Timer.After(0.5, function()
+                if C_WeeklyRewards.HasAvailableRewards() then
+                    greatVaultIcon.tooltipText = RATED_PVP_WEEKLY_VAULT .. "\n" .. GW.RGBToHex(GREEN_FONT_COLOR:GetRGB()) .. MYTHIC_PLUS_COLLECT_GREAT_VAULT .. "|r"
+                    GW.FrameFlash(greatVaultIcon, 1, 0.3, 1, true)
+                else
+                    greatVaultIcon.tooltipText = RATED_PVP_WEEKLY_VAULT
+                    GW.StopFlash(greatVaultIcon)
+                end
+            end)
+        end
+    end)
+
     -- Update icon
     updateIcon = CreateFrame("Button", nil, mbf, "MainMenuBarMicroButton")
     updateIcon.newbieText = nil
     updateIcon.tooltipText = ""
     reskinMicroButton(updateIcon, "UpdateMicroButton", mbf)
     updateIcon:ClearAllPoints()
-    updateIcon:SetPoint("BOTTOMLEFT", StoreMicroButton, "BOTTOMRIGHT", 4, 0)
+    updateIcon:SetPoint("BOTTOMLEFT", greatVaultIcon, "BOTTOMRIGHT", 4, 0)
     updateIcon:Hide()
     updateIcon:HookScript("OnEnter", function(self)
         GameTooltip:ClearLines()
@@ -578,7 +630,7 @@ local function LoadMicroMenu()
     --end
     hooksecurefunc(
         "MainMenuMicroButton_ShowAlert",
-        function(f, t)
+        function(f)
             if f == TalentMicroButtonAlert and not TalentMicroButton:HasTalentAlertToShow() then
                 f:Hide()
             end
@@ -608,7 +660,7 @@ local function LoadMicroMenu()
         fadeIn:SetFromAlpha(0.0)
         fadeIn:SetToAlpha(1.0)
         fadeIn:SetDuration(mbf.cf:GetAttribute("fadeTime"))
-        mbf.cf.fadeOut = function(self)
+        mbf.cf.fadeOut = function()
             fi:Stop()
             fo:Stop()
             fo:Play()
@@ -619,7 +671,7 @@ local function LoadMicroMenu()
             fo:Stop()
             fi:Play()
         end
-    
+
         mbf:SetFrameRef("cf", mbf.cf)
 
         mbf:SetAttribute("_onenter", [=[

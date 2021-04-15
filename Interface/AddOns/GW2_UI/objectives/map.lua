@@ -90,7 +90,7 @@ local function SetMinimapHover()
 end
 GW.SetMinimapHover = SetMinimapHover
 
-local function lfgAnim(self, elapse)
+local function lfgAnim(_, elapse)
     if Minimap:IsShown() then
         QueueStatusMinimapButtonIcon:SetAlpha(1)
     else
@@ -117,7 +117,7 @@ end
 GW.AddForProfiling("map", "lfgAnimStop", lfgAnimStop)
 
 local function hideMiniMapIcons()
-    for k, v in pairs(MAP_FRAMES_HIDE) do
+    for _, v in pairs(MAP_FRAMES_HIDE) do
         if v then
             v:Hide()
             v:SetScript(
@@ -227,54 +227,11 @@ local function checkCursorOverMap()
 end
 GW.AddForProfiling("map", "checkCursorOverMap", checkCursorOverMap)
 
-local function time_OnEnter(self)
-    local string
-
-    if GetCVarBool("timeMgrUseLocalTime") then
-        string = TIMEMANAGER_TOOLTIP_LOCALTIME:gsub(":", "")
-    else
-        string = TIMEMANAGER_TOOLTIP_REALMTIME:gsub(":", "")
-    end
-
-    GameTooltip:SetOwner(self, "ANCHOR_TOP", 0, 5)
-    GameTooltip:AddLine(TIMEMANAGER_TITLE)
-    GameTooltip:AddLine(L["Shift-Click to toggle military time format"], 1, 1, 1, TRUE)
-    GameTooltip:AddLine(L["Left Click to switch between Local and Realm time"], 1, 1, 1, TRUE)
-    GameTooltip:AddLine(L["Right Click to open the Stopwatch"], 1, 1, 1, TRUE)
-    GameTooltip:AddLine(L["Shift-Right Click to open the Time Manager"], 1, 1, 1, TRUE)
-    GameTooltip:AddDoubleLine(WORLD_MAP_FILTER_TITLE .. " ", string, nil, nil, nil, 1, 1, 0)
-    GameTooltip:SetMinimumWidth(100)
-    GameTooltip:Show()
-end
-GW.AddForProfiling("map", "time_OnEnter", time_OnEnter)
-
-local function time_OnClick(self, button)
-    if button == "LeftButton" then
-        PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON)
-
-        if not IsShiftKeyDown() then
-            TimeManager_ToggleLocalTime()
-            time_OnEnter(self)
-        else
-            TimeManager_ToggleTimeFormat()
-        end
-    end
-    if button == "RightButton" then
-        if IsShiftKeyDown() then
-            ToggleTimeManager()
-        else
-            PlaySound(SOUNDKIT.IG_MAINMENU_QUIT)
-            Stopwatch_Toggle()
-        end
-    end
-end
-GW.AddForProfiling("map", "time_OnClick", time_OnClick)
-
 local function getMinimapShape()
     return "SQUARE"
 end
 
-local function stackIcons(self, event, ...)
+local function stackIcons(self)
     local children = {Minimap:GetChildren()}
     for _, child in ipairs(children) do
         if child:HasScript("OnClick") and child:IsShown() and child:GetName() then
@@ -298,7 +255,7 @@ local function stackIcons(self, event, ...)
         if frame:IsShown() then
             frame:SetParent(self.container)
             frame:ClearAllPoints()
-            frame:SetPoint("RIGHT", self.container, "RIGHT", frameIndex * -36, 0)
+            frame:SetPoint("RIGHT", self.container, "RIGHT", frameIndex * -35, 0)
             frameIndex = frameIndex + 1
             frame:SetScript("OnDragStart", nil)
         end
@@ -311,14 +268,12 @@ local function stackIcons(self, event, ...)
 end
 GW.AddForProfiling("map", "stackIcons", stackIcons)
 
-local function stack_OnEvent(self, event, ...)
-    if event == "PLAYER_ENTERING_WORLD" then
-        stackIcons(self)
-    end
+local function stack_OnEvent(self)
+    stackIcons(self)
 end
 GW.AddForProfiling("map", "stack_OnEvent", stack_OnEvent)
 
-local function stack_OnClick(self, button)
+local function stack_OnClick(self)
     if not self.container:IsShown() then
         stackIcons(self)
         self.container:Show()
@@ -329,7 +284,7 @@ local function stack_OnClick(self, button)
 end
 GW.AddForProfiling("map", "stack_OnClick", stack_OnClick)
 
-local function minimap_OnShow(self)
+local function minimap_OnShow()
     if GwAddonToggle and GwAddonToggle.gw_Showing then
         GwAddonToggle:Show()
     end
@@ -339,7 +294,7 @@ local function minimap_OnShow(self)
 end
 GW.AddForProfiling("map", "minimap_OnShow", minimap_OnShow)
 
-local function minimap_OnHide(self)
+local function minimap_OnHide()
     if GwAddonToggle then
         GwAddonToggle:Hide()
     end
@@ -446,10 +401,12 @@ local function LoadMinimap()
         self.total_elapsed = 0.1
         self.Time:SetText(GameTime_GetTime(false))
     end
+    GwMapTime:RegisterEvent("UPDATE_INSTANCE_INFO")
     GwMapTime:SetScript("OnUpdate", fnGwMapTime_OnUpdate)
-    GwMapTime:SetScript("OnClick", time_OnClick)
-    GwMapTime:SetScript("OnEnter", time_OnEnter)
-    GwMapTime:SetScript("OnLeave", GameTooltip_Hide)
+    GwMapTime:SetScript("OnClick", GW.Time_OnClick)
+    GwMapTime:SetScript("OnEnter", GW.Time_OnEnter)
+    GwMapTime:SetScript("OnLeave", GW.Time_OnLeave)
+    GwMapTime:SetScript("OnEvent", GW.Time_OnEvent)
 
     --coords
     if GetSetting("MINIMAP_COORDS_TOGGLE") then
@@ -460,7 +417,7 @@ local function LoadMinimap()
         GwMapCoords:SetScript("OnEnter", MapCoordsMiniMap_OnEnter)
         GwMapCoords:SetScript("OnClick", MapCoordsMiniMap_OnClick)
         GwMapCoords:SetScript("OnLeave", GameTooltip_Hide)
-   
+
         -- only set the coords updater here if they are showen always
         local hoverSetting = GetSetting("MINIMAP_HOVER")
         if hoverSetting == "COORDS" or hoverSetting == "CLOCKCOORDS" or hoverSetting == "ZONECOORDS" or hoverSetting == "ALL" then
@@ -533,9 +490,10 @@ local function LoadMinimap()
         self:SetHighlightTexture("Interface/AddOns/GW2_UI/textures/icons/garrison-down")
         self.LoopingGlow:SetTexture("Interface/AddOns/GW2_UI/textures/icons/garrison-up")
     end)
+    GarrisonLandingPageMinimapButton:SetScript("OnEnter", GW.LandingButton_OnEnter)
 
     local GwMailButton = CreateFrame("Button", "GwMailButton", UIParent, "GwMailButton")
-    local fnGwMailButton_OnEvent = function(self, event, ...)
+    local fnGwMailButton_OnEvent = function(self, event)
         if (event == "UPDATE_PENDING_MAIL") then
             if (HasNewMail()) then
                 if Minimap:IsShown() then
@@ -563,7 +521,6 @@ local function LoadMinimap()
     GwMailButton.gw_Showing = false
     GwMailButton:RegisterEvent("UPDATE_PENDING_MAIL")
     GwMailButton:SetFrameLevel(GwMailButton:GetFrameLevel() + 1)
-    
 
     local fmGAT = CreateFrame("Button", "GwAddonToggle", UIParent, "GwAddonToggle")
     fmGAT:SetScript("OnClick", stack_OnClick)
@@ -589,7 +546,7 @@ local function LoadMinimap()
 
     Minimap:SetScript(
         "OnEnter",
-        function(self)
+        function()
             hoverMiniMap()
             Minimap:SetScript(
                 "OnUpdate",
@@ -616,7 +573,7 @@ local function LoadMinimap()
     )
     Minimap:SetScript(
         "OnMouseDown",
-        function(self, event)
+        function(_, event)
             if event == "RightButton" then
                 ToggleDropDownMenu(1, nil, MiniMapTrackingDropDown, "MiniMapTracking", 0, -5)
 

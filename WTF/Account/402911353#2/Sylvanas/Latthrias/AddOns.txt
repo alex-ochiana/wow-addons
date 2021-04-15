@@ -11,7 +11,7 @@ BonusRollPreview: enabled
 !BugGrabber: disabled
 BugSack: disabled
 ChampionCommander: disabled
-GarrisonMissionManager: disabled
+GarrisonMissionManager: enabled
 HandyNotes_Argus: disabled
 HandyNotes_BrokenShore: disabled
 HandyNotes_Lorewalkers: disabled
@@ -87,11 +87,11 @@ Blizzard_CompactRaidFrames: enabled
 Blizzard_ObjectiveTracker: enabled
 WeakAuras: enabled
 HandyNotes_BattleForAzerothTreasures: disabled
-NPCScan: disabled
+NPCScan: enabled
 Paste: disabled
 SmexyMats: enabled
 TomCats: enabled
-Ace3: disabled
+Ace3: enabled
 TomCats-Mechagon: disabled
 TomCats-Nazjatar: disabled
 TradeSkillMaster: disabled

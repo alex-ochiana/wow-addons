@@ -13,7 +13,7 @@ local function LoadSkinsPanel(sWindow)
     p.scroll.scrollchild.sub:SetTextColor(181 / 255, 160 / 255, 128 / 255)
     p.scroll.scrollchild.sub:SetText(L["Adjust Skin settings."])
 
-    createCat(L["Skins"], L["Adjust Skin settings."], p, 6, nil, true)
+    createCat(L["Skins"], L["Adjust Skin settings."], p, 6, nil, {p})
 
     addOption(p.scroll.scrollchild, MAINMENU_BUTTON, nil, "MAINMENU_SKIN_ENABLED")
     addOption(p.scroll.scrollchild, L["Popup notifications"], nil, "STATICPOPUP_SKIN_ENABLED")
@@ -39,6 +39,7 @@ local function LoadSkinsPanel(sWindow)
     addOption(p.scroll.scrollchild, WORLDMAP_BUTTON, nil, "WORLDMAP_SKIN_ENABLED")
     addOption(p.scroll.scrollchild, L["Gossip Frame"], nil, "GOSSIP_SKIN_ENABLED")
     addOption(p.scroll.scrollchild, ITEM_UPGRADE, nil, "ITEMUPGRADE_SKIN_ENABLED")
+    addOption(p.scroll.scrollchild, TIMEMANAGER_TITLE, nil, "TIMEMANAGER_SKIN_ENABLED")
     
     addOption(p.scroll.scrollchild, "|cffaaaaaa[AddOn]|r World Quest Tracker", nil, "SKIN_WQT_ENABLED", nil, nil, {["QUESTTRACKER_ENABLED"] = true})
     addOption(p.scroll.scrollchild, "|cffaaaaaa[AddOn]|r Immersion", nil, "IMMERSIONADDON_SKIN_ENABLED")

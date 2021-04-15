@@ -68,12 +68,12 @@ WeakAuras: enabled
 Auctionator: disabled
 BonusRollPreview: enabled
 ChampionCommander: disabled
-GarrisonMissionManager: disabled
+GarrisonMissionManager: enabled
 HandyNotes_BattleForAzerothTreasures: disabled
 MasterPlan: disabled
 MasterPlanA: disabled
 NomiCakes: disabled
-NPCScan: disabled
+NPCScan: enabled
 Overachiever: enabled
 Overachiever_Cache: enabled
 Overachiever_Tabs: enabled
@@ -85,7 +85,7 @@ TomCats: enabled
 WeakAurasCompanion: enabled
 !BugGrabber: disabled
 BugSack: disabled
-Ace3: disabled
+Ace3: enabled
 TomCats-Mechagon: disabled
 TomCats-Nazjatar: disabled
 HandyNotes_Argus: disabled

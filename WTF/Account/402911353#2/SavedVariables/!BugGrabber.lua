@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 2792,
 	["lastSanitation"] = 3,
-	["session"] = 2779,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\Routes\\Routes-v1.6.3.lua:356: bad argument #1 to 'math_sin' (number expected, got nil)",
@@ -124,9 +124,47 @@ BugGrabberDB = {
 		}, -- [15]
 		{
 			["message"] = "(null)",
-			["session"] = 2779,
 			["time"] = "2020/04/20 22:01:46",
+			["session"] = 2779,
 			["counter"] = 41,
 		}, -- [16]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'GarrisonMissionManager' tried to call the protected function 'MultiBarBottomRightButton2:Hide()'.",
+			["time"] = "2021/03/25 13:39:39",
+			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `Hide'\n[string \"@Interface\\FrameXML\\ActionButton.lua\"]:481: in function `HideGrid'\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:139: in function `MultiActionBar_UpdateGrid'\n[string \"@Interface\\FrameXML\\MultiActionBars.lua\"]:121: in function `MultiActionBar_ShowAllGrids'\n[string \"@Interface\\FrameXML\\SpellBookFrame.lua\"]:191: in function <Interface\\FrameXML\\SpellBookFrame.lua:181>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface\\FrameXML\\UIParent.lua\"]:2915: in function `SetUIPanel'\n[string \"@Interface\\FrameXML\\UIParent.lua\"]:2760: in function `ShowUIPanel'\n[string \"@Interface\\FrameXML\\UIParent.lua\"]:2628: in function <Interface\\FrameXML\\UIParent.lua:2624>\n[string \"=[C]\"]: in function `SetAttribute'\n[string \"@Interface\\FrameXML\\UIParent.lua\"]:3473: in function `ShowUIPanel'\n[string \"@Interface\\FrameXML\\SpellBookFrame.lua\"]:75: in function `ToggleSpellBook'\n[string \"TOGGLESPELLBOOK\"]:1: in function <[string \"TOGGLESPELLBOOK\"]:1>",
+			["session"] = 2781,
+			["counter"] = 1,
+		}, -- [17]
+		{
+			["message"] = "Interface\\AddOns\\GW2_UI\\mainbar/micromenu.lua:669: attempt to index global 'self' (a nil value)",
+			["time"] = "2021/03/25 12:11:19",
+			["stack"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"@Interface\\FrameXML\\RestrictedFrames.lua\"]:673: in function <Interface\\FrameXML\\RestrictedFrames.lua:672>\n[string \"@Interface\\FrameXML\\RestrictedFrames.lua\"]:811: in function `CallMethod'\n[string \"            local cf = self:GetFrameRef(\"cf\")\n            if cf:IsShown() then\n                return\n            end\n            cf:UnregisterAutoHide()\n            cf:Show()\n            cf:CallMethod(\"fadeIn\", cf)\n            cf:RegisterAutoHide(cf:GetAttribute(\"fadeTime\") + 0.25)\n        \"]:7: in function <[string \"            local cf = self:GetFrameRef(\"cf...\"]:1>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: ?\n[string \"@Interface\\FrameXML\\RestrictedExecution.lua\"]:484: in function <Interface\\FrameXML\\RestrictedExecution.lua:447>\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\FrameXML\\SecureHandlers.lua\"]:84: in function `SecureHandler_OnSimpleEvent'\n[string \"*:OnEnter\"]:3: in function <[string \"*:OnEnter\"]:1>",
+			["session"] = 2784,
+			["counter"] = 4,
+		}, -- [18]
+		{
+			["message"] = "Interface\\FrameXML\\RestrictedExecution.lua:431: Call failed: Interface\\FrameXML\\RestrictedFrames.lua:659: attempt to call field 'Enable' (a nil value)",
+			["time"] = "2021/03/25 00:07:05",
+			["locals"] = "(*temporary) = \"Call failed: Interface\\FrameXML\\RestrictedFrames.lua:659: attempt to call field 'Enable' (a nil value)\"\n",
+			["stack"] = "[string \"=[C]\"]: ?\n[string \"@Interface\\FrameXML\\RestrictedExecution.lua\"]:431: in function <Interface\\FrameXML\\RestrictedExecution.lua:420>\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\FrameXML\\SecureHandlers.lua\"]:84: in function `SecureHandler_OnSimpleEvent'\n[string \"*:OnShow\"]:1: in function <[string \"*:OnShow\"]:1>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface\\AddOns\\NPCScan\\TargetButton\\TargetButton.lua\"]:269: in function `Activate'\n[string \"@Interface\\AddOns\\NPCScan\\TargetButton\\TargetButtonManager.lua\"]:207: in function `?'\n[string \"@Interface\\AddOns\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:119: in function <...Ons\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:119>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:29: in function <...Ons\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n[string \"@Interface\\AddOns\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:64: in function `SendMessage'\n[string \"@Interface\\AddOns\\NPCScan\\Scanner.lua\"]:50: in function <Interface\\AddOns\\NPCScan\\Scanner.lua:32>\n[string \"@Interface\\AddOns\\NPCScan\\Scanner.lua\"]:346: in function <Interface\\AddOns\\NPCScan\\Scanner.lua:318>\n[string \"@Interface\\AddOns\\NPCScan\\Scanner.lua\"]:414: in function <Interface\\AddOns\\NPCScan\\Scanner.lua:410>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\Ace3\\AceBucket-3.0\\AceBucket-3.0-4.lua\"]:73: in function <...nterface\\AddOns\\Ace3\\AceBucket-3.0\\AceBucket-3.0.lua:71>\n[string \"@Interface\\AddOns\\Ace3\\AceBucket-3.0\\AceBucket-3.0-4.lua\"]:87: in function `func'\n[string \"@Interface\\AddOns\\Ace3\\AceTimer-3.0\\AceTimer-3.0-17.lua\"]:57: in function <Interface\\AddOns\\Ace3\\AceTimer-3.0\\AceTimer-3.0.lua:50>",
+			["session"] = 2784,
+			["counter"] = 85,
+		}, -- [19]
+		{
+			["message"] = "Interface\\FrameXML\\RestrictedExecution.lua:431: Call failed: Interface\\FrameXML\\RestrictedFrames.lua:650: attempt to call field 'Disable' (a nil value)",
+			["time"] = "2021/03/25 00:07:05",
+			["locals"] = "(*temporary) = \"Call failed: Interface\\FrameXML\\RestrictedFrames.lua:650: attempt to call field 'Disable' (a nil value)\"\n",
+			["stack"] = "[string \"=[C]\"]: ?\n[string \"@Interface\\FrameXML\\RestrictedExecution.lua\"]:431: in function <Interface\\FrameXML\\RestrictedExecution.lua:420>\n[string \"=(tail call)\"]: ?\n[string \"=(tail call)\"]: ?\n[string \"@Interface\\FrameXML\\SecureHandlers.lua\"]:84: in function `SecureHandler_OnSimpleEvent'\n[string \"*:OnHide\"]:1: in function <[string \"*:OnHide\"]:1>\n[string \"=[C]\"]: in function `Hide'\n[string \"@Interface\\AddOns\\NPCScan\\TargetButton\\TargetButton.lua\"]:520: in function `CreateTargetButton'\n[string \"@Interface\\AddOns\\NPCScan\\TargetButton\\TargetButtonManager.lua\"]:78: in function <...\\AddOns\\NPCScan\\TargetButton\\TargetButtonManager.lua:69>\n[string \"@Interface\\AddOns\\NPCScan\\TargetButton\\TargetButtonManager.lua\"]:194: in function `?'\n[string \"@Interface\\AddOns\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:119: in function <...Ons\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:119>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:29: in function <...Ons\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n[string \"@Interface\\AddOns\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua\"]:64: in function `SendMessage'\n[string \"@Interface\\AddOns\\NPCScan\\Scanner.lua\"]:50: in function <Interface\\AddOns\\NPCScan\\Scanner.lua:32>\n[string \"@Interface\\AddOns\\NPCScan\\Scanner.lua\"]:346: in function <Interface\\AddOns\\NPCScan\\Scanner.lua:318>\n[string \"@Interface\\AddOns\\NPCScan\\Scanner.lua\"]:414: in function <Interface\\AddOns\\NPCScan\\Scanner.lua:410>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\Ace3\\AceBucket-3.0\\AceBucket-3.0-4.lua\"]:73: in function <...nterface\\AddOns\\Ace3\\AceBucket-3.0\\AceBucket-3.0.lua:71>\n[string \"@Interface\\AddOns\\Ace3\\AceBucket-3.0\\AceBucket-3.0-4.lua\"]:87: in function `func'\n[string \"@Interface\\AddOns\\Ace3\\AceTimer-3.0\\AceTimer-3.0-17.lua\"]:57: in function <Interface\\AddOns\\Ace3\\AceTimer-3.0\\AceTimer-3.0.lua:50>",
+			["session"] = 2784,
+			["counter"] = 98,
+		}, -- [20]
+		{
+			["message"] = "Interface\\AddOns\\NetherwingEggs\\NetherwingEggs-3.05.lua:1679: hooksecurefunc(): InitializeDropDown is not a function",
+			["time"] = "2021/04/15 08:53:22",
+			["locals"] = "",
+			["stack"] = "[string \"=[C]\"]: in function `hooksecurefunc'\n[string \"@Interface\\AddOns\\NetherwingEggs\\NetherwingEggs-3.05.lua\"]:1679: in function <Interface\\AddOns\\NetherwingEggs\\NetherwingEggs.lua:1617>",
+			["session"] = 2792,
+			["counter"] = 4,
+		}, -- [21]
 	},
 }

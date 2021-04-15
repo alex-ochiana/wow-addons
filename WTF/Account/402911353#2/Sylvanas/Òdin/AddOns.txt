@@ -5,7 +5,7 @@ BonusRollPreview: enabled
 BugSack: disabled
 ChampionCommander: disabled
 ErrorFilter: disabled
-GarrisonMissionManager: disabled
+GarrisonMissionManager: enabled
 HandyNotes: enabled
 HandyNotes_Argus: disabled
 HandyNotes_BrokenShore: disabled
@@ -85,8 +85,8 @@ Blizzard_CUFProfiles: enabled
 Blizzard_CompactRaidFrames: enabled
 Blizzard_ObjectiveTracker: enabled
 HandyNotes_BattleForAzerothTreasures: disabled
-Ace3: disabled
-NPCScan: disabled
+Ace3: enabled
+NPCScan: enabled
 Paste: disabled
 SmexyMats: enabled
 WeakAuras: enabled

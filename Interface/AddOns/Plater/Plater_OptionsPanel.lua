@@ -11244,7 +11244,7 @@ end
 				Plater.RefreshDBUpvalues()
 				Plater.UpdateAllPlates()
 			end,
-			min = 1,
+			min = -5000,
 			max = 5000,
 			step = 1,
 			name = "Cast Bar",
@@ -11259,7 +11259,7 @@ end
 				Plater.RefreshDBUpvalues()
 				Plater.UpdateAllPlates()
 			end,
-			min = 1,
+			min = -5000,
 			max = 5000,
 			step = 1,
 			name = "Aura Frame 1",
@@ -11274,7 +11274,7 @@ end
 				Plater.RefreshDBUpvalues()
 				Plater.UpdateAllPlates()
 			end,
-			min = 1,
+			min = -5000,
 			max = 5000,
 			step = 1,
 			name = "Aura Frame 2",
@@ -11289,7 +11289,7 @@ end
 				Plater.RefreshDBUpvalues()
 				Plater.UpdateAllPlates()
 			end,
-			min = 1,
+			min = -5000,
 			max = 5000,
 			step = 1,
 			name = "Buff Special Frame",
@@ -12784,6 +12784,17 @@ end
 			usedecimals = true,
 		},
 		
+		{type = "blank"},
+		{type = "label", get = function() return "Region:" end, text_template = DF:GetTemplate ("font", "ORANGE_FONT_TEMPLATE")},
+		
+		{
+			type = "select",
+			get = function() return Plater.db.profile.number_region end,
+			values = function() return build_number_format_options() end,
+			name = "Number Format",
+			desc = "Number format",
+		},
+		
 		{type = "breakline"},
 		{type = "label", get = function() return "Misc:" end, text_template = DF:GetTemplate ("font", "ORANGE_FONT_TEMPLATE")},
 		
@@ -12847,6 +12858,18 @@ end
 			end,
 			name = "In/Out of Combat Settings - Use Player Combat State",
 			desc = "Use the players combat state instead of the units when applying settings for In/Out of Combat.",
+		},
+		
+		{
+			type = "toggle",
+			get = function() return (Plater.db.profile.shadowMode == 0) end,
+			set = function (self, fixedparam, value) 
+				Plater.db.profile.shadowMode = value and 0 or 1
+				Plater.WipeAndRecompileAllScripts ("script")
+				Plater.WipeAndRecompileAllScripts ("hook")
+			end,
+			name = "Legacy scrip/mod code support.",
+			desc = "Enable this when experiencing issues with mod/script compilation\n\n||cFFFFFF00Important|r: Will be deprecated in the future.",
 		},
 		
 			--=[ --removed top and bottom constrain options
@@ -13043,17 +13066,6 @@ end
 		},
 
 		{type = "blank"},
-		{type = "label", get = function() return "Region:" end, text_template = DF:GetTemplate ("font", "ORANGE_FONT_TEMPLATE")},
-		
-		{
-			type = "select",
-			get = function() return Plater.db.profile.number_region end,
-			values = function() return build_number_format_options() end,
-			name = "Number Format",
-			desc = "Number format",
-		},
-		
-		{type = "breakline"},
 
 		{type = "label", get = function() return "Unit Widget Bars:" end, text_template = DF:GetTemplate ("font", "ORANGE_FONT_TEMPLATE")},
 	

@@ -7,61 +7,50 @@ AstralKeys = {
 		["key_level"] = 14,
 		["unit"] = "Crètz-Sylvanas",
 		["dungeon_id"] = 379,
-		["week"] = 190,
+		["week"] = 195,
 		["faction"] = 0,
-		["time_stamp"] = 203914,
+		["time_stamp"] = 91935,
 	}, -- [1]
 	{
 		["source"] = "guild",
 		["weekly_best"] = 0,
-		["class"] = "HUNTER",
-		["key_level"] = 16,
-		["unit"] = "Nevé-Sylvanas",
-		["dungeon_id"] = 376,
-		["week"] = 190,
-		["faction"] = 0,
-		["time_stamp"] = 7443,
-	}, -- [2]
-	{
-		["source"] = "guild",
-		["weekly_best"] = 12,
-		["class"] = "DEMONHUNTER",
-		["key_level"] = 11,
-		["unit"] = "Achilless-Sylvanas",
-		["dungeon_id"] = 377,
-		["week"] = 190,
-		["faction"] = 0,
-		["time_stamp"] = 33966,
-	}, -- [3]
-	{
-		["source"] = "guild",
-		["weekly_best"] = 0,
-		["class"] = "DEMONHUNTER",
-		["key_level"] = 17,
-		["unit"] = "Eferalgan-Sylvanas",
-		["dungeon_id"] = 380,
-		["week"] = 190,
-		["faction"] = 0,
-		["time_stamp"] = 34561,
-	}, -- [4]
-	{
-		["source"] = "guild",
-		["weekly_best"] = 12,
 		["class"] = "DRUID",
 		["key_level"] = 16,
 		["unit"] = "Abity-Sylvanas",
 		["dungeon_id"] = 376,
-		["week"] = 190,
+		["week"] = 195,
 		["faction"] = 0,
-		["time_stamp"] = 96752,
-	}, -- [5]
+		["time_stamp"] = 3173,
+	}, -- [2]
+	{
+		["source"] = "guild",
+		["weekly_best"] = 17,
+		["class"] = "DEMONHUNTER",
+		["key_level"] = 15,
+		["unit"] = "Achilless-Sylvanas",
+		["dungeon_id"] = 379,
+		["week"] = 195,
+		["faction"] = 0,
+		["time_stamp"] = 98607,
+	}, -- [3]
+	{
+		["source"] = "guild",
+		["weekly_best"] = 0,
+		["class"] = "HUNTER",
+		["key_level"] = 14,
+		["unit"] = "Shenaa-Sylvanas",
+		["dungeon_id"] = 376,
+		["week"] = 195,
+		["faction"] = 0,
+		["time_stamp"] = 26469,
+	}, -- [4]
 }
 AstralCharacters = {
 	{
 		["weekly_best"] = 0,
 		["class"] = "DRUID",
-		["faction"] = 0,
 		["unit"] = "Crètz-Sylvanas",
+		["faction"] = 0,
 	}, -- [1]
 }
 AstralKeysSettings = {
@@ -70,15 +59,15 @@ AstralKeysSettings = {
 		["show_minimap_button"] = {
 			["isEnabled"] = true,
 		},
-		["init_time"] = 1615964400,
+		["init_time"] = 1618988400,
 		["expanded_tooltip"] = {
 			["isEnabled"] = true,
 		},
 		["report_on_message"] = {
-			["no_key"] = false,
 			["party"] = true,
-			["guild"] = false,
 			["raid"] = false,
+			["guild"] = false,
+			["no_key"] = false,
 		},
 		["show_tooltip_key"] = {
 			["isEnabled"] = true,
@@ -103,9 +92,7 @@ AstralKeysSettings = {
 			true, -- [9]
 			true, -- [10]
 		},
-		["show_offline"] = {
-			["isEnabled"] = true,
-		},
+		["current_list"] = "GUILD",
 		["isCollapsed"] = {
 			["isEnabled"] = false,
 		},
@@ -114,8 +101,11 @@ AstralKeysSettings = {
 			["isEnabled"] = false,
 		},
 		["sorth_method"] = "character_name",
-		["current_list"] = "GUILD",
+		["show_offline"] = {
+			["isEnabled"] = true,
+		},
 	},
+	["new_settings_config"] = true,
 	["friendOptions"] = {
 		["friend_sync"] = {
 			["isEnabled"] = true,
@@ -124,35 +114,37 @@ AstralKeysSettings = {
 			["isEnabled"] = true,
 		},
 	},
-	["new_settings_config"] = true,
 }
 AstralMinimap = {
 	["profileKeys"] = {
-		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
 		["Mortifèrous - Kazzak"] = "Mortifèrous - Kazzak",
-		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
-		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
-		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
+		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
 		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
 		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
-		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
+		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
+		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
+		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
+		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
+		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
 	},
 	["profiles"] = {
-		["Kynaeth - Sylvanas"] = {
-		},
 		["Mortifèrous - Kazzak"] = {
 		},
-		["Egidus - Sylvanas"] = {
-		},
-		["Gnomèrcy - Sylvanas"] = {
-		},
-		["Crètz - Sylvanas"] = {
+		["Crëtz - Kazzak"] = {
 		},
 		["Latthrias - Sylvanas"] = {
 		},
 		["Jiglèr - Sylvanas"] = {
 		},
-		["Crëtz - Kazzak"] = {
+		["Egidus - Sylvanas"] = {
+		},
+		["Kynaeth - Sylvanas"] = {
+		},
+		["Crètz - Sylvanas"] = {
+		},
+		["Gnomèrcy - Sylvanas"] = {
+		},
+		["Vòlkmer - Kazzak"] = {
 		},
 	},
 }
@@ -174,9 +166,9 @@ AstralLists = {
 			["Nevé-Sylvanas"] = true,
 			["Abity-Sylvanas"] = true,
 			["Aburitoarea-Sylvanas"] = true,
-			["Eferalgan-Sylvanas"] = true,
-			["Spandexx-Sylvanas"] = true,
 			["Anamarria-Sylvanas"] = true,
+			["Spandexx-Sylvanas"] = true,
+			["Eferalgan-Sylvanas"] = true,
 			["Achilless-Sylvanas"] = true,
 		},
 	}, -- [1]

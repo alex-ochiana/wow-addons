@@ -1,0 +1,12 @@
+tag b8c8543e92d2aed681c286dc8fdfabbb786065af v6
+Author:	David Lynch <kemayo@gmail.com>
+Date:	Sat Nov 21 13:01:34 2020 -0600
+
+Tagging v6
+
+commit fec2c54a0953e6f5644dc74affbf8a6cd5a028f3
+Author: David Lynch <kemayo@gmail.com>
+Date:   Sat Nov 21 13:01:05 2020 -0600
+
+    Bump TOC for 9.0.2
+

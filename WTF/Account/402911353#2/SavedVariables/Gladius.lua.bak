@@ -1,22 +1,27 @@
 
 Gladius2DB = {
 	["profileKeys"] = {
+		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
 		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
 		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
-		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
+		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
 		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
 		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
-		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
+		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
 	},
 	["profiles"] = {
+		["Vòlkmer - Kazzak"] = {
+			["auraVersion"] = 1,
+			["tagsVersion"] = 4,
+		},
 		["Egidus - Sylvanas"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
-			["x"] = {
-				["arena1"] = 946.48917222421,
-			},
 			["y"] = {
 				["arena1"] = 468.6223203751797,
+			},
+			["x"] = {
+				["arena1"] = 946.48917222421,
 			},
 		},
 		["Kynaeth - Sylvanas"] = {
@@ -29,18 +34,15 @@ Gladius2DB = {
 				["arena1"] = 984.8889127373695,
 			},
 		},
-		["Crètz - Sylvanas"] = {
-			["tagsVersion"] = 4,
-			["y"] = {
-				["arena1"] = 480.7113397651301,
-			},
-			["x"] = {
-				["arena1"] = 968.5337908135625,
-			},
-			["announcements"] = {
-				["enemies"] = false,
-			},
+		["Gnomèrcy - Sylvanas"] = {
 			["auraVersion"] = 1,
+			["tagsVersion"] = 4,
+			["x"] = {
+				["arena1"] = 1002.666604140068,
+			},
+			["y"] = {
+				["arena1"] = 517.6889448271868,
+			},
 		},
 		["Latthrias - Sylvanas"] = {
 			["auraVersion"] = 1,
@@ -50,14 +52,17 @@ Gladius2DB = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
 		},
-		["Gnomèrcy - Sylvanas"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
+		["Crètz - Sylvanas"] = {
 			["y"] = {
-				["arena1"] = 517.6889448271868,
+				["arena1"] = 480.7113397651301,
 			},
 			["x"] = {
-				["arena1"] = 1002.666604140068,
+				["arena1"] = 968.5337908135625,
+			},
+			["auraVersion"] = 1,
+			["tagsVersion"] = 4,
+			["announcements"] = {
+				["enemies"] = false,
 			},
 		},
 	},

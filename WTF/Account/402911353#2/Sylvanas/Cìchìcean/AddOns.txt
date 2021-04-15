@@ -1,0 +1,6 @@
+NPCScan: enabled
+SmexyMats: enabled
+GarrisonMissionManager: enabled
+GatherMate2: enabled
+GatherMate2_Data: enabled
+Ace3: enabled
