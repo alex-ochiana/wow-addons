@@ -4,53 +4,42 @@ AstralKeys = {
 		["source"] = "guild",
 		["weekly_best"] = 0,
 		["class"] = "DRUID",
-		["key_level"] = 14,
-		["unit"] = "Crètz-Sylvanas",
-		["dungeon_id"] = 379,
-		["week"] = 195,
+		["key_level"] = 15,
+		["unit"] = "Abity-Sylvanas",
+		["dungeon_id"] = 377,
+		["week"] = 197,
 		["faction"] = 0,
-		["time_stamp"] = 91935,
+		["time_stamp"] = 3022,
 	}, -- [1]
 	{
 		["source"] = "guild",
 		["weekly_best"] = 0,
-		["class"] = "DRUID",
-		["key_level"] = 16,
-		["unit"] = "Abity-Sylvanas",
-		["dungeon_id"] = 376,
-		["week"] = 195,
-		["faction"] = 0,
-		["time_stamp"] = 3173,
-	}, -- [2]
-	{
-		["source"] = "guild",
-		["weekly_best"] = 17,
 		["class"] = "DEMONHUNTER",
 		["key_level"] = 15,
 		["unit"] = "Achilless-Sylvanas",
-		["dungeon_id"] = 379,
-		["week"] = 195,
+		["dungeon_id"] = 377,
+		["week"] = 197,
 		["faction"] = 0,
-		["time_stamp"] = 98607,
-	}, -- [3]
+		["time_stamp"] = 6146,
+	}, -- [2]
 	{
 		["source"] = "guild",
 		["weekly_best"] = 0,
-		["class"] = "HUNTER",
-		["key_level"] = 14,
-		["unit"] = "Shenaa-Sylvanas",
-		["dungeon_id"] = 376,
-		["week"] = 195,
+		["class"] = "DRUID",
+		["key_level"] = 12,
+		["unit"] = "Crètz-Sylvanas",
+		["dungeon_id"] = 381,
+		["week"] = 197,
 		["faction"] = 0,
-		["time_stamp"] = 26469,
-	}, -- [4]
+		["time_stamp"] = 48397,
+	}, -- [3]
 }
 AstralCharacters = {
 	{
 		["weekly_best"] = 0,
 		["class"] = "DRUID",
-		["unit"] = "Crètz-Sylvanas",
 		["faction"] = 0,
+		["unit"] = "Crètz-Sylvanas",
 	}, -- [1]
 }
 AstralKeysSettings = {
@@ -59,15 +48,15 @@ AstralKeysSettings = {
 		["show_minimap_button"] = {
 			["isEnabled"] = true,
 		},
-		["init_time"] = 1618988400,
+		["init_time"] = 1620198000,
 		["expanded_tooltip"] = {
 			["isEnabled"] = true,
 		},
 		["report_on_message"] = {
-			["party"] = true,
-			["raid"] = false,
-			["guild"] = false,
 			["no_key"] = false,
+			["party"] = true,
+			["guild"] = false,
+			["raid"] = false,
 		},
 		["show_tooltip_key"] = {
 			["isEnabled"] = true,
@@ -92,7 +81,9 @@ AstralKeysSettings = {
 			true, -- [9]
 			true, -- [10]
 		},
-		["current_list"] = "GUILD",
+		["show_offline"] = {
+			["isEnabled"] = true,
+		},
 		["isCollapsed"] = {
 			["isEnabled"] = false,
 		},
@@ -101,11 +92,8 @@ AstralKeysSettings = {
 			["isEnabled"] = false,
 		},
 		["sorth_method"] = "character_name",
-		["show_offline"] = {
-			["isEnabled"] = true,
-		},
+		["current_list"] = "GUILD",
 	},
-	["new_settings_config"] = true,
 	["friendOptions"] = {
 		["friend_sync"] = {
 			["isEnabled"] = true,
@@ -114,6 +102,7 @@ AstralKeysSettings = {
 			["isEnabled"] = true,
 		},
 	},
+	["new_settings_config"] = true,
 }
 AstralMinimap = {
 	["profileKeys"] = {
@@ -121,11 +110,12 @@ AstralMinimap = {
 		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
 		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
 		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
+		["Plüto - Sylvanas"] = "Plüto - Sylvanas",
 		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
 		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
 		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
-		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
 		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
+		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
 	},
 	["profiles"] = {
 		["Mortifèrous - Kazzak"] = {
@@ -136,15 +126,17 @@ AstralMinimap = {
 		},
 		["Jiglèr - Sylvanas"] = {
 		},
+		["Plüto - Sylvanas"] = {
+		},
 		["Egidus - Sylvanas"] = {
 		},
 		["Kynaeth - Sylvanas"] = {
 		},
 		["Crètz - Sylvanas"] = {
 		},
-		["Gnomèrcy - Sylvanas"] = {
-		},
 		["Vòlkmer - Kazzak"] = {
+		},
+		["Gnomèrcy - Sylvanas"] = {
 		},
 	},
 }
@@ -165,10 +157,11 @@ AstralLists = {
 			["Leshinata-Sylvanas"] = true,
 			["Nevé-Sylvanas"] = true,
 			["Abity-Sylvanas"] = true,
-			["Aburitoarea-Sylvanas"] = true,
-			["Anamarria-Sylvanas"] = true,
-			["Spandexx-Sylvanas"] = true,
 			["Eferalgan-Sylvanas"] = true,
+			["Aburitoarea-Sylvanas"] = true,
+			["Alessuca-Sylvanas"] = true,
+			["Spandexx-Sylvanas"] = true,
+			["Anamarria-Sylvanas"] = true,
 			["Achilless-Sylvanas"] = true,
 		},
 	}, -- [1]

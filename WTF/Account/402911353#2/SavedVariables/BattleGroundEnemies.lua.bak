@@ -5,11 +5,12 @@ BattleGroundEnemiesDB = {
 		["Crëtz - Kazzak"] = "Default",
 		["Latthrias - Sylvanas"] = "Default",
 		["Jiglèr - Sylvanas"] = "Default",
+		["Plüto - Sylvanas"] = "Default",
 		["Egidus - Sylvanas"] = "Default",
 		["Kynaeth - Sylvanas"] = "Default",
 		["Crètz - Sylvanas"] = "Default",
-		["Vòlkmer - Kazzak"] = "Default",
 		["Gnomèrcy - Sylvanas"] = "Default",
+		["Vòlkmer - Kazzak"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

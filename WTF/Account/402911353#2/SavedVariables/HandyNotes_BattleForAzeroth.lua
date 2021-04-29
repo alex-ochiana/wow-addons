@@ -5,6 +5,7 @@ HandyNotes_BattleForAzerothDB = {
 		["Egidus - Sylvanas"] = "Default",
 		["Kynaeth - Sylvanas"] = "Default",
 		["Crètz - Sylvanas"] = "Default",
+		["Plüto - Sylvanas"] = "Default",
 		["Gnomèrcy - Sylvanas"] = "Default",
 	},
 	["profiles"] = {

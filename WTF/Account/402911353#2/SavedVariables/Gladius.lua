@@ -1,16 +1,27 @@
 
 Gladius2DB = {
 	["profileKeys"] = {
-		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
+		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
+		["Plüto - Sylvanas"] = "Plüto - Sylvanas",
 		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
 		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
-		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
 		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
+		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
 		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
-		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
+		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
 	},
 	["profiles"] = {
-		["Vòlkmer - Kazzak"] = {
+		["Gnomèrcy - Sylvanas"] = {
+			["auraVersion"] = 1,
+			["tagsVersion"] = 4,
+			["y"] = {
+				["arena1"] = 517.6889448271868,
+			},
+			["x"] = {
+				["arena1"] = 1002.666604140068,
+			},
+		},
+		["Plüto - Sylvanas"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
 		},
@@ -34,6 +45,10 @@ Gladius2DB = {
 				["arena1"] = 561.7777913808823,
 			},
 		},
+		["Latthrias - Sylvanas"] = {
+			["auraVersion"] = 1,
+			["tagsVersion"] = 4,
+		},
 		["Crètz - Sylvanas"] = {
 			["tagsVersion"] = 4,
 			["y"] = {
@@ -47,23 +62,13 @@ Gladius2DB = {
 			},
 			["auraVersion"] = 1,
 		},
-		["Latthrias - Sylvanas"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-		},
 		["Jiglèr - Sylvanas"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
 		},
-		["Gnomèrcy - Sylvanas"] = {
+		["Vòlkmer - Kazzak"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
-			["y"] = {
-				["arena1"] = 517.6889448271868,
-			},
-			["x"] = {
-				["arena1"] = 1002.666604140068,
-			},
 		},
 	},
 }

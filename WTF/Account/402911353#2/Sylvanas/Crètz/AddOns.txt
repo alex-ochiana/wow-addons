@@ -337,3 +337,4 @@ TomCats-LoveIsInTheAir: disabled
 TomCats-LunarFestival: disabled
 TomCats-Noblegarden: disabled
 Masque_Caith: disabled
+Plater: enabled

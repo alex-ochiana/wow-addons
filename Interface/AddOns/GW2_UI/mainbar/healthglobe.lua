@@ -1,4 +1,5 @@
 local _, GW = ...
+local L = GW.L
 local CommaValue = GW.CommaValue
 local AddToClique = GW.AddToClique
 local Self_Hide = GW.Self_Hide
@@ -7,7 +8,7 @@ local IsIn = GW.IsIn
 local MixinHideDuringPetAndOverride = GW.MixinHideDuringPetAndOverride
 local GetSetting = GW.GetSetting
 
-local function repair_OnEvent(self, event, ...)
+local function repair_OnEvent(self, event)
     if event ~= "PLAYER_ENTERING_WORLD" and not GW.inWorld then
         return
     end
@@ -200,7 +201,7 @@ end
 GW.PlayerSelectPvp = selectPvp
 GW.AddForProfiling("healthglobe", "selectPvp", selectPvp)
 
-local function globe_OnEvent(self, event, ...)
+local function globe_OnEvent(self, event)
     if event == "PLAYER_ENTERING_WORLD" then
         MixinHideDuringPetAndOverride(self)
         updateHealthData(self, false)
@@ -237,16 +238,26 @@ local function globe_OnEnter(self)
             if pvpactive then
                 local pvpTime = GetPVPTimer()
                 if pvpTime > 0 and pvpTime < 301000 then
-                    local _, nMin, nSec, _ = TimeParts(pvpTime)
-                    GameTooltip_AddNormalLine(
-                        GameTooltip,
-                        TIME_REMAINING .. " " .. string.format(TIMER_MINUTES_DISPLAY, nMin, nSec)
-                    )
+                    local _, nMin, nSec = TimeParts(pvpTime)
+                    GameTooltip_AddNormalLine(GameTooltip, TIME_REMAINING .. " " .. string.format(TIMER_MINUTES_DISPLAY, nMin, nSec))
                 end
                 GameTooltip_AddNormalLine(GameTooltip, PVP_TOGGLE_OFF_VERBOSE, true)
             else
                 GameTooltip_AddNormalLine(GameTooltip, PVP_WARMODE_TOGGLE_OFF, true)
             end
+        end
+    end
+
+    if IsInRaid() then
+        local groupNumber
+        for i = 1, GetNumGroupMembers() do
+            if UnitIsUnit("raid" .. i, "player") then
+                groupNumber = select(3, GetRaidRosterInfo(i))
+            end
+        end
+        if groupNumber then
+            GameTooltip:AddLine(" ")
+            GameTooltip:AddLine(format(QUEST_SUGGESTED_GROUP_NUM_TAG, groupNumber), 1, 1, 1)
         end
     end
     GameTooltip:Show()
@@ -282,7 +293,7 @@ local function LoadHealthGlobe()
     GW.RegisterScaleFrame(hg, 1.1)
 
     -- position based on XP bar space and make it movable if your actionbars are off
-    if GetSetting("ACTIONBARS_ENABLED") then
+    if GetSetting("ACTIONBARS_ENABLED") and not GW.IsIncompatibleAddonLoaded("Actionbars") then
         if GetSetting("XPBAR_ENABLED") then
             hg:SetPoint("BOTTOM", UIParent, "BOTTOM", 0, 17)
         else
@@ -318,7 +329,7 @@ local function LoadHealthGlobe()
     -- so we do it here instead
     hg.fill.maskb:SetPoint("CENTER", hg.fill, "CENTER", 0, 0)
     hg.fill.maska:SetPoint("CENTER", hg.fill, "CENTER", 0, 0)
-    
+
     hg.fill.absorb_over:AddMaskTexture(hg.fill.maska)
     hg.fill.absorb_under:AddMaskTexture(hg.fill.maskb)
     hg.fill.anti:AddMaskTexture(hg.fill.maskb)

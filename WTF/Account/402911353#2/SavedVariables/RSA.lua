@@ -9,6 +9,7 @@ RSADB = {
 		["Crëtz - Kazzak"] = "DEMONHUNTER",
 		["Latthrias - Sylvanas"] = "PRIEST",
 		["Jiglèr - Sylvanas"] = "WARRIOR",
+		["Plüto - Sylvanas"] = "ROGUE",
 		["Egidus - Sylvanas"] = "MAGE",
 		["Kynaeth - Sylvanas"] = "DEMONHUNTER",
 		["Crètz - Sylvanas"] = "DRUID",
@@ -22,6 +23,17 @@ RSADB = {
 		["releaseType"] = "Release",
 	},
 	["profiles"] = {
+		["ROGUE"] = {
+			["General"] = {
+				["Class"] = "ROGUE",
+			},
+			["Modules"] = {
+				["Racials"] = true,
+				["Utilities"] = true,
+				["Rogue"] = true,
+			},
+			["Fixed"] = true,
+		},
 		["WARRIOR"] = {
 			["Modules"] = {
 				["Racials"] = true,
@@ -67,31 +79,15 @@ RSADB = {
 			},
 		},
 		["DRUID"] = {
-			["General"] = {
-				["Class"] = "DRUID",
-			},
 			["Modules"] = {
 				["Racials"] = true,
 				["Druid"] = true,
 				["Utilities"] = true,
 			},
-			["Utilities"] = {
-				["Spells"] = {
-					["EngineerRessBFA"] = {
-						["Whisper"] = false,
-					},
-				},
-			},
 			["Druid"] = {
 				["Spells"] = {
 					["Growl"] = {
 						["SmartGroup"] = false,
-					},
-					["Revive"] = {
-						["Whisper"] = false,
-					},
-					["Rebirth"] = {
-						["Whisper"] = false,
 					},
 					["Innervate"] = {
 						["Messages"] = {
@@ -100,6 +96,22 @@ RSADB = {
 							},
 						},
 						["Yell"] = true,
+					},
+					["Revive"] = {
+						["Whisper"] = false,
+					},
+					["Rebirth"] = {
+						["Whisper"] = false,
+					},
+				},
+			},
+			["General"] = {
+				["Class"] = "DRUID",
+			},
+			["Utilities"] = {
+				["Spells"] = {
+					["EngineerRessBFA"] = {
+						["Whisper"] = false,
 					},
 				},
 			},

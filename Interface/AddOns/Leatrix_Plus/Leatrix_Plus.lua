@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 9.0.24 (14th April 2021)
+-- 	Leatrix Plus 9.0.26 (29th April 2021)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "9.0.24"
+	LeaPlusLC["AddonVer"] = "9.0.26"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -386,6 +386,7 @@
 		LeaPlusLC:LockOption("AutomateQuests", "AutomateQuestsBtn", false)			-- Automate quests
 		LeaPlusLC:LockOption("AutoRepairGear", "AutoRepairBtn", false)				-- Repair automatically
 		LeaPlusLC:LockOption("InviteFromWhisper", "InvWhisperBtn", false)			-- Invite from whispers
+		LeaPlusLC:LockOption("NoChatButtons", "NoChatButtonsBtn", true)				-- Hide chat buttons
 		LeaPlusLC:LockOption("MailFontChange", "MailTextBtn", true)					-- Resize mail text
 		LeaPlusLC:LockOption("QuestFontChange", "QuestTextBtn", true)				-- Resize quest text
 		LeaPlusLC:LockOption("MinimapMod", "ModMinimapBtn", true)					-- Enhance minimap
@@ -1660,29 +1661,16 @@
 			LeaPlusCB["DressUpNudeBtn"]:ClearAllPoints()
 			LeaPlusCB["DressUpNudeBtn"]:SetPoint("RIGHT", DressUpFrameResetButton, "LEFT", 0, 0)
 			LeaPlusCB["DressUpNudeBtn"]:SetScript("OnClick", function()
-				-- Strip model
-				SetupPlayerForModelScene(DressUpFrame.ModelScene, {}, false, false)
+				local playerActor = DressUpFrame.ModelScene:GetPlayerActor()
+				playerActor:Undress()
 			end)
 
 			LeaPlusLC:CreateButton("DressUpTabBtn", DressUpFrame, "Tabard", "BOTTOMLEFT", 26, 79, 80, 22, false, "")
 			LeaPlusCB["DressUpTabBtn"]:ClearAllPoints()
 			LeaPlusCB["DressUpTabBtn"]:SetPoint("RIGHT", LeaPlusCB["DressUpNudeBtn"], "LEFT", 0, 0)
 			LeaPlusCB["DressUpTabBtn"]:SetScript("OnClick", function()
-				-- Store all appearance sources in table
-				local appearanceSources = {}
 				local playerActor = DressUpFrame.ModelScene:GetPlayerActor()
-				for slotID = 1, 19 do
-					local appearanceSourceID, illusionSourceID = playerActor:GetSlotTransmogSources(slotID)
-					tinsert(appearanceSources, appearanceSourceID)
-				end
-				-- Strip model
-				SetupPlayerForModelScene(DressUpFrame.ModelScene, {}, false, false)
-				-- Apply all appearance sources except tabard slot (19)
-				for slotID = 1, 18 do
-					if appearanceSources[slotID] and appearanceSources[slotID] > 0 then
-						playerActor:TryOn(appearanceSources[slotID])
-					end
-				end
+				playerActor:UndressSlot(19)
 			end)
 
 			-- Only show dressup buttons if its a player (reset button will show too)
@@ -1694,47 +1682,6 @@
 			hooksecurefunc(DressUpFrameResetButton, "Hide", function()
 				LeaPlusCB["DressUpNudeBtn"]:Hide()
 				LeaPlusCB["DressUpTabBtn"]:Hide()
-			end)
-
-			-- Add buttons to auction house dressup frame
-			LeaPlusLC:CreateButton("DressUpSideBtn", SideDressUpFrame, "Tabard", "BOTTOMLEFT", 14, 40, 60, 22, false, "")
-			LeaPlusCB["DressUpSideBtn"]:SetFrameLevel(4)
-			LeaPlusCB["DressUpSideBtn"]:SetFrameStrata("HIGH")
-			LeaPlusCB["DressUpSideBtn"]:SetScript("OnClick", function()
-				-- Store all appearance sources in table
-				local appearanceSources = {}
-				local playerActor = SideDressUpFrame.ModelScene:GetPlayerActor()
-				for slotID = 1, 19 do
-					local appearanceSourceID, illusionSourceID = playerActor:GetSlotTransmogSources(slotID)
-					tinsert(appearanceSources, appearanceSourceID)
-				end
-				-- Strip model
-				SetupPlayerForModelScene(SideDressUpFrame.ModelScene, {}, false, false)
-				-- Apply all appearance sources except tabard slot (19)
-				for slotID = 1, 18 do
-					if appearanceSources[slotID] and appearanceSources[slotID] > 0 then
-						playerActor:TryOn(appearanceSources[slotID])
-					end
-				end
-			end)
-
-			LeaPlusLC:CreateButton("DressUpSideNudeBtn", SideDressUpFrame, "Nude", "BOTTOMRIGHT", -18, 40, 60, 22, false, "")
-			LeaPlusCB["DressUpSideNudeBtn"]:SetFrameLevel(4)
-			LeaPlusCB["DressUpSideNudeBtn"]:SetFrameStrata("HIGH")
-			LeaPlusCB["DressUpSideNudeBtn"]:SetScript("OnClick", function()
-				-- Strip model
-				SetupPlayerForModelScene(SideDressUpFrame.ModelScene, {}, false, false)
-			end)
-
-			-- Only show side dressup buttons if its a player (reset button will show too)
-			hooksecurefunc(SideDressUpFrame.ResetButton, "Show", function()
-				LeaPlusCB["DressUpSideBtn"]:Show()
-				LeaPlusCB["DressUpSideNudeBtn"]:Show()
-			end)
-
-			hooksecurefunc(SideDressUpFrame.ResetButton, "Hide", function()
-				LeaPlusCB["DressUpSideBtn"]:Hide()
-				LeaPlusCB["DressUpSideNudeBtn"]:Hide()
 			end)
 
 			----------------------------------------------------------------------
@@ -5287,12 +5234,6 @@
 
 			end
 
-			-- Hide chat menu buttons
-			ChatFrameMenuButton:SetParent(tframe)
-			ChatFrameChannelButton:SetParent(tframe)
-			ChatFrameToggleVoiceDeafenButton:SetParent(tframe)
-			ChatFrameToggleVoiceMuteButton:SetParent(tframe)
-
 			-- Set options for normal and existing chat frames
 			for i = 1, 50 do
 				if _G["ChatFrame" .. i] then
@@ -5317,6 +5258,93 @@
 				end
 			end)
 
+			-- Move voice chat and chat menu buttons inside the chat frame
+			ChatFrameChannelButton:ClearAllPoints()
+			ChatFrameChannelButton:SetPoint("TOPRIGHT", ChatFrame1Background, "TOPRIGHT", 1, -3)
+			ChatFrameChannelButton:SetSize(26,25)
+
+			ChatFrameToggleVoiceDeafenButton:ClearAllPoints()
+			ChatFrameToggleVoiceDeafenButton:SetPoint("TOP", ChatFrameChannelButton, "BOTTOM", 0, -2)
+			ChatFrameToggleVoiceDeafenButton:SetSize(26,25)
+
+			ChatFrameToggleVoiceMuteButton:ClearAllPoints()
+			ChatFrameToggleVoiceMuteButton:SetPoint("TOP", ChatFrameToggleVoiceDeafenButton, "BOTTOM", 0, -2)
+			ChatFrameToggleVoiceMuteButton:SetSize(26,25)
+
+			ChatFrameMenuButton:ClearAllPoints()
+			ChatFrameMenuButton:SetPoint("BOTTOMRIGHT", ChatFrame1Background, "BOTTOMRIGHT", 3, 18)
+			ChatFrameMenuButton:SetSize(29,29)
+
+			-- Function to set voice chat and chat menu buttons
+			local function SetChatButtonFrameButtons()
+				if LeaPlusLC["ShowVoiceButtons"] == "On" then
+					-- Show voice chat buttons
+					ChatFrameChannelButton:SetParent(UIParent)
+					ChatFrameToggleVoiceDeafenButton:SetParent(UIParent)
+					ChatFrameToggleVoiceMuteButton:SetParent(UIParent)
+				else
+					-- Hide voice chat buttons
+					ChatFrameChannelButton:SetParent(tframe)
+					ChatFrameToggleVoiceDeafenButton:SetParent(tframe)
+					ChatFrameToggleVoiceMuteButton:SetParent(tframe)
+				end
+				if LeaPlusLC["ShowChatMenuButton"] == "On" then
+					-- Show chat menu button
+					ChatFrameMenuButton:SetParent(UIParent)
+				else
+					-- Hide chat menu button
+					ChatFrameMenuButton:SetParent(tframe)
+				end
+			end
+
+			-- Create configuration panel
+			local HideChatButtonsPanel = LeaPlusLC:CreatePanel("Hide chat buttons", "HideChatButtonsPanel")
+
+			-- Add checkboxes
+			LeaPlusLC:MakeTx(HideChatButtonsPanel, "General", 16, -72)
+			LeaPlusLC:MakeCB(HideChatButtonsPanel, "ShowVoiceButtons", "Show voice chat buttons", 16, -92, false, "If checked, voice chat buttons will be shown.")
+			LeaPlusLC:MakeCB(HideChatButtonsPanel, "ShowChatMenuButton", "Show chat menu button", 16, -112, false, "If checked, the chat menu button will be shown.")
+
+			-- Help button hidden
+			HideChatButtonsPanel.h:Hide()
+
+			-- Back button handler
+			HideChatButtonsPanel.b:SetScript("OnClick", function() 
+				HideChatButtonsPanel:Hide(); LeaPlusLC["PageF"]:Show(); LeaPlusLC["Page3"]:Show()
+				return
+			end)
+
+			-- Reset button handler
+			HideChatButtonsPanel.r:SetScript("OnClick", function()
+
+				-- Reset checkboxes
+				LeaPlusLC["ShowVoiceButtons"] = "Off"
+				LeaPlusLC["ShowChatMenuButton"] = "Off"
+
+				-- Refresh panel
+				SetChatButtonFrameButtons()
+				HideChatButtonsPanel:Hide(); HideChatButtonsPanel:Show()
+
+			end)
+
+			-- Show panal when options panel button is clicked
+			LeaPlusCB["NoChatButtonsBtn"]:SetScript("OnClick", function()
+				if IsShiftKeyDown() and IsControlKeyDown() then
+					-- Preset profile
+					LeaPlusLC["ShowVoiceButtons"] = "On"
+					LeaPlusLC["ShowChatMenuButton"] = "Off"
+					SetChatButtonFrameButtons()
+				else
+					HideChatButtonsPanel:Show()
+					LeaPlusLC:HideFrames()
+				end
+			end)
+
+			-- Run function when options are clicked and on startup
+			LeaPlusCB["ShowVoiceButtons"]:HookScript("OnClick", SetChatButtonFrameButtons)
+			LeaPlusCB["ShowChatMenuButton"]:HookScript("OnClick", SetChatButtonFrameButtons)
+			SetChatButtonFrameButtons()
+
 		end
 
 		----------------------------------------------------------------------
@@ -5331,7 +5359,7 @@
 			-- Set frame parameters
 			editFrame:ClearAllPoints()
 			editFrame:SetPoint("BOTTOM", 0, 130)
-			editFrame:SetSize(470, 170)
+			editFrame:SetSize(600, LeaPlusLC["RecentChatSize"])
 			editFrame:SetFrameStrata("MEDIUM")
 			editFrame:SetToplevel(true)
 			editFrame:Hide()
@@ -5349,12 +5377,76 @@
 			editFrame.BottomLeftTex:SetTexture(editFrame.TopRightTex:GetTexture()); editFrame.BottomLeftTex:SetTexCoord(1, 0, 1, 0)
 			editFrame.TopLeftTex:SetTexture(editFrame.TopRightTex:GetTexture()); editFrame.TopLeftTex:SetTexCoord(1, 0, 0, 1)
 
+			-- Create title bar
+			local titleFrame = CreateFrame("ScrollFrame", nil, editFrame, "InputScrollFrameTemplate")
+			titleFrame:ClearAllPoints()
+			titleFrame:SetPoint("TOP", 0, 32)
+			titleFrame:SetSize(600, 24)
+			titleFrame:SetFrameStrata("MEDIUM")
+			titleFrame:SetToplevel(true)
+			titleFrame:SetHitRectInsets(-6, -6, -6, -6)
+			titleFrame.CharCount:Hide()
+			titleFrame.t = titleFrame:CreateTexture(nil, "BACKGROUND")
+			titleFrame.t:SetAllPoints()
+			titleFrame.t:SetColorTexture(0.00, 0.00, 0.0, 0.6)
+			titleFrame.LeftTex:SetTexture(titleFrame.RightTex:GetTexture()); titleFrame.LeftTex:SetTexCoord(1, 0, 0, 1)
+			titleFrame.BottomTex:SetTexture(titleFrame.TopTex:GetTexture()); titleFrame.BottomTex:SetTexCoord(0, 1, 1, 0)
+			titleFrame.BottomRightTex:SetTexture(titleFrame.TopRightTex:GetTexture()); titleFrame.BottomRightTex:SetTexCoord(0, 1, 1, 0)
+			titleFrame.BottomLeftTex:SetTexture(titleFrame.TopRightTex:GetTexture()); titleFrame.BottomLeftTex:SetTexCoord(1, 0, 1, 0)
+			titleFrame.TopLeftTex:SetTexture(titleFrame.TopRightTex:GetTexture()); titleFrame.TopLeftTex:SetTexCoord(1, 0, 0, 1)
+
+			-- Add message count
+			titleFrame.m = titleFrame:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge") 
+			titleFrame.m:SetPoint("LEFT", 4, 0)
+			titleFrame.m:SetText(L["Messages"] .. ": 0")
+			titleFrame.m:SetFont(titleFrame.m:GetFont(), 16, nil)
+
+			-- Add right-click to close message
+			titleFrame.x = titleFrame:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge") 
+			titleFrame.x:SetPoint("RIGHT", -4, 0)
+			titleFrame.x:SetText(L["Drag to size"] .. " | " .. L["Right-click to close"])
+			titleFrame.x:SetFont(titleFrame.x:GetFont(), 16, nil)
+
+			local titleBox = titleFrame.EditBox
+			titleBox:Hide()
+			titleBox:SetEnabled(false)
+
+			-- Drag to resize
+			editFrame:SetResizable(true)
+			editFrame:SetMinResize(600, 170)
+			editFrame:SetMaxResize(600, 560)
+
+			titleFrame:HookScript("OnMouseDown", function(self, btn)
+				if btn == "LeftButton" then
+					editFrame:StartSizing("TOP")
+				end
+			end)
+			titleFrame:HookScript("OnMouseUp", function(self, btn)
+				if btn == "LeftButton" then
+					editFrame:StopMovingOrSizing()
+					LeaPlusLC["RecentChatSize"] = editFrame:GetHeight()
+				elseif btn == "MiddleButton" then
+					-- Reset frame size
+					LeaPlusLC["RecentChatSize"] = 170
+					editFrame:SetSize(600, LeaPlusLC["RecentChatSize"])
+					editFrame:ClearAllPoints()
+					editFrame:SetPoint("BOTTOM", 0, 130)
+				end
+			end)
+
 			-- Create editbox
 			local editBox = editFrame.EditBox
 			editBox:SetAltArrowKeyMode(false)
 			editBox:SetTextInsets(4, 4, 4, 4)
 			editBox:SetWidth(editFrame:GetWidth() - 30)
 			editBox:SetFont(editBox:GetFont(), 16)
+
+			-- Manage focus
+			editBox:HookScript("OnEditFocusLost", function()
+				if MouseIsOver(titleFrame) and IsMouseButtonDown("LeftButton") then
+					editBox:SetFocus()
+				end
+			end)
 
 			-- Close frame with right-click of editframe or editbox
 			local function CloseRecentChatWindow()
@@ -5368,6 +5460,10 @@
 			end)
 
 			editBox:SetScript("OnMouseDown", function(self, btn)
+				if btn == "RightButton" then CloseRecentChatWindow() end
+			end)
+
+			titleFrame:HookScript("OnMouseDown", function(self, btn)
 				if btn == "RightButton" then CloseRecentChatWindow() end
 			end)
 
@@ -5398,9 +5494,20 @@
 					local chatMessage, r, g, b, chatTypeID = chtfrm:GetMessageInfo(iMsg)
 					if chatMessage then
 
-						-- Handle Battle.net
-						if string.match(chatMessage, "k:(%d+):(%d+):BN_WHISPER:") then
-							local id = tonumber(string.match(chatMessage, "k:(%d+):%d+:BN_WHISPER:"))
+						-- Handle Battle.net messages
+						if string.match(chatMessage, "k:(%d+):(%d+):BN_WHISPER:")
+						or string.match(chatMessage, "k:(%d+):(%d+):BN_INLINE_TOAST_ALERT:")
+						or string.match(chatMessage, "k:(%d+):(%d+):BN_INLINE_TOAST_BROADCAST:")
+						then
+							local ctype
+							if string.match(chatMessage, "k:(%d+):(%d+):BN_WHISPER:") then
+								ctype = "BN_WHISPER"
+							elseif string.match(chatMessage, "k:(%d+):(%d+):BN_INLINE_TOAST_ALERT:") then
+								ctype = "BN_INLINE_TOAST_ALERT"
+							elseif string.match(chatMessage, "k:(%d+):(%d+):BN_INLINE_TOAST_BROADCAST:") then
+								ctype = "BN_INLINE_TOAST_BROADCAST"
+							end
+							local id = tonumber(string.match(chatMessage, "k:(%d+):%d+:" .. ctype .. ":"))
 							local totalBNFriends = BNGetNumFriends()
 							for friendIndex = 1, totalBNFriends do
 								local accountInfo = C_BattleNet.GetFriendAccountInfo(friendIndex)
@@ -5408,31 +5515,24 @@
 								local battleTag = accountInfo.battleTag
 								if id == bnetAccountID then
 									battleTag = strsplit("#", battleTag)
-									chatMessage =  gsub(chatMessage, "|HBNplayer:.*:.*:.*:BN_WHISPER:.*:", "[" .. battleTag .. "]:")
+									chatMessage = chatMessage:gsub("(|HBNplayer%S-|k)(%d-)(:%S-" .. ctype .. "%S-|h)%[(%S-)%](|?h?)(:?)", "[" .. battleTag .. "]:")
 								end
 							end
 						end
 
 						-- Handle colors
-						if r and g and b and chatTypeID then
+						if r and g and b then
 							local colorCode = RGBToColorCode(r, g, b)
-							chatMessage = string.gsub(chatMessage, "|r", "|r" .. colorCode) -- Links
 							chatMessage = colorCode .. chatMessage
 						end
 
 						chatMessage = gsub(chatMessage, "|T.-|t", "") -- Remove textures
-						chatMessage = gsub(chatMessage, "{.-}", "") -- Remove ellipsis
-						editBox:Insert(chatMessage .. "|n")
+						editBox:Insert(chatMessage .. "|r|n")
 
 					end
 					totalMsgCount = totalMsgCount + 1
 				end
-				if totalMsgCount == 1 then
-					editBox:Insert("|cff88aabb" .. totalMsgCount .. " " .. L["message shown."] .. "  ")
-				else
-					editBox:Insert("|cff88aabb" .. totalMsgCount .. " " .. L["messages shown."] .. "  ")
-				end
-				editBox:Insert(L["Right-click to close."])
+				titleFrame.m:SetText(L["Messages"] .. ": " .. totalMsgCount)
 				editFrame:SetVerticalScroll(0)
 				C_Timer.After(0.1, function() editFrame.ScrollBar.ScrollDownButton:Click() end)
 				editFrame:Show()
@@ -8410,6 +8510,11 @@
 			maintitle:ClearAllPoints()
 			maintitle:SetPoint("TOP", 0, -72)
 
+			local expTitle = LeaPlusLC:MakeTx(interPanel, "Shadowlands", 0, 0)
+			expTitle:SetFont(expTitle:GetFont(), 32)
+			expTitle:ClearAllPoints()
+			expTitle:SetPoint("TOP", 0, -152)
+
 			local subTitle = LeaPlusLC:MakeTx(interPanel, "curseforge.com/wow/addons/leatrix-plus", 0, 0)
 			subTitle:SetFont(subTitle:GetFont(), 20)
 			subTitle:ClearAllPoints()
@@ -8740,6 +8845,8 @@
 				LeaPlusLC:LoadVarChk("UseEasyChatResizing", "Off")			-- Use easy resizing
 				LeaPlusLC:LoadVarChk("NoCombatLogTab", "Off")				-- Hide the combat log
 				LeaPlusLC:LoadVarChk("NoChatButtons", "Off")				-- Hide chat buttons
+				LeaPlusLC:LoadVarChk("ShowVoiceButtons", "Off")				-- Show voice buttons
+				LeaPlusLC:LoadVarChk("ShowChatMenuButton", "Off")			-- Show chat menu button
 				LeaPlusLC:LoadVarChk("NoSocialButton", "Off")				-- Hide social button
 				LeaPlusLC:LoadVarChk("UnclampChat", "Off")					-- Unclamp chat frame
 				LeaPlusLC:LoadVarChk("MoveChatEditBoxToTop", "Off")			-- Move editbox to top
@@ -8750,6 +8857,7 @@
 				LeaPlusLC:LoadVarChk("NoChatFade", "Off")					-- Disable chat fade
 				LeaPlusLC:LoadVarChk("UnivGroupColor", "Off")				-- Universal group color
 				LeaPlusLC:LoadVarChk("RecentChatWindow", "Off")				-- Recent chat window
+				LeaPlusLC:LoadVarNum("RecentChatSize", 170, 170, 600)		-- Recent chat size
 				LeaPlusLC:LoadVarChk("MaxChatHstory", "Off")				-- Increase chat history
 
 				-- Text
@@ -8942,6 +9050,8 @@
 			LeaPlusDB["UseEasyChatResizing"]	= LeaPlusLC["UseEasyChatResizing"]
 			LeaPlusDB["NoCombatLogTab"]			= LeaPlusLC["NoCombatLogTab"]
 			LeaPlusDB["NoChatButtons"]			= LeaPlusLC["NoChatButtons"]
+			LeaPlusDB["ShowVoiceButtons"]		= LeaPlusLC["ShowVoiceButtons"]
+			LeaPlusDB["ShowChatMenuButton"]		= LeaPlusLC["ShowChatMenuButton"]
 			LeaPlusDB["NoSocialButton"]			= LeaPlusLC["NoSocialButton"]
 			LeaPlusDB["UnclampChat"]			= LeaPlusLC["UnclampChat"]
 			LeaPlusDB["MoveChatEditBoxToTop"]	= LeaPlusLC["MoveChatEditBoxToTop"]
@@ -8952,6 +9062,7 @@
 			LeaPlusDB["NoChatFade"]				= LeaPlusLC["NoChatFade"]
 			LeaPlusDB["UnivGroupColor"]			= LeaPlusLC["UnivGroupColor"]
 			LeaPlusDB["RecentChatWindow"]		= LeaPlusLC["RecentChatWindow"]
+			LeaPlusDB["RecentChatSize"]			= LeaPlusLC["RecentChatSize"]
 			LeaPlusDB["MaxChatHstory"]			= LeaPlusLC["MaxChatHstory"]
 
 			-- Text
@@ -10921,6 +11032,8 @@
 				LeaPlusDB["UseEasyChatResizing"] = "On"			-- Use easy resizing
 				LeaPlusDB["NoCombatLogTab"] = "On"				-- Hide the combat log
 				LeaPlusDB["NoChatButtons"] = "On"				-- Hide chat buttons
+				LeaPlusDB["ShowVoiceButtons"] = "On"			-- Show voice buttons
+				LeaPlusDB["ShowChatMenuButton"] = "Off"			-- Show chat menu button
 				LeaPlusDB["NoSocialButton"] = "On"				-- Hide social button
 				LeaPlusDB["UnclampChat"] = "On"					-- Unclamp chat frame
 				LeaPlusDB["MoveChatEditBoxToTop"] = "On"		-- Move editbox to top
@@ -10930,6 +11043,7 @@
 				LeaPlusDB["NoChatFade"] = "On"					-- Disable chat fade
 				LeaPlusDB["UnivGroupColor"] = "On"				-- Universal group color
 				LeaPlusDB["RecentChatWindow"] = "On"			-- Recent chat window
+				LeaPlusDB["RecentChatSize"] = 170				-- Recent chat size
 				LeaPlusDB["MaxChatHstory"] = "Off"				-- Increase chat history
 
 				-- Text
@@ -11341,6 +11455,8 @@
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "UnivGroupColor"			,	"Universal group color"			,	340, -172,	false,	"If checked, raid chat and instance chat will both be colored blue (to match the default party chat color).")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "RecentChatWindow"			,	"Recent chat window"			, 	340, -192, 	true,	"If checked, you can hold down the control key and click a chat tab to view recent chat in a copy-friendly window.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MaxChatHstory"				,	"Increase chat history"			, 	340, -212, 	true,	"If checked, your chat history will increase to 4096 lines.  If unchecked, the default will be used (128 lines).|n|nEnabling this option may prevent some chat text from showing during login.")
+
+	LeaPlusLC:CfgBtn("NoChatButtonsBtn", LeaPlusCB["NoChatButtons"])
 
 ----------------------------------------------------------------------
 -- 	LC4: Text

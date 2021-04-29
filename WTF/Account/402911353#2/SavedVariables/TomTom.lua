@@ -14,6 +14,7 @@ TomTomDB = {
 		["Jiglèr - Sylvanas"] = "Default",
 		["Lastones - Kazzak"] = "Default",
 		["Needzafemale - Kazzak"] = "Default",
+		["Plüto - Sylvanas"] = "Default",
 		["Kynaeth - Sylvanas"] = "Default",
 		["Mortifèrous - Kazzak"] = "Default",
 		["Crètz - Sylvanas"] = "Default",
@@ -46,11 +47,12 @@ TomTomWaypointsM = {
 	["profileKeys"] = {
 		["Blanitza - Kazzak"] = "Blanitza - Kazzak",
 		["Mòloch - Kazzak"] = "Mòloch - Kazzak",
+		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
 		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
 		["Kakaròt - Kazzak"] = "Kakaròt - Kazzak",
 		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
 		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
-		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
+		["Plüto - Sylvanas"] = "Plüto - Sylvanas",
 		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
 		["Òdin - Sylvanas"] = "Òdin - Sylvanas",
 		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
@@ -65,6 +67,8 @@ TomTomWaypointsM = {
 		},
 		["Mòloch - Kazzak"] = {
 		},
+		["Vòlkmer - Kazzak"] = {
+		},
 		["Crëtz - Kazzak"] = {
 		},
 		["Kakaròt - Kazzak"] = {
@@ -73,7 +77,7 @@ TomTomWaypointsM = {
 		},
 		["Jiglèr - Sylvanas"] = {
 		},
-		["Vòlkmer - Kazzak"] = {
+		["Plüto - Sylvanas"] = {
 		},
 		["Kynaeth - Sylvanas"] = {
 		},

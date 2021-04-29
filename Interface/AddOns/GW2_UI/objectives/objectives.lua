@@ -10,6 +10,17 @@ local TRACKER_TYPE_COLOR = GW.TRACKER_TYPE_COLOR
 
 local questInfo = {}
 
+local function IsQuestAutoTurnInOrAutoAccept(blockQuestID, checkType)
+    for i = 1, GetNumAutoQuestPopUps() do
+        local questID, popUpType = GetAutoQuestPopUp(i)
+        if blockQuestID and questID and popUpType and popUpType == checkType and blockQuestID == questID then
+            return true
+        end
+    end
+
+    return false
+end
+
 local function wiggleAnim(self)
     if self.animation == nil then
         self.animation = 0
@@ -25,7 +36,7 @@ local function wiggleAnim(self)
         GetTime(),
         2,
         function()
-            local prog = animations[self:GetName()]["progress"]
+            local prog = animations[self:GetName()].progress
 
             self.flare:SetRotation(lerp(0, 1, prog))
 
@@ -267,8 +278,8 @@ local function blockOnLeave(self)
     for _, v in pairs(self.objectiveBlocks) do
         v.StatusBar.progress:Hide()
     end
-    if animations[self:GetName() .. "hover"] ~= nil then
-        animations[self:GetName() .. "hover"]["complete"] = true
+    if animations[self:GetName() .. "hover"] then
+        animations[self:GetName() .. "hover"].complete = true
     end
     GameTooltip_Hide()
 end
@@ -638,17 +649,17 @@ end
 GW.AddForProfiling("objectives", "OnBlockClickHandler", OnBlockClickHandler)
 
 local function updateQuest(self, block, quest)
-    block.height = 25
-    block.numObjectives = 0
-    block.turnin:Hide()
-    block.popupQuestAccept:Hide()
-
     local questID = quest:GetID()
     local numObjectives = C_QuestLog.GetNumQuestObjectives(questID)
     local isComplete = quest:IsComplete()
     local questLogIndex = quest:GetQuestLogIndex()
     local requiredMoney = C_QuestLog.GetRequiredMoney(questID)
     local questFailed = C_QuestLog.IsFailed(questID)
+
+    block.height = 25
+    block.numObjectives = 0
+    block.turnin:SetShown(IsQuestAutoTurnInOrAutoAccept(questID, "COMPLETE"))
+    block.popupQuestAccept:SetShown(IsQuestAutoTurnInOrAutoAccept(questID, "OFFER"))
 
     if questID and questLogIndex and questLogIndex > 0 then
         if requiredMoney then
@@ -722,15 +733,15 @@ end
 GW.AddForProfiling("objectives", "updateQuest", updateQuest)
 
 local function updateQuestByID(self, block, quest, questID, questLogIndex)
-    block.height = 25
-    block.numObjectives = 0
-    block.turnin:Hide()
-    block.popupQuestAccept:Hide()
-
     local numObjectives = C_QuestLog.GetNumQuestObjectives(questID)
     local isComplete = quest:IsComplete()
     local requiredMoney = C_QuestLog.GetRequiredMoney(questID)
     local questFailed = C_QuestLog.IsFailed(questID)
+
+    block.height = 25
+    block.numObjectives = 0
+    block.turnin:SetShown(IsQuestAutoTurnInOrAutoAccept(questID, "COMPLETE"))
+    block.popupQuestAccept:SetShown(IsQuestAutoTurnInOrAutoAccept(questID, "OFFER"))
 
     if requiredMoney then
         self.watchMoneyReasons = self.watchMoneyReasons + 1
@@ -1140,7 +1151,7 @@ end
 local function tracker_OnEvent(self, event, ...)
     local numWatchedQuests = C_QuestLog.GetNumQuestWatches()
 
-    if event == "UNIT_QUEST_LOG_CHANGED" and ... == "player" then
+    if event == "QUEST_LOG_UPDATE" then
         updateQuestLogLayout(self)
     elseif event == "QUEST_ACCEPTED" then
         local questID = ...
@@ -1241,9 +1252,6 @@ end
 GW.AdjustQuestTracker = AdjustQuestTracker
 
 local function LoadQuestTracker()
-    --local qt_enabled = GetSetting("QUESTTRACKER_ENABLED")
-    --local bars_enabled = GetSetting("ACTIONBARS_ENABLED")
-
     -- disable the default tracker
     ObjectiveTrackerFrame:SetMovable(1)
     ObjectiveTrackerFrame:SetUserPlaced(true)
@@ -1329,7 +1337,7 @@ local function LoadQuestTracker()
     fTraScr:SetScrollChild(fScroll)
 
     fQuest:SetScript("OnEvent", tracker_OnEvent)
-    fQuest:RegisterEvent("UNIT_QUEST_LOG_CHANGED")
+    fQuest:RegisterEvent("QUEST_LOG_UPDATE")
     fQuest:RegisterEvent("QUEST_WATCH_LIST_CHANGED")
     fQuest:RegisterEvent("QUEST_AUTOCOMPLETE")
     fQuest:RegisterEvent("QUEST_ACCEPTED")
@@ -1402,7 +1410,7 @@ local function LoadQuestTracker()
     compassUpdateFrame:RegisterEvent("PLAYER_STOPPED_MOVING")
     compassUpdateFrame:RegisterEvent("PLAYER_CONTROL_LOST")
     compassUpdateFrame:RegisterEvent("PLAYER_CONTROL_GAINED")
-    compassUpdateFrame:RegisterEvent("UNIT_QUEST_LOG_CHANGED")
+    compassUpdateFrame:RegisterEvent("QUEST_LOG_UPDATE")
     compassUpdateFrame:RegisterEvent("QUEST_WATCH_LIST_CHANGED")
     compassUpdateFrame:RegisterEvent("PLAYER_MONEY")
     compassUpdateFrame:RegisterEvent("PLAYER_ENTERING_WORLD")
@@ -1426,7 +1434,6 @@ local function LoadQuestTracker()
                 tracker_OnUpdate(fTracker)
             end
         else
-            if event == "UNIT_QUEST_LOG_CHANGED" and ... ~= "player" then return end
             C_Timer.After(0.25, function() tracker_OnUpdate(fTracker) end)
         end
     end)

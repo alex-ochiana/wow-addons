@@ -35,7 +35,8 @@ local function LoadPartyPanel(sWindow)
             COMPACT_UNIT_FRAME_PROFILE_HEALTHTEXT_LOSTHEALTH
         },
         nil,
-        {["PARTY_FRAMES"] = true, ["RAID_STYLE_PARTY"] = false}
+        {["PARTY_FRAMES"] = true, ["RAID_STYLE_PARTY"] = false},
+        nil
     )
 
     InitPanel(p)

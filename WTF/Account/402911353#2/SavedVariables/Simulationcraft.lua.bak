@@ -5,6 +5,7 @@ SimulationCraftDB = {
 		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
 		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
 		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
+		["Plüto - Sylvanas"] = "Plüto - Sylvanas",
 		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
 		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
 		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
@@ -19,6 +20,8 @@ SimulationCraftDB = {
 		["Latthrias - Sylvanas"] = {
 		},
 		["Jiglèr - Sylvanas"] = {
+		},
+		["Plüto - Sylvanas"] = {
 		},
 		["Egidus - Sylvanas"] = {
 		},

@@ -50,7 +50,7 @@ VER 3 000000000000000A "T2" "INV_MISC_QUESTIONMARK"
 /use 14
 END
 VER 3 0000000000000012 "turn in" "132722"
-/script  C_GossipInfo.SelectAvailableQuest(1)
+/script  C_GossipInfo.SelectAvailableQuest(2)
 /script CompleteQuest()
 /script GetQuestReward()
 END

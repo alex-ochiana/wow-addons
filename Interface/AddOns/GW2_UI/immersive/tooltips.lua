@@ -9,6 +9,7 @@ local Wait = GW.Wait
 local GetUnitItemLevel = GW.GetUnitItemLevel
 local PopulateUnitIlvlsCache = GW.PopulateUnitIlvlsCache
 local COLOR_FRIENDLY = GW.COLOR_FRIENDLY
+local nameRoleIcon = GW.nameRoleIcon
 
 local MountIDs = {}
 local targetList = {}
@@ -19,9 +20,9 @@ local classification = {
     rare = format("|cffAF5050 %s|r", ITEM_QUALITY3_DESC)
 }
 local genderTable = {
-    " " .. _G.UNKNOWN .. " ",
-    " " .. _G.MALE .. " ",
-    " " .. _G.FEMALE .. " "
+    " " .. UNKNOWN .. " ",
+    " " .. MALE .. " ",
+    " " .. FEMALE .. " "
 }
 
 local TT = CreateFrame("Frame")
@@ -78,8 +79,8 @@ local UNSTYLED = {
     QuickKeybindTooltip
 }
 
-local LEVEL1 = strlower(_G.TOOLTIP_UNIT_LEVEL:gsub("%s?%%s%s?%-?", ""))
-local LEVEL2 = strlower(_G.TOOLTIP_UNIT_LEVEL_CLASS:gsub("^%%2$s%s?(.-)%s?%%1$s", "%1"):gsub("^%-?г?о?%s?", ""):gsub("%s?%%s%s?%-?", ""))
+local LEVEL1 = strlower(TOOLTIP_UNIT_LEVEL:gsub("%s?%%s%s?%-?", ""))
+local LEVEL2 = strlower(TOOLTIP_UNIT_LEVEL_CLASS:gsub("^%%2$s%s?(.-)%s?%%1$s", "%1"):gsub("^%-?г?о?%s?", ""):gsub("%s?%%s%s?%-?", ""))
 
 local function IsModKeyDown()
     local k = GetSetting("ADVANCED_TOOLTIP_ID_MODIFIER")
@@ -292,16 +293,16 @@ local function SetUnitText(self, unit, isShiftKeyDown)
         if realm and realm ~= "" then
             if isShiftKeyDown or alwaysShowRealm then
                 name = name .. "-" .. realm
-            elseif relationship == _G.LE_REALM_RELATION_COALESCED then
-                name = name .. _G.FOREIGN_SERVER_LABEL
-            elseif relationship == _G.LE_REALM_RELATION_VIRTUAL then
-                name = name .. _G.INTERACTIVE_SERVER_LABEL
+            elseif relationship == LE_REALM_RELATION_COALESCED then
+                name = name .. FOREIGN_SERVER_LABEL
+            elseif relationship == LE_REALM_RELATION_VIRTUAL then
+                name = name .. INTERACTIVE_SERVER_LABEL
             end
         end
 
         name = name .. ((UnitIsAFK(unit) and " |cffFFFFFF[|r|cffFF0000" .. AFK .. "|r|cffFFFFFF]|r") or (UnitIsDND(unit) and " |cffFFFFFF[|r|cffFFFF00" .. DND .. "|r|cffFFFFFF]|r") or "")
 
-        _G.GameTooltipTextLeft1:SetFormattedText("|c%s%s|r", nameColor.colorStr, name or UNKNOWN)
+        GameTooltipTextLeft1:SetFormattedText("|c%s%s|r", nameColor.colorStr, name or UNKNOWN)
 
         local lineOffset = 2
         if guildName then
@@ -310,9 +311,9 @@ local function SetUnitText(self, unit, isShiftKeyDown)
             end
 
             if guildRanks then
-                _G.GameTooltipTextLeft2:SetFormattedText("<|cff00ff10%s|r> [|cff00ff10%s|r]", guildName, guildRankName)
+                GameTooltipTextLeft2:SetFormattedText("<|cff00ff10%s|r> [|cff00ff10%s|r]", guildName, guildRankName)
             else
-                _G.GameTooltipTextLeft2:SetFormattedText("<|cff00ff10%s|r>", guildName)
+                GameTooltipTextLeft2:SetFormattedText("<|cff00ff10%s|r>", guildName)
             end
 
             lineOffset = 3
@@ -339,14 +340,33 @@ local function SetUnitText(self, unit, isShiftKeyDown)
             local r, g, b, role = 1, 1, 1, UnitGroupRolesAssigned(unit)
             if IsInGroup() and (UnitInParty(unit) or UnitInRaid(unit)) and (role ~= "NONE") then
                 if role == "HEALER" then
-                    role, r, g, b = HEALER, 0, 1, .59
+                    role, r, g, b = nameRoleIcon[role] .. HEALER, 0, 1, 0.59
                 elseif role == "TANK" then
-                    role, r, g, b = TANK, .16, .31, .61
+                    role, r, g, b = nameRoleIcon[role] .. TANK, 0.51, 0.67, 0.9
                 elseif role == "DAMAGER" then
-                    role, r, g, b = DAMAGER, .77, .12, .24
+                    role, r, g, b = nameRoleIcon[role] .. DAMAGER, 0.77, 0.12, 0.24
+                end
+                -- if in raid add also the assist function here eg: Role:      [] Tank ([] Maintank)
+                local isGroupLeader = UnitIsGroupLeader(unit)
+                local isGroupAssist = UnitIsGroupAssistant(unit)
+                local raidId = UnitInRaid(unit)
+                local raidRole = ""
+                if raidId then
+                    local raidR = select(10, GetRaidRosterInfo(raidId))
+                    if raidR == "MAINTANK" then raidRole = " (|TInterface/AddOns/GW2_UI/textures/party/icon-maintank:0:0:0:-3:64:64:4:60:4:60|t " .. MAINTANK .. ")" end
+                    if raidR == "MAINASSIST" then raidRole = " (|TInterface/AddOns/GW2_UI/textures/party/icon-mainassist:0:0:0:-1:64:64:4:60:4:60|t " .. MAIN_ASSIST .. ")" end
                 end
 
-                GameTooltip:AddDoubleLine(format("%s:", ROLE), role, nil, nil, nil, r, g, b)
+                GameTooltip:AddDoubleLine(format("%s:", ROLE), role .. raidRole, nil, nil, nil, r, g, b)
+                if isGroupLeader or isGroupAssist then
+                    local roleString
+                    if isGroupLeader then
+                        roleString = "|TInterface/AddOns/GW2_UI/textures/party/icon-groupleader:0:0:0:-2:64:64:4:60:4:60|t " .. RAID_LEADER
+                    else
+                        roleString = "|TInterface/AddOns/GW2_UI/textures/party/icon-assist:0:0:0:-2:64:64:4:60:4:60|t " .. RAID_ASSISTANT
+                    end
+                    GameTooltip:AddDoubleLine(" ", roleString, nil, nil, nil, r, g, b)
+                end
             end
         end
 
@@ -392,7 +412,7 @@ local function SetUnitText(self, unit, isShiftKeyDown)
         if unitReaction and unitReaction >= 5 then nameColor = COLOR_FRIENDLY[1] end --Friend
         local nameColorStr = nameColor.colorStr or RGBToHex(nameColor.r, nameColor.g, nameColor.b, "ff")
 
-        _G.GameTooltipTextLeft1:SetFormattedText("|c%s%s|r", nameColorStr, name or UNKNOWN)
+        GameTooltipTextLeft1:SetFormattedText("|c%s%s|r", nameColorStr, name or UNKNOWN)
 
         return UnitIsTapDenied(unit) and {r = 159 / 255, g = 159 / 255, b = 159 / 255} or nameColor
     end
@@ -495,7 +515,7 @@ local function GameTooltip_OnTooltipSetUnit(self)
         local guid = UnitGUID(unit) or ""
         local id = tonumber(strmatch(guid, "%-(%d-)%-%x-$"), 10)
         if id then
-            self:AddLine(format("|cffffedba%s|r %d", ID, id))
+            self:AddLine(format(("*%s|r %d"):gsub("*", GW.Gw2Color), ID, id))
         end
     end
 end
@@ -516,16 +536,16 @@ local function GameTooltip_OnTooltipSetItem(self)
         local itemCountOption = GetSetting("ADVANCED_TOOLTIP_OPTION_ITEMCOUNT")
 
         if link ~= nil and IsModKeyDown() then
-            right = format("|cffffedba%s|r %s", ID, strmatch(link, ":(%w+)"))
+            right = format(("*%s|r %s"):gsub("*", GW.Gw2Color), ID, strmatch(link, ":(%w+)"))
         end
 
         if itemCountOption == "BAG" then
-            left = format("|cffffedba%s|r %d", INVENTORY_TOOLTIP, num)
+            left = format(("*%s|r %d"):gsub("*", GW.Gw2Color), INVENTORY_TOOLTIP, num)
         elseif itemCountOption == "BANK" then
-            bankCount = format("|cffffedba%s|r %d", BANK, (numall - num))
+            bankCount = format(("*%s|r %d"):gsub("*", GW.Gw2Color), BANK, (numall - num))
         elseif itemCountOption == "BOTH" then
-            left = format("|cffffedba%s|r %d", INVENTORY_TOOLTIP, num)
-            bankCount = format("|cffffedba%s|r %d", BANK, (numall - num))
+            left = format(("*%s|r %d"):gsub("*", GW.Gw2Color), INVENTORY_TOOLTIP, num)
+            bankCount = format(("*%s|r %d"):gsub("*", GW.Gw2Color), BANK, (numall - num))
         end
 
         if left ~= " " or right ~= " " then
@@ -545,7 +565,7 @@ local function GameTooltip_OnTooltipSetSpell(self)
     local id = select(2, self:GetSpell())
     if id and IsModKeyDown() then
 
-        local displayString = format("|cffffedba%s|r %d", ID, id)
+        local displayString = format(("*%s|r %d"):gsub("*", GW.Gw2Color), ID, id)
 
         for i = 1, self:NumLines() do
             local line = _G[format("GameTooltipTextLeft%d", i)]
@@ -575,9 +595,9 @@ local function SetUnitAuraData(self, id, caster)
                 local name = UnitName(caster)
                 local _, class = UnitClass(caster)
                 local color = GWGetClassColor(class, showClassColor, true)
-                self:AddDoubleLine(format("|cffffedba%s|r %d", ID, id), format("|c%s%s|r", color.colorStr, name))
+                self:AddDoubleLine(format(("*%s|r %d"):gsub("*", GW.Gw2Color), ID, id), format("|c%s%s|r", color.colorStr, name))
             else
-                self:AddLine(format("|cffffedba%s|r %d", ID, id))
+                self:AddLine(format(("*%s|r %d"):gsub("*", GW.Gw2Color), ID, id))
             end
         end
 
@@ -603,7 +623,7 @@ local function SetToyByItemID(self, id)
     if self:IsForbidden() then return end
 
     if id and IsModKeyDown() then
-        self:AddLine(format("|cffffedba%s|r %d", ID, id))
+        self:AddLine(format(("*%s|r %d"):gsub("*", GW.Gw2Color), ID, id))
         self:Show()
     end
 end
@@ -613,7 +633,7 @@ local function SetCurrencyToken(self, idx)
 
     if idx and IsModKeyDown() then
         local id = tonumber(strmatch(C_CurrencyInfo.GetCurrencyListLink(idx),"currency:(%d+)"))
-        self:AddLine(format("|cffffedba%s|r %d", ID, id))
+        self:AddLine(format(("*%s|r %d"):gsub("*", GW.Gw2Color), ID, id))
         self:Show()
     end
 end
@@ -622,7 +642,7 @@ local function SetCurrencyTokenByID(self, id)
     if self:IsForbidden() then return end
 
     if id and IsModKeyDown() then
-        self:AddLine(format("|cffffedba%s|r %d", ID, id))
+        self:AddLine(format(("*%s|r %d"):gsub("*", GW.Gw2Color), ID, id))
         self:Show()
     end
 end
@@ -632,7 +652,7 @@ local function QuestID(self)
 
     local id = self.questLogIndex and C_QuestLog.GetQuestIDForLogIndex(self.questLogIndex) or self.questID
     if id and IsModKeyDown() then
-        GameTooltip:AddLine(format("|cffffedba%s|r %d", _G.ID, id))
+        GameTooltip:AddLine(format(("*%s|r %d"):gsub("*", GW.Gw2Color), _G.ID, id))
         GameTooltip:Show()
     end
 end
@@ -643,7 +663,7 @@ local function SetBackpackToken(self, id)
     if id and IsModKeyDown() then
         local info = C_CurrencyInfo.GetBackpackCurrencyInfo(id)
         if info and info.currencyTypesID then
-            self:AddLine(format("|cffffedba%s|r %d", ID, id))
+            self:AddLine(format(("*%s|r %d"):gsub("*", GW.Gw2Color), ID, id))
             self:Show()
         end
     end
@@ -679,8 +699,8 @@ local function LoadTooltips()
         SetStyle(tooltip)
     end
     hooksecurefunc("SharedTooltip_SetBackdropStyle", SetStyle)
-    _G.GameTooltipStatusBar:SetStatusBarTexture("Interface/Addons/GW2_UI/textures/hud/castinbar-white")
-    _G.GameTooltip.ItemTooltip.Icon:SetTexCoord(0.1, 0.9, 0.1, 0.9)
+    GameTooltipStatusBar:SetStatusBarTexture("Interface/Addons/GW2_UI/textures/hud/castinbar-white")
+    GameTooltip.ItemTooltip.Icon:SetTexCoord(0.1, 0.9, 0.1, 0.9)
     hooksecurefunc("GameTooltip_ShowProgressBar", SkinProgressbar)
 
     if GetSetting("TOOLTIP_MOUSE") then

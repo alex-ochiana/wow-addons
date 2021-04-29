@@ -15,6 +15,7 @@ RSADB = {
 		["Crëtz - Kazzak"] = "DEMONHUNTER",
 		["Latthrias - Sylvanas"] = "PRIEST",
 		["Jiglèr - Sylvanas"] = "WARRIOR",
+		["Plüto - Sylvanas"] = "ROGUE",
 		["Egidus - Sylvanas"] = "MAGE",
 		["Kynaeth - Sylvanas"] = "DEMONHUNTER",
 		["Crètz - Sylvanas"] = "DRUID",
@@ -22,6 +23,17 @@ RSADB = {
 		["Gnomèrcy - Sylvanas"] = "WARLOCK",
 	},
 	["profiles"] = {
+		["DEMONHUNTER"] = {
+			["Modules"] = {
+				["Racials"] = true,
+				["Utilities"] = true,
+				["DemonHunter"] = true,
+			},
+			["Fixed"] = true,
+			["General"] = {
+				["Class"] = "DEMONHUNTER",
+			},
+		},
 		["WARRIOR"] = {
 			["Modules"] = {
 				["Racials"] = true,
@@ -44,38 +56,54 @@ RSADB = {
 				["Class"] = "WARLOCK",
 			},
 		},
-		["DEMONHUNTER"] = {
+		["ROGUE"] = {
 			["Modules"] = {
 				["Racials"] = true,
 				["Utilities"] = true,
-				["DemonHunter"] = true,
+				["Rogue"] = true,
 			},
 			["Fixed"] = true,
 			["General"] = {
-				["Class"] = "DEMONHUNTER",
+				["Class"] = "ROGUE",
 			},
 		},
 		["MAGE"] = {
-			["General"] = {
-				["Class"] = "MAGE",
-			},
 			["Modules"] = {
 				["Racials"] = true,
 				["Mage"] = true,
 				["Utilities"] = true,
 			},
 			["Fixed"] = true,
+			["General"] = {
+				["Class"] = "MAGE",
+			},
 		},
 		["DRUID"] = {
+			["General"] = {
+				["Class"] = "DRUID",
+			},
 			["Modules"] = {
 				["Racials"] = true,
 				["Druid"] = true,
 				["Utilities"] = true,
 			},
+			["Utilities"] = {
+				["Spells"] = {
+					["EngineerRessBFA"] = {
+						["Whisper"] = false,
+					},
+				},
+			},
 			["Druid"] = {
 				["Spells"] = {
 					["Growl"] = {
 						["SmartGroup"] = false,
+					},
+					["Revive"] = {
+						["Whisper"] = false,
+					},
+					["Rebirth"] = {
+						["Whisper"] = false,
 					},
 					["Innervate"] = {
 						["Messages"] = {
@@ -84,22 +112,6 @@ RSADB = {
 							},
 						},
 						["Yell"] = true,
-					},
-					["Revive"] = {
-						["Whisper"] = false,
-					},
-					["Rebirth"] = {
-						["Whisper"] = false,
-					},
-				},
-			},
-			["General"] = {
-				["Class"] = "DRUID",
-			},
-			["Utilities"] = {
-				["Spells"] = {
-					["EngineerRessBFA"] = {
-						["Whisper"] = false,
 					},
 				},
 			},

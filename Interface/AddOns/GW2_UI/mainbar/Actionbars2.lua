@@ -437,9 +437,10 @@ local function setActionButtonStyle(buttonName, noBackDrop, hideUnused, isStance
         btn:HookScript("OnShow", showBackdrop)
     end
 end
+GW.setActionButtonStyle = setActionButtonStyle
 GW.AddForProfiling("Actionbars2", "setActionButtonStyle", setActionButtonStyle)
 
-local function main_OnEvent(self, event, ...)
+local function main_OnEvent(self, event)
     if event == "PLAYER_EQUIPMENT_CHANGED" then
         actionBarEquipUpdate()
     elseif event == "PLAYER_REGEN_DISABLED" or event == "PLAYER_REGEN_ENABLED" then
@@ -1152,5 +1153,12 @@ local function LoadActionBars(lm)
 
     FRAMELOCK_STATES.COMMENTATOR_SPECTATING_MODE = Mixin(FRAMELOCK_STATES.COMMENTATOR_SPECTATING_MODE, HIDE_MOST)
     FRAMELOCK_STATES.PETBATTLES = Mixin(FRAMELOCK_STATES.PETBATTLES, HIDE_MOST)
+
+    --ActionBarController:HookScript("OnEvent", function(_, event)
+        --if event == "UPDATE_BONUS_ACTIONBAR" then
+            --ActionBarController_ResetToDefault()
+            --ValidateActionBarTransition()
+        --end
+    --end)
 end
 GW.LoadActionBars = LoadActionBars

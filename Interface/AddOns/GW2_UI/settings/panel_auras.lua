@@ -94,7 +94,8 @@ local function LoadAurasPanel(sWindow)
             auraKeys,
             auraVals,
             {perSpec = true},
-            {["RAID_FRAMES"] = true}
+            {["RAID_FRAMES"] = true},
+            nil
         )
     end
 

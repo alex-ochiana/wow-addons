@@ -114,7 +114,7 @@ local function unitFrameData(self)
     local name = UnitName(self.unit)
 
     if UnitIsGroupLeader(self.unit) then
-        name = "|TInterface\\AddOns\\GW2_UI\\textures\\party\\icon-groupleader:18:18|t" .. name
+        name = "|TInterface/AddOns/GW2_UI/textures/party/icon-groupleader:18:18|t" .. name
     end
 
     self.nameString:SetText(name)
@@ -236,6 +236,11 @@ local function LoadPlayerFrame()
             self.pvp:fadeOut()
         end
     end)
+
+    -- grab the TotemFramebuttons to our own Totem Frame
+    if PlayerFrame and TotemFrame then
+        GW.Create_Totem_Bar()
+    end
 
     -- setup anim to flash the PvP marker
     local pvp = NewUnitFrame.pvp

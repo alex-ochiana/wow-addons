@@ -31,7 +31,7 @@ VER 3 000000000000000C "Kill" "254857"
 END
 VER 3 000000000000000E "Kill" "1115907"
 /cast Incarnation: Chosen of Elune(Talent, Shapeshift)
-/use Inscrutable Quantum Device
+/use 14
 /cast Convoke the Spirits
 END
 VER 3 0000000000000003 "Shado-Pan" "629482"

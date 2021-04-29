@@ -1,6 +1,30 @@
 local _, GW = ...
 local v = GW.vernotes
 
+v("5.13.4", [=[
+FIXES
+    - Fix interaction with Dominos
+    - Totem fram is now shown with player frame in target frame style
+]=])
+
+v("5.13.3", [=[
+FIXES
+    - Raid styled party frames now working as intended
+]=])
+
+v("5.13.2", [=[
+FIXES
+    - Partyframes: Debuff stacks > 9 are now display correctly 
+
+MISC
+    - Partyframes: Make buff line margin smaller to show more buffs
+    - Added players raid group into player tooltip
+    - Make Raid Control secure: Added Worldmakers into that menu
+    - Added option to set max shown lines on copy chat frame
+    - Added 'Main Tank', 'Main Assist', 'Group Leader' and 'Group Assist' info to raid unit tooltips
+    - Some options are now deactivated if conflicting addons are loaded. In the settings you can see which Addons is causing the deactivation.
+]=])
+
 v("5.13.1", [=[
 FIXES
     - Fix an error that raid buffs not disapearing

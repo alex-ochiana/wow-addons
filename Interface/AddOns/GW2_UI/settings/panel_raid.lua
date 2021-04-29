@@ -33,7 +33,7 @@ local function LoadRaidPanel(sWindow)
         L["Sort raid unit frames by role (tank, heal, damage) instead of group."],
         "RAID_SORT_BY_ROLE",
         function()
-            if GetSetting("RAID_FRAMES") == true then
+            if GetSetting("RAID_FRAMES") then
                 GW.UpdateRaidFramesLayout()
                 GW.UpdateRaidFramesPosition()
             end
@@ -57,7 +57,8 @@ local function LoadRaidPanel(sWindow)
             COMPACT_UNIT_FRAME_PROFILE_HEALTHTEXT_LOSTHEALTH
         },
         nil,
-        {["RAID_FRAMES"] = true}
+        {["RAID_FRAMES"] = true},
+        nil
     )
 
     addOptionDropdown(
@@ -69,7 +70,8 @@ local function LoadRaidPanel(sWindow)
         {"NONE", "DIFFERENT", "ALL"},
         {NONE_KEY, L["Different Than Own"], ALL},
         nil,
-        {["RAID_FRAMES"] = true}
+        {["RAID_FRAMES"] = true},
+        nil
     )
 
     local dirs, grow = {"Down", "Up", "Right", "Left"}, {}
@@ -86,7 +88,7 @@ local function LoadRaidPanel(sWindow)
         L["Set the grow direction for raid frames."],
         "RAID_GROW",
         function()
-            if GetSetting("RAID_FRAMES") == true then
+            if GetSetting("RAID_FRAMES") then
                 GW.UpdateRaidFramesAnchor()
                 GW.UpdateRaidFramesLayout()
                 GW.UpdateRaidFramesPosition()
@@ -101,7 +103,8 @@ local function LoadRaidPanel(sWindow)
             end
         ),
         nil,
-        {["RAID_FRAMES"] = true}
+        {["RAID_FRAMES"] = true},
+        nil
     )
 
     addOptionDropdown(
@@ -110,14 +113,15 @@ local function LoadRaidPanel(sWindow)
         L["Set where the raid frame container should be anchored.\n\nBy position: Always the same as the container's position on screen.\nBy growth: Always opposite to the growth direction."],
         "RAID_ANCHOR",
         function()
-            if GetSetting("RAID_FRAMES") == true then
+            if GetSetting("RAID_FRAMES") then
                 GW.UpdateRaidFramesAnchor()
             end
         end,
         {"POSITION", "GROWTH", "TOP", "LEFT", "BOTTOM", "CENTER", "TOPLEFT", "BOTTOMLEFT", "BOTTOMRIGHT", "RIGHT", "TOPRIGHT"},
         {L["By position on screen"], L["By growth direction"], "TOP", "LEFT", "BOTTOM", "CENTER", "TOPLEFT", "BOTTOMLEFT", "BOTTOMRIGHT", "RIGHT", "TOPRIGHT"},
         nil,
-        {["RAID_FRAMES"] = true}
+        {["RAID_FRAMES"] = true},
+        nil
     )
 
     addOptionSlider(
@@ -126,7 +130,7 @@ local function LoadRaidPanel(sWindow)
         L["Set the number of raid unit frames per column or row, depending on grow directions."],
         "RAID_UNITS_PER_COLUMN",
         function()
-            if GetSetting("RAID_FRAMES") == true then
+            if GetSetting("RAID_FRAMES") then
                 GW.UpdateRaidFramesLayout()
                 GW.UpdateRaidFramesPosition()
             end
@@ -135,7 +139,8 @@ local function LoadRaidPanel(sWindow)
         40,
         nil,
         0,
-        {["RAID_FRAMES"] = true}
+        {["RAID_FRAMES"] = true},
+        nil
     )
 
     addOptionSlider(
@@ -144,7 +149,7 @@ local function LoadRaidPanel(sWindow)
         L["Set the width of the raid units."],
         "RAID_WIDTH",
         function()
-            if GetSetting("RAID_FRAMES") == true then
+            if GetSetting("RAID_FRAMES") then
                 GW.UpdateRaidFramesLayout()
                 GW.UpdateRaidFramesPosition()
             end
@@ -153,7 +158,8 @@ local function LoadRaidPanel(sWindow)
         300,
         nil,
         0,
-        {["RAID_FRAMES"] = true}
+        {["RAID_FRAMES"] = true},
+        nil
     )
 
     addOptionSlider(
@@ -162,7 +168,7 @@ local function LoadRaidPanel(sWindow)
         L["Set the height of the raid units."],
         "RAID_HEIGHT",
         function()
-            if GetSetting("RAID_FRAMES") == true then
+            if GetSetting("RAID_FRAMES") then
                 GW.UpdateRaidFramesLayout()
                 GW.UpdateRaidFramesPosition()
             end
@@ -171,7 +177,8 @@ local function LoadRaidPanel(sWindow)
         100,
         nil,
         0,
-        {["RAID_FRAMES"] = true}
+        {["RAID_FRAMES"] = true},
+        nil
     )
 
     addOptionSlider(
@@ -180,7 +187,7 @@ local function LoadRaidPanel(sWindow)
         L["Set the maximum width that the raid frames can be displayed.\n\nThis will cause unit frames to shrink or move to the next row."],
         "RAID_CONT_WIDTH",
         function()
-            if GetSetting("RAID_FRAMES") == true then
+            if GetSetting("RAID_FRAMES")  then
                 GW.UpdateRaidFramesLayout()
                 GW.UpdateRaidFramesPosition()
             end
@@ -189,7 +196,8 @@ local function LoadRaidPanel(sWindow)
         GetScreenWidth(),
         nil,
         0,
-        {["RAID_FRAMES"] = true}
+        {["RAID_FRAMES"] = true},
+        nil
     )
 
     addOptionSlider(
@@ -198,7 +206,7 @@ local function LoadRaidPanel(sWindow)
         L["Set the maximum height that the raid frames can be displayed.\n\nThis will cause unit frames to shrink or move to the next column."],
         "RAID_CONT_HEIGHT",
         function()
-            if GetSetting("RAID_FRAMES") == true then
+            if GetSetting("RAID_FRAMES") then
                 GW.UpdateRaidFramesLayout()
                 GW.UpdateRaidFramesPosition()
             end
@@ -207,7 +215,8 @@ local function LoadRaidPanel(sWindow)
         GetScreenHeight(),
         nil,
         0,
-        {["RAID_FRAMES"] = true}
+        {["RAID_FRAMES"] = true},
+        nil
     )
 
     InitPanel(p)

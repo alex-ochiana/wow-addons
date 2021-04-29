@@ -13,6 +13,7 @@ HandyNotes_ArgusDB = {
 		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
 		["Lastones - Kazzak"] = "Lastones - Kazzak",
 		["Needzafemale - Kazzak"] = "Needzafemale - Kazzak",
+		["Plüto - Sylvanas"] = "Plüto - Sylvanas",
 		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
 		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
 		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
@@ -43,6 +44,8 @@ HandyNotes_ArgusDB = {
 		["Lastones - Kazzak"] = {
 		},
 		["Needzafemale - Kazzak"] = {
+		},
+		["Plüto - Sylvanas"] = {
 		},
 		["Kynaeth - Sylvanas"] = {
 		},

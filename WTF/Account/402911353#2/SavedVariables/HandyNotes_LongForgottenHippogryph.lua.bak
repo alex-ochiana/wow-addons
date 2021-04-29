@@ -6,6 +6,7 @@ HandyNotes_LongForgottenHippogryphDB = {
 		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
 		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
 		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
+		["Plüto - Sylvanas"] = "Plüto - Sylvanas",
 	},
 	["profiles"] = {
 		["Vòlkmer - Kazzak"] = {
@@ -17,6 +18,8 @@ HandyNotes_LongForgottenHippogryphDB = {
 		["Crètz - Sylvanas"] = {
 		},
 		["Gnomèrcy - Sylvanas"] = {
+		},
+		["Plüto - Sylvanas"] = {
 		},
 	},
 }

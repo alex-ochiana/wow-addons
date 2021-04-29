@@ -43,19 +43,19 @@ SmexyMatsDB = {
 				},
 				["Archaeology"] = {
 				},
-				["Herbalism"] = {
-				},
 				["Alchemy"] = {
+				},
+				["Fishing"] = {
 				},
 				["Leatherworking"] = {
 				},
-				["Fishing"] = {
+				["Herbalism"] = {
 				},
 				["Enchanting"] = {
 				},
 			},
 		},
-		["Fishing"] = {
+		["Herbalism"] = {
 			["Alliance"] = {
 				["Sylvanas"] = {
 					["Crètz"] = {
@@ -63,7 +63,7 @@ SmexyMatsDB = {
 				},
 			},
 		},
-		["Herbalism"] = {
+		["Alchemy"] = {
 			["Alliance"] = {
 				["Sylvanas"] = {
 					["Crètz"] = {
@@ -103,7 +103,7 @@ SmexyMatsDB = {
 				},
 			},
 		},
-		["Alchemy"] = {
+		["Fishing"] = {
 			["Alliance"] = {
 				["Sylvanas"] = {
 					["Crètz"] = {

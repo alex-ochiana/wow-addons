@@ -5,6 +5,7 @@ GladiatorlosSADB = {
 		["Crëtz - Kazzak"] = "Default",
 		["Latthrias - Sylvanas"] = "Default",
 		["Jiglèr - Sylvanas"] = "Default",
+		["Plüto - Sylvanas"] = "Default",
 		["Egidus - Sylvanas"] = "Default",
 		["Gnomèrcy - Sylvanas"] = "Default",
 		["Crètz - Sylvanas"] = "Default",

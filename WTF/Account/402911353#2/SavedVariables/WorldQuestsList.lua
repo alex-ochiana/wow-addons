@@ -1,12 +1,41 @@
 
 VWQL = {
-	["Egidus-Sylvanas"] = {
+	["Scale"] = 0.8,
+	["Kynaeth-Sylvanas"] = {
 		["Filter"] = 63,
 		["FilterType"] = {
 		},
 		["Quests"] = {
 		},
 		["VERSION"] = 100,
+	},
+	["Mortifèrous-Kazzak"] = {
+		["VERSION"] = 100,
+		["FilterType"] = {
+		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
+	},
+	["Vòlkmer-Kazzak"] = {
+		["VERSION"] = 100,
+		["Filter"] = 63,
+		["RegularQuestMode"] = true,
+		["Quests"] = {
+		},
+		["FilterType"] = {
+		},
+	},
+	["Sort"] = 5,
+	["VERSION"] = 100,
+	["Plüto-Sylvanas"] = {
+		["Filter"] = 63,
+		["VERSION"] = 100,
+		["RegularQuestMode"] = true,
+		["Quests"] = {
+		},
+		["FilterType"] = {
+		},
 	},
 	["Crëtz-Kazzak"] = {
 		["Filter"] = 63,
@@ -21,98 +50,64 @@ VWQL = {
 		["FilterType"] = {
 		},
 		["Quests"] = {
-			[60659] = true,
-			[54895] = true,
-			[51609] = true,
 		},
 		["Filter"] = 63,
 	},
 	["AzeriteFormat"] = 20,
-	["Scale"] = 0.8,
-	["DisableIconsGeneralMap947"] = true,
+	["Crètz-Sylvanas"] = {
+		["Filter"] = 63,
+		["VERSION"] = 100,
+		["Quests"] = {
+			[51617] = true,
+			[58490] = true,
+			[51501] = true,
+			[43943] = true,
+			[52458] = true,
+			[59581] = true,
+			[61353] = true,
+			[60475] = true,
+			[59599] = true,
+			[60609] = true,
+			[61621] = true,
+			[58601] = true,
+			[43798] = true,
+			[61948] = true,
+			[52884] = true,
+			[60950] = true,
+			[59578] = true,
+			[60844] = true,
+			[61791] = true,
+			[60533] = true,
+			[61610] = true,
+			[61549] = true,
+			[61520] = true,
+			[61879] = true,
+			[61870] = true,
+			[62051] = true,
+			[60929] = true,
+			[60585] = true,
+			[45379] = true,
+			[60597] = true,
+			[52873] = true,
+			[58144] = true,
+			[59617] = true,
+		},
+		["FilterType"] = {
+		},
+	},
+	["Egidus-Sylvanas"] = {
+		["Filter"] = 63,
+		["FilterType"] = {
+		},
+		["Quests"] = {
+		},
+		["VERSION"] = 100,
+	},
 	["SortPrio"] = {
 	},
 	["Ignore"] = {
 	},
 	["DisableLFG"] = true,
-	["Vòlkmer-Kazzak"] = {
-		["VERSION"] = 100,
-		["Filter"] = 63,
-		["RegularQuestMode"] = true,
-		["Quests"] = {
-		},
-		["FilterType"] = {
-		},
-	},
-	["Sort"] = 5,
-	["VERSION"] = 100,
-	["Mortifèrous-Kazzak"] = {
-		["VERSION"] = 100,
-		["FilterType"] = {
-		},
-		["Quests"] = {
-		},
-		["Filter"] = 63,
-	},
-	["Crètz-Sylvanas"] = {
-		["Filter"] = 63,
-		["VERSION"] = 100,
-		["Quests"] = {
-			[54895] = true,
-			[43248] = true,
-			[43943] = true,
-			[48985] = true,
-			[61148] = true,
-			[60837] = true,
-			[51454] = true,
-			[58705] = true,
-			[41886] = true,
-			[52157] = true,
-			[48696] = true,
-			[54620] = true,
-			[54624] = true,
-			[57650] = true,
-			[43798] = true,
-			[59804] = true,
-			[46198] = true,
-			[47844] = true,
-			[42239] = true,
-			[61141] = true,
-			[60770] = true,
-			[44895] = true,
-			[42062] = true,
-			[41938] = true,
-			[54599] = true,
-			[43769] = true,
-			[47551] = true,
-			[61303] = true,
-			[60659] = true,
-			[60585] = true,
-			[51639] = true,
-			[60476] = true,
-			[58084] = true,
-			[41662] = true,
-			[60844] = true,
-			[44923] = true,
-			[51455] = true,
-			[54566] = true,
-			[45791] = true,
-			[45379] = true,
-			[42819] = true,
-			[54562] = true,
-			[61947] = true,
-			[43328] = true,
-		},
-		["FilterType"] = {
-		},
-	},
-	["Kynaeth-Sylvanas"] = {
-		["Filter"] = 63,
-		["FilterType"] = {
-		},
-		["Quests"] = {
-		},
-		["VERSION"] = 100,
-	},
+	["DisableIconsGeneralMap947"] = true,
 	["HideLegion"] = true,
 }

@@ -219,17 +219,17 @@ local function setUnitName(self)
     end
 
     if UnitIsGroupLeader(self.unit) then
-        nameString = "|TInterface/AddOns/GW2_UI/textures/party/icon-groupleader:15:15:0:-3|t" .. nameString
+        nameString = "|TInterface/AddOns/GW2_UI/textures/party/icon-groupleader:0:0:0:-2:64:64:4:60:4:60|t " .. nameString
     elseif UnitIsGroupAssistant(self.unit) then
-        nameString = "|TInterface/AddOns/GW2_UI/textures/party/icon-assist:15:15:0:-3|t" .. nameString
+        nameString = "|TInterface/AddOns/GW2_UI/textures/party/icon-assist:0:0:0:-2:64:64:4:60:4:60|t " .. nameString
     end
 
     if self.index then
         local _, _, _, _, _, _, _, _, _, role = GetRaidRosterInfo(self.index)
         if role == "MAINTANK" then
-            nameString = "|TInterface/AddOns/GW2_UI/textures/party/icon-maintank:15:15:0:-3|t" .. nameString
+            nameString = "|TInterface/AddOns/GW2_UI/textures/party/icon-maintank:15:15:0:-2|t " .. nameString
         elseif role == "MAINASSIST" then
-            nameString = "|TInterface/AddOns/GW2_UI/textures/party/icon-mainassist:15:15:0:-3|t" .. nameString
+            nameString = "|TInterface/AddOns/GW2_UI/textures/party/icon-mainassist:15:15:0:-1|t " .. nameString
         end 
     end
 
@@ -441,7 +441,7 @@ local function updateDebuffs(self)
     local showImportendInstanceDebuffs = GetSetting("RAID_SHOW_IMPORTEND_RAID_INSTANCE_DEBUFF")
     FillTable(ignored, true, strsplit(",", (GetSetting("AURAS_IGNORED"):trim():gsub("%s*,%s*", ","))))
 
-    local i, framesDone, aurasDone = 0
+    local i, framesDone, aurasDone = 0, false, false
     repeat
         i = i + 1
 
@@ -558,7 +558,7 @@ end
 local function updateBuffs(self)
     local btnIndex, x, y = 1, 0, 0
     local indicators = AURAS_INDICATORS[GW.myclass]
-    local i, name, spellid = 1
+    local i, name, spellid = 1, nil, nil
     FillTable(missing, true, strsplit(",", (GetSetting("AURAS_MISSING"):trim():gsub("%s*,%s*", ","))))
     FillTable(ignored, true, strsplit(",", (GetSetting("AURAS_IGNORED"):trim():gsub("%s*,%s*", ","))))
 
@@ -568,7 +568,7 @@ local function updateBuffs(self)
 
     -- missing buffs
     if not UnitIsDeadOrGhost(self.unit) then
-        
+
         repeat
             i, name = i + 1, UnitBuff(self.unit, i)
             if name and missing[name] then
@@ -663,7 +663,7 @@ local function updateBuffs(self)
 
                                     shouldDisplay = false
                                 end
-                                
+
                                 frame:Show()
                             end
                         end
@@ -693,7 +693,7 @@ local function raidframe_OnEvent(self, event, unit)
         -- Enable or disable mouse handling on aura frames
         local name, enable = self:GetName(), event == "PLAYER_REGEN_ENABLED" or GetSetting("RAID_AURA_TOOLTIP_IN_COMBAT")
         for j = 1, 2 do
-            local i, aura, frame = 1, j == 1 and "Buff" or "Debuff"
+            local i, aura, frame = 1, j == 1 and "Buff" or "Debuff", nil
             repeat
                 frame, i = _G["Gw" .. name .. aura .. "ItemFrame" .. i], i + 1
                 if frame then
@@ -1034,7 +1034,7 @@ GW.AddForProfiling("raidframes", "UpdateRaidFramesLayout", UpdateRaidFramesLayou
 
 local function createRaidFrame(registerUnit, index)
     local frame = _G["GwCompact" .. registerUnit]
-    if _G["GwCompact" .. registerUnit] == nil then
+    if not frame then
         frame = CreateFrame("Button", "GwCompact" .. registerUnit, GwRaidFrameContainer, "GwRaidFrame")
         frame.name = _G[frame:GetName() .. "Data"].name
         frame.healthstring = _G[frame:GetName() .. "Data"].healthstring

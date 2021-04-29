@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 2792,
 	["lastSanitation"] = 3,
+	["session"] = 2799,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\Routes\\Routes-v1.6.3.lua:356: bad argument #1 to 'math_sin' (number expected, got nil)",
@@ -124,8 +124,8 @@ BugGrabberDB = {
 		}, -- [15]
 		{
 			["message"] = "(null)",
-			["time"] = "2020/04/20 22:01:46",
 			["session"] = 2779,
+			["time"] = "2020/04/20 22:01:46",
 			["counter"] = 41,
 		}, -- [16]
 		{
@@ -163,8 +163,8 @@ BugGrabberDB = {
 			["time"] = "2021/04/15 08:53:22",
 			["locals"] = "",
 			["stack"] = "[string \"=[C]\"]: in function `hooksecurefunc'\n[string \"@Interface\\AddOns\\NetherwingEggs\\NetherwingEggs-3.05.lua\"]:1679: in function <Interface\\AddOns\\NetherwingEggs\\NetherwingEggs.lua:1617>",
-			["session"] = 2792,
-			["counter"] = 4,
+			["session"] = 2799,
+			["counter"] = 13,
 		}, -- [21]
 	},
 }
