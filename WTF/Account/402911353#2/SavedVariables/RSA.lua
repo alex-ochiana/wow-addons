@@ -4,36 +4,27 @@ RSADB = {
 		["LibDualSpec-1.0"] = {
 		},
 	},
+	["global"] = {
+		["ID"] = "424325992782",
+		["revision"] = "545",
+		["version"] = 4,
+		["releaseType"] = "Release",
+	},
 	["profileKeys"] = {
 		["Mortifèrous - Kazzak"] = "WARLOCK",
 		["Crëtz - Kazzak"] = "DEMONHUNTER",
 		["Latthrias - Sylvanas"] = "PRIEST",
 		["Jiglèr - Sylvanas"] = "WARRIOR",
+		["Cìchìcean - Sylvanas"] = "MONK",
 		["Plüto - Sylvanas"] = "ROGUE",
 		["Egidus - Sylvanas"] = "MAGE",
 		["Kynaeth - Sylvanas"] = "DEMONHUNTER",
+		["Cretz - Moonglade"] = "DRUID",
 		["Crètz - Sylvanas"] = "DRUID",
-		["Gnomèrcy - Sylvanas"] = "WARLOCK",
 		["Vòlkmer - Kazzak"] = "SHAMAN",
-	},
-	["global"] = {
-		["ID"] = "424325992782",
-		["revision"] = "544",
-		["version"] = 4,
-		["releaseType"] = "Release",
+		["Gnomèrcy - Sylvanas"] = "WARLOCK",
 	},
 	["profiles"] = {
-		["ROGUE"] = {
-			["General"] = {
-				["Class"] = "ROGUE",
-			},
-			["Modules"] = {
-				["Racials"] = true,
-				["Utilities"] = true,
-				["Rogue"] = true,
-			},
-			["Fixed"] = true,
-		},
 		["WARRIOR"] = {
 			["Modules"] = {
 				["Racials"] = true,
@@ -43,6 +34,39 @@ RSADB = {
 			["Fixed"] = true,
 			["General"] = {
 				["Class"] = "WARRIOR",
+			},
+		},
+		["SHAMAN"] = {
+			["Modules"] = {
+				["Racials"] = true,
+				["Utilities"] = true,
+				["Shaman"] = true,
+			},
+			["Fixed"] = true,
+			["General"] = {
+				["Class"] = "SHAMAN",
+			},
+		},
+		["MAGE"] = {
+			["Modules"] = {
+				["Racials"] = true,
+				["Mage"] = true,
+				["Utilities"] = true,
+			},
+			["Fixed"] = true,
+			["General"] = {
+				["Class"] = "MAGE",
+			},
+		},
+		["PRIEST"] = {
+			["Modules"] = {
+				["Racials"] = true,
+				["Utilities"] = true,
+				["Priest"] = true,
+			},
+			["Fixed"] = true,
+			["General"] = {
+				["Class"] = "PRIEST",
 			},
 		},
 		["WARLOCK"] = {
@@ -67,27 +91,32 @@ RSADB = {
 				["Class"] = "DEMONHUNTER",
 			},
 		},
-		["MAGE"] = {
-			["Modules"] = {
-				["Racials"] = true,
-				["Mage"] = true,
-				["Utilities"] = true,
-			},
-			["Fixed"] = true,
-			["General"] = {
-				["Class"] = "MAGE",
-			},
-		},
 		["DRUID"] = {
+			["General"] = {
+				["Class"] = "DRUID",
+			},
 			["Modules"] = {
 				["Racials"] = true,
 				["Druid"] = true,
 				["Utilities"] = true,
 			},
+			["Utilities"] = {
+				["Spells"] = {
+					["EngineerRessBFA"] = {
+						["Whisper"] = false,
+					},
+				},
+			},
 			["Druid"] = {
 				["Spells"] = {
 					["Growl"] = {
 						["SmartGroup"] = false,
+					},
+					["Revive"] = {
+						["Whisper"] = false,
+					},
+					["Rebirth"] = {
+						["Whisper"] = false,
 					},
 					["Innervate"] = {
 						["Messages"] = {
@@ -97,46 +126,30 @@ RSADB = {
 						},
 						["Yell"] = true,
 					},
-					["Revive"] = {
-						["Whisper"] = false,
-					},
-					["Rebirth"] = {
-						["Whisper"] = false,
-					},
-				},
-			},
-			["General"] = {
-				["Class"] = "DRUID",
-			},
-			["Utilities"] = {
-				["Spells"] = {
-					["EngineerRessBFA"] = {
-						["Whisper"] = false,
-					},
 				},
 			},
 			["Fixed"] = true,
 		},
-		["SHAMAN"] = {
+		["MONK"] = {
 			["Modules"] = {
 				["Racials"] = true,
 				["Utilities"] = true,
-				["Shaman"] = true,
+				["Monk"] = true,
 			},
 			["Fixed"] = true,
 			["General"] = {
-				["Class"] = "SHAMAN",
+				["Class"] = "MONK",
 			},
 		},
-		["PRIEST"] = {
+		["ROGUE"] = {
 			["Modules"] = {
 				["Racials"] = true,
 				["Utilities"] = true,
-				["Priest"] = true,
+				["Rogue"] = true,
 			},
 			["Fixed"] = true,
 			["General"] = {
-				["Class"] = "PRIEST",
+				["Class"] = "ROGUE",
 			},
 		},
 	},

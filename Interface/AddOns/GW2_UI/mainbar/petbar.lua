@@ -23,13 +23,13 @@ local function setActionButtonAutocast(id)
 end
 
 local function petBarUpdate()
-    _G.PetActionButton1Icon:SetTexture("Interface/AddOns/GW2_UI/textures/icons/pet-attack")
-    _G.PetActionButton2Icon:SetTexture("Interface/AddOns/GW2_UI/textures/icons/pet-follow")
-    _G.PetActionButton3Icon:SetTexture("Interface/AddOns/GW2_UI/textures/icons/pet-place")
+    PetActionButton1Icon:SetTexture("Interface/AddOns/GW2_UI/textures/icons/pet-attack")
+    PetActionButton2Icon:SetTexture("Interface/AddOns/GW2_UI/textures/icons/pet-follow")
+    PetActionButton3Icon:SetTexture("Interface/AddOns/GW2_UI/textures/icons/pet-place")
 
-    _G.PetActionButton8Icon:SetTexture("Interface/AddOns/GW2_UI/textures/icons/pet-assist")
-    _G.PetActionButton9Icon:SetTexture("Interface/AddOns/GW2_UI/textures/icons/pet-defense")
-    _G.PetActionButton10Icon:SetTexture("Interface/AddOns/GW2_UI/textures/icons/pet-passive")
+    PetActionButton8Icon:SetTexture("Interface/AddOns/GW2_UI/textures/icons/pet-assist")
+    PetActionButton9Icon:SetTexture("Interface/AddOns/GW2_UI/textures/icons/pet-defense")
+    PetActionButton10Icon:SetTexture("Interface/AddOns/GW2_UI/textures/icons/pet-passive")
     for i = 1, 12 do
         if _G["PetActionButton" .. i] then
             _G["PetActionButton" .. i .. "NormalTexture2"]:SetTexture(nil)
@@ -64,12 +64,12 @@ local function setPetBar(fmPet)
                 btn:ClearAllPoints()
                 btn:SetPoint("BOTTOM", PetActionButton5, "TOP", 0, BUTTON_MARGIN)
             end
-            
+
             if btnShine then
                 btnShine:SetSize(btn:GetSize())
                 for _, v in pairs(_G["PetActionButton" .. i .. "Shine"].sparkles) do
-                   v:SetTexture("Interface/AddOns/GW2_UI/Textures/talents/autocast")
-                   v:SetSize((i < 4 and 32 or BUTTON_SIZE) + 5, (i < 4 and 32 or BUTTON_SIZE) + 5)
+                    v:SetTexture("Interface/AddOns/GW2_UI/Textures/talents/autocast")
+                    v:SetSize((i < 4 and 32 or BUTTON_SIZE) + 5, (i < 4 and 32 or BUTTON_SIZE) + 5)
                 end
 
                 _G["PetActionButton" .. i .. "AutoCastable"]:SetTexture("Interface/AddOns/GW2_UI/Textures/talents/autocast")
@@ -88,7 +88,8 @@ local function setPetBar(fmPet)
                 btn:SetAttribute("_onreceivedrag", nil)
             end
 
-            GW.setActionButtonStyle("PetActionButton" .. i)
+            GW.setActionButtonStyle("PetActionButton" .. i, nil, nil, nil, true)
+            GW.RegisterCooldown(_G["PetActionButton" .. i .. "Cooldown"])
         end
     end
 end
@@ -188,6 +189,22 @@ local function LoadPetFrame(lm)
     playerPetFrame.health:SetStatusBarColor(COLOR_FRIENDLY[2].r, COLOR_FRIENDLY[2].g, COLOR_FRIENDLY[2].b)
     playerPetFrame.health.text:SetFont(UNIT_NAME_FONT, 11)
 
+    playerPetFrame.auraPositionUnder = GetSetting("PET_AURAS_UNDER")
+
+    if playerPetFrame.auraPositionUnder then
+        playerPetFrame.auras:ClearAllPoints()
+        playerPetFrame.auras:SetPoint("TOPLEFT", playerPetFrame.resource, "BOTTOMLEFT", 0, -5)
+    end
+
+    playerPetFrame:SetScript("OnEnter", function(self)
+        if self.unit then
+            GameTooltip:ClearLines()
+            GameTooltip_SetDefaultAnchor(GameTooltip, UIParent)
+            GameTooltip:SetUnit(self.unit)
+            GameTooltip:Show()
+        end
+    end)
+    playerPetFrame:SetScript("OnLeave", GameTooltip_Hide)
     playerPetFrame:SetScript("OnEvent", updatePetData)
     playerPetFrame:HookScript(
         "OnShow",
@@ -227,5 +244,27 @@ local function LoadPetFrame(lm)
     lm:RegisterPetFrame(playerPetFrame)
 
     setPetBar(playerPetFrame)
+
+    -- create floating combat text
+    if GetSetting("PET_FLOATING_COMBAT_TEXT") then
+        local fctf = CreateFrame("Frame", nil, playerPetFrame)
+        fctf:SetFrameLevel(playerPetFrame:GetFrameLevel() + 3)
+        fctf:RegisterEvent("UNIT_COMBAT")
+        fctf:SetScript("OnEvent", function(self, _, unit, ...)
+            if self.unit == unit then
+                CombatFeedback_OnCombatEvent(self, ...)
+            end
+        end)
+        fctf:SetScript("OnUpdate", CombatFeedback_OnUpdate)
+        fctf.unit = playerPetFrame.unit
+
+        local font = fctf:CreateFontString(nil, "OVERLAY")
+        font:SetFont(DAMAGE_TEXT_FONT, 30)
+        fctf.fontString = font
+        font:SetPoint("CENTER", playerPetFrame.portrait, "CENTER")
+        font:Hide()
+
+        CombatFeedback_Initialize(fctf, font, 30)
+    end
 end
 GW.LoadPetFrame = LoadPetFrame

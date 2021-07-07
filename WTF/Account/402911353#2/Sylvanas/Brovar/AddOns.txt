@@ -12,7 +12,7 @@ Immersion_ExtraFade: disabled
 Masque_Azerite: disabled
 MasterPlan: disabled
 MasterPlanA: disabled
-MBB: disabled
+MBB: enabled
 MoveAnything: disabled
 NPCScan: enabled
 OrderHallCommander: disabled
@@ -125,3 +125,7 @@ Kui_Nameplates: disabled
 Kui_Nameplates_Core_Config: disabled
 Kui_Nameplates_Core: disabled
 Ace3: enabled
+Gladius: enabled
+!BugGrabber: enabled
+BugSack: enabled
+RUF: disabled

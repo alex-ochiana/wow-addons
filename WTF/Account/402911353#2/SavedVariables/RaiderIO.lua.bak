@@ -5,16 +5,10 @@ RaiderIO_Config = {
 }
 RaiderIO_LastCharacter = "eu-Crètz-sylvanas"
 RaiderIO_MissingCharacters = {
-	["eu-Íoana-sylvanas"] = true,
-	["eu-Seanshifter-auchindoun"] = true,
-	["eu-Tallbutshort-sylvanas"] = true,
-	["eu-Jenner-sylvanas"] = true,
-	["eu-Badfriend-sylvanas"] = true,
-	["eu-Aburitoarea-sylvanas"] = true,
-	["eu-Minnta-sylvanas"] = true,
-	["eu-Effsee-sylvanas"] = true,
+	["eu-Anotherkekw-blackmoore"] = true,
 	["eu-Monykat-sylvanas"] = true,
-	["eu-Oiqpio-sylvanas"] = true,
-	["eu-Toopac-sylvanas"] = true,
+	["eu-Relisys-sylvanas"] = true,
+}
+RaiderIO_MissingServers = {
 }
 RaiderIO_CachedRuns = nil

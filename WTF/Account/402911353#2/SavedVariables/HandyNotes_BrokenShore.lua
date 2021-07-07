@@ -10,15 +10,17 @@ HandyNotes_BrokenShoreDB = {
 		["Blanitza - Kazzak"] = "Blanitza - Kazzak",
 		["Mòloch - Kazzak"] = "Mòloch - Kazzak",
 		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
+		["Cretz - Moonglade"] = "Cretz - Moonglade",
 		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
 		["Lastones - Kazzak"] = "Lastones - Kazzak",
 		["Needzafemale - Kazzak"] = "Needzafemale - Kazzak",
-		["Mortifèrous - Kazzak"] = "Mortifèrous - Kazzak",
+		["Plüto - Sylvanas"] = "Plüto - Sylvanas",
+		["Cìchìcean - Sylvanas"] = "Cìchìcean - Sylvanas",
 		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
 		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
 		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
 		["Brovar - Sylvanas"] = "Brovar - Sylvanas",
-		["Plüto - Sylvanas"] = "Plüto - Sylvanas",
+		["Mortifèrous - Kazzak"] = "Mortifèrous - Kazzak",
 	},
 	["profiles"] = {
 		["Crètz - Kazzak"] = {
@@ -42,13 +44,17 @@ HandyNotes_BrokenShoreDB = {
 		},
 		["Crëtz - Kazzak"] = {
 		},
+		["Cretz - Moonglade"] = {
+		},
 		["Jiglèr - Sylvanas"] = {
 		},
 		["Lastones - Kazzak"] = {
 		},
 		["Needzafemale - Kazzak"] = {
 		},
-		["Mortifèrous - Kazzak"] = {
+		["Plüto - Sylvanas"] = {
+		},
+		["Cìchìcean - Sylvanas"] = {
 		},
 		["Kynaeth - Sylvanas"] = {
 		},
@@ -58,7 +64,7 @@ HandyNotes_BrokenShoreDB = {
 		},
 		["Brovar - Sylvanas"] = {
 		},
-		["Plüto - Sylvanas"] = {
+		["Mortifèrous - Kazzak"] = {
 		},
 	},
 }

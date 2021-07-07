@@ -174,7 +174,7 @@ local function gwMicro_PositionAlert(alert)
             alert ~= StoreMicroButtonAlert and
             alert ~= CharacterMicroButtonAlert and
             alert ~= TalentMicroButtonAlert)
-     then
+    then
         return
     end
     alert.Arrow:ClearAllPoints()
@@ -378,18 +378,7 @@ local function setupMicroButtons(mbf)
     GuildMicroButton:ClearAllPoints()
     GuildMicroButton:SetPoint("BOTTOMLEFT", QuestLogMicroButton, "BOTTOMRIGHT", 4, 0)
     GuildMicroButtonTabard:Hide()
-    GuildMicroButton.interval = 0
-    GuildMicroButton:SetScript(
-        "OnUpdate",
-        function(self, elapsed)
-            if self.interval > 0 then
-                self.interval = self.interval - elapsed
-                return
-            end
-            self.interval = 15.0
-            C_GuildInfo.GuildRoster()
-        end
-    )
+    GuildMicroButton.Ticker = C_Timer.NewTicker(15, function() C_GuildInfo.GuildRoster() end)
     GuildMicroButton:RegisterEvent("GUILD_ROSTER_UPDATE")
     GuildMicroButton:RegisterEvent("MODIFIER_STATE_CHANGED")
     GuildMicroButton:RegisterEvent("GUILD_MOTD")

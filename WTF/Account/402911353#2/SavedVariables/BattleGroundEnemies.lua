@@ -5,12 +5,14 @@ BattleGroundEnemiesDB = {
 		["Crëtz - Kazzak"] = "Default",
 		["Latthrias - Sylvanas"] = "Default",
 		["Jiglèr - Sylvanas"] = "Default",
+		["Vòlkmer - Kazzak"] = "Default",
 		["Plüto - Sylvanas"] = "Default",
 		["Egidus - Sylvanas"] = "Default",
 		["Kynaeth - Sylvanas"] = "Default",
-		["Crètz - Sylvanas"] = "Default",
-		["Vòlkmer - Kazzak"] = "Default",
 		["Gnomèrcy - Sylvanas"] = "Default",
+		["Crètz - Sylvanas"] = "Default",
+		["Cretz - Moonglade"] = "Default",
+		["Cìchìcean - Sylvanas"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -26,6 +28,7 @@ BattleGroundEnemiesDB = {
 				},
 			},
 			["Font"] = "GW2_UI Headlines",
+			["lastReadVersion"] = "9.0.5.6",
 			["Allies"] = {
 				["40"] = {
 					["Position_Y"] = 767.9999317910915,

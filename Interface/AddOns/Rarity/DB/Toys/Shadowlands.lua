@@ -121,18 +121,6 @@ local shadowlandsToys = {
 		method = CONSTANTS.DETECTION_METHODS.SPECIAL,
 		name = L["Acrobatic Steward"],
 		itemId = 184418,
-		items = {
-			353234,
-			353019,
-			353503,
-			352754,
-			353325,
-			353516,
-			353205,
-			363825,
-			353500,
-			353643
-		},
 		chance = 20, -- Average
 		coords = {
 			{m = CONSTANTS.UIMAPIDS.BASTION}
@@ -159,11 +147,6 @@ local shadowlandsToys = {
 		method = CONSTANTS.DETECTION_METHODS.SPECIAL,
 		name = L["Soothing Vesper"],
 		itemId = 184415,
-		items = {
-			353687,
-			353691,
-			353867
-		},
 		chance = 12, -- Average
 		coords = {
 			{m = CONSTANTS.UIMAPIDS.BASTION}
@@ -216,7 +199,6 @@ local shadowlandsToys = {
 		method = CONSTANTS.DETECTION_METHODS.SPECIAL,
 		name = L["Kevin's Party Supplies"],
 		itemId = 184447,
-		items = {354856},
 		chance = 11,
 		coords = {
 			{m = CONSTANTS.UIMAPIDS.MALDRAXXUS}
@@ -229,9 +211,9 @@ local shadowlandsToys = {
 		method = CONSTANTS.DETECTION_METHODS.SPECIAL,
 		name = L["Battlecry of Krexus"],
 		itemId = 184318,
-		items = {352086},
 		chance = 25,
 		sourceText = L["Only members of the Necrolord covenant will be able to reach this cache."],
+		questId = {60368},
 		coords = {
 			{m = CONSTANTS.UIMAPIDS.MALDRAXXUS, x = 44.1, y = 40.0, n = L["Blackhound Cache"]}
 		}
@@ -265,14 +247,114 @@ local shadowlandsToys = {
 		name = L["Necroray Egg"],
 		itemId = 184159,
 		items = {181732, 181733},
-		chance = 100,
+		chance = 50,
 		sourceText = L[
 			"Sometimes contained in the caches awarded for completing any covenant's Calling in Maldraxxus. Will hatch into one of three Necroray mounts after three days."
 		],
 		coords = {
 			{m = CONSTANTS.UIMAPIDS.MALDRAXXUS}
 		}
-	}
+	},
+	-- 9.1
+	["Gravewing Crystal"] = {
+		cat = CONSTANTS.ITEM_CATEGORIES.SHADOWLANDS,
+		type = CONSTANTS.ITEM_TYPES.ITEM,
+		method = CONSTANTS.DETECTION_METHODS.NPC,
+		name = L["Gravewing Crystal"],
+		itemId = 187283,
+		npcs = {179985},
+		chance = 100, -- Blind guess
+		unique = true,
+		requiresCovenant = true,
+		requiredCovenantID = CONSTANTS.COVENANT_IDS.VENTHYR,
+		coords = {
+			{m = CONSTANTS.UIMAPIDS.KORTHIA, x = 45.8, y = 80.6, n = L["Stygian Stonecrusher"]},
+		}
+	},
+	["Small Corpsefly Egg"] = {
+		cat = CONSTANTS.ITEM_CATEGORIES.SHADOWLANDS,
+		type = CONSTANTS.ITEM_TYPES.ITEM,
+		method = CONSTANTS.DETECTION_METHODS.NPC,
+		name = L["Small Corpsefly Egg"],
+		itemId = 187181,
+		npcs = {180042},
+		chance = 100, -- Blind guess
+		unique = true,
+		requiresCovenant = true,
+		requiredCovenantID = CONSTANTS.COVENANT_IDS.NECROLORD,
+		coords = {
+			{m = CONSTANTS.UIMAPIDS.KORTHIA, x = 59.7, y = 43.3, n = L["Fleshwing"]},
+		}
+	},
+	["Vesper of Harmony"] = {
+		cat = CONSTANTS.ITEM_CATEGORIES.SHADOWLANDS,
+		type = CONSTANTS.ITEM_TYPES.ITEM,
+		method = CONSTANTS.DETECTION_METHODS.NPC,
+		name = L["Vesper of Harmony"],
+		isToy = true,
+		itemId = 187176,
+		npcs = {180032},
+		chance = 100, -- Blind guess
+		unique = true,
+		coords = {
+			{m = CONSTANTS.UIMAPIDS.KORTHIA, x = 47.0, y = 35.5, n = L["Wild Worldcracker"]}
+		}
+	},
+	["Bonestorm Top"] = {
+		cat = CONSTANTS.ITEM_CATEGORIES.SHADOWLANDS,
+		type = CONSTANTS.ITEM_TYPES.ITEM,
+		method = CONSTANTS.DETECTION_METHODS.NPC,
+		name = L["Bonestorm Top"],
+		isToy = true,
+		itemId = 183901,
+		npcs = {158025},
+		chance = 100, -- Blind guess
+		unique = true,
+		coords = {
+			{m = CONSTANTS.UIMAPIDS.THE_MAW, x = 48.8, y = 81.4, n = L["Darklord Taraxis"]}
+		}
+	},
+	["Vesper of Faith"] = {
+		cat = CONSTANTS.ITEM_CATEGORIES.SHADOWLANDS,
+		type = CONSTANTS.ITEM_TYPES.ITEM,
+		isToy = true,
+		method = CONSTANTS.DETECTION_METHODS.USE,
+		name = L["Vesper of Faith"],
+		itemId = 187185,
+		items = {185993},
+		chance = 100, -- Blind guess
+		coords = {
+			{m = CONSTANTS.UIMAPIDS.THE_MAW}
+		}
+	},
+	["Bottled Shade Heart"] = {
+		cat = CONSTANTS.ITEM_CATEGORIES.SHADOWLANDS,
+		type = CONSTANTS.ITEM_TYPES.ITEM,
+		method = CONSTANTS.DETECTION_METHODS.NPC,
+		name = L["Bottled Shade Heart"],
+		isToy = true,
+		itemId = 187139,
+		npcs = {179735},
+		chance = 100, -- Blind guess
+		unique = true,
+		coords = {
+			{m = CONSTANTS.UIMAPIDS.THE_MAW, x = 28.5, y = 24.9, n = L["Torglluun"]}
+		}
+	},
+	["Maw-Ocular Viewfinder"] = {
+		cat = CONSTANTS.ITEM_CATEGORIES.SHADOWLANDS,
+		type = CONSTANTS.ITEM_TYPES.ITEM,
+		method = CONSTANTS.DETECTION_METHODS.NPC,
+		name = L["Maw-Ocular Viewfinder"],
+		isToy = true,
+		itemId = 187420,
+		npcs = {179914},
+		chance = 100, -- Blind guess
+		unique = true,
+		coords = {
+			{m = CONSTANTS.UIMAPIDS.KORTHIA, x = 50.2, y = 75.4, n = L["Observer Yorik"]}
+		}
+	},
 }
 
 Rarity.ItemDB.MergeItems(Rarity.ItemDB.toys, shadowlandsToys)

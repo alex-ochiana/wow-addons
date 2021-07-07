@@ -161,7 +161,7 @@ local charSecure_OnAttributeChanged =
             return
         else
             showTal = true
-            fmSBM:SetAttribute("tabopen", 4)
+            fmSBM:SetAttribute("tabopen", 5)
         end
     elseif fmProf ~= nil and value == "professions" then
         if keytoggle and fmProf:IsVisible() then -- and fmSBM and fmSBM:GetAttribute("tabopen") == 4 then
@@ -317,7 +317,6 @@ local function mover_SavePosition(self, x, y)
 end
 GW.AddForProfiling("character", "mover_SavePosition", mover_SavePosition)
 
--- TODO: this doesn't work if bindings are updated in combat, but who does that?!
 local function click_OnEvent(self, event)
     if event ~= "UPDATE_BINDINGS" then
         return
@@ -439,9 +438,11 @@ local function loadBaseFrame()
         --Reset Model Camera
         GwDressingRoom.model:RefreshCamera()
     end)
-    
+
     -- set binding change handlers
-    fmGCW.secure:HookScript("OnEvent", click_OnEvent)
+    fmGCW.secure:HookScript("OnEvent", function(self, event)
+        GW.CombatQueue_Queue("character_update_keybind", click_OnEvent, {self, event})
+    end)
     fmGCW.secure:RegisterEvent("UPDATE_BINDINGS")
 
     -- hook into inventory currency button

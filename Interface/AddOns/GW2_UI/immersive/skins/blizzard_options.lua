@@ -5,54 +5,55 @@ local function LoadBlizzardOptionsSkin()
     if not GW.GetSetting("BLIZZARD_OPTIONS_SKIN_ENABLED") then return end
 
     --Interface and System Options
-    local OptionsFrames = {_G.InterfaceOptionsFrameCategories, _G.InterfaceOptionsFramePanelContainer, _G.InterfaceOptionsFrameAddOns, _G.VideoOptionsFrameCategoryFrame, _G.VideoOptionsFramePanelContainer, _G.Display_, _G.Graphics_, _G.RaidGraphics_, _G.AudioOptionsSoundPanelHardware, _G.AudioOptionsSoundPanelVolume, _G.AudioOptionsSoundPanelPlayback, _G.AudioOptionsVoicePanelTalking, _G.AudioOptionsVoicePanelListening, _G.AudioOptionsVoicePanelBinding}
-    local OptionsButtons = {_G.GraphicsButton, _G.RaidButton}
+    local OptionsFrames = {InterfaceOptionsFrameCategories, InterfaceOptionsFramePanelContainer, InterfaceOptionsFrameAddOns, VideoOptionsFrameCategoryFrame, VideoOptionsFramePanelContainer, Display_, Graphics_, RaidGraphics_, AudioOptionsSoundPanelHardware, AudioOptionsSoundPanelVolume, AudioOptionsSoundPanelPlayback, AudioOptionsVoicePanelTalking, AudioOptionsVoicePanelListening, AudioOptionsVoicePanelBinding}
+    local OptionsButtons = {GraphicsButton, RaidButton}
 
     local InterfaceOptions = {
-        _G.InterfaceOptionsFrame, 
-        _G.InterfaceOptionsControlsPanel,
-        _G.InterfaceOptionsCombatPanel,
-        _G.InterfaceOptionsCombatPanelEnemyCastBars,
-        _G.InterfaceOptionsCombatTextPanel,
-        _G.InterfaceOptionsDisplayPanel,
-        _G.InterfaceOptionsObjectivesPanel,
-        _G.InterfaceOptionsSocialPanel,
-        _G.InterfaceOptionsActionBarsPanel,
-        _G.InterfaceOptionsNamesPanel,
-        _G.InterfaceOptionsNamesPanelFriendly,
-        _G.InterfaceOptionsNamesPanelEnemy,
-        _G.InterfaceOptionsNamesPanelUnitNameplates,
-        _G.InterfaceOptionsBattlenetPanel,
-        _G.InterfaceOptionsCameraPanel,
-        _G.InterfaceOptionsMousePanel,
-        _G.InterfaceOptionsHelpPanel,
-        _G.InterfaceOptionsAccessibilityPanel,
-        _G.CompactUnitFrameProfiles,
-        _G.CompactUnitFrameProfilesGeneralOptionsFrame,
-        _G.VideoOptionsFrame,
-        _G.Display_,
-        _G.Graphics_,
-        _G.RaidGraphics_,
-        _G.Advanced_,
-        _G.NetworkOptionsPanel,
-        _G.InterfaceOptionsLanguagesPanel,
-        _G.MacKeyboardOptionsPanel,
-        _G.AudioOptionsSoundPanel,
-        _G.AudioOptionsSoundPanelHardware,
-        _G.AudioOptionsSoundPanelVolume,
-        _G.AudioOptionsSoundPanelPlayback,
-        _G.AudioOptionsVoicePanel,
-        _G.AudioOptionsVoicePanelTalking,
-        _G.AudioOptionsVoicePanelListening,
-        _G.AudioOptionsVoicePanelBinding,
-        _G.AudioOptionsVoicePanelMicTest,
-        _G.AudioOptionsVoicePanelChatMode1,
-        _G.AudioOptionsVoicePanelChatMode2,
+        InterfaceOptionsFrame, 
+        InterfaceOptionsControlsPanel,
+        InterfaceOptionsColorblindPanel,
+        InterfaceOptionsCombatPanel,
+        InterfaceOptionsCombatPanelEnemyCastBars,
+        InterfaceOptionsCombatTextPanel,
+        InterfaceOptionsDisplayPanel,
+        InterfaceOptionsObjectivesPanel,
+        InterfaceOptionsSocialPanel,
+        InterfaceOptionsActionBarsPanel,
+        InterfaceOptionsNamesPanel,
+        InterfaceOptionsNamesPanelFriendly,
+        InterfaceOptionsNamesPanelEnemy,
+        InterfaceOptionsNamesPanelUnitNameplates,
+        InterfaceOptionsBattlenetPanel,
+        InterfaceOptionsCameraPanel,
+        InterfaceOptionsMousePanel,
+        InterfaceOptionsHelpPanel,
+        InterfaceOptionsAccessibilityPanel,
+        CompactUnitFrameProfiles,
+        CompactUnitFrameProfilesGeneralOptionsFrame,
+        VideoOptionsFrame,
+        Display_,
+        Graphics_,
+        RaidGraphics_,
+        Advanced_,
+        NetworkOptionsPanel,
+        InterfaceOptionsLanguagesPanel,
+        MacKeyboardOptionsPanel,
+        AudioOptionsSoundPanel,
+        AudioOptionsSoundPanelHardware,
+        AudioOptionsSoundPanelVolume,
+        AudioOptionsSoundPanelPlayback,
+        AudioOptionsVoicePanel,
+        AudioOptionsVoicePanelTalking,
+        AudioOptionsVoicePanelListening,
+        AudioOptionsVoicePanelBinding,
+        AudioOptionsVoicePanelMicTest,
+        AudioOptionsVoicePanelChatMode1,
+        AudioOptionsVoicePanelChatMode2,
         }
 
-    _G.RolePollPopup:StripTextures()
-    _G.RolePollPopup:CreateBackdrop(GW.skins.constBackdropFrame)
-    _G.RolePollPopupCloseButton:SkinButton(true)
+    RolePollPopup:StripTextures()
+    RolePollPopup:CreateBackdrop(GW.skins.constBackdropFrame)
+    RolePollPopupCloseButton:SkinButton(true)
 
 
     local InterfaceOptionsFrame = _G.InterfaceOptionsFrame
@@ -166,15 +167,14 @@ local function LoadBlizzardOptionsSkin()
     end
 
     --Delete Raid Profile
-    local deleteProfileDialog = _G.CompactUnitFrameProfilesDeleteProfileDialog
-    if deleteProfileDialog then
-        local tex = deleteProfileDialog:CreateTexture("bg", "BACKGROUND")
-        tex:SetPoint("TOP", deleteProfileDialog, "TOP", 0, 0)
-        tex:SetSize(deleteProfileDialog:GetSize())
+    if CompactUnitFrameProfilesDeleteProfileDialog then
+        local tex = CompactUnitFrameProfilesDeleteProfileDialog:CreateTexture("bg", "BACKGROUND")
+        tex:SetPoint("TOP", deletePrCompactUnitFrameProfilesDeleteProfileDialogofileDialog, "TOP", 0, 0)
+        tex:SetSize(CompactUnitFrameProfilesDeleteProfileDialog:GetSize())
         tex:SetTexture("Interface/AddOns/GW2_UI/textures/party/manage-group-bg")
-        deleteProfileDialog.tex = tex
+        CompactUnitFrameProfilesDeleteProfileDialog.tex = tex
 
-        deleteProfileDialog.Border:Hide()
+        CompactUnitFrameProfilesDeleteProfileDialog.Border:Hide()
 
         _G.CompactUnitFrameProfilesDeleteProfileDialogDeleteButton:SkinButton(false, true)
         _G.CompactUnitFrameProfilesDeleteProfileDialogCancelButton:SkinButton(false, true)
@@ -187,10 +187,9 @@ local function LoadBlizzardOptionsSkin()
     SplashFrame.TopCloseButton:SkinButton(true)
 
     -- Voice Sliders
-    _G.UnitPopupVoiceSpeakerVolume.Slider:SkinSliderFrame()
-    _G.UnitPopupVoiceMicrophoneVolume.Slider:SkinSliderFrame()
-    _G.UnitPopupVoiceUserVolume.Slider:SkinSliderFrame()
-
+    UnitPopupVoiceSpeakerVolume.Slider:SkinSliderFrame()
+    UnitPopupVoiceMicrophoneVolume.Slider:SkinSliderFrame()
+    UnitPopupVoiceUserVolume.Slider:SkinSliderFrame()
 
     -- Chat Settings
     local ChatFrames = {
@@ -257,7 +256,7 @@ local function LoadBlizzardOptionsSkin()
     for _, frame in pairs(ChatFrames) do
         frame:StripTextures()
     end
-    
+
     _G.ChatConfigFrame:SetClampedToScreen(true)
     _G.ChatConfigFrame:SetMovable(true)
     _G.ChatConfigFrame:EnableMouse(true)
@@ -300,7 +299,7 @@ local function LoadBlizzardOptionsSkin()
     for i in pairs(_G.COMBAT_CONFIG_TABS) do
         _G["CombatConfigTab" .. i]:SkinTab()
     end
-    
+
     GW.SkinTextBox(_G.CombatConfigSettingsNameEditBox.Left, _G.CombatConfigSettingsNameEditBox.Middle, _G.CombatConfigSettingsNameEditBox.Right)
 
     _G.ChatConfigMoveFilterUpButton:SetNormalTexture("Interface/AddOns/GW2_UI/textures/uistuff/arrowup_up")
@@ -362,7 +361,7 @@ local function LoadBlizzardOptionsSkin()
             _G[self:GetName() .. "Swatch" .. index]:StripTextures()
         end
     end)
-    
+
     hooksecurefunc(_G.ChatConfigFrameChatTabManager, "UpdateWidth", function(self)
         for tab in self.tabPool:EnumerateActive() do
             if not tab.IsSkinned then

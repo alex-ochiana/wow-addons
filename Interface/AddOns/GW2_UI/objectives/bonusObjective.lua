@@ -13,6 +13,20 @@ local QuestTrackerLayoutChanged = GW.QuestTrackerLayoutChanged
 local savedQuests = {}
 local trackedEventIDs = {}
 
+local function getBonusBlockById(questID)
+    for i = 1, 20 do -- loop bonus blocks
+        local block = _G["GwBonusObjectiveBlock" .. i]
+        if block then
+            if block.questID == questID then
+                return block
+            end
+        end
+    end
+
+    return nil
+end
+GW.getBonusBlockById = getBonusBlockById
+
 local function getObjectiveBlock(self, index)
     if _G[self:GetName() .. "GwQuestObjective" .. index] ~= nil then
         return _G[self:GetName() .. "GwQuestObjective" .. index]
@@ -143,24 +157,6 @@ local function createNewBonusObjectiveBlock(blockIndex)
     newBlock.Header:SetTextColor(newBlock.color.r, newBlock.color.g, newBlock.color.b)
     newBlock.hover:SetVertexColor(newBlock.color.r, newBlock.color.g, newBlock.color.b)
 
-    newBlock.joingroup:SetHighlightTexture("Interface/AddOns/GW2_UI/textures/icons/LFDMicroButton-Down")
-    newBlock.joingroup:SetScript(
-        "OnClick",
-        function (self)
-            local p = self:GetParent()
-            LFGListUtil_FindQuestGroup(p.questID)
-        end
-    )
-    newBlock.joingroup:SetScript(
-        "OnEnter",
-        function (self)
-            GameTooltip:SetOwner(self)
-            GameTooltip:AddLine(TOOLTIP_TRACKER_FIND_GROUP_BUTTON, HIGHLIGHT_FONT_COLOR:GetRGB())
-            GameTooltip:Show()
-        end
-    )
-    newBlock.joingroup:SetScript("OnLeave", GameTooltip_Hide)
-
     -- quest item button here
     newBlock.actionButton = CreateFrame("Button", nil, GwQuestTracker, "GwQuestItemTemplate")
     newBlock.actionButton.icon:SetTexCoord(0.1, 0.9, 0.1, 0.9)
@@ -218,7 +214,7 @@ local function setUpBlock(questIDs, collapsed)
                 GwBonusObjectiveBlock.tickerSeconds = 0
                 GwBonusObjectiveBlock.height = 20
                 GwBonusObjectiveBlock.numObjectives = 0
-                
+
                 GwBonusObjectiveBlock.Header:SetText(text)
 
                 if savedQuests[questID] == nil then
@@ -237,7 +233,7 @@ local function setUpBlock(questIDs, collapsed)
                 module.ShowWorldQuests = true
                 GwBonusObjectiveBlock.module = module
 
-                UpdateQuestItem(GwBonusObjectiveBlock)
+                GW.CombatQueue_Queue("update_tracker_bonus_itembutton" .. blockIndex, UpdateQuestItem, {GwBonusObjectiveBlock})
 
                 foundEvent = true
 
@@ -292,16 +288,10 @@ local function setUpBlock(questIDs, collapsed)
 
                 savedContainerHeight = savedContainerHeight + GwBonusObjectiveBlock.height + 10
                 if GwBonusObjectiveBlock.hasItem then
-                    GW.updateQuestItemPositions(GwBonusObjectiveBlock.actionButton, savedContainerHeight, "EVENT", GwBonusObjectiveBlock)
+                    GW.CombatQueue_Queue("update_tracker_bonus_itembutton_position" .. blockIndex, GW.updateQuestItemPositions, {GwBonusObjectiveBlock.actionButton, savedContainerHeight, "EVENT", GwBonusObjectiveBlock})
                 end
 
                 if not GwQuesttrackerContainerBonusObjectives.collapsed then
-                    --add groupfinder button
-                    if C_LFGList.CanCreateQuestGroup(GwBonusObjectiveBlock.questID) then
-                        GwBonusObjectiveBlock.joingroup:Show()
-                    else
-                        GwBonusObjectiveBlock.joingroup:Hide()
-                    end
                     GwBonusObjectiveBlock:Show()
                 end
                 for i = GwBonusObjectiveBlock.numObjectives + 1, 20 do
@@ -330,7 +320,7 @@ local function updateBonusObjective(self)
         if _G["GwBonusObjectiveBlock" .. i] ~= nil then
             _G["GwBonusObjectiveBlock" .. i].questID = false
             _G["GwBonusObjectiveBlock" .. i].questLogIndex = 0
-            UpdateQuestItem(_G["GwBonusObjectiveBlock" .. i])
+            GW.CombatQueue_Queue("update_tracker_bonus_itembutton" .. i, UpdateQuestItem, {_G["GwBonusObjectiveBlock" .. i]})
         end
     end
 

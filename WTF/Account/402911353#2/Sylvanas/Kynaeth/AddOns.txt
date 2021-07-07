@@ -12,7 +12,7 @@ Immersion_ExtraFade: disabled
 Masque_Azerite: disabled
 MasterPlan: disabled
 MasterPlanA: disabled
-MBB: disabled
+MBB: enabled
 MoveAnything: disabled
 NPCScan: enabled
 OrderHallCommander: disabled
@@ -162,3 +162,7 @@ TomCats-LoveIsInTheAir: disabled
 TomCats-LunarFestival: disabled
 TomCats-Noblegarden: disabled
 Ace3: enabled
+Gladius: enabled
+!BugGrabber: enabled
+BugSack: enabled
+RUF: disabled

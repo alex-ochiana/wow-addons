@@ -19,13 +19,15 @@ HandyNotesDB = {
 		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
 		["Brovar - Sylvanas"] = "Brovar - Sylvanas",
 		["Drenogrilari - Outland"] = "Drenogrilari - Outland",
+		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
 		["Crètz - Kazzak"] = "Crètz - Kazzak",
 		["Resum - Sylvanas"] = "Resum - Sylvanas",
 		["Razetlar - Sylvanas"] = "Razetlar - Sylvanas",
-		["Ialadriel - Sylvanas"] = "Ialadriel - Sylvanas",
+		["Sydernea - Sylvanas"] = "Sydernea - Sylvanas",
 		["Reomunes - Sylvanas"] = "Reomunes - Sylvanas",
-		["Blanitza - Kazzak"] = "Blanitza - Kazzak",
-		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
+		["Cretz - Moonglade"] = "Cretz - Moonglade",
+		["Kakaròt - Kazzak"] = "Kakaròt - Kazzak",
+		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
 		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
 		["Morgrock - Outland"] = "Morgrock - Outland",
 		["Flundan - Sylvanas"] = "Flundan - Sylvanas",
@@ -34,20 +36,20 @@ HandyNotesDB = {
 		["Cretz - Sylvanas"] = "Cretz - Sylvanas",
 		["Needzafemale - Kazzak"] = "Needzafemale - Kazzak",
 		["Mortifèrous - Kazzak"] = "Mortifèrous - Kazzak",
-		["Ilaka - Sylvanas"] = "Ilaka - Sylvanas",
+		["Plüto - Sylvanas"] = "Plüto - Sylvanas",
 		["Envra - Sylvanas"] = "Envra - Sylvanas",
 		["Jermiene - Argent Dawn"] = "Jermiene - Argent Dawn",
-		["Mugugagagigi - Ragnaros"] = "Mugugagagigi - Ragnaros",
-		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
-		["Garwen - Outland"] = "Garwen - Outland",
 		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
-		["Plüto - Sylvanas"] = "Plüto - Sylvanas",
+		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
+		["Mugugagagigi - Ragnaros"] = "Mugugagagigi - Ragnaros",
+		["Ilaka - Sylvanas"] = "Ilaka - Sylvanas",
+		["Garwen - Outland"] = "Garwen - Outland",
 		["Lorktnar - Sylvanas"] = "Lorktnar - Sylvanas",
-		["Sydernea - Sylvanas"] = "Sydernea - Sylvanas",
-		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
-		["Kakaròt - Kazzak"] = "Kakaròt - Kazzak",
+		["Cìchìcean - Sylvanas"] = "Cìchìcean - Sylvanas",
+		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
+		["Blanitza - Kazzak"] = "Blanitza - Kazzak",
 		["Batdingoman - Outland"] = "Batdingoman - Outland",
-		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
+		["Ialadriel - Sylvanas"] = "Ialadriel - Sylvanas",
 	},
 	["profiles"] = {
 		["Gorbir - Outland"] = {
@@ -86,6 +88,8 @@ HandyNotesDB = {
 		},
 		["Drenogrilari - Outland"] = {
 		},
+		["Vòlkmer - Kazzak"] = {
+		},
 		["Crètz - Kazzak"] = {
 			["enabledPlugins"] = {
 				["Argus"] = false,
@@ -95,13 +99,15 @@ HandyNotesDB = {
 		},
 		["Razetlar - Sylvanas"] = {
 		},
-		["Ialadriel - Sylvanas"] = {
+		["Sydernea - Sylvanas"] = {
 		},
 		["Reomunes - Sylvanas"] = {
 		},
-		["Blanitza - Kazzak"] = {
+		["Cretz - Moonglade"] = {
 		},
-		["Gnomèrcy - Sylvanas"] = {
+		["Kakaròt - Kazzak"] = {
+		},
+		["Latthrias - Sylvanas"] = {
 		},
 		["Egidus - Sylvanas"] = {
 		},
@@ -119,33 +125,33 @@ HandyNotesDB = {
 		},
 		["Mortifèrous - Kazzak"] = {
 		},
-		["Ilaka - Sylvanas"] = {
+		["Plüto - Sylvanas"] = {
 		},
 		["Envra - Sylvanas"] = {
 		},
 		["Jermiene - Argent Dawn"] = {
 		},
-		["Mugugagagigi - Ragnaros"] = {
+		["Crëtz - Kazzak"] = {
 		},
 		["Jiglèr - Sylvanas"] = {
 		},
+		["Mugugagagigi - Ragnaros"] = {
+		},
+		["Ilaka - Sylvanas"] = {
+		},
 		["Garwen - Outland"] = {
-		},
-		["Crëtz - Kazzak"] = {
-		},
-		["Plüto - Sylvanas"] = {
 		},
 		["Lorktnar - Sylvanas"] = {
 		},
-		["Sydernea - Sylvanas"] = {
+		["Cìchìcean - Sylvanas"] = {
 		},
-		["Latthrias - Sylvanas"] = {
+		["Gnomèrcy - Sylvanas"] = {
 		},
-		["Kakaròt - Kazzak"] = {
+		["Blanitza - Kazzak"] = {
 		},
 		["Batdingoman - Outland"] = {
 		},
-		["Vòlkmer - Kazzak"] = {
+		["Ialadriel - Sylvanas"] = {
 		},
 	},
 }
@@ -169,13 +175,15 @@ HandyNotes_HandyNotesDB = {
 		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
 		["Brovar - Sylvanas"] = "Brovar - Sylvanas",
 		["Drenogrilari - Outland"] = "Drenogrilari - Outland",
+		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
 		["Crètz - Kazzak"] = "Crètz - Kazzak",
 		["Resum - Sylvanas"] = "Resum - Sylvanas",
 		["Razetlar - Sylvanas"] = "Razetlar - Sylvanas",
-		["Ialadriel - Sylvanas"] = "Ialadriel - Sylvanas",
+		["Sydernea - Sylvanas"] = "Sydernea - Sylvanas",
 		["Reomunes - Sylvanas"] = "Reomunes - Sylvanas",
-		["Blanitza - Kazzak"] = "Blanitza - Kazzak",
-		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
+		["Cretz - Moonglade"] = "Cretz - Moonglade",
+		["Kakaròt - Kazzak"] = "Kakaròt - Kazzak",
+		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
 		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
 		["Morgrock - Outland"] = "Morgrock - Outland",
 		["Flundan - Sylvanas"] = "Flundan - Sylvanas",
@@ -184,20 +192,20 @@ HandyNotes_HandyNotesDB = {
 		["Cretz - Sylvanas"] = "Cretz - Sylvanas",
 		["Needzafemale - Kazzak"] = "Needzafemale - Kazzak",
 		["Mortifèrous - Kazzak"] = "Mortifèrous - Kazzak",
-		["Ilaka - Sylvanas"] = "Ilaka - Sylvanas",
+		["Plüto - Sylvanas"] = "Plüto - Sylvanas",
 		["Envra - Sylvanas"] = "Envra - Sylvanas",
 		["Jermiene - Argent Dawn"] = "Jermiene - Argent Dawn",
-		["Mugugagagigi - Ragnaros"] = "Mugugagagigi - Ragnaros",
-		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
-		["Garwen - Outland"] = "Garwen - Outland",
 		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
-		["Plüto - Sylvanas"] = "Plüto - Sylvanas",
+		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
+		["Mugugagagigi - Ragnaros"] = "Mugugagagigi - Ragnaros",
+		["Ilaka - Sylvanas"] = "Ilaka - Sylvanas",
+		["Garwen - Outland"] = "Garwen - Outland",
 		["Lorktnar - Sylvanas"] = "Lorktnar - Sylvanas",
-		["Sydernea - Sylvanas"] = "Sydernea - Sylvanas",
-		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
-		["Kakaròt - Kazzak"] = "Kakaròt - Kazzak",
+		["Cìchìcean - Sylvanas"] = "Cìchìcean - Sylvanas",
+		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
+		["Blanitza - Kazzak"] = "Blanitza - Kazzak",
 		["Batdingoman - Outland"] = "Batdingoman - Outland",
-		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
+		["Ialadriel - Sylvanas"] = "Ialadriel - Sylvanas",
 	},
 	["profiles"] = {
 		["Gorbir - Outland"] = {
@@ -236,19 +244,23 @@ HandyNotes_HandyNotesDB = {
 		},
 		["Drenogrilari - Outland"] = {
 		},
+		["Vòlkmer - Kazzak"] = {
+		},
 		["Crètz - Kazzak"] = {
 		},
 		["Resum - Sylvanas"] = {
 		},
 		["Razetlar - Sylvanas"] = {
 		},
-		["Ialadriel - Sylvanas"] = {
+		["Sydernea - Sylvanas"] = {
 		},
 		["Reomunes - Sylvanas"] = {
 		},
-		["Blanitza - Kazzak"] = {
+		["Cretz - Moonglade"] = {
 		},
-		["Gnomèrcy - Sylvanas"] = {
+		["Kakaròt - Kazzak"] = {
+		},
+		["Latthrias - Sylvanas"] = {
 		},
 		["Egidus - Sylvanas"] = {
 		},
@@ -266,33 +278,33 @@ HandyNotes_HandyNotesDB = {
 		},
 		["Mortifèrous - Kazzak"] = {
 		},
-		["Ilaka - Sylvanas"] = {
+		["Plüto - Sylvanas"] = {
 		},
 		["Envra - Sylvanas"] = {
 		},
 		["Jermiene - Argent Dawn"] = {
 		},
-		["Mugugagagigi - Ragnaros"] = {
+		["Crëtz - Kazzak"] = {
 		},
 		["Jiglèr - Sylvanas"] = {
 		},
+		["Mugugagagigi - Ragnaros"] = {
+		},
+		["Ilaka - Sylvanas"] = {
+		},
 		["Garwen - Outland"] = {
-		},
-		["Crëtz - Kazzak"] = {
-		},
-		["Plüto - Sylvanas"] = {
 		},
 		["Lorktnar - Sylvanas"] = {
 		},
-		["Sydernea - Sylvanas"] = {
+		["Cìchìcean - Sylvanas"] = {
 		},
-		["Latthrias - Sylvanas"] = {
+		["Gnomèrcy - Sylvanas"] = {
 		},
-		["Kakaròt - Kazzak"] = {
+		["Blanitza - Kazzak"] = {
 		},
 		["Batdingoman - Outland"] = {
 		},
-		["Vòlkmer - Kazzak"] = {
+		["Ialadriel - Sylvanas"] = {
 		},
 	},
 }

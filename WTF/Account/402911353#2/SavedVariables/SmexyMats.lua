@@ -13,49 +13,21 @@ SmexyMatsDB = {
 		["cbOneB"] = 1,
 		["cbOneG"] = 1,
 		["IconsEnabled"] = false,
-		["ExpackIconsEnabled"] = false,
+		["SM_EP_One_Title"] = "|cFF00CCFF",
 		["SMText"] = true,
-		["SMMsg"] = false,
+		["cbTwoR"] = 1,
 		["cbTwoG"] = 1,
 		["SM_EP_One_Text"] = "|cFFFFFF00",
 		["AllRealms"] = true,
 		["IDs"] = {
 		},
 		["Professions"] = true,
-		["cbTwoR"] = 1,
-		["SM_EP_One_Title"] = "|cFF00CCFF",
+		["SMMsg"] = false,
+		["ExpackIconsEnabled"] = false,
 		["TooltipIconSize"] = 20,
 	},
 	["ProTree"] = {
 		["Cooking"] = {
-			["Alliance"] = {
-				["Sylvanas"] = {
-					["Crètz"] = {
-					},
-				},
-			},
-		},
-		["Sylvanas"] = {
-			["Alliance"] = {
-				["Cooking"] = {
-				},
-				["Tailoring"] = {
-				},
-				["Archaeology"] = {
-				},
-				["Herbalism"] = {
-				},
-				["Alchemy"] = {
-				},
-				["Leatherworking"] = {
-				},
-				["Fishing"] = {
-				},
-				["Enchanting"] = {
-				},
-			},
-		},
-		["Fishing"] = {
 			["Alliance"] = {
 				["Sylvanas"] = {
 					["Crètz"] = {
@@ -79,6 +51,30 @@ SmexyMatsDB = {
 				},
 			},
 		},
+		["Fishing"] = {
+			["Alliance"] = {
+				["Sylvanas"] = {
+					["Crètz"] = {
+					},
+				},
+			},
+		},
+		["Alchemy"] = {
+			["Alliance"] = {
+				["Sylvanas"] = {
+					["Crètz"] = {
+					},
+				},
+			},
+		},
+		["Leatherworking"] = {
+			["Alliance"] = {
+				["Sylvanas"] = {
+					["Kynaeth"] = {
+					},
+				},
+			},
+		},
 		["Kazzak"] = {
 			["Horde"] = {
 				["Cooking"] = {
@@ -93,28 +89,40 @@ SmexyMatsDB = {
 					["Mortifèrous"] = {
 					},
 				},
-				["Fishing"] = {
+				["Engineering"] = {
 					["Mortifèrous"] = {
 					},
 				},
-				["Engineering"] = {
+				["Fishing"] = {
 					["Mortifèrous"] = {
 					},
 				},
 			},
 		},
-		["Alchemy"] = {
+		["Sylvanas"] = {
 			["Alliance"] = {
-				["Sylvanas"] = {
-					["Crètz"] = {
-					},
+				["Cooking"] = {
+				},
+				["Tailoring"] = {
+				},
+				["Archaeology"] = {
+				},
+				["Alchemy"] = {
+				},
+				["Fishing"] = {
+				},
+				["Leatherworking"] = {
+				},
+				["Herbalism"] = {
+				},
+				["Enchanting"] = {
 				},
 			},
 		},
 	},
 	["profileKeys"] = {
-		["Crètz - Sylvanas"] = "profile",
 		["Mòloch - Kazzak"] = "profile",
+		["Crètz - Sylvanas"] = "profile",
 	},
 	["profiles"] = {
 		["profile"] = {

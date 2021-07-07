@@ -1,12 +1,15 @@
 
 HandyNotesDraenorDB = {
 	["profileKeys"] = {
-		["Vòlkmer - Kazzak"] = "Default",
-		["Egidus - Sylvanas"] = "Default",
-		["Gnomèrcy - Sylvanas"] = "Default",
-		["Crètz - Sylvanas"] = "Default",
+		["Cretz - Moonglade"] = "Default",
+		["Jiglèr - Sylvanas"] = "Default",
 		["Plüto - Sylvanas"] = "Default",
+		["Egidus - Sylvanas"] = "Default",
 		["Kynaeth - Sylvanas"] = "Default",
+		["Cìchìcean - Sylvanas"] = "Default",
+		["Crètz - Sylvanas"] = "Default",
+		["Vòlkmer - Kazzak"] = "Default",
+		["Gnomèrcy - Sylvanas"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

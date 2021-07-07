@@ -4,12 +4,15 @@
 		_ = nil
 		_detalhes = LibStub("AceAddon-3.0"):NewAddon("_detalhes", "AceTimer-3.0", "AceComm-3.0", "AceSerializer-3.0", "NickTag-1.0")
 		
-		_detalhes.build_counter = 8406
-		_detalhes.alpha_build_counter = 8406 --if this is higher than the regular counter, use it instead
+		local version, build, date, tocversion = GetBuildInfo()
+
+		_detalhes.build_counter = 8700
+		_detalhes.alpha_build_counter = 8700 --if this is higher than the regular counter, use it instead
+		_detalhes.bcc_counter = 25
 		_detalhes.dont_open_news = true
-		_detalhes.game_version = "v9.0.5"
-		_detalhes.userversion = "v9.0.5." .. _detalhes.build_counter
-		_detalhes.realversion = 144 --core version, this is used to check API version for scripts and plugins (see alias below)
+		_detalhes.game_version = version
+		_detalhes.userversion = version .. _detalhes.build_counter
+		_detalhes.realversion = 145 --core version, this is used to check API version for scripts and plugins (see alias below)
 		_detalhes.APIVersion = _detalhes.realversion --core version
 		_detalhes.version = _detalhes.userversion .. " (core " .. _detalhes.realversion .. ")" --simple stirng to show to players
 		
@@ -20,6 +23,7 @@
 		
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --> initialization stuff
+local _
 
 do
 	local _detalhes = _G._detalhes
@@ -29,6 +33,22 @@ do
 	local Loc = _G.LibStub("AceLocale-3.0"):GetLocale( "Details" )
 
 	local news = {
+		{"v9.0.5.8637.144", "June 22nd, 2021"},
+		"Major update on Vanguard plugin.",
+		"Added utility module to Coach, this module will send interrupt, dispel, cc breaks, cooldown usege and battle resses to the Coach.",
+		"Added plugins into the title bar display menu.",
+
+		{"v9.0.5.8502.144", "May 21th, 2021"},
+		"Added options to change the color of each team during an arena match.",
+		"Fixed One Segment Battleground.",
+		"Fixed an error with Howl of Terror on Demo Warlocks.",
+
+		{"v9.0.5.8501.144", "May 17th, 2021"},
+		"Complete overhaul and rerritten on Fade In and Out animations, this should fix all bugs related to animations not being consistent.",
+		"Complete overhaul on the broadcaster tool for arenas 'Current DPS'. It shows now a bar indicating the dps of both teams.",
+		"Yellow arena team now has purple color.",
+		"Several updates on the combat log engine and bug fixes.",
+
 		{"v9.0.5.8357.144", "March 15th, 2021"},
 		"Max amount of segments raised to 40, was 30.",
 		"Added a 'Sanguine Heal' actor to show how much the void zone healed enemies, shown on Everything mode.",
@@ -176,8 +196,9 @@ do
 		--> current instances of the exp (need to maintain)
 			_detalhes.InstancesToStoreData = { --mapId
 				[2296] = true, --castle narnia
+				[2450] = true, --sanctum of domination
 			}
-			
+
 		--> armazena os escudos - Shields information for absorbs
 			_detalhes.escudos = {}
 		--> armazena as fun��es dos frames - Frames functions
@@ -710,7 +731,7 @@ do
 		SharedMedia:Register ("statusbar", "WorldState Score", [[Interface\WorldStateFrame\WORLDSTATEFINALSCORE-HIGHLIGHT]])
 		SharedMedia:Register ("statusbar", "DGround", [[Interface\AddOns\Details\images\bar_background]])
 		SharedMedia:Register ("statusbar", "Details Flat", [[Interface\AddOns\Details\images\bar_background]])
-
+		SharedMedia:Register ("statusbar", "Splitbar", [[Interface\AddOns\Details\images\bar_textures\split_bar]])
 		SharedMedia:Register ("statusbar", "Details2020", [[Interface\AddOns\Details\images\bar_textures\texture2020]])
 		
 		--window bg and bar border
@@ -731,25 +752,33 @@ do
 		SharedMedia:Register ("sound", "d_gun2", [[Interface\Addons\Details\sounds\sound_gun3.ogg]])
 		SharedMedia:Register ("sound", "d_jedi1", [[Interface\Addons\Details\sounds\sound_jedi1.ogg]])
 		SharedMedia:Register ("sound", "d_whip1", [[Interface\Addons\Details\sounds\sound_whip1.ogg]])
+
+		SharedMedia:Register ("sound", "Details Threat Warning Volume 1", [[Interface\Addons\Details\sounds\threat_warning_1.ogg]])
+		SharedMedia:Register ("sound", "Details Threat Warning Volume 2", [[Interface\Addons\Details\sounds\threat_warning_2.ogg]])
+		SharedMedia:Register ("sound", "Details Threat Warning Volume 3", [[Interface\Addons\Details\sounds\threat_warning_3.ogg]])
+		SharedMedia:Register ("sound", "Details Threat Warning Volume 4", [[Interface\Addons\Details\sounds\threat_warning_4.ogg]])
+
+		
+
 	
-	--> global 'vardump' for dump table contents over chat panel
-		function vardump (t)
+	--> dump table contents over chat panel
+		function Details.VarDump(t)
 			if (type (t) ~= "table") then
 				return
 			end
-			for a,b in pairs (t) do 
+			for a,b in pairs (t) do
 				print (a,b)
 			end
 		end
-		
-	--> global 'table_deepcopy' copies a full table	
-		function table_deepcopy (orig)
+
+	--> copies a full table
+		function Details.CopyTable(orig)
 			local orig_type = type(orig)
 			local copy
 			if orig_type == 'table' then
 				copy = {}
 				for orig_key, orig_value in next, orig, nil do
-					copy [table_deepcopy (orig_key)] = table_deepcopy (orig_value)
+					copy [Details.CopyTable (orig_key)] = Details.CopyTable (orig_value)
 				end
 			else
 				copy = orig

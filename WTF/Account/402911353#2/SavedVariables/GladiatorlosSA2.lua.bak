@@ -5,12 +5,14 @@ GladiatorlosSADB = {
 		["Crëtz - Kazzak"] = "Default",
 		["Latthrias - Sylvanas"] = "Default",
 		["Jiglèr - Sylvanas"] = "Default",
+		["Gnomèrcy - Sylvanas"] = "Default",
 		["Plüto - Sylvanas"] = "Default",
 		["Egidus - Sylvanas"] = "Default",
-		["Gnomèrcy - Sylvanas"] = "Default",
-		["Crètz - Sylvanas"] = "Default",
-		["Vòlkmer - Kazzak"] = "Default",
 		["Kynaeth - Sylvanas"] = "Default",
+		["Vòlkmer - Kazzak"] = "Default",
+		["Crètz - Sylvanas"] = "Default",
+		["Cretz - Moonglade"] = "Default",
+		["Cìchìcean - Sylvanas"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

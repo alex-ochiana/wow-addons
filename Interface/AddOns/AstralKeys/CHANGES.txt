@@ -1,47 +1,26 @@
-lightweight tag ab847aafa53c43ecee5bcf67a4eb262d42221364 3.42-Release
+lightweight tag f91ce3e6358e82aac1822208f8f6d77a7a4c5894 3.43
 Author:	GitHub <noreply@github.com>
-Date:	Mon Mar 29 20:45:12 2021 -0400
+Date:	Mon Jun 28 22:24:00 2021 -0400
 
-commit 48ba95fe74fc5013a4b486713cf5e7e42b2faca7
-Author: Aaron <45137170+maestrohdude@users.noreply.github.com>
-Date:   Mon Mar 29 10:57:39 2021 -0700
+commit 27aca40a0935a8efdb6e765b2423ff8cd91108f5
+Author: sinfonianartist <sinfonianartist@gmail.com>
+Date:   Mon Jun 28 21:07:18 2021 -0400
 
-    Update deDE.lua
+    Version Bump and Interface Bump
+
+commit 5b5825231245d60322ae6236946225fe730e4104
+Author: HalianElf <28244771+HalianElf@users.noreply.github.com>
+Date:   Mon May 10 23:24:54 2021 -0400
+
+    Identity2 parse
     
-    One small change for syntax consistency.
+    Strip off [Name] so it works with the Identity2 addon
 
-commit 48ba95fe74fc5013a4b486713cf5e7e42b2faca7
-Author: Aaron <45137170+maestrohdude@users.noreply.github.com>
-Date:   Mon Mar 29 10:57:39 2021 -0700
+commit 5b5825231245d60322ae6236946225fe730e4104
+Author: HalianElf <28244771+HalianElf@users.noreply.github.com>
+Date:   Mon May 10 23:24:54 2021 -0400
 
-    Update deDE.lua
+    Identity2 parse
     
-    One small change for syntax consistency.
-
-commit 48ba95fe74fc5013a4b486713cf5e7e42b2faca7
-Author: Aaron <45137170+maestrohdude@users.noreply.github.com>
-Date:   Mon Mar 29 10:57:39 2021 -0700
-
-    Update deDE.lua
-    
-    One small change for syntax consistency.
-
-commit 3d840d3e0edc6e1dee87063731b98e684c2cfbe4
-Author: Fylwind <fyl@wolfpa.ws>
-Date:   Sun Mar 28 19:33:02 2021 -0700
-
-    Key Information.lua: Store player key info in correct format
-    
-    In Key Information.lua, information about the current player is
-    populated using numeric indices instead of string keys. Subsequent
-    lookups of this information would fail.
-    
-    The bug seems to be masked for players in guilds since the guild scan
-    will also repopulate the player's key information in the correct format,
-    so the issue only gets observed by players without guilds:
-    https://github.com/astralguild/AstralKeys/issues/10#issuecomment-774513943
-    
-    The version has been bumped to 3.42.
-    
-    Fixes #7 and #10.
+    Strip off [Name] so it works with the Identity2 addon
 

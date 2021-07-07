@@ -152,7 +152,7 @@ local function layoutBagItems(f)
     local lcf = inv.layoutContainerFrame
     for i = iS, iE, iD do
         local bag_id = i
-        local slotID, itemID 
+        local slotID, itemID
         local cf = f.Containers[bag_id]
         if sep then
             _G["GwBagFrameGwBagHeader" .. bag_id]:Show()
@@ -176,7 +176,7 @@ local function layoutBagItems(f)
         if unfinishedRow then f:GetParent().unfinishedRow = f:GetParent().unfinishedRow  + 1 end
         f:GetParent().finishedRow = f:GetParent().finishedRow + finishedRows
 
-        if not rev and bag_id < 4 then 
+        if not rev and bag_id < 4 then
             slotID = GetInventorySlotInfo("Bag" .. bag_id .. "Slot")
             itemID = GetInventoryItemID("player", slotID)
         elseif rev and bag_id <= 5 and bag_id > 0 then
@@ -314,7 +314,9 @@ GW.AddForProfiling("bag", "setBagBarOrder", setBagBarOrder)
 local function bag_OnClick(self, button)
     -- on left click, ensure that the bag stays open despite default toggle behavior
     if button == "LeftButton" then
-        if self.gwHasBag and not IsBagOpen(self:GetBagID()) then
+        local id = self:GetID();
+        local hadItem = PutItemInBag(id)
+        if not hadItem and self.gwHasBag and not IsBagOpen(self:GetBagID()) then
             OpenBag(self:GetBagID())
         end
     end
@@ -362,8 +364,8 @@ local function createBagBar(f)
 
         -- remove default of capturing right-click also (we handle right-click separately)
         b:RegisterForClicks("LeftButtonUp")
-        b:HookScript("OnClick", bag_OnClick)
-        b:HookScript("OnMouseDown", inv.bag_OnMouseDown)
+        b:SetScript("OnClick", bag_OnClick)
+        b:SetScript("OnMouseDown", inv.bag_OnMouseDown)
 
         inv.reskinBagBar(b)
 
@@ -1011,7 +1013,7 @@ local function LoadBag(helpers)
     smsj.shadow:SetAllPoints()
     smsj.shadow:SetColorTexture(0.1, 0.1, 0.1, 1.0)
 
-    smsj.text = smsj:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge") 
+    smsj.text = smsj:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
     smsj.text:SetAllPoints();
     smsj.text:SetText(L["Selling junk"])
 

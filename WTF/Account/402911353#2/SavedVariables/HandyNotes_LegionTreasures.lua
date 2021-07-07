@@ -20,15 +20,17 @@ HandyNotes_LegionTreasuresDB = {
 		["Blanitza - Kazzak"] = "Blanitza - Kazzak",
 		["Mortifèrous - Kazzak"] = "Mortifèrous - Kazzak",
 		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
+		["Cretz - Moonglade"] = "Cretz - Moonglade",
 		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
 		["Lastones - Kazzak"] = "Lastones - Kazzak",
 		["Needzafemale - Kazzak"] = "Needzafemale - Kazzak",
-		["Mòloch - Kazzak"] = "Mòloch - Kazzak",
+		["Plüto - Sylvanas"] = "Plüto - Sylvanas",
+		["Cìchìcean - Sylvanas"] = "Cìchìcean - Sylvanas",
 		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
 		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
 		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
 		["Brovar - Sylvanas"] = "Brovar - Sylvanas",
-		["Plüto - Sylvanas"] = "Plüto - Sylvanas",
+		["Mòloch - Kazzak"] = "Mòloch - Kazzak",
 	},
 	["profiles"] = {
 		["Crètz - Kazzak"] = {
@@ -51,13 +53,17 @@ HandyNotes_LegionTreasuresDB = {
 		},
 		["Crëtz - Kazzak"] = {
 		},
+		["Cretz - Moonglade"] = {
+		},
 		["Jiglèr - Sylvanas"] = {
 		},
 		["Lastones - Kazzak"] = {
 		},
 		["Needzafemale - Kazzak"] = {
 		},
-		["Mòloch - Kazzak"] = {
+		["Plüto - Sylvanas"] = {
+		},
+		["Cìchìcean - Sylvanas"] = {
 		},
 		["Kynaeth - Sylvanas"] = {
 		},
@@ -67,7 +73,7 @@ HandyNotes_LegionTreasuresDB = {
 		},
 		["Brovar - Sylvanas"] = {
 		},
-		["Plüto - Sylvanas"] = {
+		["Mòloch - Kazzak"] = {
 		},
 	},
 }

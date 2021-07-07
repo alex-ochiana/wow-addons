@@ -239,7 +239,7 @@ local function powerCombo(self, event, ...)
     local pwr = UnitPower("player", Enum.PowerType.ComboPoints)
     local chargedPowerPoints = GetUnitChargedPowerPoints("player")
     local chargedPowerPointIndex = chargedPowerPoints and chargedPowerPoints[1]
-    local old_power = self.gwPower 
+    local old_power = self.gwPower
     self.gwPower = pwr
 
     if pwr > 0 and not self:IsShown() and UnitExists("target") then
@@ -1286,7 +1286,7 @@ local function LoadClassPowers()
         GW.MixinHideDuringPetAndOverride(lmb)
         cpf.lmb = lmb
         lmb.candy.spark:ClearAllPoints()
-        
+
         lmb.bar:SetHeight(5)
         lmb.candy:SetHeight(5)
         lmb.candy.spark:SetHeight(5)

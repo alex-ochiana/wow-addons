@@ -5,7 +5,6 @@ local GetSetting = GW.GetSetting
 local AddToAnimation = GW.AddToAnimation
 local ParseSimpleObjective = GW.ParseSimpleObjective
 
-local currentNotificationKey = ""
 local notifications = {}
 local questCompass = {}
 
@@ -81,7 +80,7 @@ local function getNearestQuestPOI()
     local numTrackedWQ = C_QuestLog.GetNumWorldQuestWatches()
     local numQuests = C_QuestLog.GetNumQuestLogEntries()
 
-    if (GW.locationData.x == nil or GW.locationData.y == nil) and (numTrackedQuests == 0 or numTrackedWQ == 0 or numQuests) then
+    if (GW.locationData.x == nil or GW.locationData.y == nil) and (numTrackedQuests == 0 or numTrackedWQ == 0 or numQuests == 0) then
         return nil
     end
 
@@ -238,7 +237,6 @@ end
 GW.RemoveTrackerNotificationOfType = RemoveTrackerNotificationOfType
 
 local function removeNotification()
-    currentNotificationKey = ""
     GwObjectivesNotification.shouldDisplay = false
 end
 GW.AddForProfiling("notifications", "removeNotification", removeNotification)
@@ -324,11 +322,10 @@ local function SetObjectiveNotification()
         data = getNearestQuestPOI()
     end
     if data == nil then
-        removeNotification(currentNotificationKey)
+        removeNotification()
         return
     end
 
-    local key = data.TYPE
     local title = data.TITLE
     local desc = data.DESC
     local color = data.COLOR
@@ -338,8 +335,6 @@ local function SetObjectiveNotification()
     if color == nil then
         color = {r = 1, g = 1, b = 1}
     end
-
-    currentNotificationKey = key
 
     if icons[data.TYPE] ~= nil then
         GwObjectivesNotification.icon:SetTexture("Interface/AddOns/GW2_UI/textures/icons/" .. icons[data.TYPE].tex)

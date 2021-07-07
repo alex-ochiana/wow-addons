@@ -266,7 +266,6 @@ end
 
 local function SetUnitText(self, unit, isShiftKeyDown)
     local name, realm = UnitName(unit)
-    
     local showClassColor = GetSetting("ADVANCED_TOOLTIP_SHOW_CLASS_COLOR")
 
     if UnitIsPlayer(unit) then
@@ -283,6 +282,7 @@ local function SetUnitText(self, unit, isShiftKeyDown)
         local guildRanks = GetSetting("ADVANCED_TOOLTIP_SHOW_GUILD_RANKS")
         local showRole = GetSetting("ADVANCED_TOOLTIP_SHOW_ROLE")
         local showGender = GetSetting("ADVANCED_TOOLTIP_SHOW_GENDER")
+        local showDungeonScore = GetSetting("ADVANCED_TOOLTIP_SHOW_DUNGEONSCORE")
 
         local nameColor = GWGetClassColor(class, showClassColor, true)
 
@@ -332,8 +332,6 @@ local function SetUnitText(self, unit, isShiftKeyDown)
             else
                 levelLine:SetFormattedText("%s%s|r %s%s |c%s%s|r", hexColor, level > 0 and level or "??", unitGender or "", race or "", nameColor.colorStr, localeClass)
             end
-
-            
         end
 
         if showRole then
@@ -361,12 +359,21 @@ local function SetUnitText(self, unit, isShiftKeyDown)
                 if isGroupLeader or isGroupAssist then
                     local roleString
                     if isGroupLeader then
-                        roleString = "|TInterface/AddOns/GW2_UI/textures/party/icon-groupleader:0:0:0:-2:64:64:4:60:4:60|t " .. RAID_LEADER
+                        roleString = "|TInterface/AddOns/GW2_UI/textures/party/icon-groupleader:0:0:0:-2:64:64:4:60:4:60|t " .. (IsInRaid() and RAID_LEADER or PARTY_LEADER)
                     else
                         roleString = "|TInterface/AddOns/GW2_UI/textures/party/icon-assist:0:0:0:-2:64:64:4:60:4:60|t " .. RAID_ASSISTANT
                     end
                     GameTooltip:AddDoubleLine(" ", roleString, nil, nil, nil, r, g, b)
                 end
+            end
+        end
+
+        if showDungeonScore then
+            local data = C_PlayerInfo.GetPlayerMythicPlusRatingSummary(unit)
+            if data and data.currentSeasonScore and data.currentSeasonScore > 0 then
+                local color = C_ChallengeMode.GetDungeonScoreRarityColor(data.currentSeasonScore)
+
+                GameTooltip:AddDoubleLine(DUNGEON_SCORE_LEADER:format("@"):gsub(": @", ""), GW.CommaValue(data.currentSeasonScore), nil, nil, nil, color.r or 1, color.g or 1, color.b or 1)
             end
         end
 
@@ -763,9 +770,7 @@ local function LoadTooltips()
         eventFrame:RegisterEvent("MODIFIER_STATE_CHANGED")
         eventFrame:SetScript("OnEvent", function(_, _, key)
             if key == "LSHIFT" or key == "RSHIFT" or key == "LCTRL" or key == "RCTRL" or key == 'LALT' or key == 'RALT' then
-                local owner = GameTooltip:GetOwner()
-                local notOnAuras = not (owner and owner.UpdateTooltip)
-                if notOnAuras and UnitExists("mouseover") then
+                if UnitExists("mouseover") then
                     GameTooltip:SetUnit("mouseover")
                 end
             end

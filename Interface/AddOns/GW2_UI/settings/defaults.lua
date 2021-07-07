@@ -7,7 +7,6 @@ GW_DEFAULT["GW2_UI_VERSION"] = "WELCOME"
 
 GW_DEFAULT["TARGET_ENABLED"] = true
 GW_DEFAULT["FOCUS_ENABLED"] = true
-GW_DEFAULT["PET_ENABLED"] = true
 GW_DEFAULT["POWERBAR_ENABLED"] = true
 GW_DEFAULT["CHATBUBBLES_ENABLED"] = true
 GW_DEFAULT["NAMEPLATES_ENABLED"] = true
@@ -30,7 +29,6 @@ GW_DEFAULT["CLASS_POWER"] = true
 GW_DEFAULT["RAID_FRAMES"] = true
 GW_DEFAULT["PARTY_FRAMES"] = true
 GW_DEFAULT["PETBAR_ENABLED"] = true
-GW_DEFAULT["PETBAR_LOCKED"] = true
 GW_DEFAULT["BORDER_ENABLED"] = true
 GW_DEFAULT["TOOLTIP_MOUSE"] = false
 GW_DEFAULT["ADVANCED_TOOLTIP"] = true
@@ -43,6 +41,7 @@ GW_DEFAULT["ADVANCED_TOOLTIP_SHOW_GUILD_RANKS"] = true
 GW_DEFAULT["ADVANCED_TOOLTIP_SHOW_ROLE"] = true
 GW_DEFAULT["ADVANCED_TOOLTIP_SHOW_CLASS_COLOR"] = true
 GW_DEFAULT["ADVANCED_TOOLTIP_SHOW_GENDER"] = false
+GW_DEFAULT["ADVANCED_TOOLTIP_SHOW_DUNGEONSCORE"] = true
 GW_DEFAULT["ADVANCED_TOOLTIP_ID_MODIFIER"] = "NONE"
 GW_DEFAULT["DYNAMIC_CAM"] = false
 GW_DEFAULT["PIXEL_PERFECTION"] = false
@@ -52,6 +51,9 @@ GW_DEFAULT["ALERTFRAME_ENABLED"] = true
 GW_DEFAULT["GW_COMBAT_TEXT_MODE"] = "GW2"
 GW_DEFAULT["GW_COMBAT_TEXT_BLIZZARD_COLOR"] = false
 GW_DEFAULT["GW_COMBAT_TEXT_COMMA_FORMAT"] = false
+
+GW_DEFAULT["PET_FLOATING_COMBAT_TEXT"] = false
+GW_DEFAULT["PET_AURAS_UNDER"] = false
 
 GW_DEFAULT["BUTTON_ASSIGNMENTS"] = true
 
@@ -108,6 +110,13 @@ GW_DEFAULT["HERO_POSITION"]["relativePoint"] = "LEFT"
 GW_DEFAULT["HERO_POSITION"]["xOfs"] = 100
 GW_DEFAULT["HERO_POSITION"]["yOfs"] = 0
 GW_DEFAULT["HERO_POSITION_SCALE"] = 1
+
+GW_DEFAULT["SOCIAL_POSITION"] = {}
+GW_DEFAULT["SOCIAL_POSITION"]["point"] = "LEFT"
+GW_DEFAULT["SOCIAL_POSITION"]["relativePoint"] = "LEFT"
+GW_DEFAULT["SOCIAL_POSITION"]["xOfs"] = 100
+GW_DEFAULT["SOCIAL_POSITION"]["yOfs"] = 0
+GW_DEFAULT["SOCIAL_POSITION_SCALE"] = 1
 
 GW_DEFAULT["LOOTFRAME_POS"] = {}
 GW_DEFAULT["LOOTFRAME_POS"]["point"] = "LEFT"
@@ -263,7 +272,6 @@ GW_DEFAULT["MultiBarBottomRight"]["ButtonsPerRow"] = 6
 GW_DEFAULT["MultiBarBottomRight"]["hideDefaultBackground"] = true
 
 GW_DEFAULT["MULTIBAR_RIGHT_COLS"] = 1
-GW_DEFAULT["STANCEBAR_POSITION"] = "LEFT"
 
 GW_DEFAULT["PlayerBuffFrame"] = {}
 GW_DEFAULT["PlayerBuffFrame"]["point"] = "BOTTOMLEFT"
@@ -351,6 +359,16 @@ GW_DEFAULT["TotemBar_pos"]["relativePoint"] = "TOPRIGHT"
 GW_DEFAULT["TotemBar_pos"]["xOfs"] = -500
 GW_DEFAULT["TotemBar_pos"]["yOfs"] = -50
 GW_DEFAULT["TotemBar_pos_scale"] = 1
+GW_DEFAULT["TotemBar_GrowDirection"] = "HORIZONTAL"
+GW_DEFAULT["TotemBar_SortDirection"] = "ASC"
+
+GW_DEFAULT["StanceBar_pos"] = {}
+GW_DEFAULT["StanceBar_pos"]["point"] = "BOTTOMLEFT"
+GW_DEFAULT["StanceBar_pos"]["relativePoint"] = "BOTTOM"
+GW_DEFAULT["StanceBar_pos"]["xOfs"] = -405
+GW_DEFAULT["StanceBar_pos"]["yOfs"] = 31
+GW_DEFAULT["StanceBar_pos_scale"] = 1
+GW_DEFAULT["StanceBar_GrowDirection"] = "UP"
 
 GW_DEFAULT["PowerBar_pos"] = {}
 GW_DEFAULT["PowerBar_pos"]["point"] = "BOTTOMLEFT"
@@ -379,9 +397,6 @@ GW_DEFAULT["TopCenterWidget_pos"]["relativePoint"] = "TOP"
 GW_DEFAULT["TopCenterWidget_pos"]["xOfs"] = 0
 GW_DEFAULT["TopCenterWidget_pos"]["yOfs"] = -30
 GW_DEFAULT["TopCenterWidget_pos_scale"] = 1
-
-GW_DEFAULT["TotemBar_GrowDirection"] = "HORIZONTAL"
-GW_DEFAULT["TotemBar_SortDirection"] = "ASC"
 
 GW_DEFAULT["AlertPos"] = {}
 GW_DEFAULT["AlertPos"]["point"] = "BOTTOMRIGHT"
@@ -429,7 +444,7 @@ GW_DEFAULT["RAID_SHOW_DEBUFFS"] = true
 GW_DEFAULT["RAID_ONLY_DISPELL_DEBUFFS"] = false
 GW_DEFAULT["RAID_SHOW_IMPORTEND_RAID_INSTANCE_DEBUFF"] = false
 GW_DEFAULT["RAID_SORT_BY_ROLE"] = true
-GW_DEFAULT["RAID_AURA_TOOLTIP_IN_COMBAT"] = true
+GW_DEFAULT["RAID_AURA_TOOLTIP_INCOMBAT"] = "IN_COMBAT"
 GW_DEFAULT["RAID_UNIT_HEALTH"] = "NONE"
 
 GW_DEFAULT["PARTY_UNIT_HEALTH"] = "NONE"
@@ -437,21 +452,22 @@ GW_DEFAULT["PARTY_SHOW_DEBUFFS"] = true
 GW_DEFAULT["PARTY_ONLY_DISPELL_DEBUFFS"] = false
 GW_DEFAULT["PARTY_SHOW_IMPORTEND_RAID_INSTANCE_DEBUFF"] = false
 GW_DEFAULT["PARTY_PLAYER_FRAME"] = false
+GW_DEFAULT["PARTY_SHOW_PETS"] = false
 GW_DEFAULT["FADE_GROUP_MANAGE_FRAME"] = false
 
 GW_DEFAULT["AUTO_REPAIR"] = "NONE"
 GW_DEFAULT["HUD_SCALE"] = 1
 GW_DEFAULT["MINIMAP_SCALE"] = 170
 GW_DEFAULT["MINIMAP_FPS"] = false
-GW_DEFAULT["MINIMAP_COORDS"] = false
 GW_DEFAULT["MINIMAP_COORDS_TOGGLE"] = false
 GW_DEFAULT["MINIMAP_COORDS_PRECISION"] = 0
-
 GW_DEFAULT["WORLDMAP_COORDS_TOGGLE"] = false
 
 GW_DEFAULT["CASTINGBAR_DATA"] = false
 GW_DEFAULT["USE_CHARACTER_WINDOW"] = true
 GW_DEFAULT["USE_TALENT_WINDOW"] = true
+
+GW_DEFAULT["USE_SOCIAL_WINDOW"] = false -- true
 
 GW_DEFAULT["AURAS_IGNORED"] = strjoin(", ", unpack(GW.MapTable(GW.AURAS_IGNORED, GetSpellInfo)))
 GW_DEFAULT["AURAS_MISSING"] = strjoin(", ", unpack(GW.MapTable(GW.AURAS_MISSING, GetSpellInfo)))
@@ -514,6 +530,7 @@ GW_DEFAULT["PlayerDebuffFrame_ICON_SIZE"] = 32
 GW_DEFAULT["PLAYER_TRACKED_DODGEBAR_SPELL"] = ""
 GW_DEFAULT["PLAYER_TRACKED_DODGEBAR_SPELL_ID"] = 0
 GW_DEFAULT["PLAYER_AS_TARGET_FRAME"] = false
+GW_DEFAULT["PLAYER_AS_TARGET_FRAME_SHOW_RESSOURCEBAR"] = false
 GW_DEFAULT["player_CLASS_COLOR"] = false
 GW_DEFAULT["PLAYER_SHOW_PVP_INDICATOR"] = true
 
@@ -523,3 +540,60 @@ GW_DEFAULT["player_pos"]["relativePoint"] = "CENTER"
 GW_DEFAULT["player_pos"]["xOfs"] = -56
 GW_DEFAULT["player_pos"]["yOfs"] = -100
 GW_DEFAULT["player_pos_scale"] = 1
+
+-- incompatible addons
+GW_DEFAULT.IncompatibleAddons = {
+    Actionbars = {
+        Override = false,
+        Addons = {
+            "Bartender4",
+            "Dominos",
+        },
+    },
+    ImmersiveQuesting = {
+        Override = false,
+        Addons = {
+            "Storyline",
+            "Immersive",
+            "Immersion",
+            "Tofu",
+            "Queso",
+        },
+    },
+    DynamicCam = {
+        Override = false,
+        Addons = {
+            "DynamicCam",
+            "Queso",
+        },
+    },
+    Inventory = {
+        Override = false,
+        Addons = {
+            "AdiBags",
+            "ArkInventory",
+            "Bagnon",
+            "Sorted",
+        },
+    },
+    Minimap = {
+        Override = false,
+        Addons = {
+            "SexyMap",
+        },
+    },
+    FloatingCombatText = {
+        Override = false,
+        Addons = {
+            "ClassicFCT",
+            "xCT+",
+            "NameplateSCT",
+        },
+    },
+    Objectives = {
+        Override = false,
+        Addons = {
+            "!KalielsTracker",
+        },
+    },
+}

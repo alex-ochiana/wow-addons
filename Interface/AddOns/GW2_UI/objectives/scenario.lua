@@ -10,16 +10,6 @@ local setBlockColor = GW.setBlockColor
 local TIME_FOR_3 = 0.6
 local TIME_FOR_2 = 0.8
 
-local JAILERS_TOWER_LEVEL_TYPE_STRINGS = {
-    [Enum.JailersTowerType.TwistingCorridors] = JAILERS_TOWER_LEVEL_TOAST_TWISTING_CORRIDORS,
-    [Enum.JailersTowerType.SkoldusHalls] = JAILERS_TOWER_LEVEL_TOAST_SKOLDUS_HALLS,
-    [Enum.JailersTowerType.FractureChambers] = JAILERS_TOWER_LEVEL_TOAST_FRACTURE_CHAMBERS,
-    [Enum.JailersTowerType.Soulforges] = JAILERS_TOWER_LEVEL_TOAST_SOULFORGES,
-    [Enum.JailersTowerType.Coldheart] = JAILERS_TOWER_LEVEL_TOAST_COLDHEART,
-    [Enum.JailersTowerType.Mortregar] = JAILERS_TOWER_LEVEL_TOAST_MORTREGAR,
-    [Enum.JailersTowerType.UpperReaches] = JAILERS_TOWER_LEVEL_TOAST_UPPER_REACHES,
-}
-
 local function getObjectiveBlock(self, index)
     if _G[self:GetName() .. "GwQuestObjective" .. index] ~= nil then
         _G[self:GetName() .. "GwQuestObjective" .. index]:SetScript("OnEnter", nil)
@@ -98,7 +88,7 @@ local function updateCurrentScenario(self, event, ...)
     if event == "UPDATE_UI_WIDGET" then
         -- we need this event only for torghast atm, so only update this we it is the torghast widget
         local w = ...
-        if not w or (w and w.widgetID ~= 2319) then
+        if not w or (w and w.widgetID ~= 3302) then
             return
         end
     end
@@ -156,9 +146,9 @@ local function updateCurrentScenario(self, event, ...)
             GW.RemoveTrackerNotificationOfType("TORGHAST")
             GwScenarioBlock:Hide()
         end
-        UpdateQuestItem(GwScenarioBlock)
+        GW.CombatQueue_Queue("update_tracker_scenario_itembutton", UpdateQuestItem, {GwScenarioBlock})
         if GwScenarioBlock.hasItem then
-            GW.updateQuestItemPositions(GwScenarioBlock.actionButton, GwScenarioBlock.height, "SCENARIO", GwScenarioBlock)
+            GW.CombatQueue_Queue("update_tracker_scenario_itembutton_position", GW.updateQuestItemPositions, {GwScenarioBlock.actionButton, GwScenarioBlock.height, "SCENARIO", GwScenarioBlock})
         end
         for i = GwScenarioBlock.numObjectives + 1, 20 do
             if _G[GwScenarioBlock:GetName() .. "GwQuestObjective" .. i] ~= nil then
@@ -192,21 +182,23 @@ local function updateCurrentScenario(self, event, ...)
     end
 
     if IsInJailersTower() then
-        local level
+        local floor
         if event == "JAILERS_TOWER_LEVEL_UPDATE" then
-            local _, type = ...
-            if type then self.jailersTowerType = type end
+            local level, type, textureKit = ...
+            self.jailersTowerLevelUpdateInfo = {level = level, type = type, textureKit = textureKit}
         end
-        local widgetInfo = C_UIWidgetManager.GetScenarioHeaderCurrenciesAndBackgroundWidgetVisualizationInfo(2319)
-        if widgetInfo then
-            level = widgetInfo.headerText or ""
-        end
+        local widgetInfo = C_UIWidgetManager.GetScenarioHeaderCurrenciesAndBackgroundWidgetVisualizationInfo(3302)
+        if widgetInfo then floor = widgetInfo.headerText or "" end
 
-        local typeString = JAILERS_TOWER_LEVEL_TYPE_STRINGS[self.jailersTowerType]
-        if typeString then
-            compassData.TITLE = difficultyName .. " |cFFFFFFFF " .. level .. " - " .. typeString .. "|r"
+        if self.jailersTowerLevelUpdateInfo ~= nil and self.jailersTowerLevelUpdateInfo.type ~= nil then
+            local typeString = C_ScenarioInfo.GetJailersTowerTypeString(self.jailersTowerLevelUpdateInfo.type)
+            if typeString then
+                compassData.TITLE = difficultyName .. " |cFFFFFFFF " .. floor .. " - " .. typeString .. "|r"
+            else
+                compassData.TITLE = difficultyName .. " |cFFFFFFFF " .. floor .. "|r"
+            end
         else
-            compassData.TITLE = difficultyName .. " |cFFFFFFFF " .. level .. "|r"
+            compassData.TITLE = difficultyName .. " |cFFFFFFFF " .. floor .. "|r"
         end
 
         compassData.COLOR = TRACKER_TYPE_COLOR.TORGHAST
@@ -221,7 +213,7 @@ local function updateCurrentScenario(self, event, ...)
         GwScenarioBlock.questLogIndex = C_QuestLog.GetLogIndexForQuestID(questID)
     end
 
-    UpdateQuestItem(GwScenarioBlock)
+    GW.CombatQueue_Queue("update_tracker_scenario_itembutton", UpdateQuestItem, {GwScenarioBlock})
 
     for criteriaIndex = 1, numCriteria do
         local criteriaString, _, _, quantity, totalQuantity, _, _, _, _, _, _, _, isWeightedProgress = C_Scenario.GetCriteriaInfo(criteriaIndex)
@@ -307,7 +299,7 @@ local function updateCurrentScenario(self, event, ...)
 
     GwScenarioBlock.height = GwScenarioBlock.height + 5
     if GwScenarioBlock.hasItem then
-        GW.updateQuestItemPositions(GwScenarioBlock.actionButton, GwScenarioBlock.height, "SCENARIO", GwScenarioBlock)
+        GW.CombatQueue_Queue("update_tracker_scenario_itembutton_position", GW.updateQuestItemPositions, {GwScenarioBlock.actionButton, GwScenarioBlock.height, "SCENARIO", GwScenarioBlock})
     end
 
     local intGWQuestTrackerHeight = 0

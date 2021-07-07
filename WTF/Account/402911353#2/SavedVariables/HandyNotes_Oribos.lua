@@ -2,16 +2,22 @@
 HandyNotes_OribosDB = {
 	["profileKeys"] = {
 		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
+		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
+		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
 		["Plüto - Sylvanas"] = "Plüto - Sylvanas",
 		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
 		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
+		["Cìchìcean - Sylvanas"] = "Cìchìcean - Sylvanas",
 		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
-		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
-		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
+		["Cretz - Moonglade"] = "Cretz - Moonglade",
 		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
 	},
 	["profiles"] = {
 		["Vòlkmer - Kazzak"] = {
+		},
+		["Latthrias - Sylvanas"] = {
+		},
+		["Jiglèr - Sylvanas"] = {
 		},
 		["Plüto - Sylvanas"] = {
 		},
@@ -19,13 +25,12 @@ HandyNotes_OribosDB = {
 		},
 		["Kynaeth - Sylvanas"] = {
 		},
+		["Cìchìcean - Sylvanas"] = {
+		},
 		["Crètz - Sylvanas"] = {
 			["show_onlymytrainers"] = true,
-			["fmaster_waypoint_dropdown"] = 3,
 		},
-		["Latthrias - Sylvanas"] = {
-		},
-		["Jiglèr - Sylvanas"] = {
+		["Cretz - Moonglade"] = {
 		},
 		["Gnomèrcy - Sylvanas"] = {
 		},

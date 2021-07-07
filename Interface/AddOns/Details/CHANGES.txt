@@ -1,10 +1,10 @@
-tag 062fd2ce6ca848d52cfd1b935777c2314acd57f0 DetailsRetail.9.0.5.8406.144
+tag 2c8d41fb7a830538fcb3b09d9af33353b06d56f6 DetailsRetail.9.1.0.8700a.145
 Author:	Tercio Jose <terciob19@hotmail.com>
-Date:	Tue Apr 13 18:03:49 2021 -0300
+Date:	Tue Jul 6 21:27:07 2021 -0300
 
-commit 4a28c63b4e0d2f9fd74338e6146e15522f3ef3b8
+commit 6f6d79613425538b4b520bb0de34fdb79bf57a37
 Author: Tercio Jose <terciob19@hotmail.com>
-Date:   Tue Apr 13 18:02:15 2021 -0300
+Date:   Tue Jul 6 21:26:45 2021 -0300
 
-    Fixed combability issues with the tbc beta version
+    Removed some debug prints from the coach feature :)
 

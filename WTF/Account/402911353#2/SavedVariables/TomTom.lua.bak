@@ -11,15 +11,17 @@ TomTomDB = {
 		["Blanitza - Kazzak"] = "Default",
 		["Mòloch - Kazzak"] = "Default",
 		["Crëtz - Kazzak"] = "Default",
+		["Vòlkmer - Kazzak"] = "Default",
 		["Jiglèr - Sylvanas"] = "Default",
 		["Lastones - Kazzak"] = "Default",
 		["Needzafemale - Kazzak"] = "Default",
-		["Vòlkmer - Kazzak"] = "Default",
+		["Plüto - Sylvanas"] = "Default",
 		["Kynaeth - Sylvanas"] = "Default",
+		["Cìchìcean - Sylvanas"] = "Default",
 		["Mortifèrous - Kazzak"] = "Default",
 		["Crètz - Sylvanas"] = "Default",
 		["Brovar - Sylvanas"] = "Default",
-		["Plüto - Sylvanas"] = "Default",
+		["Cretz - Moonglade"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -45,55 +47,61 @@ TomTomDB = {
 TomTomWaypoints = nil
 TomTomWaypointsM = {
 	["profileKeys"] = {
-		["Blanitza - Kazzak"] = "Blanitza - Kazzak",
-		["Mòloch - Kazzak"] = "Mòloch - Kazzak",
-		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
-		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
 		["Kakaròt - Kazzak"] = "Kakaròt - Kazzak",
 		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
-		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
 		["Òdin - Sylvanas"] = "Òdin - Sylvanas",
-		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
-		["Plüto - Sylvanas"] = "Plüto - Sylvanas",
 		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
-		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
+		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
+		["Cretz - Sylvanas"] = "Cretz - Sylvanas",
+		["Blanitza - Kazzak"] = "Blanitza - Kazzak",
 		["Mortifèrous - Kazzak"] = "Mortifèrous - Kazzak",
+		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
+		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
+		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
+		["Plüto - Sylvanas"] = "Plüto - Sylvanas",
+		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
+		["Cìchìcean - Sylvanas"] = "Cìchìcean - Sylvanas",
+		["Mòloch - Kazzak"] = "Mòloch - Kazzak",
 		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
 		["Brovar - Sylvanas"] = "Brovar - Sylvanas",
-		["Cretz - Sylvanas"] = "Cretz - Sylvanas",
+		["Cretz - Moonglade"] = "Cretz - Moonglade",
 	},
 	["profiles"] = {
-		["Blanitza - Kazzak"] = {
-		},
-		["Mòloch - Kazzak"] = {
-		},
-		["Vòlkmer - Kazzak"] = {
-		},
-		["Crëtz - Kazzak"] = {
-		},
 		["Kakaròt - Kazzak"] = {
 		},
 		["Latthrias - Sylvanas"] = {
 		},
-		["Jiglèr - Sylvanas"] = {
-		},
 		["Òdin - Sylvanas"] = {
-		},
-		["Gnomèrcy - Sylvanas"] = {
-		},
-		["Plüto - Sylvanas"] = {
 		},
 		["Egidus - Sylvanas"] = {
 		},
-		["Kynaeth - Sylvanas"] = {
+		["Gnomèrcy - Sylvanas"] = {
+		},
+		["Cretz - Sylvanas"] = {
+		},
+		["Blanitza - Kazzak"] = {
 		},
 		["Mortifèrous - Kazzak"] = {
+		},
+		["Crëtz - Kazzak"] = {
+		},
+		["Jiglèr - Sylvanas"] = {
+		},
+		["Vòlkmer - Kazzak"] = {
+		},
+		["Plüto - Sylvanas"] = {
+		},
+		["Kynaeth - Sylvanas"] = {
+		},
+		["Cìchìcean - Sylvanas"] = {
+		},
+		["Mòloch - Kazzak"] = {
 		},
 		["Crètz - Sylvanas"] = {
 		},
 		["Brovar - Sylvanas"] = {
 		},
-		["Cretz - Sylvanas"] = {
+		["Cretz - Moonglade"] = {
 		},
 	},
 }

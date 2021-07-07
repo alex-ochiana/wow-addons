@@ -1,52 +1,58 @@
 
 HandyNotes_BattleForAzerothTreasuresDB = {
 	["profileKeys"] = {
-		["Blanitza - Kazzak"] = "Blanitza - Kazzak",
-		["Mòloch - Kazzak"] = "Mòloch - Kazzak",
-		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
-		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
 		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
-		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
 		["Òdin - Sylvanas"] = "Òdin - Sylvanas",
-		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
-		["Plüto - Sylvanas"] = "Plüto - Sylvanas",
 		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
 		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
+		["Cretz - Sylvanas"] = "Cretz - Sylvanas",
+		["Blanitza - Kazzak"] = "Blanitza - Kazzak",
 		["Mortifèrous - Kazzak"] = "Mortifèrous - Kazzak",
+		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
+		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
+		["Mòloch - Kazzak"] = "Mòloch - Kazzak",
+		["Plüto - Sylvanas"] = "Plüto - Sylvanas",
+		["Cìchìcean - Sylvanas"] = "Cìchìcean - Sylvanas",
+		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
+		["Cretz - Moonglade"] = "Cretz - Moonglade",
 		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
 		["Brovar - Sylvanas"] = "Brovar - Sylvanas",
-		["Cretz - Sylvanas"] = "Cretz - Sylvanas",
+		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
 	},
 	["profiles"] = {
-		["Blanitza - Kazzak"] = {
-		},
-		["Mòloch - Kazzak"] = {
-		},
-		["Crëtz - Kazzak"] = {
-		},
-		["Vòlkmer - Kazzak"] = {
-		},
 		["Latthrias - Sylvanas"] = {
 		},
-		["Jiglèr - Sylvanas"] = {
-		},
 		["Òdin - Sylvanas"] = {
-		},
-		["Kynaeth - Sylvanas"] = {
-		},
-		["Plüto - Sylvanas"] = {
 		},
 		["Egidus - Sylvanas"] = {
 		},
 		["Gnomèrcy - Sylvanas"] = {
 		},
+		["Cretz - Sylvanas"] = {
+		},
+		["Blanitza - Kazzak"] = {
+		},
 		["Mortifèrous - Kazzak"] = {
+		},
+		["Crëtz - Kazzak"] = {
+		},
+		["Jiglèr - Sylvanas"] = {
+		},
+		["Mòloch - Kazzak"] = {
+		},
+		["Plüto - Sylvanas"] = {
+		},
+		["Cìchìcean - Sylvanas"] = {
+		},
+		["Kynaeth - Sylvanas"] = {
+		},
+		["Cretz - Moonglade"] = {
 		},
 		["Crètz - Sylvanas"] = {
 		},
 		["Brovar - Sylvanas"] = {
 		},
-		["Cretz - Sylvanas"] = {
+		["Vòlkmer - Kazzak"] = {
 		},
 	},
 }

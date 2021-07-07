@@ -1,12 +1,10 @@
 # TomTom
 
-## v90005-1.2.1 (2021-03-09)
- 
+## [v3.0.2](https://github.com/jnwhiteh/TomTom/tree/v3.0.2) (2021-06-29)
+[Full Changelog](https://github.com/jnwhiteh/TomTom/compare/v3.0.1...v3.0.2) [Previous Releases](https://github.com/jnwhiteh/TomTom/releases)
 
-- Update Retail interface to 90005  
-- Add a .pkgmeta to control releases.  
-- Add .release and .env to .gitignore  
-- Add Curse and WoWI project IDs to .toc  
-- README..md tweak to prod the packager.  
-- Add help text for /wayb  
-- Added my name to .toc for push to curse  
+- Merge branch 'main' of github.com:jnwhiteh/TomTom into main  
+- Update Interface for Retail to 90100  
+- Merge pull request #3 from jnwhiteh/issue-2  
+    Clean up WOW version detection  
+- Clean up WOW client version detection  

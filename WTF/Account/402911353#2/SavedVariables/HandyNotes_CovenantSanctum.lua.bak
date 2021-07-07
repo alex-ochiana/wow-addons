@@ -1,25 +1,31 @@
 
 HandyNotes_CovenantSanctumDB = {
 	["profileKeys"] = {
-		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
+		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
+		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
+		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
 		["Plüto - Sylvanas"] = "Plüto - Sylvanas",
 		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
+		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
 		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
-		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
 		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
-		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
-		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
+		["Cretz - Moonglade"] = "Cretz - Moonglade",
+		["Cìchìcean - Sylvanas"] = "Cìchìcean - Sylvanas",
 	},
 	["profiles"] = {
-		["Kynaeth - Sylvanas"] = {
+		["Vòlkmer - Kazzak"] = {
+		},
+		["Latthrias - Sylvanas"] = {
+		},
+		["Jiglèr - Sylvanas"] = {
 		},
 		["Plüto - Sylvanas"] = {
 		},
 		["Egidus - Sylvanas"] = {
 		},
-		["Gnomèrcy - Sylvanas"] = {
+		["Kynaeth - Sylvanas"] = {
 		},
-		["Latthrias - Sylvanas"] = {
+		["Gnomèrcy - Sylvanas"] = {
 		},
 		["Crètz - Sylvanas"] = {
 			["show_renown"] = false,
@@ -27,9 +33,9 @@ HandyNotes_CovenantSanctumDB = {
 			["show_mail"] = false,
 			["show_innkeeper"] = false,
 		},
-		["Jiglèr - Sylvanas"] = {
+		["Cretz - Moonglade"] = {
 		},
-		["Vòlkmer - Kazzak"] = {
+		["Cìchìcean - Sylvanas"] = {
 		},
 	},
 }

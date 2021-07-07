@@ -1,16 +1,10 @@
-## 9.0.5
+## 9.1.0
 
 ### General
 
-- Updated the `Interface` version for Classic to `11306`.
-- Updated the `Interface` version for Retail to `90005`.
-- Updated SFX Widgets.
+- Updated the `Interface` version for _Retail_ to `90100`.
 
 ### Localization
 
-- Updated deDE. (Bullseiify)
-- Updated frFR. (Maglore85)
-
-### Bug Fixes
-
-- Fixed an erroneously-named key in the `Regions` table.
+- Updated deDE. (Quil)
+- Updated ruRU. (Vitality_Spirit)

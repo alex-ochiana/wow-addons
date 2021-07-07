@@ -1,3 +1,44 @@
+**r709:**
+
+Additions:
+> Added tracking for mounts introduced in Chains of Domination 
+> Added tracking for various toys introduced in Chains of Domination
+> Added tracking for most pets introduced in Chains of Domination
+
+Changes:
+> Rarity's achievement toast now also supports two lines of text properly, similar to Blizzard's recently-updated version
+
+Fixes:
+> Fixed an issue where two icons would be displayed in the achievement toast
+
+Developer Notes:
+> There are a number of collectibles we don't currently have sufficient data on. These will be added as soon™ as possible, but it might still take a while.
+
+Contributors (in alphabetical order):
+> Tommy Godejord
+
+-----
+
+**r708:**
+
+Additions:
+> Added tracking for Gilded Water (pet)
+> Added tracking for Outrider's Bridle Chain (toy)
+> Added a holiday-style reminder for when Dunegorger Kraulok is available (experimental)
+
+Changes:
+> The /rarity verify slash command used for validating the item database is now available as /rarity validate
+
+Fixes:
+> Items obtainable from the Black Market auction house are now flagged as such
+> All items should now be assigned a zone, so that filtering by the current zone no longer incorrectly excludes them
+> Tracking for the Ascended Skymane mount should now be working on non-English client locales
+
+Contributors (in alphabetical order):
+> Tommy Godejord
+
+-----
+
 **r707:**
 
 Changes:
@@ -54,38 +95,3 @@ Fixes:
 
 Contributors (in alphabetical order):
 > Tommy Godejord (https://github.com/godejord)
-
------
-
-**r704:**
-
-Additions:
-> Added tracking for various Shadowlands pets and toys that were previously missing
-
-Fixes:
-> Mechagon Peacekeeper should now correctly be displayed in the Group category
-> Attempts for Gahz'rooki's Summoning Stone should now be tracked correctly when looting relevant Kor'kron NPCs in The Barrens
-
-Contributors (in alphabetical order):
-> Tommy Godejord (https://github.com/godejord)
-
------
-
-**r703:**
-
-Additions:
-> Added tracking for various Shadowlands pets and toys that were previously missing
-> Added a setting to show the addon's tooltip on click instead of hover
-
-Changes:
-> Removed tracking for various items that appear to have never made it to live servers
-
-Fixes:
-> Removed restrictions placed on the tracking for Theater of Pain rares (to account for Blizzard's stealth hotfix)
-> Fixed an issue where killing covenant-restricted rares on characters that haven't selected a covenant yet would cause an error
-> Fixed tracking for Lightbinders (pet)
-
-Contributors (in alphabetical order):
-> Nick Bayley (https://github.com/nickbayley)
-> Tommy Godejord (https://github.com/godejord)
-> Mikael Jelveby (https://github.com/jelveby)

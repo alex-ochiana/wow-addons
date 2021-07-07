@@ -125,7 +125,7 @@ Paste: disabled
 AzeriteUI: disabled
 WeakAurasCompanion: enabled
 ACP: disabled
-ChampionCommander: disabled
+ChampionCommander: enabled
 HandyNotes: disabled
 HandyNotes_Argus: disabled
 HandyNotes_BrokenShore: disabled
@@ -141,7 +141,7 @@ TomTom: enabled
 TomCats-Nzoth: disabled
 AllTheThings: disabled
 AceGUI-3.0_SFX-Widgets: disabled
-AngryKeystones: disabled
+AngryKeystones: enabled
 AAP-Vanilla: disabled
 AAP-Cata-MoP: disabled
 AAP-TBC-WotLK: disabled
@@ -191,3 +191,12 @@ Masque_Retina: disabled
 Masque_Entropy: disabled
 Masque_Caith: disabled
 XPractice: disabled
+TomCats-Bundled-DeathsRising: disabled
+RUF: disabled
+HandyNotes_BattleForAzeroth: disabled
+HandyNotes_CovenantSanctum: disabled
+HandyNotes_Draenor: disabled
+HandyNotes_Oribos: disabled
+HandyNotes_Shadowlands: disabled
+HandyNotes_LongForgottenHippogryph: disabled
+NetherwingEggs: disabled

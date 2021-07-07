@@ -1,9 +1,9 @@
-## Interface: 90005
-## Title: |cffffedbaGW2 UI|r
-## Notes: HUD Replacement addon.
-## Notes-deDE: Ersetzt die Benutzeroberfläche.
+## Interface: 90100
+## Title: |cffffedbaGW2 UI|r |cFF888888(5.16.4)|r
+## Notes: HUD Replacement addon
+## Notes-deDE: Ersetzt die Benutzeroberfläche
 ## OptionalDeps: MoveAnything, _DebugLog, BugSack, !Stragglers, ACU
-## Version: 5.13.4
+## Version: 5.16.4
 ## X-Website: https://www.curseforge.com/wow/addons/gw2-ui
 ## X-Curse-Project-ID: 94310
 ## DefaultState: Enabled
@@ -51,6 +51,7 @@ settings/settings.xml
 settings/panel_modules.xml
 settings/panel_profiles.xml
 settings/panel_raid.xml
+settings/panel_party.xml
 settings/settings.lua
 settings/panel_modules.lua
 settings/panel_player.lua
@@ -113,6 +114,7 @@ mainbar/petbar.xml
 mainbar/dodgebar.xml
 mainbar/layout.lua
 mainbar/hud.lua
+mainbar/stancebar.lua
 mainbar/actionbars2.lua
 mainbar/petbar.lua
 mainbar/aurabar_blizz_modified.lua
@@ -164,6 +166,21 @@ objectives/vehicleButton.lua
 objectives/extraAB_bossAB.lua
 objectives/altPowerBar.lua
 objectives/widgetUI.lua
+
+social/social.xml
+social/ignoreList.xml
+social/raf.xml
+social/friends.xml
+social/who.xml
+social/quickjoin.xml
+social/raid.xml
+social/raid.lua
+social/quickjoin.lua
+social/who.lua
+social/friends.lua
+social/raf.lua
+social/ignoreList.lua
+social/social.lua
 
 character/character.xml
 character/paperdoll.xml

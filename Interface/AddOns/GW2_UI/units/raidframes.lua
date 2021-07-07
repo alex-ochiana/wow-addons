@@ -67,7 +67,7 @@ local function updateRaidMarkers(self)
             SetClassIcon(self.classicon, select(3, UnitClass(self.unit)))
         else
             self.classicon:SetTexture(nil)
-        end    
+        end
     end
 end
 GW.AddForProfiling("raidframes", "updateRaidMarkers", updateRaidMarkers)
@@ -199,7 +199,7 @@ local function setUnitName(self)
     local role = UnitGroupRolesAssigned(self.unit)
     local nameString = UnitName(self.unit)
     local realmflag = ""
-    
+
     if not nameString or nameString == UNKNOWNOBJECT then
         self.nameNotLoaded = false
     else
@@ -285,6 +285,7 @@ local function updateAwayData(self)
 
     if iconState == 1 then
         self.classicon:SetTexture("Interface/AddOns/GW2_UI/textures/party/classicons")
+        self.classicon:SetShown(true)
         self.healthbar:SetStatusBarColor(0.207, 0.392, 0.168)
         SetClassIcon(self.classicon, classIndex)
     end
@@ -318,7 +319,7 @@ local function updateAwayData(self)
         elseif iconState == 6 then
             self.classicon:SetAtlas("Raid-Icon-SummonDeclined")
         end
-        
+
         self.classicon:Show()
     end
 
@@ -396,8 +397,16 @@ local function showDebuffIcon(parent, i, btnIndex, x, y, filter, icon, count, de
         frame:SetScript("OnEnter", onDebuffEnter)
         frame:SetScript("OnLeave", GameTooltip_Hide)
         frame:SetScript("OnMouseUp", onDebuffMouseUp)
-        frame:EnableMouse(not InCombatLockdown() or GetSetting("RAID_AURA_TOOLTIP_IN_COMBAT"))
         frame:RegisterForClicks("RightButtonUp")
+
+        frame.tooltipSetting = GetSetting("RAID_AURA_TOOLTIP_INCOMBAT")
+        if frame.tooltipSetting == "NEVER" then
+            frame:EnableMouse(false)
+        elseif frame.tooltipSetting == "ALWAYS" then
+            frame:EnableMouse(true)
+        elseif frame.tooltipSetting == "OUT_COMBAT" then
+            frame:EnableMouse(true)
+        end
     end
 
     if debuffType and DEBUFF_COLOR[debuffType] then
@@ -533,8 +542,16 @@ local function showBuffIcon(parent, i, btnIndex, x, y, icon, isMissing)
         frame:SetScript("OnEnter", onBuffEnter)
         frame:SetScript("OnLeave", GameTooltip_Hide)
         frame:SetScript("OnMouseUp", onBuffMouseUp)
-        frame:EnableMouse(not InCombatLockdown() or GetSetting("RAID_AURA_TOOLTIP_IN_COMBAT"))
         frame:RegisterForClicks("RightButtonUp")
+
+        frame.tooltipSetting = GetSetting("RAID_AURA_TOOLTIP_INCOMBAT")
+        if frame.tooltipSetting == "NEVER" then
+            frame:EnableMouse(false)
+        elseif frame.tooltipSetting == "ALWAYS" then
+            frame:EnableMouse(true)
+        elseif frame.tooltipSetting == "OUT_COMBAT" then
+            frame:EnableMouse(true)
+        end
     end
 
     frame.index = i
@@ -688,17 +705,46 @@ local function updateAuras(self)
 end
 GW.AddForProfiling("raidframes", "updateAuras", updateAuras)
 
+local function updatePower(self)
+    local power = UnitPower(self.unit, UnitPowerType(self.unit))
+    local powerMax = UnitPowerMax(self.unit, UnitPowerType(self.unit))
+    local powerPrecentage = 0
+    if powerMax > 0 then
+        powerPrecentage = power / powerMax
+    end
+    self.manabar:SetValue(powerPrecentage)
+    local _, powerToken = UnitPowerType(self.unit)
+    if PowerBarColorCustom[powerToken] then
+        local pwcolor = PowerBarColorCustom[powerToken]
+        self.manabar:SetStatusBarColor(pwcolor.r, pwcolor.g, pwcolor.b)
+    end
+end
+
 local function raidframe_OnEvent(self, event, unit)
     if event == "PLAYER_REGEN_DISABLED" or event == "PLAYER_REGEN_ENABLED" then
         -- Enable or disable mouse handling on aura frames
-        local name, enable = self:GetName(), event == "PLAYER_REGEN_ENABLED" or GetSetting("RAID_AURA_TOOLTIP_IN_COMBAT")
+        local name = self:GetName()
         for j = 1, 2 do
-            local i, aura, frame = 1, j == 1 and "Buff" or "Debuff", nil
+            local i, aura = 1, j == 1 and "Buff" or "DeBuff"
+            local frame = nil
             repeat
-                frame, i = _G["Gw" .. name .. aura .. "ItemFrame" .. i], i + 1
+                frame = _G["Gw" .. name .. aura .. "ItemFrame" .. i]
                 if frame then
-                    frame:EnableMouse(enable)
+                    if frame.tooltipSetting == "NEVER" then
+                        frame:EnableMouse(false)
+                    elseif frame.tooltipSetting == "ALWAYS" then
+                        frame:EnableMouse(true)
+                    elseif frame.tooltipSetting == "IN_COMBAT" and event == "PLAYER_REGEN_ENABLED" then
+                        frame:EnableMouse(false)
+                    elseif frame.tooltipSetting == "IN_COMBAT" and event == "PLAYER_REGEN_DISABLED" then
+                        frame:EnableMouse(true)
+                    elseif frame.tooltipSetting == "OUT_COMBAT" and event == "PLAYER_REGEN_ENABLED" then
+                        frame:EnableMouse(true)
+                    elseif frame.tooltipSetting == "OUT_COMBAT" and event == "PLAYER_REGEN_DISABLED" then
+                        frame:EnableMouse(false)
+                    end
                 end
+                i = i + 1
             until not frame
         end
     end
@@ -713,21 +759,13 @@ local function raidframe_OnEvent(self, event, unit)
         setAbsorbAmount(self)
         setPredictionAmount(self)
         setHealth(self)
+        updateAwayData(self)
+        updateAuras(self)
+        updatePower(self)
     elseif event == "UNIT_MAXHEALTH" or event == "UNIT_HEALTH" then
         setHealth(self)
     elseif event == "UNIT_POWER_FREQUENT" or event == "UNIT_MAXPOWER" then
-        local power = UnitPower(self.unit, UnitPowerType(self.unit))
-        local powerMax = UnitPowerMax(self.unit, UnitPowerType(self.unit))
-        local powerPrecentage = 0
-        if powerMax > 0 then
-            powerPrecentage = power / powerMax
-        end
-        self.manabar:SetValue(powerPrecentage)
-        local _, powerToken = UnitPowerType(self.unit)
-        if PowerBarColorCustom[powerToken] then
-            local pwcolor = PowerBarColorCustom[powerToken]
-            self.manabar:SetStatusBarColor(pwcolor.r, pwcolor.g, pwcolor.b)
-        end
+        updatePower(self)
     elseif event == "UNIT_ABSORB_AMOUNT_CHANGED" then
         setAbsorbAmount(self)
     elseif event == "UNIT_HEAL_PREDICTION" then
@@ -941,21 +979,41 @@ local function UpdateRaidFramesPosition()
     for i = 1, MAX_RAID_MEMBERS do
         PositionRaidFrame(_G["GwRaidGridDisplay" .. i], GwRaidFrameContainer.gwMover, i, grow1, grow2, cells1, sizePer1, sizePer2, m)
         if i > players then _G["GwRaidGridDisplay" .. i]:Hide() else _G["GwRaidGridDisplay" .. i]:Show() end
+
+        PositionRaidFrame(_G["GwCompactraid" .. i], GwRaidFrameContainer.gwMover, i, grow1, grow2, cells1, sizePer1, sizePer2, m)
+        if i > players then _G["GwCompactraid" .. i]:Hide() else _G["GwCompactraid" .. i]:Show() end
     end
 end
 GW.UpdateRaidFramesPosition = UpdateRaidFramesPosition
 GW.AddForProfiling("raidframes", "UpdateRaidFramesPosition", UpdateRaidFramesPosition)
 
-local function ToggleRaidFramesPreview()
+local function ToggleRaidFramesPreview(_, _, moveHudMode)
     previewStep = max((previewStep + 1) % (#previewSteps + 1), hudMoving and 1 or 0)
-    if previewStep == 0 then
-        GwRaidFrameContainer.gwMover:EnableMouse(false)
-        GwRaidFrameContainer.gwMover:SetMovable(false)
-        GwRaidFrameContainer.gwMover:Hide()
+
+    if previewStep == 0 or moveHudMode then
+        for i = 1, MAX_RAID_MEMBERS do
+            if _G["GwCompactraid" .. i] then
+                _G["GwCompactraid" .. i].unit = "raid" .. i
+                _G["GwCompactraid" .. i].guid = UnitGUID("raid" .. i)
+                _G["GwCompactraid" .. i]:SetAttribute("unit", "raid" .. i)
+                raidframe_OnEvent(_G["GwCompactraid" .. i], "load")
+            end
+        end
     else
-        GwRaidFrameContainer.gwMover:Show()
-        GwRaidFrameContainer.gwMover:EnableMouse(true)
-        GwRaidFrameContainer.gwMover:SetMovable(true)
+        for i = 1, MAX_RAID_MEMBERS do
+            if _G["GwCompactraid" .. i] then
+                if i <= (previewStep == 0 and 40 or previewSteps[previewStep]) then
+                    _G["GwCompactraid" .. i].unit = "player"
+                    _G["GwCompactraid" .. i].guid = UnitGUID("player")
+                    _G["GwCompactraid" .. i]:SetAttribute("unit", "player")
+                else
+                    _G["GwCompactraid" .. i].unit = "raid" .. i
+                    _G["GwCompactraid" .. i].guid = UnitGUID("raid" .. i)
+                    _G["GwCompactraid" .. i]:SetAttribute("unit", "raid" .. i)
+                end
+                raidframe_OnEvent(_G["GwCompactraid" .. i], "load")
+            end
+        end
         UpdateRaidFramesPosition()
     end
     GwSettingsRaidPanel.buttonRaidPreview:SetText(previewStep == 0 and "-" or previewSteps[previewStep])
@@ -990,7 +1048,7 @@ local function UpdateRaidFramesLayout()
     if not InCombatLockdown() then
         GwRaidFrameContainer:SetSize(isV and size2 or size1, isV and size1 or size2)
     end
-    
+
     local unitString = IsInRaid() and "raid" or "party"
     local sorted = (unitString == "party" or GetSetting("RAID_SORT_BY_ROLE")) and sortByRole() or {}
 
@@ -1071,7 +1129,6 @@ local function createRaidFrame(registerUnit, index)
 
     frame.healthbar.animationName = "GwCompact" .. registerUnit .. "animation"
     frame.healthbar.animationValue = 0
-    
 
     frame.manabar.animationName = "GwCompact" .. registerUnit .. "manabaranimation"
     frame.manabar.animationValue = 0
@@ -1145,7 +1202,7 @@ local function LoadRaidFrames()
     if not _G.GwManageGroupButton then
         GW.manageButton()
     end
-    
+
     hideBlizzardRaidFrame()
 
     if CompactRaidFrameManager_UpdateShown then
@@ -1170,16 +1227,16 @@ local function LoadRaidFrames()
 
     hooksecurefunc(GwRaidFrameContainer.gwMover, "StopMovingOrSizing", function (frame)
         local anchor = GetSetting("RAID_ANCHOR")
-    
+
         if anchor == "GROWTH" then
             local g1, g2 = strsplit("+", GetSetting("RAID_GROW"))
             anchor = (IsIn("DOWN", g1, g2) and "TOP" or "BOTTOM") .. (IsIn("RIGHT", g1, g2) and "LEFT" or "RIGHT")
         end
-    
+
         if anchor ~= "POSITION" then
             local x = anchor:sub(-5) == "RIGHT" and frame:GetRight() - GetScreenWidth() or anchor:sub(-4) == "LEFT" and frame:GetLeft() or frame:GetLeft() + (frame:GetWidth() - GetScreenWidth()) / 2
             local y = anchor:sub(1, 3) == "TOP" and frame:GetTop() - GetScreenHeight() or anchor:sub(1, 6) == "BOTTOM" and frame:GetBottom() or frame:GetBottom() + (frame:GetHeight() - GetScreenHeight()) / 2
-    
+
             frame:ClearAllPoints()
             frame:SetPoint(anchor, x, y)
         end
@@ -1221,9 +1278,12 @@ local function LoadRaidFrames()
     GwSettingsRaidPanel.buttonRaidPreview:SetScript("OnLeave", GameTooltip_Hide)
     GwSettingsWindowMoveHud:HookScript("OnClick", function ()
         hudMoving = true
-        if previewStep == 0 then
-            ToggleRaidFramesPreview()
-        end
+        ToggleRaidFramesPreview(_, _, true)
+    end)
+    GwSmallSettingsWindow.lockHud:HookScript("OnClick", function()
+        hudMoving = false
+        previewStep = 4
+        ToggleRaidFramesPreview(_, _, false)
     end)
 
     GwRaidFrameContainer:RegisterEvent("RAID_ROSTER_UPDATE")

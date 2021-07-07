@@ -1,12 +1,15 @@
 
 HandyNotes_BattleForAzerothDB = {
 	["profileKeys"] = {
-		["Vòlkmer - Kazzak"] = "Default",
+		["Cretz - Moonglade"] = "Default",
+		["Jiglèr - Sylvanas"] = "Default",
+		["Plüto - Sylvanas"] = "Default",
 		["Egidus - Sylvanas"] = "Default",
+		["Gnomèrcy - Sylvanas"] = "Default",
 		["Kynaeth - Sylvanas"] = "Default",
 		["Crètz - Sylvanas"] = "Default",
-		["Gnomèrcy - Sylvanas"] = "Default",
-		["Plüto - Sylvanas"] = "Default",
+		["Vòlkmer - Kazzak"] = "Default",
+		["Cìchìcean - Sylvanas"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

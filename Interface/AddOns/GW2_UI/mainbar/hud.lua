@@ -72,7 +72,7 @@ local function xpbar_OnEnter(self)
         if xpForNextPoint > 0 then
             xpPct = math.floor((azeriteXP / xpForNextPoint) * 100) .. "%"
         else
-            xpPct = "n/a"
+            xpPct = NOT_APPLICABLE
         end
         GameTooltip:AddLine(
             AZERITE_POWER_BAR:format(
@@ -156,29 +156,18 @@ local function xpbar_OnEvent(self, event)
     local level = GW.mylevel
     local maxPlayerLevel = GetMaxLevelForPlayerExpansion()
     local Nextlevel = math.min(maxPlayerLevel, level + 1)
-    local lockLevelTextUnderMaxLevel = false
+    local lockLevelTextUnderMaxLevel = level < Nextlevel
 
     local rested = GetXPExhaustion()
-    local showBar1 = false
+    local showBar1 = level < Nextlevel
     local showBar2 = false
     local showBar3 = false
-    local restingIconString = " |TInterface/AddOns/GW2_UI/textures/icons/resting-icon:16:16:0:0|t "
+    local restingIconString = IsResting() and " |TInterface\\AddOns\\GW2_UI\\textures\\icons\\resting-icon:16:16:0:0|t " or "" 
 
-    if not IsResting() then
-        restingIconString = ""
-    end
     if rested == nil or (rested / valMax) == 0 then
         rested = 0
     else
-        rested = rested / (valMax - valCurrent)
-    end
-    if rested > 1 then
-        rested = 1
-    end
-
-    if level < Nextlevel then
-        showBar1 = true
-        lockLevelTextUnderMaxLevel = true
+        rested = math.min((rested / (valMax - valCurrent)), 1)
     end
 
     local animationSpeed = 15
@@ -232,10 +221,7 @@ local function xpbar_OnEvent(self, event)
             isNormal = true
         end
 
-        local nextId = standingId + 1
-        if nextId == nil then
-            nextId = standingId
-        end
+        local nextId = standingId and standingId + 1 or standingId
         if not lockLevelTextUnderMaxLevel then
             level = isParagon and getglobal("FACTION_STANDING_LABEL" .. standingId) or isFriend and friendTextLevel or isNormal and getglobal("FACTION_STANDING_LABEL" .. standingId)
             Nextlevel = isParagon and L["Paragon"] or isFriend and "" or isNormal and getglobal("FACTION_STANDING_LABEL" .. math.min(8, nextId))
@@ -296,7 +282,7 @@ local function xpbar_OnEvent(self, event)
     else
         local texture = (maxPlayerLevel == GW.mylevel) and "Interface/AddOns/GW2_UI/textures/hud/level-label-azerit" or "Interface/AddOns/GW2_UI/textures/hud/level-label"
         self.NextLevel:SetTextColor(1, 1, 1)
-        self.CurrentLevel:SetText(1, 1, 1)
+        self.CurrentLevel:SetTextColor(1, 1, 1)
         self.labelRight:SetTexture(texture)
         self.labelLeft:SetTexture(texture)
     end
@@ -430,7 +416,7 @@ local function xpbar_OnEvent(self, event)
     end
 
     if GW.mylevel ~= UnitEffectiveLevel("player") then
-      level = level.. " |cFF00FF00(" .. UnitEffectiveLevel("player") .. ")|r"
+        level = level.. " |cFF00FF00(" .. UnitEffectiveLevel("player") .. ")|r"
     end
 
     self.NextLevel:SetText(Nextlevel)

@@ -360,7 +360,7 @@ local function showBackdrop(self)
 end
 GW.AddForProfiling("Actionbars2", "showBackdrop", showBackdrop)
 
-local function setActionButtonStyle(buttonName, noBackDrop, hideUnused, isStanceButton)
+local function setActionButtonStyle(buttonName, noBackDrop, hideUnused, isStanceButton, isPet)
     local btn = _G[buttonName]
 
     if btn.icon ~= nil then
@@ -368,7 +368,11 @@ local function setActionButtonStyle(buttonName, noBackDrop, hideUnused, isStance
     end
     if btn.HotKey ~= nil then
         btn.HotKey:ClearAllPoints()
-        btn.HotKey:SetPoint("CENTER", btn, "BOTTOM", 0, 0)
+        if isPet then
+            btn.HotKey:SetPoint("CENTER", btn, "BOTTOM", 0, 5)
+        else
+            btn.HotKey:SetPoint("CENTER", btn, "BOTTOM", 0, 0)
+        end
         btn.HotKey:SetJustifyH("CENTER")
     end
     if btn.Count ~= nil then
@@ -680,11 +684,12 @@ local function updateMultiBar(lm, barName, buttonName, actionPage, state)
     if (barName == "MultiBarBottomLeft" or barName == "MultiBarBottomRight") and (not GetSetting("XPBAR_ENABLED") or GetSetting("PLAYER_AS_TARGET_FRAME")) and not fmMultibar.isMoved  then
         local framePoint = GetSetting(barName)
         local yOff = not GetSetting("XPBAR_ENABLED") and 14 or 0
+        local xOff = GetSetting("PLAYER_AS_TARGET_FRAME") and 56 or 0
         fmMultibar.gwMover:ClearAllPoints()
         if barName == "MultiBarBottomLeft" then
-            fmMultibar.gwMover:SetPoint(framePoint.point, UIParent, framePoint.relativePoint, framePoint.xOfs + 56, framePoint.yOfs - yOff)
+            fmMultibar.gwMover:SetPoint(framePoint.point, UIParent, framePoint.relativePoint, framePoint.xOfs + xOff, framePoint.yOfs - yOff)
         elseif barName == "MultiBarBottomRight" then
-            fmMultibar.gwMover:SetPoint(framePoint.point, UIParent, framePoint.relativePoint, framePoint.xOfs - 56, framePoint.yOfs - yOff)
+            fmMultibar.gwMover:SetPoint(framePoint.point, UIParent, framePoint.relativePoint, framePoint.xOfs - xOff, framePoint.yOfs - yOff)
         end
     end
 
@@ -705,105 +710,7 @@ local function updateMultiBar(lm, barName, buttonName, actionPage, state)
 end
 GW.AddForProfiling("Actionbars2", "updateMultiBar", updateMultiBar)
 
-local function stance_OnEvent(_, _, ...)
-    local unit = ...
-    if InCombatLockdown() or unit ~= "player" then
-        return
-    end
 
-    if GetNumShapeshiftForms() < 1 then
-        GwStanceBarButton:Hide()
-    else
-        GW.setStanceBar()
-        GwStanceBarButton:Show()
-    end
-end
-GW.AddForProfiling("Actionbars2", "stance_OnEvent", stance_OnEvent)
-
-local function getStanceBarButton()
-    if _G["GwStanceBarButton"] ~= nil then
-        return _G["GwStanceBarButton"]
-    else
-        local SBB = CreateFrame("Button", "GwStanceBarButton", UIParent, "GwStanceBarButton")
-
-        SBB:RegisterEvent("CHARACTER_POINTS_CHANGED")
-        SBB:RegisterEvent("PLAYER_ALIVE")
-        SBB:RegisterEvent("UPDATE_SHAPESHIFT_FORM")
-        SBB:SetScript("OnEvent", stance_OnEvent)
-        return SBB
-    end
-end
-
-local function getStanceBarContainer()
-    if _G["GwStanceBarContainer"] ~= nil then
-        return _G["GwStanceBarContainer"]
-    else
-        return CreateFrame("Frame", "GwStanceBarContainer", UIParent, nil)
-    end
-end
-
-local function setStanceBar()
-    local SBB = getStanceBarButton()
-    local SBC
-
-    for i = 1, 12 do
-        if _G["StanceButton" .. i] ~= nil then
-            if i == 1 then
-                _G["StanceButton" .. i]:ClearAllPoints()
-                _G["StanceButton" .. i]:SetPoint("BOTTOM", StanceBarFrame, "BOTTOM", 0, 0)
-            else
-                _G["StanceButton" .. i]:ClearAllPoints()
-                _G["StanceButton" .. i]:SetPoint("BOTTOM", _G["StanceButton" .. i - 1], "TOP", 0, 2)
-            end
-            _G["StanceButton" .. i]:SetSize(30, 30)
-            setActionButtonStyle("StanceButton" .. i, true, nil ,true)
-        end
-    end
-
-    SBB:ClearAllPoints()
-    if GetSetting("STANCEBAR_POSITION") == "LEFT" then
-        SBB:SetPoint('BOTTOMRIGHT', ActionButton1, 'BOTTOMLEFT', -5, 0)
-    else
-        SBB:SetPoint('BOTTOMLEFT', ActionButton12, 'BOTTOMRIGHT', 5, 0)
-    end
-
-    if GetNumShapeshiftForms() == 1 then
-        StanceButton1:ClearAllPoints()
-        if GetSetting("STANCEBAR_POSITION") == "LEFT" then
-            StanceButton1:SetPoint('TOPRIGHT', ActionButton1, 'TOPLEFT', -5, 2)
-        else
-            StanceButton1:SetPoint('TOPLEFT', ActionButton12, 'TOPRIGHT', 5, 2)
-        end
-    else
-        SBC = getStanceBarContainer()
-        SBC:ClearAllPoints()
-        SBC:SetPoint('BOTTOM', SBB, 'TOP', 0, 0)
-        
-        StanceBarFrame:SetParent(SBC)
-        StanceBarFrame:SetPoint("BOTTOMLEFT", SBB, "TOPLEFT", 0, 0)
-        StanceBarFrame:SetPoint("BOTTOMRIGHT", SBB, "TOPRIGHT", 0, 0)
-    end
-
-    if GetNumShapeshiftForms() < 2 then
-        SBB:Hide()
-    else
-        SBB:Show()
-        SBC:Hide()
-        SBB:SetFrameRef("GwStanceBarContainer", SBC)
-        SBB:SetAttribute(
-            "_onclick",
-            [=[
-            if self:GetFrameRef("GwStanceBarContainer"):IsVisible() then
-                self:GetFrameRef("GwStanceBarContainer"):Hide()
-            else
-                self:GetFrameRef("GwStanceBarContainer"):Show()
-            end
-        ]=]
-        )
-    end
-end
-GW.setStanceBar = setStanceBar
-GW.AddForProfiling("Actionbars2", "setStanceBar", setStanceBar)
 
 local function setPossessBar()
     PossessBarFrame:ClearAllPoints()
@@ -1119,7 +1026,7 @@ local function LoadActionBars(lm)
 
     -- do stuff to other pieces of the blizz UI
     hideBlizzardsActionbars()
-    setStanceBar()
+    GW.CreateStanceBar()
     setPossessBar()
     setLeaveVehicleButton()
 
@@ -1140,6 +1047,7 @@ local function LoadActionBars(lm)
         ExtraActionBarFrame:SetFrameStrata("MEDIUM")
     end
 
+    --[[ -- This is taintig in pet battles for rouge and druid
     local HIDE_MOST = {
         GwStanceBarButton = "hidden",
         StanceButton1 = "hidden",
@@ -1153,7 +1061,7 @@ local function LoadActionBars(lm)
 
     FRAMELOCK_STATES.COMMENTATOR_SPECTATING_MODE = Mixin(FRAMELOCK_STATES.COMMENTATOR_SPECTATING_MODE, HIDE_MOST)
     FRAMELOCK_STATES.PETBATTLES = Mixin(FRAMELOCK_STATES.PETBATTLES, HIDE_MOST)
-
+    ]]
     --ActionBarController:HookScript("OnEvent", function(_, event)
         --if event == "UPDATE_BONUS_ACTIONBAR" then
             --ActionBarController_ResetToDefault()

@@ -1,5 +1,4 @@
 local _, GW = ...
-local L = GW.L
 local CommaValue = GW.CommaValue
 local AddToClique = GW.AddToClique
 local Self_Hide = GW.Self_Hide
@@ -289,11 +288,11 @@ end
 GW.AddForProfiling("healthglobe", "repair_OnEnter", repair_OnEnter)
 
 local function LoadHealthGlobe()
-    local hg = CreateFrame("Button", nil, UIParent, "GwHealthGlobeTmpl")
+    local hg = CreateFrame("Button", "GW2_PlayerFrame", UIParent, "GwHealthGlobeTmpl")
     GW.RegisterScaleFrame(hg, 1.1)
 
     -- position based on XP bar space and make it movable if your actionbars are off
-    if GetSetting("ACTIONBARS_ENABLED") and not GW.IsIncompatibleAddonLoaded("Actionbars") then
+    if GetSetting("ACTIONBARS_ENABLED") and not GW.IsIncompatibleAddonLoadedOrOverride("Actionbars", true) then
         if GetSetting("XPBAR_ENABLED") then
             hg:SetPoint("BOTTOM", UIParent, "BOTTOM", 0, 17)
         else

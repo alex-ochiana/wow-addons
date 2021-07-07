@@ -5,6 +5,7 @@
 	local _tempo = time()
 	local _
 	local DetailsFramework = DetailsFramework
+	local isTBC = DetailsFramework.IsTBCWow()
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --> local pointers
@@ -189,54 +190,60 @@
 	}
 	
 	--> spellIds override
-	local override_spellId = {
-		[184707] = 218617, --warrior rampage
-		[184709] = 218617, --warrior rampage
-		[201364] = 218617, --warrior rampage
-		[201363] = 218617, --warrior rampage
-		[85384] = 96103, --warrior raging blow
-		[85288] = 96103, --warrior raging blow
-		[280849] = 5308, --warrior execute
-		[163558] = 5308, --warrior execute
-		[217955] = 5308, --warrior execute
-		[217956] = 5308, --warrior execute
-		[217957] = 5308, --warrior execute
-		[224253] = 5308, --warrior execute
-		[199850] = 199658, --warrior whirlwind
-		[190411] = 199658, --warrior whirlwind
-		[44949] = 199658, --warrior whirlwind
-		[199667] = 199658, --warrior whirlwind
-		[199852] = 199658, --warrior whirlwind
-		[199851] = 199658, --warrior whirlwind
-		
-		[222031] = 199547, --deamonhunter ChaosStrike
-		[200685] = 199552, --deamonhunter Blade Dance
-		[210155] = 210153, --deamonhunter Death Sweep
-		[227518] = 201428, --deamonhunter Annihilation
-		[187727] = 178741, --deamonhunter Immolation Aura
-		[201789] = 201628, --deamonhunter Fury of the Illidari
-		[225921] = 225919, --deamonhunter Fracture talent
-		
-		[205164] = 205165, --death knight Crystalline Swords
-		
-		[193315] = 197834, --rogue Saber Slash
-		[202822] = 202823, --rogue greed
-		[280720] = 282449, --rogue Secret Technique
-		[280719] = 282449, --rogue Secret Technique
-		[27576] = 5374, --rogue mutilate
-		
-		[233496] = 233490, --warlock Unstable Affliction
-		[233497] = 233490, --warlock Unstable Affliction
-		[233498] = 233490, --warlock Unstable Affliction
-		[233499] = 233490, --warlock Unstable Affliction
-		
-		[261947] = 261977, --monk fist of the white tiger talent
+	local override_spellId
 
-		[32175] = 17364, -- shaman Stormstrike (from Turkar on github)
-		[32176] = 17364, -- shaman Stormstrike
-		[45284] = 188196, --shaman lightining bolt overloaded
-		
-	}
+	if (isTBC) then
+		override_spellId = {}
+
+	else --retail
+		override_spellId = {
+			[184707] = 218617, --warrior rampage
+			[184709] = 218617, --warrior rampage
+			[201364] = 218617, --warrior rampage
+			[201363] = 218617, --warrior rampage
+			[85384] = 96103, --warrior raging blow
+			[85288] = 96103, --warrior raging blow
+			[280849] = 5308, --warrior execute
+			[163558] = 5308, --warrior execute
+			[217955] = 5308, --warrior execute
+			[217956] = 5308, --warrior execute
+			[217957] = 5308, --warrior execute
+			[224253] = 5308, --warrior execute
+			[199850] = 199658, --warrior whirlwind
+			[190411] = 199658, --warrior whirlwind
+			[44949] = 199658, --warrior whirlwind
+			[199667] = 199658, --warrior whirlwind
+			[199852] = 199658, --warrior whirlwind
+			[199851] = 199658, --warrior whirlwind
+			
+			[222031] = 199547, --deamonhunter ChaosStrike
+			[200685] = 199552, --deamonhunter Blade Dance
+			[210155] = 210153, --deamonhunter Death Sweep
+			[227518] = 201428, --deamonhunter Annihilation
+			[187727] = 178741, --deamonhunter Immolation Aura
+			[201789] = 201628, --deamonhunter Fury of the Illidari
+			[225921] = 225919, --deamonhunter Fracture talent
+			
+			[205164] = 205165, --death knight Crystalline Swords
+			
+			[193315] = 197834, --rogue Saber Slash
+			[202822] = 202823, --rogue greed
+			[280720] = 282449, --rogue Secret Technique
+			[280719] = 282449, --rogue Secret Technique
+			[27576] = 5374, --rogue mutilate
+			
+			[233496] = 233490, --warlock Unstable Affliction
+			[233497] = 233490, --warlock Unstable Affliction
+			[233498] = 233490, --warlock Unstable Affliction
+			[233499] = 233490, --warlock Unstable Affliction
+			
+			[261947] = 261977, --monk fist of the white tiger talent
+
+			[32175] = 17364, -- shaman Stormstrike (from Turkar on github)
+			[32176] = 17364, -- shaman Stormstrike
+			[45284] = 188196, --shaman lightining bolt overloaded
+		}
+	end
 	
 	local bitfield_debuffs_ids = _detalhes.BitfieldSwapDebuffsIDs
 	local bitfield_debuffs = {}
@@ -248,13 +255,20 @@
 			bitfield_debuffs [spellid] = true
 		end
 	end
-	
+
+	--tbc prayer of mending cache
+	local TBC_PrayerOfMendingCache = {}
+	--tbc earth shield cache
+	local TBC_EarthShieldCache = {}
+	--tbc life bloom cache
+	local TBC_LifeBloomLatestHeal
+
 	--expose the override spells table to external scripts
 	_detalhes.OverridedSpellIds = override_spellId
 
 	--> list of ignored npcs by the user
 	local ignored_npcids = {}
-	
+
 	--> ignore soul link (damage from the warlock on his pet - current to demonology only)
 	local SPELLID_WARLOCK_SOULLINK = 108446
 	--> when checking if can start a new combat, ignore the damage from warlock's burning rush
@@ -273,6 +287,23 @@
 	local SPELLID_KYRIAN_DRUID_DAMAGE = 338411
 	local SPELLID_KYRIAN_DRUID_HEAL = 327149
 	local SPELLID_KYRIAN_DRUID_TANK = 327037
+
+	--> shaman earth shield (bcc)
+	local SPELLID_SHAMAN_EARTHSHIELD_HEAL = 379
+	local SPELLID_SHAMAN_EARTHSHIELD_BUFF_RANK1 = 974
+	local SPELLID_SHAMAN_EARTHSHIELD_BUFF_RANK2 = 32593
+	local SPELLID_SHAMAN_EARTHSHIELD_BUFF_RANK3 = 32594
+	local SHAMAN_EARTHSHIELD_BUFF = {
+		[SPELLID_SHAMAN_EARTHSHIELD_BUFF_RANK1] = true,
+		[SPELLID_SHAMAN_EARTHSHIELD_BUFF_RANK2] = true,
+		[SPELLID_SHAMAN_EARTHSHIELD_BUFF_RANK3] = true,
+	}
+	--> holy priest prayer of mending (bcc)
+	local SPELLID_PRIEST_POM_BUFF = 41635
+	local SPELLID_PRIEST_POM_HEAL = 33110
+	--> druid lifebloom explosion (bcc)
+	local SPELLID_DRUID_LIFEBLOOM_BUFF = 33763
+	local SPELLID_DRUID_LIFEBLOOM_HEAL = 33778
 
 	local SPELLID_SANGUINE_HEAL = 226510
 
@@ -1830,6 +1861,8 @@
 		if (is_using_spellId_override) then
 			spellid = override_spellId [spellid] or spellid
 		end
+		
+
 
 		--sanguine ichor mythic dungeon affix (heal enemies)
 		if (spellid == SPELLID_SANGUINE_HEAL) then 
@@ -1848,7 +1881,31 @@
 			--cura_efetiva = absorbed + amount - overhealing
 			cura_efetiva = cura_efetiva + amount - overhealing
 		end
-		
+
+		if (isTBC) then
+			--earth shield
+			if (spellid == SPELLID_SHAMAN_EARTHSHIELD_HEAL) then
+				--get the information of who placed the buff into this actor
+				local sourceData = TBC_EarthShieldCache[who_name]
+				if (sourceData) then
+					who_serial, who_name, who_flags = unpack(sourceData)
+				end
+
+			--prayer of mending
+			elseif (spellid == SPELLID_PRIEST_POM_HEAL) then
+				local sourceData = TBC_PrayerOfMendingCache[who_name]
+				if (sourceData) then
+					who_serial, who_name, who_flags = unpack(sourceData)
+					TBC_PrayerOfMendingCache[who_name] = nil
+				end
+
+			--life bloom explosion (second part of the heal)
+			elseif (spellid == SPELLID_DRUID_LIFEBLOOM_HEAL) then 
+				TBC_LifeBloomLatestHeal = cura_efetiva
+				return
+			end
+		end
+
 		_current_heal_container.need_refresh = true
 	
 		if (spellid == SPELLID_KYRIAN_DRUID_HEAL) then
@@ -2128,35 +2185,6 @@
 		end
 
 	------------------------------------------------------------------------------------------------
-	-->
-
---[=[
---druid_kyrian_bounds
-
---damager on damager
-
-SPELL_CAST_SUCCESS,Player-3209-065BAEDE,"Bullcéfalo-Azralon",0x512,0x0,Player-3209-0A79112C,"Symantec-Azralon",0x511,0x0,326434,"Kindred Spirits",0x40,Player-3209-065BAEDE,0000000000000000,28240,28240,1233,448,472,0,0,10000,10000,200,-3298.34,5440.53,1525,5.8081,177
-SPELL_AURA_APPLIED,Player-3209-065BAEDE,"Bullcéfalo-Azralon",0x512,0x0,Player-3209-0A79112C,"Symantec-Azralon",0x511,0x0,326434,"Kindred Spirits",0x40,BUFF
-SPELL_AURA_REMOVED,Player-3209-065BAEDE,"Bullcéfalo-Azralon",0x512,0x0,Player-3209-0A79112C,"Symantec-Azralon",0x511,0x0,326434,"Kindred Spirits",0x40,BUFF
-
-12/15 10:03:51.702  SPELL_CAST_SUCCESS,Player-3209-065BAEDE,"Bullcéfalo-Azralon",0x512,0x0,0000000000000000,nil,0x80000000,0x80000000,326446,"Empower Bond",0x40,Player-3209-065BAEDE,0000000000000000,28240,28240,1234,448,472,0,3,100,100,0,-3294.17,5437.12,1525,0.7611,177
-
-12/15 10:03:51.702  SPELL_AURA_APPLIED,Player-3209-065BAEDE,"Bullcéfalo-Azralon",0x512,0x0,Player-3209-0A79112C,"Symantec-Azralon",0x511,0x0,327139,"Kindred Empowerment",0x40,BUFF
-12/15 10:03:51.702  SPELL_AURA_APPLIED,Player-3209-065BAEDE,"Bullcéfalo-Azralon",0x512,0x0,Player-3209-0A79112C,"Symantec-Azralon",0x511,0x0,327022,"Kindred Empowerment",0x40,BUFF,1
-12/15 10:03:51.702  SPELL_AURA_APPLIED,Player-3209-0A79112C,"Symantec-Azralon",0x511,0x0,Player-3209-065BAEDE,"Bullcéfalo-Azralon",0x512,0x0,327139,"Kindred Empowerment",0x40,BUFF
-12/15 10:03:51.702  SPELL_AURA_APPLIED,Player-3209-0A79112C,"Symantec-Azralon",0x511,0x0,Player-3209-065BAEDE,"Bullcéfalo-Azralon",0x512,0x0,327022,"Kindred Empowerment",0x40,BUFF,1
-
-SPELL_DAMAGE,Player-3209-065BAEDE,"Bullcéfalo-Azralon",0x512,0x0,Creature-0-4217-2222-22679-166718-000058B14F,"Manifestation of Envy",0x10a48,0x0,338411,"Kindred Empowerment",0x40,Creature-0-4217-2222-22679-166718-000058B14F,0000000000000000,4218,5895,0,0,651,0,0,2289,2289,0,-3290.46,5445.37,1525,4.1809,58,31,30,-1,64,0,0,0,nil,nil,nil
-SPELL_DAMAGE,Player-3209-0A79112C,"Symantec-Azralon",0x511,0x0,Creature-0-4217-2222-22679-166718-000058B14F,"Manifestation of Envy",0x10a48,0x0,338411,"Kindred Empowerment",0x40,Creature-0-4217-2222-22679-166718-000058B14F,0000000000000000,867,5895,0,0,651,0,0,2289,2289,0,-3289.84,5446.94,1525,4.3379,58,89,89,-1,64,0,0,0,nil,nil,nil
-
-SPELL_HEAL,Player-3209-0A79112C,"Symantec-Azralon",0x511,0x0,Player-3209-065BAEDE,"Bullcéfalo-Azralon",0x10512,0x0,327149,"Kindred Focus",0x40,Player-3209-065BAEDE,0000000000000000,50058,50058,1575,448,1510,8832,1,1000,1000,0,-2640.65,5656.60,1525,3.3950,177,485,485,485,0,nil
-
-12/15 10:04:01.739  SPELL_AURA_REMOVED,Player-3209-0A79112C,"Symantec-Azralon",0x511,0x0,Player-3209-065BAEDE,"Bullcéfalo-Azralon",0x512,0x0,327139,"Kindred Empowerment",0x40,BUFF
-12/15 10:04:01.739  SPELL_AURA_REMOVED,Player-3209-065BAEDE,"Bullcéfalo-Azralon",0x512,0x0,Player-3209-0A79112C,"Symantec-Azralon",0x511,0x0,327139,"Kindred Empowerment",0x40,BUFF
-
---]=]
-
-	------------------------------------------------------------------------------------------------
 	--> handle shields
 
 		if (tipo == "BUFF") then
@@ -2174,6 +2202,15 @@ SPELL_HEAL,Player-3209-0A79112C,"Symantec-Azralon",0x511,0x0,Player-3209-065BAED
 				
 				elseif (spellid == SPELLID_NECROMANCER_CHEAT_DEATH) then
 					necro_cheat_deaths[who_serial] = true
+				end
+
+				if (isTBC) then
+					if (SHAMAN_EARTHSHIELD_BUFF[spellid]) then
+						TBC_EarthShieldCache[alvo_name] = {who_serial, who_name, who_flags}
+
+					elseif (spellid == SPELLID_PRIEST_POM_BUFF) then
+						TBC_PrayerOfMendingCache [alvo_name] = {who_serial, who_name, who_flags}
+					end
 				end
 
 				if (_recording_buffs_and_debuffs) then
@@ -2429,7 +2466,7 @@ SPELL_HEAL,Player-3209-0A79112C,"Symantec-Azralon",0x511,0x0,Player-3209-065BAED
 						parser:add_buff_uptime (token, time, alvo_serial, alvo_name, alvo_flags, alvo_serial, alvo_name, alvo_flags, alvo_flags2, spellid, spellname, "BUFF_UPTIME_REFRESH")
 					end
 				end
-		
+
 			------------------------------------------------------------------------------------------------
 			--> healing done (shields)
 				if (absorb_spell_list [spellid] and _recording_healing and amount) then
@@ -2447,7 +2484,17 @@ SPELL_HEAL,Player-3209-0A79112C,"Symantec-Azralon",0x511,0x0,Player-3209-065BAED
 							return parser:heal (token, time, who_serial, who_name, who_flags, alvo_serial, alvo_name, alvo_flags, alvo_flags2, spellid, spellname, nil, 0, _math_ceil (overheal), 0, 0, nil, true)
 						end
 					end
-					
+				
+			--buff refresh
+			if (isTBC) then
+				if (SHAMAN_EARTHSHIELD_BUFF[spellid]) then
+					TBC_EarthShieldCache[alvo_name] = {who_serial, who_name, who_flags}
+
+				elseif (spellid == SPELLID_PRIEST_POM_BUFF) then
+					TBC_PrayerOfMendingCache[alvo_name] = {who_serial, who_name, who_flags}
+				end
+			end
+
 			------------------------------------------------------------------------------------------------
 			--> recording buffs
 
@@ -2571,7 +2618,23 @@ SPELL_HEAL,Player-3209-0A79112C,"Symantec-Azralon",0x511,0x0,Player-3209-065BAED
 				
 				elseif (spellid == SPELLID_NECROMANCER_CHEAT_DEATH) then --remove on 10.0
 					necro_cheat_deaths[who_serial] = nil
+				end
 
+				if (isTBC) then
+					--shaman earth shield
+					if (SHAMAN_EARTHSHIELD_BUFF[spellid]) then
+						TBC_EarthShieldCache[alvo_name] = nil
+					end
+
+					--druid life bloom
+					if (spellid == SPELLID_DRUID_LIFEBLOOM_BUFF) then
+						local healAmount = TBC_LifeBloomLatestHeal
+						if (healAmount) then
+							--award the heal to the buff caster name
+							parser:heal("SPELL_HEAL", time, who_serial, who_name, who_flags, alvo_serial, alvo_name, alvo_flags, alvo_flags2, spellid, spellname, spellschool, healAmount, 0, 0, false, false)
+							TBC_LifeBloomLatestHeal = nil
+						end
+					end
 				end
 
 				--druid kyrian empower bounds (9.0 kyrian covenant - probably remove on 10.0)
@@ -3127,6 +3190,8 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 	------------------------------------------------------------------------------------------------
 	--> check if is energy or resource
 	
+		--Details:Dump({token, time, who_serial, who_name, who_flags, alvo_serial, alvo_name, alvo_flags, alvo_flags2, spellid, spellname, spelltype, amount, overpower, powertype, altpower})
+
 		--> get resource type
 		local is_resource, resource_amount, resource_id = resource_power_type [powertype], amount, powertype
 	
@@ -3664,6 +3729,11 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 			return
 		end
 		
+		--do not register ress if not in combat
+		if (not Details.in_combat) then
+			return
+		end
+
 		_current_misc_container.need_refresh = true
 
 	------------------------------------------------------------------------------------------------
@@ -4010,7 +4080,7 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 					local max_health = _UnitHealthMax (alvo_name)
 
 					for _, func in _ipairs (_hook_deaths_container) do 
-						local copiedDeathTable = table_deepcopy(t)
+						local copiedDeathTable = Details.CopyTable(t)
 						local successful, errortext = pcall(func, nil, token, time, who_serial, who_name, who_flags, alvo_serial, alvo_name, alvo_flags, copiedDeathTable, este_jogador.last_cooldown, death_at, max_health)
 						if (not successful) then
 							_detalhes:Msg ("error occurred on a death hook function:", errortext)
@@ -4448,11 +4518,13 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 	function _detalhes:GetZoneType()
 		return _detalhes.zone_type
 	end
+
 	function _detalhes.parser_functions:ZONE_CHANGED_NEW_AREA (...)
-		return _detalhes:ScheduleTimer ("Check_ZONE_CHANGED_NEW_AREA", 0.5)
+		return Details.Schedules.After(1, Details.Check_ZONE_CHANGED_NEW_AREA)
 	end
 	
-	function _detalhes:Check_ZONE_CHANGED_NEW_AREA (...)
+	function _detalhes:Check_ZONE_CHANGED_NEW_AREA()
+
 		local zoneName, zoneType, _, _, _, _, _, zoneMapID = _GetInstanceInfo()
 		
 		_detalhes.zone_type = zoneType
@@ -4489,6 +4561,8 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 		if (_detalhes.is_in_arena and zoneType ~= "arena") then
 			_detalhes:LeftArena()
 		end
+
+		--check if the player left a battleground
 		if (_detalhes.is_in_battleground and zoneType ~= "pvp") then
 			_detalhes.pvp_parser_frame:StopBgUpdater()
 			_detalhes.is_in_battleground = nil
@@ -4576,12 +4650,12 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 		_detalhes:CheckForPerformanceProfile()
 	end
 	
-	function _detalhes.parser_functions:PLAYER_ENTERING_WORLD (...)
-		return _detalhes.parser_functions:ZONE_CHANGED_NEW_AREA (...)
+	function _detalhes.parser_functions:PLAYER_ENTERING_WORLD ()
+		return _detalhes.parser_functions:ZONE_CHANGED_NEW_AREA()
 	end
 	
 	-- ~encounter
-	function _detalhes.parser_functions:ENCOUNTER_START (...)
+	function _detalhes.parser_functions:ENCOUNTER_START(...)
 		if (_detalhes.debug) then
 			_detalhes:Msg ("(debug) |cFFFFFF00ENCOUNTER_START|r event triggered.")
 		end
@@ -5165,53 +5239,52 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 		_detalhes:SchedulePetUpdate (6)
 	end
 
-	function _detalhes.parser_functions:START_TIMER (...)
+	function _detalhes.parser_functions:START_TIMER(...)
 	
 		if (_detalhes.debug) then
-			_detalhes:Msg ("(debug) found a timer.")
+			_detalhes:Msg("(debug) found a timer.")
 		end
-	
-		--if (C_Scenario.IsChallengeMode() and _detalhes.overall_clear_newchallenge) then
---		if (_detalhes.overall_clear_newchallenge) then --C_Scenario.IsChallengeMode() and  parece que n�o existe mais
---			_detalhes.historico:resetar_overall()
---			if (_detalhes.debug) then
---				_detalhes:Msg ("(debug) timer is a challenge mode start.")
---			end
-		
-	
-		if (_detalhes.is_in_arena) then
+
+		local _, zoneType = _GetInstanceInfo()
+
+		--check if the player is inside an arena
+		if (zoneType == "arena") then
 			if (_detalhes.debug) then
 				_detalhes:Msg ("(debug) timer is an arena countdown.")
 			end
+
 			_detalhes:StartArenaSegment (...)
 		
-		elseif (_detalhes.is_in_battleground) then
-			if (_detalhes.debug) then
-				_detalhes:Msg ("(debug) timer is a battleground countdown.")
+		--check if the player is inside a battleground
+		elseif (zoneType == "battleground") then
+			if (Details.debug) then
+				Details:Msg ("(debug) timer is a battleground countdown.")
 			end
 			
-			local timerType, timeSeconds, totalTime = select (1, ...)
+			local _, timeSeconds = select (1, ...)
 			
-			if (_detalhes.start_battleground) then
-				_detalhes:CancelTimer (_detalhes.start_battleground, true)
+			if (Details.start_battleground) then
+				Details.Schedules.Cancel(Details.start_battleground)
 			end
-			
-			_detalhes.start_battleground = _detalhes:ScheduleTimer ("CreateBattlegroundSegment", timeSeconds)
+
+			--create new schedule
+			Details.start_battleground = Details.Schedules.NewTimer(timeSeconds, Details.CreateBattlegroundSegment)
+			Details.Schedules.SetName(Details.start_battleground, "Battleground Start Timer")
 		end
 	end
 	
-	function _detalhes:CreateBattlegroundSegment()
+	function Details:CreateBattlegroundSegment()
 		if (_in_combat) then
 			_detalhes.tabela_vigente.discard_segment = true
-			_detalhes:SairDoCombate()
+			Details:EndCombat()
 		end
-		_detalhes:EntrarEmCombate()
+		Details:StartCombat()
 	end
 
 	-- ~load
 	local start_details = function()
 		if (not _detalhes.gump) then
-			--> failed to load the framework.
+			--> failed to load the framework
 			
 			if (not _detalhes.instance_load_failed) then
 				_detalhes:CreatePanicWarning()
@@ -5373,7 +5446,7 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 
 		--> save the nicktag cache
 			tinsert (_detalhes_global.exit_log, "8 - Saving nicktag cache.")
-			_detalhes_database.nick_tag_cache = table_deepcopy (_detalhes_database.nick_tag_cache)
+			_detalhes_database.nick_tag_cache = Details.CopyTable (_detalhes_database.nick_tag_cache)
 	end)
 	
 	--> end
@@ -5787,9 +5860,7 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --> battleground parser
-	
-	
-	
+
 	_detalhes.pvp_parser_frame:SetScript ("OnEvent", function (self, event)
 		self:ReadPvPData()
 	end)
@@ -5798,30 +5869,37 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 		RequestBattlefieldScoreData()
 	end
 	
+	--start the virtual parser
 	function _detalhes.pvp_parser_frame:StartBgUpdater()
-	
-		_detalhes.pvp_parser_frame:RegisterEvent ("UPDATE_BATTLEFIELD_SCORE")
+		_detalhes.pvp_parser_frame:RegisterEvent("UPDATE_BATTLEFIELD_SCORE")
+
 		if (_detalhes.pvp_parser_frame.ticker) then
-			_detalhes:CancelTimer (_detalhes.pvp_parser_frame.ticker)
+			Details.Schedules.Cancel(_detalhes.pvp_parser_frame.ticker)
 		end
-		_detalhes.pvp_parser_frame.ticker = _detalhes:ScheduleRepeatingTimer ("BgScoreUpdate", 10)
+		_detalhes.pvp_parser_frame.ticker = Details.Schedules.NewTicker(10, Details.BgScoreUpdate)
+		Details.Schedules.SetName(_detalhes.pvp_parser_frame.ticker, "Battleground Updater")
 	end
 	
+	--stop the virtual parser
 	function _detalhes.pvp_parser_frame:StopBgUpdater()
-		_detalhes.pvp_parser_frame:UnregisterEvent ("UPDATE_BATTLEFIELD_SCORE")
-		_detalhes:CancelTimer (_detalhes.pvp_parser_frame.ticker)
+		_detalhes.pvp_parser_frame:UnregisterEvent("UPDATE_BATTLEFIELD_SCORE")
+		Details.Schedules.Cancel(_detalhes.pvp_parser_frame.ticker)
 		_detalhes.pvp_parser_frame.ticker = nil
 	end
 	
 	function _detalhes.pvp_parser_frame:ReadPvPData()
-	
 		local players = GetNumBattlefieldScores()
 
 		for i = 1, players do
-		
-			local name, killingBlows, honorableKills, deaths, honorGained, faction, race, class, classToken, damageDone, healingDone, bgRating, ratingChange, preMatchMMR, mmrChange, talentSpec = GetBattlefieldScore (i)
+			local name, killingBlows, honorableKills, deaths, honorGained, faction, race, rank, class, classToken, damageDone, healingDone, bgRating, ratingChange, preMatchMMR, mmrChange, talentSpec
+			if (isTBC) then
+				name, killingBlows, honorableKills, deaths, honorGained, faction, rank, race, class, classToken, damageDone, healingDone, bgRating, ratingChange, preMatchMMR, mmrChange, talentSpec = GetBattlefieldScore(i)
+			else
+				name, killingBlows, honorableKills, deaths, honorGained, faction, race, class, classToken, damageDone, healingDone, bgRating, ratingChange, preMatchMMR, mmrChange, talentSpec = GetBattlefieldScore(i)
+			end
 			
-			local actor = _detalhes.tabela_vigente (1, name)
+			--damage done
+			local actor = _detalhes.tabela_vigente(1, name)
 			if (actor) then
 				if (damageDone == 0) then
 					damageDone = damageDone + _detalhes:GetOrderNumber()
@@ -5849,7 +5927,8 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 				end
 			end
 			
-			local actor = _detalhes.tabela_vigente (2, name)
+			--healing done
+			local actor = _detalhes.tabela_vigente(2, name)
 			if (actor) then
 				if (healingDone == 0) then
 					healingDone = healingDone + _detalhes:GetOrderNumber()
@@ -5877,9 +5956,5 @@ local SPELL_POWER_PAIN = SPELL_POWER_PAIN or (PowerEnum and PowerEnum.Pain) or 1
 					end
 				end
 			end
-			
 		end
-		
 	end
-	
-	

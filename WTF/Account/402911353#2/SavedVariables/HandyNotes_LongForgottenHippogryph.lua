@@ -1,25 +1,34 @@
 
 HandyNotes_LongForgottenHippogryphDB = {
 	["profileKeys"] = {
-		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
-		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
-		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
-		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
+		["Cretz - Moonglade"] = "Cretz - Moonglade",
+		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
 		["Plüto - Sylvanas"] = "Plüto - Sylvanas",
+		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
 		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
+		["Cìchìcean - Sylvanas"] = "Cìchìcean - Sylvanas",
+		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
+		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
+		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
 	},
 	["profiles"] = {
-		["Vòlkmer - Kazzak"] = {
+		["Cretz - Moonglade"] = {
 		},
-		["Egidus - Sylvanas"] = {
-		},
-		["Kynaeth - Sylvanas"] = {
-		},
-		["Crètz - Sylvanas"] = {
+		["Jiglèr - Sylvanas"] = {
 		},
 		["Plüto - Sylvanas"] = {
 		},
+		["Egidus - Sylvanas"] = {
+		},
 		["Gnomèrcy - Sylvanas"] = {
+		},
+		["Cìchìcean - Sylvanas"] = {
+		},
+		["Crètz - Sylvanas"] = {
+		},
+		["Vòlkmer - Kazzak"] = {
+		},
+		["Kynaeth - Sylvanas"] = {
 		},
 	},
 }

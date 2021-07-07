@@ -116,7 +116,7 @@ RSA_Rogue: enabled
 RSA_Shaman: enabled
 RSA_Warlock: enabled
 RSA_Warrior: enabled
-RUF: enabled
+RUF: disabled
 SimpleILevel: enabled
 SimpleILevel_Group: enabled
 SimpleILevel_Social: enabled
@@ -193,3 +193,7 @@ DBM-Draenor: enabled
 DBM-WorldEvents: enabled
 GW2_UI: enabled
 SharedMedia_Causese: enabled
+Gladius: enabled
+!BugGrabber: enabled
+BugSack: enabled
+MBB: enabled

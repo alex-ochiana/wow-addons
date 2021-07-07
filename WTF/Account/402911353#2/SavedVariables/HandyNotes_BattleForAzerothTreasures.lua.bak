@@ -1,52 +1,58 @@
 
 HandyNotes_BattleForAzerothTreasuresDB = {
 	["profileKeys"] = {
-		["Blanitza - Kazzak"] = "Blanitza - Kazzak",
-		["Mòloch - Kazzak"] = "Mòloch - Kazzak",
-		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
-		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
 		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
-		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
-		["Plüto - Sylvanas"] = "Plüto - Sylvanas",
-		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
 		["Òdin - Sylvanas"] = "Òdin - Sylvanas",
 		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
-		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
+		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
+		["Cretz - Sylvanas"] = "Cretz - Sylvanas",
+		["Blanitza - Kazzak"] = "Blanitza - Kazzak",
 		["Mortifèrous - Kazzak"] = "Mortifèrous - Kazzak",
+		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
+		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
+		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
+		["Plüto - Sylvanas"] = "Plüto - Sylvanas",
+		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
+		["Cìchìcean - Sylvanas"] = "Cìchìcean - Sylvanas",
+		["Cretz - Moonglade"] = "Cretz - Moonglade",
 		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
 		["Brovar - Sylvanas"] = "Brovar - Sylvanas",
-		["Cretz - Sylvanas"] = "Cretz - Sylvanas",
+		["Mòloch - Kazzak"] = "Mòloch - Kazzak",
 	},
 	["profiles"] = {
-		["Blanitza - Kazzak"] = {
-		},
-		["Mòloch - Kazzak"] = {
-		},
-		["Crëtz - Kazzak"] = {
-		},
-		["Vòlkmer - Kazzak"] = {
-		},
 		["Latthrias - Sylvanas"] = {
-		},
-		["Jiglèr - Sylvanas"] = {
-		},
-		["Plüto - Sylvanas"] = {
-		},
-		["Gnomèrcy - Sylvanas"] = {
 		},
 		["Òdin - Sylvanas"] = {
 		},
 		["Egidus - Sylvanas"] = {
 		},
-		["Kynaeth - Sylvanas"] = {
+		["Gnomèrcy - Sylvanas"] = {
+		},
+		["Cretz - Sylvanas"] = {
+		},
+		["Blanitza - Kazzak"] = {
 		},
 		["Mortifèrous - Kazzak"] = {
+		},
+		["Crëtz - Kazzak"] = {
+		},
+		["Jiglèr - Sylvanas"] = {
+		},
+		["Vòlkmer - Kazzak"] = {
+		},
+		["Plüto - Sylvanas"] = {
+		},
+		["Kynaeth - Sylvanas"] = {
+		},
+		["Cìchìcean - Sylvanas"] = {
+		},
+		["Cretz - Moonglade"] = {
 		},
 		["Crètz - Sylvanas"] = {
 		},
 		["Brovar - Sylvanas"] = {
 		},
-		["Cretz - Sylvanas"] = {
+		["Mòloch - Kazzak"] = {
 		},
 	},
 }

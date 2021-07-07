@@ -1,9 +1,13 @@
 -- profiling support (WIP)
 
 local Plater = _G.Plater
+local FPSData = Plater.FPSData
 local DF = _G.DetailsFramework
+local C_Timer = _G.C_Timer
+local debugprofilestop = debugprofilestop
 
 local profData = {}
+local eventLogData = {}
 local profilingEnabled = false
 
 -- helper
@@ -24,6 +28,17 @@ end
 
 
 -- profiling
+local function everyFrameEventLog()
+	if not profilingEnabled then
+		PlaterDBChr.perfEventLog = nil -- reset this.
+		return
+	end
+	
+	tinsert(eventLogData, '\n    {"ph":"I","name":"vsync","ts":'..(debugprofilestop() * 1000)..',"pid":1}')
+	C_Timer.After( 0, everyFrameEventLog )
+end
+C_Timer.After( 0, everyFrameEventLog )
+
 function Plater.EnableProfiling(core)
 	profilingEnabled = true
 	
@@ -33,6 +48,8 @@ function Plater.EnableProfiling(core)
 	profData.totalTimeInPlater = 0
 	profData.data = {}
 	
+	eventLogData = {}
+	
 	Plater.StartLogPerformance = StartLogPerformance
 	Plater.EndLogPerformance = EndLogPerformance
 	
@@ -40,6 +57,8 @@ function Plater.EnableProfiling(core)
 		Plater.StartLogPerformanceCore = StartLogPerformance
 		Plater.EndLogPerformanceCore = EndLogPerformance
 	end
+	
+	C_Timer.After( 0, everyFrameEventLog )
 	
 	Plater:Msg("Plater started profiling.")
 end
@@ -95,6 +114,9 @@ function StartLogPerformance(pType, event, subType)
 	end
 	
 	data[event].subTypeData[subType].curStartTime = startTime
+	data[event].subTypeData[subType].curFPS = FPSData.curFPS
+	
+	tinsert(eventLogData, '\n    {"ph":"B","name":"' .. pType .. " - " .. event .. " - " .. subType .. '","ts":' .. (startTime * 1000) .. ',"pid":0}')
 end
 
 --pType = profiling type (e.g. hooks)
@@ -129,6 +151,7 @@ function EndLogPerformance(pType, event, subType)
 	sData.count = (sData.count or 0) + 1
 	sData.curStartTime = nil
 	
+	tinsert(eventLogData, '\n    {"ph":"E","name":"' .. pType .. " - " .. event .. " - " .. subType .. '","ts":' .. (stopTime * 1000) .. ',"pid":0}')
 end
 
 local function getPerfData()
@@ -140,6 +163,12 @@ local function getPerfData()
 	
 	local sumTimePTypes = 0
 	local sumExecPTypes = 0
+	local minFPS = 9999
+	local maxFPS = -1
+	local fpsAvTot = 0
+	local fpsAvEvents = 0
+	local fpsAverage = 0
+	
 	for pType, data in pairs(profData.data or {}) do
 		perfTable[pType] = {}
 		local pTypeTime = 0
@@ -150,8 +179,10 @@ local function getPerfData()
 		for event, pData in pairs(data) do
 			perfTable[pType][event] = {}
 			pData.count = pData.count or 0
-			perfTable[pType][event].total = "avg: " .. roundTime(pData.totalTime / pData.count) .. "ms - count: " .. pData.count .. " - total: " .. roundTime(pData.totalTime - (pData.subLogTime or 0)) .. "ms - (as sub-log: " .. roundTime(pData.subLogTime or 0) .. "ms)"
-			pTypeTime = pTypeTime + pData.totalTime - (pData.subLogTime or 0)
+			--perfTable[pType][event].total = "avg: " .. roundTime(pData.totalTime / pData.count) .. "ms - count: " .. pData.count .. " - total: " .. roundTime(pData.totalTime - (pData.subLogTime or 0)) .. "ms - (as sub-log: " .. roundTime(pData.subLogTime or 0) .. "ms)"
+			--pTypeTime = pTypeTime + pData.totalTime - (pData.subLogTime or 0)
+			perfTable[pType][event].total = "avg: " .. roundTime(pData.totalTime / pData.count) .. "ms - count: " .. pData.count .. " - total: " .. roundTime(pData.totalTime) .. "ms - (as sub-log: " .. roundTime(pData.subLogTime or 0) .. "ms)"
+			pTypeTime = pTypeTime + pData.totalTime
 			pTypeSubLog = pTypeSubLog + (pData.subLogTime or 0)
 			pTypeExec = pTypeExec + pData.count
 			printStrPType = printStrPType .. indent .. event .. " - " .. perfTable[pType][event].total .. "\n"
@@ -168,6 +199,15 @@ local function getPerfData()
 					printStrPType = printStrPType .. indent .. indent .. subType .. " - " .. perfTable[pType][event]._subTypeData[subType] .. "\n"
 				else
 					printStrPType = printStrPType .. indent .. indent .. subType .. " - ERROR - NO TOTAL LOGGED\n"
+				end
+				
+				local curFPS = sufData.curFPS
+				fpsAvEvents = fpsAvEvents + 1
+				fpsAvTot = fpsAvTot + curFPS
+				if curFPS < minFPS then
+					minFPS = curFPS
+				elseif curFPS > maxFPS then
+					maxFPS = curFPS
 				end
 			end
 			perfTable[pType][event].pTypeSufTime = pTypeSufTime
@@ -187,6 +227,8 @@ local function getPerfData()
 		printStr = printStr .. "\n"
 	end
 	
+	fpsAverage = fpsAvTot / fpsAvEvents
+	
 	perfTable.timeInPlaterProfile = (profData.totalTimeInPlater or 0) --sumTimePTypes
 	perfTable.totalLoggedEvents = sumExecPTypes
 	perfTable.totalAveragePerEvent = perfTable.timeInPlaterProfile / sumExecPTypes
@@ -198,7 +240,8 @@ local function getPerfData()
 	printStrHeader = printStrHeader .. indent .. "Time in Plater: " .. roundTime(perfTable.timeInPlaterProfile) .. "ms" .. "\n"
 	printStrHeader = printStrHeader .. indent .. "Logged events: " .. perfTable.totalLoggedEvents .. "\n"
 	printStrHeader = printStrHeader .. indent .. "Average runtimetime of event: " .. roundTime(perfTable.totalAveragePerEvent) .. "ms" .. "\n"
-	printStrHeader = printStrHeader .. indent .. "% of global time: " .. roundPercent(perfTable.percentGlobalInPlater) .. "%" .. "\n\n"
+	printStrHeader = printStrHeader .. indent .. "% of global time: " .. roundPercent(perfTable.percentGlobalInPlater) .. "%" .. "\n"
+	printStrHeader = printStrHeader .. indent .. "FPS (min/max/avg): " .. round(minFPS*10)/10 .. " / " .. round(maxFPS*10)/10 .. " / " .. round(fpsAverage*10)/10 .. "\n\n"
 	
 	printStr = printStrHeader .. printStr
 	
@@ -211,6 +254,7 @@ function Plater.DumpPerformance(noPrintOut)
 
 	if ViragDevTool_AddData then
 		ViragDevTool_AddData(perfTable,"Plater Profiling")
+		ViragDevTool_AddData(eventLogData,"Plater Profiling - Events")
 	end
 	if not noPrintOut then
 		print(printStr)
@@ -221,7 +265,7 @@ function Plater.DumpPerformance(noPrintOut)
 end
 
 function Plater.ShowPerfData()
-	local perfTable, printStr = getPerfData()
+	local perfTable, printStr, eventLogStr = getPerfData()
 	
 	if (not PlaterPerformanceProfilingResultPanel) then
 		local f = CreateFrame ("frame", "PlaterPerformanceProfilingResultPanel", UIParent, "BackdropTemplate") 
@@ -263,4 +307,12 @@ function Plater.ShowPerfData()
 	
 	Plater.PlaterPerformanceProfilingResultPanel:Show()
 	
+end
+
+function Plater.StoreEventLogData()
+	local eventLogStr = "[" .. table.concat(eventLogData, ",") .. "]"
+	
+	PlaterDBChr.perfEventLog = eventLogStr
+	
+	ReloadUI()
 end

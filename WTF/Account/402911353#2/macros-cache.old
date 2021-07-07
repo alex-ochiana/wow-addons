@@ -2,19 +2,14 @@ VER 3 000000000000000F "asd" "1033183"
 /target Lunarlight Bud
 /run SetRaidTarget("target", 8)
 END
-VER 3 000000000000000B "Conv" "INV_MISC_QUESTIONMARK"
-#Showtooltip
-/Cast Convoke the Spirits
-/run local t={"Fire EVERYTHING!", "Random bull*!@# GO!", "Cretz goes BRRR!!", "Cenarius take the wheel!", "Taste the rainbow!",} SendChatMessage(t[random(#t)],"YELL")
-END
 VER 3 0000000000000002 "Dark skies" "236151"
 /tar Dread A
 /tar Essence of T
 /tar Amber-Shaper U
 /tar Essence of F
 END
-VER 3 0000000000000010 "focus" "136103"
-/focus [@mouseover]
+VER 3 0000000000000016 "Details" "979579"
+/details toggle
 END
 VER 3 0000000000000008 "Innervate" "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -23,23 +18,29 @@ VER 3 0000000000000008 "Innervate" "INV_MISC_QUESTIONMARK"
 /say Casted Innervate on %t!
 /targetlasttarget
 END
-VER 3 000000000000000C "Kill" "254857"
+VER 3 000000000000000E "Kill" "1115907"
+/cast Incarnation: Chosen of Elune(Talent, Shapeshift)
+/cast Convoke the Spirits
+END
+VER 3 0000000000000015 "Kill" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast Celestial Alignment
+/use 14
+/cast Convoke the Spirits
+END
+VER 3 000000000000000C "RKill" "INV_MISC_QUESTIONMARK"
+#showtooltip
 /cast Celestial Alignment
 /use 14
 /use Potion of Spectral Intellect
 /cast Convoke the Spirits
 END
-VER 3 000000000000000E "Kill" "1115907"
-/cast Incarnation: Chosen of Elune(Talent, Shapeshift)
-/use Inscrutable Quantum Device
-/cast Convoke the Spirits
+VER 3 0000000000000009 "SB" "INV_MISC_QUESTIONMARK"
+#showtooltip Solar Beam
+/cast [@focus, exists, nodead] [@mouseover, exists ,nodead] [] Solar Beam
 END
 VER 3 0000000000000003 "Shado-Pan" "629482"
 /run local a=7298 print(format("\124cffFFFF00TODO for %s\124r",GetAchievementLink(a)))for i=1,GetAchievementNumCriteria(a)do local d,_,c,x,y=GetAchievementCriteriaInfo(a,i)if not c then print(format("%s %d/%d",d,x,y))end end
-END
-VER 3 0000000000000009 "Solar Beam" "INV_MISC_QUESTIONMARK"
-#showtooltip Solar Beam
-/cast [@focus, exists, nodead] Solar Beam;Solar Beam
 END
 VER 3 0000000000000011 "T1" "INV_MISC_QUESTIONMARK"
 #showtooltip 13
@@ -48,6 +49,14 @@ END
 VER 3 000000000000000A "T2" "INV_MISC_QUESTIONMARK"
 #showtooltip 14
 /use 14
+END
+VER 3 0000000000000013 "TR2" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [talent:2/1] Tiger Dash; [talent:2/2] Renewal; [talent:2/3] Wild Charge
+END
+VER 3 0000000000000014 "TR4" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [talent:4/1] Mighty Bash; [talent:4/2] Mass Entanglement; [talent:4/3] Heart of the Wild
 END
 VER 3 0000000000000012 "turn in" "132722"
 /script  C_GossipInfo.SelectAvailableQuest(2)
