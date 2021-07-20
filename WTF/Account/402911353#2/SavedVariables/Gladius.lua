@@ -7,10 +7,10 @@ Gladius2DB = {
 		["Plüto - Sylvanas"] = "Crètz - Sylvanas",
 		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
 		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
-		["Cìchìcean - Sylvanas"] = "Cìchìcean - Sylvanas",
+		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
 		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
 		["Cretz - Moonglade"] = "Cretz - Moonglade",
-		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
+		["Cìchìcean - Sylvanas"] = "Cìchìcean - Sylvanas",
 	},
 	["profiles"] = {
 		["Vòlkmer - Kazzak"] = {
@@ -30,10 +30,10 @@ Gladius2DB = {
 				["arena1"] = 477.8668084462515,
 			},
 			["tagsVersion"] = 4,
-			["auraVersion"] = 1,
 			["x"] = {
 				["arena1"] = 1004.80063196952,
 			},
+			["auraVersion"] = 1,
 		},
 		["Egidus - Sylvanas"] = {
 			["auraVersion"] = 1,
@@ -55,9 +55,15 @@ Gladius2DB = {
 				["arena1"] = 1002.666604140068,
 			},
 		},
-		["Cìchìcean - Sylvanas"] = {
+		["Kynaeth - Sylvanas"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
+			["x"] = {
+				["arena1"] = 984.8889127373695,
+			},
+			["y"] = {
+				["arena1"] = 561.7777913808823,
+			},
 		},
 		["Crètz - Sylvanas"] = {
 			["auraVersion"] = 1,
@@ -133,17 +139,17 @@ Gladius2DB = {
 					["func"] = "function(unit)\nlocal health = not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nlocal maxHealth = not Gladius.test and UnitHealthMax(unit) or Gladius.testing[unit].maxHealth\nreturn strformat(\"%.1f%%\", (health / maxHealth * 100))\nend",
 					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
 				},
-				["health"] = {
-					["func"] = "function(unit)\nreturn not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nend",
-					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
+				["maxpower"] = {
+					["func"] = "function(unit)\nreturn not Gladius.test and UnitPowerMax(unit) or Gladius.testing[unit].maxPower\nend",
+					["events"] = "UNIT_MAXPOWER UNIT_DISPLAYPOWER UNIT_NAME_UPDATE",
 				},
 				["maxhealth:short"] = {
 					["func"] = "function(unit)\nlocal health = not Gladius.test and UnitHealthMax(unit) or Gladius.testing[unit].maxHealth\nif (health > 999) then\nreturn strformat(\"%.1fk\", (health / 1000))\nelse\nreturn health\nend\nend",
 					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
 				},
-				["maxpower"] = {
-					["func"] = "function(unit)\nreturn not Gladius.test and UnitPowerMax(unit) or Gladius.testing[unit].maxPower\nend",
-					["events"] = "UNIT_MAXPOWER UNIT_DISPLAYPOWER UNIT_NAME_UPDATE",
+				["health"] = {
+					["func"] = "function(unit)\nreturn not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nend",
+					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
 				},
 			},
 		},
@@ -151,15 +157,9 @@ Gladius2DB = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
 		},
-		["Kynaeth - Sylvanas"] = {
+		["Cìchìcean - Sylvanas"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
-			["x"] = {
-				["arena1"] = 984.8889127373695,
-			},
-			["y"] = {
-				["arena1"] = 561.7777913808823,
-			},
 		},
 	},
 }

@@ -59,3 +59,5 @@ Masque_Renaitre: enabled
 NetherwingEggs: disabled
 SmexyMats: enabled
 GW2_UI: enabled
+!BugGrabber: enabled
+BugSack: enabled

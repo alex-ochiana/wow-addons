@@ -6,10 +6,10 @@ HandyNotes_LongForgottenHippogryphDB = {
 		["Plüto - Sylvanas"] = "Plüto - Sylvanas",
 		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
 		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
-		["Cìchìcean - Sylvanas"] = "Cìchìcean - Sylvanas",
+		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
 		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
 		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
-		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
+		["Cìchìcean - Sylvanas"] = "Cìchìcean - Sylvanas",
 	},
 	["profiles"] = {
 		["Cretz - Moonglade"] = {
@@ -22,13 +22,13 @@ HandyNotes_LongForgottenHippogryphDB = {
 		},
 		["Gnomèrcy - Sylvanas"] = {
 		},
-		["Cìchìcean - Sylvanas"] = {
+		["Kynaeth - Sylvanas"] = {
 		},
 		["Crètz - Sylvanas"] = {
 		},
 		["Vòlkmer - Kazzak"] = {
 		},
-		["Kynaeth - Sylvanas"] = {
+		["Cìchìcean - Sylvanas"] = {
 		},
 	},
 }

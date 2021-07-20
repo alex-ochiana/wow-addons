@@ -2,7 +2,7 @@
 VWQL = {
 	["Scale"] = 0.8,
 	["Kynaeth-Sylvanas"] = {
-		["VERSION"] = 100,
+		["VERSION"] = 101,
 		["FilterType"] = {
 		},
 		["Quests"] = {
@@ -15,7 +15,7 @@ VWQL = {
 		},
 		["Quests"] = {
 		},
-		["VERSION"] = 100,
+		["VERSION"] = 101,
 	},
 	["Jiglèr-Sylvanas"] = {
 		["Filter"] = 63,
@@ -46,7 +46,7 @@ VWQL = {
 		},
 	},
 	["Crëtz-Kazzak"] = {
-		["VERSION"] = 100,
+		["VERSION"] = 101,
 		["FilterType"] = {
 		},
 		["Quests"] = {
@@ -54,7 +54,7 @@ VWQL = {
 		["Filter"] = 63,
 	},
 	["Gnomèrcy-Sylvanas"] = {
-		["VERSION"] = 100,
+		["VERSION"] = 101,
 		["Filter"] = 63,
 		["Quests"] = {
 		},
@@ -67,39 +67,37 @@ VWQL = {
 		},
 		["VERSION"] = 101,
 		["Quests"] = {
-			[60623] = true,
-			[60564] = true,
-			[61434] = true,
-			[61394] = true,
-			[60475] = true,
-			[43798] = true,
-			[62058] = true,
-			[42819] = true,
-			[59642] = true,
-			[44746] = true,
-			[61783] = true,
-			[60929] = true,
-			[60855] = true,
-			[58221] = true,
-			[61539] = true,
-			[59680] = true,
-			[60659] = true,
-			[61866] = true,
-			[61946] = true,
-			[61544] = true,
-			[61886] = true,
-			[60585] = true,
-			[45379] = true,
-			[59905] = true,
-			[61549] = true,
+			[58207] = true,
 			[60657] = true,
+			[60565] = true,
+			[61342] = true,
+			[45379] = true,
+			[62058] = true,
+			[61189] = true,
 			[43943] = true,
-			[60739] = true,
+			[43985] = true,
+			[61867] = true,
+			[48953] = true,
+			[59585] = true,
+			[58749] = true,
+			[59718] = true,
+			[62068] = true,
+			[55466] = true,
+			[52181] = true,
+			[61141] = true,
+			[61883] = true,
+			[61949] = true,
+			[60958] = true,
+			[60950] = true,
+			[43798] = true,
+			[61787] = true,
+			[61303] = true,
+			[58084] = true,
 		},
 		["Filter"] = 63,
 	},
 	["Egidus-Sylvanas"] = {
-		["VERSION"] = 100,
+		["VERSION"] = 101,
 		["FilterType"] = {
 		},
 		["Quests"] = {

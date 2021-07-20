@@ -15,14 +15,14 @@ RSADB = {
 		["Crëtz - Kazzak"] = "DEMONHUNTER",
 		["Latthrias - Sylvanas"] = "PRIEST",
 		["Jiglèr - Sylvanas"] = "WARRIOR",
-		["Cìchìcean - Sylvanas"] = "MONK",
+		["Kynaeth - Sylvanas"] = "DEMONHUNTER",
 		["Plüto - Sylvanas"] = "ROGUE",
 		["Egidus - Sylvanas"] = "MAGE",
-		["Kynaeth - Sylvanas"] = "DEMONHUNTER",
+		["Gnomèrcy - Sylvanas"] = "WARLOCK",
 		["Cretz - Moonglade"] = "DRUID",
 		["Crètz - Sylvanas"] = "DRUID",
 		["Vòlkmer - Kazzak"] = "SHAMAN",
-		["Gnomèrcy - Sylvanas"] = "WARLOCK",
+		["Cìchìcean - Sylvanas"] = "MONK",
 	},
 	["profiles"] = {
 		["WARRIOR"] = {

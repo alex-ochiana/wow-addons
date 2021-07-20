@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 9.1.00 (30th June 2021)
+-- 	Leatrix Plus 9.1.02 (13th July 2021)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "9.1.00"
+	LeaPlusLC["AddonVer"] = "9.1.02"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -1103,6 +1103,85 @@
 					"mon_talethi's_target_fidget01_16_168902.ogg#3745520", 
 				},
 
+				-- Airships (mounts and transports)
+				["MuteAirships"] = {
+
+					-- sound/creature/allianceairship
+					"mon_alliance_airship_engine_fly_loop_01.ogg#1659528", 
+					"mon_alliance_airship_engine_fly_loop_02.ogg#1659529", 
+					"mon_alliance_airship_engine_fly_loop_03.ogg#1659530", 
+					"mon_alliance_airship_engine_fly_loop_04.ogg#1659504", 
+					"mon_alliance_airship_engine_idle_loop_01.ogg#1659505", 
+					"mon_alliance_airship_engine_idle_loop_02.ogg#1659506", 
+					"mon_alliance_airship_engine_idle_loop_03.ogg#1659507", 
+					"mon_alliance_airship_engine_start_01.ogg#1659508", 
+					"mon_alliance_airship_engine_start_02.ogg#1659509", 
+					"mon_alliance_airship_engine_start_03.ogg#1659510", 
+					"mon_alliance_airship_engine_start_04.ogg#1659511", 
+					"mon_alliance_airship_enginestartlong_01.ogg#1686533", 
+					"mon_alliance_airship_enginestartlong_02.ogg#1686534", 
+					"mon_alliance_airship_enginestartlong_03.ogg#1686535", 
+					"mon_alliance_airship_enginestartlong_04.ogg#1686536", 
+					"mon_alliance_airship_gear_shift_01.ogg#1659512", 
+					"mon_alliance_airship_gear_shift_02.ogg#1659513", 
+					"mon_alliance_airship_gear_shift_03.ogg#1659514", 
+					"mon_alliance_airship_gearshiftlong_01.ogg#1686537", 
+					"mon_alliance_airship_gearshiftlong_02.ogg#1686538", 
+					"mon_alliance_airship_gearshiftlong_03.ogg#1686539", 
+					"mon_alliance_airship_impact_metal_wood_01.ogg#1659515", 
+					"mon_alliance_airship_impact_metal_wood_02.ogg#1659516", 
+					"mon_alliance_airship_impact_metal_wood_03.ogg#1659517", 
+					"mon_alliance_airship_land_01.ogg#1659518", 
+					"mon_alliance_airship_land_02.ogg#1659519", 
+					"mon_alliance_airship_mountspecial_01.ogg#1686540", 
+					"mon_alliance_airship_mountspecial_02.ogg#1686541", 
+					"mon_alliance_airship_turn_wood_stress_01.ogg#1659520", 
+					"mon_alliance_airship_turn_wood_stress_02.ogg#1659521", 
+					"mon_alliance_airship_turn_wood_stress_03.ogg#1659522", 
+					"mon_alliance_airship_turn_wood_stress_04.ogg#1659523", 
+					"mon_alliance_airship_turn_wood_stress_05.ogg#1659524", 
+					"mon_alliance_airship_turn_wood_stress_06.ogg#1659525", 
+					"mon_alliance_airship_turn_wood_stress_07.ogg#1659526", 
+					"mon_alliance_airship_turn_wood_stress_08.ogg#1659527", 
+
+					-- sound/vehicles/alliancegunship
+					"alliancegunship.ogg#603149",
+
+				},
+
+				-- Zeppelins (mounts such as Darkmoon Dirigible and transports)
+				["MuteZeppelins"] = {
+
+					-- sound/creature/hordezeppelin
+					"mon_hordezeppelin_flight.ogg#1659491", 
+					"mon_hordezeppelin_flight_rocketblast01.ogg#1659492", 
+					"mon_hordezeppelin_flight_rocketblast02.ogg#1659493", 
+					"mon_hordezeppelin_flight_rocketblast03.ogg#1659494", 
+					"mon_hordezeppelin_flight_stand01.ogg#1659495", 
+					"mon_hordezeppelin_idle.ogg#1659496", 
+					"mon_hordezeppelin_mountspecial.ogg#1685499", 
+					"mon_hordezeppelin_rocket01.ogg#1659497", 
+					"mon_hordezeppelin_rocket02.ogg#1659498", 
+					"mon_hordezeppelin_rocket03.ogg#1659499", 
+					"mon_hordezeppelin_summon01.ogg#1659500", 
+					"mon_hordezeppelin_summon02.ogg#1659501", 
+					"mon_hordezeppelin_summon03.ogg#1659502", 
+					"mon_hordezeppelin_walk.ogg#1659503", 
+
+					-- sound/doodad
+					"doodadcompression/zeppelinengineloop.ogg#567190", 
+					"go_fx_zeppelin_propeller_blades_loop.ogg#652796", 
+					"go_vfw_zeppelinwreckpropeller_stand.ogg#604805", 
+					"zeppelinheliuma.ogg#566604", 
+					"zeppelinheliumb.ogg#565623", 
+					"zeppelinheliumc.ogg#566258", 
+					"zeppelinheliumd.ogg#567042", 
+
+					-- sound/vehicles/hordegunship
+					"hordegunship.ogg#603224",
+
+				},
+
 			}
 
 			-- Give table file level scope (its used during logout and for wipe and admin commands)
@@ -1144,7 +1223,9 @@
 
 			LeaPlusLC:MakeTx(SoundPanel, "Mounts", 264, -72)
 			LeaPlusLC:MakeCB(SoundPanel, "MuteSoulseekers", "Soulseekers", 264, -92, false, "If checked, soulseekers will be quieter.|n|nThis applies to Corridor Creeper, Mawsworn Soulhunter and Bound Shadehound.")
-			LeaPlusLC:MakeCB(SoundPanel, "MuteBanLu", "Ban-Lu", 264, -112, false, "If checked, Ban-Lu will no longer talk to you.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteAirships", "Airships", 264, -112, false, "If checked, airships will be muted.|n|nThis applies to airship mounts and transports.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteZeppelins", "Zeppelins", 264, -132, false, "If checked, zeppelins will be muted.|n|nThis applies to zeppelin mounts and transports.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteBanLu", "Ban-Lu", 264, -152, false, "If checked, Ban-Lu will no longer talk to you.")
 
 			LeaPlusLC:MakeTx(SoundPanel, "Pets", 388, -72)
 			LeaPlusLC:MakeCB(SoundPanel, "MuteSunflower", "Sunflower", 388, -92, false, "If checked, the Singing Sunflower pet will be muted.")
@@ -7433,14 +7514,16 @@
 			-- Dungeons: Shadowlands
 			Zn(L["Dungeons"], L["Shadowlands"], "|cffffd800", {""})
 			Zn(L["Dungeons"], L["Shadowlands"], "|cffffd800" .. L["Shadowlands"], {""})
-			Zn(L["Dungeons"], L["Shadowlands"], L["Castle Nathria"]						, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Castle Nathria"], prefol, "RAID_90_RD_Chamber_General_Walk#176510", "RAID_90_RD_Dark_Walk#176521", "RAID_90_RD_Ballroom_AfterFight#175697", "RAID_90_RD_Ballroom_Combat#175695", "RAID_90_RD_Ballroom_DanceTilYouDie#175696", "RAID_90_RD_Ballroom_Distant#176497", "RAID_90_RD_Ballroom_Intermission#174982", "RAID_90_RD_Ballroom_PreFight#175700", "RAID_90_RD_Master_BattleA#176530", "RAID_90_RD_Master_BattleB#176532", "RAID_90_RD_Master_BattleC#176533", "RAID_90_RD_Master_FinaleRP#176537", "RAID_90_RD_Sewer_Walk#176523", "RAID_90_RD_CastleNathria_Battle01#176545", "RAID_90_RD_CastleNathria_Battle02#176546",})
+			Zn(L["Dungeons"], L["Shadowlands"], L["Castle Nathria"]						, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Castle Nathria"], prefol, "RAID_90_RD_Chamber_General_Walk#176510", "RAID_90_RD_Dark_Walk#176521", "RAID_90_RD_Ballroom_AfterFight#175697", "RAID_90_RD_Ballroom_Combat#175695", "RAID_90_RD_Ballroom_DanceTilYouDie#175696", "RAID_90_RD_Ballroom_Distant#176497", --[["RAID_90_RD_Ballroom_Intermission#174982",]] "RAID_90_RD_Ballroom_PreFight#175700", "RAID_90_RD_Master_BattleA#176530", "RAID_90_RD_Master_BattleB#176532", "RAID_90_RD_Master_BattleC#176533", "RAID_90_RD_Master_FinaleRP#176537", "RAID_90_RD_Sewer_Walk#176523", "RAID_90_RD_CastleNathria_Battle01#176545", "RAID_90_RD_CastleNathria_Battle02#176546",})
 			Zn(L["Dungeons"], L["Shadowlands"], L["De Other Side"]						, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["De Other Side"], prefol, "DGN_90_AW_DeOtherSide_AW_Walk#175994", "DGN_90_AW_DeOtherSide_AW_Battle#175995", "DGN_90_AW_DeOtherSide_Final_Battle#175999", "DGN_90_AW_DeOtherSide_MG_Battle#175998", "DGN_90_AW_DeOtherSide_MG_Walk#175997", "DGN_90_AW_DeOtherSide_Start#175990", "DGN_90_AW_DeOtherSide_ZG_Battle#175993", "DGN_90_AW_DeOtherSide_ZG_Walk#175992",})
 			Zn(L["Dungeons"], L["Shadowlands"], L["Halls of Atonement"]					, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Halls of Atonement"], prefol, "DGN_90_RD_HallsOfAtonement_Walk#176112", "DGN_90_RD_HallsOfAtonement_Cathedral#176114",})
 			Zn(L["Dungeons"], L["Shadowlands"], L["Mists of Tirna Scithe"]				, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Mists of Tirna Scithe"], prefol, "DGN_90_AW_MistsofTirnaScithe_Oaken#175982", "DGN_90_AW_MistsofTirnaScithe_MistVeil#175983", "DGN_90_AW_MistsofTirnaScithe_Tirna#175984", "DGN_90_AW_MistsofTirnaScithe_AfterMistCaller#175986",})
 			Zn(L["Dungeons"], L["Shadowlands"], L["Necrotic Wake"]						, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Necrotic Wake"], prefol, "DGN_90_BA_NecroticWake_GeneralWalk#175827", "DGN_90_BA_NecroticWake_NecropolisInterior#175828",})
 			Zn(L["Dungeons"], L["Shadowlands"], L["Plaguefall"]							, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Plaguefall"], prefol, "DGN_90_MX_Plaguefall_GeneralWalk#175823", "DGN_90_MX_Plaguefall_InteriorWalk#175824",})
+			Zn(L["Dungeons"], L["Shadowlands"], L["Sanctum of Domination"]				, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Sanctum of Domination"], prefol, "mus_90_maw_torghast_ambient_h_2#184680",})
 			Zn(L["Dungeons"], L["Shadowlands"], L["Sanguine Depths"]					, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Sanguine Depths"], prefol, "DGN_90_RD_SanguineDepths_Walk1#176107", "DGN_90_RD_SanguineDepths_Walk2#176108", "DGN_90_RD_SanguineDepths_Battle#176111",})
 			Zn(L["Dungeons"], L["Shadowlands"], L["Spires of Ascension"]				, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Spires of Ascension"], prefol, "DGN_90_BA_SpiresofAscension_Walk1#175978", "DGN_90_BA_SpiresofAscension_Walk2#175979",})
+			Zn(L["Dungeons"], L["Shadowlands"], L["Tazavesh"]							, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Tazavesh"], prefol, "mus_91_tavazesh_1_a#185588", "mus_91_tavazesh_1_b#186013", "mus_91_tavazesh_1_m#185599",})
 			Zn(L["Dungeons"], L["Shadowlands"], L["Theater of Pain"]					, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Theater of Pain"], prefol, "DGN_90_MX_TheaterofPain_GeneralWalk#175703", "DGN_90_MX_TheaterofPain_AbomWalk#175704", "DGN_90_MX_TheaterofPain_LichWalk#175706", "DGN_90_MX_TheaterofPain_BATTLE#175702",})
 
 			-- Various
@@ -7591,7 +7674,6 @@
 				"|Cffffffff" .. L["Exile's Reach (Horde)"] .. " |r#3755758#22", -- interface/cinematics/shadowlands_902_931.mp3
 				"|Cffffffff" .. L["Exile's Reach (Alliance)"] .. " |r#3260363#22", -- interface/cinematics/shadowlands_901_895.mp3
 				"|Cffffffff" .. L["Dark Abduction"] .. " |r#3755759#126", -- interface/cinematics/shadowlands_902_937.mp3
-				-- "|Cffffffff" .. L["Ysera Reborn"] .. " |r#3756095#144", -- interface/cinematics/shadowlands_902_941.mp3
 				"|Cffffffff" .. L["For Teldrassil"] .. " |r#3755760#148", -- interface/cinematics/shadowlands_902_942.mp3
 				"|Cffffffff" .. L["Beyond The Veil"] .. " |r#3851149#104", -- interface/cinematics/shadowlands_901_lc.mp3
 				"|Cffffffff" .. L["Remember This Lesson"] .. " |r#3756096#197", -- interface/cinematics/shadowlands_901_rme.mp3
@@ -7599,12 +7681,15 @@
 				"|Cffffffff" .. L["A Glimpse Into Darkness"] .. " |r#3756092#66", -- interface/cinematics/shadowlands_901_etm.mp3
 				"|Cffffffff" .. L["No More Lies"] .. " |r#3756094#206", -- interface/cinematics/shadowlands_901_pim.mp3
 				"|Cffffffff" .. L["Sylvanas' Choice"] .. " |r#3756097#153", -- interface/cinematics/shadowlands_902_948.mp3
+				"|Cffffffff" .. L["Kingsmourne"] .. " |r#4035004#178", -- interface/cinematics/shadowlands_910_aaa.mp3
+				"|Cffffffff" .. L["Ysera Reborn"] .. " |r#3756095#144", -- interface/cinematics/shadowlands_902_941.mp3
+				"|Cffffffff" .. L["Battle For Ardenweald"] .. " |r#4202880#186", -- interface/cinematics/shadowlands_910_951.mp3
 			})
 			Zn(L["Various"], L["Various"], L["Class Trials"]							, {	"|cffffd800" .. L["Various"] .. ": " .. L["Class Trials"], prefol, "MUS_70_ClassTrial_Horde_BattleWalk#71954", "MUS_70_ClassTrial_Alliance_BattleWalk#71959",})
 			Zn(L["Various"], L["Various"], L["Credits"]									, {	"|cffffd800" .. L["Various"] .. ": " .. L["Credits"], prefol, "Menu-Credits01#10763", "Menu-Credits02#10804", "Menu-Credits03#13822", "Menu-Credits04#23812", "Menu-Credits05#32015", "Menu-Credits06#34020", "Menu-Credits07#56354", "Menu-Credits08#113560"})
 			Zn(L["Various"], L["Various"], L["Events"]									, {	"|cffffd800" .. L["Various"] .. ": " .. L["Events"], prefol, 
 				"|cffffd800", "|cffffd800" .. L["Darkmoon Faire"], "MUS_43_DarkmoonFaire_IslandWalk#26536", "MUS_43_DarkmoonFaire_PavillionWalk#26539", "MUS_51_DarkmoonFaire_MerryGoRound_01#34440",
-				"|cffffd800", "|cffffd800" .. L["Plants vs Zombies"], "EVENT_PvZ_Babbling#23487", "EVENT_PvZ_Dadadoo#23488", "EVENT_PvZ_Doobeedoo#23489", "EVENT_PvZ_Lalala#23490", "EVENT_PvZ_Sunflower#23491", "EVENT_PvZ_Zombieonyourlawn#23492",
+				-- Flagged as Bad ID: "|cffffd800", "|cffffd800" .. L["Plants vs Zombies"], "EVENT_PvZ_Babbling#23487", "EVENT_PvZ_Dadadoo#23488", "EVENT_PvZ_Doobeedoo#23489", "EVENT_PvZ_Lalala#23490", "EVENT_PvZ_Sunflower#23491", "EVENT_PvZ_Zombieonyourlawn#23492",
 				"|cffffd800", "|cffffd800" .. L["Trial of Style"], "MUS_725_Event_Transmog_TrialOfStyle_1_Preparation#85957", "MUS_725_Event_Transmog_TrialOfStyle_2_Competition#85958", "MUS_725_Event_Transmog_TrialOfStyle_4_EndOfCompetition#85960",
 			})
 			Zn(L["Various"], L["Various"], L["Island Expeditions"]						, {	"|cffffd800" .. L["Various"] .. ": " .. L["Island Expeditions"], prefol,
@@ -7676,7 +7761,6 @@
 				L["Exile's Reach (Horde)"] .. " |r(931)",
 				L["Exile's Reach (Alliance)"] .. " |r(895)",
 				L["Dark Abduction"] .. " |r(937)",
-				-- L["Ysera Reborn"] .. " |r(941)",
 				L["For Teldrassil"] .. " |r(942)",
 				L["Beyond The Veil"] .. " |r(943)",
 				L["Remember This Lesson"] .. " |r(944)",
@@ -7684,6 +7768,9 @@
 				L["A Glimpse Into Darkness"] .. " |r(946)",
 				L["No More Lies"] .. " |r(947)",
 				L["Sylvanas' Choice"] .. " |r(948)",
+				L["Kingsmourne"] .. " |r(949)",
+				L["Ysera Reborn"] .. " |r(941)",
+				L["Battle For Ardenweald"] .. " |r(951)",
 			})
 			-- Give zone table a file level scope so slash command function can access it
 			LeaPlusLC["ZoneList"] = ZoneList

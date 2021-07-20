@@ -92,7 +92,7 @@ local DB_AURA_SEPARATE_BUFFS
 
 local on_refresh_db = function()
 	local profile = Plater.db.profile
-	DB_CAPTURED_SPELLS = profile.captured_spells
+	DB_CAPTURED_SPELLS = PlaterDB.captured_spells
 	DB_NPCID_CACHE = profile.npc_cache
 	DB_NPCID_COLORS = profile.npc_colors
 	DB_AURA_ALPHA = profile.aura_alpha
@@ -107,8 +107,8 @@ local update_wago_update_icons = function()
 	local mainFrame = PlaterOptionsPanelContainer
 	local scriptButton = mainFrame.AllButtons [6]
 	local modButton = mainFrame.AllButtons [7]
-	local profileButton = mainFrame.AllButtons [20]
-	local importButton = mainFrame.AllButtons [23]
+	local profileButton = mainFrame.AllButtons [21]
+	local importButton = mainFrame.AllButtons [24]
 	
 	if countMods > 0 then
 		modButton.updateIcon:Show()
@@ -215,6 +215,7 @@ function Plater.OpenOptionsPanel()
 		{name = "FriendlyPlayer", title = L["OPTIONS_TABNAME_PLAYERFRIENDLY"]},
 
 		{name = "ColorManagement", title = L["OPTIONS_TABNAME_COLORSNPC"]},
+		{name = "CastColorManagement", title = "Cast Colors"}, --localize-me
 		{name = "AnimationPanel", title = L["OPTIONS_TABNAME_ANIMATIONS"]},
 		{name = "Automation", title = L["OPTIONS_TABNAME_AUTO"]},
 		{name = "ProfileManagement", title = L["OPTIONS_TABNAME_PROFILES"]},
@@ -254,19 +255,22 @@ function Plater.OpenOptionsPanel()
 	
 	--3rd row
 	local colorsFrame = mainFrame.AllFrames [17]
-	local animationFrame = mainFrame.AllFrames [18]
-	local autoFrame = mainFrame.AllFrames [19]
-	local profilesFrame = mainFrame.AllFrames [20]
-	local advancedFrame = mainFrame.AllFrames [21]
-	local searchFrame = mainFrame.AllFrames [22]
-	--local wagoIoFrame = mainFrame.AllFrames [23] --wago_imports
+	local castColorsFrame = mainFrame.AllFrames [18]
+	local animationFrame = mainFrame.AllFrames [19]
+	local autoFrame = mainFrame.AllFrames [20]
+	local profilesFrame = mainFrame.AllFrames [21]
+	local advancedFrame = mainFrame.AllFrames [22]
+	local searchFrame = mainFrame.AllFrames [23]
+	--local wagoIoFrame = mainFrame.AllFrames [24] --wago_imports
 	
 	--
 	local colorNpcsButton = mainFrame.AllButtons [17]
 	local scriptButton = mainFrame.AllButtons [6]
 	local modButton = mainFrame.AllButtons [7]
-	local profileButton = mainFrame.AllButtons [20]
-	local importButton = mainFrame.AllButtons [23]
+	local profileButton = mainFrame.AllButtons [21]
+	local importButton = mainFrame.AllButtons [24]
+
+	Plater.CreateCastColorOptionsFrame(castColorsFrame)
 	
 	local generalOptionsAnchor = CreateFrame ("frame", "$parentOptionsAnchor", frontPageFrame, BackdropTemplateMixin and "BackdropTemplate")
 	generalOptionsAnchor:SetSize (1, 1)
@@ -417,8 +421,13 @@ function Plater.OpenOptionsPanel()
 					--do not export cache data, these data can be rebuild at run time
 					local captured_spells = Plater.db.profile.captured_spells
 					local aura_cache_by_name = Plater.db.profile.aura_cache_by_name
+					local captured_casts = Plater.db.profile.captured_casts
+					local npc_cache = Plater.db.profile.npc_cache
+
 					Plater.db.profile.captured_spells = {}
 					Plater.db.profile.aura_cache_by_name = {}
+					Plater.db.profile.captured_casts = {}
+					Plater.db.profile.npc_cache = {}
 					
 					--save mod/script editing
 					local hookFrame = mainFrame.AllFrames [7]
@@ -440,6 +449,8 @@ function Plater.OpenOptionsPanel()
 					--set back again the cache data
 					Plater.db.profile.captured_spells = captured_spells
 					Plater.db.profile.aura_cache_by_name = aura_cache_by_name
+					Plater.db.profile.captured_casts = captured_casts
+					Plater.db.profile.npc_cache = npc_cache
 				end)
 				
 				C_Timer.After (.3, function()
@@ -722,7 +733,7 @@ function Plater.OpenOptionsPanel()
 			local moreProfilesLabel = DF:CreateLabel (profilesFrame, L["OPTIONS_PROFILE_CONFIG_MOREPROFILES"] .. ":", DF:GetTemplate ("font", "PLATER_BUTTON"))
 			moreProfilesLabel:SetPoint ("topleft", openManagementProfileButton, "bottomleft", 0, -20)
 			
-			local moreProfilesTextEntry = DF:CreateTextEntry (profilesFrame, function()end, 160, 20, "moreProfilesTextEntry", nil, nil, options_dropdown_template)
+			local moreProfilesTextEntry = DF:CreateTextEntry (profilesFrame, function()end, 160, 20, "moreProfilesTextEntry", nil, nil, DF:GetTemplate ("dropdown", "PLATER_DROPDOWN_OPTIONS"))
 			moreProfilesTextEntry:SetPoint ("topleft", moreProfilesLabel, "bottomleft", 0, -2)
 			moreProfilesTextEntry:SetText ("https://wago.io/plater")
 			
@@ -868,7 +879,7 @@ function Plater.OpenOptionsPanel()
 			
 			--new profile name
 			local newProfileNameLabel = DF:CreateLabel (profilesFrame, L["OPTIONS_PROFILE_CONFIG_PROFILENAME"] .. ":", DF:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE"))
-			local newProfileNameTextEntry = DF:CreateTextEntry (profilesFrame, function()end, 160, 20, "ProfileNameTextEntry", _, _, options_dropdown_template)
+			local newProfileNameTextEntry = DF:CreateTextEntry (profilesFrame, function()end, 160, 20, "ProfileNameTextEntry", _, _, DF:GetTemplate ("dropdown", "PLATER_DROPDOWN_OPTIONS"))
 			newProfileNameTextEntry:SetText ("MyNewProfile")
 			newProfileNameTextEntry.tooltip = L["OPTIONS_PROFILE_CONFIG_PROFILENAME_DESC"]
 			newProfileNameLabel:SetPoint ("topleft", importStringField, "bottomleft", 0, -16)
@@ -2216,7 +2227,7 @@ Plater.CreateAuraTesting()
 		
 			--header
 			local headerTable = {
-				{text = "Enabled", width = 70},
+				{text = "Enabled", width = 50},
 				{text = "Scripts Only", width = 80},
 				{text = "Npc ID", width = 64},
 				{text = "Npc Name", width = 162},
@@ -2429,7 +2440,7 @@ Plater.CreateAuraTesting()
 					return colorsFrame.cachedColorTable
 				end
 			end
-			
+
 			--line
 			local scroll_createline = function (self, index)
 			
@@ -2455,12 +2466,14 @@ Plater.CreateAuraTesting()
 				forScriptCheckBox:SetAsCheckBox()
 				
 				--npc ID
-				local npcIDEntry = DF:CreateTextEntry (line, function()end, headerTable[3].width, 20, "NpcIDEntry", nil, nil, DF:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"))
+				local npcIDEntry = DF:CreateTextEntry (line, function()end, headerTable[3].width, 20, "NpcIDEntry", nil, nil, DF:GetTemplate ("dropdown", "PLATER_DROPDOWN_OPTIONS"))
 				npcIDEntry:SetHook ("OnEditFocusGained", oneditfocusgained_spellid)			
+				npcIDEntry:SetJustifyH("left")
 				
 				--npc Name
-				local npcNameEntry = DF:CreateTextEntry (line, function()end, headerTable[4].width, 20, "NpcNameEntry", nil, nil, DF:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"))
+				local npcNameEntry = DF:CreateTextEntry (line, function()end, headerTable[4].width, 20, "NpcNameEntry", nil, nil, DF:GetTemplate ("dropdown", "PLATER_DROPDOWN_OPTIONS"))
 				npcNameEntry:SetHook ("OnEditFocusGained", oneditfocusgained_spellid)
+				npcNameEntry:SetJustifyH("left")
 				
 				--zone name
 				local zoneNameLabel = DF:CreateLabel (line, "", 10, "white", nil, "ZoneNameLabel")
@@ -2821,15 +2834,9 @@ Plater.CreateAuraTesting()
 							
 							colorsFrame.RefreshScroll()
 							Plater:Msg ("npc colors imported.")
-						else
-							if (colorData.NpcNames) then
-								Plater:Msg ("this import look like Script, try importing in the Scripting tab.")
-							
-							elseif (colorData.LoadConditions) then
-								Plater:Msg ("this import look like a Mod, try importing in the Modding tab.")
-							end
 
-							Plater:Msg ("failed to import color data table.")
+						else
+							Plater.SendScriptTypeErrorMsg(colorData)
 						end
 					end
 					
@@ -3456,8 +3463,9 @@ Plater.CreateAuraTesting()
 			local icon = line:CreateTexture ("$parentSpellIcon", "overlay")
 			icon:SetSize (scroll_line_height - 2, scroll_line_height - 2)
 			
-			local spell_id = DF:CreateTextEntry (line, function()end, headerTable[2].width, 20, nil, nil, nil, DF:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"))
+			local spell_id = DF:CreateTextEntry (line, function()end, headerTable[2].width, 20, nil, nil, nil, DF:GetTemplate ("dropdown", "PLATER_DROPDOWN_OPTIONS"))
 			spell_id:SetHook ("OnEditFocusGained", oneditfocusgained_spellid)
+			spell_id:SetJustifyH("left")
 	
 			local spell_name = DF:CreateLabel (line, "", DF:GetTemplate ("font", "PLATER_SCRIPTS_NAME"))
 			local source_name = DF:CreateLabel (line, "", DF:GetTemplate ("font", "PLATER_SCRIPTS_NAME"))
@@ -3577,13 +3585,15 @@ Plater.CreateAuraTesting()
 						line.SpellName:SetTextTruncated (spellName, headerTable [3].width)
 						line.SourceName:SetTextTruncated (spellData.source, headerTable [4].width)
 						
+						local isCast = spellData.event == "SPELL_CAST_START" or spellData.event == "SPELL_CAST_SUCCESS"
+
 						if (spellData.type == "BUFF") then
 							line.SpellType.color = "PLATER_BUFF"
 							
 						elseif (spellData.type == "DEBUFF") then
 							line.SpellType.color = "PLATER_DEBUFF"
 							
-						elseif (spellData.event == "SPELL_CAST_START") then
+						elseif (isCast) then
 							line.SpellType.color = "PLATER_CAST"
 							
 						end
@@ -3593,8 +3603,7 @@ Plater.CreateAuraTesting()
 						line.SpellIDEntry:SetText (spellID)
 
 						--{event = token, source = sourceName, type = auraType, npcID = Plater:GetNpcIdFromGuid (sourceGUID or "")}
-
-						line.SpellType:SetText (spellData.event == "SPELL_CAST_START" and "Spell Cast" or spellData.event == "SPELL_AURA_APPLIED" and spellData.type)
+						line.SpellType:SetText (isCast and "Spell Cast" or spellData.event == "SPELL_AURA_APPLIED" and spellData.type)
 						
 						line.AddTrackList.SpellID = spellID
 						line.AddTrackList.AuraType = spellData.type
@@ -3681,7 +3690,7 @@ Plater.CreateAuraTesting()
 				--select all spells in the details! all spells panel
 				if (DetailsForgePanel and DetailsForgePanel.SelectModule) then
 					-- module 2 is the All Spells
-					DetailsForgePanel.SelectModule (_, _, 2)
+					DetailsForgePanel.SelectModule (_, _, 1)
 				end
 			else
 				Plater:Msg ("Details! Damage Meter is required and isn't installed, get it on Twitch App!")
@@ -3715,7 +3724,7 @@ Plater.CreateAuraTesting()
 			aura_search_textentry:SetPoint ("right", clear_list_button, "left", -6, 0)
 			aura_search_textentry:SetHook ("OnChar",		auraLastEventFrame.OnSearchBoxTextChanged)
 			aura_search_textentry:SetHook ("OnTextChanged", 	auraLastEventFrame.OnSearchBoxTextChanged)
-			aura_search_label = DF:CreateLabel (auraLastEventFrame, "Search:", DF:GetTemplate ("font", "ORANGE_FONT_TEMPLATE"))
+			local aura_search_label = DF:CreateLabel (auraLastEventFrame, "Search:", DF:GetTemplate ("font", "ORANGE_FONT_TEMPLATE"))
 			aura_search_label:SetPoint ("right", aura_search_textentry, "left", -2, 0)
 		
 		--create the title
@@ -13441,8 +13450,9 @@ end
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	--~search panel
 	local searchLabel = DF:CreateLabel(searchFrame, "Search:")
-	local searchBox = DF:CreateTextEntry (searchFrame, function()end, 156, 20, "serachTextEntry", _, _, options_dropdown_template)
-	
+	local searchBox = DF:CreateTextEntry (searchFrame, function()end, 156, 20, "serachTextEntry", _, _, DF:GetTemplate ("dropdown", "PLATER_DROPDOWN_OPTIONS"))
+	searchBox:SetJustifyH("left")
+
 	searchLabel:SetPoint(10, -120)
 	searchBox:SetPoint(10, -130)
 

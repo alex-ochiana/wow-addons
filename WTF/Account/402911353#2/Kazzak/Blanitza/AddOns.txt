@@ -9,8 +9,8 @@ AzeriteUI: disabled
 AzeriteUI's action bar: disabled
 Azeroth Auto Pilot: enabled
 BonusRollPreview: disabled
-!BugGrabber: disabled
-BugSack: disabled
+!BugGrabber: enabled
+BugSack: enabled
 ChampionCommander: enabled
 ErrorFilter: disabled
 FarmHud: disabled

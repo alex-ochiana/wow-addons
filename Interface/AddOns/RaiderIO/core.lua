@@ -6915,6 +6915,7 @@ do
         autoLogInstanceMapIDs = {
             -- [2162] = true, -- Torghast, Tower of the Damned
             [2296] = true, -- Castle Nathria
+            [2450] = true, -- Sanctum of Domination
         }
         autoLogDifficultyIDs = {
             -- scenario
@@ -6975,7 +6976,7 @@ do
     function combatlog:OnEnable()
         previouslyEnabledLogging = config:Get("previouslyEnabledLogging")
         CheckInstance(true)
-        callback:RegisterEvent(CheckInstance, "PLAYER_ENTERING_WORLD", "ZONE_CHANGED", "ZONE_CHANGED_NEW_AREA")
+        callback:RegisterEvent(CheckInstance, "PLAYER_ENTERING_WORLD", "ZONE_CHANGED", "ZONE_CHANGED_NEW_AREA", "ZONE_CHANGED_INDOORS")
     end
 
     function combatlog:OnDisable()

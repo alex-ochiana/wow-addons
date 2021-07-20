@@ -1,10 +1,13 @@
-lightweight tag d56c5a48708c78fc824e48be6a0117443cc39991 1.4.0
+tag 363b4023fd748a2ff3cf7b13186255a235d2a243 1.4.1
 Author:	Alar of Runetotem <alar@aspide.it>
-Date:	Wed Jun 30 11:24:39 2021 +0200
+Date:	Sun Jul 11 10:36:53 2021 +0200
 
-commit d56c5a48708c78fc824e48be6a0117443cc39991
+Lua error fix
+
+commit 39ec1c6b96a4b87d27ec80742af03ebe3dd70ade
 Author: Alar of Runetotem <alar@aspide.it>
-Date:   Wed Jun 30 11:24:39 2021 +0200
+Date:   Sat Jul 10 14:05:21 2021 +0200
 
-    Updated TOC to 90100
+    Interface\AddOns\ChampionCommander\cache.lua:911: attempt to compare
+    number with nil
 

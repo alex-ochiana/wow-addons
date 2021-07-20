@@ -1,0 +1,26 @@
+
+GlassDB = {
+	["global"] = {
+		["version"] = "1.8.0",
+	},
+	["profileKeys"] = {
+		["Mortifèrous - Kazzak"] = "Default",
+		["Egidus - Sylvanas"] = "Default",
+		["Kynaeth - Sylvanas"] = "Default",
+		["Crètz - Sylvanas"] = "Default",
+		["Gnomèrcy - Sylvanas"] = "Default",
+		["Crëtz - Kazzak"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["frameHeight"] = 200,
+			["positionAnchor"] = {
+				["yOfs"] = 30,
+				["xOfs"] = 0,
+			},
+			["chatHoldTime"] = 20,
+			["font"] = "GW2_UI",
+			["frameWidth"] = 500,
+		},
+	},
+}

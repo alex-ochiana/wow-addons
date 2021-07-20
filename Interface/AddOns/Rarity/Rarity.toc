@@ -2,7 +2,7 @@
 ## Interface: 90100
 ## X-Min-Interface: 90100
 ## Title: Rarity
-## Version: 1.0 (r709-release-5)
+## Version: 1.0 (r710-release-5)
 
 ## Notes: Tracks rare drops, including companions and mounts
 ## Notes-ruRU: Примечания
@@ -101,6 +101,7 @@ Utils\Table.lua
 Utils\Time.lua
 
 # Wrappers for external libraries (to provide a consistent API)
+Core\Interoperability\LibQTip\Tooltips.lua
 Core\Interoperability\LibSink\Output.lua
 Core\Interoperability\TradeSkillMaster\AuctionDB.lua
 
@@ -127,6 +128,7 @@ Core\Waypoints.lua
 
 # UI
 Core\GUI\AnchoredTrackingBar.lua
+Core\GUI\CopyPastePopup.lua
 Core\GUI\DataBrokerDisplay.lua
 Core\GUI\FauxAchievementPopup.lua
 Core\GUI\GameTooltipHooks.lua

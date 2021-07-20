@@ -26,14 +26,12 @@ VER 3 0000000000000015 "Kill" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast Celestial Alignment
 /use 14
-/cast Convoke the Spirits
 END
 VER 3 000000000000000C "RKill" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast Celestial Alignment
 /use 14
-/use Potion of Spectral Intellect
-/cast Convoke the Spirits
+/use [group:raid] Potion of Spectral Intellect
 END
 VER 3 0000000000000009 "SB" "INV_MISC_QUESTIONMARK"
 #showtooltip Solar Beam
@@ -57,6 +55,10 @@ END
 VER 3 0000000000000014 "TR4" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [talent:4/1] Mighty Bash; [talent:4/2] Mass Entanglement; [talent:4/3] Heart of the Wild
+END
+VER 3 0000000000000017 "TR7" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [talent:7/2] Fury of Elune; [talent:7/3] New Moon
 END
 VER 3 0000000000000012 "turn in" "132722"
 /script  C_GossipInfo.SelectAvailableQuest(2)

@@ -6,10 +6,10 @@ HandyNotesDraenorDB = {
 		["Plüto - Sylvanas"] = "Default",
 		["Egidus - Sylvanas"] = "Default",
 		["Kynaeth - Sylvanas"] = "Default",
-		["Cìchìcean - Sylvanas"] = "Default",
+		["Gnomèrcy - Sylvanas"] = "Default",
 		["Crètz - Sylvanas"] = "Default",
 		["Vòlkmer - Kazzak"] = "Default",
-		["Gnomèrcy - Sylvanas"] = "Default",
+		["Cìchìcean - Sylvanas"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

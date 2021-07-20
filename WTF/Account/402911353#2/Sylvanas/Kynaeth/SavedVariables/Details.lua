@@ -7,800 +7,94 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 225,
 					["tipo"] = 2,
+					["combatId"] = 229,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.004853,
+							["totalabsorbed"] = 0.006688,
 							["damage_from"] = {
 								["Al'Akir"] = true,
 							},
 							["targets"] = {
-								["Al'Akir"] = 4564060,
+								["Al'Akir"] = 4268999,
 							},
-							["end_time"] = 1624437447,
+							["colocacao"] = 1,
 							["pets"] = {
-								"Frothing Pustule <Kynaeth>", -- [1]
 							},
 							["on_hold"] = false,
-							["boss_fight_component"] = true,
-							["friendlyfire_total"] = 0,
+							["nome"] = "Kynaeth",
+							["classe"] = "DEMONHUNTER",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 4373028.004853,
-							["colocacao"] = 1,
+							["total_without_pet"] = 4268999.006688,
 							["friendlyfire"] = {
 							},
-							["dps_started"] = false,
-							["total"] = 4564060.004853,
 							["aID"] = "1597-0E73BF0C",
-							["classe"] = "DEMONHUNTER",
-							["nome"] = "Kynaeth",
+							["dps_started"] = false,
+							["total"] = 4268999.006688,
+							["serial"] = "Player-1597-0E73BF0C",
+							["end_time"] = 1626252828,
+							["boss_fight_component"] = true,
+							["spec"] = 577,
+							["grupo"] = true,
+							["friendlyfire_total"] = 0,
+							["last_event"] = 1626252828,
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 0,
+										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 0,
+										["c_dmg"] = 107677,
 										["g_amt"] = 0,
-										["n_max"] = 107223,
+										["n_max"] = 112861,
 										["targets"] = {
-											["Al'Akir"] = 107223,
+											["Al'Akir"] = 220538,
 										},
-										["n_dmg"] = 107223,
-										["n_min"] = 107223,
+										["n_dmg"] = 112861,
+										["n_min"] = 112861,
 										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 107223,
-										["c_max"] = 0,
+										["counter"] = 2,
+										["total"] = 220538,
+										["c_max"] = 107677,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["MISS"] = 3,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
-										["c_min"] = 0,
+										["c_min"] = 107677,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
-									[198030] = {
-										["c_amt"] = 14,
-										["b_amt"] = 0,
-										["c_dmg"] = 1526833,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Al'Akir"] = 1526833,
-										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 14,
-										["total"] = 1526833,
-										["c_max"] = 111643,
-										["id"] = 198030,
-										["r_dmg"] = 0,
-										["spellschool"] = 124,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 106831,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 									[162243] = {
-										["c_amt"] = 1,
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 331401,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 166140,
+										["n_max"] = 188568,
 										["targets"] = {
-											["Al'Akir"] = 497541,
+											["Al'Akir"] = 188568,
 										},
-										["n_dmg"] = 166140,
-										["n_min"] = 166140,
+										["n_dmg"] = 188568,
+										["n_min"] = 188568,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 497541,
-										["c_max"] = 331401,
+										["counter"] = 1,
+										["total"] = 188568,
+										["c_max"] = 0,
 										["id"] = 162243,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
-										["c_min"] = 331401,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[317009] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 1192021,
-										["g_amt"] = 0,
-										["n_max"] = 298005,
-										["targets"] = {
-											["Al'Akir"] = 2086036,
-										},
-										["n_dmg"] = 894015,
-										["n_min"] = 298005,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 2086036,
-										["c_max"] = 596011,
-										["id"] = 317009,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 596010,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[200166] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 155395,
-										["targets"] = {
-											["Al'Akir"] = 155395,
-										},
-										["n_dmg"] = 155395,
-										["n_min"] = 155395,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 155395,
-										["c_max"] = 0,
-										["id"] = 200166,
-										["r_dmg"] = 0,
-										["spellschool"] = 124,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["spec"] = 577,
-							["serial"] = "Player-1597-0E73BF0C",
-							["last_dps"] = 616181.9906737837,
-							["custom"] = 0,
-							["last_event"] = 1624437447,
-							["damage_taken"] = 16.004853,
-							["start_time"] = 1624437440,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 8465,
-							["totalabsorbed"] = 0.006487,
-							["aID"] = "175519",
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Al'Akir"] = 191032,
-							},
-							["serial"] = "Creature-0-3891-754-1053-175519-000052F2C2",
-							["pets"] = {
-							},
-							["boss_fight_component"] = true,
-							["on_hold"] = false,
-							["classe"] = "PET",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 191032.006487,
-							["dps_started"] = false,
-							["end_time"] = 1624437447,
-							["friendlyfire_total"] = 0,
-							["ownerName"] = "Kynaeth",
-							["nome"] = "Frothing Pustule <Kynaeth>",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[345495] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 95516,
-										["targets"] = {
-											["Al'Akir"] = 191032,
-										},
-										["n_dmg"] = 191032,
-										["n_min"] = 95516,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 191032,
-										["c_max"] = 0,
-										["id"] = 345495,
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["total"] = 191032.006487,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1624437447,
-							["damage_taken"] = 0.006487,
-							["start_time"] = 1624437445,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.004276,
-							["damage_from"] = {
-								["Kynaeth"] = true,
-								["Frothing Pustule <Kynaeth>"] = true,
-							},
-							["targets"] = {
-								["Kynaeth"] = 16,
-							},
-							["total"] = 16.004276,
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 16.004276,
-							["boss_fight_component"] = true,
-							["monster"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1624437447,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["nome"] = "Al'Akir",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 8,
-										["targets"] = {
-											["Kynaeth"] = 16,
-										},
-										["n_dmg"] = 16,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 16,
-										["c_max"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["aID"] = "46753",
-							["serial"] = "Creature-0-3891-754-1053-46753-000052F266",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1624437444,
-							["damage_taken"] = 4564060.004276,
-							["start_time"] = 1624437442,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 225,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 225,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-						{
-							["received"] = 0.006541,
-							["resource"] = 67.006541,
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["powertype"] = 1,
-							["classe"] = "DEMONHUNTER",
-							["passiveover"] = 0.006541,
-							["total"] = 0.006541,
-							["boss_fight_component"] = true,
-							["resource_type"] = 17,
-							["nome"] = "Kynaeth",
-							["spells"] = {
-								["tipo"] = 7,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
-							["spec"] = 577,
-							["flag_original"] = 1297,
-							["alternatepower"] = 0.006541,
-							["last_event"] = 1624437441,
-							["aID"] = "1597-0E73BF0C",
-							["tipo"] = 3,
-							["serial"] = "Player-1597-0E73BF0C",
-							["totalover"] = 0.006541,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["combatId"] = 225,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[317009] = {
-										["activedamt"] = 0,
-										["id"] = 317009,
-										["targets"] = {
-										},
-										["uptime"] = 7,
-										["appliedamt"] = 1,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[1490] = {
-										["activedamt"] = 0,
-										["id"] = 1490,
-										["targets"] = {
-										},
-										["uptime"] = 7,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[89750] = {
-										["activedamt"] = 1,
-										["id"] = 89750,
-										["targets"] = {
-										},
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 16,
-							["aID"] = "1597-0E73BF0C",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									[186403] = {
-										["activedamt"] = 1,
-										["id"] = 186403,
-										["targets"] = {
-										},
-										["uptime"] = 7,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[162264] = {
-										["activedamt"] = 1,
-										["id"] = 162264,
-										["targets"] = {
-										},
-										["uptime"] = 7,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[90675] = {
-										["activedamt"] = 0,
-										["id"] = 90675,
-										["targets"] = {
-										},
-										["uptime"] = 0,
-										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									[198013] = {
-										["activedamt"] = 1,
-										["id"] = 198013,
-										["targets"] = {
-										},
-										["uptime"] = 2,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["debuff_uptime"] = 14,
-							["boss_fight_component"] = true,
-							["nome"] = "Kynaeth",
-							["spec"] = 577,
-							["grupo"] = true,
-							["spell_cast"] = {
-								[198013] = 1,
-								[317009] = 1,
-								[162243] = 2,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["buff_uptime_targets"] = {
-							},
-							["last_event"] = 1624437447,
-							["pets"] = {
-								"Frothing Pustule <Kynaeth>", -- [1]
-							},
-							["classe"] = "DEMONHUNTER",
-							["serial"] = "Player-1597-0E73BF0C",
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-								},
-							},
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["boss_debuff"] = true,
-							["monster"] = true,
-							["debuff_uptime"] = 4,
-							["spellschool"] = 8,
-							["nome"] = "Acid Rain",
-							["boss_fight_component"] = true,
-							["debuff_uptime_targets"] = {
-								["Kynaeth"] = {
-									["uptime"] = 4,
-									["appliedamt"] = 0,
-									["activedamt"] = 0,
-									["actived"] = false,
-									["refreshamt"] = 0,
-								},
-							},
-							["damage_spellid"] = 88301,
-							["tipo"] = 4,
-							["damage_twin"] = "Al'Akir",
-							["aID"] = "46753",
-							["serial"] = "Creature-0-3891-754-1053-46753-000052F266",
-							["last_event"] = 1624437446,
-						}, -- [2]
-						{
-							["flag_original"] = 8465,
-							["classe"] = "PET",
-							["ownerName"] = "Kynaeth",
-							["nome"] = "Frothing Pustule <Kynaeth>",
-							["pets"] = {
-							},
-							["boss_fight_component"] = true,
-							["spell_cast"] = {
-								[345495] = 2,
-							},
-							["tipo"] = 4,
-							["aID"] = "175519",
-							["serial"] = "Creature-0-3891-754-1053-175519-000052F2C2",
-							["last_event"] = 0,
-						}, -- [3]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 225,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Kynaeth"] = true,
-				},
-				["raid_roster_indexed"] = {
-					"Kynaeth", -- [1]
-				},
-				["tempo_start"] = 1624437440,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 370,
-				["playing_solo"] = true,
-				["totals"] = {
-					4564076, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					4373028, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = false,
-				["instance_type"] = "raid",
-				["data_fim"] = "11:37:27",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Al'Akir",
-				["TotalElapsedCombatTime"] = 1100978.007,
-				["CombatEndedAt"] = 1100978.007,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					{
-						3, -- [1]
-						5.824999999953434, -- [2]
-					}, -- [2]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-						[3] = {
-						},
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Kynaeth"] = 3761746.004853,
-						}, -- [1]
-						[3] = {
-							["Kynaeth"] = 802314,
-						},
-					},
-				},
-				["end_time"] = 1100977.977,
-				["combat_id"] = 225,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["player_last_events"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["is_boss"] = {
-					["diff_string"] = "25 Player (Heroic)",
-					["index"] = 1,
-					["zone"] = "Throne of the Four Winds",
-					["encounter"] = "Al'Akir",
-					["mapid"] = 754,
-					["try_number"] = 1,
-					["name"] = "Al'Akir",
-					["diff"] = 6,
-					["id"] = 1034,
-					["ej_instance_id"] = 74,
-					["killed"] = true,
-				},
-				["data_inicio"] = "11:37:20",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-				},
-				["start_time"] = 1100970.57,
-				["TimeData"] = {
-				},
-				["contra"] = "Al'Akir",
-			}, -- [1]
-			{
-				{
-					["combatId"] = 224,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.005591,
-							["damage_from"] = {
-								["Nezir"] = true,
-								["Rohash"] = true,
-								["Ravenous Creeper"] = true,
-								["Anshal"] = true,
-							},
-							["targets"] = {
-								["Nezir"] = 1274913,
-								["Rohash"] = 2231737,
-								["Ravenous Creeper"] = 566091,
-								["Anshal"] = 993483,
-							},
-							["end_time"] = 1624437414,
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["boss_fight_component"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 5066224.005591,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["total"] = 5066224.005591,
-							["aID"] = "1597-0E73BF0C",
-							["classe"] = "DEMONHUNTER",
-							["nome"] = "Kynaeth",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 320995,
-										["g_amt"] = 0,
-										["n_max"] = 112494,
-										["targets"] = {
-											["Nezir"] = 329991,
-											["Rohash"] = 162283,
-											["Anshal"] = 326717,
-										},
-										["n_dmg"] = 497996,
-										["n_min"] = 55416,
-										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 818991,
-										["c_max"] = 214940,
-										["a_dmg"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["MISS"] = 3,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["PARRY"] = 1,
-										["c_min"] = 106055,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 5,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[192611] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 138673,
-										["targets"] = {
-											["Ravenous Creeper"] = 266206,
-											["Anshal"] = 138673,
-										},
-										["n_dmg"] = 404879,
-										["n_min"] = 132585,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 404879,
-										["c_max"] = 0,
-										["id"] = 192611,
-										["r_dmg"] = 0,
-										["spellschool"] = 127,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[317009] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 841963,
-										["g_amt"] = 0,
-										["n_max"] = 298005,
-										["targets"] = {
-											["Rohash"] = 1437973,
-										},
-										["n_dmg"] = 596010,
-										["n_min"] = 298005,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 1437973,
-										["c_max"] = 596011,
-										["id"] = 317009,
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 245952,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -809,15 +103,15 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 95147,
+										["n_max"] = 96876,
 										["targets"] = {
-											["Nezir"] = 95147,
+											["Al'Akir"] = 96876,
 										},
-										["n_dmg"] = 95147,
-										["n_min"] = 95147,
+										["n_dmg"] = 96876,
+										["n_min"] = 96876,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 95147,
+										["total"] = 96876,
 										["c_max"] = 0,
 										["id"] = 258921,
 										["r_dmg"] = 0,
@@ -832,246 +126,145 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[258922] = {
-										["c_amt"] = 0,
+									[198030] = {
+										["c_amt"] = 14,
 										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 35918,
-										["targets"] = {
-											["Nezir"] = 106444,
-										},
-										["n_dmg"] = 106444,
-										["n_min"] = 35135,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 106444,
-										["c_max"] = 0,
-										["id"] = 258922,
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[337819] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 199923,
-										["g_amt"] = 0,
-										["n_max"] = 99962,
-										["targets"] = {
-											["Nezir"] = 99961,
-											["Anshal"] = 199923,
-											["Ravenous Creeper"] = 299885,
-										},
-										["n_dmg"] = 399846,
-										["n_min"] = 99961,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 599769,
-										["c_max"] = 199923,
-										["id"] = 337819,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 199923,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									[200166] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 301852,
+										["c_dmg"] = 1522218,
 										["g_amt"] = 0,
 										["n_max"] = 0,
 										["targets"] = {
-											["Rohash"] = 301852,
+											["Al'Akir"] = 1522218,
 										},
 										["n_dmg"] = 0,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 301852,
-										["c_max"] = 301852,
-										["id"] = 200166,
+										["counter"] = 14,
+										["total"] = 1522218,
+										["c_max"] = 111325,
+										["id"] = 198030,
 										["r_dmg"] = 0,
 										["spellschool"] = 124,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
-										["c_min"] = 301852,
+										["c_min"] = 106998,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 0,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
-									[162243] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 651302,
-										["g_amt"] = 0,
-										["n_max"] = 166292,
-										["targets"] = {
-											["Nezir"] = 643370,
-											["Rohash"] = 329629,
-											["Anshal"] = 328170,
-										},
-										["n_dmg"] = 649867,
-										["n_min"] = 159856,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 1301169,
-										["c_max"] = 328170,
-										["id"] = 162243,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["a_dmg"] = 0,
-										["c_min"] = 323132,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 4,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["spec"] = 577,
-							["serial"] = "Player-1597-0E73BF0C",
-							["last_dps"] = 106810.2547981914,
-							["custom"] = 0,
-							["last_event"] = 1624437414,
-							["damage_taken"] = 419.005591,
-							["start_time"] = 1624437377,
-							["delay"] = 1624437387,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.004645,
-							["damage_from"] = {
-								["Kynaeth"] = true,
-							},
-							["targets"] = {
-								["Kynaeth"] = 2,
-							},
-							["serial"] = "Vehicle-0-3891-754-1053-45872-000052F265",
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 2.004645,
-							["boss_fight_component"] = true,
-							["monster"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1624437414,
-							["friendlyfire_total"] = 0,
-							["aID"] = "",
-							["nome"] = "Rohash",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									[86182] = {
+									[200166] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 2,
+										["n_max"] = 154761,
 										["targets"] = {
-											["Kynaeth"] = 2,
+											["Al'Akir"] = 154761,
 										},
-										["n_dmg"] = 2,
-										["n_min"] = 2,
+										["n_dmg"] = 154761,
+										["n_min"] = 154761,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 2,
+										["total"] = 154761,
 										["c_max"] = 0,
-										["id"] = 86182,
+										["id"] = 200166,
 										["r_dmg"] = 0,
+										["spellschool"] = 124,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
 										["c_min"] = 0,
-										["successful_casted"] = 1,
+										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
+									[317009] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 1192022,
+										["g_amt"] = 0,
+										["n_max"] = 298006,
+										["targets"] = {
+											["Al'Akir"] = 2086038,
+										},
+										["n_dmg"] = 894016,
+										["n_min"] = 298005,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 2086038,
+										["c_max"] = 596011,
+										["id"] = 317009,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 596011,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
 								},
+								["tipo"] = 2,
 							},
-							["total"] = 2.004645,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1624437368,
-							["damage_taken"] = 2231737.004645,
-							["start_time"] = 1624437413,
-							["delay"] = 1624437368,
 							["tipo"] = 1,
-						}, -- [2]
+							["last_dps"] = 568139.3407826601,
+							["start_time"] = 1626252821,
+							["delay"] = 0,
+							["damage_taken"] = 8.006688,
+						}, -- [1]
 						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.008982,
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.004554,
 							["damage_from"] = {
 								["Kynaeth"] = true,
 							},
 							["targets"] = {
-								["Kynaeth"] = 50,
+								["Kynaeth"] = 8,
 							},
-							["serial"] = "Vehicle-0-3891-754-1053-45871-000052F265",
+							["serial"] = "Creature-0-4240-754-738-46753-00006EA52F",
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["aID"] = "46753",
+							["dps_started"] = false,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 50.008982,
-							["boss_fight_component"] = true,
+							["total_without_pet"] = 8.004554,
+							["damage_taken"] = 4268999.004554,
 							["monster"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1624437414,
-							["friendlyfire_total"] = 0,
-							["aID"] = "",
-							["nome"] = "Nezir",
+							["total"] = 8.004554,
+							["friendlyfire"] = {
+							},
+							["last_event"] = 1626252824,
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 5,
+										["n_max"] = 8,
 										["targets"] = {
-											["Kynaeth"] = 9,
+											["Kynaeth"] = 8,
 										},
-										["n_dmg"] = 9,
-										["n_min"] = 4,
+										["n_dmg"] = 8,
+										["n_min"] = 8,
 										["g_dmg"] = 0,
 										["counter"] = 2,
-										["total"] = 9,
+										["total"] = 8,
 										["c_max"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
+										["DODGE"] = 1,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
@@ -1079,7 +272,412 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 2,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire_total"] = 0,
+							["end_time"] = 1626252828,
+							["nome"] = "Al'Akir",
+							["custom"] = 0,
+							["tipo"] = 1,
+							["last_dps"] = 0,
+							["start_time"] = 1626252822,
+							["delay"] = 0,
+							["on_hold"] = false,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 229,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 229,
+					["_ActorTable"] = {
+						{
+							["received"] = 0.004904,
+							["resource"] = 28.004904,
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["powertype"] = 1,
+							["classe"] = "DEMONHUNTER",
+							["passiveover"] = 0.004904,
+							["total"] = 0.004904,
+							["boss_fight_component"] = true,
+							["resource_type"] = 17,
+							["nome"] = "Kynaeth",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["spec"] = 577,
+							["flag_original"] = 1297,
+							["last_event"] = 1626252824,
+							["tipo"] = 3,
+							["alternatepower"] = 0.004904,
+							["aID"] = "1597-0E73BF0C",
+							["serial"] = "Player-1597-0E73BF0C",
+							["totalover"] = 0.004904,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 229,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[317009] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 7,
+										["id"] = 317009,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[1490] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 7,
+										["id"] = 1490,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[89750] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 0,
+										["id"] = 89750,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 20,
+							["aID"] = "1597-0E73BF0C",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[198013] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 2,
+										["id"] = 198013,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[90675] = {
+										["appliedamt"] = 0,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 0,
+										["id"] = 90675,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[335152] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 7,
+										["id"] = 335152,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[162264] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 7,
+										["id"] = 162264,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[258920] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 4,
+										["id"] = 258920,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 14,
+							["nome"] = "Kynaeth",
+							["boss_fight_component"] = true,
+							["spec"] = 577,
+							["grupo"] = true,
+							["spell_cast"] = {
+								[198013] = 1,
+								[162243] = 1,
+								[258920] = 1,
+							},
+							["classe"] = "DEMONHUNTER",
+							["buff_uptime_targets"] = {
+							},
+							["tipo"] = 4,
+							["pets"] = {
+							},
+							["last_event"] = 1626252828,
+							["serial"] = "Player-1597-0E73BF0C",
+							["debuff_uptime_targets"] = {
+							},
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 9,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["boss_debuff"] = true,
+							["monster"] = true,
+							["debuff_uptime"] = 1,
+							["spellschool"] = 8,
+							["nome"] = "Acid Rain",
+							["boss_fight_component"] = true,
+							["damage_spellid"] = 88301,
+							["debuff_uptime_targets"] = {
+								["Kynaeth"] = {
+									["uptime"] = 1,
+									["appliedamt"] = 0,
+									["activedamt"] = 0,
+									["actived"] = false,
+									["refreshamt"] = 0,
+								},
+							},
+							["last_event"] = 1626252824,
+							["damage_twin"] = "Al'Akir",
+							["tipo"] = 4,
+							["serial"] = "Creature-0-4240-754-738-46753-00006EA52F",
+							["aID"] = "46753",
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 229,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Kynaeth"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Kynaeth", -- [1]
+				},
+				["tempo_start"] = 1626252821,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 381,
+				["playing_solo"] = true,
+				["totals"] = {
+					4269007, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					4268999, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = false,
+				["instance_type"] = "raid",
+				["hasSaved"] = true,
+				["data_fim"] = "11:53:49",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Al'Akir",
+				["TotalElapsedCombatTime"] = 579942.8470000001,
+				["CombatEndedAt"] = 579942.8470000001,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Kynaeth"] = 4268999.006688,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 579937.5160000001,
+				["combat_id"] = 229,
+				["frags"] = {
+				},
+				["TimeData"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["is_boss"] = {
+					["diff_string"] = "25 Player (Heroic)",
+					["index"] = 1,
+					["zone"] = "Throne of the Four Winds",
+					["encounter"] = "Al'Akir",
+					["mapid"] = 754,
+					["try_number"] = 2,
+					["name"] = "Al'Akir",
+					["diff"] = 6,
+					["id"] = 1034,
+					["ej_instance_id"] = 74,
+					["killed"] = true,
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 579930.002,
+				["contra"] = "Al'Akir",
+				["data_inicio"] = "11:53:41",
+			}, -- [1]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 228,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.004099,
+							["damage_from"] = {
+								["Kynaeth"] = true,
+							},
+							["targets"] = {
+								["Kynaeth"] = 37,
+							},
+							["pets"] = {
+							},
+							["boss"] = true,
+							["serial"] = "Vehicle-0-4240-754-738-45871-00006EA52F",
+							["aID"] = "",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 37.004099,
+							["nome"] = "Nezir",
+							["friendlyfire"] = {
+							},
+							["monster"] = true,
+							["total"] = 37.004099,
+							["friendlyfire_total"] = 0,
+							["classe"] = "UNKNOW",
+							["boss_fight_component"] = true,
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Kynaeth"] = 0,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["DODGE"] = 2,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									}, -- [1]
@@ -1114,15 +712,15 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 8,
+										["n_max"] = 9,
 										["targets"] = {
-											["Kynaeth"] = 32,
+											["Kynaeth"] = 27,
 										},
-										["n_dmg"] = 32,
+										["n_dmg"] = 27,
 										["n_min"] = 1,
 										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 32,
+										["counter"] = 4,
+										["total"] = 27,
 										["c_max"] = 0,
 										["id"] = 93163,
 										["r_dmg"] = 0,
@@ -1133,7 +731,7 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 8,
+										["n_amt"] = 4,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
@@ -1170,14 +768,15 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 1,
 										["targets"] = {
+											["Kynaeth"] = 1,
 										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
+										["n_dmg"] = 1,
+										["n_min"] = 1,
 										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
+										["counter"] = 1,
+										["total"] = 1,
 										["c_max"] = 0,
 										["id"] = 84645,
 										["r_dmg"] = 0,
@@ -1187,78 +786,236 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 1,
 										["a_amt"] = 0,
-										["n_amt"] = 0,
+										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["total"] = 50.008982,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1624437385,
-							["damage_taken"] = 1274913.008982,
-							["start_time"] = 1624437399,
-							["delay"] = 1624437385,
+							["dps_started"] = false,
+							["end_time"] = 1626252782,
+							["on_hold"] = false,
 							["tipo"] = 1,
-						}, -- [3]
+							["custom"] = 0,
+							["last_event"] = 1626252767,
+							["last_dps"] = 0,
+							["start_time"] = 1626252772,
+							["delay"] = 1626252767,
+							["damage_taken"] = 1095788.004099,
+						}, -- [1]
 						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.002548,
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.005708,
 							["damage_from"] = {
-								["Kynaeth"] = true,
+								["Nezir"] = true,
+								["Anshal"] = true,
+								["Ice Patch"] = true,
 							},
 							["targets"] = {
-								["Kynaeth"] = 365,
+								["Nezir"] = 1095788,
+								["Anshal"] = 975570,
 							},
-							["serial"] = "Vehicle-0-3891-754-1053-45870-000052F265",
+							["colocacao"] = 1,
 							["pets"] = {
 							},
 							["on_hold"] = false,
-							["classe"] = "UNKNOW",
+							["nome"] = "Kynaeth",
+							["classe"] = "DEMONHUNTER",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 365.002548,
-							["boss_fight_component"] = true,
-							["monster"] = true,
+							["total_without_pet"] = 2071358.005708,
+							["friendlyfire"] = {
+							},
+							["aID"] = "1597-0E73BF0C",
 							["dps_started"] = false,
-							["end_time"] = 1624437414,
+							["total"] = 2071358.005708,
+							["serial"] = "Player-1597-0E73BF0C",
+							["end_time"] = 1626252782,
+							["boss_fight_component"] = true,
+							["spec"] = 577,
+							["grupo"] = true,
 							["friendlyfire_total"] = 0,
-							["aID"] = "",
-							["nome"] = "Anshal",
+							["last_event"] = 1626252782,
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
-										["c_amt"] = 1,
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 12,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 6,
+										["n_max"] = 110452,
 										["targets"] = {
-											["Kynaeth"] = 42,
+											["Nezir"] = 274987,
 										},
-										["n_dmg"] = 30,
-										["n_min"] = 4,
+										["n_dmg"] = 274987,
+										["n_min"] = 55040,
 										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 42,
-										["c_max"] = 12,
+										["counter"] = 4,
+										["total"] = 274987,
+										["c_max"] = 0,
 										["id"] = 1,
+										["r_dmg"] = 0,
+										["MISS"] = 1,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[337819] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 99961,
+										["targets"] = {
+											["Nezir"] = 99961,
+										},
+										["n_dmg"] = 99961,
+										["n_min"] = 99961,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 99961,
+										["c_max"] = 0,
+										["id"] = 337819,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["extra"] = {
 										},
 										["a_dmg"] = 0,
-										["c_min"] = 12,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 6,
+										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
-									}, -- [1]
+									},
+									[162243] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 187636,
+										["targets"] = {
+											["Nezir"] = 371981,
+										},
+										["n_dmg"] = 371981,
+										["n_min"] = 184345,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 371981,
+										["c_max"] = 0,
+										["id"] = 162243,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[199547] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 195605,
+										["targets"] = {
+											["Nezir"] = 348859,
+										},
+										["n_dmg"] = 348859,
+										["n_min"] = 153254,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 348859,
+										["c_max"] = 0,
+										["id"] = 199547,
+										["r_dmg"] = 0,
+										["spellschool"] = 127,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[198030] = {
+										["c_amt"] = 9,
+										["b_amt"] = 0,
+										["c_dmg"] = 975570,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Anshal"] = 975570,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 9,
+										["total"] = 975570,
+										["c_max"] = 111376,
+										["id"] = 198030,
+										["r_dmg"] = 0,
+										["spellschool"] = 124,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 105081,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["custom"] = 0,
+							["tipo"] = 1,
+							["last_dps"] = 85579.1607050772,
+							["start_time"] = 1626252776,
+							["delay"] = 1626252768,
+							["damage_taken"] = 372.005708,
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.004323,
+							["damage_from"] = {
+								["Kynaeth"] = true,
+							},
+							["targets"] = {
+								["Kynaeth"] = 334,
+							},
+							["serial"] = "Vehicle-0-4240-754-738-45870-00006EA530",
+							["pets"] = {
+							},
+							["total"] = 334.004323,
+							["dps_started"] = false,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 334.004323,
+							["damage_taken"] = 975570.004323,
+							["monster"] = true,
+							["end_time"] = 1626252782,
+							["on_hold"] = false,
+							["last_event"] = 1626252778,
+							["boss_fight_component"] = true,
+							["spells"] = {
+								["_ActorTable"] = {
 									[86205] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -1318,13 +1075,13 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 24,
 										["targets"] = {
-											["Kynaeth"] = 323,
+											["Kynaeth"] = 334,
 										},
-										["n_dmg"] = 323,
-										["n_min"] = 1,
+										["n_dmg"] = 334,
+										["n_min"] = 7,
 										["g_dmg"] = 0,
-										["counter"] = 26,
-										["total"] = 323,
+										["counter"] = 21,
+										["total"] = 334,
 										["c_max"] = 0,
 										["id"] = 93168,
 										["r_dmg"] = 0,
@@ -1335,63 +1092,63 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 26,
+										["n_amt"] = 21,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["total"] = 365.002548,
+							["aID"] = "",
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
+							["nome"] = "Anshal",
 							["custom"] = 0,
-							["last_event"] = 1624437413,
-							["damage_taken"] = 993483.0025480001,
-							["start_time"] = 1624437371,
-							["delay"] = 0,
 							["tipo"] = 1,
-						}, -- [4]
+							["last_dps"] = 0,
+							["start_time"] = 1626252758,
+							["delay"] = 0,
+							["friendlyfire_total"] = 0,
+						}, -- [3]
 						{
 							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.002229,
+							["totalabsorbed"] = 0.006106,
 							["damage_from"] = {
 							},
 							["targets"] = {
+								["Kynaeth"] = 1,
 							},
-							["total"] = 0.002229,
+							["serial"] = "Creature-0-4240-754-738-46186-00006EA5DD",
 							["pets"] = {
 							},
-							["friendlyfire"] = {
-							},
+							["aID"] = "46186",
+							["dps_started"] = false,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 0.002229,
-							["boss_fight_component"] = true,
+							["total_without_pet"] = 1.006106,
+							["damage_taken"] = 0.006106,
 							["monster"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1624437414,
+							["total"] = 1.006106,
 							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["nome"] = "Ice Patch",
+							["last_event"] = 1626252767,
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[86111] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 1,
 										["targets"] = {
-											["Kynaeth"] = 0,
+											["Kynaeth"] = 1,
 										},
-										["n_dmg"] = 0,
-										["n_min"] = 0,
+										["n_dmg"] = 1,
+										["n_min"] = 1,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 0,
+										["counter"] = 3,
+										["total"] = 1,
 										["c_max"] = 0,
 										["id"] = 86111,
 										["r_dmg"] = 0,
@@ -1403,116 +1160,47 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 0,
+										["n_amt"] = 1,
 										["b_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "46186",
-							["serial"] = "Creature-0-3891-754-1053-46186-000052F287",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1624437385,
-							["damage_taken"] = 0.002229,
-							["start_time"] = 1624437414,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [5]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.005313,
-							["total"] = 2.005313,
-							["damage_from"] = {
-								["Kynaeth"] = true,
-							},
-							["targets"] = {
-								["Kynaeth"] = 2,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["boss_fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 2.005313,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["end_time"] = 1624437414,
-							["friendlyfire_total"] = 0,
 							["friendlyfire"] = {
 							},
-							["nome"] = "Ravenous Creeper",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 1,
-										["targets"] = {
-											["Kynaeth"] = 2,
-										},
-										["n_dmg"] = 2,
-										["n_min"] = 1,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["a_dmg"] = 0,
-										["total"] = 2,
-										["c_max"] = 0,
-										["DODGE"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["MISS"] = 2,
-										["spellschool"] = 1,
-										["extra"] = {
-										},
-										["PARRY"] = 2,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-								},
-							},
-							["aID"] = "45812",
-							["serial"] = "Creature-0-3891-754-1053-45812-000052F29C",
-							["last_dps"] = 0,
+							["end_time"] = 1626252782,
+							["nome"] = "Ice Patch",
 							["custom"] = 0,
-							["last_event"] = 1624437412,
-							["damage_taken"] = 566091.005313,
-							["start_time"] = 1624437411,
-							["delay"] = 0,
 							["tipo"] = 1,
-						}, -- [6]
+							["last_dps"] = 0,
+							["start_time"] = 1626252780,
+							["delay"] = 1626252767,
+							["friendlyfire_total"] = 0,
+						}, -- [4]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.001392,
+							["totalabsorbed"] = 0.00624,
 							["damage_from"] = {
 							},
 							["targets"] = {
 							},
 							["pets"] = {
 							},
+							["dps_started"] = false,
+							["aID"] = "46753",
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 0.001392,
+							["total_without_pet"] = 0.00624,
+							["serial"] = "Creature-0-4240-754-738-46753-00006EA52F",
+							["monster"] = true,
+							["total"] = 0.00624,
+							["friendlyfire_total"] = 0,
 							["friendlyfire"] = {
 							},
-							["monster"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1624437440,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
 							["nome"] = "Al'Akir",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -1544,70 +1232,4216 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									}, -- [1]
 								},
+								["tipo"] = 2,
 							},
-							["aID"] = "46753",
-							["total"] = 0.001392,
-							["serial"] = "Creature-0-3891-754-1053-46753-000052F266",
+							["last_event"] = 1626252821,
+							["on_hold"] = false,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1624437440,
-							["damage_taken"] = 0.001392,
-							["start_time"] = 1624437440,
-							["delay"] = 0,
 							["tipo"] = 1,
-						}, -- [7]
+							["damage_taken"] = 0.00624,
+							["start_time"] = 1626252821,
+							["delay"] = 0,
+							["end_time"] = 1626252821,
+						}, -- [5]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 224,
 					["tipo"] = 3,
+					["combatId"] = 228,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 2600,
-							["totalabsorb"] = 0.001967,
+							["totalabsorb"] = 0.00108,
 							["last_hps"] = 0,
 							["targets_overheal"] = {
 							},
 							["targets"] = {
 							},
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-								},
-							},
+							["aID"] = "",
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
 							["healing_from"] = {
 							},
-							["aID"] = "",
-							["totalover"] = 0.001967,
-							["total_without_pet"] = 0.001967,
-							["end_time"] = 1624437414,
-							["totalover_without_pet"] = 0.001967,
 							["classe"] = "UNKNOW",
-							["total"] = 0.001967,
-							["boss_fight_component"] = true,
-							["heal_enemy_amt"] = 50608,
+							["totalover"] = 0.00108,
+							["total_without_pet"] = 0.00108,
+							["totalover_without_pet"] = 0.00108,
+							["start_time"] = 1626252782,
+							["healing_taken"] = 0.00108,
+							["total"] = 0.00108,
 							["nome"] = "[*] Soothing Breeze",
+							["heal_enemy_amt"] = 2857,
+							["boss_fight_component"] = true,
 							["targets_absorbs"] = {
 							},
-							["start_time"] = 1624437414,
-							["healing_taken"] = 0.001967,
+							["end_time"] = 1626252782,
+							["delay"] = 0,
 							["heal_enemy"] = {
-								[95218] = 50608,
+								[95218] = 2857,
 							},
-							["serial"] = "",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 3,
+							},
 							["custom"] = 0,
 							["tipo"] = 2,
 							["on_hold"] = false,
-							["totaldenied"] = 0.001967,
-							["delay"] = 0,
-							["last_event"] = 1624437414,
+							["totaldenied"] = 0.00108,
+							["serial"] = "",
+							["last_event"] = 1626252781,
 						}, -- [1]
 						{
 							["flag_original"] = 2632,
+							["healing_from"] = {
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "UNKNOW",
+							["totalover"] = 0.003283,
+							["total_without_pet"] = 0.003283,
+							["monster"] = true,
+							["total"] = 0.003283,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["on_hold"] = false,
+							["serial"] = "Vehicle-0-4240-754-738-45870-00006EA530",
+							["totalabsorb"] = 0.003283,
+							["last_hps"] = 0,
+							["targets"] = {
+							},
+							["totalover_without_pet"] = 0.003283,
+							["healing_taken"] = 0.003283,
+							["end_time"] = 1626252782,
 							["targets_overheal"] = {
+							},
+							["boss_fight_component"] = true,
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 3,
+							},
+							["nome"] = "Anshal",
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1626252782,
+							["custom"] = 0,
+							["last_event"] = 0,
+							["aID"] = "",
+							["totaldenied"] = 0.003283,
+							["delay"] = 0,
+							["tipo"] = 2,
+						}, -- [2]
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 228,
+					["_ActorTable"] = {
+						{
+							["received"] = 0.004878,
+							["resource"] = 59.00487800000001,
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["powertype"] = 1,
+							["classe"] = "DEMONHUNTER",
+							["passiveover"] = 0.004878,
+							["total"] = 0.004878,
+							["boss_fight_component"] = true,
+							["resource_type"] = 17,
+							["nome"] = "Kynaeth",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["spec"] = 577,
+							["flag_original"] = 1297,
+							["last_event"] = 1626252766,
+							["tipo"] = 3,
+							["alternatepower"] = 0.004878,
+							["aID"] = "1597-0E73BF0C",
+							["serial"] = "Player-1597-0E73BF0C",
+							["totalover"] = 0.004878,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 228,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[1490] = {
+										["appliedamt"] = 2,
+										["targets"] = {
+										},
+										["activedamt"] = 2,
+										["uptime"] = 19,
+										["id"] = 1490,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 29,
+							["aID"] = "1597-0E73BF0C",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[162264] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 1,
+										["id"] = 162264,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[84610] = {
+										["activedamt"] = 1,
+										["id"] = 84610,
+										["targets"] = {
+										},
+										["actived_at"] = 1626252758,
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["counter"] = 0,
+									},
+									[335152] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 24,
+										["id"] = 335152,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[198013] = {
+										["activedamt"] = 1,
+										["id"] = 198013,
+										["targets"] = {
+										},
+										["actived_at"] = 1626252781,
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["counter"] = 0,
+									},
+									[258920] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 4,
+										["id"] = 258920,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 19,
+							["nome"] = "Kynaeth",
+							["boss_fight_component"] = true,
+							["spec"] = 577,
+							["grupo"] = true,
+							["spell_cast"] = {
+								[162794] = 1,
+								[195072] = 3,
+								[162243] = 2,
+								[131347] = 1,
+								[185123] = 1,
+								[198013] = 1,
+							},
+							["classe"] = "DEMONHUNTER",
+							["buff_uptime_targets"] = {
+							},
+							["tipo"] = 4,
+							["pets"] = {
+							},
+							["last_event"] = 1626252782,
+							["serial"] = "Player-1597-0E73BF0C",
+							["debuff_uptime_targets"] = {
+							},
+						}, -- [1]
+						{
+							["flag_original"] = 2632,
+							["aID"] = "",
+							["nome"] = "Nezir",
+							["boss_fight_component"] = true,
+							["pets"] = {
+							},
+							["spell_cast"] = {
+								[86082] = 1,
+								[84645] = 1,
+							},
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Vehicle-0-4240-754-738-45871-00006EA52F",
+							["monster"] = true,
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 9,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["boss_debuff"] = true,
+							["monster"] = true,
+							["debuff_uptime"] = 3,
+							["spellschool"] = 16,
+							["nome"] = "Permafrost",
+							["boss_fight_component"] = true,
+							["damage_spellid"] = 86082,
+							["debuff_uptime_targets"] = {
+								["Kynaeth"] = {
+									["uptime"] = 3,
+									["appliedamt"] = 0,
+									["activedamt"] = 0,
+									["actived"] = false,
+									["refreshamt"] = 0,
+								},
+							},
+							["tipo"] = 4,
+							["damage_twin"] = "Nezir",
+							["last_event"] = 1626252763,
+							["serial"] = "Vehicle-0-4240-754-738-45871-00006EA52F",
+							["aID"] = "",
+						}, -- [3]
+						{
+							["flag_original"] = 2632,
+							["aID"] = "",
+							["nome"] = "Anshal",
+							["boss_fight_component"] = true,
+							["pets"] = {
+							},
+							["spell_cast"] = {
+								[86205] = 1,
+								[85422] = 1,
+							},
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["classe"] = "UNKNOW",
+							["serial"] = "Vehicle-0-4240-754-738-45870-00006EA530",
+							["monster"] = true,
+						}, -- [4]
+						{
+							["flag_original"] = 68168,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 9,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["boss_debuff"] = true,
+							["monster"] = true,
+							["debuff_uptime"] = 0,
+							["spellschool"] = 16,
+							["nome"] = "Wind Chill",
+							["boss_fight_component"] = true,
+							["damage_spellid"] = 84645,
+							["debuff_uptime_targets"] = {
+								["Kynaeth"] = {
+									["uptime"] = 0,
+									["actived_at"] = 1626252767,
+									["appliedamt"] = 0,
+									["activedamt"] = 1,
+									["actived"] = true,
+									["refreshamt"] = 0,
+								},
+							},
+							["tipo"] = 4,
+							["damage_twin"] = "Nezir",
+							["last_event"] = 1626252767,
+							["serial"] = "Vehicle-0-4240-754-738-45871-00006EA52F",
+							["aID"] = "",
+						}, -- [5]
+						{
+							["flag_original"] = 2632,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 9,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["boss_debuff"] = true,
+							["monster"] = true,
+							["debuff_uptime"] = 0,
+							["spellschool"] = 32,
+							["nome"] = "Withering Winds",
+							["boss_fight_component"] = true,
+							["damage_spellid"] = 85576,
+							["debuff_uptime_targets"] = {
+								["Kynaeth"] = {
+									["uptime"] = 0,
+									["actived_at"] = 1626252778,
+									["appliedamt"] = 0,
+									["activedamt"] = -1,
+									["actived"] = false,
+									["refreshamt"] = 0,
+								},
+							},
+							["tipo"] = 4,
+							["damage_twin"] = "Anshal",
+							["last_event"] = 1626252778,
+							["serial"] = "Vehicle-0-4240-754-738-45870-00006EA530",
+							["aID"] = "",
+						}, -- [6]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 228,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Kynaeth"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Kynaeth", -- [1]
+				},
+				["CombatStartedAt"] = 579930.032,
+				["tempo_start"] = 1626252758,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 378,
+				["playing_solo"] = true,
+				["totals"] = {
+					2071730, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = false,
+				["instance_type"] = "raid",
+				["hasSaved"] = true,
+				["data_fim"] = "11:53:03",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Conclave of Wind",
+				["TotalElapsedCombatTime"] = 9.482000000076368,
+				["CombatEndedAt"] = 579906.045,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "11:52:38",
+				["end_time"] = 579891.51,
+				["combat_id"] = 228,
+				["overall_added"] = true,
+				["resincked"] = true,
+				["contra"] = "Nezir",
+				["totals_grupo"] = {
+					2071358, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags"] = {
+				},
+				["is_boss"] = {
+					["bossimage"] = 522256,
+					["diff_string"] = "25 Player (Heroic)",
+					["index"] = 1,
+					["zone"] = "Throne of the Four Winds",
+					["encounter"] = "Conclave of Wind",
+					["mapid"] = 754,
+					["try_number"] = 1,
+					["name"] = "Conclave of Wind",
+					["diff"] = 6,
+					["id"] = 1035,
+					["ej_instance_id"] = 74,
+					["killed"] = true,
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Kynaeth"] = 2181402.006961,
+						}, -- [1]
+					},
+				},
+				["CombatSkillCache"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 579855.165,
+				["TimeData"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+			}, -- [2]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 227,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.001014,
+							["damage_from"] = {
+								["Al'Akir"] = true,
+							},
+							["targets"] = {
+								["Al'Akir"] = 4360338,
+							},
+							["colocacao"] = 1,
+							["pets"] = {
+							},
+							["damage_taken"] = 17.001014,
+							["end_time"] = 1626006842,
+							["aID"] = "1597-0E73BF0C",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 4360338.001014,
+							["friendlyfire"] = {
+							},
+							["classe"] = "DEMONHUNTER",
+							["dps_started"] = false,
+							["total"] = 4360338.001014,
+							["serial"] = "Player-1597-0E73BF0C",
+							["friendlyfire_total"] = 0,
+							["boss_fight_component"] = true,
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 214552,
+										["g_amt"] = 0,
+										["n_max"] = 55038,
+										["targets"] = {
+											["Al'Akir"] = 322353,
+										},
+										["n_dmg"] = 107801,
+										["n_min"] = 52763,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 322353,
+										["c_max"] = 214552,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 214552,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									}, -- [1]
+									[201428] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 253077,
+										["targets"] = {
+											["Al'Akir"] = 449413,
+										},
+										["n_dmg"] = 449413,
+										["n_min"] = 196336,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 449413,
+										["c_max"] = 0,
+										["id"] = 201428,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["extra"] = {
+										},
+										["spellschool"] = 127,
+									},
+									[162243] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 183715,
+										["targets"] = {
+											["Al'Akir"] = 183715,
+										},
+										["n_dmg"] = 183715,
+										["n_min"] = 183715,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 183715,
+										["c_max"] = 0,
+										["id"] = 162243,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[258921] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 190034,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Al'Akir"] = 190034,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 190034,
+										["c_max"] = 190034,
+										["id"] = 258921,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 190034,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 4,
+									},
+									[258922] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 35518,
+										["targets"] = {
+											["Al'Akir"] = 35518,
+										},
+										["n_dmg"] = 35518,
+										["n_min"] = 35518,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 35518,
+										["c_max"] = 0,
+										["id"] = 258922,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 4,
+									},
+									[198030] = {
+										["c_amt"] = 14,
+										["b_amt"] = 0,
+										["c_dmg"] = 1540575,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Al'Akir"] = 1540575,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 14,
+										["total"] = 1540575,
+										["c_max"] = 112100,
+										["id"] = 198030,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 107342,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 124,
+									},
+									[200166] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 148702,
+										["targets"] = {
+											["Al'Akir"] = 148702,
+										},
+										["n_dmg"] = 148702,
+										["n_min"] = 148702,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 148702,
+										["c_max"] = 0,
+										["id"] = 200166,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 124,
+									},
+									[317009] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 596011,
+										["g_amt"] = 0,
+										["n_max"] = 298006,
+										["targets"] = {
+											["Al'Akir"] = 1490028,
+										},
+										["n_dmg"] = 894017,
+										["n_min"] = 298005,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 1490028,
+										["c_max"] = 596011,
+										["id"] = 317009,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 596011,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["extra"] = {
+										},
+										["spellschool"] = 32,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["tipo"] = 1,
+							["nome"] = "Kynaeth",
+							["spec"] = 577,
+							["custom"] = 0,
+							["last_event"] = 1626006842,
+							["last_dps"] = 724549.3521148484,
+							["start_time"] = 1626006836,
+							["delay"] = 0,
+							["on_hold"] = false,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.001958,
+							["damage_from"] = {
+								["Kynaeth"] = true,
+							},
+							["targets"] = {
+								["Kynaeth"] = 17,
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["total"] = 17.001958,
+							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 17.001958,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1626006842,
+							["last_dps"] = 0,
+							["tipo"] = 1,
+							["boss_fight_component"] = true,
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 9,
+										["targets"] = {
+											["Kynaeth"] = 17,
+										},
+										["n_dmg"] = 17,
+										["n_min"] = 8,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 17,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["nome"] = "Al'Akir",
+							["damage_taken"] = 4360338.001958,
+							["monster"] = true,
+							["custom"] = 0,
+							["last_event"] = 1626006839,
+							["on_hold"] = false,
+							["start_time"] = 1626006837,
+							["serial"] = "Creature-0-4256-754-28609-46753-00006AE4A1",
+							["aID"] = "46753",
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 227,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 227,
+					["_ActorTable"] = {
+						{
+							["received"] = 0.001061,
+							["resource"] = 53.001061,
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["powertype"] = 1,
+							["classe"] = "DEMONHUNTER",
+							["passiveover"] = 0.001061,
+							["total"] = 0.001061,
+							["nome"] = "Kynaeth",
+							["totalover"] = 0.001061,
+							["boss_fight_component"] = true,
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["aID"] = "1597-0E73BF0C",
+							["alternatepower"] = 0.001061,
+							["tipo"] = 3,
+							["last_event"] = 1626006840,
+							["flag_original"] = 1297,
+							["spec"] = 577,
+							["serial"] = "Player-1597-0E73BF0C",
+							["resource_type"] = 17,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 227,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[317009] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 317009,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[1490] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 1490,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[89750] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 89750,
+										["uptime"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 17,
+							["aID"] = "1597-0E73BF0C",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[186406] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 186406,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[198013] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 198013,
+										["uptime"] = 2,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[84610] = {
+										["appliedamt"] = 0,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 0,
+										["id"] = 84610,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[258920] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 258920,
+										["uptime"] = 3,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[335152] = {
+										["appliedamt"] = 0,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 0,
+										["id"] = 335152,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[162264] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 162264,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[90675] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 90675,
+										["uptime"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 12,
+							["debuff_uptime_targets"] = {
+							},
+							["nome"] = "Kynaeth",
+							["spec"] = 577,
+							["grupo"] = true,
+							["spell_cast"] = {
+								[198013] = 1,
+								[162243] = 1,
+								[258920] = 1,
+								[201427] = 1,
+							},
+							["classe"] = "DEMONHUNTER",
+							["last_event"] = 1626252742,
+							["tipo"] = 4,
+							["pets"] = {
+							},
+							["buff_uptime_targets"] = {
+							},
+							["serial"] = "Player-1597-0E73BF0C",
+							["boss_fight_component"] = true,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 9,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["boss_debuff"] = true,
+							["monster"] = true,
+							["debuff_uptime"] = 1,
+							["spellschool"] = 8,
+							["nome"] = "Acid Rain",
+							["aID"] = "46753",
+							["serial"] = "Creature-0-4256-754-28609-46753-00006AE4A1",
+							["tipo"] = 4,
+							["last_event"] = 1626006841,
+							["damage_twin"] = "Al'Akir",
+							["debuff_uptime_targets"] = {
+								["Kynaeth"] = {
+									["uptime"] = 1,
+									["refreshamt"] = 0,
+									["activedamt"] = 0,
+									["actived"] = false,
+									["appliedamt"] = 0,
+								},
+							},
+							["damage_spellid"] = 88301,
+							["boss_fight_component"] = true,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 227,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Kynaeth"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Kynaeth", -- [1]
+				},
+				["CombatStartedAt"] = 579854.3420000001,
+				["tempo_start"] = 1626006836,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					4360355, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = false,
+				["instance_type"] = "raid",
+				["hasSaved"] = true,
+				["data_fim"] = "11:52:23",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Al'Akir",
+				["TotalElapsedCombatTime"] = 6.092000000062399,
+				["CombatEndedAt"] = 579851.4,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "15:33:56",
+				["end_time"] = 579851.4,
+				["combat_id"] = 227,
+				["overall_added"] = false,
+				["contra"] = "Al'Akir",
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+				},
+				["is_boss"] = {
+					["diff_string"] = "25 Player (Heroic)",
+					["index"] = 1,
+					["zone"] = "Throne of the Four Winds",
+					["encounter"] = "Al'Akir",
+					["mapid"] = 754,
+					["try_number"] = 1,
+					["name"] = "Al'Akir",
+					["diff"] = 6,
+					["ej_instance_id"] = 74,
+					["id"] = 1034,
+					["killed"] = true,
+				},
+				["totals_grupo"] = {
+					4360338, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["CombatSkillCache"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Kynaeth"] = 4360338.001014,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["start_time"] = 333943.723,
+				["TimeData"] = {
+				},
+				["combat_counter"] = 376,
+			}, -- [3]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 227,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.001014,
+							["damage_from"] = {
+								["Al'Akir"] = true,
+							},
+							["targets"] = {
+								["Al'Akir"] = 4360338,
+							},
+							["colocacao"] = 1,
+							["pets"] = {
+							},
+							["damage_taken"] = 17.001014,
+							["end_time"] = 1626006842,
+							["aID"] = "1597-0E73BF0C",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 4360338.001014,
+							["friendlyfire"] = {
+							},
+							["classe"] = "DEMONHUNTER",
+							["dps_started"] = false,
+							["total"] = 4360338.001014,
+							["serial"] = "Player-1597-0E73BF0C",
+							["friendlyfire_total"] = 0,
+							["boss_fight_component"] = true,
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 214552,
+										["g_amt"] = 0,
+										["n_max"] = 55038,
+										["targets"] = {
+											["Al'Akir"] = 322353,
+										},
+										["n_dmg"] = 107801,
+										["n_min"] = 52763,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 322353,
+										["c_max"] = 214552,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 214552,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									}, -- [1]
+									[201428] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 253077,
+										["targets"] = {
+											["Al'Akir"] = 449413,
+										},
+										["n_dmg"] = 449413,
+										["n_min"] = 196336,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 449413,
+										["c_max"] = 0,
+										["id"] = 201428,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["extra"] = {
+										},
+										["spellschool"] = 127,
+									},
+									[162243] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 183715,
+										["targets"] = {
+											["Al'Akir"] = 183715,
+										},
+										["n_dmg"] = 183715,
+										["n_min"] = 183715,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 183715,
+										["c_max"] = 0,
+										["id"] = 162243,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[258921] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 190034,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Al'Akir"] = 190034,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 190034,
+										["c_max"] = 190034,
+										["id"] = 258921,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 190034,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 4,
+									},
+									[258922] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 35518,
+										["targets"] = {
+											["Al'Akir"] = 35518,
+										},
+										["n_dmg"] = 35518,
+										["n_min"] = 35518,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 35518,
+										["c_max"] = 0,
+										["id"] = 258922,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 4,
+									},
+									[198030] = {
+										["c_amt"] = 14,
+										["b_amt"] = 0,
+										["c_dmg"] = 1540575,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Al'Akir"] = 1540575,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 14,
+										["total"] = 1540575,
+										["c_max"] = 112100,
+										["id"] = 198030,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 107342,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 124,
+									},
+									[200166] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 148702,
+										["targets"] = {
+											["Al'Akir"] = 148702,
+										},
+										["n_dmg"] = 148702,
+										["n_min"] = 148702,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 148702,
+										["c_max"] = 0,
+										["id"] = 200166,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 124,
+									},
+									[317009] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 596011,
+										["g_amt"] = 0,
+										["n_max"] = 298006,
+										["targets"] = {
+											["Al'Akir"] = 1490028,
+										},
+										["n_dmg"] = 894017,
+										["n_min"] = 298005,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 1490028,
+										["c_max"] = 596011,
+										["id"] = 317009,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 596011,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["extra"] = {
+										},
+										["spellschool"] = 32,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["tipo"] = 1,
+							["nome"] = "Kynaeth",
+							["spec"] = 577,
+							["custom"] = 0,
+							["last_event"] = 1626006842,
+							["last_dps"] = 724549.3521148484,
+							["start_time"] = 1626006836,
+							["delay"] = 0,
+							["on_hold"] = false,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.001958,
+							["damage_from"] = {
+								["Kynaeth"] = true,
+							},
+							["targets"] = {
+								["Kynaeth"] = 17,
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["total"] = 17.001958,
+							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 17.001958,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1626006842,
+							["last_dps"] = 0,
+							["tipo"] = 1,
+							["boss_fight_component"] = true,
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 9,
+										["targets"] = {
+											["Kynaeth"] = 17,
+										},
+										["n_dmg"] = 17,
+										["n_min"] = 8,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 17,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["nome"] = "Al'Akir",
+							["damage_taken"] = 4360338.001958,
+							["monster"] = true,
+							["custom"] = 0,
+							["last_event"] = 1626006839,
+							["on_hold"] = false,
+							["start_time"] = 1626006837,
+							["serial"] = "Creature-0-4256-754-28609-46753-00006AE4A1",
+							["aID"] = "46753",
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 227,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 227,
+					["_ActorTable"] = {
+						{
+							["received"] = 0.001061,
+							["resource"] = 53.001061,
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["powertype"] = 1,
+							["classe"] = "DEMONHUNTER",
+							["passiveover"] = 0.001061,
+							["total"] = 0.001061,
+							["nome"] = "Kynaeth",
+							["totalover"] = 0.001061,
+							["boss_fight_component"] = true,
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["aID"] = "1597-0E73BF0C",
+							["alternatepower"] = 0.001061,
+							["tipo"] = 3,
+							["last_event"] = 1626006840,
+							["flag_original"] = 1297,
+							["spec"] = 577,
+							["serial"] = "Player-1597-0E73BF0C",
+							["resource_type"] = 17,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 227,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[317009] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 317009,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[1490] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 1490,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[89750] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 89750,
+										["uptime"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 17,
+							["aID"] = "1597-0E73BF0C",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[186406] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 186406,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[198013] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 198013,
+										["uptime"] = 2,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[84610] = {
+										["appliedamt"] = 0,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 0,
+										["id"] = 84610,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[258920] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 258920,
+										["uptime"] = 3,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[335152] = {
+										["appliedamt"] = 0,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 0,
+										["id"] = 335152,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[162264] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 162264,
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[90675] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 90675,
+										["uptime"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 12,
+							["debuff_uptime_targets"] = {
+							},
+							["nome"] = "Kynaeth",
+							["spec"] = 577,
+							["grupo"] = true,
+							["spell_cast"] = {
+								[198013] = 1,
+								[162243] = 1,
+								[258920] = 1,
+								[201427] = 1,
+							},
+							["classe"] = "DEMONHUNTER",
+							["last_event"] = 1626252742,
+							["tipo"] = 4,
+							["pets"] = {
+							},
+							["buff_uptime_targets"] = {
+							},
+							["serial"] = "Player-1597-0E73BF0C",
+							["boss_fight_component"] = true,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 9,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["boss_debuff"] = true,
+							["monster"] = true,
+							["debuff_uptime"] = 1,
+							["spellschool"] = 8,
+							["nome"] = "Acid Rain",
+							["aID"] = "46753",
+							["serial"] = "Creature-0-4256-754-28609-46753-00006AE4A1",
+							["tipo"] = 4,
+							["last_event"] = 1626006841,
+							["damage_twin"] = "Al'Akir",
+							["debuff_uptime_targets"] = {
+								["Kynaeth"] = {
+									["uptime"] = 1,
+									["refreshamt"] = 0,
+									["activedamt"] = 0,
+									["actived"] = false,
+									["appliedamt"] = 0,
+								},
+							},
+							["damage_spellid"] = 88301,
+							["boss_fight_component"] = true,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 227,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Kynaeth"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Kynaeth", -- [1]
+				},
+				["CombatStartedAt"] = 579854.3420000001,
+				["tempo_start"] = 1626006836,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					4360355, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = false,
+				["instance_type"] = "raid",
+				["hasSaved"] = true,
+				["data_fim"] = "11:52:23",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Al'Akir",
+				["TotalElapsedCombatTime"] = 6.092000000062399,
+				["CombatEndedAt"] = 579851.4,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "15:33:56",
+				["end_time"] = 579851.4,
+				["combat_id"] = 227,
+				["overall_added"] = false,
+				["contra"] = "Al'Akir",
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+				},
+				["is_boss"] = {
+					["diff_string"] = "25 Player (Heroic)",
+					["index"] = 1,
+					["zone"] = "Throne of the Four Winds",
+					["encounter"] = "Al'Akir",
+					["mapid"] = 754,
+					["try_number"] = 1,
+					["name"] = "Al'Akir",
+					["diff"] = 6,
+					["ej_instance_id"] = 74,
+					["id"] = 1034,
+					["killed"] = true,
+				},
+				["totals_grupo"] = {
+					4360338, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["CombatSkillCache"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Kynaeth"] = 4360338.001014,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["start_time"] = 333943.723,
+				["TimeData"] = {
+				},
+				["combat_counter"] = 376,
+			}, -- [4]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 225,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.00337,
+							["damage_from"] = {
+								["Nezir"] = true,
+								["Anshal"] = true,
+							},
+							["targets"] = {
+								["Nezir"] = 1320927,
+							},
+							["pets"] = {
+							},
+							["aID"] = "1597-0E73BF0C",
+							["spec"] = 577,
+							["classe"] = "DEMONHUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1320927.00337,
+							["on_hold"] = false,
+							["serial"] = "Player-1597-0E73BF0C",
+							["dps_started"] = false,
+							["end_time"] = 1626006775,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Kynaeth",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 113242,
+										["targets"] = {
+											["Nezir"] = 329105,
+										},
+										["n_dmg"] = 329105,
+										["n_min"] = 52739,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 329105,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[258922] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 36436,
+										["targets"] = {
+											["Nezir"] = 71861,
+										},
+										["n_dmg"] = 71861,
+										["n_min"] = 35425,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 71861,
+										["c_max"] = 0,
+										["id"] = 258922,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[258921] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 93783,
+										["targets"] = {
+											["Nezir"] = 93783,
+										},
+										["n_dmg"] = 93783,
+										["n_min"] = 93783,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 93783,
+										["c_max"] = 0,
+										["id"] = 258921,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[201428] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 252110,
+										["targets"] = {
+											["Nezir"] = 454625,
+										},
+										["n_dmg"] = 454625,
+										["n_min"] = 202515,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 454625,
+										["c_max"] = 0,
+										["id"] = 201428,
+										["r_dmg"] = 0,
+										["spellschool"] = 127,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[162243] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 186100,
+										["targets"] = {
+											["Nezir"] = 371553,
+										},
+										["n_dmg"] = 371553,
+										["n_min"] = 185453,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 371553,
+										["c_max"] = 0,
+										["id"] = 162243,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["total"] = 1320927.00337,
+							["last_event"] = 1626006766,
+							["colocacao"] = 1,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 201.00337,
+							["start_time"] = 1626006762,
+							["delay"] = 0,
+							["last_dps"] = 101073.3034948424,
+						}, -- [1]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.005239,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Kynaeth"] = 185,
+							},
+							["serial"] = "Vehicle-0-4256-754-28609-45870-00006AE4A1",
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 185.005239,
+							["dps_started"] = false,
+							["monster"] = true,
+							["end_time"] = 1626006775,
+							["friendlyfire"] = {
+							},
+							["last_event"] = 1626006774,
+							["nome"] = "Anshal",
+							["spells"] = {
+								["_ActorTable"] = {
+									[93168] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 19,
+										["targets"] = {
+											["Kynaeth"] = 185,
+										},
+										["n_dmg"] = 185,
+										["n_min"] = 9,
+										["g_dmg"] = 0,
+										["counter"] = 13,
+										["total"] = 185,
+										["c_max"] = 0,
+										["id"] = 93168,
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 13,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[86205] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 86205,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["total"] = 185.005239,
+							["damage_taken"] = 0.005239,
+							["on_hold"] = false,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["last_dps"] = 0,
+							["start_time"] = 1626006762,
+							["delay"] = 0,
+							["aID"] = "",
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.004642,
+							["damage_from"] = {
+								["Kynaeth"] = true,
+							},
+							["targets"] = {
+								["Kynaeth"] = 16,
+							},
+							["serial"] = "Vehicle-0-4256-754-28609-45871-00006AE4A1",
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 16.004642,
+							["dps_started"] = false,
+							["monster"] = true,
+							["end_time"] = 1626006775,
+							["friendlyfire"] = {
+							},
+							["last_event"] = 1626006765,
+							["nome"] = "Nezir",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 4,
+										["targets"] = {
+											["Kynaeth"] = 4,
+										},
+										["n_dmg"] = 4,
+										["n_min"] = 4,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 4,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[86082] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 86082,
+										["r_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[86081] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 4,
+										["targets"] = {
+											["Kynaeth"] = 12,
+										},
+										["n_dmg"] = 12,
+										["n_min"] = 4,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 12,
+										["c_max"] = 0,
+										["id"] = 86081,
+										["r_dmg"] = 0,
+										["spellschool"] = 16,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["total"] = 16.004642,
+							["damage_taken"] = 1320927.004642,
+							["on_hold"] = false,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["last_dps"] = 0,
+							["start_time"] = 1626006771,
+							["delay"] = 1626006765,
+							["aID"] = "",
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 225,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 225,
+					["_ActorTable"] = {
+						{
+							["received"] = 0.006223,
+							["resource"] = 48.006223,
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["powertype"] = 1,
+							["classe"] = "DEMONHUNTER",
+							["passiveover"] = 0.006223,
+							["total"] = 0.006223,
+							["resource_type"] = 17,
+							["nome"] = "Kynaeth",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["spec"] = 577,
+							["flag_original"] = 1297,
+							["alternatepower"] = 0.006223,
+							["last_event"] = 1626006764,
+							["tipo"] = 3,
+							["aID"] = "1597-0E73BF0C",
+							["serial"] = "Player-1597-0E73BF0C",
+							["totalover"] = 0.006223,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 225,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["nome"] = "Kynaeth",
+							["buff_uptime_targets"] = {
+							},
+							["spec"] = 577,
+							["grupo"] = true,
+							["buff_uptime"] = 0,
+							["pets"] = {
+							},
+							["spell_cast"] = {
+								[201427] = 1,
+								[195072] = 1,
+								[258920] = 1,
+								[131347] = 1,
+								[162243] = 2,
+							},
+							["classe"] = "DEMONHUNTER",
+							["tipo"] = 4,
+							["aID"] = "1597-0E73BF0C",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[186406] = {
+										["activedamt"] = 1,
+										["id"] = 186406,
+										["targets"] = {
+										},
+										["actived_at"] = 1626006762,
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["counter"] = 0,
+									},
+									[162264] = {
+										["activedamt"] = 1,
+										["id"] = 162264,
+										["targets"] = {
+										},
+										["actived_at"] = 1626006762,
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["counter"] = 0,
+									},
+									[258920] = {
+										["activedamt"] = 1,
+										["id"] = 258920,
+										["targets"] = {
+										},
+										["actived_at"] = 1626006764,
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["counter"] = 0,
+									},
+									[131347] = {
+										["activedamt"] = 1,
+										["id"] = 131347,
+										["targets"] = {
+										},
+										["actived_at"] = 1626006762,
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["serial"] = "Player-1597-0E73BF0C",
+							["last_event"] = 1626006764,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["classe"] = "UNKNOW",
+							["nome"] = "Nezir",
+							["fight_component"] = true,
+							["pets"] = {
+							},
+							["spell_cast"] = {
+								[86082] = 1,
+							},
+							["last_event"] = 0,
+							["tipo"] = 4,
+							["aID"] = "",
+							["serial"] = "Vehicle-0-4256-754-28609-45871-00006AE4A1",
+							["monster"] = true,
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["classe"] = "UNKNOW",
+							["nome"] = "Anshal",
+							["fight_component"] = true,
+							["pets"] = {
+							},
+							["spell_cast"] = {
+								[86205] = 1,
+							},
+							["last_event"] = 0,
+							["tipo"] = 4,
+							["aID"] = "",
+							["serial"] = "Vehicle-0-4256-754-28609-45870-00006AE4A1",
+							["monster"] = true,
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 225,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Kynaeth"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Kynaeth", -- [1]
+				},
+				["CombatStartedAt"] = 333897.784,
+				["overall_added"] = false,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					1321128, -- [1]
+					-0.006555, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					1320927, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = false,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "15:32:56",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Anshal",
+				["TotalElapsedCombatTime"] = 333883.16,
+				["CombatEndedAt"] = 333883.16,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "15:32:43",
+				["end_time"] = 333883.16,
+				["combat_id"] = 225,
+				["spells_cast_timeline"] = {
+				},
+				["TimeData"] = {
+				},
+				["frags"] = {
+				},
+				["tempo_start"] = 1626006762,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Kynaeth"] = 1320927.00337,
+						}, -- [1]
+					},
+				},
+				["CombatSkillCache"] = {
+				},
+				["combat_counter"] = 372,
+				["start_time"] = 333870.091,
+				["contra"] = "Anshal",
+				["player_last_events"] = {
+				},
+			}, -- [5]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 225,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.004853,
+							["damage_from"] = {
+								["Al'Akir"] = true,
+							},
+							["targets"] = {
+								["Al'Akir"] = 4564060,
+							},
+							["colocacao"] = 1,
+							["pets"] = {
+								"Frothing Pustule <Kynaeth>", -- [1]
+							},
+							["damage_taken"] = 16.004853,
+							["total"] = 4564060.004853,
+							["classe"] = "DEMONHUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 4373028.004853,
+							["friendlyfire"] = {
+							},
+							["aID"] = "1597-0E73BF0C",
+							["dps_started"] = false,
+							["end_time"] = 1624437447,
+							["serial"] = "Player-1597-0E73BF0C",
+							["friendlyfire_total"] = 0,
+							["nome"] = "Kynaeth",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 107223,
+										["targets"] = {
+											["Al'Akir"] = 107223,
+											["Nezir"] = 0,
+										},
+										["n_dmg"] = 107223,
+										["n_min"] = 107223,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 107223,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_dmg"] = 0,
+										["n_amt"] = 1,
+										["spellschool"] = 1,
+										["MISS"] = 5,
+									}, -- [1]
+									[162243] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 331401,
+										["g_amt"] = 0,
+										["n_max"] = 166140,
+										["targets"] = {
+											["Al'Akir"] = 497541,
+										},
+										["n_dmg"] = 166140,
+										["n_min"] = 166140,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 497541,
+										["c_max"] = 331401,
+										["id"] = 162243,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 331401,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[200166] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 155395,
+										["targets"] = {
+											["Al'Akir"] = 155395,
+										},
+										["n_dmg"] = 155395,
+										["n_min"] = 155395,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 155395,
+										["c_max"] = 0,
+										["id"] = 200166,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 124,
+									},
+									[317009] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 1192021,
+										["g_amt"] = 0,
+										["n_max"] = 298005,
+										["targets"] = {
+											["Al'Akir"] = 2086036,
+										},
+										["n_dmg"] = 894015,
+										["n_min"] = 298005,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 2086036,
+										["c_max"] = 596011,
+										["id"] = 317009,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 596010,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["extra"] = {
+										},
+										["spellschool"] = 32,
+									},
+									[198030] = {
+										["c_amt"] = 14,
+										["b_amt"] = 0,
+										["c_dmg"] = 1526833,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Al'Akir"] = 1526833,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 14,
+										["total"] = 1526833,
+										["c_max"] = 111643,
+										["id"] = 198030,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 106831,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 124,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["tipo"] = 1,
+							["boss_fight_component"] = true,
+							["spec"] = 577,
+							["custom"] = 0,
+							["last_event"] = 1626006762,
+							["last_dps"] = 45640600.04853,
+							["start_time"] = 1624437440,
+							["delay"] = 0,
+							["on_hold"] = false,
+						}, -- [1]
+						{
+							["flag_original"] = 8465,
+							["totalabsorbed"] = 0.006487,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Al'Akir"] = 191032,
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["last_dps"] = 0,
+							["aID"] = "175519",
+							["classe"] = "PET",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 191032.006487,
+							["total"] = 191032.006487,
+							["dps_started"] = false,
+							["end_time"] = 1624437447,
+							["on_hold"] = false,
+							["ownerName"] = "Kynaeth",
+							["nome"] = "Frothing Pustule <Kynaeth>",
+							["spells"] = {
+								["_ActorTable"] = {
+									[345495] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 95516,
+										["targets"] = {
+											["Al'Akir"] = 191032,
+										},
+										["n_dmg"] = 191032,
+										["n_min"] = 95516,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 191032,
+										["c_max"] = 0,
+										["id"] = 345495,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["extra"] = {
+										},
+										["spellschool"] = 8,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["tipo"] = 1,
+							["damage_taken"] = 0.006487,
+							["boss_fight_component"] = true,
+							["custom"] = 0,
+							["last_event"] = 1624437447,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1624437445,
+							["serial"] = "Creature-0-3891-754-1053-175519-000052F2C2",
+							["friendlyfire_total"] = 0,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.004276,
+							["damage_from"] = {
+								["Kynaeth"] = true,
+								["Frothing Pustule <Kynaeth>"] = true,
+							},
+							["targets"] = {
+								["Kynaeth"] = 16,
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["nome"] = "Al'Akir",
+							["friendlyfire_total"] = 0,
+							["aID"] = "46753",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 16.004276,
+							["dps_started"] = false,
+							["monster"] = true,
+							["end_time"] = 1624437447,
+							["friendlyfire"] = {
+							},
+							["tipo"] = 1,
+							["boss_fight_component"] = true,
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 8,
+										["targets"] = {
+											["Kynaeth"] = 16,
+										},
+										["n_dmg"] = 16,
+										["n_min"] = 8,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 16,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["total"] = 16.004276,
+							["damage_taken"] = 4564060.004276,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1624437444,
+							["on_hold"] = false,
+							["start_time"] = 1624437442,
+							["serial"] = "Creature-0-3891-754-1053-46753-000052F266",
+							["classe"] = "UNKNOW",
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 225,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 225,
+					["_ActorTable"] = {
+						{
+							["received"] = 0.006541,
+							["resource"] = 67.006541,
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["powertype"] = 1,
+							["classe"] = "DEMONHUNTER",
+							["passiveover"] = 0.006541,
+							["total"] = 0.006541,
+							["nome"] = "Kynaeth",
+							["totalover"] = 0.006541,
+							["boss_fight_component"] = true,
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["aID"] = "1597-0E73BF0C",
+							["alternatepower"] = 0.006541,
+							["tipo"] = 3,
+							["last_event"] = 1624437441,
+							["flag_original"] = 1297,
+							["spec"] = 577,
+							["serial"] = "Player-1597-0E73BF0C",
+							["resource_type"] = 17,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 225,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[317009] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 1,
+										["id"] = 317009,
+										["uptime"] = 7,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[1490] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 1490,
+										["uptime"] = 7,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[89750] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 89750,
+										["uptime"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 16,
+							["aID"] = "1597-0E73BF0C",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									[186406] = {
+										["appliedamt"] = 0,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 0,
+										["id"] = 186406,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[90675] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = 90675,
+										["uptime"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 0,
+									},
+									[84610] = {
+										["appliedamt"] = 0,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 0,
+										["id"] = 84610,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[186403] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 186403,
+										["uptime"] = 7,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[162264] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 162264,
+										["uptime"] = 7,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									[198013] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = 198013,
+										["uptime"] = 2,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 14,
+							["nome"] = "Kynaeth",
+							["boss_fight_component"] = true,
+							["spec"] = 577,
+							["grupo"] = true,
+							["spell_cast"] = {
+								[198013] = 1,
+								[317009] = 1,
+								[162243] = 2,
+							},
+							["classe"] = "DEMONHUNTER",
+							["tipo"] = 4,
+							["last_event"] = 1626006746,
+							["pets"] = {
+								"Frothing Pustule <Kynaeth>", -- [1]
+							},
+							["buff_uptime_targets"] = {
+							},
+							["serial"] = "Player-1597-0E73BF0C",
+							["debuff_uptime_targets"] = {
+							},
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 9,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["boss_debuff"] = true,
+							["monster"] = true,
+							["debuff_uptime"] = 4,
+							["spellschool"] = 8,
+							["nome"] = "Acid Rain",
+							["aID"] = "46753",
+							["serial"] = "Creature-0-3891-754-1053-46753-000052F266",
+							["last_event"] = 1624437446,
+							["tipo"] = 4,
+							["damage_twin"] = "Al'Akir",
+							["debuff_uptime_targets"] = {
+								["Kynaeth"] = {
+									["uptime"] = 4,
+									["refreshamt"] = 0,
+									["activedamt"] = 0,
+									["actived"] = false,
+									["appliedamt"] = 0,
+								},
+							},
+							["damage_spellid"] = 88301,
+							["boss_fight_component"] = true,
+						}, -- [2]
+						{
+							["flag_original"] = 8465,
+							["tipo"] = 4,
+							["ownerName"] = "Kynaeth",
+							["nome"] = "Frothing Pustule <Kynaeth>",
+							["pets"] = {
+							},
+							["last_event"] = 0,
+							["spell_cast"] = {
+								[345495] = 2,
+							},
+							["classe"] = "PET",
+							["aID"] = "175519",
+							["serial"] = "Creature-0-3891-754-1053-175519-000052F2C2",
+							["boss_fight_component"] = true,
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 225,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Kynaeth"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Kynaeth", -- [1]
+				},
+				["CombatStartedAt"] = 333855.968,
+				["tempo_start"] = 1624437440,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					4564076, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = false,
+				["instance_type"] = "raid",
+				["hasSaved"] = true,
+				["data_fim"] = "15:32:27",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Al'Akir",
+				["TotalElapsedCombatTime"] = 5.165999999968335,
+				["CombatEndedAt"] = 333854.25,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "11:37:20",
+				["end_time"] = 333854.25,
+				["combat_id"] = 225,
+				["overall_added"] = false,
+				["resincked"] = true,
+				["contra"] = "Al'Akir",
+				["frags"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["is_boss"] = {
+					["diff_string"] = "25 Player (Heroic)",
+					["index"] = 1,
+					["zone"] = "Throne of the Four Winds",
+					["encounter"] = "Al'Akir",
+					["mapid"] = 754,
+					["try_number"] = 1,
+					["name"] = "Al'Akir",
+					["diff"] = 6,
+					["ej_instance_id"] = 74,
+					["id"] = 1034,
+					["killed"] = true,
+				},
+				["totals_grupo"] = {
+					4373028, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["CombatSkillCache"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					{
+						3, -- [1]
+						5.824999999953434, -- [2]
+					}, -- [2]
+					["damage"] = {
+						{
+							["Kynaeth"] = 3761746.004853,
+						}, -- [1]
+						[3] = {
+							["Kynaeth"] = 802314,
+						},
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+						[3] = {
+						},
+					},
+					["damage_section"] = {
+					},
+				},
+				["start_time"] = 1100970.57,
+				["TimeData"] = {
+				},
+				["combat_counter"] = 370,
+			}, -- [6]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 224,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.005591,
+							["damage_from"] = {
+								["Nezir"] = true,
+								["Rohash"] = true,
+								["Anshal"] = true,
+								["Ravenous Creeper"] = true,
+							},
+							["targets"] = {
+								["Nezir"] = 1274913,
+								["Rohash"] = 2231737,
+								["Anshal"] = 993483,
+								["Ravenous Creeper"] = 566091,
+							},
+							["custom"] = 0,
+							["pets"] = {
+							},
+							["last_dps"] = 106810.2547981914,
+							["total"] = 5066224.005591,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 5066224.005591,
+							["damage_taken"] = 419.005591,
+							["classe"] = "DEMONHUNTER",
+							["dps_started"] = false,
+							["end_time"] = 1624437414,
+							["delay"] = 1624437387,
+							["aID"] = "1597-0E73BF0C",
+							["boss_fight_component"] = true,
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 320995,
+										["g_amt"] = 0,
+										["n_max"] = 112494,
+										["targets"] = {
+											["Nezir"] = 329991,
+											["Rohash"] = 162283,
+											["Anshal"] = 326717,
+										},
+										["n_dmg"] = 497996,
+										["n_min"] = 55416,
+										["g_dmg"] = 0,
+										["counter"] = 11,
+										["total"] = 818991,
+										["c_max"] = 214940,
+										["r_amt"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["b_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_amt"] = 0,
+										["PARRY"] = 1,
+										["c_min"] = 106055,
+										["successful_casted"] = 0,
+										["extra"] = {
+										},
+										["n_amt"] = 5,
+										["MISS"] = 3,
+										["a_dmg"] = 0,
+									}, -- [1]
+									[162243] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 651302,
+										["g_amt"] = 0,
+										["n_max"] = 166292,
+										["targets"] = {
+											["Nezir"] = 643370,
+											["Rohash"] = 329629,
+											["Anshal"] = 328170,
+										},
+										["n_dmg"] = 649867,
+										["n_min"] = 159856,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 1301169,
+										["c_max"] = 328170,
+										["id"] = 162243,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 323132,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[317009] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 841963,
+										["g_amt"] = 0,
+										["n_max"] = 298005,
+										["targets"] = {
+											["Rohash"] = 1437973,
+										},
+										["n_dmg"] = 596010,
+										["n_min"] = 298005,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 1437973,
+										["c_max"] = 596011,
+										["id"] = 317009,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 245952,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["extra"] = {
+										},
+										["spellschool"] = 32,
+									},
+									[258921] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 95147,
+										["targets"] = {
+											["Nezir"] = 95147,
+										},
+										["n_dmg"] = 95147,
+										["n_min"] = 95147,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 95147,
+										["c_max"] = 0,
+										["id"] = 258921,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["extra"] = {
+										},
+										["spellschool"] = 4,
+									},
+									[192611] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 138673,
+										["targets"] = {
+											["Ravenous Creeper"] = 266206,
+											["Anshal"] = 138673,
+										},
+										["n_dmg"] = 404879,
+										["n_min"] = 132585,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 404879,
+										["c_max"] = 0,
+										["id"] = 192611,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["extra"] = {
+										},
+										["spellschool"] = 127,
+									},
+									[337819] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 199923,
+										["g_amt"] = 0,
+										["n_max"] = 99962,
+										["targets"] = {
+											["Nezir"] = 99961,
+											["Anshal"] = 199923,
+											["Ravenous Creeper"] = 299885,
+										},
+										["n_dmg"] = 399846,
+										["n_min"] = 99961,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 599769,
+										["c_max"] = 199923,
+										["id"] = 337819,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 199923,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									},
+									[200166] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 301852,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Rohash"] = 301852,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 301852,
+										["c_max"] = 301852,
+										["id"] = 200166,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 301852,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["extra"] = {
+										},
+										["spellschool"] = 124,
+									},
+									[258922] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 35918,
+										["targets"] = {
+											["Nezir"] = 106444,
+										},
+										["n_dmg"] = 106444,
+										["n_min"] = 35135,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 106444,
+										["c_max"] = 0,
+										["id"] = 258922,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["extra"] = {
+										},
+										["spellschool"] = 4,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["tipo"] = 1,
+							["nome"] = "Kynaeth",
+							["spec"] = 577,
+							["colocacao"] = 1,
+							["last_event"] = 1624437414,
+							["on_hold"] = false,
+							["start_time"] = 1624437377,
+							["serial"] = "Player-1597-0E73BF0C",
+							["friendlyfire"] = {
+							},
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.004645,
+							["damage_from"] = {
+								["Kynaeth"] = true,
+							},
+							["targets"] = {
+								["Kynaeth"] = 2,
+							},
+							["delay"] = 1624437368,
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["classe"] = "UNKNOW",
+							["aID"] = "",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 2.004645,
+							["dps_started"] = false,
+							["monster"] = true,
+							["total"] = 2.004645,
+							["last_dps"] = 0,
+							["tipo"] = 1,
+							["nome"] = "Rohash",
+							["spells"] = {
+								["_ActorTable"] = {
+									[86182] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 2,
+										["targets"] = {
+											["Kynaeth"] = 2,
+										},
+										["n_dmg"] = 2,
+										["n_min"] = 2,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 2,
+										["c_max"] = 0,
+										["id"] = 86182,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["extra"] = {
+										},
+									},
+								},
+								["tipo"] = 2,
+							},
+							["end_time"] = 1624437414,
+							["friendlyfire"] = {
+							},
+							["boss_fight_component"] = true,
+							["custom"] = 0,
+							["last_event"] = 1624437368,
+							["damage_taken"] = 2231737.004645,
+							["start_time"] = 1624437413,
+							["serial"] = "Vehicle-0-3891-754-1053-45872-000052F265",
+							["friendlyfire_total"] = 0,
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.008982,
+							["damage_from"] = {
+								["Kynaeth"] = true,
+							},
+							["targets"] = {
+								["Kynaeth"] = 50,
+							},
+							["delay"] = 1624437385,
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["classe"] = "UNKNOW",
+							["aID"] = "",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 50.008982,
+							["dps_started"] = false,
+							["monster"] = true,
+							["total"] = 50.008982,
+							["last_dps"] = 0,
+							["tipo"] = 1,
+							["nome"] = "Nezir",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 5,
+										["targets"] = {
+											["Kynaeth"] = 9,
+										},
+										["n_dmg"] = 9,
+										["n_min"] = 4,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 9,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									}, -- [1]
+									[86082] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 86082,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["extra"] = {
+										},
+									},
+									[93163] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 8,
+										["targets"] = {
+											["Kynaeth"] = 32,
+										},
+										["n_dmg"] = 32,
+										["n_min"] = 1,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 32,
+										["c_max"] = 0,
+										["id"] = 93163,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 8,
+										["extra"] = {
+										},
+										["spellschool"] = 16,
+									},
+									[86081] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3,
+										["targets"] = {
+											["Kynaeth"] = 9,
+										},
+										["n_dmg"] = 9,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 9,
+										["c_max"] = 0,
+										["id"] = 86081,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 3,
+										["extra"] = {
+										},
+										["spellschool"] = 16,
+									},
+									[84645] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 84645,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["extra"] = {
+										},
+									},
+								},
+								["tipo"] = 2,
+							},
+							["end_time"] = 1624437414,
+							["friendlyfire"] = {
+							},
+							["boss_fight_component"] = true,
+							["custom"] = 0,
+							["last_event"] = 1624437385,
+							["damage_taken"] = 1274913.008982,
+							["start_time"] = 1624437399,
+							["serial"] = "Vehicle-0-3891-754-1053-45871-000052F265",
+							["friendlyfire_total"] = 0,
+						}, -- [3]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.002548,
+							["damage_from"] = {
+								["Kynaeth"] = true,
+							},
+							["targets"] = {
+								["Kynaeth"] = 365,
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["classe"] = "UNKNOW",
+							["aID"] = "",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 365.002548,
+							["dps_started"] = false,
+							["monster"] = true,
+							["total"] = 365.002548,
+							["last_dps"] = 0,
+							["tipo"] = 1,
+							["nome"] = "Anshal",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 12,
+										["g_amt"] = 0,
+										["n_max"] = 6,
+										["targets"] = {
+											["Kynaeth"] = 42,
+										},
+										["n_dmg"] = 30,
+										["n_min"] = 4,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 42,
+										["c_max"] = 12,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 12,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 6,
+										["extra"] = {
+										},
+										["spellschool"] = 1,
+									}, -- [1]
+									[86205] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 86205,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["extra"] = {
+										},
+									},
+									[93168] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 24,
+										["targets"] = {
+											["Kynaeth"] = 323,
+										},
+										["n_dmg"] = 323,
+										["n_min"] = 1,
+										["g_dmg"] = 0,
+										["counter"] = 26,
+										["total"] = 323,
+										["c_max"] = 0,
+										["id"] = 93168,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 26,
+										["extra"] = {
+										},
+										["spellschool"] = 32,
+									},
+									[85422] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 85422,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["extra"] = {
+										},
+									},
+								},
+								["tipo"] = 2,
+							},
+							["end_time"] = 1624437414,
+							["friendlyfire"] = {
+							},
+							["boss_fight_component"] = true,
+							["custom"] = 0,
+							["last_event"] = 1624437413,
+							["damage_taken"] = 993483.0025480001,
+							["start_time"] = 1624437371,
+							["serial"] = "Vehicle-0-3891-754-1053-45870-000052F265",
+							["friendlyfire_total"] = 0,
+						}, -- [4]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.002229,
+							["damage_from"] = {
+							},
+							["targets"] = {
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.002229,
+							["aID"] = "46186",
+							["monster"] = true,
+							["total"] = 0.002229,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["nome"] = "Ice Patch",
+							["spells"] = {
+								["_ActorTable"] = {
+									[86111] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Kynaeth"] = 0,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 86111,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_dmg"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 16,
+										["MISS"] = 2,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["damage_taken"] = 0.002229,
+							["end_time"] = 1624437414,
+							["boss_fight_component"] = true,
+							["custom"] = 0,
+							["last_event"] = 1624437385,
+							["last_dps"] = 0,
+							["start_time"] = 1624437414,
+							["serial"] = "Creature-0-3891-754-1053-46186-000052F287",
+							["classe"] = "UNKNOW",
+						}, -- [5]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.005313,
+							["damage_from"] = {
+								["Kynaeth"] = true,
+							},
+							["targets"] = {
+								["Kynaeth"] = 2,
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["aID"] = "45812",
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 2.005313,
+							["monster"] = true,
+							["dps_started"] = false,
+							["total"] = 2.005313,
+							["last_dps"] = 0,
+							["tipo"] = 1,
+							["nome"] = "Ravenous Creeper",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 1,
+										["targets"] = {
+											["Kynaeth"] = 2,
+										},
+										["n_dmg"] = 2,
+										["n_min"] = 1,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["r_amt"] = 0,
+										["total"] = 2,
+										["c_max"] = 0,
+										["b_dmg"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["MISS"] = 2,
+										["a_amt"] = 0,
+										["extra"] = {
+										},
+										["PARRY"] = 2,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["spellschool"] = 1,
+										["n_amt"] = 2,
+										["DODGE"] = 1,
+										["a_dmg"] = 0,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["damage_taken"] = 566091.005313,
+							["end_time"] = 1624437414,
+							["boss_fight_component"] = true,
+							["custom"] = 0,
+							["last_event"] = 1624437412,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1624437411,
+							["serial"] = "Creature-0-3891-754-1053-45812-000052F29C",
+							["friendlyfire_total"] = 0,
+						}, -- [6]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.001392,
+							["damage_from"] = {
+							},
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["aID"] = "46753",
+							["total"] = 0.001392,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.001392,
+							["delay"] = 0,
+							["monster"] = true,
+							["end_time"] = 1624437440,
+							["dps_started"] = false,
+							["damage_taken"] = 0.001392,
+							["nome"] = "Al'Akir",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Kynaeth"] = 0,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["b_dmg"] = 0,
+										["extra"] = {
+										},
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_dmg"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["IMMUNE"] = 1,
+									}, -- [1]
+								},
+								["tipo"] = 2,
+							},
+							["tipo"] = 1,
+							["last_dps"] = 0,
+							["on_hold"] = false,
+							["custom"] = 0,
+							["last_event"] = 1624437440,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1624437440,
+							["serial"] = "Creature-0-3891-754-1053-46753-000052F266",
+							["friendlyfire_total"] = 0,
+						}, -- [7]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 224,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 2600,
+							["totalabsorb"] = 0.001967,
+							["last_hps"] = 0,
+							["healing_from"] = {
+							},
+							["targets"] = {
+							},
+							["aID"] = "",
+							["pets"] = {
+							},
+							["totalover_without_pet"] = 0.001967,
+							["targets_overheal"] = {
+							},
+							["healing_taken"] = 0.001967,
+							["totalover"] = 0.001967,
+							["total_without_pet"] = 0.001967,
+							["iniciar_hps"] = false,
+							["totaldenied"] = 0.001967,
+							["classe"] = "UNKNOW",
+							["end_time"] = 1624437414,
+							["heal_enemy_amt"] = 50608,
+							["total"] = 0.001967,
+							["boss_fight_component"] = true,
+							["targets_absorbs"] = {
+							},
+							["last_event"] = 1624437414,
+							["nome"] = "[*] Soothing Breeze",
+							["heal_enemy"] = {
+								[95218] = 50608,
+							},
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 3,
+							},
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["start_time"] = 1624437414,
+							["serial"] = "",
+							["delay"] = 0,
+						}, -- [1]
+						{
+							["flag_original"] = 2632,
+							["healing_from"] = {
 							},
 							["pets"] = {
 							},
@@ -1630,29 +5464,29 @@ _detalhes_database = {
 							["totalover_without_pet"] = 0.006837,
 							["healing_taken"] = 0.006837,
 							["end_time"] = 1624437414,
-							["boss_fight_component"] = true,
+							["aID"] = "",
 							["nome"] = "Anshal",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 3,
 							},
-							["healing_from"] = {
+							["targets_overheal"] = {
 							},
-							["start_time"] = 1624437414,
-							["aID"] = "",
-							["custom"] = 0,
-							["tipo"] = 2,
+							["boss_fight_component"] = true,
 							["classe"] = "UNKNOW",
-							["totaldenied"] = 0.006837,
-							["delay"] = 0,
+							["custom"] = 0,
 							["last_event"] = 0,
+							["totaldenied"] = 0.006837,
+							["start_time"] = 1624437414,
+							["delay"] = 0,
+							["tipo"] = 2,
 						}, -- [2]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 224,
 					["tipo"] = 7,
+					["combatId"] = 224,
 					["_ActorTable"] = {
 						{
 							["received"] = 0.004045,
@@ -1665,74 +5499,73 @@ _detalhes_database = {
 							["classe"] = "DEMONHUNTER",
 							["passiveover"] = 0.004045,
 							["total"] = 0.004045,
-							["boss_fight_component"] = true,
-							["resource_type"] = 17,
 							["nome"] = "Kynaeth",
+							["totalover"] = 0.004045,
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["spec"] = 577,
-							["flag_original"] = 1297,
-							["alternatepower"] = 0.004045,
-							["last_event"] = 1624437414,
 							["aID"] = "1597-0E73BF0C",
+							["alternatepower"] = 0.004045,
 							["tipo"] = 3,
+							["last_event"] = 1624437414,
+							["flag_original"] = 1297,
+							["spec"] = 577,
 							["serial"] = "Player-1597-0E73BF0C",
-							["totalover"] = 0.004045,
+							["resource_type"] = 17,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 224,
 					["tipo"] = 9,
+					["combatId"] = 224,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[1490] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 3,
+										["refreshamt"] = 0,
 										["id"] = 1490,
+										["uptime"] = 48,
 										["targets"] = {
 										},
-										["uptime"] = 48,
 										["appliedamt"] = 3,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[317009] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 0,
+										["refreshamt"] = 0,
 										["id"] = 317009,
+										["uptime"] = 8,
 										["targets"] = {
 										},
-										["uptime"] = 8,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 90,
 							["aID"] = "1597-0E73BF0C",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									[186403] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 186403,
+										["uptime"] = 48,
 										["targets"] = {
 										},
-										["uptime"] = 48,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[84610] = {
 										["activedamt"] = 1,
@@ -1741,38 +5574,39 @@ _detalhes_database = {
 										},
 										["actived_at"] = 1624437366,
 										["uptime"] = 0,
-										["appliedamt"] = 1,
+										["counter"] = 0,
 										["refreshamt"] = 0,
 										["actived"] = true,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 									[258920] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 258920,
+										["uptime"] = 12,
 										["targets"] = {
 										},
-										["uptime"] = 12,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									[162264] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = 162264,
+										["uptime"] = 30,
 										["targets"] = {
 										},
-										["uptime"] = 30,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 56,
-							["boss_fight_component"] = true,
 							["nome"] = "Kynaeth",
+							["boss_fight_component"] = true,
 							["spec"] = 577,
 							["grupo"] = true,
 							["spell_cast"] = {
@@ -1782,39 +5616,39 @@ _detalhes_database = {
 								[185123] = 3,
 								[258920] = 1,
 							},
-							["debuff_uptime_targets"] = {
-							},
-							["buff_uptime_targets"] = {
-							},
+							["classe"] = "DEMONHUNTER",
+							["tipo"] = 4,
 							["last_event"] = 1624437414,
 							["pets"] = {
 							},
-							["classe"] = "DEMONHUNTER",
+							["buff_uptime_targets"] = {
+							},
 							["serial"] = "Player-1597-0E73BF0C",
-							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["classe"] = "UNKNOW",
+							["last_event"] = 0,
 							["nome"] = "Rohash",
-							["boss_fight_component"] = true,
+							["monster"] = true,
 							["pets"] = {
 							},
 							["spell_cast"] = {
 								[86182] = 1,
 							},
-							["monster"] = true,
-							["tipo"] = 4,
 							["aID"] = "",
+							["classe"] = "UNKNOW",
+							["tipo"] = 4,
 							["serial"] = "Vehicle-0-3891-754-1053-45872-000052F265",
-							["last_event"] = 0,
+							["boss_fight_component"] = true,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 9,
 							},
 							["pets"] = {
 							},
@@ -1824,29 +5658,29 @@ _detalhes_database = {
 							["debuff_uptime"] = 45,
 							["spellschool"] = 8,
 							["nome"] = "Slicing Gale",
-							["boss_fight_component"] = true,
-							["debuff_uptime_targets"] = {
-								["Kynaeth"] = {
-									["uptime"] = 45,
-									["appliedamt"] = 0,
-									["activedamt"] = 0,
-									["actived"] = false,
-									["refreshamt"] = 0,
-								},
-							},
-							["damage_spellid"] = 86182,
-							["last_event"] = 1624437413,
-							["damage_twin"] = "Rohash",
 							["aID"] = "",
 							["serial"] = "Vehicle-0-3891-754-1053-45872-000052F265",
 							["tipo"] = 4,
+							["last_event"] = 1624437413,
+							["damage_twin"] = "Rohash",
+							["debuff_uptime_targets"] = {
+								["Kynaeth"] = {
+									["uptime"] = 45,
+									["refreshamt"] = 0,
+									["activedamt"] = 0,
+									["actived"] = false,
+									["appliedamt"] = 0,
+								},
+							},
+							["damage_spellid"] = 86182,
+							["boss_fight_component"] = true,
 						}, -- [3]
 						{
 							["flag_original"] = 2632,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 9,
 							},
 							["pets"] = {
 							},
@@ -1856,46 +5690,46 @@ _detalhes_database = {
 							["debuff_uptime"] = 26,
 							["spellschool"] = 32,
 							["nome"] = "Withering Winds",
-							["boss_fight_component"] = true,
-							["debuff_uptime_targets"] = {
-								["Kynaeth"] = {
-									["uptime"] = 26,
-									["appliedamt"] = 0,
-									["activedamt"] = 0,
-									["actived"] = false,
-									["refreshamt"] = 0,
-								},
-							},
-							["damage_spellid"] = 85576,
-							["last_event"] = 1624437396,
-							["damage_twin"] = "Anshal",
 							["aID"] = "",
 							["serial"] = "Vehicle-0-3891-754-1053-45870-000052F265",
 							["tipo"] = 4,
+							["last_event"] = 1624437396,
+							["damage_twin"] = "Anshal",
+							["debuff_uptime_targets"] = {
+								["Kynaeth"] = {
+									["uptime"] = 26,
+									["refreshamt"] = 0,
+									["activedamt"] = 0,
+									["actived"] = false,
+									["appliedamt"] = 0,
+								},
+							},
+							["damage_spellid"] = 85576,
+							["boss_fight_component"] = true,
 						}, -- [4]
 						{
 							["flag_original"] = 68168,
-							["classe"] = "UNKNOW",
+							["last_event"] = 0,
 							["nome"] = "Nezir",
-							["boss_fight_component"] = true,
+							["monster"] = true,
 							["pets"] = {
 							},
 							["spell_cast"] = {
 								[84645] = 1,
 								[86082] = 1,
 							},
-							["monster"] = true,
-							["tipo"] = 4,
 							["aID"] = "",
+							["classe"] = "UNKNOW",
+							["tipo"] = 4,
 							["serial"] = "Vehicle-0-3891-754-1053-45871-000052F265",
-							["last_event"] = 0,
+							["boss_fight_component"] = true,
 						}, -- [5]
 						{
 							["flag_original"] = 68168,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 9,
 							},
 							["pets"] = {
 							},
@@ -1905,45 +5739,45 @@ _detalhes_database = {
 							["debuff_uptime"] = 3,
 							["spellschool"] = 16,
 							["nome"] = "Permafrost",
-							["boss_fight_component"] = true,
-							["debuff_uptime_targets"] = {
-								["Kynaeth"] = {
-									["uptime"] = 3,
-									["appliedamt"] = 0,
-									["activedamt"] = 0,
-									["actived"] = false,
-									["refreshamt"] = 0,
-								},
-							},
-							["damage_spellid"] = 86082,
-							["last_event"] = 1624437382,
-							["damage_twin"] = "Nezir",
 							["aID"] = "",
 							["serial"] = "Vehicle-0-3891-754-1053-45871-000052F265",
 							["tipo"] = 4,
+							["last_event"] = 1624437382,
+							["damage_twin"] = "Nezir",
+							["debuff_uptime_targets"] = {
+								["Kynaeth"] = {
+									["uptime"] = 3,
+									["refreshamt"] = 0,
+									["activedamt"] = 0,
+									["actived"] = false,
+									["appliedamt"] = 0,
+								},
+							},
+							["damage_spellid"] = 86082,
+							["boss_fight_component"] = true,
 						}, -- [6]
 						{
 							["flag_original"] = 2632,
-							["classe"] = "UNKNOW",
+							["last_event"] = 0,
 							["nome"] = "Anshal",
-							["boss_fight_component"] = true,
+							["monster"] = true,
 							["pets"] = {
 							},
 							["spell_cast"] = {
 								[86205] = 1,
 								[85422] = 1,
 							},
-							["monster"] = true,
-							["tipo"] = 4,
 							["aID"] = "",
+							["classe"] = "UNKNOW",
+							["tipo"] = 4,
 							["serial"] = "Vehicle-0-3891-754-1053-45870-000052F265",
-							["last_event"] = 0,
+							["boss_fight_component"] = true,
 						}, -- [7]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 224,
 					["tipo"] = 2,
+					["combatId"] = 224,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -1968,26 +5802,27 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
 				["player_last_events"] = {
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "raid",
+				["hasSaved"] = true,
 				["data_fim"] = "11:36:54",
 				["cleu_timeline"] = {
 				},
@@ -2001,9 +5836,10 @@ _detalhes_database = {
 				["data_inicio"] = "11:36:07",
 				["end_time"] = 1100944.675,
 				["combat_id"] = 224,
-				["overall_added"] = true,
 				["cleu_events"] = {
 					["n"] = 1,
+				},
+				["TimeData"] = {
 				},
 				["totals_grupo"] = {
 					5066224, -- [1]
@@ -2012,18 +5848,18 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
 				["frags"] = {
@@ -2038,15 +5874,24 @@ _detalhes_database = {
 					["try_number"] = 1,
 					["name"] = "Conclave of Wind",
 					["diff"] = 6,
-					["id"] = 1035,
 					["ej_instance_id"] = 74,
+					["id"] = 1035,
 					["killed"] = true,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["CombatSkillCache"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Kynaeth"] = 5066224.005591,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -2055,21 +5900,11 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Kynaeth"] = 5066224.005591,
-						}, -- [1]
-					},
-				},
-				["CombatSkillCache"] = {
-				},
-				["spells_cast_timeline"] = {
 				},
 				["start_time"] = 1100897.219,
 				["contra"] = "Rohash",
-				["TimeData"] = {
-				},
-			}, -- [2]
+				["overall_added"] = false,
+			}, -- [7]
 		},
 	},
 	["ocd_tracker"] = {
@@ -2086,7 +5921,7 @@ _detalhes_database = {
 		["pos"] = {
 		},
 	},
-	["last_version"] = "9.0.58637",
+	["last_version"] = "9.1.08722",
 	["SoloTablesSaved"] = {
 		["Mode"] = 1,
 	},
@@ -2100,7 +5935,7 @@ _detalhes_database = {
 	},
 	["on_death_menu"] = true,
 	["nick_tag_cache"] = {
-		["nextreset"] = 1625733069,
+		["nextreset"] = 1627302604,
 		["last_version"] = 14,
 	},
 	["last_instance_id"] = 754,
@@ -2111,7 +5946,7 @@ _detalhes_database = {
 		["custom"] = "",
 		["next"] = "",
 	},
-	["last_instance_time"] = 1624437353,
+	["last_instance_time"] = 1626726956,
 	["active_profile"] = "Crètz-Sylvanas",
 	["last_realversion"] = 145,
 	["ignore_nicktag"] = false,
@@ -2157,15 +5992,15 @@ _detalhes_database = {
 			["tank_block_size"] = 150,
 			["bar_height"] = 24,
 			["tank_block_texture"] = "Details Serenity",
+			["show_inc_bars"] = true,
+			["tank_block_height"] = 40,
+			["tank_block_powerbar_size_height"] = 10,
 			["tank_block_color"] = {
 				0.24705882, -- [1]
 				0.0039215, -- [2]
 				0, -- [3]
 				0.8, -- [4]
 			},
-			["show_inc_bars"] = true,
-			["tank_block_powerbar_size_height"] = 10,
-			["tank_block_height"] = 40,
 		},
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 			["enabled"] = true,
@@ -2175,11 +6010,11 @@ _detalhes_database = {
 			["last_section_selected"] = "main",
 			["author"] = "Details! Team",
 			["window_scale"] = 1,
-			["encounter_timers_dbm"] = {
-			},
+			["hide_on_combat"] = false,
 			["show_icon"] = 5,
 			["opened"] = 0,
-			["hide_on_combat"] = false,
+			["encounter_timers_dbm"] = {
+			},
 		},
 		["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
 			["use_square_mode"] = false,
@@ -2193,29 +6028,29 @@ _detalhes_database = {
 			},
 			["main_frame_size"] = {
 				300, -- [1]
-				500.0000305175781, -- [2]
+				500.0000610351563, -- [2]
 			},
 			["minimap"] = {
 				["minimapPos"] = 160,
 				["radius"] = 160,
 				["hide"] = false,
 			},
-			["arrow_anchor_y"] = 0,
+			["scale"] = 1,
 			["arrow_anchor_x"] = 0,
-			["main_frame_locked"] = false,
+			["row_height"] = 20,
 			["row_texture"] = "Details Serenity",
-			["row_color"] = {
-				0.1, -- [1]
-				0.1, -- [2]
-				0.1, -- [3]
-				0.4, -- [4]
+			["font_color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
-			["use_spark"] = true,
-			["author"] = "Details! Team",
+			["point"] = "CENTER",
+			["main_frame_strata"] = "LOW",
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["y"] = 0.000244140625,
+			["y"] = 0.000274658203125,
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -2223,42 +6058,44 @@ _detalhes_database = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["row_color"] = {
+				0.1, -- [1]
+				0.1, -- [2]
+				0.1, -- [3]
+				0.4, -- [4]
+			},
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
-			["font_size"] = 10,
+			["use_spark"] = true,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
 				["scale"] = 1,
 				["font_shadow"] = true,
-				["y"] = 0.000244140625,
+				["y"] = 0.000335693359375,
 				["x"] = 3.0517578125e-05,
-				["attribute_type"] = 1,
-				["update_speed"] = 0.05,
 				["size"] = 32,
+				["update_speed"] = 0.05,
+				["attribute_type"] = 1,
 			},
 			["x"] = 0,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
-			["point"] = "CENTER",
-			["font_color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["row_height"] = 20,
-			["scale"] = 1,
+			["font_size"] = 10,
+			["author"] = "Details! Team",
+			["main_frame_locked"] = false,
+			["arrow_anchor_y"] = 0,
 		},
-	},
-	["cached_roles"] = {
 	},
 	["announce_prepots"] = {
 		["enabled"] = false,
 		["channel"] = "SELF",
 		["reverse"] = false,
 	},
-	["last_day"] = "23",
+	["last_day"] = "19",
+	["announce_damagerecord"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
 	["last_encounter"] = "Al'Akir",
 	["mythic_dungeon_currentsaved"] = {
 		["dungeon_name"] = "",
@@ -2271,14 +6108,10 @@ _detalhes_database = {
 		["dungeon_zone_id"] = 0,
 		["previous_boss_killed_at"] = 0,
 	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
+	["combat_counter"] = 383,
+	["cached_talents"] = {
 	},
-	["character_data"] = {
-		["logons"] = 52,
-	},
-	["combat_id"] = 225,
+	["combat_id"] = 229,
 	["savedStyles"] = {
 	},
 	["local_instances_config"] = {
@@ -2297,16 +6130,17 @@ _detalhes_database = {
 				1, -- [5]
 			},
 			["snap"] = {
+				[3] = 2,
 			},
 			["segment"] = 0,
 			["mode"] = 2,
 			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -420.0001373291016,
-					["x"] = 829.50341796875,
-					["w"] = 254.9999237060547,
-					["h"] = 171.9999237060547,
+					["y"] = -409.9992828369141,
+					["x"] = 619.5001220703125,
+					["w"] = 226.9998474121094,
+					["h"] = 222.0000457763672,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -2319,7 +6153,10 @@ _detalhes_database = {
 		{
 			["modo"] = 2,
 			["sub_attribute"] = 1,
-			["horizontalSnap"] = true,
+			["horizontalSnap"] = false,
+			["verticalSnap"] = false,
+			["isLocked"] = true,
+			["is_open"] = true,
 			["sub_atributo_last"] = {
 				1, -- [1]
 				1, -- [2]
@@ -2327,8 +6164,6 @@ _detalhes_database = {
 				1, -- [4]
 				1, -- [5]
 			},
-			["is_open"] = true,
-			["isLocked"] = true,
 			["snap"] = {
 				1, -- [1]
 			},
@@ -2337,10 +6172,10 @@ _detalhes_database = {
 			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -412.9989013671875,
-					["x"] = 839.5,
-					["w"] = 240.9996948242188,
-					["h"] = 173.9998016357422,
+					["y"] = -409.9992828369141,
+					["x"] = 846.5001220703125,
+					["w"] = 226.9998474121094,
+					["h"] = 222.0000457763672,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -2363,230 +6198,50 @@ _detalhes_database = {
 			["tipo"] = 2,
 			["_ActorTable"] = {
 				{
-					["flag_original"] = 1297,
-					["totalabsorbed"] = 0.014546,
+					["flag_original"] = 2632,
+					["totalabsorbed"] = 0.007682,
 					["damage_from"] = {
-						["Nezir"] = true,
-						["Rohash"] = true,
-						["Anshal"] = true,
-						["Ravenous Creeper"] = true,
+						["Kynaeth"] = true,
 					},
 					["targets"] = {
-						["Nezir"] = 1274913,
-						["Rohash"] = 2231737,
-						["Anshal"] = 993483,
-						["Ravenous Creeper"] = 566091,
+						["Kynaeth"] = 37,
 					},
 					["pets"] = {
 					},
-					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
-					["classe"] = "DEMONHUNTER",
+					["boss"] = true,
+					["serial"] = "Vehicle-0-4240-754-738-45871-00006EA52F",
+					["aID"] = "",
 					["raid_targets"] = {
 					},
-					["total_without_pet"] = 5066224.014546,
-					["end_time"] = 1624437414,
+					["total_without_pet"] = 37.007682,
 					["boss_fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["dps_started"] = false,
-					["total"] = 5066224.014546,
-					["aID"] = "1597-0E73BF0C",
-					["last_event"] = 0,
-					["nome"] = "Kynaeth",
-					["spec"] = 577,
-					["grupo"] = true,
-					["on_hold"] = false,
+					["end_time"] = 1626252783,
+					["classe"] = "UNKNOW",
+					["friendlyfire_total"] = 0,
+					["nome"] = "Nezir",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
-								["c_amt"] = 2,
-								["b_amt"] = 0,
-								["c_dmg"] = 320995,
-								["g_amt"] = 0,
-								["n_max"] = 112494,
-								["targets"] = {
-									["Nezir"] = 329991,
-									["Rohash"] = 162283,
-									["Anshal"] = 326717,
-								},
-								["n_dmg"] = 497996,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 11,
-								["total"] = 818991,
-								["c_max"] = 214940,
-								["id"] = 1,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["MISS"] = 3,
-								["extra"] = {
-								},
-								["PARRY"] = 1,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 5,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							}, -- [1]
-							[162243] = {
-								["c_amt"] = 2,
-								["b_amt"] = 0,
-								["c_dmg"] = 651302,
-								["g_amt"] = 0,
-								["n_max"] = 166292,
-								["targets"] = {
-									["Nezir"] = 643370,
-									["Rohash"] = 329629,
-									["Anshal"] = 328170,
-								},
-								["n_dmg"] = 649867,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 6,
-								["total"] = 1301169,
-								["c_max"] = 328170,
-								["id"] = 162243,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 4,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[317009] = {
-								["c_amt"] = 2,
-								["b_amt"] = 0,
-								["c_dmg"] = 841963,
-								["g_amt"] = 0,
-								["n_max"] = 298005,
-								["targets"] = {
-									["Rohash"] = 1437973,
-								},
-								["n_dmg"] = 596010,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 4,
-								["total"] = 1437973,
-								["c_max"] = 596011,
-								["id"] = 317009,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 2,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[258921] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 95147,
-								["targets"] = {
-									["Nezir"] = 95147,
-								},
-								["n_dmg"] = 95147,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 1,
-								["total"] = 95147,
-								["c_max"] = 0,
-								["id"] = 258921,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 1,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[192611] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 138673,
-								["targets"] = {
-									["Ravenous Creeper"] = 266206,
-									["Anshal"] = 138673,
-								},
-								["n_dmg"] = 404879,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 3,
-								["total"] = 404879,
-								["c_max"] = 0,
-								["id"] = 192611,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 3,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[337819] = {
-								["c_amt"] = 1,
-								["b_amt"] = 0,
-								["c_dmg"] = 199923,
-								["g_amt"] = 0,
-								["n_max"] = 99962,
-								["targets"] = {
-									["Nezir"] = 99961,
-									["Anshal"] = 199923,
-									["Ravenous Creeper"] = 299885,
-								},
-								["n_dmg"] = 399846,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 5,
-								["total"] = 599769,
-								["c_max"] = 199923,
-								["id"] = 337819,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 4,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[200166] = {
-								["c_amt"] = 1,
-								["b_amt"] = 0,
-								["c_dmg"] = 301852,
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Rohash"] = 301852,
+									["Kynaeth"] = 0,
 								},
 								["n_dmg"] = 0,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 1,
-								["total"] = 301852,
-								["c_max"] = 301852,
-								["id"] = 200166,
+								["counter"] = 2,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
 								["r_dmg"] = 0,
+								["DODGE"] = 2,
 								["extra"] = {
 								},
 								["a_dmg"] = 0,
@@ -2594,164 +6249,6 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							[258922] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 35918,
-								["targets"] = {
-									["Nezir"] = 106444,
-								},
-								["n_dmg"] = 106444,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 3,
-								["total"] = 106444,
-								["c_max"] = 0,
-								["id"] = 258922,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 3,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-					},
-					["serial"] = "Player-1597-0E73BF0C",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 419.014546,
-					["start_time"] = 1624437374,
-					["delay"] = 0,
-					["last_dps"] = 0,
-				}, -- [1]
-				{
-					["flag_original"] = 68168,
-					["totalabsorbed"] = 0.012758,
-					["damage_from"] = {
-						["Kynaeth"] = true,
-					},
-					["targets"] = {
-						["Kynaeth"] = 2,
-					},
-					["dps_started"] = false,
-					["pets"] = {
-					},
-					["last_event"] = 0,
-					["aID"] = "",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 2.012758,
-					["on_hold"] = false,
-					["end_time"] = 1624437414,
-					["monster"] = true,
-					["total"] = 2.012758,
-					["boss_fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["nome"] = "Rohash",
-					["spells"] = {
-						["tipo"] = 2,
-						["_ActorTable"] = {
-							[86182] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 2,
-								["targets"] = {
-									["Kynaeth"] = 2,
-								},
-								["n_dmg"] = 2,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 1,
-								["total"] = 2,
-								["c_max"] = 0,
-								["id"] = 86182,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 1,
-								["a_amt"] = 0,
-								["n_amt"] = 1,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-					},
-					["friendlyfire"] = {
-					},
-					["friendlyfire_total"] = 0,
-					["serial"] = "Vehicle-0-3891-754-1053-45872-000052F265",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["last_dps"] = 0,
-					["start_time"] = 1624437410,
-					["delay"] = 0,
-					["damage_taken"] = 2231737.012758,
-				}, -- [2]
-				{
-					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.013576,
-					["damage_from"] = {
-						["Kynaeth"] = true,
-					},
-					["targets"] = {
-						["Kynaeth"] = 50,
-					},
-					["dps_started"] = false,
-					["pets"] = {
-					},
-					["last_event"] = 0,
-					["aID"] = "",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 50.013576,
-					["on_hold"] = false,
-					["end_time"] = 1624437414,
-					["monster"] = true,
-					["total"] = 50.013576,
-					["boss_fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["nome"] = "Nezir",
-					["spells"] = {
-						["tipo"] = 2,
-						["_ActorTable"] = {
-							{
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 5,
-								["targets"] = {
-									["Kynaeth"] = 9,
-								},
-								["n_dmg"] = 9,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 2,
-								["total"] = 9,
-								["c_max"] = 0,
-								["id"] = 1,
-								["r_dmg"] = 0,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 2,
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							}, -- [1]
@@ -2786,15 +6283,15 @@ _detalhes_database = {
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 8,
+								["n_max"] = 9,
 								["targets"] = {
-									["Kynaeth"] = 32,
+									["Kynaeth"] = 27,
 								},
-								["n_dmg"] = 32,
+								["n_dmg"] = 27,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 8,
-								["total"] = 32,
+								["counter"] = 4,
+								["total"] = 27,
 								["c_max"] = 0,
 								["id"] = 93163,
 								["r_dmg"] = 0,
@@ -2804,7 +6301,7 @@ _detalhes_database = {
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
-								["n_amt"] = 8,
+								["n_amt"] = 4,
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							},
@@ -2840,14 +6337,15 @@ _detalhes_database = {
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 0,
+								["n_max"] = 1,
 								["targets"] = {
+									["Kynaeth"] = 1,
 								},
-								["n_dmg"] = 0,
+								["n_dmg"] = 1,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
+								["counter"] = 1,
+								["total"] = 1,
 								["c_max"] = 0,
 								["id"] = 84645,
 								["r_dmg"] = 0,
@@ -2857,66 +6355,189 @@ _detalhes_database = {
 								["c_min"] = 0,
 								["successful_casted"] = 1,
 								["a_amt"] = 0,
-								["n_amt"] = 0,
+								["n_amt"] = 1,
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
-					["friendlyfire_total"] = 0,
-					["serial"] = "Vehicle-0-3891-754-1053-45871-000052F265",
+					["monster"] = true,
+					["total"] = 37.007682,
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["custom"] = 0,
 					["tipo"] = 1,
 					["last_dps"] = 0,
-					["start_time"] = 1624437396,
+					["start_time"] = 1626252770,
 					["delay"] = 0,
-					["damage_taken"] = 1274913.013576,
-				}, -- [3]
+					["damage_taken"] = 1095788.007682,
+				}, -- [1]
 				{
-					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.01118,
+					["flag_original"] = 1297,
+					["totalabsorbed"] = 0.01057,
 					["damage_from"] = {
-						["Kynaeth"] = true,
+						["Nezir"] = true,
+						["Anshal"] = true,
+						["Ice Patch"] = true,
 					},
 					["targets"] = {
-						["Kynaeth"] = 365,
+						["Nezir"] = 1095788,
+						["Rohash"] = 0,
+						["Al'Akir"] = 0,
+						["Anshal"] = 975570,
+						["Ravenous Creeper"] = 0,
 					},
-					["dps_started"] = false,
 					["pets"] = {
 					},
-					["last_event"] = 0,
-					["aID"] = "",
+					["end_time"] = 1626252783,
+					["spec"] = 577,
+					["classe"] = "DEMONHUNTER",
 					["raid_targets"] = {
 					},
-					["total_without_pet"] = 365.01118,
+					["total_without_pet"] = 2071358.01057,
 					["on_hold"] = false,
-					["end_time"] = 1624437414,
-					["monster"] = true,
-					["total"] = 365.01118,
-					["boss_fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["nome"] = "Anshal",
+					["serial"] = "Player-1597-0E73BF0C",
+					["dps_started"] = false,
+					["total"] = 2071358.01057,
+					["aID"] = "1597-0E73BF0C",
+					["friendlyfire"] = {
+					},
+					["nome"] = "Kynaeth",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
-								["c_amt"] = 1,
+								["c_amt"] = 0,
 								["b_amt"] = 0,
-								["c_dmg"] = 12,
+								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 6,
+								["n_max"] = 110452,
 								["targets"] = {
-									["Kynaeth"] = 42,
+									["Al'Akir"] = 0,
+									["Rohash"] = 0,
+									["Nezir"] = 274987,
+									["Anshal"] = 0,
 								},
-								["n_dmg"] = 30,
+								["n_dmg"] = 274987,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 7,
-								["total"] = 42,
-								["c_max"] = 12,
+								["counter"] = 4,
+								["total"] = 274987,
+								["c_max"] = 0,
 								["id"] = 1,
+								["r_dmg"] = 0,
+								["MISS"] = 1,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 3,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							}, -- [1]
+							[258922] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Al'Akir"] = 0,
+									["Nezir"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 258922,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+							[317009] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Al'Akir"] = 0,
+									["Rohash"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 317009,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+							[192611] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Ravenous Creeper"] = 0,
+									["Anshal"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 192611,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+							[198030] = {
+								["c_amt"] = 9,
+								["b_amt"] = 0,
+								["c_dmg"] = 975570,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Al'Akir"] = 0,
+									["Anshal"] = 975570,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 9,
+								["total"] = 975570,
+								["c_max"] = 111376,
+								["id"] = 198030,
 								["r_dmg"] = 0,
 								["extra"] = {
 								},
@@ -2924,9 +6545,247 @@ _detalhes_database = {
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
-								["n_amt"] = 6,
+								["n_amt"] = 0,
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
+							},
+							[199547] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 195605,
+								["targets"] = {
+									["Nezir"] = 348859,
+								},
+								["n_dmg"] = 348859,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 2,
+								["total"] = 348859,
+								["c_max"] = 0,
+								["id"] = 199547,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 2,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+							[337819] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 99961,
+								["targets"] = {
+									["Nezir"] = 99961,
+									["Anshal"] = 0,
+									["Ravenous Creeper"] = 0,
+								},
+								["n_dmg"] = 99961,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 1,
+								["total"] = 99961,
+								["c_max"] = 0,
+								["id"] = 337819,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 1,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+							[200166] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Al'Akir"] = 0,
+									["Rohash"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 200166,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+							[201428] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Al'Akir"] = 0,
+									["Nezir"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 201428,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+							[162243] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 187636,
+								["targets"] = {
+									["Al'Akir"] = 0,
+									["Rohash"] = 0,
+									["Nezir"] = 371981,
+									["Anshal"] = 0,
+								},
+								["n_dmg"] = 371981,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 2,
+								["total"] = 371981,
+								["c_max"] = 0,
+								["id"] = 162243,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 2,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+							[258921] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Al'Akir"] = 0,
+									["Nezir"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 258921,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+						},
+						["tipo"] = 2,
+					},
+					["grupo"] = true,
+					["last_event"] = 0,
+					["damage_taken"] = 372.01057,
+					["boss_fight_component"] = true,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1626252774,
+					["delay"] = 0,
+					["friendlyfire_total"] = 0,
+				}, -- [2]
+				{
+					["flag_original"] = 2632,
+					["totalabsorbed"] = 0.005335,
+					["damage_from"] = {
+						["Kynaeth"] = true,
+					},
+					["targets"] = {
+						["Kynaeth"] = 334,
+					},
+					["serial"] = "Vehicle-0-4240-754-738-45870-00006EA530",
+					["pets"] = {
+					},
+					["friendlyfire"] = {
+					},
+					["monster"] = true,
+					["aID"] = "",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 334.005335,
+					["end_time"] = 1626252783,
+					["dps_started"] = false,
+					["total"] = 334.005335,
+					["on_hold"] = false,
+					["last_event"] = 0,
+					["boss_fight_component"] = true,
+					["spells"] = {
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Kynaeth"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							}, -- [1]
 							[85422] = {
 								["c_amt"] = 0,
@@ -2961,13 +6820,13 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 24,
 								["targets"] = {
-									["Kynaeth"] = 323,
+									["Kynaeth"] = 334,
 								},
-								["n_dmg"] = 323,
+								["n_dmg"] = 334,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 26,
-								["total"] = 323,
+								["counter"] = 21,
+								["total"] = 334,
 								["c_max"] = 0,
 								["id"] = 93168,
 								["r_dmg"] = 0,
@@ -2977,7 +6836,7 @@ _detalhes_database = {
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
-								["n_amt"] = 26,
+								["n_amt"] = 21,
 								["b_dmg"] = 0,
 								["r_amt"] = 0,
 							},
@@ -3008,45 +6867,111 @@ _detalhes_database = {
 								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
-					["serial"] = "Vehicle-0-3891-754-1053-45870-000052F265",
+					["nome"] = "Anshal",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
-					["start_time"] = 1624437368,
+					["damage_taken"] = 975570.005335,
+					["start_time"] = 1626252756,
 					["delay"] = 0,
-					["damage_taken"] = 993483.01118,
-				}, -- [4]
+					["classe"] = "UNKNOW",
+				}, -- [3]
 				{
 					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.005152,
+					["totalabsorbed"] = 0.012095,
 					["damage_from"] = {
 					},
 					["targets"] = {
+						["Kynaeth"] = 1,
 					},
-					["on_hold"] = false,
+					["serial"] = "Creature-0-4240-754-738-46186-00006EA5DD",
 					["pets"] = {
 					},
-					["monster"] = true,
+					["classe"] = "UNKNOW",
+					["friendlyfire"] = {
+					},
 					["aID"] = "46186",
 					["raid_targets"] = {
 					},
-					["total_without_pet"] = 0.005152,
-					["friendlyfire"] = {
-					},
-					["end_time"] = 1624437414,
+					["total_without_pet"] = 1.012095,
+					["end_time"] = 1626252783,
 					["dps_started"] = false,
-					["total"] = 0.005152,
+					["total"] = 1.012095,
+					["on_hold"] = false,
+					["last_event"] = 0,
 					["boss_fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["nome"] = "Ice Patch",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							[86111] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 1,
+								["targets"] = {
+									["Kynaeth"] = 1,
+								},
+								["n_dmg"] = 1,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 3,
+								["total"] = 1,
+								["c_max"] = 0,
+								["id"] = 86111,
+								["r_dmg"] = 0,
+								["MISS"] = 2,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 1,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["last_dps"] = 0,
+					["friendlyfire_total"] = 0,
+					["nome"] = "Ice Patch",
+					["custom"] = 0,
+					["tipo"] = 1,
+					["damage_taken"] = 0.012095,
+					["start_time"] = 1626252778,
+					["delay"] = 0,
+					["monster"] = true,
+				}, -- [4]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.008168,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Kynaeth"] = 0,
+					},
+					["delay"] = 0,
+					["pets"] = {
+					},
+					["total"] = 0.008168,
+					["damage_taken"] = 0.008168,
+					["aID"] = "46753",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.008168,
+					["classe"] = "UNKNOW",
+					["monster"] = true,
+					["end_time"] = 1626252959,
+					["last_dps"] = 0,
+					["tipo"] = 1,
+					["boss_fight_component"] = true,
+					["spells"] = {
+						["_ActorTable"] = {
+							{
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
@@ -3058,104 +6983,232 @@ _detalhes_database = {
 								["n_dmg"] = 0,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 2,
+								["counter"] = 0,
 								["total"] = 0,
 								["c_max"] = 0,
-								["id"] = 86111,
+								["id"] = 1,
 								["r_dmg"] = 0,
-								["MISS"] = 2,
-								["extra"] = {
-								},
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							}, -- [1]
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["nome"] = "Al'Akir",
+					["friendlyfire"] = {
+					},
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-3891-754-1053-46186-000052F287",
 					["custom"] = 0,
-					["tipo"] = 1,
-					["last_dps"] = 0,
-					["start_time"] = 1624437411,
-					["delay"] = 0,
-					["damage_taken"] = 0.005152,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1626252956,
+					["serial"] = "Creature-0-4240-754-738-46753-00006EA52F",
+					["dps_started"] = false,
 				}, -- [5]
 				{
-					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.013352,
+					["flag_original"] = 8465,
+					["totalabsorbed"] = 0.003168,
 					["damage_from"] = {
-						["Kynaeth"] = true,
 					},
 					["targets"] = {
-						["Kynaeth"] = 2,
+						["Al'Akir"] = 0,
 					},
-					["on_hold"] = false,
 					["pets"] = {
 					},
+					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
+					["aID"] = "175519",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.003168,
+					["delay"] = 0,
+					["dps_started"] = false,
+					["end_time"] = 1626252959,
+					["nome"] = "Frothing Pustule <Kynaeth>",
+					["damage_taken"] = 0.003168,
+					["boss_fight_component"] = true,
+					["spells"] = {
+						["_ActorTable"] = {
+							[345495] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Al'Akir"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 345495,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+						},
+						["tipo"] = 2,
+					},
+					["tipo"] = 1,
+					["friendlyfire_total"] = 0,
+					["total"] = 0.003168,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1626252956,
+					["serial"] = "Creature-0-3891-754-1053-175519-000052F2C2",
+					["classe"] = "PET",
+				}, -- [6]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.003657,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Kynaeth"] = 0,
+					},
+					["delay"] = 0,
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["damage_taken"] = 0.003657,
+					["aID"] = "",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.003657,
+					["nome"] = "Rohash",
 					["monster"] = true,
+					["end_time"] = 1626252959,
+					["last_dps"] = 0,
+					["tipo"] = 1,
+					["boss_fight_component"] = true,
+					["spells"] = {
+						["_ActorTable"] = {
+							[86182] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Kynaeth"] = 0,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 86182,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
+							},
+						},
+						["tipo"] = 2,
+					},
+					["dps_started"] = false,
+					["on_hold"] = false,
+					["friendlyfire_total"] = 0,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["friendlyfire"] = {
+					},
+					["start_time"] = 1626252956,
+					["serial"] = "Vehicle-0-3891-754-1053-45872-000052F265",
+					["total"] = 0.003657,
+				}, -- [7]
+				{
+					["flag_original"] = 2632,
+					["totalabsorbed"] = 0.004751,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Kynaeth"] = 0,
+					},
+					["delay"] = 0,
+					["pets"] = {
+					},
+					["total"] = 0.004751,
+					["damage_taken"] = 0.004751,
 					["aID"] = "45812",
 					["raid_targets"] = {
 					},
-					["total_without_pet"] = 2.013352,
-					["friendlyfire"] = {
-					},
-					["end_time"] = 1624437414,
-					["dps_started"] = false,
-					["total"] = 2.013352,
-					["boss_fight_component"] = true,
+					["total_without_pet"] = 0.004751,
 					["classe"] = "UNKNOW",
-					["nome"] = "Ravenous Creeper",
+					["monster"] = true,
+					["end_time"] = 1626252959,
+					["last_dps"] = 0,
+					["tipo"] = 1,
+					["boss_fight_component"] = true,
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 1,
+								["n_max"] = 0,
 								["targets"] = {
-									["Kynaeth"] = 2,
+									["Kynaeth"] = 0,
 								},
-								["n_dmg"] = 2,
+								["n_dmg"] = 0,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 7,
-								["total"] = 2,
+								["counter"] = 0,
+								["total"] = 0,
 								["c_max"] = 0,
-								["a_dmg"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["MISS"] = 2,
-								["DODGE"] = 1,
-								["extra"] = {
-								},
-								["PARRY"] = 2,
+								["r_amt"] = 0,
+								["b_dmg"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
-								["n_amt"] = 2,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
+								["n_amt"] = 0,
+								["a_dmg"] = 0,
+								["extra"] = {
+								},
 							}, -- [1]
 						},
+						["tipo"] = 2,
 					},
-					["last_event"] = 0,
+					["nome"] = "Ravenous Creeper",
+					["friendlyfire"] = {
+					},
 					["friendlyfire_total"] = 0,
-					["serial"] = "Creature-0-3891-754-1053-45812-000052F29C",
 					["custom"] = 0,
-					["tipo"] = 1,
-					["last_dps"] = 0,
-					["start_time"] = 1624437408,
-					["delay"] = 0,
-					["damage_taken"] = 566091.0133519999,
-				}, -- [6]
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1626252956,
+					["serial"] = "Creature-0-3891-754-1053-45812-000052F29C",
+					["dps_started"] = false,
+				}, -- [8]
 			},
 		}, -- [1]
 		{
@@ -3163,45 +7216,45 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["flag_original"] = 2600,
-					["totalabsorb"] = 0.009023,
+					["totalabsorb"] = 0.007426,
 					["last_hps"] = 0,
 					["healing_from"] = {
 					},
 					["targets"] = {
 					},
-					["start_time"] = 1624437411,
+					["boss_fight_component"] = true,
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
 					["targets_overheal"] = {
 					},
-					["healing_taken"] = 0.009023,
-					["totalover"] = 0.009023,
-					["total_without_pet"] = 0.009023,
-					["end_time"] = 1624437414,
-					["totalover_without_pet"] = 0.009023,
 					["aID"] = "",
-					["total"] = 0.009023,
-					["targets_absorbs"] = {
-					},
+					["totalover"] = 0.007426,
+					["total_without_pet"] = 0.007426,
+					["totalover_without_pet"] = 0.007426,
+					["start_time"] = 1626252780,
+					["healing_taken"] = 0.007426,
+					["total"] = 0.007426,
 					["classe"] = "UNKNOW",
-					["boss_fight_component"] = true,
+					["heal_enemy_amt"] = 2857,
+					["nome"] = "[*] Soothing Breeze",
 					["spells"] = {
-						["tipo"] = 3,
 						["_ActorTable"] = {
 						},
+						["tipo"] = 3,
 					},
-					["heal_enemy_amt"] = 50608,
-					["nome"] = "[*] Soothing Breeze",
+					["end_time"] = 1626252783,
+					["delay"] = 0,
 					["heal_enemy"] = {
-						[95218] = 50608,
+						[95218] = 2857,
 					},
-					["serial"] = "",
+					["targets_absorbs"] = {
+					},
 					["custom"] = 0,
 					["last_event"] = 0,
 					["on_hold"] = false,
-					["totaldenied"] = 0.009023,
-					["delay"] = 0,
+					["totaldenied"] = 0.007426,
+					["serial"] = "",
 					["tipo"] = 2,
 				}, -- [1]
 				{
@@ -3212,40 +7265,40 @@ _detalhes_database = {
 					},
 					["iniciar_hps"] = false,
 					["heal_enemy_amt"] = 0,
-					["totalover"] = 0.010639,
-					["total_without_pet"] = 0.010639,
+					["totalover"] = 0.010129,
+					["total_without_pet"] = 0.010129,
 					["monster"] = true,
-					["total"] = 0.010639,
+					["total"] = 0.010129,
 					["targets_absorbs"] = {
 					},
 					["heal_enemy"] = {
 					},
 					["on_hold"] = false,
-					["serial"] = "Vehicle-0-3891-754-1053-45870-000052F265",
-					["totalabsorb"] = 0.010639,
+					["serial"] = "Vehicle-0-4240-754-738-45870-00006EA530",
+					["totalabsorb"] = 0.010129,
 					["last_hps"] = 0,
 					["targets"] = {
 					},
-					["totalover_without_pet"] = 0.010639,
-					["healing_taken"] = 0.010639,
-					["end_time"] = 1624437414,
-					["boss_fight_component"] = true,
+					["totalover_without_pet"] = 0.010129,
+					["healing_taken"] = 0.010129,
+					["end_time"] = 1626252783,
 					["healing_from"] = {
 					},
 					["nome"] = "Anshal",
 					["spells"] = {
-						["tipo"] = 3,
 						["_ActorTable"] = {
 						},
+						["tipo"] = 3,
 					},
-					["classe"] = "UNKNOW",
-					["last_event"] = 0,
+					["boss_fight_component"] = true,
+					["aID"] = "",
+					["totaldenied"] = 0.010129,
 					["custom"] = 0,
 					["tipo"] = 2,
-					["aID"] = "",
-					["totaldenied"] = 0.010639,
+					["classe"] = "UNKNOW",
+					["start_time"] = 1626252780,
 					["delay"] = 0,
-					["start_time"] = 1624437411,
+					["last_event"] = 0,
 				}, -- [2]
 			},
 		}, -- [2]
@@ -3253,33 +7306,33 @@ _detalhes_database = {
 			["tipo"] = 7,
 			["_ActorTable"] = {
 				{
-					["received"] = 0.006397,
-					["resource"] = 120.006397,
+					["received"] = 0.006407,
+					["resource"] = 915.063833,
 					["targets"] = {
 					},
 					["pets"] = {
 					},
 					["powertype"] = 1,
-					["resource_type"] = 17,
 					["classe"] = "DEMONHUNTER",
-					["passiveover"] = 0.002352,
+					["passiveover"] = 0.001529,
+					["resource_type"] = 17,
+					["totalover"] = 0.001529,
+					["total"] = 0.006407,
 					["boss_fight_component"] = true,
-					["total"] = 0.006397,
-					["tipo"] = 3,
-					["totalover"] = 0.002352,
-					["nome"] = "Kynaeth",
 					["spells"] = {
-						["tipo"] = 7,
 						["_ActorTable"] = {
 						},
+						["tipo"] = 7,
 					},
 					["grupo"] = true,
+					["nome"] = "Kynaeth",
 					["spec"] = 577,
-					["flag_original"] = 1297,
-					["alternatepower"] = 0.006397,
+					["tipo"] = 3,
 					["last_event"] = 0,
-					["aID"] = "1597-0E73BF0C",
+					["flag_original"] = 1297,
+					["alternatepower"] = 0.006407,
 					["serial"] = "Player-1597-0E73BF0C",
+					["aID"] = "1597-0E73BF0C",
 				}, -- [1]
 			},
 		}, -- [3]
@@ -3289,42 +7342,82 @@ _detalhes_database = {
 				{
 					["flag_original"] = 1047,
 					["debuff_uptime_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
-							[1490] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 3,
-								["appliedamt"] = 3,
-								["id"] = 1490,
-								["uptime"] = 48,
+							[317009] = {
+								["id"] = 317009,
 								["targets"] = {
 								},
 								["counter"] = 0,
 							},
-							[317009] = {
+							[1490] = {
 								["refreshamt"] = 0,
-								["activedamt"] = 0,
-								["appliedamt"] = 1,
-								["id"] = 317009,
-								["uptime"] = 8,
+								["activedamt"] = 2,
+								["appliedamt"] = 2,
+								["id"] = 1490,
+								["uptime"] = 19,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[89750] = {
+								["id"] = 89750,
 								["targets"] = {
 								},
 								["counter"] = 0,
 							},
 						},
+						["tipo"] = 9,
 					},
 					["pets"] = {
 					},
 					["classe"] = "DEMONHUNTER",
 					["buff_uptime_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
-							[186403] = {
+							[131347] = {
+								["id"] = 131347,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[162264] = {
 								["refreshamt"] = 0,
 								["activedamt"] = 1,
 								["appliedamt"] = 1,
-								["id"] = 186403,
-								["uptime"] = 48,
+								["id"] = 162264,
+								["uptime"] = 1,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[198013] = {
+								["refreshamt"] = 0,
+								["appliedamt"] = 1,
+								["activedamt"] = 1,
+								["uptime"] = 0,
+								["id"] = 198013,
+								["actived_at"] = 1626252781,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[335152] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 1,
+								["appliedamt"] = 1,
+								["id"] = 335152,
+								["uptime"] = 24,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[90675] = {
+								["id"] = 90675,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[186406] = {
+								["id"] = 186406,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -3335,7 +7428,7 @@ _detalhes_database = {
 								["activedamt"] = 1,
 								["uptime"] = 0,
 								["id"] = 84610,
-								["actived_at"] = 1624437366,
+								["actived_at"] = 1626252758,
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -3345,148 +7438,69 @@ _detalhes_database = {
 								["activedamt"] = 1,
 								["appliedamt"] = 1,
 								["id"] = 258920,
-								["uptime"] = 12,
+								["uptime"] = 4,
 								["targets"] = {
 								},
 								["counter"] = 0,
 							},
-							[162264] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 1,
-								["appliedamt"] = 1,
-								["id"] = 162264,
-								["uptime"] = 30,
+							[186403] = {
+								["id"] = 186403,
 								["targets"] = {
 								},
 								["counter"] = 0,
 							},
 						},
+						["tipo"] = 9,
 					},
-					["debuff_uptime"] = 56,
+					["debuff_uptime"] = 19,
+					["boss_fight_component"] = true,
 					["debuff_uptime_targets"] = {
 					},
-					["boss_fight_component"] = true,
 					["spec"] = 577,
 					["grupo"] = true,
 					["spell_cast"] = {
-						[195072] = 5,
-						[162243] = 6,
 						[131347] = 1,
-						[185123] = 3,
-						[258920] = 1,
+						[317009] = 0,
+						[198013] = 1,
+						[185123] = 1,
+						[195072] = 3,
+						[162794] = 1,
+						[162243] = 2,
+						[258920] = 0,
+						[201427] = 0,
 					},
-					["last_event"] = 0,
 					["buff_uptime_targets"] = {
 					},
 					["tipo"] = 4,
-					["buff_uptime"] = 90,
+					["last_event"] = 0,
+					["buff_uptime"] = 29,
 					["nome"] = "Kynaeth",
 					["serial"] = "Player-1597-0E73BF0C",
 					["aID"] = "1597-0E73BF0C",
 				}, -- [1]
 				{
-					["flag_original"] = 68168,
+					["flag_original"] = 2632,
+					["aID"] = "",
 					["boss_fight_component"] = true,
 					["monster"] = true,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["nome"] = "Rohash",
-					["tipo"] = 4,
+					["nome"] = "Nezir",
 					["spell_cast"] = {
-						[86182] = 1,
+						[86082] = 1,
+						[84645] = 1,
 					},
-					["aID"] = "",
-					["serial"] = "Vehicle-0-3891-754-1053-45872-000052F265",
+					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Vehicle-0-4240-754-738-45871-00006EA52F",
 					["last_event"] = 0,
 				}, -- [2]
 				{
-					["flag_original"] = 68168,
-					["debuff_uptime_spells"] = {
-						["tipo"] = 9,
-						["_ActorTable"] = {
-						},
-					},
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
-					["boss_debuff"] = true,
-					["monster"] = true,
-					["debuff_uptime"] = 45,
-					["spellschool"] = 8,
-					["debuff_uptime_targets"] = {
-						["Kynaeth"] = {
-							["uptime"] = 45,
-							["appliedamt"] = 0,
-							["activedamt"] = 0,
-							["actived"] = false,
-							["refreshamt"] = 0,
-						},
-					},
-					["damage_spellid"] = 86182,
-					["boss_fight_component"] = true,
-					["last_event"] = 0,
-					["tipo"] = 4,
-					["damage_twin"] = "Rohash",
-					["nome"] = "Slicing Gale",
-					["serial"] = "Vehicle-0-3891-754-1053-45872-000052F265",
-					["aID"] = "",
-				}, -- [3]
-				{
 					["flag_original"] = 2632,
 					["debuff_uptime_spells"] = {
-						["tipo"] = 9,
 						["_ActorTable"] = {
 						},
-					},
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
-					["boss_debuff"] = true,
-					["monster"] = true,
-					["debuff_uptime"] = 26,
-					["spellschool"] = 32,
-					["debuff_uptime_targets"] = {
-						["Kynaeth"] = {
-							["uptime"] = 26,
-							["appliedamt"] = 0,
-							["activedamt"] = 0,
-							["actived"] = false,
-							["refreshamt"] = 0,
-						},
-					},
-					["damage_spellid"] = 85576,
-					["boss_fight_component"] = true,
-					["last_event"] = 0,
-					["tipo"] = 4,
-					["damage_twin"] = "Anshal",
-					["nome"] = "Withering Winds",
-					["serial"] = "Vehicle-0-3891-754-1053-45870-000052F265",
-					["aID"] = "",
-				}, -- [4]
-				{
-					["flag_original"] = 68168,
-					["boss_fight_component"] = true,
-					["monster"] = true,
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
-					["nome"] = "Nezir",
-					["tipo"] = 4,
-					["spell_cast"] = {
-						[84645] = 1,
-						[86082] = 1,
-					},
-					["aID"] = "",
-					["serial"] = "Vehicle-0-3891-754-1053-45871-000052F265",
-					["last_event"] = 0,
-				}, -- [5]
-				{
-					["flag_original"] = 68168,
-					["debuff_uptime_spells"] = {
 						["tipo"] = 9,
-						["_ActorTable"] = {
-						},
 					},
 					["pets"] = {
 					},
@@ -3504,32 +7518,177 @@ _detalhes_database = {
 							["refreshamt"] = 0,
 						},
 					},
-					["damage_spellid"] = 86082,
 					["boss_fight_component"] = true,
-					["last_event"] = 0,
+					["damage_spellid"] = 86082,
 					["tipo"] = 4,
+					["last_event"] = 0,
 					["damage_twin"] = "Nezir",
 					["nome"] = "Permafrost",
-					["serial"] = "Vehicle-0-3891-754-1053-45871-000052F265",
+					["serial"] = "Vehicle-0-4240-754-738-45871-00006EA52F",
 					["aID"] = "",
-				}, -- [6]
+				}, -- [3]
 				{
 					["flag_original"] = 2632,
+					["aID"] = "",
 					["boss_fight_component"] = true,
 					["monster"] = true,
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
 					["nome"] = "Anshal",
-					["tipo"] = 4,
 					["spell_cast"] = {
 						[86205] = 1,
 						[85422] = 1,
 					},
-					["aID"] = "",
-					["serial"] = "Vehicle-0-3891-754-1053-45870-000052F265",
+					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Vehicle-0-4240-754-738-45870-00006EA530",
 					["last_event"] = 0,
+				}, -- [4]
+				{
+					["flag_original"] = 68168,
+					["debuff_uptime_spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 9,
+					},
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["boss_debuff"] = true,
+					["monster"] = true,
+					["debuff_uptime"] = 0,
+					["spellschool"] = 16,
+					["debuff_uptime_targets"] = {
+						["Kynaeth"] = {
+							["uptime"] = 0,
+							["appliedamt"] = 0,
+							["activedamt"] = 1,
+							["actived"] = false,
+							["refreshamt"] = 0,
+						},
+					},
+					["boss_fight_component"] = true,
+					["damage_spellid"] = 84645,
+					["tipo"] = 4,
+					["last_event"] = 0,
+					["damage_twin"] = "Nezir",
+					["nome"] = "Wind Chill",
+					["serial"] = "Vehicle-0-4240-754-738-45871-00006EA52F",
+					["aID"] = "",
+				}, -- [5]
+				{
+					["flag_original"] = 2632,
+					["debuff_uptime_spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 9,
+					},
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["boss_debuff"] = true,
+					["monster"] = true,
+					["debuff_uptime"] = 0,
+					["spellschool"] = 32,
+					["debuff_uptime_targets"] = {
+						["Kynaeth"] = {
+							["uptime"] = 0,
+							["appliedamt"] = 0,
+							["activedamt"] = -1,
+							["actived"] = false,
+							["refreshamt"] = 0,
+						},
+					},
+					["boss_fight_component"] = true,
+					["damage_spellid"] = 85576,
+					["tipo"] = 4,
+					["last_event"] = 0,
+					["damage_twin"] = "Anshal",
+					["nome"] = "Withering Winds",
+					["serial"] = "Vehicle-0-4240-754-738-45870-00006EA530",
+					["aID"] = "",
+				}, -- [6]
+				{
+					["flag_original"] = 68168,
+					["debuff_uptime_spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 9,
+					},
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["boss_debuff"] = true,
+					["monster"] = true,
+					["debuff_uptime"] = 0,
+					["spellschool"] = 8,
+					["debuff_uptime_targets"] = {
+					},
+					["aID"] = "46753",
+					["serial"] = "Creature-0-4240-754-738-46753-00006EA52F",
+					["nome"] = "Acid Rain",
+					["last_event"] = 0,
+					["damage_twin"] = "Al'Akir",
+					["tipo"] = 4,
+					["damage_spellid"] = 88301,
+					["boss_fight_component"] = true,
 				}, -- [7]
+				{
+					["flag_original"] = 8465,
+					["aID"] = "175519",
+					["nome"] = "Frothing Pustule <Kynaeth>",
+					["pets"] = {
+					},
+					["tipo"] = 4,
+					["boss_fight_component"] = true,
+					["last_event"] = 0,
+					["classe"] = "PET",
+					["serial"] = "Creature-0-3891-754-1053-175519-000052F2C2",
+					["spell_cast"] = {
+						[345495] = 0,
+					},
+				}, -- [8]
+				{
+					["flag_original"] = 68168,
+					["tipo"] = 4,
+					["boss_fight_component"] = true,
+					["last_event"] = 0,
+					["pets"] = {
+					},
+					["nome"] = "Rohash",
+					["aID"] = "",
+					["classe"] = "UNKNOW",
+					["spell_cast"] = {
+						[86182] = 0,
+					},
+					["serial"] = "Vehicle-0-3891-754-1053-45872-000052F265",
+					["monster"] = true,
+				}, -- [9]
+				{
+					["flag_original"] = 68168,
+					["debuff_uptime_spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 9,
+					},
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["boss_debuff"] = true,
+					["monster"] = true,
+					["debuff_uptime"] = 0,
+					["spellschool"] = 8,
+					["debuff_uptime_targets"] = {
+					},
+					["aID"] = "",
+					["serial"] = "Vehicle-0-3891-754-1053-45872-000052F265",
+					["nome"] = "Slicing Gale",
+					["last_event"] = 0,
+					["damage_twin"] = "Rohash",
+					["tipo"] = 4,
+					["damage_spellid"] = 86182,
+					["boss_fight_component"] = true,
+				}, -- [10]
 			},
 		}, -- [4]
 		{
@@ -3541,19 +7700,19 @@ _detalhes_database = {
 		},
 		["raid_roster_indexed"] = {
 		},
-		["tempo_start"] = 1624437414,
-		["last_events_tables"] = {
+		["spells_cast_timeline"] = {
+		},
+		["tempo_start"] = 1626252782,
+		["cleu_timeline"] = {
 		},
 		["alternate_power"] = {
 		},
-		["combat_counter"] = 369,
-		["spells_cast_timeline"] = {
-		},
+		["combat_counter"] = 379,
 		["totals"] = {
-			5066643.029308, -- [1]
-			0.008804, -- [2]
+			2071730.020236, -- [1]
+			0.004363, -- [2]
 			{
-				0.004045, -- [1]
+				0.004878, -- [1]
 				[0] = 0,
 				["alternatepower"] = 0,
 				[3] = 0,
@@ -3562,10 +7721,10 @@ _detalhes_database = {
 			{
 				["buff_uptime"] = 0,
 				["ress"] = 0,
-				["debuff_uptime"] = 0,
 				["cooldowns_defensive"] = 0,
-				["interrupt"] = 0,
 				["dispell"] = 0,
+				["interrupt"] = 0,
+				["debuff_uptime"] = 0,
 				["cc_break"] = 0,
 				["dead"] = 0,
 			}, -- [4]
@@ -3579,24 +7738,16 @@ _detalhes_database = {
 		},
 		["__call"] = {
 		},
-		["data_inicio"] = "11:36:07",
-		["end_time"] = 1100944.675,
+		["data_inicio"] = "11:52:38",
+		["end_time"] = 579891.51,
 		["cleu_events"] = {
 			["n"] = 1,
 		},
-		["segments_added"] = {
-			{
-				["elapsed"] = 47.45600000000559,
-				["type"] = 8,
-				["name"] = "Conclave of Wind",
-				["clock"] = "11:36:07",
-			}, -- [1]
-		},
 		["totals_grupo"] = {
-			5066224.005591, -- [1]
+			2071358.005708, -- [1]
 			0, -- [2]
 			{
-				0.004045, -- [1]
+				0.004878, -- [1]
 				[0] = 0,
 				["alternatepower"] = 0,
 				[3] = 0,
@@ -3605,53 +7756,67 @@ _detalhes_database = {
 			{
 				["buff_uptime"] = 0,
 				["ress"] = 0,
-				["debuff_uptime"] = 0,
 				["cooldowns_defensive"] = 0,
-				["interrupt"] = 0,
 				["dispell"] = 0,
+				["interrupt"] = 0,
+				["debuff_uptime"] = 0,
 				["cc_break"] = 0,
 				["dead"] = 0,
 			}, -- [4]
 		},
+		["overall_refreshed"] = true,
 		["frags"] = {
 		},
-		["data_fim"] = "11:36:54",
+		["hasSaved"] = true,
+		["segments_added"] = {
+			{
+				["elapsed"] = 36.34499999997206,
+				["type"] = 8,
+				["name"] = "Conclave of Wind",
+				["clock"] = "11:52:38",
+			}, -- [1]
+		},
+		["data_fim"] = "11:53:03",
 		["overall_enemy_name"] = "Conclave of Wind",
 		["CombatSkillCache"] = {
-		},
-		["cleu_timeline"] = {
-		},
-		["start_time"] = 1100897.219,
-		["TimeData"] = {
-			["Raid Damage Done"] = {
-			},
 		},
 		["PhaseData"] = {
 			{
 				1, -- [1]
 				1, -- [2]
 			}, -- [1]
+			["damage_section"] = {
+			},
 			["heal_section"] = {
 			},
 			["heal"] = {
 			},
-			["damage_section"] = {
-			},
 			["damage"] = {
 			},
 		},
+		["start_time"] = 579855.165,
+		["TimeData"] = {
+			["Raid Damage Done"] = {
+			},
+		},
+		["last_events_tables"] = {
+		},
 	},
-	["cached_talents"] = {
+	["character_data"] = {
+		["logons"] = 57,
 	},
-	["combat_counter"] = 370,
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
 	["benchmark_db"] = {
 		["frame"] = {
 		},
 	},
 	["announce_cooldowns"] = {
+		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
-		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},
@@ -3659,12 +7824,9 @@ _detalhes_database = {
 		["last_difficulty"] = 15,
 		["last_raid"] = "",
 	},
-	["announce_damagerecord"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
+	["cached_roles"] = {
 	},
 	["cached_specs"] = {
-		["Player-1329-09A8B33F"] = 257,
 		["Player-1597-0E73BF0C"] = 577,
 	},
 }

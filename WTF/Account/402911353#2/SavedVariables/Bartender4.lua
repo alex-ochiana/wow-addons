@@ -73,14 +73,14 @@ Bartender4DB = {
 						["scale"] = 1.264999985694885,
 					},
 				},
-				["Cìchìcean - Sylvanas"] = {
+				["Kynaeth - Sylvanas"] = {
 					["enabled"] = true,
 					["version"] = 3,
 					["position"] = {
-						["y"] = 62,
+						["scale"] = 1.264999985694885,
 						["x"] = -515,
 						["point"] = "BOTTOM",
-						["scale"] = 1.264999985694885,
+						["y"] = 62,
 					},
 				},
 				["Plüto - Sylvanas"] = {
@@ -103,14 +103,14 @@ Bartender4DB = {
 						["scale"] = 1.264999985694885,
 					},
 				},
-				["Kynaeth - Sylvanas"] = {
+				["Cìchìcean - Sylvanas"] = {
 					["enabled"] = true,
 					["version"] = 3,
 					["position"] = {
-						["scale"] = 1.264999985694885,
+						["y"] = 62,
 						["x"] = -515,
 						["point"] = "BOTTOM",
-						["y"] = 62,
+						["scale"] = 1.264999985694885,
 					},
 				},
 				["Gnomèrcy - Sylvanas"] = {
@@ -177,8 +177,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -187,8 +187,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -244,8 +244,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -254,8 +254,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -310,8 +310,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -320,8 +320,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -376,8 +376,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -386,8 +386,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -443,8 +443,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -453,8 +453,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -509,8 +509,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -519,8 +519,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -576,140 +576,6 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 5,
-							["rows"] = 12,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 610,
-								["x"] = -82,
-								["point"] = "BOTTOMRIGHT",
-							},
-						}, -- [3]
-						{
-							["padding"] = 5,
-							["rows"] = 12,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 610,
-								["x"] = -42,
-								["point"] = "BOTTOMRIGHT",
-							},
-						}, -- [4]
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 110,
-								["x"] = 3,
-								["point"] = "BOTTOM",
-							},
-						}, -- [5]
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 110,
-								["x"] = -510,
-								["point"] = "BOTTOM",
-							},
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						nil, -- [9]
-						{
-						}, -- [10]
-					},
-				},
-				["Cìchìcean - Sylvanas"] = {
-					["actionbars"] = {
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 41.75,
-								["x"] = -510,
-								["point"] = "BOTTOM",
-							},
-						}, -- [1]
-						{
-							["enabled"] = false,
-							["version"] = 3,
-							["position"] = {
-								["y"] = -227.4998474121094,
-								["x"] = -231.5001831054688,
-								["point"] = "CENTER",
-							},
-						}, -- [2]
-						{
-							["padding"] = 5,
-							["rows"] = 12,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 610,
-								["x"] = -82,
-								["point"] = "BOTTOMRIGHT",
-							},
-						}, -- [3]
-						{
-							["padding"] = 5,
-							["rows"] = 12,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 610,
-								["x"] = -42,
-								["point"] = "BOTTOMRIGHT",
-							},
-						}, -- [4]
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 110,
-								["x"] = 3,
-								["point"] = "BOTTOM",
-							},
-						}, -- [5]
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 110,
-								["x"] = -510,
-								["point"] = "BOTTOM",
-							},
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						nil, -- [9]
-						{
-						}, -- [10]
-					},
-				},
-				["Plüto - Sylvanas"] = {
-					["actionbars"] = {
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 41.75,
-								["x"] = -510,
-								["point"] = "BOTTOM",
-							},
-						}, -- [1]
-						{
-							["enabled"] = false,
-							["version"] = 3,
-							["position"] = {
-								["y"] = -227.4998474121094,
-								["x"] = -231.5001831054688,
-								["point"] = "CENTER",
-							},
-						}, -- [2]
-						{
 							["rows"] = 12,
 							["padding"] = 5,
 							["version"] = 3,
@@ -722,73 +588,6 @@ Bartender4DB = {
 						{
 							["rows"] = 12,
 							["padding"] = 5,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 610,
-								["x"] = -42,
-								["point"] = "BOTTOMRIGHT",
-							},
-						}, -- [4]
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 110,
-								["x"] = 3,
-								["point"] = "BOTTOM",
-							},
-						}, -- [5]
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 110,
-								["x"] = -510,
-								["point"] = "BOTTOM",
-							},
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						nil, -- [9]
-						{
-						}, -- [10]
-					},
-				},
-				["Egidus - Sylvanas"] = {
-					["actionbars"] = {
-						{
-							["padding"] = 6,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 41.75,
-								["x"] = -510,
-								["point"] = "BOTTOM",
-							},
-						}, -- [1]
-						{
-							["enabled"] = false,
-							["version"] = 3,
-							["position"] = {
-								["y"] = -227.4999237060547,
-								["x"] = -231.5,
-								["point"] = "CENTER",
-							},
-						}, -- [2]
-						{
-							["padding"] = 5,
-							["rows"] = 12,
-							["version"] = 3,
-							["position"] = {
-								["y"] = 610,
-								["x"] = -82,
-								["point"] = "BOTTOMRIGHT",
-							},
-						}, -- [3]
-						{
-							["padding"] = 5,
-							["rows"] = 12,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -844,8 +643,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -854,8 +653,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -889,7 +688,7 @@ Bartender4DB = {
 						},
 					},
 				},
-				["Gnomèrcy - Sylvanas"] = {
+				["Plüto - Sylvanas"] = {
 					["actionbars"] = {
 						{
 							["padding"] = 6,
@@ -956,6 +755,207 @@ Bartender4DB = {
 						}, -- [10]
 					},
 				},
+				["Egidus - Sylvanas"] = {
+					["actionbars"] = {
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 41.75,
+								["x"] = -510,
+								["point"] = "BOTTOM",
+							},
+						}, -- [1]
+						{
+							["enabled"] = false,
+							["version"] = 3,
+							["position"] = {
+								["y"] = -227.4999237060547,
+								["x"] = -231.5,
+								["point"] = "CENTER",
+							},
+						}, -- [2]
+						{
+							["rows"] = 12,
+							["padding"] = 5,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 610,
+								["x"] = -82,
+								["point"] = "BOTTOMRIGHT",
+							},
+						}, -- [3]
+						{
+							["rows"] = 12,
+							["padding"] = 5,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 610,
+								["x"] = -42,
+								["point"] = "BOTTOMRIGHT",
+							},
+						}, -- [4]
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 110,
+								["x"] = 3,
+								["point"] = "BOTTOM",
+							},
+						}, -- [5]
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 110,
+								["x"] = -510,
+								["point"] = "BOTTOM",
+							},
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						nil, -- [9]
+						{
+						}, -- [10]
+					},
+				},
+				["Cìchìcean - Sylvanas"] = {
+					["actionbars"] = {
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 41.75,
+								["x"] = -510,
+								["point"] = "BOTTOM",
+							},
+						}, -- [1]
+						{
+							["enabled"] = false,
+							["version"] = 3,
+							["position"] = {
+								["y"] = -227.4998474121094,
+								["x"] = -231.5001831054688,
+								["point"] = "CENTER",
+							},
+						}, -- [2]
+						{
+							["rows"] = 12,
+							["padding"] = 5,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 610,
+								["x"] = -82,
+								["point"] = "BOTTOMRIGHT",
+							},
+						}, -- [3]
+						{
+							["rows"] = 12,
+							["padding"] = 5,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 610,
+								["x"] = -42,
+								["point"] = "BOTTOMRIGHT",
+							},
+						}, -- [4]
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 110,
+								["x"] = 3,
+								["point"] = "BOTTOM",
+							},
+						}, -- [5]
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 110,
+								["x"] = -510,
+								["point"] = "BOTTOM",
+							},
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						nil, -- [9]
+						{
+						}, -- [10]
+					},
+				},
+				["Gnomèrcy - Sylvanas"] = {
+					["actionbars"] = {
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 41.75,
+								["x"] = -510,
+								["point"] = "BOTTOM",
+							},
+						}, -- [1]
+						{
+							["enabled"] = false,
+							["version"] = 3,
+							["position"] = {
+								["y"] = -227.4998474121094,
+								["x"] = -231.5001831054688,
+								["point"] = "CENTER",
+							},
+						}, -- [2]
+						{
+							["rows"] = 12,
+							["padding"] = 5,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 610,
+								["x"] = -82,
+								["point"] = "BOTTOMRIGHT",
+							},
+						}, -- [3]
+						{
+							["rows"] = 12,
+							["padding"] = 5,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 610,
+								["x"] = -42,
+								["point"] = "BOTTOMRIGHT",
+							},
+						}, -- [4]
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 110,
+								["x"] = 3,
+								["point"] = "BOTTOM",
+							},
+						}, -- [5]
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 110,
+								["x"] = -510,
+								["point"] = "BOTTOM",
+							},
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						nil, -- [9]
+						{
+						}, -- [10]
+					},
+				},
 				["Crètz - Sylvanas"] = {
 					["actionbars"] = {
 						{
@@ -965,23 +965,24 @@ Bartender4DB = {
 							},
 							["fadeoutalpha"] = 0,
 							["position"] = {
-								["y"] = 120,
-								["x"] = -154,
+								["y"] = 86,
+								["x"] = -103.0000152587891,
 								["point"] = "BOTTOM",
-								["scale"] = 1.5,
 							},
 							["version"] = 3,
 							["padding"] = -4,
 							["visibility"] = {
-								["customdata"] = "[petbattle]hide;[overridebar]hide;[vehicleui]hide;show",
+								["custom"] = false,
+								["customdata"] = "[petbattle]hide;[overridebar]hide;[vehicleui]hide;[combat]show;fade",
 								["overridebar"] = true,
+								["nocombat"] = false,
 								["vehicleui"] = true,
 							},
 							["states"] = {
 								["stance"] = {
 									["DRUID"] = {
-										["prowl"] = 7,
 										["moonkin"] = 10,
+										["prowl"] = 7,
 									},
 								},
 							},
@@ -999,8 +1000,8 @@ Bartender4DB = {
 								["enabled"] = true,
 								["stance"] = {
 									["DRUID"] = {
-										["prowl"] = 7,
 										["moonkin"] = 10,
+										["prowl"] = 7,
 										["cat"] = 7,
 										["bear"] = 9,
 									},
@@ -1009,6 +1010,7 @@ Bartender4DB = {
 						}, -- [2]
 						{
 							["showgrid"] = true,
+							["rows"] = 7,
 							["fadeoutdelay"] = 0,
 							["skin"] = {
 								["Zoom"] = true,
@@ -1017,9 +1019,9 @@ Bartender4DB = {
 							["fadeoutalpha"] = 0,
 							["version"] = 3,
 							["position"] = {
-								["y"] = 261,
-								["x"] = -207,
-								["point"] = "BOTTOMRIGHT",
+								["y"] = 224.2443148649381,
+								["x"] = 441.5718958850484,
+								["point"] = "BOTTOM",
 								["scale"] = 0.800000011920929,
 							},
 							["padding"] = 0,
@@ -1029,15 +1031,17 @@ Bartender4DB = {
 						}, -- [3]
 						{
 							["showgrid"] = true,
+							["rows"] = 7,
 							["skin"] = {
 								["Zoom"] = true,
 							},
 							["buttons"] = 7,
+							["fadeoutalpha"] = 0,
 							["version"] = 3,
 							["position"] = {
-								["y"] = -249,
-								["x"] = -207,
-								["point"] = "RIGHT",
+								["y"] = 223.7351107557879,
+								["x"] = 471.9717986817923,
+								["point"] = "BOTTOM",
 								["scale"] = 0.800000011920929,
 							},
 							["padding"] = 0,
@@ -1050,28 +1054,36 @@ Bartender4DB = {
 							["skin"] = {
 								["Zoom"] = true,
 							},
-							["version"] = 3,
 							["fadeoutalpha"] = 0,
+							["version"] = 3,
 							["position"] = {
 								["y"] = 86,
-								["x"] = 150,
+								["x"] = 110,
 								["point"] = "BOTTOM",
 							},
 							["padding"] = -4,
+							["visibility"] = {
+								["custom"] = false,
+								["customdata"] = "[petbattle]hide;[overridebar]hide;[vehicleui]hide;[combat]show;fade",
+							},
 						}, -- [5]
 						{
 							["rows"] = 2,
 							["skin"] = {
 								["Zoom"] = true,
 							},
-							["version"] = 3,
 							["fadeoutalpha"] = 0,
+							["version"] = 3,
 							["position"] = {
 								["y"] = 86,
-								["x"] = -354,
+								["x"] = -317,
 								["point"] = "BOTTOM",
 							},
 							["padding"] = -4,
+							["visibility"] = {
+								["custom"] = false,
+								["customdata"] = "[petbattle]hide;[overridebar]hide;[vehicleui]hide;[combat]show;fade",
+							},
 						}, -- [6]
 						{
 							["version"] = 3,
@@ -1128,8 +1140,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -1138,8 +1150,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -1194,8 +1206,8 @@ Bartender4DB = {
 							},
 						}, -- [2]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -1204,8 +1216,8 @@ Bartender4DB = {
 							},
 						}, -- [3]
 						{
-							["padding"] = 5,
 							["rows"] = 12,
+							["padding"] = 5,
 							["version"] = 3,
 							["position"] = {
 								["y"] = 610,
@@ -1302,12 +1314,12 @@ Bartender4DB = {
 						["point"] = "CENTER",
 					},
 				},
-				["Cìchìcean - Sylvanas"] = {
+				["Kynaeth - Sylvanas"] = {
 					["version"] = 3,
 					["position"] = {
-						["y"] = -252.4999389648438,
-						["x"] = -63.50006103515625,
-						["point"] = "CENTER",
+						["y"] = 222.9999847412109,
+						["x"] = -31.49993896484375,
+						["point"] = "BOTTOM",
 					},
 				},
 				["Plüto - Sylvanas"] = {
@@ -1326,12 +1338,12 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Kynaeth - Sylvanas"] = {
+				["Cìchìcean - Sylvanas"] = {
 					["version"] = 3,
 					["position"] = {
-						["y"] = 222.9999847412109,
-						["x"] = -31.49993896484375,
-						["point"] = "BOTTOM",
+						["y"] = -252.4999389648438,
+						["x"] = -63.50006103515625,
+						["point"] = "CENTER",
 					},
 				},
 				["Gnomèrcy - Sylvanas"] = {
@@ -1440,14 +1452,14 @@ Bartender4DB = {
 						["scale"] = 1,
 					},
 				},
-				["Cìchìcean - Sylvanas"] = {
+				["Kynaeth - Sylvanas"] = {
 					["padding"] = -2,
 					["version"] = 3,
 					["position"] = {
-						["y"] = 41.75,
+						["scale"] = 1,
 						["x"] = 37.5,
 						["point"] = "BOTTOM",
-						["scale"] = 1,
+						["y"] = 41.75,
 					},
 				},
 				["Plüto - Sylvanas"] = {
@@ -1470,14 +1482,14 @@ Bartender4DB = {
 						["scale"] = 1,
 					},
 				},
-				["Kynaeth - Sylvanas"] = {
+				["Cìchìcean - Sylvanas"] = {
 					["padding"] = -2,
 					["version"] = 3,
 					["position"] = {
-						["scale"] = 1,
+						["y"] = 41.75,
 						["x"] = 37.5,
 						["point"] = "BOTTOM",
-						["y"] = 41.75,
+						["scale"] = 1,
 					},
 				},
 				["Gnomèrcy - Sylvanas"] = {
@@ -1581,7 +1593,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Cìchìcean - Sylvanas"] = {
+				["Kynaeth - Sylvanas"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 38.5,
@@ -1605,7 +1617,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Kynaeth - Sylvanas"] = {
+				["Cìchìcean - Sylvanas"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 38.5,
@@ -1627,9 +1639,9 @@ Bartender4DB = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 53.00000381469727,
-						["growVertical"] = "UP",
-						["point"] = "BOTTOMRIGHT",
 						["x"] = -261.0799560546875,
+						["point"] = "BOTTOMRIGHT",
+						["growVertical"] = "UP",
 					},
 					["padding"] = 20,
 				},
@@ -1716,7 +1728,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Cìchìcean - Sylvanas"] = {
+				["Kynaeth - Sylvanas"] = {
 					["enabled"] = true,
 					["version"] = 3,
 					["position"] = {
@@ -1743,7 +1755,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Kynaeth - Sylvanas"] = {
+				["Cìchìcean - Sylvanas"] = {
 					["enabled"] = true,
 					["version"] = 3,
 					["position"] = {
@@ -1791,126 +1803,38 @@ Bartender4DB = {
 				},
 			},
 		},
-		["Vehicle"] = {
+		["ZoneAbilityBar"] = {
 			["profiles"] = {
-				["Blanitza - Kazzak"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 42.50006103515625,
-						["x"] = 104.5,
-						["point"] = "CENTER",
-					},
-				},
-				["Mortifèrous - Kazzak"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 42.50006103515625,
-						["x"] = 104.5,
-						["point"] = "CENTER",
-					},
-				},
-				["Crëtz - Kazzak"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 42.50006103515625,
-						["x"] = 104.5,
-						["point"] = "CENTER",
-					},
-				},
-				["Cretz - Moonglade"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 42.50006103515625,
-						["x"] = 104.5,
-						["point"] = "CENTER",
-					},
-				},
-				["Latthrias - Sylvanas"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 42.50006103515625,
-						["x"] = 104.5,
-						["point"] = "CENTER",
-					},
-				},
-				["Jiglèr - Sylvanas"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 42.50006103515625,
-						["x"] = 104.5,
-						["point"] = "CENTER",
-					},
-				},
-				["Vòlkmer - Kazzak"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 42.50006103515625,
-						["x"] = 104.5,
-						["point"] = "CENTER",
-					},
-				},
-				["Cìchìcean - Sylvanas"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 42.50006103515625,
-						["x"] = 104.5,
-						["point"] = "CENTER",
-					},
-				},
-				["Plüto - Sylvanas"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 42.50006103515625,
-						["x"] = 104.5,
-						["point"] = "CENTER",
-					},
-				},
 				["Egidus - Sylvanas"] = {
 					["version"] = 3,
 					["position"] = {
-						["y"] = 42.50006103515625,
-						["x"] = 104.5,
-						["point"] = "CENTER",
+						["y"] = 222.9999847412109,
+						["x"] = -31.49990844726563,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Crètz - Sylvanas"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 222,
+						["x"] = 265,
+						["point"] = "BOTTOM",
+					},
+				},
+				["Brovar - Sylvanas"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 222.9999847412109,
+						["x"] = -31.49990844726563,
+						["point"] = "BOTTOM",
 					},
 				},
 				["Kynaeth - Sylvanas"] = {
 					["version"] = 3,
 					["position"] = {
-						["y"] = 42.50006103515625,
-						["x"] = 104.5,
-						["point"] = "CENTER",
-					},
-				},
-				["Gnomèrcy - Sylvanas"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 42.50006103515625,
-						["x"] = 104.5,
-						["point"] = "CENTER",
-					},
-				},
-				["Crètz - Sylvanas"] = {
-					["position"] = {
-						["y"] = 55.08260345458984,
-						["x"] = -428.9744873046875,
+						["y"] = 222.9999847412109,
+						["x"] = -31.49990844726563,
 						["point"] = "BOTTOM",
-					},
-					["version"] = 3,
-				},
-				["Brovar - Sylvanas"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 42.50006103515625,
-						["x"] = 104.5,
-						["point"] = "CENTER",
-					},
-				},
-				["Cretz - Sylvanas"] = {
-					["version"] = 3,
-					["position"] = {
-						["y"] = 42.50006103515625,
-						["x"] = 104.5,
-						["point"] = "CENTER",
 					},
 				},
 			},
@@ -1975,11 +1899,11 @@ Bartender4DB = {
 						["point"] = "CENTER",
 					},
 				},
-				["Cìchìcean - Sylvanas"] = {
+				["Kynaeth - Sylvanas"] = {
 					["version"] = 3,
 					["position"] = {
-						["y"] = -14.99996185302734,
-						["x"] = -82.5,
+						["y"] = -14.99998474121094,
+						["x"] = -82.50003051757812,
 						["point"] = "CENTER",
 					},
 				},
@@ -1999,11 +1923,11 @@ Bartender4DB = {
 						["point"] = "CENTER",
 					},
 				},
-				["Kynaeth - Sylvanas"] = {
+				["Cìchìcean - Sylvanas"] = {
 					["version"] = 3,
 					["position"] = {
-						["y"] = -14.99998474121094,
-						["x"] = -82.50003051757812,
+						["y"] = -14.99996185302734,
+						["x"] = -82.5,
 						["point"] = "CENTER",
 					},
 				},
@@ -2017,14 +1941,14 @@ Bartender4DB = {
 				},
 				["Crètz - Sylvanas"] = {
 					["enabled"] = false,
-					["version"] = 3,
+					["hidehotkey"] = false,
 					["position"] = {
 						["y"] = 209,
 						["x"] = -95.00001525878906,
 						["point"] = "BOTTOM",
 						["scale"] = 1.15,
 					},
-					["hidehotkey"] = false,
+					["version"] = 3,
 					["padding"] = 0,
 					["visibility"] = {
 						["always"] = false,
@@ -2106,7 +2030,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Cìchìcean - Sylvanas"] = {
+				["Kynaeth - Sylvanas"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 143,
@@ -2130,7 +2054,7 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
-				["Kynaeth - Sylvanas"] = {
+				["Cìchìcean - Sylvanas"] = {
 					["version"] = 3,
 					["position"] = {
 						["y"] = 143,
@@ -2150,9 +2074,9 @@ Bartender4DB = {
 					["fadeoutdelay"] = 0,
 					["fadeoutalpha"] = 0,
 					["position"] = {
-						["y"] = 252.9367218017578,
-						["x"] = -3.999996900558472,
-						["point"] = "BOTTOMLEFT",
+						["y"] = 120,
+						["x"] = -154.9999694824219,
+						["point"] = "BOTTOM",
 					},
 					["padding"] = 0,
 					["version"] = 3,
@@ -2175,38 +2099,126 @@ Bartender4DB = {
 				},
 			},
 		},
-		["ZoneAbilityBar"] = {
+		["Vehicle"] = {
 			["profiles"] = {
-				["Brovar - Sylvanas"] = {
+				["Blanitza - Kazzak"] = {
 					["version"] = 3,
 					["position"] = {
-						["y"] = 222.9999847412109,
-						["x"] = -31.49990844726563,
-						["point"] = "BOTTOM",
+						["y"] = 42.50006103515625,
+						["x"] = 104.5,
+						["point"] = "CENTER",
 					},
 				},
-				["Crètz - Sylvanas"] = {
+				["Mortifèrous - Kazzak"] = {
 					["version"] = 3,
 					["position"] = {
-						["y"] = 222,
-						["x"] = 265,
-						["point"] = "BOTTOM",
+						["y"] = 42.50006103515625,
+						["x"] = 104.5,
+						["point"] = "CENTER",
 					},
 				},
-				["Egidus - Sylvanas"] = {
+				["Crëtz - Kazzak"] = {
 					["version"] = 3,
 					["position"] = {
-						["y"] = 222.9999847412109,
-						["x"] = -31.49990844726563,
-						["point"] = "BOTTOM",
+						["y"] = 42.50006103515625,
+						["x"] = 104.5,
+						["point"] = "CENTER",
+					},
+				},
+				["Cretz - Moonglade"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 42.50006103515625,
+						["x"] = 104.5,
+						["point"] = "CENTER",
+					},
+				},
+				["Latthrias - Sylvanas"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 42.50006103515625,
+						["x"] = 104.5,
+						["point"] = "CENTER",
+					},
+				},
+				["Jiglèr - Sylvanas"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 42.50006103515625,
+						["x"] = 104.5,
+						["point"] = "CENTER",
+					},
+				},
+				["Vòlkmer - Kazzak"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 42.50006103515625,
+						["x"] = 104.5,
+						["point"] = "CENTER",
 					},
 				},
 				["Kynaeth - Sylvanas"] = {
 					["version"] = 3,
 					["position"] = {
-						["y"] = 222.9999847412109,
-						["x"] = -31.49990844726563,
+						["y"] = 42.50006103515625,
+						["x"] = 104.5,
+						["point"] = "CENTER",
+					},
+				},
+				["Plüto - Sylvanas"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 42.50006103515625,
+						["x"] = 104.5,
+						["point"] = "CENTER",
+					},
+				},
+				["Egidus - Sylvanas"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 42.50006103515625,
+						["x"] = 104.5,
+						["point"] = "CENTER",
+					},
+				},
+				["Cìchìcean - Sylvanas"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 42.50006103515625,
+						["x"] = 104.5,
+						["point"] = "CENTER",
+					},
+				},
+				["Gnomèrcy - Sylvanas"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 42.50006103515625,
+						["x"] = 104.5,
+						["point"] = "CENTER",
+					},
+				},
+				["Crètz - Sylvanas"] = {
+					["position"] = {
+						["y"] = 55.08260345458984,
+						["x"] = -428.9744873046875,
 						["point"] = "BOTTOM",
+					},
+					["version"] = 3,
+				},
+				["Brovar - Sylvanas"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 42.50006103515625,
+						["x"] = 104.5,
+						["point"] = "CENTER",
+					},
+				},
+				["Cretz - Sylvanas"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 42.50006103515625,
+						["x"] = 104.5,
+						["point"] = "CENTER",
 					},
 				},
 			},
@@ -2220,10 +2232,10 @@ Bartender4DB = {
 		["Latthrias - Sylvanas"] = "Crètz - Sylvanas",
 		["Jiglèr - Sylvanas"] = "Crètz - Sylvanas",
 		["Vòlkmer - Kazzak"] = "Crètz - Sylvanas",
-		["Cìchìcean - Sylvanas"] = "Cìchìcean - Sylvanas",
+		["Kynaeth - Sylvanas"] = "Crètz - Sylvanas",
 		["Plüto - Sylvanas"] = "Crètz - Sylvanas",
 		["Egidus - Sylvanas"] = "Crètz - Sylvanas",
-		["Kynaeth - Sylvanas"] = "Crètz - Sylvanas",
+		["Cìchìcean - Sylvanas"] = "Cìchìcean - Sylvanas",
 		["Gnomèrcy - Sylvanas"] = "Crètz - Sylvanas",
 		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
 		["Brovar - Sylvanas"] = "Crètz - Sylvanas",
@@ -2265,7 +2277,7 @@ Bartender4DB = {
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
 		},
-		["Cìchìcean - Sylvanas"] = {
+		["Kynaeth - Sylvanas"] = {
 			["focuscastmodifier"] = false,
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
@@ -2280,7 +2292,7 @@ Bartender4DB = {
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",
 		},
-		["Kynaeth - Sylvanas"] = {
+		["Cìchìcean - Sylvanas"] = {
 			["focuscastmodifier"] = false,
 			["blizzardVehicle"] = true,
 			["outofrange"] = "hotkey",

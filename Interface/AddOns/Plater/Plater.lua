@@ -215,6 +215,10 @@ Plater.CanOverride_Members = {
 	
 }
 
+--> export strings identification
+Plater.Export_CastColors = "CastColor"
+Plater.Export_NpcColors = "NpcColor"
+
 --> types of codes for each script in the Scripting tab (do not change these inside scripts)
 Plater.CodeTypeNames = { --private
 	[1] = "UpdateCode",
@@ -315,15 +319,16 @@ local COMM_PLATER_PREFIX = "PLT"
 local COMM_SCRIPT_GROUP_EXPORTED = "GE"
 Plater.COMM_SCRIPT_MSG = "PLTM"
 
-
- --> cvars just to make them easier to read
+--> cvars just to make them easier to read
 local CVAR_ENABLED = "1"
 local CVAR_DISABLED = "0"
 
---unit reaction
-local UNITREACTION_HOSTILE = 3
-local UNITREACTION_NEUTRAL = 4
-local UNITREACTION_FRIENDLY = 5
+--> unit reaction (saved 3 global locals)
+Plater.UnitReaction = {
+	UNITREACTION_HOSTILE = 3,
+	UNITREACTION_NEUTRAL = 4,
+	UNITREACTION_FRIENDLY = 5,
+}
 
 --> cache some common used member strings for better reading
 local MEMBER_UNITID = "namePlateUnitToken"
@@ -902,6 +907,7 @@ local class_specs_coords = {
 	local DB_CASTBAR_HIDE_FRIENDLY
 
 	local DB_CAPTURED_SPELLS = {}
+	local DB_CAPTURED_CASTS = {}
 
 	--store the aggro color table for tanks and dps
 	local DB_AGGRO_TANK_COLORS
@@ -1932,7 +1938,8 @@ local class_specs_coords = {
 		DB_CASTBAR_HIDE_ENEMIES = profile.hide_enemy_castbars
 		DB_CASTBAR_HIDE_FRIENDLY = profile.hide_friendly_castbars
 		
-		DB_CAPTURED_SPELLS = profile.captured_spells
+		DB_CAPTURED_CASTS = PlaterDB.captured_casts
+		DB_CAPTURED_SPELLS = PlaterDB.captured_spells
 		
 		DB_USE_NAME_TRANSLIT = profile.use_name_translit
 
@@ -2570,11 +2577,15 @@ local class_specs_coords = {
 
 		ENCOUNTER_END = function()
 			Plater.CurrentEncounterID = nil
+			Plater.CurrentEncounterName = nil
+			Plater.CurrentEncounterDifficultyId = nil
 			Plater.LatestEncounter = time()
 		end,
 
-		ENCOUNTER_START = function (_, encounterID)
+		ENCOUNTER_START = function (_, encounterID, encounterName, difficultyID)
 			Plater.CurrentEncounterID = encounterID
+			Plater.CurrentEncounterName = encounterName
+			Plater.CurrentEncounterDifficultyId = difficultyID
 			
 			local _, zoneType = GetInstanceInfo()
 			if (zoneType == "raid") then
@@ -3113,32 +3124,36 @@ local class_specs_coords = {
 				--]=]
 			
 				--set a UnitFrame member so scripts can get a quick reference of the unit frame from the castbar without calling for GetParent()
-				plateFrame.unitFrame.castBar.PlateFrame = plateFrame
-				plateFrame.unitFrame.castBar.unitFrame = plateFrame.unitFrame
-				plateFrame.unitFrame.castBar.IsCastBar = true
-				plateFrame.unitFrame.castBar.isNamePlate = true
-				plateFrame.unitFrame.castBar.ThrottleUpdate = 0
+				local castBar = plateFrame.unitFrame.castBar
+				castBar.PlateFrame = plateFrame
+				castBar.unitFrame = plateFrame.unitFrame
+				castBar.IsCastBar = true
+				castBar.isNamePlate = true
+				castBar.ThrottleUpdate = 0
 				
 				--mix the plater functions into the castbar (most of the functions are for scripting support)
-				DF:Mixin (plateFrame.unitFrame.castBar, Plater.ScriptMetaFunctions)
-				plateFrame.unitFrame.castBar:HookScript ("OnHide", plateFrame.unitFrame.castBar.OnHideWidget)
+				DF:Mixin (castBar, Plater.ScriptMetaFunctions)
+				castBar:HookScript ("OnHide", castBar.OnHideWidget)
 				
 				--> create an overlay frame that sits just above the castbar
 				--this is ideal for adding borders and other overlays
-				plateFrame.unitFrame.castBar.FrameOverlay = CreateFrame ("frame", "$parentOverlayFrame", plateFrame.unitFrame.castBar, BackdropTemplateMixin and "BackdropTemplate")
-				plateFrame.unitFrame.castBar.FrameOverlay:SetAllPoints()
+				castBar.FrameOverlay = CreateFrame ("frame", "$parentOverlayFrame", castBar, BackdropTemplateMixin and "BackdropTemplate")
+				castBar.FrameOverlay:SetAllPoints()
 				--pushing the spell name up
-				plateFrame.unitFrame.castBar.Text:SetParent (plateFrame.unitFrame.castBar.FrameOverlay)
+				castBar.Text:SetParent (castBar.FrameOverlay)
 				--does have a border but its alpha is zero by default
-				plateFrame.unitFrame.castBar.FrameOverlay:SetBackdrop ({edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1})
-				plateFrame.unitFrame.castBar.FrameOverlay:SetBackdropBorderColor (1, 1, 1, 0)
+				castBar.FrameOverlay:SetBackdrop ({edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1})
+				castBar.FrameOverlay:SetBackdropBorderColor (1, 1, 1, 0)
 				--creates the target name overlay which shows who the unit is targetting while casting (this is disabled by default)
-				plateFrame.unitFrame.castBar.FrameOverlay.TargetName = plateFrame.unitFrame.castBar.FrameOverlay:CreateFontString (nil, "overlay", "GameFontNormal")
-				plateFrame.unitFrame.castBar.TargetName = plateFrame.unitFrame.castBar.FrameOverlay.TargetName --alias for scripts
+				castBar.FrameOverlay.TargetName = castBar.FrameOverlay:CreateFontString (nil, "overlay", "GameFontNormal")
+				castBar.TargetName = castBar.FrameOverlay.TargetName --alias for scripts
 			
+				--> create the spell color texture
+				castBar.castColorTexture = castBar:CreateTexture("$parentCastColor", "background", nil, -6)
+
 				--create custom border frame for modeling
 				if (Plater.CreateCustomDesignBorder) then
-					Plater.CreateCustomDesignBorder(plateFrame.unitFrame.castBar)
+					Plater.CreateCustomDesignBorder(castBar)
 				end
 
 			--> border
@@ -3241,7 +3256,7 @@ local class_specs_coords = {
 			
 			--get and format the reaction to always be the value of the constants, then cache the reaction in some widgets for performance
 			local reaction = UnitReaction (unitID, "player") or 1
-			reaction = reaction <= UNITREACTION_HOSTILE and UNITREACTION_HOSTILE or reaction >= UNITREACTION_FRIENDLY and UNITREACTION_FRIENDLY or UNITREACTION_NEUTRAL
+			reaction = reaction <= Plater.UnitReaction.UNITREACTION_HOSTILE and Plater.UnitReaction.UNITREACTION_HOSTILE or reaction >= Plater.UnitReaction.UNITREACTION_FRIENDLY and Plater.UnitReaction.UNITREACTION_FRIENDLY or Plater.UnitReaction.UNITREACTION_NEUTRAL
 			
 			local isWidgetOnlyMode = (IS_WOW_PROJECT_MAINLINE) and UnitNameplateShowsWidgetsOnly (unitID) or false
 			local isBattlePet = (IS_WOW_PROJECT_MAINLINE) and UnitIsBattlePet(unitID) or false
@@ -3261,7 +3276,7 @@ local class_specs_coords = {
 					if (isPlayer) then
 						--unit is a player
 						
-						if (reaction >= UNITREACTION_FRIENDLY) then
+						if (reaction >= Plater.UnitReaction.UNITREACTION_FRIENDLY) then
 							actorType = ACTORTYPE_FRIENDLY_PLAYER
 							
 						else
@@ -3271,7 +3286,7 @@ local class_specs_coords = {
 					else
 						--the unit is a npc
 						
-						if (reaction >= UNITREACTION_FRIENDLY) then
+						if (reaction >= Plater.UnitReaction.UNITREACTION_FRIENDLY) then
 							actorType = ACTORTYPE_FRIENDLY_NPC
 							
 						elseif isBattlePet then
@@ -3492,7 +3507,7 @@ local class_specs_coords = {
 			healthBar.ExecuteGlowDown:Hide()
 			
 			--reset color values
-			healthBar.R, healthBar.G, healthBar.B = nil, nil, nil
+			healthBar.R, healthBar.G, healthBar.B, healthBar.A = nil, nil, nil, nil
 			
 			--reset the frame level and strata if using UIParent as the parent of the unitFrame
 			--the function checks if the option is enabled, no need to check here
@@ -3532,7 +3547,7 @@ local class_specs_coords = {
 						--unit is a player
 						plateFrame.playerGuildName = GetGuildInfo (unitID)
 						
-						if (reaction >= UNITREACTION_FRIENDLY) then
+						if (reaction >= Plater.UnitReaction.UNITREACTION_FRIENDLY) then
 							plateFrame.NameAnchor = DB_NAME_PLAYERFRIENDLY_ANCHOR
 							plateFrame.PlateConfig = DB_PLATE_CONFIG.friendlyplayer
 							Plater.UpdatePlateFrame (plateFrame, ACTORTYPE_FRIENDLY_PLAYER, nil, true)
@@ -3553,7 +3568,7 @@ local class_specs_coords = {
 						--the unit is a npc
 						Plater.GetNpcID (plateFrame)	
 						
-						if (reaction >= UNITREACTION_FRIENDLY) then
+						if (reaction >= Plater.UnitReaction.UNITREACTION_FRIENDLY) then
 							plateFrame.NameAnchor = DB_NAME_NPCFRIENDLY_ANCHOR
 							plateFrame.PlateConfig = DB_PLATE_CONFIG.friendlynpc
 							Plater.UpdatePlateFrame (plateFrame, ACTORTYPE_FRIENDLY_NPC, nil, true)
@@ -3840,7 +3855,17 @@ local class_specs_coords = {
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --> addon initialization
 
+function Plater.InitializeSavedVariables()
+	local PlaterDB = _G.PlaterDB
+
+	--table to store casts with SPELL_CAST_START
+	PlaterDB.captured_casts = PlaterDB.captured_casts or {}
+	--table to store auras and any spell cast
+	PlaterDB.captured_spells = PlaterDB.captured_spells or {}
+end
+
 function Plater.OnInit() --private --~oninit ~init
+	Plater.InitializeSavedVariables()
 	Plater.RefreshDBUpvalues()
 	
 	-- do we need to support blizzard frames?
@@ -4618,6 +4643,21 @@ function Plater.OnInit() --private --~oninit ~init
 
 					shouldRunCastStartHook = true
 
+					--spell color
+					self.castColorTexture:Hide()
+
+					if (profile.cast_color_settings.enabled) then
+						local castColors = Plater.db.profile.cast_colors
+
+						--check if this cast has a custom color
+						if (castColors[self.spellID]) then
+							self.castColorTexture:Show()
+							local r, g, b = Plater:ParseColors(castColors[self.spellID][2])
+							self.castColorTexture:SetColorTexture(r, g, b)
+							self.castColorTexture:SetHeight(self:GetHeight() + profile.cast_color_settings.height_offset)
+						end
+					end
+
 				elseif (event == "UNIT_SPELLCAST_INTERRUPTED") then
 					local unitCast = unit
 					if (unitCast ~= self.unit) then
@@ -5026,10 +5066,10 @@ end
 	function Plater.SetQuestColorByReaction (unitFrame)
 		--unit is a quest mob, reset the color to quest color
 		if (unitFrame.ActorType and DB_PLATE_CONFIG [unitFrame.ActorType].quest_color_enabled) then
-			if (unitFrame [MEMBER_REACTION] == UNITREACTION_NEUTRAL) then
+			if (unitFrame [MEMBER_REACTION] == Plater.UnitReaction.UNITREACTION_NEUTRAL) then
 				Plater.ChangeHealthBarColor_Internal (unitFrame.healthBar, unpack (DB_PLATE_CONFIG [unitFrame.ActorType].quest_color_neutral))
 				
-			elseif (unitFrame [MEMBER_REACTION] < UNITREACTION_NEUTRAL) then
+			elseif (unitFrame [MEMBER_REACTION] < Plater.UnitReaction.UNITREACTION_NEUTRAL) then
 				Plater.ChangeHealthBarColor_Internal (unitFrame.healthBar, unpack (DB_PLATE_CONFIG [unitFrame.ActorType].quest_color_enemy))
 				
 			else
@@ -5077,8 +5117,8 @@ end
 	--internal function to change the health bar color
 	function Plater.ChangeHealthBarColor_Internal (healthBar, r, g, b, a, forceNoLerp) --private
 		a = a or 1
-		if (r ~= healthBar.R or g ~= healthBar.G or b ~= healthBar.B) then
-			healthBar.R, healthBar.G, healthBar.B = r, g, b
+		if (r ~= healthBar.R or g ~= healthBar.G or b ~= healthBar.B or a ~= healthBar.A) then
+			healthBar.R, healthBar.G, healthBar.B, healthBar.A = r, g, b, a
 			if (not DB_LERP_COLOR or forceNoLerp) then -- ~lerpcolor
 				healthBar.barTexture:SetVertexColor (r, g, b, a)
 			end
@@ -5420,7 +5460,9 @@ end
 	
 	function Plater.ForceTickOnAllNameplates() --private
 		for _, plateFrame in ipairs (Plater.GetAllShownPlates()) do
-			Plater.NameplateTick (plateFrame.OnTickFrame, 10) --GetWorldDeltaSeconds()
+			if plateFrame.unitFrame.PlaterOnScreen then
+				Plater.NameplateTick (plateFrame.OnTickFrame, 10) --GetWorldDeltaSeconds()
+			end
 		end
 	end
 	
@@ -6380,7 +6422,7 @@ end
 				
 			else
 				--isn't friend, check if is showing only the name and if is showing class colors
-				if (Plater.db.profile.plate_config [ACTORTYPE_FRIENDLY_PLAYER].actorname_use_class_color) then
+				if (plateConfigs.actorname_use_class_color) then
 					local _, unitClass = UnitClass (plateFrame.unitFrame [MEMBER_UNITID])
 					if (unitClass) then
 						local color = RAID_CLASS_COLORS [unitClass]
@@ -6420,7 +6462,7 @@ end
 					
 					--get the quest color if this npcs is a quest npc
 					if (plateFrame [MEMBER_QUEST] and DB_PLATE_CONFIG [plateFrame.unitFrame.ActorType].quest_color_enabled) then
-						if (plateFrame [MEMBER_REACTION] == UNITREACTION_NEUTRAL) then
+						if (plateFrame [MEMBER_REACTION] == Plater.UnitReaction.UNITREACTION_NEUTRAL) then
 							r, g, b, a = unpack (plateConfigs.quest_color_neutral)
 						else
 							r, g, b, a = unpack (plateConfigs.quest_color_enemy)
@@ -6749,7 +6791,7 @@ end
 			if (plateFrame.actorType == ACTORTYPE_PLAYER) then
 				plateFrame.NameAnchor = 0
 				
-			elseif (plateFrame.actorType == UNITREACTION_FRIENDLY) then
+			elseif (plateFrame.actorType == Plater.UnitReaction.UNITREACTION_FRIENDLY) then
 				plateFrame.NameAnchor = DB_NAME_PLAYERFRIENDLY_ANCHOR
 				
 			elseif (plateFrame.actorType == ACTORTYPE_ENEMY_PLAYER) then
@@ -6916,7 +6958,7 @@ end
 		if (IS_IN_OPEN_WORLD and actorType == ACTORTYPE_ENEMY_NPC and DB_PLATE_CONFIG [actorType].quest_enabled) then --actorType == ACTORTYPE_FRIENDLY_NPC or 
 			local isQuestMob = Plater.IsQuestObjective (plateFrame)
 			if (isQuestMob and DB_PLATE_CONFIG [actorType].quest_color_enabled and not Plater.IsUnitTapDenied (plateFrame.unitFrame.unit)) then
-				if (plateFrame [MEMBER_REACTION] == UNITREACTION_NEUTRAL) then
+				if (plateFrame [MEMBER_REACTION] == Plater.UnitReaction.UNITREACTION_NEUTRAL) then
 					Plater.ChangeHealthBarColor_Internal (healthBar, unpack (DB_PLATE_CONFIG [actorType].quest_color_neutral))
 					
 				else
@@ -7129,7 +7171,15 @@ end
 			else
 				castBar.Spark:SetTexCoord (0, 1, 0, 1)
 			end
-			
+
+			castBar.castColorTexture:Hide()
+			if (profile.cast_color_settings.enabled) then
+				castBar.castColorTexture:SetWidth(profile.cast_color_settings.width)
+				castBar.castColorTexture:SetAlpha(profile.cast_color_settings.alpha)
+				castBar.castColorTexture:SetDrawLayer(profile.cast_color_settings.layer, -6)
+				Plater.SetAnchor(castBar.castColorTexture, profile.cast_color_settings.anchor)
+			end
+
 			castBar.Settings.SparkOffset = profile.cast_statusbar_spark_offset
 			
 			--setup power bar
@@ -8175,7 +8225,7 @@ end
 	end
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
---> combat log reader  ~combatlog
+--> combat log reader  ~combatlog ~cleu
 
 
 	local PlaterCLEUParser = CreateFrame ("frame", "PlaterCLEUParserFrame", UIParent, BackdropTemplateMixin and "BackdropTemplate")
@@ -8185,10 +8235,6 @@ end
 			if (SPELL_WITH_ANIMATIONS [spellName] and sourceGUID == Plater.PlayerGUID) then
 				for _, plateFrame in ipairs (Plater.GetAllShownPlates()) do
 					if (plateFrame [MEMBER_GUID] == targetGUID and plateFrame.unitFrame.PlaterOnScreen) then
-						--disabled for patch 8.2
-						--need a workaround for GetPoints() not being available on this patch
-						
-						--testing new fix
 						Plater.DoNameplateAnimation (plateFrame, SPELL_WITH_ANIMATIONS [spellName], spellName, isCritical)
 					end
 				end
@@ -8237,15 +8283,36 @@ end
 		end,
 		
 		SPELL_CAST_SUCCESS = function (time, token, hidding, sourceGUID, sourceName, sourceFlag, sourceFlag2, targetGUID, targetName, targetFlag, targetFlag2, spellID, spellName, spellType, amount, overKill, school, resisted, blocked, absorbed, isCritical)
-			if (not DB_CAPTURED_SPELLS [spellID]) then
-				DB_CAPTURED_SPELLS [spellID] = {event = token, source = sourceName, npcID = Plater:GetNpcIdFromGuid (sourceGUID or ""), encounterID = Plater.CurrentEncounterID}
+			if (not DB_CAPTURED_SPELLS[spellID]) then
+				if (not sourceFlag or bit.band(sourceFlag, 0x00000400) == 0) then --not a player
+					local npcId = Plater:GetNpcIdFromGuid(sourceGUID or "")
+					if (npcId and npcId ~= 0) then
+						DB_CAPTURED_SPELLS[spellID] = {event = token, source = sourceName, npcID = npcId, encounterID = Plater.CurrentEncounterID, encounterName = Plater.CurrentEncounterName}
+					end
+				end
+			end
+		end,
+		
+		SPELL_CAST_START = function (time, token, hidding, sourceGUID, sourceName, sourceFlag, sourceFlag2, targetGUID, targetName, targetFlag, targetFlag2, spellID, spellName, spellType, amount, overKill, school, resisted, blocked, absorbed, isCritical)
+			if (not DB_CAPTURED_CASTS[spellID]) then
+				if (not sourceFlag or bit.band(sourceFlag, 0x00000400) == 0) then --not a player
+					local npcId = Plater:GetNpcIdFromGuid(sourceGUID or "")
+					if (npcId and npcId ~= 0) then
+						DB_CAPTURED_CASTS[spellID] = {npcID = Plater:GetNpcIdFromGuid(sourceGUID or ""), encounterID = Plater.CurrentEncounterID, encounterName = Plater.CurrentEncounterName}
+					end
+				end
 			end
 		end,
 
 		SPELL_AURA_APPLIED = function (time, token, hidding, sourceGUID, sourceName, sourceFlag, sourceFlag2, targetGUID, targetName, targetFlag, targetFlag2, spellID, spellName, spellType, amount, overKill, school, resisted, blocked, absorbed, isCritical)
-			if (not DB_CAPTURED_SPELLS [spellID]) then
-				local auraType = amount
-				DB_CAPTURED_SPELLS [spellID] = {event = token, source = sourceName, type = auraType, npcID = Plater:GetNpcIdFromGuid (sourceGUID or ""), encounterID = Plater.CurrentEncounterID}
+			if (not DB_CAPTURED_SPELLS[spellID]) then
+				if (not sourceFlag or bit.band(sourceFlag, 0x00000400) == 0) then --not a player
+					local npcId = Plater:GetNpcIdFromGuid(sourceGUID or "")
+					if (npcId and npcId ~= 0) then
+						local auraType = amount
+						DB_CAPTURED_SPELLS [spellID] = {event = token, source = sourceName, type = auraType, npcID = npcId, encounterID = Plater.CurrentEncounterID, encounterName = Plater.CurrentEncounterName}
+					end
+				end
 			end
 			
 			if IS_WOW_PROJECT_NOT_MAINLINE then
@@ -9510,6 +9577,7 @@ end
 		unitFrame.healthBar.unitName:Show()
 		
 		unitFrame.PlateFrame.IsFriendlyPlayerWithoutHealthBar = false
+		unitFrame.PlateFrame.IsNpcWithoutHealthBar = false
 		
 		unitFrame.ActorNameSpecial:Hide()
 		unitFrame.ActorTitleSpecial:Hide()
@@ -9663,6 +9731,9 @@ end
 			if (scriptInfo.HotReload < scriptInfo.GlobalScriptObject.HotReload) then
 				--update the hotreload state
 				scriptInfo.HotReload = scriptInfo.GlobalScriptObject.HotReload
+
+				--there's some bug with the global env becoming nil after saving a script
+				--print(scriptInfo.GlobalScriptObject.DBScriptObject.Name, PLATER_GLOBAL_SCRIPT_ENV [scriptInfo.GlobalScriptObject.DBScriptObject.scriptId])
 
 				--dispatch the constructor
 				local unitFrame = self.unitFrame or self
@@ -10156,7 +10227,14 @@ end
 				["platesUpdatedThisFrame"] = true,
 				["platesToUpdatePerFrame"] = true,
 				["curFPS"] = false,
-			}
+			},
+			["UnitReaction"] = {
+				["UNITREACTION_HOSTILE"] = false,
+				["UNITREACTION_NEUTRAL"] = false,
+				["UNITREACTION_FRIENDLY"] = false,
+			},
+			["Export_NpcColors"] = true,
+			["Export_CastColors"] = true,
 		},
 		
 		["DetailsFramework"] = {
@@ -11234,7 +11312,11 @@ end
 			return false
 		end
 		
-		return true, objectAdded, wasEnabled
+		if objectAdded then
+			return true, objectAdded, wasEnabled
+		else
+			return false
+		end
 	end
 
 	--add a scriptObject to the script db
@@ -11314,7 +11396,7 @@ end
 		elseif (scriptType == "script") then
 			-- check integrity: type, name, triggers and hooks
 			if not indexTable ["1"] or not indexTable ["2"] or not indexTable ["3"] or not indexTable ["4"]
-				or not indexTable ["11"] or not indexTable ["12"] or not indexTable ["13"] or not indexTable ["14"] or not indexTable ["15"] then
+				or not indexTable ["11"] or not indexTable ["12"] or not indexTable ["13"] or not indexTable ["14"] then
 				return nil
 			end
 		

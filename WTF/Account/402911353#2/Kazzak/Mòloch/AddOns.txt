@@ -35,8 +35,8 @@ TidyPlates_Quatre: disabled
 TidyPlates_Roth: disabled
 Auctionator: disabled
 Broker_OrderHallCommandBar: disabled
-!BugGrabber: disabled
-BugSack: disabled
+!BugGrabber: enabled
+BugSack: enabled
 ChocolateBar: disabled
 ErrorFilter: disabled
 LDB-Artifact: disabled
