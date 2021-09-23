@@ -2,6 +2,7 @@
 Gladius2DB = {
 	["profileKeys"] = {
 		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
+		["Towerpog - Sylvanas"] = "Towerpog - Sylvanas",
 		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
 		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
 		["Plüto - Sylvanas"] = "Crètz - Sylvanas",
@@ -16,6 +17,10 @@ Gladius2DB = {
 		["Vòlkmer - Kazzak"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
+		},
+		["Towerpog - Sylvanas"] = {
+			["tagsVersion"] = 4,
+			["auraVersion"] = 1,
 		},
 		["Latthrias - Sylvanas"] = {
 			["auraVersion"] = 1,
@@ -60,17 +65,11 @@ Gladius2DB = {
 			["tagsVersion"] = 4,
 		},
 		["Crètz - Sylvanas"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-			["locked"] = true,
 			["y"] = {
 				["arena1"] = 480.7113397651301,
 			},
 			["x"] = {
 				["arena1"] = 968.5337908135625,
-			},
-			["announcements"] = {
-				["enemies"] = false,
 			},
 			["tags"] = {
 				["maxhealth"] = {
@@ -146,6 +145,12 @@ Gladius2DB = {
 					["events"] = "UNIT_MAXPOWER UNIT_DISPLAYPOWER UNIT_NAME_UPDATE",
 				},
 			},
+			["auraVersion"] = 1,
+			["tagsVersion"] = 4,
+			["announcements"] = {
+				["enemies"] = false,
+			},
+			["locked"] = true,
 		},
 		["Cretz - Moonglade"] = {
 			["auraVersion"] = 1,

@@ -2,13 +2,14 @@
 BattleGroundEnemiesDB = {
 	["profileKeys"] = {
 		["Mortifèrous - Kazzak"] = "Default",
+		["Towerpog - Sylvanas"] = "Default",
 		["Crëtz - Kazzak"] = "Default",
 		["Latthrias - Sylvanas"] = "Default",
 		["Jiglèr - Sylvanas"] = "Default",
-		["Cìchìcean - Sylvanas"] = "Default",
+		["Kynaeth - Sylvanas"] = "Default",
 		["Plüto - Sylvanas"] = "Default",
 		["Egidus - Sylvanas"] = "Default",
-		["Kynaeth - Sylvanas"] = "Default",
+		["Cìchìcean - Sylvanas"] = "Default",
 		["Cretz - Moonglade"] = "Default",
 		["Crètz - Sylvanas"] = "Default",
 		["Gnomèrcy - Sylvanas"] = "Default",

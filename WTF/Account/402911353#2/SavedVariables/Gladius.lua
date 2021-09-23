@@ -2,6 +2,7 @@
 Gladius2DB = {
 	["profileKeys"] = {
 		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
+		["Towerpog - Sylvanas"] = "Towerpog - Sylvanas",
 		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
 		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
 		["Plüto - Sylvanas"] = "Crètz - Sylvanas",
@@ -16,6 +17,16 @@ Gladius2DB = {
 		["Vòlkmer - Kazzak"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
+		},
+		["Towerpog - Sylvanas"] = {
+			["tagsVersion"] = 4,
+			["x"] = {
+				["arena1"] = 1100.800634294101,
+			},
+			["y"] = {
+				["arena1"] = 499.9112100217099,
+			},
+			["auraVersion"] = 1,
 		},
 		["Latthrias - Sylvanas"] = {
 			["auraVersion"] = 1,
@@ -66,17 +77,11 @@ Gladius2DB = {
 			},
 		},
 		["Crètz - Sylvanas"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-			["locked"] = true,
 			["y"] = {
 				["arena1"] = 480.7113397651301,
 			},
 			["x"] = {
 				["arena1"] = 968.5337908135625,
-			},
-			["announcements"] = {
-				["enemies"] = false,
 			},
 			["tags"] = {
 				["maxhealth"] = {
@@ -151,6 +156,12 @@ Gladius2DB = {
 					["func"] = "function(unit)\nreturn not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nend",
 					["events"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
 				},
+			},
+			["auraVersion"] = 1,
+			["tagsVersion"] = 4,
+			["locked"] = true,
+			["announcements"] = {
+				["enemies"] = false,
 			},
 		},
 		["Cretz - Moonglade"] = {

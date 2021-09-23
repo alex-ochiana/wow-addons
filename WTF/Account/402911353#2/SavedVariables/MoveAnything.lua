@@ -9,10 +9,28 @@ MADB = {
 		["default"] = {
 			["name"] = "default",
 			["frames"] = {
+				["ObjectiveTrackerFrameMover"] = {
+					["orgPos"] = {
+						"TOPRIGHT", -- [1]
+						"MinimapCluster", -- [2]
+						"BOTTOMRIGHT", -- [3]
+						-10, -- [4]
+						0, -- [5]
+					},
+					["name"] = "ObjectiveTrackerFrameMover",
+					["pos"] = {
+						"TOPRIGHT", -- [1]
+						"MinimapCluster", -- [2]
+						"BOTTOMRIGHT", -- [3]
+						319.5010986328125, -- [4]
+						-202.9998168945313, -- [5]
+					},
+				},
 			},
 		},
 	},
 	["closeGUIOnEscape"] = false,
+	["modifiedFramesOnly"] = true,
 	["squareMM"] = false,
 	["playSound"] = false,
 	["noBags"] = true,

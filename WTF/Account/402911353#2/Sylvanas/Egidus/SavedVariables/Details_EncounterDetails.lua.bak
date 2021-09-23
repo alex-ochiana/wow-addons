@@ -215,20 +215,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Al'Akir",
 		},
-		[85483] = {
-			["school"] = 8,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Rohash",
-		},
-		[35369] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Phoenix",
-		},
 		[20203] = {
 			["school"] = 4,
 			["token"] = {
@@ -237,21 +223,18 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Onyxian Warder",
 		},
-		[106834] = {
+		[35369] = {
 			["school"] = 4,
-			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Deathwing",
-		},
-		[107588] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Goriona",
+			["source"] = "Phoenix",
+		},
+		[95218] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_HEAL"] = true,
+			},
 		},
 		[18392] = {
 			["school"] = 4,
@@ -262,15 +245,30 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Onyxia",
 		},
-		[88427] = {
-			["school"] = 8,
+		[107588] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Goriona",
+		},
+		[106834] = {
+			["school"] = 4,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Deathwing",
+		},
+		[105445] = {
+			["school"] = 4,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Al'Akir",
+			["source"] = "Blistering Tentacle",
 		},
 		[105834] = {
 			["school"] = 4,
@@ -294,11 +292,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Twilight Assault Drake",
 		},
-		[95218] = {
-			["school"] = 8,
+		[37036] = {
+			["school"] = 4,
 			["token"] = {
-				["SPELL_HEAL"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
+			["source"] = "Master Engineer Telonicus",
 		},
 		[93166] = {
 			["school"] = 8,
@@ -315,23 +316,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Tempest Falconer",
 		},
-		[37036] = {
-			["school"] = 4,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Master Engineer Telonicus",
-		},
-		[86205] = {
-			["school"] = 8,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Anshal",
-		},
 		[103846] = {
 			["school"] = 1,
 			["type"] = "BUFF",
@@ -341,14 +325,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Morchok",
 		},
-		[30225] = {
+		[86205] = {
 			["school"] = 8,
-			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Thaladred the Darkener",
+			["source"] = "Anshal",
 		},
 		[36805] = {
 			["school"] = 4,
@@ -358,6 +341,15 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Kael'thas Sunstrider",
+		},
+		[30225] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Thaladred the Darkener",
 		},
 		[37018] = {
 			["school"] = 4,
@@ -379,14 +371,19 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Thaladred the Darkener",
 		},
-		[87904] = {
+		[85483] = {
 			["school"] = 8,
-			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Stormling",
+			["source"] = "Rohash",
+		},
+		[107589] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Goriona",
 		},
 		[106835] = {
 			["school"] = 4,
@@ -395,12 +392,21 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Deathwing",
 		},
-		[36723] = {
-			["school"] = 1,
+		[88301] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Kael'thas Sunstrider",
+			["source"] = "Al'Akir",
+		},
+		[106401] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Goriona",
 		},
 		[36731] = {
 			["school"] = 4,
@@ -410,14 +416,6 @@ EncounterDetailsDB = {
 				["SPELL_PERIODIC_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-		},
-		[36985] = {
-			["school"] = 2,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_HEAL"] = true,
-			},
-			["source"] = "Cosmic Infuser",
 		},
 		[44863] = {
 			["school"] = 1,
@@ -429,12 +427,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Lord Sanguinar",
 		},
-		[106401] = {
-			["school"] = 32,
+		[36985] = {
+			["school"] = 2,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_HEAL"] = true,
 			},
-			["source"] = "Goriona",
+			["source"] = "Cosmic Infuser",
 		},
 		[106375] = {
 			["school"] = 32,
@@ -465,6 +464,14 @@ EncounterDetailsDB = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
 		},
+		[15284] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Onyxian Warder",
+		},
 		[105248] = {
 			["school"] = 4,
 			["type"] = "BUFF",
@@ -473,14 +480,6 @@ EncounterDetailsDB = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
 			["source"] = "Corrupted Blood",
-		},
-		[15284] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Onyxian Warder",
 		},
 		[18958] = {
 			["school"] = 4,
@@ -544,14 +543,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Twilight Sapper",
 		},
-		[106199] = {
+		[36966] = {
 			["school"] = 1,
-			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Hideous Amalgamation",
+			["source"] = "Thaladred the Darkener",
 		},
 		[105479] = {
 			["school"] = 1,
@@ -568,13 +566,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Anshal",
 		},
-		[36966] = {
+		[106199] = {
 			["school"] = 1,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Thaladred the Darkener",
+			["source"] = "Hideous Amalgamation",
 		},
 		[108043] = {
 			["school"] = 1,
@@ -725,15 +724,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Nezir",
 		},
-		[84645] = {
-			["school"] = 16,
-			["type"] = "DEBUFF",
+		[36723] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Nezir",
+			["source"] = "Kael'thas Sunstrider",
 		},
 		[105401] = {
 			["school"] = 4,
@@ -744,21 +740,24 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Arm Tentacle",
 		},
-		[88301] = {
+		[87904] = {
 			["school"] = 8,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Stormling",
+		},
+		[84645] = {
+			["school"] = 16,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-			["source"] = "Al'Akir",
-		},
-		[107589] = {
-			["school"] = 32,
-			["token"] = {
 				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Goriona",
+			["source"] = "Nezir",
 		},
 		[93059] = {
 			["school"] = 1,
@@ -769,21 +768,22 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Rohash",
 		},
+		[88427] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Al'Akir",
+		},
 		[86193] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Rohash",
-		},
-		[105445] = {
-			["school"] = 4,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Blistering Tentacle",
 		},
 		[87908] = {
 			["school"] = 8,
@@ -798,25 +798,25 @@ EncounterDetailsDB = {
 	["emotes"] = {
 		{
 			{
-				0.1969999999273568, -- [1]
+				0.1959999999962747, -- [1]
 				"Your challenge is accepted, mortals! Know that you face Al'Akir, Elemental Lord of Air! You have no hope of defeating me!", -- [2]
 				"Al'Akir", -- [3]
 				7, -- [4]
 			}, -- [1]
 			{
-				5.277999999932945, -- [1]
+				4.966000000014901, -- [1]
 				"Your futile persistance angers me!", -- [2]
 				"Al'Akir", -- [3]
 				7, -- [4]
 			}, -- [2]
 			{
-				6.486000000033528, -- [1]
+				6.302000000025146, -- [1]
 				"Storms! I summon you to my side!", -- [2]
 				"Al'Akir", -- [3]
 				7, -- [4]
 			}, -- [3]
 			{
-				8.925999999977648, -- [1]
+				9.975000000034925, -- [1]
 				"Enough! I will no longer be contained!", -- [2]
 				"Al'Akir", -- [3]
 				7, -- [4]
@@ -825,82 +825,46 @@ EncounterDetailsDB = {
 		}, -- [1]
 		{
 			{
-				0.1669999998994172, -- [1]
-				"It shall be I that earns the favor of our lord by casting out the intruders. My calmest wind shall still prove too much for them!", -- [2]
-				"Anshal", -- [3]
-				7, -- [4]
-			}, -- [1]
-			{
-				2.200999999884516, -- [1]
-				"Why do you flee, mortals? There is nowhere you can run or hide here!", -- [2]
-				"Rohash", -- [3]
-				7, -- [4]
-			}, -- [2]
-			{
-				2.200999999884516, -- [1]
-				"My power grows feeble, brothers. I shamefully must rely on you for a time.", -- [2]
-				"Anshal", -- [3]
-				7, -- [4]
-			}, -- [3]
-			{
-				2.200999999884516, -- [1]
-				"%s begins to gather strength from the remaining Wind Lords!", -- [2]
-				"Anshal", -- [3]
-				1, -- [4]
-			}, -- [4]
-			{
-				3.139999999897555, -- [1]
-				"You throw away your honor and flee as cowards? Then die!", -- [2]
-				"Nezir", -- [3]
-				7, -- [4]
-			}, -- [5]
-			{
-				22.76000000000931, -- [1]
+				13.58300000004238, -- [1]
 				"Brothers, beware! These mortals are dangerous. I must pause and gather my strength.", -- [2]
 				"Nezir", -- [3]
 				7, -- [4]
-			}, -- [6]
+			}, -- [1]
 			{
-				22.76000000000931, -- [1]
+				13.58300000004238, -- [1]
 				"%s begins to gather strength from the remaining Wind Lord!", -- [2]
 				"Nezir", -- [3]
 				1, -- [4]
-			}, -- [7]
+			}, -- [2]
 			{
-				29.52000000001863, -- [1]
-				"Why do you flee, mortals? There is nowhere you can run or hide here!", -- [2]
-				"Rohash", -- [3]
+				17.5, -- [1]
+				"You think to outrun the wind? A fatal mistake.", -- [2]
+				"Anshal", -- [3]
 				7, -- [4]
-			}, -- [8]
-			{
-				30.2249999998603, -- [1]
-				"|TInterface\\Icons\\spell_nature_cyclone.blp:20|t%s begins to cast|cFFFF9A20|Hspell:86193|h [Wind Blast]!|r", -- [2]
-				"Rohash", -- [3]
-				1, -- [4]
-			}, -- [9]
+			}, -- [3]
 			["boss"] = "Conclave of Wind",
 		}, -- [2]
 		{
 			{
-				0.159999999916181, -- [1]
+				0.1850000000558794, -- [1]
 				"Your challenge is accepted, mortals! Know that you face Al'Akir, Elemental Lord of Air! You have no hope of defeating me!", -- [2]
 				"Al'Akir", -- [3]
 				7, -- [4]
 			}, -- [1]
 			{
-				3.944000000134111, -- [1]
+				5.322000000160188, -- [1]
 				"Your futile persistance angers me!", -- [2]
 				"Al'Akir", -- [3]
 				7, -- [4]
 			}, -- [2]
 			{
-				5.158999999985099, -- [1]
+				5.322000000160188, -- [1]
 				"Storms! I summon you to my side!", -- [2]
 				"Al'Akir", -- [3]
 				7, -- [4]
 			}, -- [3]
 			{
-				11.14000000013039, -- [1]
+				8.98700000019744, -- [1]
 				"Enough! I will no longer be contained!", -- [2]
 				"Al'Akir", -- [3]
 				7, -- [4]

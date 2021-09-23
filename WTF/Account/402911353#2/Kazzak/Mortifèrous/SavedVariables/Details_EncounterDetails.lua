@@ -1,82 +1,5 @@
 
 EncounterDetailsDB = {
-	["emotes"] = {
-		{
-			{
-				4.353000000002794, -- [1]
-				"Your futile persistance angers me!", -- [2]
-				"Al'Akir", -- [3]
-				7, -- [4]
-			}, -- [1]
-			{
-				4.353000000002794, -- [1]
-				"Storms! I summon you to my side!", -- [2]
-				"Al'Akir", -- [3]
-				7, -- [4]
-			}, -- [2]
-			{
-				9.245999999984633, -- [1]
-				"Enough! I will no longer be contained!", -- [2]
-				"Al'Akir", -- [3]
-				7, -- [4]
-			}, -- [3]
-			["boss"] = "Al'Akir",
-		}, -- [1]
-		{
-			{
-				6.267999999981839, -- [1]
-				"Brothers, beware! These mortals are dangerous. I must pause and gather my strength.", -- [2]
-				"Nezir", -- [3]
-				7, -- [4]
-			}, -- [1]
-			{
-				6.267999999981839, -- [1]
-				"%s begins to gather strength from the remaining Wind Lords!", -- [2]
-				"Nezir", -- [3]
-				1, -- [4]
-			}, -- [2]
-			{
-				16.82000000000699, -- [1]
-				"You think to outrun the wind? A fatal mistake.", -- [2]
-				"Anshal", -- [3]
-				7, -- [4]
-			}, -- [3]
-			{
-				23.17800000001444, -- [1]
-				"My power grows feeble, brothers. I shamefully must rely on you for a time.", -- [2]
-				"Anshal", -- [3]
-				7, -- [4]
-			}, -- [4]
-			{
-				23.17800000001444, -- [1]
-				"%s begins to gather strength from the remaining Wind Lord!", -- [2]
-				"Anshal", -- [3]
-				1, -- [4]
-			}, -- [5]
-			{
-				43.47200000000885, -- [1]
-				"Why do you flee, mortals? There is nowhere you can run or hide here!", -- [2]
-				"Rohash", -- [3]
-				7, -- [4]
-			}, -- [6]
-			["boss"] = "Conclave of Wind",
-		}, -- [2]
-		{
-			{
-				5.864999999990687, -- [1]
-				"Your futile persistance angers me!", -- [2]
-				"Al'Akir", -- [3]
-				7, -- [4]
-			}, -- [1]
-			{
-				7.064000000013039, -- [1]
-				"Storms! I summon you to my side!", -- [2]
-				"Al'Akir", -- [3]
-				7, -- [4]
-			}, -- [2]
-			["boss"] = "Al'Akir",
-		}, -- [3]
-	},
 	["encounter_spells"] = {
 		[86082] = {
 			["school"] = 16,
@@ -217,22 +140,21 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Anshal",
 		},
-		[95218] = {
-			["school"] = 8,
+		[86193] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_HEAL"] = true,
-			},
-		},
-		[86182] = {
-			["school"] = 8,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Rohash",
+		},
+		[86281] = {
+			["school"] = 8,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Ravenous Creeper",
 		},
 		[30225] = {
 			["school"] = 8,
@@ -253,13 +175,30 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Al'Akir",
 		},
-		[36980] = {
-			["school"] = 1,
+		[88301] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Netherstrand Longbow",
+			["source"] = "Al'Akir",
+		},
+		[86206] = {
+			["school"] = 8,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+			},
+		},
+		[93059] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Rohash",
 		},
 		[93168] = {
 			["school"] = 32,
@@ -267,21 +206,6 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Anshal",
-		},
-		[86192] = {
-			["school"] = 8,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-		},
-		[16496] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Master Engineer Telonicus",
 		},
 		[37018] = {
 			["school"] = 4,
@@ -309,21 +233,19 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Nezir",
 		},
-		[87908] = {
-			["school"] = 8,
-			["type"] = "DEBUFF",
+		[86081] = {
+			["school"] = 16,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Stormling",
+			["source"] = "Nezir",
 		},
-		[36985] = {
-			["school"] = 2,
+		[85483] = {
+			["school"] = 8,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_HEAL"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Cosmic Infuser",
+			["source"] = "Rohash",
 		},
 		[36965] = {
 			["school"] = 1,
@@ -342,12 +264,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Rohash",
 		},
-		[86081] = {
-			["school"] = 16,
+		[87908] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Nezir",
+			["source"] = "Stormling",
 		},
 		[36971] = {
 			["school"] = 4,
@@ -404,12 +327,13 @@ EncounterDetailsDB = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
 		},
-		[85483] = {
-			["school"] = 8,
+		[36985] = {
+			["school"] = 2,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_HEAL"] = true,
 			},
-			["source"] = "Rohash",
+			["source"] = "Cosmic Infuser",
 		},
 		[34341] = {
 			["school"] = 4,
@@ -438,46 +362,134 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Warp Slicer",
 		},
-		[93059] = {
-			["school"] = 1,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Rohash",
-		},
-		[86206] = {
+		[86192] = {
 			["school"] = 8,
-			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
 		},
-		[88301] = {
+		[16496] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Master Engineer Telonicus",
+		},
+		[36980] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Netherstrand Longbow",
+		},
+		[86182] = {
 			["school"] = 8,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-			["source"] = "Al'Akir",
-		},
-		[86281] = {
-			["school"] = 8,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Ravenous Creeper",
-		},
-		[86193] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Rohash",
 		},
+		[95218] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_HEAL"] = true,
+			},
+		},
+	},
+	["emotes"] = {
+		{
+			{
+				4.258999999961816, -- [1]
+				"Your futile persistance angers me!", -- [2]
+				"Al'Akir", -- [3]
+				7, -- [4]
+			}, -- [1]
+			{
+				5.473999999987427, -- [1]
+				"Storms! I summon you to my side!", -- [2]
+				"Al'Akir", -- [3]
+				7, -- [4]
+			}, -- [2]
+			{
+				10.3519999999553, -- [1]
+				"Enough! I will no longer be contained!", -- [2]
+				"Al'Akir", -- [3]
+				7, -- [4]
+			}, -- [3]
+			["boss"] = "Al'Akir",
+		}, -- [1]
+		{
+			{
+				1.312999999965541, -- [1]
+				"You throw away your honor and flee as cowards? Then die!", -- [2]
+				"Nezir", -- [3]
+				7, -- [4]
+			}, -- [1]
+			{
+				1.702999999979511, -- [1]
+				"You think to outrun the wind? A fatal mistake.", -- [2]
+				"Anshal", -- [3]
+				7, -- [4]
+			}, -- [2]
+			{
+				12.69199999998091, -- [1]
+				"The intruders stand fast, brothers, I cannot break them. Allow me a brief respite to strengthen my winds.", -- [2]
+				"Rohash", -- [3]
+				7, -- [4]
+			}, -- [3]
+			{
+				12.69199999998091, -- [1]
+				"%s begins to gather strength from the remaining Wind Lords!", -- [2]
+				"Rohash", -- [3]
+				1, -- [4]
+			}, -- [4]
+			{
+				17.0899999999674, -- [1]
+				"You throw away your honor and flee as cowards? Then die!", -- [2]
+				"Nezir", -- [3]
+				7, -- [4]
+			}, -- [5]
+			{
+				35.71199999999953, -- [1]
+				"Brothers, beware! These mortals are dangerous. I must pause and gather my strength.", -- [2]
+				"Nezir", -- [3]
+				7, -- [4]
+			}, -- [6]
+			{
+				35.71199999999953, -- [1]
+				"%s begins to gather strength from the remaining Wind Lord!", -- [2]
+				"Nezir", -- [3]
+				1, -- [4]
+			}, -- [7]
+			["boss"] = "Conclave of Wind",
+		}, -- [2]
+		{
+			{
+				4.19800000009127, -- [1]
+				"Your futile persistance angers me!", -- [2]
+				"Al'Akir", -- [3]
+				7, -- [4]
+			}, -- [1]
+			{
+				4.19800000009127, -- [1]
+				"Storms! I summon you to my side!", -- [2]
+				"Al'Akir", -- [3]
+				7, -- [4]
+			}, -- [2]
+			{
+				10.34899999992922, -- [1]
+				"Enough! I will no longer be contained!", -- [2]
+				"Al'Akir", -- [3]
+				7, -- [4]
+			}, -- [3]
+			["boss"] = "Al'Akir",
+		}, -- [3]
 	},
 }

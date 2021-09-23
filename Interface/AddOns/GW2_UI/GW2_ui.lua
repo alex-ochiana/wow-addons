@@ -8,13 +8,12 @@ local CLASS_ICONS = GW.CLASS_ICONS
 local IsFrameModified = GW.IsFrameModified
 local IsIncompatibleAddonLoadedOrOverride = GW.IsIncompatibleAddonLoadedOrOverride
 local Debug = GW.Debug
-local LibSharedMedia = GW.Libs.LSM
 
 local animations = GW.animations
 
 local l = CreateFrame("Frame", nil, UIParent) -- Main event frame
 
-GW.VERSION_STRING = "GW2_UI 5.16.4"
+GW.VERSION_STRING = "GW2_UI 5.19.2"
 
 -- setup Binding Header color
 BINDING_HEADER_GW2UI = GetAddOnMetadata(..., "Title")
@@ -94,9 +93,9 @@ GW.AddToAnimation = AddToAnimation
 
 local function buttonAnim(self, name, w, hover)
     local prog = animations[name].progress
-    local l = GW.lerp(0, w, prog)
+    local lerp = GW.lerp(0, w, prog)
 
-    hover:SetPoint("RIGHT", self, "LEFT", l, 0)
+    hover:SetPoint("RIGHT", self, "LEFT", lerp, 0)
     hover:SetVertexColor(hover.r or 1, hover.g or 1, hover.b or 1, GW.lerp(0, 1, ((prog) - 0.5) / 0.5))
 end
 GW.AddForProfiling("index", "buttonAnim", buttonAnim)
@@ -154,7 +153,7 @@ function GwStandardButton_OnEnter(self)
     end
 
     hover:SetAlpha(1)
-    self.animationValue = 0
+    self.animationValue = hover.skipHover and 1 or 0
 
     AddToAnimation(
         name,
@@ -175,6 +174,7 @@ function GwStandardButton_OnLeave(self)
     if not hover then
         return
     end
+    if self.hover.skipHover then return end
 
     hover:SetAlpha(1)
     self.animationValue = 1
@@ -251,7 +251,6 @@ GW.SetDeadIcon = SetDeadIcon
 local function StopAnimation(name)
     if animations[name] then
         animations[name].completed = true
-        animations[name].duration = 0
     end
 end
 GW.StopAnimation = StopAnimation
@@ -387,6 +386,7 @@ local function loadAddon(self)
     GW.CombatQueue_Initialize()
 
     --Create Settings window
+    GW.SkinLoading ()
     GW.LoadMovers()
     GW.LoadSettings()
 
@@ -410,6 +410,9 @@ local function loadAddon(self)
 
     -- Load Slash commands
     GW.LoadSlashCommands()
+
+    -- Misc
+    GW.LoadRaidMarker()
 
     --Create the mainbar layout manager
     local lm = GW.LoadMainbarLayout()
@@ -466,9 +469,14 @@ local function loadAddon(self)
     GW.LoadGossipSkin()
     GW.LoadItemUpgradeSkin()
     GW.LoadTimeManagerSkin()
+    GW.LoadMerchantFrameSkin()
+    GW.LoadEncounterJournalSkin()
+    GW.LoadCovenantSanctumSkin()
+    GW.LoadSoulbindsSkin()
 
     GW.LoadImmersionAddonSkin()
 
+    GW.SkinAndEnhanceColorPicker()
     GW.AddCoordsToWorldMap()
     GW.LoadVehicleButton()
     GW.MakeAltPowerBarMovable()
@@ -564,6 +572,9 @@ local function loadAddon(self)
 
     GW.LoadSocialFrame()
 
+    GW.Create_Raid_Counter()
+    GW.LoadRaidbuffReminder()
+
     GW.LoadMirrorTimers()
     GW.LoadAutoRepair()
 
@@ -650,6 +661,7 @@ local function loadAddon(self)
 
     if GetSetting("RAID_FRAMES") then
         GW.LoadRaidFrames()
+        GW.LoadPartyGrid()
     end
 
     GW.UpdateHudScale()
@@ -657,23 +669,6 @@ local function loadAddon(self)
     if (forcedMABags) then
         GW.Notice(L["MoveAnything bag handling disabled."])
     end
-
-    --Add Shared Media
-    --Font
-    LibSharedMedia:Register(LibSharedMedia.MediaType.FONT, "GW2_UI", "Interface/AddOns/GW2_UI/fonts/menomonia.ttf", LibSharedMedia.LOCALE_BIT_western + LibSharedMedia.LOCALE_BIT_ruRU)
-    LibSharedMedia:Register(LibSharedMedia.MediaType.FONT, "GW2_UI Light", "Interface/AddOns/GW2_UI/fonts/menomonia-italic.ttf", LibSharedMedia.LOCALE_BIT_western + LibSharedMedia.LOCALE_BIT_ruRU)
-    LibSharedMedia:Register(LibSharedMedia.MediaType.FONT, "GW2_UI Headlines", "Interface/AddOns/GW2_UI/fonts/headlines.ttf", LibSharedMedia.LOCALE_BIT_western + LibSharedMedia.LOCALE_BIT_ruRU)
-    LibSharedMedia:Register(LibSharedMedia.MediaType.FONT, "GW2_UI", "Interface/AddOns/GW2_UI/fonts/chinese.ttf", LibSharedMedia.LOCALE_BIT_zhCN + LibSharedMedia.LOCALE_BIT_zhTW)
-    LibSharedMedia:Register(LibSharedMedia.MediaType.FONT, "GW2_UI", "Interface/AddOns/GW2_UI/fonts/korean.ttf", LibSharedMedia.LOCALE_BIT_koKR)
-
-    --Texture
-    LibSharedMedia:Register(LibSharedMedia.MediaType.BACKGROUND, "GW2_UI", "Interface/AddOns/GW2_UI/textures/uistuff/windowborder")
-    LibSharedMedia:Register(LibSharedMedia.MediaType.BACKGROUND, "GW2_UI_2", "Interface/Addons/GW2_UI/textures/uistuff/UI-Tooltip-Background")
-    LibSharedMedia:Register(LibSharedMedia.MediaType.STATUSBAR, "GW2_UI_Yellow", "Interface/Addons/GW2_UI/textures/hud/castingbar")
-    LibSharedMedia:Register(LibSharedMedia.MediaType.STATUSBAR, "GW2_UI_Blue", "Interface/Addons/GW2_UI/textures/hud/breathmeter")
-    LibSharedMedia:Register(LibSharedMedia.MediaType.STATUSBAR, "GW2_UI", "Interface/Addons/GW2_UI/textures/hud/castinbar-white")
-    LibSharedMedia:Register(LibSharedMedia.MediaType.STATUSBAR, "GW2_UI_2", "Interface/Addons/GW2_UI/textures/uistuff/gwstatusbar")
-    LibSharedMedia:Register(LibSharedMedia.MediaType.BORDER, "GW2_UI", "Interface/Addons/GW2_UI/textures/uistuff/UI-Tooltip-Border")
 
     --Check if we should show Welcomepage or Changelog
     if GetSetting("GW2_UI_VERSION") == "WELCOME" then
@@ -724,6 +719,17 @@ local function gw_OnEvent(self, event, ...)
         Debug("New faction:", GW.myfaction, GW.myLocalizedFaction)
     elseif event == "PLAYER_SPECIALIZATION_CHANGED" then
         GW.CheckRole()
+    elseif event == "ADDON_LOADED" then
+        -- temp
+        if ... == "GW_UI" or ... == "OmniCD" then
+            local func = OmniCD and OmniCD.AddUnitFrameData
+            if func then
+                func("GW2_UI-Party-Grid", "GwCompactPartyFrame", "unit", 1)
+                func("GW2_UI-Party", "GwPartyFrame", "unit", 1)
+                func("GW2_UI-Raid", "GwCompactRaidFrame", "unit", 1, nil, 40)
+                self:UnregisterEvent(event)
+            end
+        end
     end
 end
 GW.AddForProfiling("index", "gw_OnEvent", gw_OnEvent)
@@ -736,6 +742,7 @@ l:RegisterEvent("UI_SCALE_CHANGED")
 l:RegisterEvent("PLAYER_LEVEL_UP")
 l:RegisterEvent("NEUTRAL_FACTION_SELECT_RESULT")
 l:RegisterEvent("PLAYER_SPECIALIZATION_CHANGED")
+l:RegisterEvent("ADDON_LOADED")
 
 local function AddToClique(frame)
     if type(frame) == "string" then

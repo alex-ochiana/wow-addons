@@ -8,6 +8,7 @@ HandyNotes_BattleForAzerothTreasuresDB = {
 		["Cretz - Sylvanas"] = "Cretz - Sylvanas",
 		["Blanitza - Kazzak"] = "Blanitza - Kazzak",
 		["Mortifèrous - Kazzak"] = "Mortifèrous - Kazzak",
+		["Towerpog - Sylvanas"] = "Towerpog - Sylvanas",
 		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
 		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
 		["Mòloch - Kazzak"] = "Mòloch - Kazzak",
@@ -33,6 +34,8 @@ HandyNotes_BattleForAzerothTreasuresDB = {
 		["Blanitza - Kazzak"] = {
 		},
 		["Mortifèrous - Kazzak"] = {
+		},
+		["Towerpog - Sylvanas"] = {
 		},
 		["Crëtz - Kazzak"] = {
 		},

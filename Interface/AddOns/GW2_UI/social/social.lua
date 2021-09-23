@@ -331,7 +331,7 @@ local function click_OnEvent(self, event)
                     SetOverrideBinding(self, false, keyBind, "CLICK GwSocialWindowClick:" .. click)
                 end
                 if keyBind2 then
-                    --SetOverrideBinding(self, false, keyBind2, "CLICK GwSocialWindowClick:" .. click)
+                    SetOverrideBinding(self, false, keyBind2, "CLICK GwSocialWindowClick:" .. click)
                 end
             end
         end
@@ -505,9 +505,6 @@ GW.AddForProfiling("social", "socialTab_OnEnter", socialTab_OnEnter)
 
 -- Change blizzard OnEvent Handler to work with our frame
 local function GWFriendsFrame_OnEvent(_, event, ...)
-    if not GwSocialWindow then
-        print(event, ...)
-    end
     if ( event == "SPELL_UPDATE_COOLDOWN" ) then
         if ( GwSocialWindow:IsShown() ) then
             local buttons = FriendsListFrameScrollFrame.buttons;

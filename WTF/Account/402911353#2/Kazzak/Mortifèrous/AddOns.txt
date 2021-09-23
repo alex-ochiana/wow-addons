@@ -165,7 +165,7 @@ FarmHud_QuestArrow: disabled
 GatherMate2: disabled
 GatherMate2_Data: disabled
 Immersion_ExtraFade: disabled
-MoveAnything: disabled
+MoveAnything: enabled
 Routes: disabled
 RoutesImportExport: disabled
 WeakAuras: enabled
@@ -203,3 +203,4 @@ HandyNotes_Oribos: disabled
 HandyNotes_Shadowlands: disabled
 HandyNotes_LongForgottenHippogryph: disabled
 NetherwingEggs: disabled
+OPie_Classic: disabled

@@ -68,7 +68,7 @@ WeakAuras: enabled
 Auctionator: disabled
 BonusRollPreview: enabled
 ChampionCommander: enabled
-GarrisonMissionManager: disabled
+GarrisonMissionManager: enabled
 HandyNotes_BattleForAzerothTreasures: disabled
 MasterPlan: disabled
 MasterPlanA: disabled
@@ -81,7 +81,7 @@ Overachiever_Trade: enabled
 Paste: disabled
 Skada: enabled
 SmexyMats: enabled
-TomCats: disabled
+TomCats: enabled
 WeakAurasCompanion: enabled
 !BugGrabber: enabled
 BugSack: enabled
@@ -92,7 +92,7 @@ HandyNotes_Argus: disabled
 HandyNotes_BrokenShore: disabled
 HandyNotes_Lorewalkers: disabled
 WeakAurasArchive: enabled
-TradeSkillMaster: enabled
+TradeSkillMaster: disabled
 TomCats-Nzoth: disabled
 Bartender4: enabled
 FarmHud: disabled
@@ -107,7 +107,7 @@ RoutesImportExport: enabled
 WeakAurasModelPaths: enabled
 WeakAurasOptions: enabled
 WeakAurasTemplates: enabled
-TradeSkillMaster_AppHelper: enabled
+TradeSkillMaster_AppHelper: disabled
 WIT: disabled
 AllTheThings: disabled
 AceGUI-3.0_SFX-Widgets: enabled
@@ -118,7 +118,7 @@ HandyNotes_VisionsOfNZoth: disabled
 Immersion_ExtraFade: disabled
 Masque_Azerite: disabled
 MBB: disabled
-MoveAnything: disabled
+MoveAnything: enabled
 OrderHallCommander: disabled
 AAP-Core: enabled
 AAP-Vanilla: disabled
@@ -140,7 +140,7 @@ DBM-Nyalotha: enabled
 DBM-EternalPalace: enabled
 AAP-EasternKingdoms: enabled
 AAP-Shadowlands: enabled
-GW2_UI: disabled
+GW2_UI: enabled
 SexyMap: disabled
 Masque_Shadowlands: disabled
 Class Nameplate Scale: disabled
@@ -188,16 +188,16 @@ SimpleILevel_Group: enabled
 SimpleILevel_Social: enabled
 Simulationcraft: enabled
 VenturePlan: enabled
-Kui_Media: disabled
-Kui_Nameplates: disabled
-Kui_Nameplates_Core_Config: disabled
-Kui_Nameplates_Core: disabled
+Kui_Media: enabled
+Kui_Nameplates: enabled
+Kui_Nameplates_Core_Config: enabled
+Kui_Nameplates_Core: enabled
 Gladius: disabled
 RUF: disabled
 WowUp: enabled
 wowup_data_addon: enabled
 BattleGroundEnemies: disabled
-ChatCopyPaste: disabled
+ChatCopyPaste: enabled
 GladiatorlosSA2: disabled
 HandyNotes_BattleForAzeroth: disabled
 HandyNotes_Draenor: disabled
@@ -208,7 +208,7 @@ Masque_Renaitre: enabled
 MRT: enabled
 ExRT: enabled
 MythicDungeonTools: enabled
-Plater: enabled
+Plater: disabled
 RaiderIO_DB_US_A: disabled
 RaiderIO_DB_US_H: disabled
 RaiderIO_DB_KR_A: disabled
@@ -221,12 +221,12 @@ RaiderIO_DB_KR_A_R: disabled
 RaiderIO_DB_KR_H_R: disabled
 RaiderIO_DB_TW_A_R: disabled
 RaiderIO_DB_TW_H_R: disabled
-ShadowedUF_Options: disabled
-ShadowedUnitFrames: disabled
-TomCats-Bundled-DeathsRising: disabled
+ShadowedUF_Options: enabled
+ShadowedUnitFrames: enabled
+TomCats-Bundled-DeathsRising: enabled
 TrueStatValues: enabled
 WorldQuestsList: enabled
-Glass: disabled
+Glass: enabled
 ElvUI: enabled
 ElvUI_OptionsUI: enabled
 ElvUI_SLE: enabled

@@ -10,19 +10,18 @@ local InitPanel = GW.InitPanel
 
 local function LoadHudPanel(sWindow)
     local p = CreateFrame("Frame", nil, sWindow.panels, "GwSettingsPanelScrollTmpl")
-    p.scroll.scrollchild.header:SetFont(DAMAGE_TEXT_FONT, 20)
-    p.scroll.scrollchild.header:SetTextColor(255 / 255, 241 / 255, 209 / 255)
-    p.scroll.scrollchild.header:SetText(UIOPTIONS_MENU)
-    p.scroll.scrollchild.sub:SetFont(UNIT_NAME_FONT, 12)
-    p.scroll.scrollchild.sub:SetTextColor(181 / 255, 160 / 255, 128 / 255)
-    p.scroll.scrollchild.sub:SetText(L["Edit the modules in the Heads-Up Display for more customization."])
+    p.header:SetFont(DAMAGE_TEXT_FONT, 20)
+    p.header:SetTextColor(255 / 255, 241 / 255, 209 / 255)
+    p.header:SetText(UIOPTIONS_MENU)
+    p.sub:SetFont(UNIT_NAME_FONT, 12)
+    p.sub:SetTextColor(181 / 255, 160 / 255, 128 / 255)
+    p.sub:SetText(L["Edit the modules in the Heads-Up Display for more customization."])
 
     createCat(UIOPTIONS_MENU, L["Edit the HUD modules."], p, 3, nil, {p})
 
     addOption(p.scroll.scrollchild, L["Show HUD background"], L["The HUD background changes color in the following situations: In Combat, Not In Combat, In Water, Low HP, Ghost"], "HUD_BACKGROUND")
     addOption(p.scroll.scrollchild, L["Dynamic HUD"], L["Enable or disable the dynamically changing HUD background."], "HUD_SPELL_SWAP", nil, nil, {["HUD_BACKGROUND"] = true})
     addOption(p.scroll.scrollchild, L["AFK Mode"], L["When you go AFK, display the AFK screen."], "AFK_MODE")
-    addOption(p.scroll.scrollchild, L["Fade Chat"], L["Allow the chat to fade when not in use."], "CHATFRAME_FADE", nil, nil, {["CHATFRAME_ENABLED"] = true})
     addOptionSlider(
         p.scroll.scrollchild,
         L["Maximum lines of 'Copy Chat Frame'"],
@@ -80,7 +79,7 @@ local function LoadHudPanel(sWindow)
         nil,
         2
     )
-    addOptionButton(p.scroll.scrollchild, L["Apply UI scale to all scaleable frames"], L["Applies the UI scale to all frames, which can be scaled in 'Move HUD' mode."], nil, function()
+    addOptionButton(p.scroll.scrollchild, L["Apply to all"], L["Applies the UI scale to all frames which can be scaled in 'Move HUD' mode."], nil, function()
         local scale = GetSetting("HUD_SCALE")
         for _, mf in pairs(GW.scaleableFrames) do
             mf.gw_frame:SetScale(scale)
@@ -88,6 +87,21 @@ local function LoadHudPanel(sWindow)
             GW.SetSetting(mf.gw_Settings .."_scale", scale)
         end
     end)
+    addOptionDropdown(
+        p.scroll.scrollchild,
+        L["Show Role Bar"],
+        L["Whether to display a floating bar showing your group or raid's role composition. This can be moved via the 'Move HUD' interface."],
+        "ROLE_BAR",
+        GW.UpdateRaidCounterVisibility,
+        {"ALWAYS", "NEVER", "IN_GROUP", "IN_RAID", "IN_RAID_IN_PARTY"},
+        {
+            ALWAYS,
+            NEVER,
+            AGGRO_WARNING_IN_PARTY,
+            L["In raid"],
+            L["In group or in raid"],
+        }
+    )
     addOptionDropdown(
         p.scroll.scrollchild,
         L["Minimap details"],

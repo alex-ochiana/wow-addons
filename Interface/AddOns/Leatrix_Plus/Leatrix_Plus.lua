@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 9.1.02 (13th July 2021)
+-- 	Leatrix Plus 9.1.11 (23rd September 2021)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "9.1.02"
+	LeaPlusLC["AddonVer"] = "9.1.11"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -399,6 +399,7 @@
 		LeaPlusLC:LockOption("ManagePowerBar", "ManagePowerBarButton", true)		-- Manage power bar
 		LeaPlusLC:LockOption("ManageWidget", "ManageWidgetButton", true)			-- Manage widget
 		LeaPlusLC:LockOption("ManageFocus", "ManageFocusButton", true)				-- Manage focus
+		LeaPlusLC:LockOption("ManageControl", "ManageControlButton", true)			-- Manage control
 		LeaPlusLC:LockOption("ClassColFrames", "ClassColFramesBtn", true)			-- Class colored frames
 		LeaPlusLC:LockOption("SetWeatherDensity", "SetWeatherDensityBtn", false)	-- Set weather density
 		LeaPlusLC:LockOption("MuteGameSounds", "MuteGameSoundsBtn", false)			-- Mute game sounds
@@ -451,6 +452,7 @@
 		or	(LeaPlusLC["ManagePowerBar"]		~= LeaPlusDB["ManagePowerBar"])			-- Manage power bar
 		or	(LeaPlusLC["ManageWidget"]			~= LeaPlusDB["ManageWidget"])			-- Manage widget
 		or	(LeaPlusLC["ManageFocus"]			~= LeaPlusDB["ManageFocus"])			-- Manage focus
+		or	(LeaPlusLC["ManageControl"]			~= LeaPlusDB["ManageControl"])			-- Manage control
 		or	(LeaPlusLC["ClassColFrames"]		~= LeaPlusDB["ClassColFrames"])			-- Class colored frames
 		or	(LeaPlusLC["NoAlerts"]				~= LeaPlusDB["NoAlerts"])				-- Hide alerts
 		or	(LeaPlusLC["HideBodyguard"]			~= LeaPlusDB["HideBodyguard"])			-- Hide bodyguard gossip
@@ -698,112 +700,6 @@
 					"vo_grummle_kooky_farewell_01.ogg#640158", "vo_grummle_kooky_farewell_02.ogg#640160", "vo_grummle_kooky_farewell_03.ogg#640162", "vo_grummle_kooky_farewell_04.ogg#640164", 
 					"vo_grummle_standard_vendor_01.ogg#640336", "vo_grummle_standard_vendor_02.ogg#640338", "vo_grummle_standard_vendor_03.ogg#640340", 
 					"vo_grummle_standard_farewell_01.ogg#640314", "vo_grummle_standard_farewell_02.ogg#640316", "vo_grummle_standard_farewell_03.ogg#640318", "vo_grummle_standard_farewell_04.ogg#640320", 
-
-				},
-
-				-- Shouts
-				["MuteBattleShouts"] = {
-
-					-- Dark Iron Dwarf (sound/character/pc_dark_iron_dwarf_female, sound/character/pc_dark_iron_dwarf_male)
-					"vo_801_pc_-_darkiron_dwarf_female_battleshout_01.ogg#1906526", "vo_801_pc_-_darkiron_dwarf_female_battleshout_02.ogg#1906527", "vo_801_pc_-_darkiron_dwarf_female_battleshout_03.ogg#1906528", "vo_801_pc_-_darkiron_dwarf_female_battleshout_04.ogg#1906529", "vo_801_pc_-_darkiron_dwarf_female_battleshout_05.ogg#1906530",
-					"vo_801_pc_-_darkiron_dwarf_male_battleshout_01.ogg#1906599", "vo_801_pc_-_darkiron_dwarf_male_battleshout_02.ogg#1906600", "vo_801_pc_-_darkiron_dwarf_male_battleshout_03.ogg#1906601", "vo_801_pc_-_darkiron_dwarf_male_battleshout_04.ogg#1906602",
-
-					-- Draenei (sound/character/draeneifemalepc, sound/character/draeneimalepc)
-					"vo_draeneifemale_main_battleshoutlarge_01.ogg#1385370", "vo_draeneifemale_main_battleshoutlarge_02.ogg#1385371", "vo_draeneifemale_main_battleshoutlarge_03.ogg#1385372", "vo_draeneifemale_main_battleshoutlarge_04.ogg#1385373", "vo_draeneifemale_main_battleshoutlarge_05.ogg#1385374", "vo_draeneifemale_main_battleshoutlarge_06.ogg#1385375",
-					"vo_draeneimale_main_battleshoutlarge_01.ogg#1385420", "vo_draeneimale_main_battleshoutlarge_02.ogg#1385421", "vo_draeneimale_main_battleshoutlarge_03.ogg#1385422", "vo_draeneimale_main_battleshoutlarge_04.ogg#1385423", "vo_draeneimale_main_battleshoutlarge_05.ogg#1385424", "vo_draeneimale_main_battleshoutlarge_06.ogg#1385425",
-
-					-- Dwarf (sound/character/playerexertions/dwarffemalefinal, sound/character/playerexertions/dwarfmalefinal)
-					"vo_dwarffemale_main_battleshoutlarge_01.ogg#1512949", "vo_dwarffemale_main_battleshoutlarge_02.ogg#1512950", "vo_dwarffemale_main_battleshoutlarge_03.ogg#1512951", "vo_dwarffemale_main_battleshoutlarge_04.ogg#1512952", "vo_dwarffemale_main_battleshoutlarge_05.ogg#1512953",
-					"vo_dwarfmale_main_battleshoutlarge_01.ogg#1512848", "vo_dwarfmale_main_battleshoutlarge_02.ogg#1512849", "vo_dwarfmale_main_battleshoutlarge_03.ogg#1512850", "vo_dwarfmale_main_battleshoutlarge_04.ogg#1512851", "vo_dwarfmale_main_battleshoutlarge_05.ogg#1512852",
-
-					-- Gnome (sound/character/gnome/gnomevocalfemale, sound/character/playerexertions/gnomemalefinal)
-					"vo_gnomefemale_main_battleshoutlarge_01.ogg#1385458", "vo_gnomefemale_main_battleshoutlarge_02.ogg#1385459", "vo_gnomefemale_main_battleshoutlarge_03.ogg#1385460", "vo_gnomefemale_main_battleshoutlarge_04.ogg#1385461", "vo_gnomefemale_main_battleshoutlarge_05.ogg#1385462", "vo_gnomefemale_main_battleshoutlarge_06.ogg#1385463", "vo_gnomefemale_main_battleshoutlarge_07.ogg#1385464",
-					"vo_gnomemale_main_battleshoutlarge_01.ogg#1512976", "vo_gnomemale_main_battleshoutlarge_02.ogg#1512977", "vo_gnomemale_main_battleshoutlarge_03.ogg#1512978", "vo_gnomemale_main_battleshoutlarge_04.ogg#1512979", "vo_gnomemale_main_battleshoutlarge_05.ogg#1512980",
-
-					-- Human (sound/character/playerexertions/humanfemalefinal, sound/character/playerexertions/humanmalefinal)
-					"vo_humanfemale_main_battleshout_01.ogg#1343353", "vo_humanfemale_main_battleshout_02.ogg#1343354", "vo_humanfemale_main_battleshout_03.ogg#1343355", "vo_humanfemale_main_battleshout_04.ogg#1343356", "vo_humanfemale_main_battleshout_05.ogg#1343357", "vo_humanfemale_main_battleshout_06.ogg#1343358", "vo_humanfemale_main_battleshout_07.ogg#1343359", "vo_humanfemale_main_battleshout_08.ogg#1343360", "vo_humanfemale_main_battleshout_09.ogg#1343361",
-					"vo_humanmale_battleshout_01.ogg#1343322", "vo_humanmale_battleshout_02.ogg#1343323", "vo_humanmale_battleshout_03.ogg#1343324", "vo_humanmale_battleshout_04.ogg#1343325", "vo_humanmale_battleshout_05.ogg#1343326", "vo_humanmale_battleshout_06.ogg#1343327", "vo_humanmale_battleshout_07.ogg#1343328", "vo_humanmale_battleshout_08.ogg#1343329",
-
-					-- Kul Tiran (sound/character/pc_kul_tiran_human_female, sound/character/pc_kul_tiran_human_male)
-					"vo_815_pc_kul_tiran_human_female_intimidatingshout_01.ogg#2735388", "vo_815_pc_kul_tiran_human_female_intimidatingshout_02.ogg#2735389", "vo_815_pc_kul_tiran_human_female_intimidatingshout_03.ogg#2735390", "vo_815_pc_kul_tiran_human_female_intimidatingshout_04.ogg#2735391",
-					"vo_815_pc_kul_tiran_human_male_battlecry_01.ogg#2735439", "vo_815_pc_kul_tiran_human_male_battlecry_02.ogg#2735440", "vo_815_pc_kul_tiran_human_male_battlecry_03.ogg#2735441", "vo_815_pc_kul_tiran_human_male_battlecry_04.ogg#2735442", "vo_815_pc_kul_tiran_human_male_breathing_01.ogg#2735443",
-
-					-- Lightforged Draenei (sound/character/pc_-_lightforged_draenei_female, sound/character/pc_-_lightforged_draenei_male)
-					"vo_735_pc_-_lightforged_draenei_female_battleshout_01.ogg#1835517", "vo_735_pc_-_lightforged_draenei_female_battleshout_02.ogg#1835518", "vo_735_pc_-_lightforged_draenei_female_battleshout_03.ogg#1835519", "vo_735_pc_-_lightforged_draenei_female_battleshout_04.ogg#1835520", "vo_735_pc_-_lightforged_draenei_female_battleshout_05.ogg#1835521",
-					"vo_735_pc_-_lightforged_draenei_male_battleshout_01.ogg#1835609", "vo_735_pc_-_lightforged_draenei_male_battleshout_02.ogg#1835610", "vo_735_pc_-_lightforged_draenei_male_battleshout_03.ogg#1835611", "vo_735_pc_-_lightforged_draenei_male_battleshout_04.ogg#1835612", "vo_735_pc_-_lightforged_draenei_male_battleshout_05.ogg#1835613",
-
-					-- Mechagnome (sound/character/pc_mechagnome_female, sound/character/pc_mechagnome_male)
-					"vo_83_pc_mechagnome_female_battleshout_01.ogg#3189373", "vo_83_pc_mechagnome_female_battleshout_02.ogg#3189374", "vo_83_pc_mechagnome_female_battleshout_03.ogg#3189375", "vo_83_pc_mechagnome_female_battleshout_03.ogg#3189375",
-					"vo_83_pc_mechagnome_male_battleshout_02.ogg#3187600", "vo_83_pc_mechagnome_male_battleshout_03.ogg#3187601", "vo_83_pc_mechagnome_male_battleshout_04.ogg#3187602", "vo_83_pc_mechagnome_male_battleshout_05.ogg#3187603",
-
-					-- Night Elf (sound/character/nightelf/nightelffemale, sound/character/pcdhnightelfmale/)
-					"nightelffemale/vo_nightelffemale_main_battleshoutlarge_01.ogg#1383638", "nightelffemale/vo_nightelffemale_main_battleshoutlarge_02.ogg#1383639", "nightelffemale/vo_nightelffemale_main_battleshoutlarge_03.ogg#1383640", "nightelffemale/vo_nightelffemale_main_battleshoutlarge_04.ogg#1383641", "nightelffemale/vo_nightelffemale_main_battleshoutlarge_05.ogg#1383642", "nightelffemale/vo_nightelffemale_main_battleshoutlarge_06.ogg#1383643", "nightelffemale/vo_nightelffemale_main_battleshoutlarge_07.ogg#1383644", "nightelffemale/vo_nightelffemale_main_battleshoutlarge_08.ogg#1383645", "nightelffemale/vo_nightelffemale_main_battleshoutlarge_09.ogg#1383646",
-					"vo_dhnightelfmale_charge_01.ogg#1389714", "vo_dhnightelfmale_charge_02.ogg#1389715", "vo_dhnightelfmale_charge_03.ogg#1389716", "vo_dhnightelfmale_charge_04.ogg#1389717", "vo_dhnightelfmale_charge_05.ogg#1389718", "vo_dhnightelfmale_charge_06.ogg#1389719", "vo_dhnightelfmale_charge_07.ogg#1389720", "vo_dhnightelfmale_charge_08.ogg#1389721",
-
-					-- Night Elf Demon Hunter (sound/character/pcdhnightelffemale, sound/character/pcdhnightelfmale)
-					"vo_dhnightelffemale_battleshoutlarge_01.ogg#1502181", "vo_dhnightelffemale_battleshoutlarge_02.ogg#1502182", "vo_dhnightelffemale_battleshoutlarge_03.ogg#1502183", "vo_dhnightelffemale_battleshoutlarge_04.ogg#1502184", "vo_dhnightelffemale_battleshoutlarge_05.ogg#1502185", "vo_dhnightelffemale_battleshoutlarge_06.ogg#1502186", "vo_dhnightelffemale_battleshoutlarge_07.ogg#1502187",
-					"vo_nightelfmale_main_battleshoutlarge_01.ogg#1512783", "vo_nightelfmale_main_battleshoutlarge_02.ogg#1512784", "vo_nightelfmale_main_battleshoutlarge_03.ogg#1512785", "vo_nightelfmale_main_battleshoutlarge_04.ogg#1512786",
-
-					-- Void Elf (sound/character/pc_-_void_elf_female, sound/character/pc_-_void_elf_male)
-					"vo_735_pc_-_void_elf_female_battleshout_01.ogg#1835914", "vo_735_pc_-_void_elf_female_battleshout_02.ogg#1835915", "vo_735_pc_-_void_elf_female_battleshout_03.ogg#1835916", "vo_735_pc_-_void_elf_female_battleshout_04.ogg#1835918", "vo_735_pc_-_void_elf_female_battleshout_05.ogg#1835919",
-					"vo_735_pc_-_void_elf_male_battleshout_01.ogg#1836016", "vo_735_pc_-_void_elf_male_battleshout_02.ogg#1836017", "vo_735_pc_-_void_elf_male_battleshout_03.ogg#1836019", "vo_735_pc_-_void_elf_male_battleshout_04.ogg#1836020", "vo_735_pc_-_void_elf_male_battleshout_05.ogg#1836021",
-
-					-- Worgen (sound/character/pcworgenfemale, sound/character/pcworgenmale)
-					"vo_worgenfemale_battleshoutlarge_01.ogg#1502111", "vo_worgenfemale_battleshoutlarge_02.ogg#1502112", "vo_worgenfemale_battleshoutlarge_03.ogg#1502113", "vo_worgenfemale_battleshoutlarge_04.ogg#1502114", "vo_worgenfemale_battleshoutlarge_05.ogg#1502115",
-					"vo_worgenmale_main_battleshoutlarge_01.ogg#1502135", "vo_worgenmale_main_battleshoutlarge_02.ogg#1502136", "vo_worgenmale_main_battleshoutlarge_03.ogg#1502137", "vo_worgenmale_main_battleshoutlarge_04.ogg#1502138", "vo_worgenmale_main_battleshoutlarge_05.ogg#1502139", "vo_worgenmale_main_battleshoutlarge_06.ogg#1502140",
-
-					-- Blood elf (sound/character/bloodelffemalepc, sound/character/bloodelfmalepc)
-					"vo_bloodelffemale_main_battleshoutlarge_01.ogg#1385124", "vo_bloodelffemale_main_battleshoutlarge_02.ogg#1385125", "vo_bloodelffemale_main_battleshoutlarge_03.ogg#1385126", "vo_bloodelffemale_main_battleshoutlarge_04.ogg#1385127", "vo_bloodelffemale_main_battleshoutlarge_05.ogg#1385128", "vo_bloodelffemale_main_battleshoutlarge_06.ogg#1385129",
-					"vo_bloodelfmale_main_battleshoutlarge_01.ogg#1385087", "vo_bloodelfmale_main_battleshoutlarge_02.ogg#1385088", "vo_bloodelfmale_main_battleshoutlarge_03.ogg#1385089", "vo_bloodelfmale_main_battleshoutlarge_04.ogg#1385090", "vo_bloodelfmale_main_battleshoutlarge_05.ogg#1385091", "vo_bloodelfmale_main_battleshoutlarge_06.ogg#1385092",
-
-					-- Blood Elf Demon Hunter (sound/character/pcdhbloodelffemale, sound/character/pcdhbloodelfmale)
-					"vo_dhbloodelffemale_metamorph_main_battleshoutlarge_01.ogg#1389747", "vo_dhbloodelffemale_metamorph_main_battleshoutlarge_02.ogg#1389748", "vo_dhbloodelffemale_metamorph_main_battleshoutlarge_03.ogg#1389749", "vo_dhbloodelffemale_metamorph_main_battleshoutlarge_04.ogg#1389750", "vo_dhbloodelffemale_metamorph_main_battleshoutlarge_05.ogg#1389751", "vo_dhbloodelffemale_metamorph_main_battleshoutlarge_06.ogg#1389752", "vo_dhbloodelffemale_metamorph_main_battleshoutlarge_07.ogg#1389753", "vo_dhbloodelffemale_metamorph_main_battleshoutlarge_08.ogg#1389754",
-					"vo_dhbloodelffemale_battleshoutlarge_01.ogg#1389813", "vo_dhbloodelffemale_battleshoutlarge_02.ogg#1389814", "vo_dhbloodelffemale_battleshoutlarge_03.ogg#1389815", "vo_dhbloodelffemale_battleshoutlarge_04.ogg#1389816", "vo_dhbloodelffemale_battleshoutlarge_05.ogg#1389817", "vo_dhbloodelffemale_battleshoutlarge_06.ogg#1389818",
-					"vo_dhbloodelfmale_main_battleshoutlarge_01.ogg#1502201", "vo_dhbloodelfmale_main_battleshoutlarge_02.ogg#1502202", "vo_dhbloodelfmale_main_battleshoutlarge_03.ogg#1502203", "vo_dhbloodelfmale_main_battleshoutlarge_04.ogg#1502204", "vo_dhbloodelfmale_main_battleshoutlarge_05.ogg#1502205", "vo_dhbloodelfmale_main_battleshoutlarge_06.ogg#1502206", "vo_dhbloodelfmale_main_battleshoutlarge_07.ogg#1502207", "vo_dhbloodelfmale_main_battleshoutlarge_08.ogg#1502208", "vo_dhbloodelfmale_main_battleshoutlarge_09.ogg#1502209", "vo_dhbloodelfmale_main_battleshoutlarge_010.ogg#1502210", "vo_dhbloodelfmale_main_battleshoutlarge_011.ogg#1502211",
-
-					-- Goblin (sound/character/goblinfemale, sound/character/pcgoblinmale)
-					"goblinfemale/vo_goblinfemale_main_battleshoutlarge_01.ogg#1385054", "goblinfemale/vo_goblinfemale_main_battleshoutlarge_02.ogg#1385055", "goblinfemale/vo_goblinfemale_main_battleshoutlarge_03.ogg#1385056", "goblinfemale/vo_goblinfemale_main_battleshoutlarge_04.ogg#1385057", "goblinfemale/vo_goblinfemale_main_battleshoutlarge_05.ogg#1385058", "goblinfemale/vo_goblinfemale_main_battleshoutlarge_06.ogg#1385059", "goblinfemale/vo_goblinfemale_main_battleshoutlarge_07.ogg#1385060",
-					"pcgoblinmale/vo_goblinmale_main_battleshoutlarge_01.ogg#1385350", "pcgoblinmale/vo_goblinmale_main_battleshoutlarge_02.ogg#1385351", "pcgoblinmale/vo_goblinmale_main_battleshoutlarge_03.ogg#1385352", "pcgoblinmale/vo_goblinmale_main_battleshoutlarge_04.ogg#1385353", "pcgoblinmale/vo_goblinmale_main_battleshoutlarge_05.ogg#1385354", "pcgoblinmale/vo_goblinmale_main_battleshoutlarge_06.ogg#1385355", "pcgoblinmale/vo_goblinmale_main_battleshoutlarge_07.ogg#1385356",
-
-					-- Highmountain Tauren (sound/character/pc_-_highmountain_tauren_female, sound/character/pc_-_highmountain_tauren_male)
-					"vo_735_pc_-_highmountain_tauren_female_battleshout_01.ogg#1835373", "vo_735_pc_-_highmountain_tauren_female_battleshout_02.ogg#1835374", "vo_735_pc_-_highmountain_tauren_female_battleshout_03.ogg#1835375", "vo_735_pc_-_highmountain_tauren_female_battleshout_04.ogg#1835376", "vo_735_pc_-_highmountain_tauren_female_battleshout_05.ogg#1835377",
-					"vo_735_pc_-_highmountain_tauren_male_battleshout_01.ogg#1835438", "vo_735_pc_-_highmountain_tauren_male_battleshout_02.ogg#1835439", "vo_735_pc_-_highmountain_tauren_male_battleshout_03.ogg#1835440", "vo_735_pc_-_highmountain_tauren_male_battleshout_04.ogg#1835441", "vo_735_pc_-_highmountain_tauren_male_battleshout_05.ogg#1835442",
-
-					-- Mag'har Orc (sound/character/pc_maghar_orc_female, sound/character/pc_maghar_orc_male)
-					"vo_801_pc_maghar_orc_female_battleshout_01.ogg#2026032", "vo_801_pc_maghar_orc_female_battleshout_02.ogg#2026033", "vo_801_pc_maghar_orc_female_battleshout_03.ogg#2026034", "vo_801_pc_maghar_orc_female_battleshout_04.ogg#2026035", "vo_801_pc_maghar_orc_female_battleshout_05.ogg#2026036",
-					"vo_801_pc_maghar_orc_male_battleshout_01.ogg#2025879", "vo_801_pc_maghar_orc_male_battleshout_02.ogg#2025880", "vo_801_pc_maghar_orc_male_battleshout_03.ogg#2025881", "vo_801_pc_maghar_orc_male_battleshout_04.ogg#2025882", "vo_801_pc_maghar_orc_male_battleshout_05.ogg#2025883",
-
-					-- Nightborne (sound/character/pc_-_nightborne_elf_female, sound/character/pc_-_nightborne_elf_male)
-					"vo_735_pc_-_nightborne_elf_female_battleshout_01.ogg#1835708", "vo_735_pc_-_nightborne_elf_female_battleshout_02.ogg#1835709", "vo_735_pc_-_nightborne_elf_female_battleshout_03.ogg#1835711", "vo_735_pc_-_nightborne_elf_female_battleshout_04.ogg#1835712", "vo_735_pc_-_nightborne_elf_female_battleshout_05.ogg#1835713",
-					"vo_735_pc_-_nightborne_elf_male_battleshout_01.ogg#1835806", "vo_735_pc_-_nightborne_elf_male_battleshout_02.ogg#1835807", "vo_735_pc_-_nightborne_elf_male_battleshout_03.ogg#1835808", "vo_735_pc_-_nightborne_elf_male_battleshout_04.ogg#1835810", "vo_735_pc_-_nightborne_elf_male_battleshout_05.ogg#1835811",
-
-					-- Orc (sound/character/orc/female, sound/character/orc/orcmale)
-					"vo_orcfemale_main_battleshoutlarge_01.ogg#1385014", "vo_orcfemale_main_battleshoutlarge_02.ogg#1385015", "vo_orcfemale_main_battleshoutlarge_03.ogg#1385016", "vo_orcfemale_main_battleshoutlarge_04.ogg#1385017", "vo_orcfemale_main_battleshoutlarge_05.ogg#1385018", "vo_orcfemale_main_battleshoutlarge_06.ogg#1385019", "vo_orcfemale_main_battleshoutlarge_07.ogg#1385020",
-					"vo_orcmale_main_battleshoutlarge_01.ogg#1384088", "vo_orcmale_main_battleshoutlarge_02.ogg#1384089", "vo_orcmale_main_battleshoutlarge_03.ogg#1384090", "vo_orcmale_main_battleshoutlarge_04.ogg#1384091", "vo_orcmale_main_battleshoutlarge_05.ogg#1384092", "vo_orcmale_main_battleshoutlarge_06.ogg#1384093",
-
-					-- Tauren (sound/character/tauren/female, sound/character/playerexertions/taurenmalefinal)
-					"vo_taurenfemale_main_battleshoutlarge_01.ogg#1384942", "vo_taurenfemale_main_battleshoutlarge_02.ogg#1384943", "vo_taurenfemale_main_battleshoutlarge_03.ogg#1384944", "vo_taurenfemale_main_battleshoutlarge_04.ogg#1384945", "vo_taurenfemale_main_battleshoutlarge_05.ogg#1384946", "vo_taurenfemale_main_battleshoutlarge_06.ogg#1384947", "vo_taurenfemale_main_battleshoutlarge_07.ogg#1384948",
-					"vo_taurenmale_battleshoutlarge_01.ogg#1502087", "vo_taurenmale_battleshoutlarge_02.ogg#1502088", "vo_taurenmale_battleshoutlarge_03.ogg#1502089", "vo_taurenmale_battleshoutlarge_04.ogg#1502090", "vo_taurenmale_battleshoutlarge_05.ogg#1502091",
-
-					-- Troll (sound/character/playerexertions/trollfemalefinal, sound/character/playerexertions/trollmalefinal)
-					"trollfemalefinal/vo_trollfemale_battleshoutlarge_01.ogg#1502160", "trollfemalefinal/vo_trollfemale_battleshoutlarge_02.ogg#1502161", "trollfemalefinal/vo_trollfemale_battleshoutlarge_03.ogg#1502162", "trollfemalefinal/vo_trollfemale_battleshoutlarge_04.ogg#1502163", "trollfemalefinal/vo_trollfemale_battleshoutlarge_05.ogg#1502164",
-					"vo_trollmale_main_battleshoutlarge_01.ogg#1512813", "vo_trollmale_main_battleshoutlarge_02.ogg#1512814", "vo_trollmale_main_battleshoutlarge_03.ogg#1512815", "vo_trollmale_main_battleshoutlarge_04.ogg#1512816",
-
-					-- Undead (sound/character/scourge/scourgefemale, sound/character/playerexertions/undeadmalefinal)
-					"vo_undeadfemale_main_battleshoutlarge_01.ogg#1385487", "vo_undeadfemale_main_battleshoutlarge_02.ogg#1385488", "vo_undeadfemale_main_battleshoutlarge_03.ogg#1385489", "vo_undeadfemale_main_battleshoutlarge_04.ogg#1385490", "vo_undeadfemale_main_battleshoutlarge_05.ogg#1385491", "vo_undeadfemale_main_battleshoutlarge_06.ogg#1385492", "vo_undeadfemale_main_battleshoutlarge_07.ogg#1385493",
-					"vo_undeadmale_main_battleshoutlarge_01.ogg#1383691", "vo_undeadmale_main_battleshoutlarge_02.ogg#1383692", "vo_undeadmale_main_battleshoutlarge_03.ogg#1383693", "vo_undeadmale_main_battleshoutlarge_04.ogg#1383694", "vo_undeadmale_main_battleshoutlarge_05.ogg#1383695", "vo_undeadmale_main_battleshoutlarge_06.ogg#1383696", "vo_undeadmale_main_battleshoutlarge_07.ogg#1383697", "vo_undeadmale_main_battleshoutlarge_08.ogg#1383698", "vo_undeadmale_main_battleshoutlarge_09.ogg#1383699",
-
-					-- Vulpera (sound/character/pc_vulpera_female, sound/character/pc_vulpera_male)
-					"vo_83_pc_vulpera_female_battleshout_01.ogg#3188440", "vo_83_pc_vulpera_female_battleshout_02.ogg#3188441", "vo_83_pc_vulpera_female_battleshout_03.ogg#3188442", "vo_83_pc_vulpera_female_battleshout_04.ogg#3188443",
-					"vo_83_pc_vulpera_male_battleshout_01.ogg#3188670",	"vo_83_pc_vulpera_male_battleshout_02.ogg#3188671",	"vo_83_pc_vulpera_male_battleshout_03.ogg#3188672",	"vo_83_pc_vulpera_male_battleshout_04.ogg#3188673",	"vo_83_pc_vulpera_male_battleshout_05.ogg#3188674",
-
-					-- Zandalari Troll (sound/character/pc_zandalari_troll_female, sound/character/pc_zandalari_troll_male)
-					"vo_801_pc_-_zandalari_troll_female_battleshout_01.ogg#2735187", "vo_801_pc_-_zandalari_troll_female_battleshout_02.ogg#2735188", "vo_801_pc_-_zandalari_troll_female_battleshout_03.ogg#2735189", "vo_801_pc_-_zandalari_troll_female_battleshout_04.ogg#2735190", "vo_801_pc_-_zandalari_troll_female_battleshout_05.ogg#2735191",
-					"vo_801_pc_-_zandalari_troll_male_battleshout_01.ogg#2699280", "vo_801_pc_-_zandalari_troll_male_battleshout_02.ogg#2699281", "vo_801_pc_-_zandalari_troll_male_battleshout_03.ogg#2699282", "vo_801_pc_-_zandalari_troll_male_battleshout_04.ogg#2699283", "vo_801_pc_-_zandalari_troll_male_battleshout_05.ogg#2699284",
-
-					-- Pandaren (sound/character/pcpandarenfemale, sound/character/pcpandarenmale)
-					"vo_pandarenfemale_main_battleshoutlarge_01.ogg#1384044", "vo_pandarenfemale_main_battleshoutlarge_02.ogg#1384045", "vo_pandarenfemale_main_battleshoutlarge_03.ogg#1384046", "vo_pandarenfemale_main_battleshoutlarge_04.ogg#1384047", "vo_pandarenfemale_main_battleshoutlarge_05.ogg#1384048", "vo_pandarenfemale_main_battleshoutlarge_06.ogg#1384049", "vo_pandarenfemale_main_battleshoutlarge_07.ogg#1384050",
-					"vo_pandarenmale_main_battleshoutlarge_01.ogg#1384979", "vo_pandarenmale_main_battleshoutlarge_02.ogg#1384980", "vo_pandarenmale_main_battleshoutlarge_03.ogg#1384981", "vo_pandarenmale_main_battleshoutlarge_04.ogg#1384982", "vo_pandarenmale_main_battleshoutlarge_05.ogg#1384983", "vo_pandarenmale_main_battleshoutlarge_06.ogg#1384984",	"vo_pandarenmale_main_battleshoutlarge_07.ogg#1384985",
 
 				},
 
@@ -1182,6 +1078,252 @@
 
 				},
 
+				-- Shouts
+				["MuteBattleShouts"] = {
+
+					-- Horde --------------------------------------------------------------------------------
+
+					-- Blood Elf (female) (sound/character/bloodelffemalepc/vo_bloodelffemale_main)
+					--[[meleewindup]] 		"01.ogg#1385146", "02.ogg#1385115", "03.ogg#1385116", "04.ogg#1385117", "05.ogg#1385118", "06.ogg#1385119", "07.ogg#1385120", "08.ogg#1385121", "09.ogg#1385122", "10.ogg#1385123",
+					--[[battleshoutlarge]] 	"01.ogg#1385124", "02.ogg#1385125", "03.ogg#1385126", "04.ogg#1385127", "05.ogg#1385128", "06.ogg#1385129",
+					--[[charge]] 			"01.ogg#1385139", "02.ogg#1385140", "03.ogg#1385141", "04.ogg#1385142", "05.ogg#1385143", "06.ogg#1385144", "07.ogg#1385145",
+
+					-- Blood Elf (male) (sound/character/bloodelfmalepc/vo_bloodelfmale_main)
+					--[[meleewindup]] 		"01.ogg#1385108", "02.ogg#1385109", "03.ogg#1385081", "04.ogg#1385082", "05.ogg#1385083", "06.ogg#1385084", "07.ogg#1385085", "08.ogg#1385086",
+					--[[battleshoutlarge]] 	"01.ogg#1385087", "02.ogg#1385088", "03.ogg#1385089", "04.ogg#1385090", "05.ogg#1385091", "06.ogg#1385092",
+					--[[charge]] 			"01.ogg#1385101", "02.ogg#1385102", "03.ogg#1385103", "04.ogg#1385104", "05.ogg#1385105", "06.ogg#1385106", "07.ogg#1385107",
+
+					-- Blood Elf Demon Hunter (female) (sound/character/pcdhbloodelffemale/vo_dhbloodelffemale)
+					--[[meleewindup]] 		"01.ogg#1389830", "02.ogg#1389831", "03.ogg#1389832", "04.ogg#1389833", "05.ogg#1389834", "06.ogg#1389835", "07.ogg#1389836", "08.ogg#1389837", "09.ogg#1389838", "010.ogg#1389839",
+					--[[battleshoutlarge]] 	"01.ogg#1389813", "02.ogg#1389814", "03.ogg#1389815", "04.ogg#1389816", "05.ogg#1389817", "06.ogg#1389818",
+					--[[charge]] 			"01.ogg#1284728", "02.ogg#1284729", "03.ogg#1284730", "04.ogg#1284731", "05.ogg#1284732",
+
+					-- Blood Elf Demon Hunter (female) (metamorphosis) (sound/character/pcdhbloodelffemale/vo_dhbloodelffemale_metamorph_main)
+					--[[meleewindup]] 		"01.ogg#1389780", "02.ogg#1389781", "03.ogg#1389782", "04.ogg#1389783", "05.ogg#1389784", "06.ogg#1389785", "07.ogg#1389786", "08.ogg#1389787", "09.ogg#1389788",
+					--[[battleshoutlarge]] 	"01.ogg#1389747", "02.ogg#1389748", "03.ogg#1389749", "04.ogg#1389750", "05.ogg#1389751", "06.ogg#1389752", "07.ogg#1389753", "08.ogg#1389754",
+					--[[charge]] 			"01.ogg#1389765", "02.ogg#1389766", "03.ogg#1389767", "04.ogg#1389768", "05.ogg#1389769", "06.ogg#1389770", "07.ogg#1389771", "08.ogg#1389772", "09.ogg#1389773", "010.ogg#1389774",
+
+					-- Blood Elf Demon Hunter (male) (sound/character/pcdhbloodelfmale/vo_dhbloodelfmale_main)
+					--[[meleewindup]] 		"02.ogg#1502212", "03.ogg#1502213", "04.ogg#1502214", "05.ogg#1502215", "06.ogg#1502216", "07.ogg#1502217", "08.ogg#1502218", "09.ogg#1502219", "010.ogg#1502220", "011.ogg#1502221", "012.ogg#1502222",
+					--[[battleshoutlarge]] 	"01.ogg#1502201", "02.ogg#1502202", "03.ogg#1502203", "04.ogg#1502204", "05.ogg#1502205", "06.ogg#1502206", "07.ogg#1502207", "08.ogg#1502208", "09.ogg#1502209", "010.ogg#1502210", "011.ogg#1502211",
+
+					-- Goblin (female) (sound/character/goblinfemale/vo_goblinfemale_main)
+					--[[meleewindup]] 		"01.ogg#1385046", "02.ogg#1385047", "03.ogg#1385048", "04.ogg#1385049", "05.ogg#1385050", "06.ogg#1385051", "07.ogg#1385052", "08.ogg#1385053",
+					--[[battleshoutlarge]] 	"01.ogg#1385054", "02.ogg#1385055", "03.ogg#1385056", "04.ogg#1385057", "05.ogg#1385058", "06.ogg#1385059", "07.ogg#1385060",
+					--[[charge]] 			"01.ogg#1385068", "02.ogg#1385069", "03.ogg#1385070", "04.ogg#1385071", "05.ogg#1385072", "06.ogg#1385073", "07.ogg#1385074", "08.ogg#1385075", "09.ogg#1385045",
+
+					-- Goblin (male) (sound/character/pcgoblinmale/vo_goblinmale_main)
+					--[[meleewindup]] 		"01.ogg#1385342", "02.ogg#1385343", "03.ogg#1385344", "04.ogg#1385345", "05.ogg#1385346", "06.ogg#1385347", "07.ogg#1385348", "08.ogg#1385349",
+					--[[battleshoutlarge]] 	"01.ogg#1385350", "02.ogg#1385351", "03.ogg#1385352", "04.ogg#1385353", "05.ogg#1385354", "06.ogg#1385355", "07.ogg#1385356",
+					--[[charge]] 			"01.ogg#1385335", "02.ogg#1385336", "03.ogg#1385337", "04.ogg#1385338", "05.ogg#1385339", "06.ogg#1385340", "07.ogg#1385341",
+
+					-- Highmountain Tauren (female) (sound/character/pc_-_highmountain_tauren_female/vo_735_pc_-_highmountain_tauren_female)
+					--[[meleewindup]] 		"01.ogg#1835401", "02.ogg#1835402", "03.ogg#1835403", "04.ogg#1835404", "05.ogg#1835405", "06.ogg#1835406", "07.ogg#1835407",
+					--[[charge]]			"01.ogg#1835386", "02.ogg#1835387", "03.ogg#1835388", "04.ogg#1835389", "05.ogg#1835390",
+
+					-- Highmountain Tauren (male) (sound/character/pc_-_highmountain_tauren_male/vo_735_pc_-_highmountain_tauren_male)
+					--[[meleewindup]] 		"01.ogg#1835477", "02.ogg#1835478", "03.ogg#1835479", "04.ogg#1835480", "05.ogg#1835481", "06.ogg#1835482",
+					--[[charge]]			"01.ogg#1835453", "02.ogg#1835454", "03.ogg#1835455", "04.ogg#1835456", "05.ogg#1835457",
+
+					-- Mag'har Orc (female) (sound/character/pc_maghar_orc_female/vo_801_pc_maghar_orc_female)
+					--[[meleewindup]] 		"01.ogg#2026062", "02.ogg#2026063", "03.ogg#2026064", "04.ogg#2026065",
+					--[[charge]]			"01.ogg#2026046", "02.ogg#2026047",
+
+					-- Mag'har Orc (male) (sound/character/pc_maghar_orc_male/vo_801_pc_maghar_orc_male)
+					--[[meleewindup]] 		"01.ogg#2025910", "02.ogg#2025911", "03.ogg#2025912", "04.ogg#2025913",
+					--[[charge]]			"01.ogg#2025893", "02.ogg#2025894",
+
+					-- Nightborne (female) (sound/character/pc_-_nightborne_elf_female/vo_735_pc_-_nightborne_elf_female)
+					--[[meleewindup]] 		"01.ogg#1835757", "02.ogg#1835758", "03.ogg#1835759", "04.ogg#1835760", "05.ogg#1835761", "06.ogg#1835762", "07.ogg#1835763",
+					--[[charge]]			"01.ogg#1835725", "02.ogg#1835726", "03.ogg#1835728", "04.ogg#1835729", "05.ogg#1835730",
+
+					-- Nightborne (male) (sound/character/pc_-_nightborne_elf_male/vo_735_pc_-_nightborne_elf_male)
+					--[[meleewindup]] 		"01.ogg#1835861", "02.ogg#1835862", "03.ogg#1835864", "04.ogg#1835865", "05.ogg#1835866", "06.ogg#1835867", "07.ogg#1835868",
+					--[[charge]]			"01.ogg#1835828", "02.ogg#1835829", "03.ogg#1835830", "04.ogg#1835831", "05.ogg#1835832", "06.ogg#1835833",
+
+					-- Orc (female) (sound/character/orc/female/vo_orcfemale_main)
+					--[[meleewindup]] 		"01.ogg#1385039", "02.ogg#1385005", "03.ogg#1385006", "04.ogg#1385007", "05.ogg#1385008", "06.ogg#1385009", "07.ogg#1385010", "08.ogg#1385011", "09.ogg#1385012", "010.ogg#1385013",
+					--[[battleshoutlarge]] 	"01.ogg#1385014", "02.ogg#1385015", "03.ogg#1385016", "04.ogg#1385017", "05.ogg#1385018", "06.ogg#1385019", "07.ogg#1385020",
+					--[[charge]] 			"01.ogg#1385030", "02.ogg#1385031", "03.ogg#1385032", "04.ogg#1385033", "05.ogg#1385034", "06.ogg#1385035", "07.ogg#1385036", "08.ogg#1385037", "09.ogg#1385038",
+
+					-- Orc (male) (sound/character/orc/orcmale/vo_orcmale_main)
+					--[[meleewindup]] 		"01.ogg#1384083", "02.ogg#1384084", "03.ogg#1384085", "04.ogg#1384086", "05.ogg#1384087",
+					--[[battleshoutlarge]] 	"01.ogg#1384088", "02.ogg#1384089", "03.ogg#1384090", "04.ogg#1384091", "05.ogg#1384092", "06.ogg#1384093",
+					--[[charge]] 			"01.ogg#1384076", "02.ogg#1384077", "03.ogg#1384078", "04.ogg#1384079", "05.ogg#1384080", "06.ogg#1384081", "07.ogg#1384082",
+
+					-- Tauren (female) (sound/character/tauren/female/vo_taurenfemale_main)
+					--[[meleewindup]] 		"01.ogg#1384935", "02.ogg#1384936", "03.ogg#1384937", "04.ogg#1384938", "05.ogg#1384939", "06.ogg#1384940", "07.ogg#1384941",
+					--[[battleshoutlarge]] 	"01.ogg#1384942", "02.ogg#1384943", "03.ogg#1384944", "04.ogg#1384945", "05.ogg#1384946", "06.ogg#1384947", "07.ogg#1384948",
+					--[[charge]] 			"01.ogg#1384957", "02.ogg#1384958", "03.ogg#1384959", "04.ogg#1384960", "05.ogg#1384961", "06.ogg#1384962", "07.ogg#1384963", "08.ogg#1384964", "09.ogg#1384933", "10.ogg#1384934",
+
+					-- Tauren (male) (sound/character/playerexertions/taurenmalefinal/vo_taurenmale)
+					--[[meleewindup]] 		"01.ogg#1502100", "02.ogg#1502101", "03.ogg#1502102", "04.ogg#1502103", "05.ogg#1502104", "06.ogg#1502105",
+					--[[battleshoutlarge]] 	"01.ogg#1502087", "02.ogg#1502088", "03.ogg#1502089", "04.ogg#1502090", "05.ogg#1502091",
+					--[[charge]] 			"01.ogg#1502092", "02.ogg#1502093", "03.ogg#1502094", "04.ogg#1502095", "05.ogg#1502096", "06.ogg#1502097", "07.ogg#1502098", "08.ogg#1502099",
+
+					-- Troll (female) (sound/character/playerexertions/trollfemalefinal/vo_trollfemale)
+					--[[meleewindup]] 		"01.ogg#1502171", "02.ogg#1502172", "03.ogg#1502173", "04.ogg#1502174", "05.ogg#1502175", "06.ogg#1502176",
+					--[[battleshoutlarge]] 	"01.ogg#1502160", "02.ogg#1502161", "03.ogg#1502162", "04.ogg#1502163", "05.ogg#1502164",
+					--[[charge]] 			"01.ogg#1502165", "02.ogg#1502166", "03.ogg#1502167", "04.ogg#1502168", "05.ogg#1502169", "06.ogg#1502170",
+
+					-- Troll (male) (sound/character/playerexertions/trollmalefinal/vo_trollmale_main)
+					--[[meleewindup]] 		"01.ogg#1512822", "02.ogg#1512823", "03.ogg#1512824", "04.ogg#1512825", "05.ogg#1512826",
+					--[[battleshoutlarge]] 	"01.ogg#1512813", "02.ogg#1512814", "03.ogg#1512815", "04.ogg#1512816",
+					--[[charge]] 			"01.ogg#1512817", "02.ogg#1512818", "03.ogg#1512819", "04.ogg#1512820", "05.ogg#1512821",
+
+					-- Undead (female) (sound/character/scourge/scourgefemale/vo_undeadfemale_main)
+					--[[meleewindup]] 		"01.ogg#1385509", "02.ogg#1385510", "03.ogg#1385511", "04.ogg#1385512", "05.ogg#1385513", "06.ogg#1385514", "07.ogg#1385515", "08.ogg#1385516", "09.ogg#1385517", "10.ogg#1385518",
+					--[[battleshoutlarge]] 	"01.ogg#1385487", "02.ogg#1385488", "03.ogg#1385489", "04.ogg#1385490", "05.ogg#1385491", "06.ogg#1385492", "07.ogg#1385493",
+					--[[charge]] 			"01.ogg#1385499", "02.ogg#1385500", "03.ogg#1385501", "04.ogg#1385502", "05.ogg#1385503", "06.ogg#1385504", "07.ogg#1385505", "08.ogg#1385506", "09.ogg#1385507", "10.ogg#1385508",
+
+					-- Undead (male) (sound/character/playerexertions/undeadmalefinal/vo_undeadmale_main)
+					--[[meleewindup]] 		"01.ogg#1383713", "02.ogg#1383714", "03.ogg#1383684", "04.ogg#1383685", "05.ogg#1383686", "06.ogg#1383687", "07.ogg#1383688", "08.ogg#1383689", "09.ogg#1383690",
+					--[[battleshoutlarge]] 	"01.ogg#1383691", "02.ogg#1383692", "03.ogg#1383693", "04.ogg#1383694", "05.ogg#1383695", "06.ogg#1383696", "07.ogg#1383697", "08.ogg#1383698", "09.ogg#1383699",
+					--[[charge]] 			"01.ogg#1383706", "02.ogg#1383707", "03.ogg#1383708", "04.ogg#1383709", "05.ogg#1383710", "06.ogg#1383711", "07.ogg#1383712",
+
+					-- Vulpera (female) (sound/character/pc_vulpera_female/vo_83_pc_vulpera_female)
+					--[[charge]] 			"01.ogg#3188447", "02.ogg#3188448", "03.ogg#3188449", "04.ogg#3188450", "05.ogg#3188451",
+
+					-- Vulpera (male) (sound/character/pc_vulpera_male/vo_83_pc_vulpera_male)
+					--[[charge]] 			"01.ogg#3188678", "02.ogg#3188679", "03.ogg#3188680", "04.ogg#3188681", "05.ogg#3188682",
+
+					-- Zandalari Troll (female) (sound/character/pc_zandalari_troll_female/vo_801_pc_-_zandalari_troll_female)
+					--[[meleewindup]] 		"01.ogg#2735221", "02.ogg#2735222", "03.ogg#2735223",
+					--[[charge]] 			"01.ogg#2735199", "02.ogg#2735200", "03.ogg#2735201", "04.ogg#2735202",
+
+					-- Zandalari Troll (male) (sound/character/pc_zandalari_troll_male/vo_801_pc_-_zandalari_troll_male)
+					--[[meleewindup]] 		"01.ogg#2699315", "02.ogg#2699316", "03.ogg#2699317", "04.ogg#2699318",
+					--[[charge]] 			"01.ogg#2699292", "02.ogg#2699293", "03.ogg#2699294", "04.ogg#2699295",
+
+					-- Alliance --------------------------------------------------------------------------------
+
+					-- Dark Iron Dwarf (female) (sound/character/pc_dark_iron_dwarf_female/vo_801_pc_-_darkiron_dwarf_female)
+					--[[meleewindup]] 		"01.ogg#1906558", "02.ogg#1906559", "03.ogg#1906560", "04.ogg#1906561", "05.ogg#1906562", "06.ogg#1906563",
+					--[[charge]] 			"01.ogg#1906539", "02.ogg#1906540", "03.ogg#1906541",
+
+					-- Dark Iron Dwarf (male) (sound/character/pc_dark_iron_dwarf_male/vo_801_pc_-_darkiron_dwarf_male)
+					--[[meleewindup]] 		"01.ogg#1906635", "02.ogg#1906636", "03.ogg#1906637", "04.ogg#1906638", "05.ogg#1906639",
+					--[[charge]] 			"01.ogg#1906609", "02.ogg#1906610", "03.ogg#1906611", "04.ogg#1906612",
+
+					-- Draenei (female) (sound/character/draeneifemalepc/vo_draeneifemale_main)
+					--[[meleewindup]] 		"01.ogg#1385393", "02.ogg#1385394", "03.ogg#1385395", "04.ogg#1385396", "05.ogg#1385397", "06.ogg#1385398", "07.ogg#1385399", "08.ogg#1385400", "09.ogg#1385401",
+					--[[battleshoutlarge]] 	"01.ogg#1385370", "02.ogg#1385371", "03.ogg#1385372", "04.ogg#1385373", "05.ogg#1385374", "06.ogg#1385375",
+					--[[charge]] 			"01.ogg#1385384", "02.ogg#1385385", "03.ogg#1385386", "04.ogg#1385387", "05.ogg#1385388", "06.ogg#1385389", "07.ogg#1385390", "08.ogg#1385391", "09.ogg#1385392",
+
+					-- Draenei (male) (sound/character/draeneimalepc/vo_draeneimale_main)
+					--[[meleewindup]] 		"01.ogg#1385411", "02.ogg#1385412", "03.ogg#1385413", "04.ogg#1385414", "05.ogg#1385415", "06.ogg#1385416", "07.ogg#1385417", "08.ogg#1385418", "09.ogg#1385419",
+					--[[battleshoutlarge]] 	"01.ogg#1385420", "02.ogg#1385421", "03.ogg#1385422", "04.ogg#1385423", "05.ogg#1385424", "06.ogg#1385425",
+					--[[charge]] 			"01.ogg#1385435", "02.ogg#1385436", "03.ogg#1385437", "04.ogg#1385407", "05.ogg#1385408", "06.ogg#1385409", "07.ogg#1385410",
+
+					-- Dwarf (female) (sound/character/playerexertions/dwarffemalefinal/vo_dwarffemale_main)
+					--[[battleshoutlarge]] 	"01.ogg#1512949", "02.ogg#1512950", "03.ogg#1512951", "04.ogg#1512952", "05.ogg#1512953",
+					--[[charge]] 			"01.ogg#1512954", "02.ogg#1512955", "03.ogg#1512956", "04.ogg#1512957", "05.ogg#1512958",
+
+					-- Dwarf (male) (sound/character/playerexertions/dwarfmalefinal/vo_dwarfmale_main)
+					--[[meleewindup]] 		"01.ogg#1512844", "02.ogg#1512845", "03.ogg#1512846", "04.ogg#1512847",
+					--[[battleshoutlarge]] 	"01.ogg#1512848", "02.ogg#1512849", "03.ogg#1512850", "04.ogg#1512851", "05.ogg#1512852",
+					--[[charge]] 			"01.ogg#1512838", "02.ogg#1512839", "03.ogg#1512840", "04.ogg#1512841", "05.ogg#1512842", "06.ogg#1512843",
+
+					-- Gnome (female) (sound/character/gnome/gnomevocalfemale/vo_gnomefemale_main)
+					--[[meleewindup]] 		"01.ogg#1385451", "02.ogg#1385452", "03.ogg#1385453", "04.ogg#1385454", "05.ogg#1385455", "06.ogg#1385456", "07.ogg#1385457",
+					--[[battleshoutlarge]] 	"01.ogg#1385458", "02.ogg#1385459", "03.ogg#1385460", "04.ogg#1385461", "05.ogg#1385462", "06.ogg#1385463", "07.ogg#1385464",
+					--[[charge]] 			"01.ogg#1385444", "02.ogg#1385445", "03.ogg#1385446", "04.ogg#1385447", "05.ogg#1385448", "06.ogg#1385449", "07.ogg#1385450",
+
+					-- Gnome (male) (sound/character/playerexertions/gnomemalefinal/vo_gnomemale_main)
+					--[[meleewindup]] 		"01.ogg#1512986", "02.ogg#1512987", "03.ogg#1512988", "04.ogg#1512989", "05.ogg#1512990",
+					--[[battleshoutlarge]] 	"01.ogg#1512976", "02.ogg#1512977", "03.ogg#1512978", "04.ogg#1512979", "05.ogg#1512980",
+					--[[charge]] 			"01.ogg#1512981", "02.ogg#1512982", "03.ogg#1512983", "04.ogg#1512984", "05.ogg#1512985",
+
+					-- Human (female) (sound/character/playerexertions/humanfemalefinal/vo_humanfemale_main)
+					--[[meleewindup]] 		"01.ogg#1343369", "02.ogg#1343370", "03.ogg#1343371", "04.ogg#1343372", "05.ogg#1343373", "06.ogg#1343374", "07.ogg#1343375", "08.ogg#1343376", "09.ogg#1343377",
+					--[[charge]] 			"01.ogg#1343362", "02.ogg#1343363", "03.ogg#1343364", "04.ogg#1343365", "05.ogg#1343366", "06.ogg#1343367", "07.ogg#1343368",
+
+					-- Human (male) (sound/character/playerexertions/humanmalefinal/vo_humanmale)
+					--[[meleewindup]] 		"01.ogg#1343336", "02.ogg#1343337", "03.ogg#1343338", "04.ogg#1343339", "05.ogg#1343340", "06.ogg#1343341",
+					--[[charge]] 			"01.ogg#1343330", "02.ogg#1343331", "03.ogg#1343332", "04.ogg#1343333", "05.ogg#1343334", "06.ogg#1343335",
+
+					-- Kul Tiran (female) (sound/character/pc_kul_tiran_human_female/vo_815_pc_kul_tiran_human_female)
+					--[[charge]] 			"01.ogg#2735372", "02.ogg#2735373", "03.ogg#2735374", "04.ogg#2735375", "05.ogg#2735376",
+
+					-- Kul Tiran (male) (sound/character/pc_kul_tiran_human_male/vo_815_pc_kul_tiran_human_male)
+					--[[charge]] 			"01.ogg#2735449", "02.ogg#2735450", "03.ogg#2735451", "04.ogg#2735452",
+
+					-- Lightforged Draenei (female) (sound/character/pc_-_lightforged_draenei_female/vo_735_pc_-_lightforged_draenei_female)
+					--[[meleewindup]] 		"01.ogg#1835563", "02.ogg#1835564", "03.ogg#1835565", "04.ogg#1835567", "05.ogg#1835568", "06.ogg#1835569",
+					--[[charge]]			"01.ogg#1835533", "02.ogg#1835535", "03.ogg#1835536", "04.ogg#1835537", "05.ogg#1835538",
+
+					-- Lightforged Draenei (male) (sound/character/pc_-_lightforged_draenei_male/vo_735_pc_-_lightforged_draenei_male)
+					--[[meleewindup]] 		"01.ogg#1835661", "02.ogg#1835662", "03.ogg#1835663", "04.ogg#1835664", "05.ogg#1835665",
+					--[[charge]]			"01.ogg#1835628", "02.ogg#1835629", "03.ogg#1835630", "04.ogg#1835631", "05.ogg#1835632", "06.ogg#1835634",
+
+					-- Mechagnome (female) (sound/character/pc_mechagnome_female/vo_83_pc_mechagnome_female)
+					--[[charge]]			"01.ogg#3189379", "02.ogg#3189380", "03.ogg#3189381", "04.ogg#3189382", "05.ogg#3189383",
+
+					-- Mechagnome (male) (sound/character/pc_mechagnome_male/vo_83_pc_mechagnome_male)
+					--[[charge]]			"01.ogg#3187604", "02.ogg#3187605", "03.ogg#3187606", "04.ogg#3187607", "05.ogg#3187608",
+
+					-- Night Elf (female) (sound/character/nightelf/nightelffemale/vo_nightelffemale_main)
+					--[[meleewindup]] 		"01.ogg#1383664", "02.ogg#1383665", "03.ogg#1383666", "04.ogg#1383667", "05.ogg#1383668", "06.ogg#1383669", "07.ogg#1383670", "08.ogg#1383671", "09.ogg#1383672",
+					--[[battleshoutlarge]] 	"01.ogg#1383638", "02.ogg#1383639", "03.ogg#1383640", "04.ogg#1383641", "05.ogg#1383642", "06.ogg#1383643", "07.ogg#1383644", "08.ogg#1383645", "09.ogg#1383646",
+					--[[charge]] 			"01.ogg#1383656", "02.ogg#1383657", "03.ogg#1383658", "04.ogg#1383659", "05.ogg#1383660", "06.ogg#1383661", "07.ogg#1383662", "08.ogg#1383663",
+
+					-- Night Elf (male) (sound/character/pcdhnightelfmale/vo_nightelfmale_main)
+					--[[meleewindup]] 		"01.ogg#1512793", "02.ogg#1512794", "03.ogg#1512795", "04.ogg#1512796", "05.ogg#1512797",
+					--[[charge]] 			"01.ogg#1512787", "02.ogg#1512788", "03.ogg#1512789", "04.ogg#1512790", "05.ogg#1512791", "06.ogg#1512792",
+
+					-- Night Elf Demon Hunter (female) (sound/character/pcdhnightelffemale/vo_dhnightelffemale)
+					--[[meleewindup]] 		"00.ogg#1502195", "01.ogg#1502196", "02.ogg#1502197", "03.ogg#1502198", "04.ogg#1502199", "05.ogg#1502200",
+					--[[battleshoutlarge]] 	"01.ogg#1502181", "02.ogg#1502182", "03.ogg#1502183", "04.ogg#1502184", "05.ogg#1502185", "06.ogg#1502186", "07.ogg#1502187",
+					--[[charge]] 			"01.ogg#1313669", "02.ogg#1313670", "03.ogg#1313671", "04.ogg#1313672", "05.ogg#1313673",
+					--[[charge_]] 			"01.ogg#1502188", "02.ogg#1502189", "03.ogg#1502190", "04.ogg#1502191", "05.ogg#1502192", "06.ogg#1502193", "07.ogg#1502194",
+
+					-- Night Elf Demon Hunter (male) (sound/character/pcdhnightelfmale/vo_dhnightelfmale)
+					--[[meleewindup]] 		"01.ogg#1389722", "02.ogg#1389723", "03.ogg#1389724", "04.ogg#1389725", "05.ogg#1389726", "06.ogg#1389727", "07.ogg#1389728", "08.ogg#1389729",
+					--[[battleshoutlarge]] 	"01.ogg#1512783", "02.ogg#1512784", "03.ogg#1512785", "04.ogg#1512786",
+					--[[charge]] 			"01.ogg#1389714", "02.ogg#1389715", "03.ogg#1389716", "04.ogg#1389717", "05.ogg#1389718", "06.ogg#1389719", "07.ogg#1389720", "08.ogg#1389721",
+
+					-- Void Elf (female) (sound/character/pc_-_void_elf_female/vo_735_pc_-_void_elf_female)
+					--[[meleewindup]] 		"01.ogg#1835965", "02.ogg#1835966", "03.ogg#1835968", "04.ogg#1835969", "05.ogg#1835970",
+					--[[charge]] 			"01.ogg#1835932", "02.ogg#1835933", "03.ogg#1835935", "04.ogg#1835936", "05.ogg#1835937", "06.ogg#1835938", "07.ogg#1835939",
+
+					-- Void Elf (male) (sound/character/pc_-_void_elf_male/vo_735_pc_-_void_elf_male)
+					--[[meleewindup]] 		"01.ogg#1836072", "02.ogg#1836073", "03.ogg#1836074", "04.ogg#1836075", "05.ogg#1836076", "06.ogg#1836078",
+					--[[charge]] 			"01.ogg#1836037", "02.ogg#1836038", "03.ogg#1836039", "04.ogg#1836040", "05.ogg#1836041", "06.ogg#1836042",
+
+					-- Worgen (female) (gilnean) (sound/character/pcgilneanfemale/vo_gilneanfemale_main)
+					--[[meleewindup]] 		"01.ogg#1612783", "02.ogg#1612784", "03.ogg#1612785", "04.ogg#1612777", "05.ogg#1612778", "06.ogg#1612779", "07.ogg#1612780", "08.ogg#1612781", "09.ogg#1612782",
+					--[[battleshoutlarge]] 	"01.ogg#1612758", "02.ogg#1612759", "03.ogg#1612760", "04.ogg#1612761", "05.ogg#1612762", "06.ogg#1612763", "07.ogg#1612764",
+					--[[charge]] 			"01.ogg#1612771", "02.ogg#1612772", "03.ogg#1612773", "04.ogg#1612774", "05.ogg#1612775", "06.ogg#1612776", "07.ogg#1612754", "08.ogg#1612755", "09.ogg#1612756", "10.ogg#1612757",
+
+					-- Worgen (male) (gilnean) (sound/character/pcgilneanmale/vo_gilneanmale_main)
+					--[[meleewindup]] 		"01.ogg#1612842", "02.ogg#1612843", "03.ogg#1612844", "04.ogg#1612845", "05.ogg#1612846", "06.ogg#1612847",
+					--[[battleshoutlarge]] 	"01.ogg#1612817", "02.ogg#1612818", "03.ogg#1612819", "04.ogg#1612820", "05.ogg#1612821", "06.ogg#1612822", "07.ogg#1612823", "08.ogg#1612824", "09.ogg#1612825",
+					--[[charge]] 			"01.ogg#1612831", "02.ogg#1612832", "03.ogg#1612833", "04.ogg#1612834", "05.ogg#1612835", "06.ogg#1612836",
+
+					-- Worgen (female) (sound/character/pcworgenfemale/vo_worgenfemale)
+					--[[meleewindup]] 		"01.ogg#1502124", "02.ogg#1502125", "03.ogg#1502126", "04.ogg#1502127", "05.ogg#1502128", "06.ogg#1502129", "07.ogg#1502130", "08.ogg#1502131", "09.ogg#1502132", "010.ogg#1502133",
+					--[[battleshoutlarge]] 	"01.ogg#1502111", "02.ogg#1502112", "03.ogg#1502113", "04.ogg#1502114", "05.ogg#1502115",
+					--[[charge]] 			"01.ogg#1502116", "02.ogg#1502117", "03.ogg#1502118", "04.ogg#1502119", "05.ogg#1502120", "06.ogg#1502121", "07.ogg#1502122", "08.ogg#1502123",
+
+					-- Worgen (male) (sound/character/pcworgenmale/vo_worgenmale_main)
+					--[[meleewindup]] 		"01.ogg#1502149", "02.ogg#1502150", "03.ogg#1502151", "04.ogg#1502152", "05.ogg#1502153", "06.ogg#1502154", "07.ogg#1502155", "08.ogg#1502156", "09.ogg#1502157", "010.ogg#1502158",
+					--[[battleshoutlarge]] 	"01.ogg#1502135", "02.ogg#1502136", "03.ogg#1502137", "04.ogg#1502138", "05.ogg#1502139", "06.ogg#1502140",
+					--[[charge]] 			"01.ogg#1502141", "02.ogg#1502142", "03.ogg#1502143", "04.ogg#1502144", "05.ogg#1502145", "06.ogg#1502146", "07.ogg#1502147", "08.ogg#1502148",
+
+					-- Neutral --------------------------------------------------------------------------------
+
+					-- Pandaren (female) (sound/character/pcpandarenfemale/vo_pandarenfemale_main)
+					--[[meleewindup]] 		"01.ogg#1384036", "02.ogg#1384037", "03.ogg#1384038", "04.ogg#1384039", "05.ogg#1384040", "06.ogg#1384041", "07.ogg#1384042", "08.ogg#1384043",
+					--[[battleshoutlarge]] 	"01.ogg#1384044", "02.ogg#1384045", "03.ogg#1384046", "04.ogg#1384047", "05.ogg#1384048", "06.ogg#1384049", "07.ogg#1384050",
+					--[[charge]] 			"01.ogg#1384059", "02.ogg#1384060", "03.ogg#1384061", "04.ogg#1384062", "05.ogg#1384063", "06.ogg#1384064", "07.ogg#1384065", "08.ogg#1384066", "09.ogg#1384067",
+
+					-- Pandaren (male) (sound/character/pcpandarenmale/vo_pandarenmale_main)
+					--[[meleewindup]] 		"01.ogg#1384972", "02.ogg#1384973", "03.ogg#1384974", "04.ogg#1384975", "05.ogg#1384976", "06.ogg#1384977", "07.ogg#1384978",
+					--[[battleshoutlarge]] 	"01.ogg#1384979", "02.ogg#1384980", "03.ogg#1384981", "04.ogg#1384982", "05.ogg#1384983", "06.ogg#1384984", "07.ogg#1384985",
+					--[[charge]] 			"01.ogg#1384993", "02.ogg#1384994", "03.ogg#1384995", "04.ogg#1384996", "05.ogg#1384997", "06.ogg#1384998", "07.ogg#1384999", "08.ogg#1384970", "09.ogg#1384971",
+
+				},
+
 			}
 
 			-- Give table file level scope (its used during logout and for wipe and admin commands)
@@ -1231,7 +1373,7 @@
 			LeaPlusLC:MakeCB(SoundPanel, "MuteSunflower", "Sunflower", 388, -92, false, "If checked, the Singing Sunflower pet will be muted.")
 
 			LeaPlusLC:MakeTx(SoundPanel, "Combat", 388, -132)
-			LeaPlusLC:MakeCB(SoundPanel, "MuteBattleShouts", "Shouts", 388, -152, false, "If checked, battle shouts heard when casting specific spells will be muted.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteBattleShouts", "Shouts", 388, -152, false, "If checked, your character will not shout and wail during combat.")
 
 			-- Set click width for sounds checkboxes
 			for k, v in pairs(muteTable) do
@@ -2332,6 +2474,8 @@
 						or npcID == "142983" 	-- Swizzle Fizzcrank (Dazar'alor)
 						or npcID == "142992" 	-- Uma'wi (Dazar'alor)
 						or npcID == "142159" 	-- Zen'kin (Dazar'alor)
+						-- Korthia Campaign Skip
+						or npcID == "164079" 	-- Highlord Bolvar Fordragon (Oribos)
 						then
 							return true
 						end
@@ -2414,6 +2558,30 @@
 					elseif qID == 62292 then
 						-- Quest Pitch Black Scourgestones requires 25 Pitch Black Scourgestones
 						if GetItemCount(183200) >= 25 then return true end
+
+					elseif qID == 10325 or qID == 10326 then
+						-- Requires 10 More Marks of Kil'jaeden
+						if GetItemCount(29425) >= 10 then return true end
+
+					elseif qID == 10655 or qID == 10828 then
+						-- Requires 1 Marks of Sargeras (if more than 10, leave for More Marks of Sargeras)
+						if GetItemCount(30809) > 1 and GetItemCount(30809) < 10 then return true end
+
+					elseif qID == 10654 or qID == 10827 then
+						-- Requires 10 Marks of Sargeras
+						if GetItemCount(30809) >= 10 then return true end
+
+					elseif qID == 10412 or qID == 10415 then
+						-- Requires 10 Firewing Signets
+						if GetItemCount(29426) >= 10 then return true end
+
+					elseif qID == 10659 or qID == 10822 then
+						-- Requires 1 Sunfury Signet (if more than 10, leave for More Sunfury Signets)
+						if GetItemCount(30810) > 1 and GetItemCount(30810) < 10 then return true end
+
+					elseif qID == 10658 or qID == 10823 then
+						-- Requires 10 Sunfury Signets
+						if GetItemCount(30810) >= 10 then return true end
 
 					else return true
 					end
@@ -5097,7 +5265,137 @@
 		end
 
 		----------------------------------------------------------------------
-		-- L45: Manage power bar
+		-- L45: Manage control
+		----------------------------------------------------------------------
+
+		if LeaPlusLC["ManageControl"] == "On" then
+
+			-- Allow control frame to be moved
+			LossOfControlFrame:SetMovable(true)
+			LossOfControlFrame:SetUserPlaced(true)
+			LossOfControlFrame:SetDontSavePosition(true)
+			LossOfControlFrame:SetClampedToScreen(true)
+
+			-- Set control frame position at startup
+			LossOfControlFrame:ClearAllPoints()
+			LossOfControlFrame:SetPoint(LeaPlusLC["ControlA"], UIParent, LeaPlusLC["ControlR"], LeaPlusLC["ControlX"], LeaPlusLC["ControlY"])
+			LossOfControlFrame:SetScale(LeaPlusLC["ControlScale"])
+
+			-- Create drag frame
+			local dragframe = CreateFrame("FRAME", nil, nil, "BackdropTemplate")
+			dragframe:SetBackdropColor(0.0, 0.5, 1.0)
+			dragframe:SetBackdrop({edgeFile = "Interface/Tooltips/UI-Tooltip-Border", tile = false, tileSize = 0, edgeSize = 16, insets = { left = 0, right = 0, top = 0, bottom = 0}})
+			dragframe:SetToplevel(true)
+			dragframe:Hide()
+			dragframe:SetScale(LeaPlusLC["ControlScale"])
+			dragframe:SetFrameStrata("HIGH") -- Exception for LossOfControlFrame
+
+			dragframe.t = dragframe:CreateTexture()
+			dragframe.t:SetAllPoints()
+			dragframe.t:SetColorTexture(0.0, 1.0, 0.0, 0.5)
+			dragframe.t:SetAlpha(0.5)
+
+			dragframe.f = dragframe:CreateFontString(nil, 'ARTWORK', 'GameFontNormalLarge')
+			dragframe.f:SetPoint('CENTER', 0, 0)
+			dragframe.f:SetText(L["Control"])
+
+			-- Click handler
+			dragframe:SetScript("OnMouseDown", function(self, btn)
+				-- Start dragging if left clicked
+				if btn == "LeftButton" then
+					LossOfControlFrame:StartMoving()
+				end
+			end)
+
+			dragframe:SetScript("OnMouseUp", function()
+				-- Save frame positions
+				LossOfControlFrame:StopMovingOrSizing()
+				LeaPlusLC["ControlA"], void, LeaPlusLC["ControlR"], LeaPlusLC["ControlX"], LeaPlusLC["ControlY"] = LossOfControlFrame:GetPoint()
+				LossOfControlFrame:SetMovable(true)
+				LossOfControlFrame:ClearAllPoints()
+				LossOfControlFrame:SetPoint(LeaPlusLC["ControlA"], UIParent, LeaPlusLC["ControlR"], LeaPlusLC["ControlX"], LeaPlusLC["ControlY"])
+			end)
+
+			-- Create configuration panel
+			local ControlPanel = LeaPlusLC:CreatePanel("Manage control", "ControlPanel")
+			LeaPlusLC:MakeTx(ControlPanel, "Scale", 16, -72)
+			LeaPlusLC:MakeSL(ControlPanel, "ControlScale", "Drag to set the control frame scale.", 0.5, 2, 0.05, 16, -92, "%.2f")
+
+			-- Set scale when slider is changed
+			LeaPlusCB["ControlScale"]:HookScript("OnValueChanged", function()
+				LossOfControlFrame:SetScale(LeaPlusLC["ControlScale"])
+				dragframe:SetScale(LeaPlusLC["ControlScale"])
+				-- Show formatted slider value
+				LeaPlusCB["ControlScale"].f:SetFormattedText("%.0f%%", LeaPlusLC["ControlScale"] * 100)
+			end)
+
+			-- Help button tooltip
+			ControlPanel.h.tiptext = L["Drag the frame overlay to position the frame."]
+
+			-- Back button handler
+			ControlPanel.b:SetScript("OnClick", function()
+				ControlPanel:Hide(); LeaPlusLC["PageF"]:Show(); LeaPlusLC["Page6"]:Show()
+				return
+			end)
+
+			-- Reset button handler
+			ControlPanel.r:SetScript("OnClick", function()
+
+				-- Reset position and scale
+				LeaPlusLC["ControlA"] = "CENTER"
+				LeaPlusLC["ControlR"] = "CENTER"
+				LeaPlusLC["ControlX"] = 0
+				LeaPlusLC["ControlY"] = 0
+				LeaPlusLC["ControlScale"] = 1
+				LossOfControlFrame:ClearAllPoints()
+				LossOfControlFrame:SetPoint(LeaPlusLC["ControlA"], UIParent, LeaPlusLC["ControlR"], LeaPlusLC["ControlX"], LeaPlusLC["ControlY"])
+
+				-- Refresh configuration panel
+				ControlPanel:Hide(); ControlPanel:Show()
+				dragframe:Show()
+
+			end)
+
+			-- Show configuration panel when options panel button is clicked
+			LeaPlusCB["ManageControlButton"]:SetScript("OnClick", function()
+				if IsShiftKeyDown() and IsControlKeyDown() then
+					-- Preset profile
+					LeaPlusLC["ControlA"] = "CENTER"
+					LeaPlusLC["ControlR"] = "CENTER"
+					LeaPlusLC["ControlX"] = 0
+					LeaPlusLC["ControlY"] = 0
+					LeaPlusLC["ControlScale"] = 1
+					LossOfControlFrame:ClearAllPoints()
+					LossOfControlFrame:SetPoint(LeaPlusLC["ControlA"], UIParent, LeaPlusLC["ControlR"], LeaPlusLC["ControlX"], LeaPlusLC["ControlY"])
+					LossOfControlFrame:SetScale(LeaPlusLC["ControlScale"])
+				else
+					-- Find out if the UI has a non-standard scale
+					if GetCVar("useuiscale") == "1" then
+						LeaPlusLC["gscale"] = GetCVar("uiscale")
+					else
+						LeaPlusLC["gscale"] = 1
+					end
+
+					-- Set drag frame size and position according to UI scale
+					dragframe:SetWidth(196 * LeaPlusLC["gscale"])
+					dragframe:SetHeight(76 * LeaPlusLC["gscale"])
+					dragframe:ClearAllPoints()
+					dragframe:SetPoint("CENTER", LossOfControlFrame, "CENTER", -2 * LeaPlusLC["gscale"], 0 * LeaPlusLC["gscale"])
+
+					-- Show configuration panel
+					ControlPanel:Show()
+					LeaPlusLC:HideFrames()
+					dragframe:Show()
+				end
+			end)
+
+			-- Hide drag frame when configuration panel is closed
+			ControlPanel:HookScript("OnHide", function() dragframe:Hide() end)
+
+		end
+
+		----------------------------------------------------------------------
+		-- L46: Manage power bar
 		----------------------------------------------------------------------
 
 		if LeaPlusLC["ManagePowerBar"] == "On" then
@@ -6174,8 +6472,7 @@
 			LeaPlusLC:MakeCB(SideTip, "TipShowRank", "Show guild ranks for your guild", 16, -92, false, "If checked, guild ranks will be shown for players in your guild.")
 			LeaPlusLC:MakeCB(SideTip, "TipShowOtherRank", "Show guild ranks for other guilds", 16, -112, false, "If checked, guild ranks will be shown for players who are not in your guild.")
 			LeaPlusLC:MakeCB(SideTip, "TipShowTarget", "Show the unit's target", 16, -132, false, "If checked, unit targets will be shown.")
-			LeaPlusLC:MakeCB(SideTip, "TipBackSimple", "Color the backdrops based on faction", 16, -152, false, "If checked, backdrops will be tinted blue (friendly) or red (hostile).")
-			LeaPlusLC:MakeCB(SideTip, "TipHideInCombat", "Hide tooltips for world units during combat", 16, -172, false, "If checked, tooltips for world units will be hidden during combat.|n|nYou can hold the shift key down to override this setting.")
+			LeaPlusLC:MakeCB(SideTip, "TipHideInCombat", "Hide tooltips for world units during combat", 16, -152, false, "If checked, tooltips for world units will be hidden during combat.|n|nYou can hold the shift key down to override this setting.")
 
 			LeaPlusLC:CreateDropDown("TooltipAnchorMenu", "Anchor", SideTip, 146, "TOPLEFT", 356, -115, {L["None"], L["Overlay"], L["Cursor"], L["Cursor Left"], L["Cursor Right"]}, "")
 
@@ -6239,7 +6536,6 @@
 				LeaPlusLC["TipShowRank"] = "On"
 				LeaPlusLC["TipShowOtherRank"] = "Off"
 				LeaPlusLC["TipShowTarget"] = "On"
-				LeaPlusLC["TipBackSimple"] = "Off"
 				LeaPlusLC["TipHideInCombat"] = "Off"
 				LeaPlusLC["LeaPlusTipSize"] = 1.00
 				LeaPlusLC["TipOffsetX"] = -13
@@ -6289,7 +6585,6 @@
 					LeaPlusLC["TipShowRank"] = "On"
 					LeaPlusLC["TipShowOtherRank"] = "Off"
 					LeaPlusLC["TipShowTarget"] = "On"
-					LeaPlusLC["TipBackSimple"] = "On"
 					LeaPlusLC["TipHideInCombat"] = "Off"
 					LeaPlusLC["LeaPlusTipSize"] = 1.25
 					LeaPlusLC["TipOffsetX"] = -13
@@ -6864,28 +7159,6 @@
 
 					end
 
-				end
-
-				----------------------------------------------------------------------
-				-- Backdrop color
-				----------------------------------------------------------------------
-
-				LT["TipFaction"] = UnitFactionGroup(LT["Unit"])
-
-				if UnitCanAttack("player", LT["Unit"]) and not (UnitIsDeadOrGhost(LT["Unit"])) and not (LT["TipFaction"] == nil) and not (LT["TipFaction"] == UnitFactionGroup("player")) then
-					-- Hostile faction
-					if LeaPlusLC["TipBackSimple"] == "On" then
-						GameTooltip:SetBackdropColor(0.5, 0.0, 0.0);
-					else
-						GameTooltip:SetBackdropColor(0.0, 0.0, 0.0);
-					end
-				else
-					-- Friendly faction
-					if LeaPlusLC["TipBackSimple"] == "On" then
-						GameTooltip:SetBackdropColor(0.0, 0.0, 0.5);
-					else
-						GameTooltip:SetBackdropColor(0.0, 0.0, 0.0);
-					end
 				end
 
 				----------------------------------------------------------------------
@@ -7684,6 +7957,8 @@
 				"|Cffffffff" .. L["Kingsmourne"] .. " |r#4035004#178", -- interface/cinematics/shadowlands_910_aaa.mp3
 				"|Cffffffff" .. L["Ysera Reborn"] .. " |r#3756095#144", -- interface/cinematics/shadowlands_902_941.mp3
 				"|Cffffffff" .. L["Battle For Ardenweald"] .. " |r#4202880#186", -- interface/cinematics/shadowlands_910_951.mp3
+				"|Cffffffff" .. L["Fate of Sylvanas"] .. " |r#4202883#145", -- interface/cinematics/shadowlands_910_950and952.mp3
+				"|Cffffffff" .. L["By Our Hand"] .. " |r#4202890#116", -- interface/cinematics/shadowlands_910_953.mp3
 			})
 			Zn(L["Various"], L["Various"], L["Class Trials"]							, {	"|cffffd800" .. L["Various"] .. ": " .. L["Class Trials"], prefol, "MUS_70_ClassTrial_Horde_BattleWalk#71954", "MUS_70_ClassTrial_Alliance_BattleWalk#71959",})
 			Zn(L["Various"], L["Various"], L["Credits"]									, {	"|cffffd800" .. L["Various"] .. ": " .. L["Credits"], prefol, "Menu-Credits01#10763", "Menu-Credits02#10804", "Menu-Credits03#13822", "Menu-Credits04#23812", "Menu-Credits05#32015", "Menu-Credits06#34020", "Menu-Credits07#56354", "Menu-Credits08#113560"})
@@ -7771,6 +8046,8 @@
 				L["Kingsmourne"] .. " |r(949)",
 				L["Ysera Reborn"] .. " |r(941)",
 				L["Battle For Ardenweald"] .. " |r(951)",
+				L["Fate of Sylvanas"] .. " |r(950)",
+				L["By Our Hand"] .. " |r(953)",
 			})
 			-- Give zone table a file level scope so slash command function can access it
 			LeaPlusLC["ZoneList"] = ZoneList
@@ -8627,7 +8904,7 @@
 			expTitle:ClearAllPoints()
 			expTitle:SetPoint("TOP", 0, -152)
 
-			local subTitle = LeaPlusLC:MakeTx(interPanel, "curseforge.com/wow/addons/leatrix-plus", 0, 0)
+			local subTitle = LeaPlusLC:MakeTx(interPanel, "www.leatrix.com", 0, 0)
 			subTitle:SetFont(subTitle:GetFont(), 20)
 			subTitle:ClearAllPoints()
 			subTitle:SetPoint("BOTTOM", 0, 72)
@@ -8994,7 +9271,6 @@
 				LeaPlusLC:LoadVarChk("TipShowRank", "On")					-- Show rank for your guild
 				LeaPlusLC:LoadVarChk("TipShowOtherRank", "Off")				-- Show rank for other guilds
 				LeaPlusLC:LoadVarChk("TipShowTarget", "On")					-- Show target
-				LeaPlusLC:LoadVarChk("TipBackSimple", "Off")				-- Color backdrops
 				LeaPlusLC:LoadVarChk("TipHideInCombat", "Off")				-- Hide tooltips during combat
 				LeaPlusLC:LoadVarNum("LeaPlusTipSize", 1.00, 0.50, 2.00)	-- Tooltip scale slider
 				LeaPlusLC:LoadVarNum("TipOffsetX", -13, -5000, 5000)		-- Tooltip X offset
@@ -9054,6 +9330,13 @@
 				LeaPlusLC:LoadVarNum("FocusX", 0, -5000, 5000)				-- Manage focus position X
 				LeaPlusLC:LoadVarNum("FocusY", 0, -5000, 5000)				-- Manage focus position Y
 				LeaPlusLC:LoadVarNum("FocusScale", 1, 0.5, 2)				-- Manage focus scale
+
+				LeaPlusLC:LoadVarChk("ManageControl", "Off")				-- Manage control
+				LeaPlusLC:LoadVarAnc("ControlA", "CENTER")					-- Manage control anchor
+				LeaPlusLC:LoadVarAnc("ControlR", "CENTER")					-- Manage control relative
+				LeaPlusLC:LoadVarNum("ControlX", 0, -5000, 5000)			-- Manage control position X
+				LeaPlusLC:LoadVarNum("ControlY", 0, -5000, 5000)			-- Manage control position Y
+				LeaPlusLC:LoadVarNum("ControlScale", 1, 0.5, 2)				-- Manage control scale
 
 				LeaPlusLC:LoadVarChk("ClassColFrames", "Off")				-- Class colored frames
 				LeaPlusLC:LoadVarChk("ClassColPlayer", "On")				-- Class colored player frame
@@ -9199,7 +9482,6 @@
 			LeaPlusDB["TipShowRank"]			= LeaPlusLC["TipShowRank"]
 			LeaPlusDB["TipShowOtherRank"]		= LeaPlusLC["TipShowOtherRank"]
 			LeaPlusDB["TipShowTarget"]			= LeaPlusLC["TipShowTarget"]
-			LeaPlusDB["TipBackSimple"]			= LeaPlusLC["TipBackSimple"]
 			LeaPlusDB["TipHideInCombat"]		= LeaPlusLC["TipHideInCombat"]
 			LeaPlusDB["LeaPlusTipSize"]			= LeaPlusLC["LeaPlusTipSize"]
 			LeaPlusDB["TipOffsetX"]				= LeaPlusLC["TipOffsetX"]
@@ -9258,6 +9540,13 @@
 			LeaPlusDB["FocusX"]					= LeaPlusLC["FocusX"]
 			LeaPlusDB["FocusY"]					= LeaPlusLC["FocusY"]
 			LeaPlusDB["FocusScale"]				= LeaPlusLC["FocusScale"]
+
+			LeaPlusDB["ManageControl"]			= LeaPlusLC["ManageControl"]
+			LeaPlusDB["ControlA"]				= LeaPlusLC["ControlA"]
+			LeaPlusDB["ControlR"]				= LeaPlusLC["ControlR"]
+			LeaPlusDB["ControlX"]				= LeaPlusLC["ControlX"]
+			LeaPlusDB["ControlY"]				= LeaPlusLC["ControlY"]
+			LeaPlusDB["ControlScale"]			= LeaPlusLC["ControlScale"]
 
 			LeaPlusDB["ClassColFrames"]			= LeaPlusLC["ClassColFrames"]
 			LeaPlusDB["ClassColPlayer"]			= LeaPlusLC["ClassColPlayer"]
@@ -11210,7 +11499,6 @@
 				LeaPlusDB["HideZoneTextBar"] = "On"				-- Hide zone text bar
 				LeaPlusDB["MinimapScale"] = 1.30				-- Minimap scale slider
 				LeaPlusDB["TipModEnable"] = "On"				-- Enhance tooltip
-				LeaPlusDB["TipBackSimple"] = "On"				-- Color backdrops
 				LeaPlusDB["LeaPlusTipSize"] = 1.25				-- Tooltip scale slider
 				LeaPlusDB["TooltipAnchorMenu"] = 2				-- Tooltip anchor
 				LeaPlusDB["TipCursorX"] = 0						-- X offset
@@ -11283,6 +11571,13 @@
 				LeaPlusDB["FocusX"] = 250						-- Manage focus position X
 				LeaPlusDB["FocusY"] = -240						-- Manage focus position Y
 				LeaPlusDB["FocusScale"] = 1.00					-- Manage focus scale
+
+				LeaPlusDB["ManageControl"] = "On"				-- Manage control
+				LeaPlusDB["ControlA"] = "CENTER"				-- Manage control anchor
+				LeaPlusDB["ControlR"] = "CENTER"				-- Manage control relative
+				LeaPlusDB["ControlX"] = 0						-- Manage control position X
+				LeaPlusDB["ControlY"] = 0						-- Manage control position Y
+				LeaPlusDB["ControlScale"] = 1.00				-- Manage control scale
 
 				LeaPlusDB["ClassColFrames"] = "On"				-- Class colored frames
 
@@ -11541,7 +11836,7 @@
 	LeaPlusLC:MakeWD(LeaPlusLC[pg], "To begin, choose an options page.", 146, -92)
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Support", 146, -132);
-	LeaPlusLC:MakeWD(LeaPlusLC[pg], "curseforge.com/wow/addons/leatrix-plus", 146, -152)
+	LeaPlusLC:MakeWD(LeaPlusLC[pg], "www.leatrix.com", 146, -152)
 
 ----------------------------------------------------------------------
 -- 	LC1: Automation
@@ -11665,7 +11960,8 @@
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ManagePowerBar"			,	"Manage power bar"				, 	146, -132, 	true,	"If checked, you will be able to change the position and scale of the player alternative power bar.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ManageWidget"				,	"Manage widget"					, 	146, -152, 	true,	"If checked, you will be able to change the position and scale of the widget frame.|n|nThe widget frame is commonly used for showing PvP scores and tracking objectives.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ManageFocus"				,	"Manage focus"					, 	146, -172, 	true,	"If checked, you will be able to change the position and scale of the focus frame.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ClassColFrames"			, 	"Class colored frames"			,	146, -192, 	true,	"If checked, class coloring will be used in the player frame, target frame and focus frame.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ManageControl"				,	"Manage control"				, 	146, -192, 	true,	"If checked, you will be able to change the position and scale of the loss of control frame.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ClassColFrames"			, 	"Class colored frames"			,	146, -212, 	true,	"If checked, class coloring will be used in the player frame, target frame and focus frame.")
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Visibility"				, 	340, -72)
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoAlerts"					,	"Hide alerts"					, 	340, -92, 	true,	"If checked, alert frames will not be shown.")
@@ -11683,6 +11979,7 @@
 	LeaPlusLC:CfgBtn("ManagePowerBarButton", LeaPlusCB["ManagePowerBar"])
 	LeaPlusLC:CfgBtn("ManageWidgetButton", LeaPlusCB["ManageWidget"])
 	LeaPlusLC:CfgBtn("ManageFocusButton", LeaPlusCB["ManageFocus"])
+	LeaPlusLC:CfgBtn("ManageControlButton", LeaPlusCB["ManageControl"])
 	LeaPlusLC:CfgBtn("ClassColFramesBtn", LeaPlusCB["ClassColFrames"])
 
 ----------------------------------------------------------------------

@@ -87,6 +87,38 @@ local function IsModKeyDown()
     return k == "ALWAYS" or ((k == "SHIFT" and IsShiftKeyDown()) or (k == "CTRL" and IsControlKeyDown()) or (k == "ALT" and IsAltKeyDown()))
 end
 
+local function GetKeystoneModifiers(linkType, ...)
+    if type(linkType) ~= "string" then return end
+    local modifierOffset = 4
+    if linkType:find("item") then
+        if ... == "138019" then
+            modifierOffset = 16
+        else
+            return
+        end
+    elseif not linkType:find("keystone") then
+        return
+    end
+
+    local modifiers = {}
+    for i = modifierOffset, select("#", ...) do
+        local num = strmatch(select(i, ...) or "", "^(%d+)")
+        if num then
+            local modifierID = tonumber(num)
+            if modifierID then
+                tinsert(modifiers, modifierID)
+            end
+        end
+    end
+
+    local numModifiers = #modifiers
+    if modifiers[numModifiers] and modifiers[numModifiers] < 2 then
+        tremove(modifiers, numModifiers)
+    end
+
+    return modifiers
+end
+
 local function movePlacement(self)
     local settings = GetSetting("GameTooltipPos")
     self:ClearAllPoints()
@@ -445,7 +477,6 @@ local function GameTooltip_OnTooltipSetUnit(self)
 
     RemoveTrashLines(self) -- keep an eye on this may be buggy
 
-    local color = SetUnitText(self, unit, isShiftKeyDown)
     local showMount = GetSetting("ADVANCED_TOOLTIP_SHOW_MOUNT")
     local showClassColor = GetSetting("ADVANCED_TOOLTIP_SHOW_CLASS_COLOR")
 
@@ -458,14 +489,15 @@ local function GameTooltip_OnTooltipSetUnit(self)
                 local _, _, sourceText = C_MountJournal.GetMountInfoExtraByID(MountIDs[id])
                 self:AddDoubleLine(format("%s:", MOUNT), name, nil, nil, nil, 1, 1, 1)
 
-                if sourceText and isControlKeyDown then
-                    local sourceModified = gsub(sourceText, "|n", "\10")
+                local mountText = isControlKeyDown and sourceText and gsub(sourceText, "|n%s+|n", "|n")
+                if mountText then
+                    local sourceModified = gsub(mountText, "|n", "\10")
                     for x in gmatch(sourceModified, "[^\10]+\10?") do
                         local left, right = strmatch(x, "(.-|r)%s?([^\10]+)\10?")
                         if left and right then
                             self:AddDoubleLine(left, right, nil, nil, nil, 1, 1, 1)
                         else
-                            self:AddDoubleLine(FROM, gsub(sourceText, "|c%x%x%x%x%x%x%x%x",""), nil, nil, nil, 1, 1, 1)
+                            self:AddDoubleLine(FROM, gsub(mountText, "|c%x%x%x%x%x%x%x%x",""), nil, nil, nil, 1, 1, 1)
                         end
                     end
                 end
@@ -512,6 +544,7 @@ local function GameTooltip_OnTooltipSetUnit(self)
         end
     end
 
+    local color = SetUnitText(self, unit, isShiftKeyDown)
     if isShiftKeyDown and isPlayerUnit then
         AddInspectInfo(self, unit, 0, color.r, color.g, color.b)
     end
@@ -532,7 +565,60 @@ local function GameTooltip_OnTooltipCleared(self)
     self.itemCleared = nil
 end
 
-local function GameTooltip_OnTooltipSetItem(self)
+local function ScanKeystone(self, link)
+    if GetSetting("ADVANCED_TOOLTIP_SHOW_KEYSTONEINFO") then
+        if not link then
+            _, link = self:GetItem()
+        end
+        if type(link) == "string" then
+            local modifiers = GetKeystoneModifiers(strsplit(":", link))
+            if modifiers then
+                for _, modifierID in ipairs(modifiers) do
+                    local modifierName, modifierDescription = C_ChallengeMode.GetAffixInfo(modifierID)
+                    if modifierName and modifierDescription then
+                        self:AddLine(format("|cff00ff00%s|r - %s", modifierName, modifierDescription), 0, 1, 0, true)
+                    end
+                end
+                self:Show()
+            end
+        end
+    end
+end
+
+local function SetHyperlink(self, link)
+    if self:IsForbidden() then return end
+
+    if select(3, string.find(link, "(%a-):")) == "achievement" then
+        local _, _, achievementID = string.find(link, ":(%d+):")
+        local _, _, GUID = string.find(link, ":%d+:(.-):")
+
+        if GUID == UnitGUID("player") then
+            self:Show()
+            return
+        end
+
+        self:AddLine(" ")
+        local _, _, _, completed, _, _, _, _, _, _, _, _, wasEarnedByMe, earnedBy = GetAchievementInfo(achievementID)
+
+        if completed then
+            if earnedBy then
+                if earnedBy ~= "" then
+                    self:AddLine(format(ACHIEVEMENT_EARNED_BY, earnedBy))
+                end
+                if not wasEarnedByMe then
+                    self:AddLine(format(ACHIEVEMENT_NOT_COMPLETED_BY, GW.myname))
+                elseif GW.myname ~= earnedBy then
+                    self:AddLine(format(ACHIEVEMENT_COMPLETED_BY, GW.myname))
+                end
+            end
+        end
+        self:Show()
+        return
+    end
+    ScanKeystone(self, link)
+end
+
+local function GameTooltip_OnTooltipSetItem(self, link)
     if self:IsForbidden() then return end
 
     if not self.itemCleared then
@@ -563,6 +649,8 @@ local function GameTooltip_OnTooltipSetItem(self)
             self:AddDoubleLine(bankCount, " ")
         end
 
+        ScanKeystone(self, link)
+
         self.itemCleared = true
     end
 end
@@ -589,15 +677,24 @@ end
 
 local function SetUnitAuraData(self, id, caster)
     if id then
+        local mountText
         if MountIDs[id] then
             local _, _, sourceText = C_MountJournal.GetMountInfoExtraByID(MountIDs[id])
-            self:AddLine(" ")
-            self:AddLine(sourceText, 1, 1, 1)
+            mountText = sourceText and gsub(sourceText, "|n%s+|n", "|n")
+
+            if mountText then
+                self:AddLine(" ")
+                self:AddLine(mountText, 1, 1, 1)
+            end
         end
 
         local showClassColor = GetSetting("ADVANCED_TOOLTIP_SHOW_CLASS_COLOR")
 
         if IsModKeyDown() then
+            if mountText then
+                self:AddLine(" ")
+            end
+
             if caster then
                 local name = UnitName(caster)
                 local _, class = UnitClass(caster)
@@ -764,7 +861,8 @@ local function LoadTooltips()
         hooksecurefunc(GameTooltip, "SetCurrencyTokenByID", SetCurrencyTokenByID)
         hooksecurefunc(GameTooltip, "SetBackpackToken", SetBackpackToken)
         hooksecurefunc("QuestMapLogTitleButton_OnEnter", QuestID)
-        hooksecurefunc("TaskPOI_OnEnter", QuestID)
+        hooksecurefunc(GameTooltip, "SetHyperlink", SetHyperlink)
+        hooksecurefunc(ItemRefTooltip, "SetHyperlink", SetHyperlink)
 
         local eventFrame = CreateFrame("Frame")
         eventFrame:RegisterEvent("MODIFIER_STATE_CHANGED")

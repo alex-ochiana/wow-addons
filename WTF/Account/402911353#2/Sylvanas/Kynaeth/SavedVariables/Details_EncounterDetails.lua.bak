@@ -3,72 +3,150 @@ EncounterDetailsDB = {
 	["emotes"] = {
 		{
 			{
-				0.1149999999906868, -- [1]
-				"Your challenge is accepted, mortals! Know that you face Al'Akir, Elemental Lord of Air! You have no hope of defeating me!", -- [2]
-				"Al'Akir", -- [3]
+				15.72899999981746, -- [1]
+				"Goriona! Give them hell!", -- [2]
+				"Warmaster Blackhorn", -- [3]
 				7, -- [4]
 			}, -- [1]
 			{
-				2.837000000057742, -- [1]
-				"Your futile persistance angers me!", -- [2]
-				"Al'Akir", -- [3]
-				7, -- [4]
+				15.72899999981746, -- [1]
+				"|TInterface\\Icons\\spell_fire_twilightflamebreath.blp:20|t%s prepares to unleash a |cFF9900CC|Hspell:106401|h[Twilight Onslaught]|h|r!", -- [2]
+				"Goriona", -- [3]
+				1, -- [4]
 			}, -- [2]
 			{
-				4.053000000072643, -- [1]
-				"Enough! I will no longer be contained!", -- [2]
-				"Al'Akir", -- [3]
-				7, -- [4]
+				25.72299999999814, -- [1]
+				"|Tinterface\\icons\\spell_fire_twilightrainoffire.blp:0|t%s fires a |cFF9900CC|Hspell:110153|h[Broadside]|h|r at the Skyfire!", -- [2]
+				"Goriona", -- [3]
+				1, -- [4]
 			}, -- [3]
-			["boss"] = "Al'Akir",
+			{
+				37.35299999988638, -- [1]
+				"A drake swoops down to drop a Twilight Sapper onto the deck!", -- [2]
+				"Twilight Infiltrator", -- [3]
+				1, -- [4]
+			}, -- [4]
+			{
+				48.97799999988638, -- [1]
+				"|Tinterface\\icons\\spell_fire_ragnaros_lavabolt.blp:0|tStructural damage to the Skyfire triggers a sudden |cFFFF0000|Hspell:110095|h[Deck Fire]|h|r!", -- [2]
+				"The Skyfire", -- [3]
+				1, -- [4]
+			}, -- [5]
+			{
+				50.72999999998137, -- [1]
+				"Goriona! Give them hell!", -- [2]
+				"Warmaster Blackhorn", -- [3]
+				7, -- [4]
+			}, -- [6]
+			{
+				50.72999999998137, -- [1]
+				"|TInterface\\Icons\\spell_fire_twilightflamebreath.blp:20|t%s prepares to unleash a |cFF9900CC|Hspell:106401|h[Twilight Onslaught]|h|r!", -- [2]
+				"Goriona", -- [3]
+				1, -- [4]
+			}, -- [7]
+			{
+				77.41399999987334, -- [1]
+				"A drake swoops down to drop a Twilight Sapper onto the deck!", -- [2]
+				"Twilight Infiltrator", -- [3]
+				1, -- [4]
+			}, -- [8]
+			{
+				85.74499999987893, -- [1]
+				"Goriona! Give them hell!", -- [2]
+				"Warmaster Blackhorn", -- [3]
+				7, -- [4]
+			}, -- [9]
+			{
+				85.74499999987893, -- [1]
+				"|TInterface\\Icons\\spell_fire_twilightflamebreath.blp:20|t%s prepares to unleash a |cFF9900CC|Hspell:106401|h[Twilight Onslaught]|h|r!", -- [2]
+				"Goriona", -- [3]
+				1, -- [4]
+			}, -- [10]
+			{
+				95.70600000000559, -- [1]
+				"|Tinterface\\icons\\spell_fire_twilightrainoffire.blp:0|t%s fires a |cFF9900CC|Hspell:110153|h[Broadside]|h|r at the Skyfire!", -- [2]
+				"Goriona", -- [3]
+				1, -- [4]
+			}, -- [11]
+			{
+				117.405999999959, -- [1]
+				"A drake swoops down to drop a Twilight Sapper onto the deck!", -- [2]
+				"Twilight Infiltrator", -- [3]
+				1, -- [4]
+			}, -- [12]
+			{
+				120.714999999851, -- [1]
+				"Goriona! Give them hell!", -- [2]
+				"Warmaster Blackhorn", -- [3]
+				7, -- [4]
+			}, -- [13]
+			{
+				120.714999999851, -- [1]
+				"|TInterface\\Icons\\spell_fire_twilightflamebreath.blp:20|t%s prepares to unleash a |cFF9900CC|Hspell:106401|h[Twilight Onslaught]|h|r!", -- [2]
+				"Goriona", -- [3]
+				1, -- [4]
+			}, -- [14]
+			{
+				132.8329999998678, -- [1]
+				"Concentrate everything on the armored drake!", -- [2]
+				"Sky Captain Swayze", -- [3]
+				7, -- [4]
+			}, -- [15]
+			{
+				148.1979999998584, -- [1]
+				"Looks like I'm doing this myself. Good!", -- [2]
+				"Warmaster Blackhorn", -- [3]
+				7, -- [4]
+			}, -- [16]
+			{
+				160.3469999998342, -- [1]
+				"%s siphons vitality from Goriona and attacks with renewed vigor!", -- [2]
+				"Warmaster Blackhorn", -- [3]
+				1, -- [4]
+			}, -- [17]
+			{
+				163.9639999999199, -- [1]
+				"%s siphons vitality from Goriona and attacks with renewed vigor!", -- [2]
+				"Warmaster Blackhorn", -- [3]
+				1, -- [4]
+			}, -- [18]
+			{
+				167.5989999999292, -- [1]
+				"%s siphons vitality from Goriona and attacks with renewed vigor!", -- [2]
+				"Warmaster Blackhorn", -- [3]
+				1, -- [4]
+			}, -- [19]
+			{
+				171.247999999905, -- [1]
+				"%s siphons vitality from Goriona and attacks with renewed vigor!", -- [2]
+				"Warmaster Blackhorn", -- [3]
+				1, -- [4]
+			}, -- [20]
+			{
+				172.4579999998678, -- [1]
+				"%s screeches in pain and retreats into the swirling clouds.", -- [2]
+				"Goriona", -- [3]
+				1, -- [4]
+			}, -- [21]
+			["boss"] = "Warmaster Blackhorn",
 		}, -- [1]
 		{
 			{
-				2.35999999998603, -- [1]
-				"You throw away your honor and flee as cowards? Then die!", -- [2]
-				"Nezir", -- [3]
+				5.089999999850988, -- [1]
+				"Strength of the Earth, hear my call! Shield them in this dark hour, the last defenders of Azeroth!", -- [2]
+				"Thrall", -- [3]
 				7, -- [4]
 			}, -- [1]
-			{
-				11.07400000002235, -- [1]
-				"Brothers, beware! These mortals are dangerous. I must pause and gather my strength.", -- [2]
-				"Nezir", -- [3]
-				7, -- [4]
-			}, -- [2]
-			{
-				11.07400000002235, -- [1]
-				"%s begins to gather strength from the remaining Wind Lord!", -- [2]
-				"Nezir", -- [3]
-				1, -- [4]
-			}, -- [3]
-			["boss"] = "Conclave of Wind",
+			["boss"] = "Ultraxion",
 		}, -- [2]
 		{
 			{
-				0.1630000000004657, -- [1]
-				"Your challenge is accepted, mortals! Know that you face Al'Akir, Elemental Lord of Air! You have no hope of defeating me!", -- [2]
-				"Al'Akir", -- [3]
+				0.1, -- [1]
+				"You cross the Stormbinder! I'll slaughter you all.", -- [2]
+				"Hagara the Stormbinder", -- [3]
 				7, -- [4]
 			}, -- [1]
-			{
-				2.883999999961816, -- [1]
-				"Your futile persistance angers me!", -- [2]
-				"Al'Akir", -- [3]
-				7, -- [4]
-			}, -- [2]
-			{
-				2.883999999961816, -- [1]
-				"Storms! I summon you to my side!", -- [2]
-				"Al'Akir", -- [3]
-				7, -- [4]
-			}, -- [3]
-			{
-				5.354999999981374, -- [1]
-				"Enough! I will no longer be contained!", -- [2]
-				"Al'Akir", -- [3]
-				7, -- [4]
-			}, -- [4]
-			["boss"] = "Al'Akir",
+			["boss"] = "Yor'sahj the Unsleeping",
 		}, -- [3]
 	},
 	["encounter_spells"] = {
@@ -260,6 +338,12 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Warmaster Blackhorn",
+		},
+		[108076] = {
+			["school"] = 32,
+			["token"] = {
+				["SPELL_DAMAGE"] = true,
+			},
 		},
 		[37271] = {
 			["school"] = 64,
@@ -1162,6 +1246,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Lord Chamberlain",
 		},
+		[107518] = {
+			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Twilight Sapper",
+		},
 		[110137] = {
 			["school"] = 1,
 			["token"] = {
@@ -1391,6 +1483,17 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Crystalcore Sentinel",
 		},
+		[107558] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "Twilight Elite Dreadblade",
+		},
 		[320200] = {
 			["school"] = 1,
 			["type"] = "DEBUFF",
@@ -1403,14 +1506,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Surgeon Stitchflesh",
 		},
-		[37154] = {
-			["school"] = 4,
+		[85422] = {
+			["school"] = 8,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_START"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Tempest Falconer",
+			["source"] = "Anshal",
 		},
 		[322304] = {
 			["school"] = 8,
@@ -1898,15 +2001,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Al'Akir",
 		},
-		[37124] = {
-			["school"] = 64,
-			["type"] = "DEBUFF",
+		[109379] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Star Scryer",
+			["source"] = "Corruption",
 		},
 		[105834] = {
 			["school"] = 4,
@@ -1916,13 +2017,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Hideous Amalgamation",
 		},
-		[109379] = {
-			["school"] = 1,
+		[37124] = {
+			["school"] = 64,
+			["type"] = "DEBUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Corruption",
+			["source"] = "Star Scryer",
 		},
 		[93059] = {
 			["school"] = 1,
@@ -2306,14 +2409,14 @@ EncounterDetailsDB = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
 		},
-		[85422] = {
-			["school"] = 8,
-			["type"] = "BUFF",
+		[37154] = {
+			["school"] = 4,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Anshal",
+			["source"] = "Tempest Falconer",
 		},
 	},
 }

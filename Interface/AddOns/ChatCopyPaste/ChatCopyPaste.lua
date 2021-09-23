@@ -127,7 +127,14 @@ function CCP.openCcpCopyFrame(window, url)
 		ccpCopyFrame.EditBox:HighlightText();
 		ccpCopyFrame.EditBox:SetFocus();
 	else
-		for i = 1, _G["ChatFrame" .. window]:GetNumMessages() do
+		local maxLines = _G["ChatFrame" .. window]:GetNumMessages() or 0;
+		--500 line cap to avoid freezing.
+		--Start 500 lines from the bottom.
+		local startLine = maxLines - 500;
+		if (startLine < 1) then
+			startLine = 1;
+		end
+		for i = startLine, maxLines do
 			local currentMsg, r, g, b, chatTypeID = _G["ChatFrame" .. window]:GetMessageInfo(i);
 			--print(_G["ChatFrame" .. window]:GetMessageInfo(i));
 			local colorCode = false;
@@ -190,6 +197,9 @@ function CCP.removeChatJunk(currentMsg)
 	--Seems to be Arg1 is value is 1 or Arg2 is value is > 1.
 	--This escape sequence isn't parsed by ExitBox:Insert() in scroll frames so I have to fix it here.
 	--This should be fixed later and done in 1 regexp.
+	if (not currentMsg) then
+		return "";
+	end
 	local chatNumber = string.match(currentMsg, "(%d+) |4year:years;");
 	if (chatNumber) then
 		if (tonumber(number) == 0) then

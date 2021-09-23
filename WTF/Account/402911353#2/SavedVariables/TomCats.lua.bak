@@ -1,14 +1,14 @@
 
 TomCats_Account = {
-	["discoveriesVersion"] = "2.3.13",
-	["lastVersionSeen"] = "2.3.13",
+	["discoveriesVersion"] = "2.3.18",
+	["lastVersionSeen"] = "2.3.19",
 	["preferences"] = {
 		["TomCats-MinimapButton"] = {
 			["hidden"] = false,
 			["position"] = -2.888,
 		},
 		["MapOptions"] = {
-			["iconScale"] = 1,
+			["iconScale"] = 0.5,
 			["iconAnimationEnabled"] = true,
 		},
 		["betaEnabled"] = false,

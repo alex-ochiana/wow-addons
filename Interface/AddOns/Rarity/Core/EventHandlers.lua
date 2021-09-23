@@ -692,7 +692,7 @@ end
 function R:OnMouseOver(event)
 	local guid = UnitGUID("mouseover")
 	local npcid = self:GetNPCIDFromGUID(guid)
-	Rarity:Debug("Mouse hovered over NPC with id = " .. tostring(npcid))
+
 	if npcid == 50409 or npcid == 50410 then
 		if not Rarity.guids[guid] then
 			Rarity.guids[guid] = true
@@ -745,6 +745,8 @@ function R:OnChatCommand(input)
 		self.Validation:ValidateItemDB()
 	elseif strlower(input) == "purge" then -- TODO: This should be done automatically, no?
 		self.Database:PurgeObsoleteEntries()
+	elseif strlower(input) == "test" then
+		self.Testing:RunIntegrationTests()
 	elseif strlower(input) == "profiling" then
 		if self.db.profile.enableProfiling then
 			self.db.profile.enableProfiling = false

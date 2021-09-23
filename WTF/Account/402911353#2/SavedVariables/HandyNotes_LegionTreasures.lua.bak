@@ -19,6 +19,7 @@ HandyNotes_LegionTreasuresDB = {
 		["Cretz - Sylvanas"] = "Cretz - Sylvanas",
 		["Blanitza - Kazzak"] = "Blanitza - Kazzak",
 		["Mortifèrous - Kazzak"] = "Mortifèrous - Kazzak",
+		["Towerpog - Sylvanas"] = "Towerpog - Sylvanas",
 		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
 		["Mòloch - Kazzak"] = "Mòloch - Kazzak",
 		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
@@ -50,6 +51,8 @@ HandyNotes_LegionTreasuresDB = {
 		["Blanitza - Kazzak"] = {
 		},
 		["Mortifèrous - Kazzak"] = {
+		},
+		["Towerpog - Sylvanas"] = {
 		},
 		["Crëtz - Kazzak"] = {
 		},

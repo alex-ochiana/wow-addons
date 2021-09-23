@@ -1,6 +1,9 @@
 
 dbBFA = {
 	["char"] = {
+		["Vòlkmer - Kazzak"] = {
+			["firstun"] = false,
+		},
 		["Mortifèrous - Kazzak"] = {
 			["firstun"] = false,
 		},
@@ -10,23 +13,18 @@ dbBFA = {
 		["Crëtz - Kazzak"] = {
 			["firstun"] = false,
 		},
+		["Plüto - Sylvanas"] = {
+			["firstun"] = false,
+		},
 		["Crètz - Sylvanas"] = {
+			["firstun"] = false,
+		},
+		["Jiglèr - Sylvanas"] = {
 			["firstun"] = false,
 		},
 		["Kynaeth - Sylvanas"] = {
 			["firstun"] = false,
 		},
-		["Vòlkmer - Kazzak"] = {
-			["firstun"] = false,
-		},
-	},
-	["profileKeys"] = {
-		["Mortifèrous - Kazzak"] = "Default",
-		["Egidus - Sylvanas"] = "Default",
-		["Crëtz - Kazzak"] = "Default",
-		["Crètz - Sylvanas"] = "Default",
-		["Kynaeth - Sylvanas"] = "Default",
-		["Vòlkmer - Kazzak"] = "Default",
 	},
 	["global"] = {
 		["warn01_seen"] = 0,
@@ -34,6 +32,16 @@ dbBFA = {
 		["news"] = {
 		},
 		["warn02_seen"] = 0,
+	},
+	["profileKeys"] = {
+		["Vòlkmer - Kazzak"] = "Default",
+		["Mortifèrous - Kazzak"] = "Default",
+		["Egidus - Sylvanas"] = "Default",
+		["Crëtz - Kazzak"] = "Default",
+		["Plüto - Sylvanas"] = "Default",
+		["Crètz - Sylvanas"] = "Default",
+		["Jiglèr - Sylvanas"] = "Default",
+		["Kynaeth - Sylvanas"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -57,16 +65,16 @@ dbBFA = {
 				["PREFERHIGH"] = false,
 				["NOTROOPS"] = false,
 				["MAKEITQUICK"] = true,
-				["TROOPALERT"] = true,
 				["MAXCHAMP"] = 3,
+				["TROOPALERT"] = true,
 				["IGNOREBUSY"] = true,
 				["BASECHANCE"] = 0,
 			},
+			["showmenu"] = false,
 			["blacklist"] = {
 				[2140] = false,
 				[2115] = false,
 			},
-			["showmenu"] = false,
 		},
 	},
 }

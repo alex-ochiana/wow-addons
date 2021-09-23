@@ -107,41 +107,25 @@ GW.AddForProfiling("Actionbars2", "stateChanged", stateChanged)
 hooksecurefunc("ValidateActionBarTransition", stateChanged)
 
 local function FlyoutDirection(actionbar)
+    if InCombatLockdown() then return end
+
     for i = 1, 12 do
         local button = actionbar.gw_Buttons[i]
-        if button.FlyoutArrow or button.FlyoutArrow:IsShown() then 
-            local combat = InCombatLockdown()
-
+        if button.FlyoutArrow then
             --Change arrow direction depending on what bar the button is on
-            local arrowDistance = 2
-            if ((_G.SpellFlyout:IsShown() and _G.SpellFlyout:GetParent() == button) or GetMouseFocus() == button) then
-                arrowDistance = 5
-            end
-
             local point = GW.GetScreenQuadrant(actionbar)
 
             if point ~= "UNKNOWN" then
                 if strfind(point, "TOP") then
-                    button.FlyoutArrow:ClearAllPoints()
-                    button.FlyoutArrow:SetPoint("BOTTOM", button, "BOTTOM", 0, -arrowDistance)
-                    SetClampedTextureRotation(button.FlyoutArrow, 180)
-                    if not combat then button:SetAttribute("flyoutDirection", "DOWN") end
+                    button:SetAttribute("flyoutDirection", "DOWN")
                 elseif point == "RIGHT" then
-                    button.FlyoutArrow:ClearAllPoints()
-                    button.FlyoutArrow:SetPoint("LEFT", button, "LEFT", -arrowDistance, 0)
-                    SetClampedTextureRotation(button.FlyoutArrow, 270)
-                    if not combat then button:SetAttribute("flyoutDirection", "LEFT") end
+                    button:SetAttribute("flyoutDirection", "LEFT")
                 elseif point == "LEFT" then
-                    button.FlyoutArrow:ClearAllPoints()
-                    button.FlyoutArrow:SetPoint("RIGHT", button, "RIGHT", arrowDistance, 0)
-                    SetClampedTextureRotation(button.FlyoutArrow, 90)
-                    if not combat then button:SetAttribute("flyoutDirection", "RIGHT") end
+                    button:SetAttribute("flyoutDirection", "RIGHT")
                 elseif point == "CENTER" or strfind(point, "BOTTOM") then
-                    button.FlyoutArrow:ClearAllPoints()
-                    button.FlyoutArrow:SetPoint("TOP", button, "TOP", 0, arrowDistance)
-                    SetClampedTextureRotation(button.FlyoutArrow, 0)
-                    if not combat then button:SetAttribute("flyoutDirection", "UP") end
+                    button:SetAttribute("flyoutDirection", "UP")
                 end
+                ActionButton_UpdateFlyout(button)
             end
         end
     end
@@ -419,8 +403,8 @@ local function setActionButtonStyle(buttonName, noBackDrop, hideUnused, isStance
 
     btn:SetPushedTexture("Interface/AddOns/GW2_UI/textures/uistuff/actionbutton-pressed")
     btn:SetHighlightTexture("Interface/AddOns/GW2_UI/textures/uistuff/UI-Quickslot-Depress")
-    btn:SetCheckedTexture("Interface/AddOns/GW2_UI/textures/uistuff/UI-Quickslot-Depress")
-    btn.Name:SetAlpha(0) --Hide Marco Name on Actionbutton
+    if btn.SetCheckedTexture then btn:SetCheckedTexture("Interface/AddOns/GW2_UI/textures/uistuff/UI-Quickslot-Depress") end
+    if btn.Name then btn.Name:SetAlpha(0) end --Hide Marco Name on Actionbutton
 
     if noBackDrop == nil or noBackDrop == false then
         local backDrop = CreateFrame("Frame", nil, btn, "GwActionButtonBackdropTmpl")

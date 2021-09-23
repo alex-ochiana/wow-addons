@@ -207,8 +207,8 @@ local function xpbar_OnEvent(self, event)
             self.RepuBar:SetStatusBarColor(FACTION_BAR_COLORS[5].r, FACTION_BAR_COLORS[5].g, FACTION_BAR_COLORS[5].b)
             isFriend = true
         else
-            local currentRank = GetText("FACTION_STANDING_LABEL" .. math.min(8, math.max(1, standingId)), GW.mysex)
-            local nextRank = GetText("FACTION_STANDING_LABEL" .. math.min(8, math.max(1, standingId + 1)), GW.mysex)
+            local currentRank = GetText("FACTION_STANDING_LABEL" .. min(8, max(1, (standingId or 1))), GW.mysex)
+            local nextRank = GetText("FACTION_STANDING_LABEL" .. min(8, max(1, (standingId or 1) + 1)), GW.mysex)
 
             if currentRank == nextRank and earnedValue - bottomValue == 0 then
                 valPrecRepu = 1
@@ -221,9 +221,9 @@ local function xpbar_OnEvent(self, event)
             isNormal = true
         end
 
-        local nextId = standingId and standingId + 1 or standingId
+        local nextId = standingId and standingId + 1 or 1
         if not lockLevelTextUnderMaxLevel then
-            level = isParagon and getglobal("FACTION_STANDING_LABEL" .. standingId) or isFriend and friendTextLevel or isNormal and getglobal("FACTION_STANDING_LABEL" .. standingId)
+            level = isParagon and getglobal("FACTION_STANDING_LABEL" .. (standingId or 1)) or isFriend and friendTextLevel or isNormal and getglobal("FACTION_STANDING_LABEL" .. (standingId or 1))
             Nextlevel = isParagon and L["Paragon"] or isFriend and "" or isNormal and getglobal("FACTION_STANDING_LABEL" .. math.min(8, nextId))
         end
 
@@ -1154,7 +1154,9 @@ local function LoadXPBar()
     experiencebar:RegisterEvent("PLAYER_ENTERING_WORLD")
     experiencebar:RegisterEvent("PLAYER_LEVEL_CHANGED")
     experiencebar:RegisterEvent("UPDATE_EXHAUSTION")
-    hooksecurefunc("SetWatchingHonorAsXP", xpbar_OnEvent)
+    hooksecurefunc("SetWatchingHonorAsXP", function()
+        xpbar_OnEvent(experiencebar)
+    end)
 
     experiencebar:SetScript("OnEnter", xpbar_OnEnter)
     experiencebar:SetScript(

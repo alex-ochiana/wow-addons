@@ -1,6 +1,10 @@
-VER 3 000000000000000F "asd" "1033183"
-/target Lunarlight Bud
-/run SetRaidTarget("target", 8)
+VER 3 0000000000000015 "Burst" "INV_MISC_QUESTIONMARK"
+#showtooltip Ravenous Frenzy
+/cast Celestial Alignment
+/target player
+/use Inscrutable Quantum Device
+/targetlasttarget
+/cast Ravenous Frenzy
 END
 VER 3 0000000000000002 "Dark skies" "236151"
 /tar Dread A
@@ -8,30 +12,12 @@ VER 3 0000000000000002 "Dark skies" "236151"
 /tar Amber-Shaper U
 /tar Essence of F
 END
-VER 3 0000000000000016 "Details" "979579"
-/details toggle
-END
-VER 3 0000000000000008 "Innervate" "INV_MISC_QUESTIONMARK"
-#showtooltip
-/target [target=mouseover]
-/cast Innervate
-/say Casted Innervate on %t!
-/targetlasttarget
-END
-VER 3 0000000000000015 "Kill" "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast Celestial Alignment
-/use 14
-END
-VER 3 000000000000000E "Kill" "1115907"
-/cast Incarnation: Chosen of Elune(Talent, Shapeshift)
-/cast Convoke the Spirits
-END
 VER 3 000000000000000C "RKill" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast Celestial Alignment
+/use Potion of Spectral Intellect
 /use 14
-/use [group:raid] Potion of Spectral Intellect
+/use 13
 END
 VER 3 0000000000000009 "SB" "INV_MISC_QUESTIONMARK"
 #showtooltip Solar Beam
@@ -39,6 +25,9 @@ VER 3 0000000000000009 "SB" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000003 "Shado-Pan" "629482"
 /run local a=7298 print(format("\124cffFFFF00TODO for %s\124r",GetAchievementLink(a)))for i=1,GetAchievementNumCriteria(a)do local d,_,c,x,y=GetAchievementCriteriaInfo(a,i)if not c then print(format("%s %d/%d",d,x,y))end end
+END
+VER 3 0000000000000018 "SIT" "INV_MISC_QUESTIONMARK"
+/pet
 END
 VER 3 0000000000000011 "T1" "INV_MISC_QUESTIONMARK"
 #showtooltip 13

@@ -11,7 +11,7 @@ local TIME_FOR_3 = 0.6
 local TIME_FOR_2 = 0.8
 
 local function getObjectiveBlock(self, index)
-    if _G[self:GetName() .. "GwQuestObjective" .. index] ~= nil then
+    if _G[self:GetName() .. "GwQuestObjective" .. index] then
         _G[self:GetName() .. "GwQuestObjective" .. index]:SetScript("OnEnter", nil)
         _G[self:GetName() .. "GwQuestObjective" .. index]:SetScript("OnLeave", nil)
         _G[self:GetName() .. "GwQuestObjective" .. index].StatusBar:SetStatusBarColor(self.color.r, self.color.g, self.color.b)
@@ -42,6 +42,9 @@ local function getObjectiveBlock(self, index)
         )
     end
 
+    newBlock.hasObjectToHide = false
+    newBlock.objectToHide = nil
+    newBlock.resetParent = false
     newBlock:SetScript("OnEnter", nil)
     newBlock:SetScript("OnLeave", nil)
     newBlock.StatusBar:SetStatusBarColor(self.color.r, self.color.g, self.color.b)
@@ -55,6 +58,11 @@ local function addObjectiveBlock(block, text, finished, objectiveIndex, objectiv
     local objectiveBlock = getObjectiveBlock(block, objectiveIndex)
 
     if text then
+        if objectiveBlock.hasObjectToHide then
+            if objectiveBlock.resetParent then objectiveBlock.objectToHide.SetParent = nil end
+            objectiveBlock.objectToHide:SetParent(GW.HiddenFrame)
+            if objectiveBlock.resetParent then objectiveBlock.objectToHide.SetParent = GW.NoOp end
+        end
         objectiveBlock:Show()
         objectiveBlock.ObjectiveText:SetText(text)
         objectiveBlock.ObjectiveText:SetHeight(objectiveBlock.ObjectiveText:GetStringHeight() + 15)
@@ -83,6 +91,27 @@ local function addObjectiveBlock(block, text, finished, objectiveIndex, objectiv
 end
 GW.AddScenarioObjectivesBlock = addObjectiveBlock
 GW.AddForProfiling("scenario", "addObjectiveBlock", addObjectiveBlock)
+
+local function AddMawBuffsBelowMinimapFrame(block, numCriteria)
+    -- SL Season 2 Maw Buff Containers
+    if MawBuffsBelowMinimapFrame:IsShown() and not IsInJailersTower() then
+        numCriteria = numCriteria + 1
+        local objectiveBlock = getObjectiveBlock(block, numCriteria)
+        objectiveBlock:SetHeight(MawBuffsBelowMinimapFrame:GetHeight())
+        MawBuffsBelowMinimapFrame.Container:SetParent(objectiveBlock)
+        MawBuffsBelowMinimapFrame.Container:ClearAllPoints()
+        MawBuffsBelowMinimapFrame.Container:SetAllPoints()
+        MawBuffsBelowMinimapFrame.Container:Show()
+        objectiveBlock:Show()
+        objectiveBlock.ObjectiveText:SetText("")
+        block.height = block.height + objectiveBlock:GetHeight()
+        block.numObjectives = block.numObjectives + 1
+        objectiveBlock.hasObjectToHide = true
+        objectiveBlock.objectToHide = MawBuffsBelowMinimapFrame.Container
+    end
+
+    return numCriteria
+end
 
 local function updateCurrentScenario(self, event, ...)
     if event == "UPDATE_UI_WIDGET" then
@@ -146,7 +175,7 @@ local function updateCurrentScenario(self, event, ...)
             GW.RemoveTrackerNotificationOfType("TORGHAST")
             GwScenarioBlock:Hide()
         end
-        GW.CombatQueue_Queue("update_tracker_scenario_itembutton", UpdateQuestItem, {GwScenarioBlock})
+        GW.CombatQueue_Queue(nil, UpdateQuestItem, {GwScenarioBlock})
         if GwScenarioBlock.hasItem then
             GW.CombatQueue_Queue("update_tracker_scenario_itembutton_position", GW.updateQuestItemPositions, {GwScenarioBlock.actionButton, GwScenarioBlock.height, "SCENARIO", GwScenarioBlock})
         end
@@ -155,6 +184,7 @@ local function updateCurrentScenario(self, event, ...)
                 _G[GwScenarioBlock:GetName() .. "GwQuestObjective" .. i]:Hide()
             end
         end
+        AddMawBuffsBelowMinimapFrame(GwScenarioBlock, 0)
 
         GwScenarioBlock:SetHeight(GwScenarioBlock.height)
         GwQuesttrackerContainerScenario:SetHeight(GwScenarioBlock.height)
@@ -182,7 +212,7 @@ local function updateCurrentScenario(self, event, ...)
     end
 
     if IsInJailersTower() then
-        local floor
+        local floor = ""
         if event == "JAILERS_TOWER_LEVEL_UPDATE" then
             local level, type, textureKit = ...
             self.jailersTowerLevelUpdateInfo = {level = level, type = type, textureKit = textureKit}
@@ -213,7 +243,7 @@ local function updateCurrentScenario(self, event, ...)
         GwScenarioBlock.questLogIndex = C_QuestLog.GetLogIndexForQuestID(questID)
     end
 
-    GW.CombatQueue_Queue("update_tracker_scenario_itembutton", UpdateQuestItem, {GwScenarioBlock})
+    GW.CombatQueue_Queue(nil, UpdateQuestItem, {GwScenarioBlock})
 
     for criteriaIndex = 1, numCriteria do
         local criteriaString, _, _, quantity, totalQuantity, _, _, _, _, _, _, _, isWeightedProgress = C_Scenario.GetCriteriaInfo(criteriaIndex)
@@ -233,6 +263,8 @@ local function updateCurrentScenario(self, event, ...)
             quantity
         )
     end
+
+    numCriteria = AddMawBuffsBelowMinimapFrame(GwScenarioBlock, numCriteria)
 
     local GwQuestTrackerTimerSavedHeight = 1
     local isEmberCourtWidget = false

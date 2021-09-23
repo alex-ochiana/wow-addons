@@ -3,6 +3,20 @@ local DEBUFF_COLOR = GW.DEBUFF_COLOR
 local COLOR_FRIENDLY = GW.COLOR_FRIENDLY
 local TimeCount = GW.TimeCount
 
+local function GetDebuffScaleBasedOnPrio()
+    local debuffScalePrio = GW.GetSetting("RAIDDEBUFFS_DISPELLDEBUFF_SCALE_PRIO")
+    local scale = 1
+
+    if debuffScalePrio == "DISPELL" then
+        return tonumber(GW.GetSetting("DISPELL_DEBUFFS_Scale"))
+    elseif debuffScalePrio == "IMPORTANT" then
+        return tonumber(GW.GetSetting("RAIDDEBUFFS_Scale"))
+    end
+
+    return scale
+end
+GW.GetDebuffScaleBasedOnPrio = GetDebuffScaleBasedOnPrio
+
 local function sortAuras(a, b)
     if a.caster and b.caster and a.caster == b.caster then
         return tonumber(a.timeremaning) < tonumber(b.timeremaning)
@@ -66,15 +80,12 @@ GW.AddForProfiling("auras", "getBuffs", getBuffs)
 
 local function getDebuffs(unit, filter, revert)
     local debuffList = {}
-    local showImportant = false
+    local showImportant = filter == "IMPORTANT"
     local counter = 0
-    if filter == "IMPORTANT" then
-        filter = nil
-        showImportant = true
-    end
+    local filterToUse = filter == "IMPORTANT" and nil or filter
 
     for i = 1, 40 do
-        if UnitDebuff(unit, i, filter) and ((showImportant and (select(7, UnitDebuff(unit, i, filter)) == "player" or GW.ImportendRaidDebuff[select(10, UnitDebuff(unit, i, filter))])) or not showImportant) then
+        if UnitDebuff(unit, i, filterToUse) and ((showImportant and (select(7, UnitDebuff(unit, i, filterToUse)) == "player" or GW.ImportendRaidDebuff[select(10, UnitDebuff(unit, i, filterToUse))])) or not showImportant) then
             counter = #debuffList + 1
             debuffList[counter] = {}
             local dbi = debuffList[counter]
@@ -109,9 +120,7 @@ local function setAuraType(self, typeAura)
         self.icon:SetPoint("BOTTOMRIGHT", self, "BOTTOMRIGHT", -1, 1)
         self.duration:SetFont(UNIT_NAME_FONT, 11)
         self.stacks:SetFont(UNIT_NAME_FONT, 12, "OUTLINED")
-    end
-
-    if typeAura == "bigBuff" then
+    elseif typeAura == "bigBuff" then
         self.icon:SetPoint("TOPLEFT", self, "TOPLEFT", 3, -3)
         self.icon:SetPoint("BOTTOMRIGHT", self, "BOTTOMRIGHT", -3, 3)
         self.duration:SetFont(UNIT_NAME_FONT, 14)
@@ -210,6 +219,7 @@ local function UpdateBuffLayout(self, event, anchorPos)
     local dbList = getDebuffs(self.unit, self.debuffFilter, self.frameInvert)
     local lineSize = smallSize
     local saveAuras = {}
+    local debuffScale = GetDebuffScaleBasedOnPrio()
 
     saveAuras.buff = {}
     saveAuras.debuff = {}
@@ -233,6 +243,7 @@ local function UpdateBuffLayout(self, event, anchorPos)
             usedWidth = 0
             usedHeight = usedHeight + lineSize + marginY
             lineSize = smallSize
+            isBuff = false
         end
 
         if setBuffData(frame, list, index) then
@@ -257,6 +268,15 @@ local function UpdateBuffLayout(self, event, anchorPos)
                 end
                 self.animating = false
                 saveAuras[frame.auraType][#saveAuras[frame.auraType] + 1] = list[index].name
+            elseif UnitIsFriend(self.unit, "player") and not isBuff then
+                -- debuffs
+                if GW.ImportendRaidDebuff[list[index].spellID] and list[index].dispelType and GW.IsDispellableByMe(list[index].dispelType) then
+                    size = size * debuffScale
+                elseif GW.ImportendRaidDebuff[list[index].spellID] then
+                    size = size * tonumber(GW.GetSetting("RAIDDEBUFFS_Scale"))
+                elseif list[index].dispelType and GW.IsDispellableByMe(list[index].dispelType) then
+                    size = size * tonumber(GW.GetSetting("DISPELL_DEBUFFS_Scale"))
+                end
             end
 
             usedWidth = usedWidth + size + marginX
@@ -265,7 +285,7 @@ local function UpdateBuffLayout(self, event, anchorPos)
                 usedHeight = usedHeight + lineSize + marginY
                 lineSize = smallSize
             end
-            if usedWidth > 0 then 
+            if usedWidth > 0 then
                 usedWidth2 = usedWidth - size - marginX
             else
                 usedWidth2 = usedWidth

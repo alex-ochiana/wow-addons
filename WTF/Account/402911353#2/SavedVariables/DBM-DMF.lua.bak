@@ -109,8 +109,8 @@ DBMDMF_AllSavedVars = {
 		["Tonks"] = {
 			{
 				["Enabled"] = true,
-				["SpecWarn102341run2SpecialWarningSound"] = 4,
 				["announce102341spell"] = true,
+				["SpecWarn102341run2SpecialWarningSound"] = 4,
 				["Timer102178active"] = true,
 				["HealthFrame"] = false,
 				["CountdownFades102178"] = true,
@@ -119,8 +119,8 @@ DBMDMF_AllSavedVars = {
 			}, -- [1]
 			{
 				["Enabled"] = true,
-				["announce102341spell"] = true,
 				["SpecWarn102341run2SpecialWarningSound"] = 4,
+				["announce102341spell"] = true,
 				["Timer102178active"] = true,
 				["HealthFrame"] = false,
 				["CountdownFades102178"] = true,
@@ -273,30 +273,30 @@ DBMDMF_AllSavedVars = {
 			}, -- [2]
 			{
 				["Enabled"] = true,
-				["CountdownFades102116"] = true,
 				["Timer102116fades"] = true,
+				["CountdownFades102116"] = true,
 				["Timer102116fadesTColor"] = 5,
 			}, -- [3]
 		},
 		["Tonks"] = {
 			{
 				["Enabled"] = true,
-				["SpecWarn102341run2SWSound"] = 4,
-				["Timer102178active"] = true,
-				["SpecWarn102341run2SWNote"] = true,
 				["HealthFrame"] = false,
+				["Timer102178active"] = true,
 				["CountdownFades102178"] = true,
 				["Timer102178activeTColor"] = 0,
+				["SpecWarn102341run2SWNote"] = true,
+				["SpecWarn102341run2SWSound"] = 4,
 				["SpecWarn102341run2"] = true,
 			}, -- [1]
 			{
 				["Enabled"] = true,
-				["Timer102178activeTColor"] = 0,
-				["Timer102178active"] = true,
-				["CountdownFades102178"] = true,
 				["SpecWarn102341run2SWSound"] = 4,
+				["Timer102178active"] = true,
 				["SpecWarn102341run2SWNote"] = true,
 				["HealthFrame"] = false,
+				["CountdownFades102178"] = true,
+				["Timer102178activeTColor"] = 0,
 				["SpecWarn102341run2"] = true,
 			}, -- [2]
 			{
@@ -304,9 +304,9 @@ DBMDMF_AllSavedVars = {
 				["Timer102178active"] = true,
 				["SpecWarn102341run2"] = true,
 				["Timer102178activeTColor"] = 0,
-				["SpecWarn102341run2SWNote"] = true,
-				["SpecWarn102341run2SWSound"] = 4,
 				["CountdownFades102178"] = true,
+				["SpecWarn102341run2SWSound"] = 4,
+				["SpecWarn102341run2SWNote"] = true,
 			}, -- [3]
 		},
 		["Gnoll"] = {
@@ -314,10 +314,10 @@ DBMDMF_AllSavedVars = {
 				["specWarnHoggerSWSound"] = 1,
 				["HealthFrame"] = false,
 				["Timer101612active"] = true,
-				["Timer101612activeTColor"] = 0,
+				["CountdownFades101612"] = true,
 				["specWarnHogger"] = true,
 				["warnGameOver"] = true,
-				["CountdownFades101612"] = true,
+				["Timer101612activeTColor"] = 0,
 				["Enabled"] = true,
 				["specWarnHoggerSWNote"] = true,
 				["warnGnoll"] = false,
@@ -326,10 +326,10 @@ DBMDMF_AllSavedVars = {
 				["Enabled"] = true,
 				["HealthFrame"] = false,
 				["Timer101612active"] = true,
-				["CountdownFades101612"] = true,
+				["Timer101612activeTColor"] = 0,
 				["specWarnHogger"] = true,
 				["warnGameOver"] = true,
-				["Timer101612activeTColor"] = 0,
+				["CountdownFades101612"] = true,
 				["specWarnHoggerSWSound"] = 1,
 				["specWarnHoggerSWNote"] = true,
 				["warnGnoll"] = false,
@@ -342,8 +342,8 @@ DBMDMF_AllSavedVars = {
 				["warnGameOver"] = true,
 				["Enabled"] = true,
 				["specWarnHoggerSWNote"] = true,
-				["Timer101612activeTColor"] = 6,
 				["CountdownFades101612"] = true,
+				["Timer101612activeTColor"] = 6,
 			}, -- [3]
 		},
 		["Rabbit"] = {
@@ -521,10 +521,10 @@ DBMDMF_AllSavedVars = {
 			}, -- [1]
 			[3] = {
 				["Enabled"] = true,
-				["Timer102178activeCVoice"] = 1,
 				["Timer102178active"] = true,
-				["SpecWarn102341run2SWNote"] = true,
+				["Timer102178activeCVoice"] = 1,
 				["SpecWarn102341run2SWSound"] = 4,
+				["SpecWarn102341run2SWNote"] = true,
 				["Timer102178activeTColor"] = 5,
 				["SpecWarn102341run2"] = true,
 			},
@@ -545,12 +545,12 @@ DBMDMF_AllSavedVars = {
 				["specWarnHoggerSWSound"] = 1,
 				["warnGnoll"] = false,
 				["Timer101612active"] = true,
-				["Timer101612activeCVoice"] = 1,
 				["specWarnHogger"] = true,
 				["warnGameOver"] = true,
-				["Enabled"] = true,
+				["Timer101612activeCVoice"] = 1,
 				["Timer101612activeTColor"] = 6,
 				["specWarnHoggerSWNote"] = true,
+				["Enabled"] = true,
 			},
 		},
 		["Rabbit"] = {
@@ -603,7 +603,6 @@ DBMDMF_AllSavedVars = {
 				["SpecWarn144702spellSWNote"] = true,
 				["Timer144702nextCVoice"] = 0,
 				["Timer144702next"] = true,
-				["Yell144546"] = true,
 				["SpecWarn144590you"] = true,
 				["Timer144546cd"] = true,
 				["SpecWarn144702spell"] = true,
@@ -660,10 +659,10 @@ DBMDMF_AllSavedVars = {
 				["specWarnHoggerSWSound"] = 1,
 				["HealthFrame"] = false,
 				["Timer101612active"] = true,
-				["Timer101612activeTColor"] = 0,
+				["CountdownFades101612"] = true,
 				["specWarnHogger"] = true,
 				["warnGameOver"] = true,
-				["CountdownFades101612"] = true,
+				["Timer101612activeTColor"] = 0,
 				["Enabled"] = true,
 				["specWarnHoggerSWNote"] = true,
 				["warnGnoll"] = false,
@@ -737,12 +736,12 @@ DBMDMF_AllSavedVars = {
 		["Tonks"] = {
 			{
 				["Enabled"] = true,
-				["SpecWarn102341run2SWSound"] = 4,
-				["Timer102178active"] = true,
-				["SpecWarn102341run2SWNote"] = true,
 				["HealthFrame"] = false,
+				["Timer102178active"] = true,
 				["CountdownFades102178"] = true,
 				["Timer102178activeTColor"] = 0,
+				["SpecWarn102341run2SWNote"] = true,
+				["SpecWarn102341run2SWSound"] = 4,
 				["SpecWarn102341run2"] = true,
 			}, -- [1]
 		},

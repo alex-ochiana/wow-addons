@@ -126,7 +126,7 @@ AzeriteUI: disabled
 WeakAurasCompanion: enabled
 ACP: disabled
 ChampionCommander: enabled
-HandyNotes: disabled
+HandyNotes: enabled
 HandyNotes_Argus: disabled
 HandyNotes_BrokenShore: disabled
 HandyNotes_BattleForAzerothTreasures: disabled
@@ -198,5 +198,6 @@ HandyNotes_CovenantSanctum: disabled
 HandyNotes_Draenor: disabled
 HandyNotes_Oribos: disabled
 HandyNotes_Shadowlands: disabled
-HandyNotes_LongForgottenHippogryph: disabled
+HandyNotes_LongForgottenHippogryph: enabled
 NetherwingEggs: disabled
+OPie_Classic: disabled

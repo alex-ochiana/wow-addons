@@ -13,29 +13,21 @@ SmexyMatsDB = {
 		["cbOneB"] = 1,
 		["cbOneG"] = 1,
 		["IconsEnabled"] = false,
-		["SM_EP_One_Title"] = "|cFF00CCFF",
+		["ExpackIconsEnabled"] = false,
 		["SMText"] = true,
-		["cbTwoR"] = 1,
+		["SMMsg"] = false,
 		["cbTwoG"] = 1,
 		["SM_EP_One_Text"] = "|cFFFFFF00",
 		["AllRealms"] = true,
 		["IDs"] = {
 		},
 		["Professions"] = true,
-		["SMMsg"] = false,
-		["ExpackIconsEnabled"] = false,
+		["cbTwoR"] = 1,
+		["SM_EP_One_Title"] = "|cFF00CCFF",
 		["TooltipIconSize"] = 20,
 	},
 	["ProTree"] = {
 		["Cooking"] = {
-			["Alliance"] = {
-				["Sylvanas"] = {
-					["Crètz"] = {
-					},
-				},
-			},
-		},
-		["Herbalism"] = {
 			["Alliance"] = {
 				["Sylvanas"] = {
 					["Crètz"] = {
@@ -51,7 +43,27 @@ SmexyMatsDB = {
 				},
 			},
 		},
-		["Fishing"] = {
+		["Sylvanas"] = {
+			["Alliance"] = {
+				["Cooking"] = {
+				},
+				["Tailoring"] = {
+				},
+				["Archaeology"] = {
+				},
+				["Fishing"] = {
+				},
+				["Herbalism"] = {
+				},
+				["Leatherworking"] = {
+				},
+				["Alchemy"] = {
+				},
+				["Enchanting"] = {
+				},
+			},
+		},
+		["Alchemy"] = {
 			["Alliance"] = {
 				["Sylvanas"] = {
 					["Crètz"] = {
@@ -59,7 +71,7 @@ SmexyMatsDB = {
 				},
 			},
 		},
-		["Alchemy"] = {
+		["Fishing"] = {
 			["Alliance"] = {
 				["Sylvanas"] = {
 					["Crètz"] = {
@@ -89,40 +101,28 @@ SmexyMatsDB = {
 					["Mortifèrous"] = {
 					},
 				},
-				["Engineering"] = {
+				["Fishing"] = {
 					["Mortifèrous"] = {
 					},
 				},
-				["Fishing"] = {
+				["Engineering"] = {
 					["Mortifèrous"] = {
 					},
 				},
 			},
 		},
-		["Sylvanas"] = {
+		["Herbalism"] = {
 			["Alliance"] = {
-				["Cooking"] = {
-				},
-				["Tailoring"] = {
-				},
-				["Archaeology"] = {
-				},
-				["Alchemy"] = {
-				},
-				["Fishing"] = {
-				},
-				["Leatherworking"] = {
-				},
-				["Herbalism"] = {
-				},
-				["Enchanting"] = {
+				["Sylvanas"] = {
+					["Crètz"] = {
+					},
 				},
 			},
 		},
 	},
 	["profileKeys"] = {
-		["Mòloch - Kazzak"] = "profile",
 		["Crètz - Sylvanas"] = "profile",
+		["Mòloch - Kazzak"] = "profile",
 	},
 	["profiles"] = {
 		["profile"] = {

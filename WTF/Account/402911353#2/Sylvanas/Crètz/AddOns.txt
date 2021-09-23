@@ -60,7 +60,7 @@ WeakAuras: enabled
 Masque_Darion: disabled
 DataStore: enabled
 Auctionator: disabled
-TradeSkillMaster: enabled
+TradeSkillMaster: disabled
 Bagnon_GuildBank: disabled
 Bagnon_Config: disabled
 Bagnon_VoidStorage: disabled
@@ -198,7 +198,7 @@ WeakAurasCompanion: enabled
 HandyNotes_BattleForAzerothTreasures: disabled
 NPCScan: enabled
 Paste: disabled
-TomCats: disabled
+TomCats: enabled
 TomCats-Mechagon: disabled
 TomCats-Nazjatar: disabled
 WeakAurasArchive: enabled
@@ -213,8 +213,8 @@ RoutesImportExport: enabled
 WeakAurasModelPaths: enabled
 WeakAurasOptions: enabled
 WeakAurasTemplates: enabled
-TradeSkillMaster_AppHelper: enabled
-MoveAnything: disabled
+TradeSkillMaster_AppHelper: disabled
+MoveAnything: enabled
 LibCompress: enabled
 AceGUI-3.0-SharedMediaWidgets: enabled
 GTFO: enabled
@@ -259,7 +259,7 @@ TomCats-Bundled-DarkshoreRares: disabled
 TomCats-Bundled-Mechagon: disabled
 TomCats-Bundled-Nazjatar: disabled
 TomCats-Bundled-Nzoth: disabled
-TomCats-Bundled-DeathsRising: disabled
+TomCats-Bundled-DeathsRising: enabled
 Masque_Shadowlands: disabled
 BigWigs_Core: enabled
 BigWigs_Options: enabled
@@ -282,7 +282,7 @@ RaiderIO_DB_KR_A: disabled
 ShadowedUnitFrames: enabled
 Masque_Entropy: disabled
 Masque_Retina: disabled
-Kui_Nameplates: disabled
+Kui_Nameplates: enabled
 Class Nameplate Scale: disabled
 XPractice: disabled
 VenturePlan: enabled
@@ -324,9 +324,9 @@ RSA_Warrior: enabled
 SimpleILevel_Group: enabled
 SimpleILevel_Social: enabled
 Simulationcraft: enabled
-Kui_Media: disabled
-Kui_Nameplates_Core_Config: disabled
-Kui_Nameplates_Core: disabled
+Kui_Media: enabled
+Kui_Nameplates_Core_Config: enabled
+Kui_Nameplates_Core: enabled
 TomCats-ArathiHighlandsRares: disabled
 TomCats-DarkshoreRares: disabled
 TomCats-WarfrontsCommandCenter: disabled
@@ -337,7 +337,7 @@ TomCats-LoveIsInTheAir: disabled
 TomCats-LunarFestival: disabled
 TomCats-Noblegarden: disabled
 Masque_Caith: disabled
-Plater: enabled
+Plater: disabled
 RUF: disabled
 WowUp: enabled
 wowup_data_addon: enabled
@@ -362,7 +362,7 @@ DBM-VPVEM: enabled
 DBM-BfA: enabled
 DBM-Shadowlands: enabled
 SharedMedia_Causese: enabled
-ChatCopyPaste: disabled
+ChatCopyPaste: enabled
 MRT: enabled
 Glass: enabled
 ElvUI_OptionsUI: disabled
@@ -377,3 +377,4 @@ ElvUI_AuraBarsMovers: disabled
 ElvUI_CustomTweaks: disabled
 ElvUI_DTBars2: disabled
 ElvUI_QuestXP: disabled
+OPie_Classic: disabled
