@@ -1,5 +1,8 @@
 
 GlassDB = {
+	["global"] = {
+		["version"] = "1.8.0",
+	},
 	["profileKeys"] = {
 		["Mortifèrous - Kazzak"] = "Default",
 		["Towerpog - Sylvanas"] = "Default",
@@ -10,9 +13,7 @@ GlassDB = {
 		["Kynaeth - Sylvanas"] = "Default",
 		["Crètz - Sylvanas"] = "Default",
 		["Gnomèrcy - Sylvanas"] = "Default",
-	},
-	["global"] = {
-		["version"] = "1.8.0",
+		["Cìchìcean - Sylvanas"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

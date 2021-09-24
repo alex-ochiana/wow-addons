@@ -2,14 +2,14 @@
 AstralKeys = {
 	{
 		["source"] = "guild",
-		["weekly_best"] = 0,
+		["weekly_best"] = 18,
 		["class"] = "WARLOCK",
 		["key_level"] = 16,
 		["unit"] = "Inspirescu-Sylvanas",
 		["dungeon_id"] = 382,
 		["week"] = 218,
 		["faction"] = 0,
-		["time_stamp"] = 33664,
+		["time_stamp"] = 189552,
 	}, -- [1]
 	{
 		["source"] = "guild",
@@ -20,18 +20,18 @@ AstralKeys = {
 		["dungeon_id"] = 380,
 		["week"] = 218,
 		["faction"] = 0,
-		["time_stamp"] = 8,
+		["time_stamp"] = 121269,
 	}, -- [2]
 	{
 		["source"] = "guild",
-		["weekly_best"] = 17,
+		["weekly_best"] = 18,
 		["class"] = "DRUID",
 		["key_level"] = 19,
 		["unit"] = "Desperáda-Sylvanas",
 		["dungeon_id"] = 381,
 		["week"] = 218,
 		["faction"] = 0,
-		["time_stamp"] = 36203,
+		["time_stamp"] = 137955,
 	}, -- [3]
 	{
 		["source"] = "guild",
@@ -42,62 +42,62 @@ AstralKeys = {
 		["dungeon_id"] = 382,
 		["week"] = 218,
 		["faction"] = 0,
-		["time_stamp"] = 33544,
+		["time_stamp"] = 189930,
 	}, -- [4]
 	{
 		["source"] = "guild",
-		["weekly_best"] = 17,
+		["weekly_best"] = 20,
 		["class"] = "SHAMAN",
 		["key_level"] = 21,
 		["unit"] = "Mastérchéf-Sylvanas",
 		["dungeon_id"] = 378,
 		["week"] = 218,
 		["faction"] = 0,
-		["time_stamp"] = 47421,
+		["time_stamp"] = 189878,
 	}, -- [5]
 	{
 		["source"] = "guild",
-		["weekly_best"] = 0,
+		["weekly_best"] = 20,
 		["class"] = "ROGUE",
 		["key_level"] = 17,
 		["unit"] = "Ombládon-Sylvanas",
 		["dungeon_id"] = 376,
 		["week"] = 218,
 		["faction"] = 0,
-		["time_stamp"] = 35950,
+		["time_stamp"] = 191015,
 	}, -- [6]
 	{
 		["source"] = "guild",
-		["weekly_best"] = 0,
+		["weekly_best"] = 9,
 		["class"] = "DEMONHUNTER",
 		["key_level"] = 15,
 		["unit"] = "Demonsuena-Sylvanas",
 		["dungeon_id"] = 378,
 		["week"] = 218,
 		["faction"] = 0,
-		["time_stamp"] = 48424,
+		["time_stamp"] = 138792,
 	}, -- [7]
 	{
 		["source"] = "guild",
-		["weekly_best"] = 4,
+		["weekly_best"] = 14,
 		["class"] = "MAGE",
-		["key_level"] = 14,
+		["key_level"] = 16,
 		["unit"] = "Isuenn-Sylvanas",
-		["dungeon_id"] = 377,
+		["dungeon_id"] = 382,
 		["week"] = 218,
 		["faction"] = 0,
-		["time_stamp"] = 49085,
+		["time_stamp"] = 138320,
 	}, -- [8]
 	{
 		["source"] = "guild",
-		["weekly_best"] = 0,
+		["weekly_best"] = 18,
 		["class"] = "DRUID",
 		["key_level"] = 21,
 		["unit"] = "Eviler-Sylvanas",
 		["dungeon_id"] = 380,
 		["week"] = 218,
 		["faction"] = 0,
-		["time_stamp"] = 33541,
+		["time_stamp"] = 138521,
 	}, -- [9]
 	{
 		["source"] = "guild",
@@ -109,17 +109,19 @@ AstralKeys = {
 		["week"] = 218,
 		["faction"] = 0,
 		["time_stamp"] = 6,
+		["btag"] = "Gost#22123",
 	}, -- [10]
 	{
 		["source"] = "guild",
 		["weekly_best"] = 21,
 		["class"] = "DEMONHUNTER",
-		["key_level"] = 20,
+		["key_level"] = 21,
 		["unit"] = "Achilless-Sylvanas",
 		["dungeon_id"] = 380,
 		["week"] = 218,
 		["faction"] = 0,
-		["time_stamp"] = 46647,
+		["time_stamp"] = 0,
+		["btag"] = "Gost#22123",
 	}, -- [11]
 	{
 		["source"] = "guild",
@@ -141,7 +143,7 @@ AstralKeys = {
 		["dungeon_id"] = 377,
 		["week"] = 218,
 		["faction"] = 0,
-		["time_stamp"] = 40556,
+		["time_stamp"] = 126156,
 	}, -- [13]
 	{
 		["source"] = "guild",
@@ -174,18 +176,18 @@ AstralKeys = {
 		["dungeon_id"] = 380,
 		["week"] = 218,
 		["faction"] = 0,
-		["time_stamp"] = 39286,
+		["time_stamp"] = 188645,
 	}, -- [16]
 	{
 		["source"] = "guild",
-		["weekly_best"] = 0,
+		["weekly_best"] = 18,
 		["class"] = "SHAMAN",
 		["key_level"] = 14,
 		["unit"] = "Quickblad-Sylvanas",
 		["dungeon_id"] = 378,
 		["week"] = 218,
 		["faction"] = 0,
-		["time_stamp"] = 34977,
+		["time_stamp"] = 138517,
 	}, -- [17]
 	{
 		["source"] = "guild",
@@ -196,7 +198,8 @@ AstralKeys = {
 		["dungeon_id"] = 379,
 		["week"] = 218,
 		["faction"] = 0,
-		["time_stamp"] = 32309,
+		["time_stamp"] = 0,
+		["btag"] = "Gost#22123",
 	}, -- [18]
 	{
 		["source"] = "guild",
@@ -207,7 +210,7 @@ AstralKeys = {
 		["dungeon_id"] = 375,
 		["week"] = 218,
 		["faction"] = 0,
-		["time_stamp"] = 48823,
+		["time_stamp"] = 133912,
 	}, -- [19]
 	{
 		["source"] = "guild",
@@ -218,7 +221,7 @@ AstralKeys = {
 		["dungeon_id"] = 380,
 		["week"] = 218,
 		["faction"] = 0,
-		["time_stamp"] = 2,
+		["time_stamp"] = 187032,
 	}, -- [20]
 	{
 		["source"] = "guild",
@@ -240,7 +243,7 @@ AstralKeys = {
 		["dungeon_id"] = 379,
 		["week"] = 218,
 		["faction"] = 0,
-		["time_stamp"] = 35105,
+		["time_stamp"] = 193934,
 	}, -- [22]
 	{
 		["source"] = "guild",
@@ -251,18 +254,18 @@ AstralKeys = {
 		["dungeon_id"] = 381,
 		["week"] = 218,
 		["faction"] = 0,
-		["time_stamp"] = 40866,
+		["time_stamp"] = 122528,
 	}, -- [23]
 	{
 		["source"] = "guild",
-		["weekly_best"] = 0,
+		["weekly_best"] = 15,
 		["class"] = "DRUID",
 		["key_level"] = 17,
 		["unit"] = "Flyhacks-Sylvanas",
 		["dungeon_id"] = 375,
 		["week"] = 218,
 		["faction"] = 0,
-		["time_stamp"] = 35405,
+		["time_stamp"] = 137021,
 	}, -- [24]
 	{
 		["source"] = "guild",
@@ -273,7 +276,7 @@ AstralKeys = {
 		["dungeon_id"] = 375,
 		["week"] = 218,
 		["faction"] = 0,
-		["time_stamp"] = 38231,
+		["time_stamp"] = 128121,
 	}, -- [25]
 	{
 		["source"] = "guild",
@@ -284,7 +287,7 @@ AstralKeys = {
 		["dungeon_id"] = 376,
 		["week"] = 218,
 		["faction"] = 0,
-		["time_stamp"] = 38514,
+		["time_stamp"] = 134439,
 	}, -- [26]
 	{
 		["source"] = "guild",
@@ -306,18 +309,18 @@ AstralKeys = {
 		["dungeon_id"] = 380,
 		["week"] = 218,
 		["faction"] = 0,
-		["time_stamp"] = 42931,
+		["time_stamp"] = 127348,
 	}, -- [28]
 	{
 		["source"] = "guild",
-		["weekly_best"] = 0,
+		["weekly_best"] = 17,
 		["class"] = "PALADIN",
 		["key_level"] = 16,
 		["unit"] = "Vladpal-Sylvanas",
 		["dungeon_id"] = 376,
 		["week"] = 218,
 		["faction"] = 0,
-		["time_stamp"] = 45969,
+		["time_stamp"] = 138505,
 	}, -- [29]
 	{
 		["source"] = "guild",
@@ -332,14 +335,14 @@ AstralKeys = {
 	}, -- [30]
 	{
 		["source"] = "guild",
-		["weekly_best"] = 18,
+		["weekly_best"] = 19,
 		["class"] = "MAGE",
 		["key_level"] = 17,
 		["unit"] = "Pyrin-Sylvanas",
 		["dungeon_id"] = 381,
 		["week"] = 218,
 		["faction"] = 0,
-		["time_stamp"] = 45555,
+		["time_stamp"] = 137724,
 	}, -- [31]
 	{
 		["source"] = "guild",
@@ -361,7 +364,7 @@ AstralKeys = {
 		["dungeon_id"] = 379,
 		["week"] = 218,
 		["faction"] = 0,
-		["time_stamp"] = 43487,
+		["time_stamp"] = 138514,
 	}, -- [33]
 	{
 		["source"] = "guild",
@@ -376,22 +379,55 @@ AstralKeys = {
 	}, -- [34]
 	{
 		["source"] = "guild",
-		["weekly_best"] = 0,
+		["weekly_best"] = 6,
 		["class"] = "MAGE",
 		["key_level"] = 13,
 		["unit"] = "Yysara-Sylvanas",
 		["dungeon_id"] = 380,
 		["week"] = 218,
 		["faction"] = 0,
-		["time_stamp"] = 48324,
+		["time_stamp"] = 138966,
 	}, -- [35]
+	{
+		["source"] = "guild",
+		["weekly_best"] = 16,
+		["class"] = "SHAMAN",
+		["key_level"] = 16,
+		["unit"] = "Xaritha-Sylvanas",
+		["dungeon_id"] = 378,
+		["week"] = 218,
+		["faction"] = 0,
+		["time_stamp"] = 138534,
+	}, -- [36]
+	{
+		["source"] = "guild",
+		["weekly_best"] = 0,
+		["class"] = "DEATHKNIGHT",
+		["key_level"] = 6,
+		["unit"] = "Jiubela-Sylvanas",
+		["dungeon_id"] = 375,
+		["week"] = 218,
+		["faction"] = 0,
+		["time_stamp"] = 138622,
+	}, -- [37]
+	{
+		["source"] = "guild",
+		["weekly_best"] = 16,
+		["class"] = "MAGE",
+		["key_level"] = 15,
+		["unit"] = "Asyris-Sylvanas",
+		["dungeon_id"] = 380,
+		["week"] = 218,
+		["faction"] = 0,
+		["time_stamp"] = 137962,
+	}, -- [38]
 }
 AstralCharacters = {
 	{
 		["weekly_best"] = 0,
 		["class"] = "DRUID",
-		["faction"] = 0,
 		["unit"] = "Crètz-Sylvanas",
+		["faction"] = 0,
 	}, -- [1]
 }
 AstralKeysSettings = {
@@ -405,10 +441,10 @@ AstralKeysSettings = {
 			["isEnabled"] = true,
 		},
 		["report_on_message"] = {
-			["party"] = true,
-			["raid"] = false,
 			["guild"] = true,
+			["raid"] = false,
 			["no_key"] = false,
+			["party"] = true,
 		},
 		["show_tooltip_key"] = {
 			["isEnabled"] = true,
@@ -433,7 +469,9 @@ AstralKeysSettings = {
 			true, -- [9]
 			true, -- [10]
 		},
-		["current_list"] = "GUILD",
+		["show_offline"] = {
+			["isEnabled"] = true,
+		},
 		["isCollapsed"] = {
 			["isEnabled"] = false,
 		},
@@ -442,11 +480,8 @@ AstralKeysSettings = {
 			["isEnabled"] = true,
 		},
 		["sorth_method"] = "character_name",
-		["show_offline"] = {
-			["isEnabled"] = true,
-		},
+		["current_list"] = "GUILD",
 	},
-	["new_settings_config"] = true,
 	["friendOptions"] = {
 		["friend_sync"] = {
 			["isEnabled"] = true,
@@ -455,6 +490,7 @@ AstralKeysSettings = {
 			["isEnabled"] = true,
 		},
 	},
+	["new_settings_config"] = true,
 }
 AstralMinimap = {
 	["profileKeys"] = {
@@ -463,14 +499,14 @@ AstralMinimap = {
 		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
 		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
 		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
-		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
+		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
 		["Plüto - Sylvanas"] = "Plüto - Sylvanas",
 		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
 		["Cìchìcean - Sylvanas"] = "Cìchìcean - Sylvanas",
-		["Cretz - Moonglade"] = "Cretz - Moonglade",
-		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
 		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
-		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
+		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
+		["Cretz - Moonglade"] = "Cretz - Moonglade",
+		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
 	},
 	["profiles"] = {
 		["Mortifèrous - Kazzak"] = {
@@ -483,7 +519,7 @@ AstralMinimap = {
 		},
 		["Jiglèr - Sylvanas"] = {
 		},
-		["Kynaeth - Sylvanas"] = {
+		["Vòlkmer - Kazzak"] = {
 		},
 		["Plüto - Sylvanas"] = {
 		},
@@ -491,13 +527,13 @@ AstralMinimap = {
 		},
 		["Cìchìcean - Sylvanas"] = {
 		},
-		["Cretz - Moonglade"] = {
+		["Gnomèrcy - Sylvanas"] = {
 		},
 		["Crètz - Sylvanas"] = {
 		},
-		["Gnomèrcy - Sylvanas"] = {
+		["Cretz - Moonglade"] = {
 		},
-		["Vòlkmer - Kazzak"] = {
+		["Kynaeth - Sylvanas"] = {
 		},
 	},
 }
@@ -528,55 +564,56 @@ AstralLists = {
 			["Judgéméntal-Sylvanas"] = true,
 			["Boldoby-Sylvanas"] = true,
 			["Møriarty-Sylvanas"] = true,
-			["Achilless-Sylvanas"] = true,
+			["Achilless-Sylvanas"] = "Gost#22123",
 			["Kaju-Sylvanas"] = true,
 			["Dañiella-Sylvanas"] = true,
 			["Zukpala-Sylvanas"] = true,
 			["Element-Sylvanas"] = true,
 			["Anamarria-Sylvanas"] = true,
-			["Achiiless-Sylvanas"] = true,
-			["Mastérchéf-Sylvanas"] = true,
+			["Achiiless-Sylvanas"] = "Gost#22123",
+			["Flockyy-Sylvanas"] = true,
+			["Deedsw-Sylvanas"] = true,
 			["Warrmage-Sylvanas"] = true,
 			["Eviler-Sylvanas"] = true,
 			["Nìghtblood-Sylvanas"] = true,
 			["Borfasu-Sylvanas"] = true,
-			["Deedsw-Sylvanas"] = true,
-			["Flyhacks-Sylvanas"] = true,
 			["Polarius-Sylvanas"] = true,
-			["Xaritha-Sylvanas"] = true,
+			["Flyhacks-Sylvanas"] = true,
+			["Pyrin-Sylvanas"] = true,
+			["Véin-Sylvanas"] = true,
 			["Zussy-Sylvanas"] = true,
 			["Saxobeat-Sylvanas"] = true,
-			["Punchbot-Sylvanas"] = true,
+			["Numbersìx-Sylvanas"] = true,
 			["Crètz-Sylvanas"] = true,
 			["Caroserie-Sylvanas"] = true,
 			["Moflescu-Sylvanas"] = true,
-			["Numbersìx-Sylvanas"] = true,
+			["Xaritha-Sylvanas"] = true,
 			["Lyonkra-Sylvanas"] = true,
-			["Pyrin-Sylvanas"] = true,
+			["Béär-Sylvanas"] = true,
 			["Jiubela-Sylvanas"] = true,
 			["Killeritza-Sylvanas"] = true,
-			["Béär-Sylvanas"] = true,
-			["Issuen-Sylvanas"] = true,
 			["Dahoney-Sylvanas"] = true,
-			["Xeidonus-Sylvanas"] = true,
+			["Issuen-Sylvanas"] = true,
+			["Raluca-Sylvanas"] = true,
+			["Quickblad-Sylvanas"] = true,
 			["Icemann-Sylvanas"] = true,
 			["Xecty-Sylvanas"] = true,
-			["Nyxspectre-Sylvanas"] = true,
-			["Çhri-Sylvanas"] = true,
+			["Cosdanny-Auchindoun"] = true,
+			["Velamisa-Sylvanas"] = true,
 			["Xeqtnr-Sylvanas"] = true,
 			["Leshinata-Sylvanas"] = true,
-			["Cosdanny-Auchindoun"] = true,
+			["Divinearrow-Sylvanas"] = true,
 			["Vladdk-Sylvanas"] = true,
-			["Yysara-Sylvanas"] = true,
+			["Isuenn-Sylvanas"] = true,
 			["Inspirescu-Sylvanas"] = true,
-			["Çhristi-Sylvanas"] = true,
 			["Firèstar-Sylvanas"] = true,
-			["Platinus-Sylvanas"] = true,
+			["Ralluka-Sylvanas"] = true,
+			["Mazlina-Sylvanas"] = true,
 			["Atyth-Sylvanas"] = true,
 			["Cristibm-Sylvanas"] = true,
-			["Mazlina-Sylvanas"] = true,
 			["Antreiuu-Sylvanas"] = true,
-			["Bjarkana-Sylvanas"] = true,
+			["Ghilgames-Sylvanas"] = true,
+			["Asyris-Sylvanas"] = true,
 			["Pretentioasa-Sylvanas"] = true,
 			["Nelyiel-Sylvanas"] = true,
 			["Achiilless-Sylvanas"] = true,
@@ -585,43 +622,43 @@ AstralLists = {
 			["Nevé-Sylvanas"] = true,
 			["Anakkynu-Sylvanas"] = true,
 			["Ombládon-Sylvanas"] = true,
-			["Drstyile-Sylvanas"] = true,
+			["Alessuca-Sylvanas"] = true,
 			["Schitss-Sylvanas"] = true,
-			["Padaone-Sylvanas"] = true,
-			["Chisspala-Sylvanas"] = true,
+			["Zelax-Sylvanas"] = true,
+			["Dipies-Sylvanas"] = true,
 			["Vanish-Sylvanas"] = true,
 			["Axeleratex-Sylvanas"] = true,
 			["Niomy-Sylvanas"] = true,
-			["Zelax-Sylvanas"] = true,
+			["Eferalgan-Sylvanas"] = true,
 			["Andreeya-Sylvanas"] = true,
 			["Shenaa-Sylvanas"] = true,
-			["Dipies-Sylvanas"] = true,
-			["Deadblazer-Sylvanas"] = true,
-			["Ellyaa-Sylvanas"] = true,
-			["Eusleek-Sylvanas"] = true,
-			["Abity-Sylvanas"] = true,
 			["Faimoasa-Sylvanas"] = true,
-			["Eferalgan-Sylvanas"] = true,
-			["Alessuca-Sylvanas"] = true,
+			["Abity-Sylvanas"] = true,
+			["Eusleek-Sylvanas"] = true,
+			["Ellyaa-Sylvanas"] = true,
+			["Deadblazer-Sylvanas"] = true,
+			["Chisspala-Sylvanas"] = true,
+			["Padaone-Sylvanas"] = true,
+			["Drstyile-Sylvanas"] = true,
 			["Diavollita-Sylvanas"] = true,
-			["Ghilgames-Sylvanas"] = true,
+			["Bjarkana-Sylvanas"] = true,
 			["Vladpal-Sylvanas"] = true,
-			["Achiilleess-Sylvanas"] = true,
-			["Ralluka-Sylvanas"] = true,
+			["Achiilleess-Sylvanas"] = "Gost#22123",
+			["Platinus-Sylvanas"] = true,
 			["Jaheiira-Sylvanas"] = true,
-			["Isuenn-Sylvanas"] = true,
-			["Divinearrow-Sylvanas"] = true,
-			["Velamisa-Sylvanas"] = true,
+			["Yysara-Sylvanas"] = true,
+			["Çhristi-Sylvanas"] = true,
+			["Çhri-Sylvanas"] = true,
 			["Jiubei-Sylvanas"] = true,
-			["Quickblad-Sylvanas"] = true,
-			["Raluca-Sylvanas"] = true,
+			["Nyxspectre-Sylvanas"] = true,
+			["Xeidonus-Sylvanas"] = true,
 			["Ssleek-Sylvanas"] = true,
 			["Lodren-Sylvanas"] = true,
 			["Seby-Auchindoun"] = true,
-			["Véin-Sylvanas"] = true,
+			["Punchbot-Sylvanas"] = true,
 			["Aslan-Sylvanas"] = true,
 			["Nurra-Sylvanas"] = true,
-			["Flockyy-Sylvanas"] = true,
+			["Mastérchéf-Sylvanas"] = true,
 			["Darkleon-Sylvanas"] = true,
 		},
 	}, -- [1]
@@ -629,6 +666,7 @@ AstralLists = {
 		["name"] = "FRIENDS",
 		["units"] = {
 			["Achiiless-Sylvanas"] = "Gost#22123",
+			["Achiilleess-Sylvanas"] = "Gost#22123",
 			["Achilless-Sylvanas"] = "Gost#22123",
 		},
 	}, -- [2]

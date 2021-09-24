@@ -207,3 +207,4 @@ Kui_Nameplates: enabled
 Kui_Nameplates_Core_Config: enabled
 Kui_Nameplates_Core: enabled
 MoveAnything: enabled
+OPie_Classic: disabled

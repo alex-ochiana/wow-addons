@@ -8,10 +8,10 @@ HandyNotes_OribosDB = {
 		["Plüto - Sylvanas"] = "Plüto - Sylvanas",
 		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
 		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
-		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
+		["Cìchìcean - Sylvanas"] = "Cìchìcean - Sylvanas",
 		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
 		["Cretz - Moonglade"] = "Cretz - Moonglade",
-		["Cìchìcean - Sylvanas"] = "Cìchìcean - Sylvanas",
+		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
 	},
 	["profiles"] = {
 		["Vòlkmer - Kazzak"] = {
@@ -28,14 +28,14 @@ HandyNotes_OribosDB = {
 		},
 		["Kynaeth - Sylvanas"] = {
 		},
-		["Gnomèrcy - Sylvanas"] = {
+		["Cìchìcean - Sylvanas"] = {
 		},
 		["Crètz - Sylvanas"] = {
 			["show_onlymytrainers"] = true,
 		},
 		["Cretz - Moonglade"] = {
 		},
-		["Cìchìcean - Sylvanas"] = {
+		["Gnomèrcy - Sylvanas"] = {
 		},
 	},
 }

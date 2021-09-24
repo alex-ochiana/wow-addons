@@ -8,10 +8,10 @@ HandyNotes_CovenantSanctumDB = {
 		["Plüto - Sylvanas"] = "Plüto - Sylvanas",
 		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
 		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
-		["Cìchìcean - Sylvanas"] = "Cìchìcean - Sylvanas",
+		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
 		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
 		["Cretz - Moonglade"] = "Cretz - Moonglade",
-		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
+		["Cìchìcean - Sylvanas"] = "Cìchìcean - Sylvanas",
 	},
 	["profiles"] = {
 		["Vòlkmer - Kazzak"] = {
@@ -28,7 +28,7 @@ HandyNotes_CovenantSanctumDB = {
 		},
 		["Kynaeth - Sylvanas"] = {
 		},
-		["Cìchìcean - Sylvanas"] = {
+		["Gnomèrcy - Sylvanas"] = {
 		},
 		["Crètz - Sylvanas"] = {
 			["show_renown"] = false,
@@ -38,7 +38,7 @@ HandyNotes_CovenantSanctumDB = {
 		},
 		["Cretz - Moonglade"] = {
 		},
-		["Gnomèrcy - Sylvanas"] = {
+		["Cìchìcean - Sylvanas"] = {
 		},
 	},
 }

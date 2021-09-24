@@ -1,14 +1,15 @@
 
 HandyNotes_NetherwingEggsDB = {
 	["profileKeys"] = {
-		["Gnomèrcy - Sylvanas"] = "Default",
+		["Towerpog - Sylvanas"] = "Default",
+		["Crëtz - Kazzak"] = "Default",
+		["Jiglèr - Sylvanas"] = "Default",
 		["Plüto - Sylvanas"] = "Default",
 		["Egidus - Sylvanas"] = "Default",
 		["Kynaeth - Sylvanas"] = "Default",
-		["Towerpog - Sylvanas"] = "Default",
 		["Crètz - Sylvanas"] = "Default",
-		["Jiglèr - Sylvanas"] = "Default",
-		["Crëtz - Kazzak"] = "Default",
+		["Gnomèrcy - Sylvanas"] = "Default",
+		["Cìchìcean - Sylvanas"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

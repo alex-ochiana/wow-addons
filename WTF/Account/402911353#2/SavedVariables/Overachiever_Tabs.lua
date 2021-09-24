@@ -10,10 +10,10 @@ Overachiever_Tabs_Settings = {
 		[7316] = true,
 	},
 	["Version"] = "1.1.4",
-	["WatchedList"] = 0,
 	["AchFilters"] = {
 		["Overachiever_SuggestionsFrame"] = 1,
 	},
+	["WatchedList"] = 0,
 	["WatchLists"] = {
 	},
 }

@@ -9,6 +9,7 @@ CCPOptions = {
 		["Egidus - Sylvanas"] = "Default",
 		["Gnomèrcy - Sylvanas"] = "Default",
 		["Crètz - Sylvanas"] = "Default",
+		["Cìchìcean - Sylvanas"] = "Default",
 		["Kynaeth - Sylvanas"] = "Default",
 	},
 }

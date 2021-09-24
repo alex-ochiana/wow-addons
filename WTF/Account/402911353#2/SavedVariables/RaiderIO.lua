@@ -5,17 +5,18 @@ RaiderIO_Config = {
 }
 RaiderIO_LastCharacter = "eu-Crètz-sylvanas"
 RaiderIO_MissingCharacters = {
-	["eu-Poogyto-twisting-nether"] = true,
-	["eu-Veren-sylvanas"] = true,
-	["eu-Wallerman-silvermoon"] = true,
-	["eu-Quivoid-moonglade"] = true,
-	["eu-Aliadora-sylvanas"] = true,
-	["eu-Mcfrotts-grim-batol"] = true,
-	["eu-Mseye-grim-batol"] = true,
-	["eu-Dentastix-twisting-nether"] = true,
-	["eu-Relliketh-sylvanas"] = true,
-	["eu-Strongsoul-frostmane"] = true,
-	["eu-Dehunter-frostmane"] = true,
+	["eu-Achiiles-sylvanas"] = true,
+	["eu-Aigrija-sylvanas"] = true,
+	["eu-Nikdemon-sylvanas"] = true,
+	["eu-Aeolud-sylvanas"] = true,
+	["eu-Bojojo-sylvanas"] = true,
+	["eu-Hlt-sylvanas"] = true,
+	["eu-Omblaa-sylvanas"] = true,
+	["eu-Alexandrà-sylvanas"] = true,
+	["eu-Bereciuc-sylvanas"] = true,
+	["eu-Chisswar-sylvanas"] = true,
+	["eu-Amidamarú-sylvanas"] = true,
+	["eu-Hubrok-sylvanas"] = true,
 }
 RaiderIO_MissingServers = {
 }

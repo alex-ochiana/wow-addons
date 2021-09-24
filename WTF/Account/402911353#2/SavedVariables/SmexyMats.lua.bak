@@ -13,29 +13,21 @@ SmexyMatsDB = {
 		["cbOneB"] = 1,
 		["cbOneG"] = 1,
 		["IconsEnabled"] = false,
-		["SM_EP_One_Title"] = "|cFF00CCFF",
+		["ExpackIconsEnabled"] = false,
 		["SMText"] = true,
-		["cbTwoR"] = 1,
+		["SMMsg"] = false,
 		["cbTwoG"] = 1,
 		["SM_EP_One_Text"] = "|cFFFFFF00",
 		["AllRealms"] = true,
 		["IDs"] = {
 		},
 		["Professions"] = true,
-		["SMMsg"] = false,
-		["ExpackIconsEnabled"] = false,
+		["cbTwoR"] = 1,
+		["SM_EP_One_Title"] = "|cFF00CCFF",
 		["TooltipIconSize"] = 20,
 	},
 	["ProTree"] = {
 		["Cooking"] = {
-			["Alliance"] = {
-				["Sylvanas"] = {
-					["Crètz"] = {
-					},
-				},
-			},
-		},
-		["Fishing"] = {
 			["Alliance"] = {
 				["Sylvanas"] = {
 					["Crètz"] = {
@@ -51,19 +43,19 @@ SmexyMatsDB = {
 				},
 				["Archaeology"] = {
 				},
-				["Herbalism"] = {
-				},
 				["Alchemy"] = {
+				},
+				["Fishing"] = {
 				},
 				["Leatherworking"] = {
 				},
-				["Fishing"] = {
+				["Herbalism"] = {
 				},
 				["Enchanting"] = {
 				},
 			},
 		},
-		["Herbalism"] = {
+		["Archaeology"] = {
 			["Alliance"] = {
 				["Sylvanas"] = {
 					["Crètz"] = {
@@ -72,6 +64,14 @@ SmexyMatsDB = {
 			},
 		},
 		["Alchemy"] = {
+			["Alliance"] = {
+				["Sylvanas"] = {
+					["Crètz"] = {
+					},
+				},
+			},
+		},
+		["Herbalism"] = {
 			["Alliance"] = {
 				["Sylvanas"] = {
 					["Crètz"] = {
@@ -101,17 +101,17 @@ SmexyMatsDB = {
 					["Mortifèrous"] = {
 					},
 				},
-				["Engineering"] = {
+				["Fishing"] = {
 					["Mortifèrous"] = {
 					},
 				},
-				["Fishing"] = {
+				["Engineering"] = {
 					["Mortifèrous"] = {
 					},
 				},
 			},
 		},
-		["Archaeology"] = {
+		["Fishing"] = {
 			["Alliance"] = {
 				["Sylvanas"] = {
 					["Crètz"] = {
@@ -121,8 +121,8 @@ SmexyMatsDB = {
 		},
 	},
 	["profileKeys"] = {
-		["Mòloch - Kazzak"] = "profile",
 		["Crètz - Sylvanas"] = "profile",
+		["Mòloch - Kazzak"] = "profile",
 	},
 	["profiles"] = {
 		["profile"] = {
