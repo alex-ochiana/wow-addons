@@ -6,13 +6,13 @@ OneRing_Config = {
 	["_OPieVersion"] = "Xe 6 (3.106)",
 	["ProfileStorage"] = {
 		["default"] = {
-			["RotationTokens"] = {
-				["OPCTAt"] = "OPCHSs",
-			},
 			["Bindings"] = {
 				["DruidShift"] = "ALT-F",
-				["DruidUtility"] = false,
 				["OPieTracking"] = false,
+				["DruidUtility"] = false,
+			},
+			["RotationTokens"] = {
+				["OPCTAt"] = "OPCHSs",
 			},
 		},
 	},

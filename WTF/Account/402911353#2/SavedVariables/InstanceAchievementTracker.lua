@@ -11,16 +11,16 @@ AchievementTrackerOptions = {
 	["onlyTrackMissingAchievements"] = true,
 	["toggleSoundFailed"] = false,
 	["displayInfoFrame"] = true,
-	["announceTrackedAchievements"] = false,
-	["InfoFramescale"] = 1,
 	["trackAchievementsAutomatically"] = false,
+	["InfoFramescale"] = 1,
+	["hideCompletedAchievements"] = true,
 	["InfoFramepoint"] = "LEFT",
-	["InfoFramey"] = 8.000137329101562,
+	["announceToRaidWarning"] = true,
 	["changeMinimapIcon"] = false,
 	["toggleSound"] = false,
-	["announceToRaidWarning"] = true,
+	["InfoFramey"] = 8.000137329101562,
 	["trackAchievementsInBlizzardUI"] = true,
-	["hideCompletedAchievements"] = true,
+	["announceTrackedAchievements"] = false,
 }
 AchievementTrackerDebug = {
 	"3/9/2021 13:16 [DEBUG] ---IAT Runtime---", -- [1]
@@ -24867,6 +24867,1331 @@ AchievementTrackerDebug = {
 	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [24842]
 	"24/9/2021 19:55 [DEBUG] Showing Minimap Icon", -- [24843]
 	"24/9/2021 19:55 [DEBUG] NPC cache generated", -- [24844]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [24845]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.32.0", -- [24846]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [24847]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [24848]
+	"0/0/1999 -1:-1 [DEBUG] Only Tracking Missing Achievements Enabled", -- [24849]
+	"0/0/1999 -1:-1 [DEBUG] true", -- [24850]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [24851]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [24852]
+	"29/9/2021 21:7 [DEBUG] Showing Minimap Icon", -- [24853]
+	"29/9/2021 21:7 [DEBUG] NPC cache generated", -- [24854]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [24855]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.32.0", -- [24856]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [24857]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [24858]
+	"0/0/1999 -1:-1 [DEBUG] Only Tracking Missing Achievements Enabled", -- [24859]
+	"0/0/1999 -1:-1 [DEBUG] true", -- [24860]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [24861]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [24862]
+	"30/9/2021 16:56 [DEBUG] Showing Minimap Icon", -- [24863]
+	"30/9/2021 16:56 [DEBUG] NPC cache generated", -- [24864]
+	"30/9/2021 19:38 [DEBUG] ---IAT Runtime---", -- [24865]
+	"30/9/2021 19:38 [DEBUG] Version: 3.32.0", -- [24866]
+	"30/9/2021 19:38 [DEBUG] Attempting to load from local NPC Cache", -- [24867]
+	"30/9/2021 19:38 [DEBUG] Generating NPC Cache...", -- [24868]
+	"30/9/2021 19:38 [DEBUG] Only Tracking Missing Achievements Enabled", -- [24869]
+	"30/9/2021 19:38 [DEBUG] true", -- [24870]
+	"30/9/2021 19:38 [DEBUG] Enabling Addon", -- [24871]
+	"30/9/2021 19:38 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [24872]
+	"30/9/2021 19:38 [DEBUG] Showing Minimap Icon", -- [24873]
+	"30/9/2021 19:38 [DEBUG] NPC cache generated", -- [24874]
+	"30/9/2021 19:40 [DEBUG] Player has entered instance", -- [24875]
+	"30/9/2021 19:40 [DEBUG] 2450", -- [24876]
+	"30/9/2021 19:40 [DEBUG] Offical Instance Name: 2450 _2450", -- [24877]
+	"30/9/2021 19:40 [DEBUG] Expansion: 2", -- [24878]
+	"30/9/2021 19:40 [DEBUG] Instance Type: Raids", -- [24879]
+	"30/9/2021 19:40 [DEBUG] Instance: 2450", -- [24880]
+	"30/9/2021 19:40 [DEBUG] DifficultyID: 15", -- [24881]
+	"30/9/2021 19:40 [DEBUG] Expansion: 2", -- [24882]
+	"30/9/2021 19:40 [DEBUG] Instance Type: Raids", -- [24883]
+	"30/9/2021 19:40 [DEBUG] Instance: 2450", -- [24884]
+	"30/9/2021 19:40 [DEBUG] Asking user whether they want to track this instance", -- [24885]
+	"30/9/2021 19:40 [DEBUG] Creating Tracking UI", -- [24886]
+	"30/9/2021 19:40 [DEBUG] InfoFrame Setup Complete", -- [24887]
+	"30/9/2021 23:31 [DEBUG] Hiding Tracking UI", -- [24888]
+	"30/9/2021 23:31 [DEBUG] Clearing Instance Variables", -- [24889]
+	"30/9/2021 23:31 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1904: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [24890]
+	"30/9/2021 23:31 [DEBUG] Cleaning up instance events for _2450", -- [24891]
+	"30/9/2021 23:31 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [24892]
+	"30/9/2021 23:31 [DEBUG] Clearing Instance Variables if exists", -- [24893]
+	"30/9/2021 23:31 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3771: attempt to call method 'clearVariables' (a nil value).", -- [24894]
+	"30/9/2021 23:31 [DEBUG] Clearing Instance Variables if exists", -- [24895]
+	"30/9/2021 23:31 [DEBUG] Clearing Instance Variables", -- [24896]
+	"30/9/2021 23:31 [DEBUG] Resetting Global Variables", -- [24897]
+	"30/9/2021 23:31 [DEBUG] InfoFrame does not need to be reset", -- [24898]
+	"30/9/2021 23:31 [DEBUG] Resetting PlayerRank", -- [24899]
+	"30/9/2021 23:31 [DEBUG] InfoFrame was not active", -- [24900]
+	"30/9/2021 23:39 [DEBUG] Hiding Tracking UI", -- [24901]
+	"30/9/2021 23:40 [DEBUG] Hiding Tracking UI", -- [24902]
+	"1/10/2021 0:29 [DEBUG] Hiding Tracking UI", -- [24903]
+	"1/10/2021 0:55 [DEBUG] Hiding Tracking UI", -- [24904]
+	"1/10/2021 0:57 [DEBUG] Hiding Tracking UI", -- [24905]
+	"1/10/2021 1:1 [DEBUG] Hiding Tracking UI", -- [24906]
+	"1/10/2021 1:1 [DEBUG] Hiding Tracking UI", -- [24907]
+	"1/10/2021 1:9 [DEBUG] Hiding Tracking UI", -- [24908]
+	"1/10/2021 1:10 [DEBUG] Hiding Tracking UI", -- [24909]
+	"1/10/2021 1:10 [DEBUG] Hiding Tracking UI", -- [24910]
+	"1/10/2021 1:10 [DEBUG] Hiding Tracking UI", -- [24911]
+	"1/10/2021 1:25 [DEBUG] Hiding Tracking UI", -- [24912]
+	"1/10/2021 1:28 [DEBUG] Hiding Tracking UI", -- [24913]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [24914]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.32.0", -- [24915]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [24916]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [24917]
+	"0/0/1999 -1:-1 [DEBUG] Only Tracking Missing Achievements Enabled", -- [24918]
+	"0/0/1999 -1:-1 [DEBUG] true", -- [24919]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [24920]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [24921]
+	"1/10/2021 12:54 [DEBUG] Showing Minimap Icon", -- [24922]
+	"1/10/2021 12:54 [DEBUG] NPC cache generated", -- [24923]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [24924]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.32.0", -- [24925]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [24926]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [24927]
+	"0/0/1999 -1:-1 [DEBUG] Only Tracking Missing Achievements Enabled", -- [24928]
+	"0/0/1999 -1:-1 [DEBUG] true", -- [24929]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [24930]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [24931]
+	"1/10/2021 21:20 [DEBUG] Showing Minimap Icon", -- [24932]
+	"1/10/2021 21:20 [DEBUG] NPC cache generated", -- [24933]
+	"1/10/2021 22:39 [DEBUG] Player has entered instance", -- [24934]
+	"1/10/2021 22:39 [DEBUG] 2293", -- [24935]
+	"1/10/2021 22:39 [DEBUG] Offical Instance Name: 2293 _2293", -- [24936]
+	"1/10/2021 22:39 [DEBUG] Expansion: 2", -- [24937]
+	"1/10/2021 22:39 [DEBUG] Instance Type: Dungeons", -- [24938]
+	"1/10/2021 22:39 [DEBUG] Instance: 2293", -- [24939]
+	"1/10/2021 22:39 [DEBUG] DifficultyID: 23", -- [24940]
+	"1/10/2021 22:39 [DEBUG] Expansion: 2", -- [24941]
+	"1/10/2021 22:39 [DEBUG] Instance Type: Dungeons", -- [24942]
+	"1/10/2021 22:39 [DEBUG] Instance: 2293", -- [24943]
+	"1/10/2021 22:39 [DEBUG] Asking user whether they want to track this instance", -- [24944]
+	"1/10/2021 22:39 [DEBUG] Creating Tracking UI", -- [24945]
+	"1/10/2021 22:39 [DEBUG] InfoFrame Setup Complete", -- [24946]
+	"1/10/2021 23:7 [DEBUG] Hiding Tracking UI", -- [24947]
+	"1/10/2021 23:7 [DEBUG] Clearing Instance Variables", -- [24948]
+	"1/10/2021 23:7 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1904: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [24949]
+	"1/10/2021 23:7 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1912: attempt to call method 'InstanceCleanup' (a nil value).", -- [24950]
+	"1/10/2021 23:7 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [24951]
+	"1/10/2021 23:7 [DEBUG] Clearing Instance Variables if exists", -- [24952]
+	"1/10/2021 23:7 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3771: attempt to call method 'clearVariables' (a nil value).", -- [24953]
+	"1/10/2021 23:7 [DEBUG] Clearing Instance Variables if exists", -- [24954]
+	"1/10/2021 23:7 [DEBUG] Clearing Instance Variables", -- [24955]
+	"1/10/2021 23:7 [DEBUG] Resetting Global Variables", -- [24956]
+	"1/10/2021 23:7 [DEBUG] InfoFrame does not need to be reset", -- [24957]
+	"1/10/2021 23:7 [DEBUG] Resetting PlayerRank", -- [24958]
+	"1/10/2021 23:7 [DEBUG] InfoFrame was not active", -- [24959]
+	"1/10/2021 23:12 [DEBUG] Hiding Tracking UI", -- [24960]
+	"1/10/2021 23:14 [DEBUG] Hiding Tracking UI", -- [24961]
+	"1/10/2021 23:21 [DEBUG] Hiding Tracking UI", -- [24962]
+	"1/10/2021 23:21 [DEBUG] Hiding Tracking UI", -- [24963]
+	"1/10/2021 23:21 [DEBUG] Player has entered instance", -- [24964]
+	"1/10/2021 23:21 [DEBUG] 2286", -- [24965]
+	"1/10/2021 23:21 [DEBUG] Offical Instance Name: 2286 _2286", -- [24966]
+	"1/10/2021 23:21 [DEBUG] Expansion: 2", -- [24967]
+	"1/10/2021 23:21 [DEBUG] Instance Type: Dungeons", -- [24968]
+	"1/10/2021 23:21 [DEBUG] Instance: 2286", -- [24969]
+	"1/10/2021 23:21 [DEBUG] DifficultyID: 2", -- [24970]
+	"1/10/2021 23:21 [DEBUG] Achievements cannot be earned for the following difficulty 2", -- [24971]
+	"1/10/2021 23:21 [DEBUG] Clearing Instance Variables", -- [24972]
+	"1/10/2021 23:21 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1904: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [24973]
+	"1/10/2021 23:21 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1912: attempt to call method 'InstanceCleanup' (a nil value).", -- [24974]
+	"1/10/2021 23:21 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [24975]
+	"1/10/2021 23:21 [DEBUG] Clearing Instance Variables if exists", -- [24976]
+	"1/10/2021 23:21 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3771: attempt to call method 'clearVariables' (a nil value).", -- [24977]
+	"1/10/2021 23:21 [DEBUG] Clearing Instance Variables if exists", -- [24978]
+	"1/10/2021 23:21 [DEBUG] Clearing Instance Variables", -- [24979]
+	"1/10/2021 23:21 [DEBUG] Resetting Global Variables", -- [24980]
+	"1/10/2021 23:21 [DEBUG] InfoFrame does not need to be reset", -- [24981]
+	"1/10/2021 23:21 [DEBUG] Resetting PlayerRank", -- [24982]
+	"1/10/2021 23:21 [DEBUG] InfoFrame was not active", -- [24983]
+	"1/10/2021 23:21 [DEBUG] 6", -- [24984]
+	"1/10/2021 23:21 [DEBUG] Hiding Tracking UI", -- [24985]
+	"1/10/2021 23:22 [DEBUG] Hiding Tracking UI", -- [24986]
+	"1/10/2021 23:22 [DEBUG] Player has entered instance", -- [24987]
+	"1/10/2021 23:22 [DEBUG] 2286", -- [24988]
+	"1/10/2021 23:22 [DEBUG] Offical Instance Name: 2286 _2286", -- [24989]
+	"1/10/2021 23:22 [DEBUG] Expansion: 2", -- [24990]
+	"1/10/2021 23:22 [DEBUG] Instance Type: Dungeons", -- [24991]
+	"1/10/2021 23:22 [DEBUG] Instance: 2286", -- [24992]
+	"1/10/2021 23:22 [DEBUG] DifficultyID: 23", -- [24993]
+	"1/10/2021 23:22 [DEBUG] Expansion: 2", -- [24994]
+	"1/10/2021 23:22 [DEBUG] Instance Type: Dungeons", -- [24995]
+	"1/10/2021 23:22 [DEBUG] Instance: 2286", -- [24996]
+	"1/10/2021 23:22 [DEBUG] Asking user whether they want to track this instance", -- [24997]
+	"1/10/2021 23:22 [DEBUG] Displaying Tracking UI since it was already created", -- [24998]
+	"1/10/2021 23:22 [DEBUG] Player has entered instance", -- [24999]
+	"1/10/2021 23:22 [DEBUG] 2286", -- [25000]
+	"1/10/2021 23:22 [DEBUG] Offical Instance Name: 2286 _2286", -- [25001]
+	"1/10/2021 23:22 [DEBUG] Expansion: 2", -- [25002]
+	"1/10/2021 23:22 [DEBUG] Instance Type: Dungeons", -- [25003]
+	"1/10/2021 23:22 [DEBUG] Instance: 2286", -- [25004]
+	"1/10/2021 23:22 [DEBUG] DifficultyID: 23", -- [25005]
+	"1/10/2021 23:22 [DEBUG] Expansion: 2", -- [25006]
+	"1/10/2021 23:22 [DEBUG] Instance Type: Dungeons", -- [25007]
+	"1/10/2021 23:22 [DEBUG] Instance: 2286", -- [25008]
+	"1/10/2021 23:22 [DEBUG] No Achievements to track for this instance", -- [25009]
+	"1/10/2021 23:51 [DEBUG] Clearing Instance Variables", -- [25010]
+	"1/10/2021 23:51 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1904: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [25011]
+	"1/10/2021 23:51 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1912: attempt to call method 'InstanceCleanup' (a nil value).", -- [25012]
+	"1/10/2021 23:51 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [25013]
+	"1/10/2021 23:51 [DEBUG] Clearing Instance Variables if exists", -- [25014]
+	"1/10/2021 23:51 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3771: attempt to call method 'clearVariables' (a nil value).", -- [25015]
+	"1/10/2021 23:51 [DEBUG] Clearing Instance Variables if exists", -- [25016]
+	"1/10/2021 23:51 [DEBUG] Clearing Instance Variables", -- [25017]
+	"1/10/2021 23:51 [DEBUG] Resetting Global Variables", -- [25018]
+	"1/10/2021 23:51 [DEBUG] InfoFrame does not need to be reset", -- [25019]
+	"1/10/2021 23:51 [DEBUG] Resetting PlayerRank", -- [25020]
+	"1/10/2021 23:51 [DEBUG] InfoFrame was not active", -- [25021]
+	"1/10/2021 23:51 [DEBUG] 6", -- [25022]
+	"1/10/2021 23:51 [DEBUG] Hiding Tracking UI", -- [25023]
+	"1/10/2021 23:52 [DEBUG] Hiding Tracking UI", -- [25024]
+	"1/10/2021 23:54 [DEBUG] Hiding Tracking UI", -- [25025]
+	"2/10/2021 0:25 [DEBUG] ---IAT Runtime---", -- [25026]
+	"2/10/2021 0:25 [DEBUG] Version: 3.32.0", -- [25027]
+	"2/10/2021 0:25 [DEBUG] Attempting to load from local NPC Cache", -- [25028]
+	"2/10/2021 0:25 [DEBUG] Generating NPC Cache...", -- [25029]
+	"2/10/2021 0:25 [DEBUG] Only Tracking Missing Achievements Enabled", -- [25030]
+	"2/10/2021 0:25 [DEBUG] true", -- [25031]
+	"2/10/2021 0:25 [DEBUG] Enabling Addon", -- [25032]
+	"2/10/2021 0:25 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [25033]
+	"2/10/2021 0:25 [DEBUG] Showing Minimap Icon", -- [25034]
+	"2/10/2021 0:25 [DEBUG] NPC cache generated", -- [25035]
+	"2/10/2021 0:51 [DEBUG] Player has entered instance", -- [25036]
+	"2/10/2021 0:51 [DEBUG] 2450", -- [25037]
+	"2/10/2021 0:51 [DEBUG] Offical Instance Name: 2450 _2450", -- [25038]
+	"2/10/2021 0:51 [DEBUG] Expansion: 2", -- [25039]
+	"2/10/2021 0:51 [DEBUG] Instance Type: Raids", -- [25040]
+	"2/10/2021 0:51 [DEBUG] Instance: 2450", -- [25041]
+	"2/10/2021 0:51 [DEBUG] DifficultyID: 14", -- [25042]
+	"2/10/2021 0:51 [DEBUG] Expansion: 2", -- [25043]
+	"2/10/2021 0:51 [DEBUG] Instance Type: Raids", -- [25044]
+	"2/10/2021 0:51 [DEBUG] Instance: 2450", -- [25045]
+	"2/10/2021 0:51 [DEBUG] Asking user whether they want to track this instance", -- [25046]
+	"2/10/2021 0:51 [DEBUG] Creating Tracking UI", -- [25047]
+	"2/10/2021 0:51 [DEBUG] InfoFrame Setup Complete", -- [25048]
+	"2/10/2021 1:0 [DEBUG] Hiding Tracking UI", -- [25049]
+	"2/10/2021 1:0 [DEBUG] Clearing Instance Variables", -- [25050]
+	"2/10/2021 1:0 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1904: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [25051]
+	"2/10/2021 1:0 [DEBUG] Cleaning up instance events for _2450", -- [25052]
+	"2/10/2021 1:0 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [25053]
+	"2/10/2021 1:0 [DEBUG] Clearing Instance Variables if exists", -- [25054]
+	"2/10/2021 1:0 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3771: attempt to call method 'clearVariables' (a nil value).", -- [25055]
+	"2/10/2021 1:0 [DEBUG] Clearing Instance Variables if exists", -- [25056]
+	"2/10/2021 1:0 [DEBUG] Clearing Instance Variables", -- [25057]
+	"2/10/2021 1:0 [DEBUG] Resetting Global Variables", -- [25058]
+	"2/10/2021 1:0 [DEBUG] InfoFrame does not need to be reset", -- [25059]
+	"2/10/2021 1:0 [DEBUG] Resetting PlayerRank", -- [25060]
+	"2/10/2021 1:0 [DEBUG] InfoFrame was not active", -- [25061]
+	"2/10/2021 1:0 [DEBUG] Hiding Tracking UI", -- [25062]
+	"2/10/2021 1:1 [DEBUG] Hiding Tracking UI", -- [25063]
+	"2/10/2021 1:2 [DEBUG] Hiding Tracking UI", -- [25064]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [25065]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.32.0", -- [25066]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [25067]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [25068]
+	"0/0/1999 -1:-1 [DEBUG] Only Tracking Missing Achievements Enabled", -- [25069]
+	"0/0/1999 -1:-1 [DEBUG] true", -- [25070]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [25071]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [25072]
+	"2/10/2021 19:57 [DEBUG] Showing Minimap Icon", -- [25073]
+	"2/10/2021 19:57 [DEBUG] NPC cache generated", -- [25074]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [25075]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.32.0", -- [25076]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [25077]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [25078]
+	"0/0/1999 -1:-1 [DEBUG] Only Tracking Missing Achievements Enabled", -- [25079]
+	"0/0/1999 -1:-1 [DEBUG] true", -- [25080]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [25081]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [25082]
+	"2/10/2021 21:57 [DEBUG] Showing Minimap Icon", -- [25083]
+	"2/10/2021 21:57 [DEBUG] NPC cache generated", -- [25084]
+	"2/10/2021 22:2 [DEBUG] ---IAT Runtime---", -- [25085]
+	"2/10/2021 22:2 [DEBUG] Version: 3.32.0", -- [25086]
+	"2/10/2021 22:2 [DEBUG] Attempting to load from local NPC Cache", -- [25087]
+	"2/10/2021 22:2 [DEBUG] Generating NPC Cache...", -- [25088]
+	"2/10/2021 22:2 [DEBUG] Only Tracking Missing Achievements Enabled", -- [25089]
+	"2/10/2021 22:2 [DEBUG] true", -- [25090]
+	"2/10/2021 22:2 [DEBUG] Enabling Addon", -- [25091]
+	"2/10/2021 22:2 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [25092]
+	"2/10/2021 22:2 [DEBUG] Showing Minimap Icon", -- [25093]
+	"2/10/2021 22:2 [DEBUG] NPC cache generated", -- [25094]
+	"2/10/2021 22:4 [DEBUG] Player has entered instance", -- [25095]
+	"2/10/2021 22:4 [DEBUG] 967", -- [25096]
+	"2/10/2021 22:4 [DEBUG] Offical Instance Name: 967 _967", -- [25097]
+	"2/10/2021 22:4 [DEBUG] Expansion: 7", -- [25098]
+	"2/10/2021 22:4 [DEBUG] Instance Type: Raids", -- [25099]
+	"2/10/2021 22:4 [DEBUG] Instance: 967", -- [25100]
+	"2/10/2021 22:4 [DEBUG] DifficultyID: 6", -- [25101]
+	"2/10/2021 22:4 [DEBUG] Expansion: 7", -- [25102]
+	"2/10/2021 22:4 [DEBUG] Instance Type: Raids", -- [25103]
+	"2/10/2021 22:4 [DEBUG] Instance: 967", -- [25104]
+	"2/10/2021 22:4 [DEBUG] Asking user whether they want to track this instance", -- [25105]
+	"2/10/2021 22:4 [DEBUG] Creating Tracking UI", -- [25106]
+	"2/10/2021 22:4 [DEBUG] InfoFrame Setup Complete", -- [25107]
+	"2/10/2021 22:33 [DEBUG] Hiding Tracking UI", -- [25108]
+	"2/10/2021 22:33 [DEBUG] Clearing Instance Variables", -- [25109]
+	"2/10/2021 22:33 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1904: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [25110]
+	"2/10/2021 22:33 [DEBUG] Cleaning up instance events for _967", -- [25111]
+	"2/10/2021 22:33 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [25112]
+	"2/10/2021 22:33 [DEBUG] Clearing Instance Variables if exists", -- [25113]
+	"2/10/2021 22:33 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3771: attempt to call method 'clearVariables' (a nil value).", -- [25114]
+	"2/10/2021 22:33 [DEBUG] Clearing Instance Variables if exists", -- [25115]
+	"2/10/2021 22:33 [DEBUG] Clearing Instance Variables", -- [25116]
+	"2/10/2021 22:33 [DEBUG] Resetting Global Variables", -- [25117]
+	"2/10/2021 22:33 [DEBUG] InfoFrame does not need to be reset", -- [25118]
+	"2/10/2021 22:33 [DEBUG] Resetting PlayerRank", -- [25119]
+	"2/10/2021 22:33 [DEBUG] InfoFrame was not active", -- [25120]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [25121]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.32.0", -- [25122]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [25123]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [25124]
+	"0/0/1999 -1:-1 [DEBUG] Only Tracking Missing Achievements Enabled", -- [25125]
+	"0/0/1999 -1:-1 [DEBUG] true", -- [25126]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [25127]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [25128]
+	"3/10/2021 0:16 [DEBUG] Showing Minimap Icon", -- [25129]
+	"3/10/2021 0:16 [DEBUG] NPC cache generated", -- [25130]
+	"3/10/2021 0:18 [DEBUG] Player has entered instance", -- [25131]
+	"3/10/2021 0:18 [DEBUG] 2450", -- [25132]
+	"3/10/2021 0:18 [DEBUG] Offical Instance Name: 2450 _2450", -- [25133]
+	"3/10/2021 0:18 [DEBUG] Expansion: 2", -- [25134]
+	"3/10/2021 0:18 [DEBUG] Instance Type: Raids", -- [25135]
+	"3/10/2021 0:18 [DEBUG] Instance: 2450", -- [25136]
+	"3/10/2021 0:18 [DEBUG] DifficultyID: 15", -- [25137]
+	"3/10/2021 0:18 [DEBUG] Expansion: 2", -- [25138]
+	"3/10/2021 0:18 [DEBUG] Instance Type: Raids", -- [25139]
+	"3/10/2021 0:18 [DEBUG] Instance: 2450", -- [25140]
+	"3/10/2021 0:18 [DEBUG] Asking user whether they want to track this instance", -- [25141]
+	"3/10/2021 0:18 [DEBUG] Creating Tracking UI", -- [25142]
+	"3/10/2021 0:18 [DEBUG] InfoFrame Setup Complete", -- [25143]
+	"3/10/2021 0:29 [DEBUG] Hiding Tracking UI", -- [25144]
+	"3/10/2021 0:29 [DEBUG] Clearing Instance Variables", -- [25145]
+	"3/10/2021 0:29 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1904: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [25146]
+	"3/10/2021 0:29 [DEBUG] Cleaning up instance events for _2450", -- [25147]
+	"3/10/2021 0:29 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [25148]
+	"3/10/2021 0:29 [DEBUG] Clearing Instance Variables if exists", -- [25149]
+	"3/10/2021 0:29 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3771: attempt to call method 'clearVariables' (a nil value).", -- [25150]
+	"3/10/2021 0:29 [DEBUG] Clearing Instance Variables if exists", -- [25151]
+	"3/10/2021 0:29 [DEBUG] Clearing Instance Variables", -- [25152]
+	"3/10/2021 0:29 [DEBUG] Resetting Global Variables", -- [25153]
+	"3/10/2021 0:29 [DEBUG] InfoFrame does not need to be reset", -- [25154]
+	"3/10/2021 0:29 [DEBUG] Resetting PlayerRank", -- [25155]
+	"3/10/2021 0:29 [DEBUG] InfoFrame was not active", -- [25156]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [25157]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.32.0", -- [25158]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [25159]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [25160]
+	"0/0/1999 -1:-1 [DEBUG] Only Tracking Missing Achievements Enabled", -- [25161]
+	"0/0/1999 -1:-1 [DEBUG] true", -- [25162]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [25163]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [25164]
+	"3/10/2021 1:18 [DEBUG] Showing Minimap Icon", -- [25165]
+	"3/10/2021 1:18 [DEBUG] NPC cache generated", -- [25166]
+	"3/10/2021 1:24 [DEBUG] Player has entered instance", -- [25167]
+	"3/10/2021 1:24 [DEBUG] 2450", -- [25168]
+	"3/10/2021 1:24 [DEBUG] Offical Instance Name: 2450 _2450", -- [25169]
+	"3/10/2021 1:24 [DEBUG] Expansion: 2", -- [25170]
+	"3/10/2021 1:24 [DEBUG] Instance Type: Raids", -- [25171]
+	"3/10/2021 1:24 [DEBUG] Instance: 2450", -- [25172]
+	"3/10/2021 1:24 [DEBUG] DifficultyID: 15", -- [25173]
+	"3/10/2021 1:24 [DEBUG] Expansion: 2", -- [25174]
+	"3/10/2021 1:24 [DEBUG] Instance Type: Raids", -- [25175]
+	"3/10/2021 1:24 [DEBUG] Instance: 2450", -- [25176]
+	"3/10/2021 1:24 [DEBUG] Asking user whether they want to track this instance", -- [25177]
+	"3/10/2021 1:24 [DEBUG] Creating Tracking UI", -- [25178]
+	"3/10/2021 1:24 [DEBUG] InfoFrame Setup Complete", -- [25179]
+	"3/10/2021 1:24 [DEBUG] Player has entered instance", -- [25180]
+	"3/10/2021 1:24 [DEBUG] 2450", -- [25181]
+	"3/10/2021 1:24 [DEBUG] Offical Instance Name: 2450 _2450", -- [25182]
+	"3/10/2021 1:24 [DEBUG] Expansion: 2", -- [25183]
+	"3/10/2021 1:24 [DEBUG] Instance Type: Raids", -- [25184]
+	"3/10/2021 1:24 [DEBUG] Instance: 2450", -- [25185]
+	"3/10/2021 1:24 [DEBUG] DifficultyID: 15", -- [25186]
+	"3/10/2021 1:24 [DEBUG] Expansion: 2", -- [25187]
+	"3/10/2021 1:24 [DEBUG] Instance Type: Raids", -- [25188]
+	"3/10/2021 1:24 [DEBUG] Instance: 2450", -- [25189]
+	"3/10/2021 1:24 [DEBUG] No Achievements to track for this instance", -- [25190]
+	"3/10/2021 1:39 [DEBUG] Clearing Instance Variables", -- [25191]
+	"3/10/2021 1:39 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1904: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [25192]
+	"3/10/2021 1:39 [DEBUG] Cleaning up instance events for _2450", -- [25193]
+	"3/10/2021 1:39 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [25194]
+	"3/10/2021 1:39 [DEBUG] Clearing Instance Variables if exists", -- [25195]
+	"3/10/2021 1:39 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3771: attempt to call method 'clearVariables' (a nil value).", -- [25196]
+	"3/10/2021 1:39 [DEBUG] Clearing Instance Variables if exists", -- [25197]
+	"3/10/2021 1:39 [DEBUG] Clearing Instance Variables", -- [25198]
+	"3/10/2021 1:39 [DEBUG] Resetting Global Variables", -- [25199]
+	"3/10/2021 1:39 [DEBUG] InfoFrame does not need to be reset", -- [25200]
+	"3/10/2021 1:39 [DEBUG] Resetting PlayerRank", -- [25201]
+	"3/10/2021 1:39 [DEBUG] InfoFrame was not active", -- [25202]
+	"3/10/2021 1:39 [DEBUG] 6", -- [25203]
+	"3/10/2021 1:39 [DEBUG] Hiding Tracking UI", -- [25204]
+	"3/10/2021 1:40 [DEBUG] Hiding Tracking UI", -- [25205]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [25206]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.32.0", -- [25207]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [25208]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [25209]
+	"0/0/1999 -1:-1 [DEBUG] Only Tracking Missing Achievements Enabled", -- [25210]
+	"0/0/1999 -1:-1 [DEBUG] true", -- [25211]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [25212]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [25213]
+	"4/10/2021 16:55 [DEBUG] Showing Minimap Icon", -- [25214]
+	"4/10/2021 16:55 [DEBUG] NPC cache generated", -- [25215]
+	"4/10/2021 18:3 [DEBUG] Player has entered instance", -- [25216]
+	"4/10/2021 18:3 [DEBUG] 2291", -- [25217]
+	"4/10/2021 18:3 [DEBUG] Offical Instance Name: 2291 _2291", -- [25218]
+	"4/10/2021 18:3 [DEBUG] Expansion: 2", -- [25219]
+	"4/10/2021 18:3 [DEBUG] Instance Type: Dungeons", -- [25220]
+	"4/10/2021 18:3 [DEBUG] Instance: 2291", -- [25221]
+	"4/10/2021 18:3 [DEBUG] DifficultyID: 23", -- [25222]
+	"4/10/2021 18:3 [DEBUG] Expansion: 2", -- [25223]
+	"4/10/2021 18:3 [DEBUG] Instance Type: Dungeons", -- [25224]
+	"4/10/2021 18:3 [DEBUG] Instance: 2291", -- [25225]
+	"4/10/2021 18:3 [DEBUG] Asking user whether they want to track this instance", -- [25226]
+	"4/10/2021 18:3 [DEBUG] Creating Tracking UI", -- [25227]
+	"4/10/2021 18:3 [DEBUG] InfoFrame Setup Complete", -- [25228]
+	"4/10/2021 18:3 [DEBUG] Player has entered instance", -- [25229]
+	"4/10/2021 18:3 [DEBUG] 2291", -- [25230]
+	"4/10/2021 18:3 [DEBUG] Offical Instance Name: 2291 _2291", -- [25231]
+	"4/10/2021 18:3 [DEBUG] Expansion: 2", -- [25232]
+	"4/10/2021 18:3 [DEBUG] Instance Type: Dungeons", -- [25233]
+	"4/10/2021 18:3 [DEBUG] Instance: 2291", -- [25234]
+	"4/10/2021 18:3 [DEBUG] DifficultyID: 23", -- [25235]
+	"4/10/2021 18:3 [DEBUG] Expansion: 2", -- [25236]
+	"4/10/2021 18:3 [DEBUG] Instance Type: Dungeons", -- [25237]
+	"4/10/2021 18:3 [DEBUG] Instance: 2291", -- [25238]
+	"4/10/2021 18:3 [DEBUG] No Achievements to track for this instance", -- [25239]
+	"4/10/2021 18:4 [DEBUG] Clearing Instance Variables", -- [25240]
+	"4/10/2021 18:4 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1904: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [25241]
+	"4/10/2021 18:4 [DEBUG] Cleaning up instance events for _2291", -- [25242]
+	"4/10/2021 18:4 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [25243]
+	"4/10/2021 18:4 [DEBUG] Clearing Instance Variables if exists", -- [25244]
+	"4/10/2021 18:4 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3771: attempt to call method 'clearVariables' (a nil value).", -- [25245]
+	"4/10/2021 18:4 [DEBUG] Clearing Instance Variables if exists", -- [25246]
+	"4/10/2021 18:4 [DEBUG] Clearing Instance Variables", -- [25247]
+	"4/10/2021 18:4 [DEBUG] Resetting Global Variables", -- [25248]
+	"4/10/2021 18:4 [DEBUG] InfoFrame does not need to be reset", -- [25249]
+	"4/10/2021 18:4 [DEBUG] Resetting PlayerRank", -- [25250]
+	"4/10/2021 18:4 [DEBUG] InfoFrame was not active", -- [25251]
+	"4/10/2021 18:4 [DEBUG] 6", -- [25252]
+	"4/10/2021 18:4 [DEBUG] Hiding Tracking UI", -- [25253]
+	"4/10/2021 18:5 [DEBUG] Hiding Tracking UI", -- [25254]
+	"4/10/2021 18:5 [DEBUG] Player has entered instance", -- [25255]
+	"4/10/2021 18:5 [DEBUG] 2291", -- [25256]
+	"4/10/2021 18:5 [DEBUG] Offical Instance Name: 2291 _2291", -- [25257]
+	"4/10/2021 18:5 [DEBUG] Expansion: 2", -- [25258]
+	"4/10/2021 18:5 [DEBUG] Instance Type: Dungeons", -- [25259]
+	"4/10/2021 18:5 [DEBUG] Instance: 2291", -- [25260]
+	"4/10/2021 18:5 [DEBUG] DifficultyID: 23", -- [25261]
+	"4/10/2021 18:5 [DEBUG] Expansion: 2", -- [25262]
+	"4/10/2021 18:5 [DEBUG] Instance Type: Dungeons", -- [25263]
+	"4/10/2021 18:5 [DEBUG] Instance: 2291", -- [25264]
+	"4/10/2021 18:5 [DEBUG] Asking user whether they want to track this instance", -- [25265]
+	"4/10/2021 18:5 [DEBUG] Displaying Tracking UI since it was already created", -- [25266]
+	"4/10/2021 18:51 [DEBUG] Hiding Tracking UI", -- [25267]
+	"4/10/2021 18:51 [DEBUG] Clearing Instance Variables", -- [25268]
+	"4/10/2021 18:51 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1904: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [25269]
+	"4/10/2021 18:51 [DEBUG] Cleaning up instance events for _2291", -- [25270]
+	"4/10/2021 18:51 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [25271]
+	"4/10/2021 18:51 [DEBUG] Clearing Instance Variables if exists", -- [25272]
+	"4/10/2021 18:51 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3771: attempt to call method 'clearVariables' (a nil value).", -- [25273]
+	"4/10/2021 18:51 [DEBUG] Clearing Instance Variables if exists", -- [25274]
+	"4/10/2021 18:51 [DEBUG] Clearing Instance Variables", -- [25275]
+	"4/10/2021 18:51 [DEBUG] Resetting Global Variables", -- [25276]
+	"4/10/2021 18:51 [DEBUG] InfoFrame does not need to be reset", -- [25277]
+	"4/10/2021 18:51 [DEBUG] Resetting PlayerRank", -- [25278]
+	"4/10/2021 18:51 [DEBUG] InfoFrame was not active", -- [25279]
+	"4/10/2021 18:53 [DEBUG] Hiding Tracking UI", -- [25280]
+	"4/10/2021 18:59 [DEBUG] Hiding Tracking UI", -- [25281]
+	"4/10/2021 18:59 [DEBUG] Hiding Tracking UI", -- [25282]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [25283]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.32.0", -- [25284]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [25285]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [25286]
+	"0/0/1999 -1:-1 [DEBUG] Only Tracking Missing Achievements Enabled", -- [25287]
+	"0/0/1999 -1:-1 [DEBUG] true", -- [25288]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [25289]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [25290]
+	"4/10/2021 20:10 [DEBUG] Showing Minimap Icon", -- [25291]
+	"4/10/2021 20:10 [DEBUG] NPC cache generated", -- [25292]
+	"4/10/2021 21:15 [DEBUG] ---IAT Runtime---", -- [25293]
+	"4/10/2021 21:15 [DEBUG] Version: 3.32.0", -- [25294]
+	"4/10/2021 21:15 [DEBUG] Attempting to load from local NPC Cache", -- [25295]
+	"4/10/2021 21:15 [DEBUG] Generating NPC Cache...", -- [25296]
+	"4/10/2021 21:15 [DEBUG] Only Tracking Missing Achievements Enabled", -- [25297]
+	"4/10/2021 21:15 [DEBUG] true", -- [25298]
+	"4/10/2021 21:15 [DEBUG] Enabling Addon", -- [25299]
+	"4/10/2021 21:15 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [25300]
+	"4/10/2021 21:34 [DEBUG] Showing Minimap Icon", -- [25301]
+	"4/10/2021 21:34 [DEBUG] NPC cache generated", -- [25302]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [25303]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.32.0", -- [25304]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [25305]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [25306]
+	"0/0/1999 -1:-1 [DEBUG] Only Tracking Missing Achievements Enabled", -- [25307]
+	"0/0/1999 -1:-1 [DEBUG] true", -- [25308]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [25309]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [25310]
+	"4/10/2021 22:59 [DEBUG] Showing Minimap Icon", -- [25311]
+	"4/10/2021 22:59 [DEBUG] NPC cache generated", -- [25312]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [25313]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.32.0", -- [25314]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [25315]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [25316]
+	"0/0/1999 -1:-1 [DEBUG] Only Tracking Missing Achievements Enabled", -- [25317]
+	"0/0/1999 -1:-1 [DEBUG] true", -- [25318]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [25319]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [25320]
+	"5/10/2021 9:3 [DEBUG] Showing Minimap Icon", -- [25321]
+	"5/10/2021 9:3 [DEBUG] NPC cache generated", -- [25322]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [25323]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.32.0", -- [25324]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [25325]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [25326]
+	"0/0/1999 -1:-1 [DEBUG] Only Tracking Missing Achievements Enabled", -- [25327]
+	"0/0/1999 -1:-1 [DEBUG] true", -- [25328]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [25329]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [25330]
+	"5/10/2021 14:50 [DEBUG] Showing Minimap Icon", -- [25331]
+	"5/10/2021 14:50 [DEBUG] NPC cache generated", -- [25332]
+	"5/10/2021 14:59 [DEBUG] ---IAT Runtime---", -- [25333]
+	"5/10/2021 14:59 [DEBUG] Version: 3.32.0", -- [25334]
+	"5/10/2021 14:59 [DEBUG] Attempting to load from local NPC Cache", -- [25335]
+	"5/10/2021 14:59 [DEBUG] Generating NPC Cache...", -- [25336]
+	"5/10/2021 14:59 [DEBUG] Only Tracking Missing Achievements Enabled", -- [25337]
+	"5/10/2021 14:59 [DEBUG] true", -- [25338]
+	"5/10/2021 14:59 [DEBUG] Enabling Addon", -- [25339]
+	"5/10/2021 14:59 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [25340]
+	"5/10/2021 15:1 [DEBUG] Showing Minimap Icon", -- [25341]
+	"5/10/2021 15:2 [DEBUG] NPC cache generated", -- [25342]
+	"5/10/2021 15:4 [DEBUG] ---IAT Runtime---", -- [25343]
+	"5/10/2021 15:4 [DEBUG] Version: 3.32.0", -- [25344]
+	"5/10/2021 15:4 [DEBUG] Attempting to load from local NPC Cache", -- [25345]
+	"5/10/2021 15:4 [DEBUG] Generating NPC Cache...", -- [25346]
+	"5/10/2021 15:4 [DEBUG] Only Tracking Missing Achievements Enabled", -- [25347]
+	"5/10/2021 15:4 [DEBUG] true", -- [25348]
+	"5/10/2021 15:4 [DEBUG] Enabling Addon", -- [25349]
+	"5/10/2021 15:4 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [25350]
+	"5/10/2021 15:4 [DEBUG] Showing Minimap Icon", -- [25351]
+	"5/10/2021 15:4 [DEBUG] NPC cache generated", -- [25352]
+	"5/10/2021 15:10 [DEBUG] Player has entered instance", -- [25353]
+	"5/10/2021 15:10 [DEBUG] 2290", -- [25354]
+	"5/10/2021 15:10 [DEBUG] Offical Instance Name: 2290 _2290", -- [25355]
+	"5/10/2021 15:10 [DEBUG] Expansion: 2", -- [25356]
+	"5/10/2021 15:10 [DEBUG] Instance Type: Dungeons", -- [25357]
+	"5/10/2021 15:10 [DEBUG] Instance: 2290", -- [25358]
+	"5/10/2021 15:10 [DEBUG] DifficultyID: 1", -- [25359]
+	"5/10/2021 15:10 [DEBUG] Achievements cannot be earned for the following difficulty 1", -- [25360]
+	"5/10/2021 15:23 [DEBUG] Clearing Instance Variables", -- [25361]
+	"5/10/2021 15:23 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1904: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [25362]
+	"5/10/2021 15:23 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1912: attempt to call method 'InstanceCleanup' (a nil value).", -- [25363]
+	"5/10/2021 15:23 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [25364]
+	"5/10/2021 15:23 [DEBUG] Clearing Instance Variables if exists", -- [25365]
+	"5/10/2021 15:23 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3771: attempt to call method 'clearVariables' (a nil value).", -- [25366]
+	"5/10/2021 15:23 [DEBUG] Clearing Instance Variables if exists", -- [25367]
+	"5/10/2021 15:23 [DEBUG] Clearing Instance Variables", -- [25368]
+	"5/10/2021 15:23 [DEBUG] Resetting Global Variables", -- [25369]
+	"5/10/2021 15:23 [DEBUG] InfoFrame does not need to be reset", -- [25370]
+	"5/10/2021 15:23 [DEBUG] Resetting PlayerRank", -- [25371]
+	"5/10/2021 15:23 [DEBUG] InfoFrame was not active", -- [25372]
+	"5/10/2021 15:23 [DEBUG] 6", -- [25373]
+	"5/10/2021 15:24 [DEBUG] Player has entered instance", -- [25374]
+	"5/10/2021 15:24 [DEBUG] 2286", -- [25375]
+	"5/10/2021 15:24 [DEBUG] Offical Instance Name: 2286 _2286", -- [25376]
+	"5/10/2021 15:24 [DEBUG] Expansion: 2", -- [25377]
+	"5/10/2021 15:24 [DEBUG] Instance Type: Dungeons", -- [25378]
+	"5/10/2021 15:24 [DEBUG] Instance: 2286", -- [25379]
+	"5/10/2021 15:24 [DEBUG] DifficultyID: 1", -- [25380]
+	"5/10/2021 15:24 [DEBUG] Achievements cannot be earned for the following difficulty 1", -- [25381]
+	"5/10/2021 15:44 [DEBUG] Clearing Instance Variables", -- [25382]
+	"5/10/2021 15:44 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1904: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [25383]
+	"5/10/2021 15:44 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1912: attempt to call method 'InstanceCleanup' (a nil value).", -- [25384]
+	"5/10/2021 15:44 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [25385]
+	"5/10/2021 15:44 [DEBUG] Clearing Instance Variables if exists", -- [25386]
+	"5/10/2021 15:44 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3771: attempt to call method 'clearVariables' (a nil value).", -- [25387]
+	"5/10/2021 15:44 [DEBUG] Clearing Instance Variables if exists", -- [25388]
+	"5/10/2021 15:44 [DEBUG] Clearing Instance Variables", -- [25389]
+	"5/10/2021 15:44 [DEBUG] Resetting Global Variables", -- [25390]
+	"5/10/2021 15:44 [DEBUG] InfoFrame does not need to be reset", -- [25391]
+	"5/10/2021 15:44 [DEBUG] Resetting PlayerRank", -- [25392]
+	"5/10/2021 15:44 [DEBUG] InfoFrame was not active", -- [25393]
+	"5/10/2021 15:44 [DEBUG] 6", -- [25394]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [25395]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.32.0", -- [25396]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [25397]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [25398]
+	"0/0/1999 -1:-1 [DEBUG] Only Tracking Missing Achievements Enabled", -- [25399]
+	"0/0/1999 -1:-1 [DEBUG] true", -- [25400]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [25401]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [25402]
+	"5/10/2021 18:20 [DEBUG] Showing Minimap Icon", -- [25403]
+	"5/10/2021 18:20 [DEBUG] NPC cache generated", -- [25404]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [25405]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.32.0", -- [25406]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [25407]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [25408]
+	"0/0/1999 -1:-1 [DEBUG] Only Tracking Missing Achievements Enabled", -- [25409]
+	"0/0/1999 -1:-1 [DEBUG] true", -- [25410]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [25411]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [25412]
+	"5/10/2021 21:36 [DEBUG] Showing Minimap Icon", -- [25413]
+	"5/10/2021 21:36 [DEBUG] NPC cache generated", -- [25414]
+	"5/10/2021 22:45 [DEBUG] Player has entered instance", -- [25415]
+	"5/10/2021 22:45 [DEBUG] 2450", -- [25416]
+	"5/10/2021 22:45 [DEBUG] Offical Instance Name: 2450 _2450", -- [25417]
+	"5/10/2021 22:45 [DEBUG] Expansion: 2", -- [25418]
+	"5/10/2021 22:45 [DEBUG] Instance Type: Raids", -- [25419]
+	"5/10/2021 22:45 [DEBUG] Instance: 2450", -- [25420]
+	"5/10/2021 22:45 [DEBUG] DifficultyID: 16", -- [25421]
+	"5/10/2021 22:45 [DEBUG] Expansion: 2", -- [25422]
+	"5/10/2021 22:45 [DEBUG] Instance Type: Raids", -- [25423]
+	"5/10/2021 22:45 [DEBUG] Instance: 2450", -- [25424]
+	"5/10/2021 22:45 [DEBUG] Asking user whether they want to track this instance", -- [25425]
+	"5/10/2021 22:45 [DEBUG] Creating Tracking UI", -- [25426]
+	"5/10/2021 22:45 [DEBUG] InfoFrame Setup Complete", -- [25427]
+	"5/10/2021 23:28 [DEBUG] Hiding Tracking UI", -- [25428]
+	"5/10/2021 23:28 [DEBUG] Clearing Instance Variables", -- [25429]
+	"5/10/2021 23:28 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1904: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [25430]
+	"5/10/2021 23:28 [DEBUG] Cleaning up instance events for _2450", -- [25431]
+	"5/10/2021 23:28 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [25432]
+	"5/10/2021 23:28 [DEBUG] Clearing Instance Variables if exists", -- [25433]
+	"5/10/2021 23:28 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3771: attempt to call method 'clearVariables' (a nil value).", -- [25434]
+	"5/10/2021 23:28 [DEBUG] Clearing Instance Variables if exists", -- [25435]
+	"5/10/2021 23:28 [DEBUG] Clearing Instance Variables", -- [25436]
+	"5/10/2021 23:28 [DEBUG] Resetting Global Variables", -- [25437]
+	"5/10/2021 23:28 [DEBUG] InfoFrame does not need to be reset", -- [25438]
+	"5/10/2021 23:28 [DEBUG] Resetting PlayerRank", -- [25439]
+	"5/10/2021 23:28 [DEBUG] InfoFrame was not active", -- [25440]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [25441]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.32.0", -- [25442]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [25443]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [25444]
+	"0/0/1999 -1:-1 [DEBUG] Only Tracking Missing Achievements Enabled", -- [25445]
+	"0/0/1999 -1:-1 [DEBUG] true", -- [25446]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [25447]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [25448]
+	"6/10/2021 9:26 [DEBUG] Showing Minimap Icon", -- [25449]
+	"6/10/2021 9:26 [DEBUG] NPC cache generated", -- [25450]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [25451]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.32.0", -- [25452]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [25453]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [25454]
+	"0/0/1999 -1:-1 [DEBUG] Only Tracking Missing Achievements Enabled", -- [25455]
+	"0/0/1999 -1:-1 [DEBUG] true", -- [25456]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [25457]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [25458]
+	"6/10/2021 19:19 [DEBUG] Showing Minimap Icon", -- [25459]
+	"6/10/2021 19:19 [DEBUG] NPC cache generated", -- [25460]
+	"6/10/2021 19:42 [DEBUG] Player has entered instance", -- [25461]
+	"6/10/2021 19:42 [DEBUG] 2450", -- [25462]
+	"6/10/2021 19:42 [DEBUG] Offical Instance Name: 2450 _2450", -- [25463]
+	"6/10/2021 19:42 [DEBUG] Expansion: 2", -- [25464]
+	"6/10/2021 19:42 [DEBUG] Instance Type: Raids", -- [25465]
+	"6/10/2021 19:42 [DEBUG] Instance: 2450", -- [25466]
+	"6/10/2021 19:42 [DEBUG] DifficultyID: 14", -- [25467]
+	"6/10/2021 19:42 [DEBUG] Expansion: 2", -- [25468]
+	"6/10/2021 19:42 [DEBUG] Instance Type: Raids", -- [25469]
+	"6/10/2021 19:42 [DEBUG] Instance: 2450", -- [25470]
+	"6/10/2021 19:42 [DEBUG] Asking user whether they want to track this instance", -- [25471]
+	"6/10/2021 19:42 [DEBUG] Creating Tracking UI", -- [25472]
+	"6/10/2021 19:42 [DEBUG] InfoFrame Setup Complete", -- [25473]
+	"6/10/2021 21:59 [DEBUG] Hiding Tracking UI", -- [25474]
+	"6/10/2021 21:59 [DEBUG] Clearing Instance Variables", -- [25475]
+	"6/10/2021 21:59 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1904: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [25476]
+	"6/10/2021 21:59 [DEBUG] Cleaning up instance events for _2450", -- [25477]
+	"6/10/2021 21:59 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [25478]
+	"6/10/2021 21:59 [DEBUG] Clearing Instance Variables if exists", -- [25479]
+	"6/10/2021 21:59 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3771: attempt to call method 'clearVariables' (a nil value).", -- [25480]
+	"6/10/2021 21:59 [DEBUG] Clearing Instance Variables if exists", -- [25481]
+	"6/10/2021 21:59 [DEBUG] Clearing Instance Variables", -- [25482]
+	"6/10/2021 21:59 [DEBUG] Resetting Global Variables", -- [25483]
+	"6/10/2021 21:59 [DEBUG] InfoFrame does not need to be reset", -- [25484]
+	"6/10/2021 21:59 [DEBUG] Resetting PlayerRank", -- [25485]
+	"6/10/2021 21:59 [DEBUG] InfoFrame was not active", -- [25486]
+	"6/10/2021 22:2 [DEBUG] Hiding Tracking UI", -- [25487]
+	"6/10/2021 22:12 [DEBUG] Hiding Tracking UI", -- [25488]
+	"6/10/2021 22:13 [DEBUG] Hiding Tracking UI", -- [25489]
+	"6/10/2021 22:15 [DEBUG] Hiding Tracking UI", -- [25490]
+	"6/10/2021 22:15 [DEBUG] Hiding Tracking UI", -- [25491]
+	"6/10/2021 22:15 [DEBUG] Hiding Tracking UI", -- [25492]
+	"6/10/2021 22:27 [DEBUG] Hiding Tracking UI", -- [25493]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [25494]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.32.0", -- [25495]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [25496]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [25497]
+	"0/0/1999 -1:-1 [DEBUG] Only Tracking Missing Achievements Enabled", -- [25498]
+	"0/0/1999 -1:-1 [DEBUG] true", -- [25499]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [25500]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [25501]
+	"7/10/2021 9:17 [DEBUG] Showing Minimap Icon", -- [25502]
+	"7/10/2021 9:17 [DEBUG] NPC cache generated", -- [25503]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [25504]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.32.0", -- [25505]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [25506]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [25507]
+	"0/0/1999 -1:-1 [DEBUG] Only Tracking Missing Achievements Enabled", -- [25508]
+	"0/0/1999 -1:-1 [DEBUG] true", -- [25509]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [25510]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [25511]
+	"7/10/2021 12:5 [DEBUG] Showing Minimap Icon", -- [25512]
+	"7/10/2021 12:5 [DEBUG] NPC cache generated", -- [25513]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [25514]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.32.0", -- [25515]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [25516]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [25517]
+	"0/0/1999 -1:-1 [DEBUG] Only Tracking Missing Achievements Enabled", -- [25518]
+	"0/0/1999 -1:-1 [DEBUG] true", -- [25519]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [25520]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [25521]
+	"7/10/2021 18:58 [DEBUG] Showing Minimap Icon", -- [25522]
+	"7/10/2021 18:58 [DEBUG] NPC cache generated", -- [25523]
+	"7/10/2021 19:24 [DEBUG] Player has entered instance", -- [25524]
+	"7/10/2021 19:24 [DEBUG] 2450", -- [25525]
+	"7/10/2021 19:24 [DEBUG] Offical Instance Name: 2450 _2450", -- [25526]
+	"7/10/2021 19:24 [DEBUG] Expansion: 2", -- [25527]
+	"7/10/2021 19:24 [DEBUG] Instance Type: Raids", -- [25528]
+	"7/10/2021 19:24 [DEBUG] Instance: 2450", -- [25529]
+	"7/10/2021 19:24 [DEBUG] DifficultyID: 15", -- [25530]
+	"7/10/2021 19:24 [DEBUG] Expansion: 2", -- [25531]
+	"7/10/2021 19:24 [DEBUG] Instance Type: Raids", -- [25532]
+	"7/10/2021 19:24 [DEBUG] Instance: 2450", -- [25533]
+	"7/10/2021 19:24 [DEBUG] Asking user whether they want to track this instance", -- [25534]
+	"7/10/2021 19:24 [DEBUG] Creating Tracking UI", -- [25535]
+	"7/10/2021 19:24 [DEBUG] InfoFrame Setup Complete", -- [25536]
+	"7/10/2021 23:9 [DEBUG] Hiding Tracking UI", -- [25537]
+	"7/10/2021 23:9 [DEBUG] Clearing Instance Variables", -- [25538]
+	"7/10/2021 23:9 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1904: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [25539]
+	"7/10/2021 23:9 [DEBUG] Cleaning up instance events for _2450", -- [25540]
+	"7/10/2021 23:9 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [25541]
+	"7/10/2021 23:9 [DEBUG] Clearing Instance Variables if exists", -- [25542]
+	"7/10/2021 23:9 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3771: attempt to call method 'clearVariables' (a nil value).", -- [25543]
+	"7/10/2021 23:9 [DEBUG] Clearing Instance Variables if exists", -- [25544]
+	"7/10/2021 23:9 [DEBUG] Clearing Instance Variables", -- [25545]
+	"7/10/2021 23:9 [DEBUG] Resetting Global Variables", -- [25546]
+	"7/10/2021 23:9 [DEBUG] InfoFrame does not need to be reset", -- [25547]
+	"7/10/2021 23:9 [DEBUG] Resetting PlayerRank", -- [25548]
+	"7/10/2021 23:9 [DEBUG] InfoFrame was not active", -- [25549]
+	"7/10/2021 23:12 [DEBUG] Hiding Tracking UI", -- [25550]
+	"7/10/2021 23:13 [DEBUG] Hiding Tracking UI", -- [25551]
+	"7/10/2021 23:50 [DEBUG] Hiding Tracking UI", -- [25552]
+	"7/10/2021 23:53 [DEBUG] Hiding Tracking UI", -- [25553]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [25554]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.32.0", -- [25555]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [25556]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [25557]
+	"0/0/1999 -1:-1 [DEBUG] Only Tracking Missing Achievements Enabled", -- [25558]
+	"0/0/1999 -1:-1 [DEBUG] true", -- [25559]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [25560]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [25561]
+	"8/10/2021 15:41 [DEBUG] Showing Minimap Icon", -- [25562]
+	"8/10/2021 15:41 [DEBUG] NPC cache generated", -- [25563]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [25564]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.32.0", -- [25565]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [25566]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [25567]
+	"0/0/1999 -1:-1 [DEBUG] Only Tracking Missing Achievements Enabled", -- [25568]
+	"0/0/1999 -1:-1 [DEBUG] true", -- [25569]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [25570]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [25571]
+	"8/10/2021 20:41 [DEBUG] Showing Minimap Icon", -- [25572]
+	"8/10/2021 20:41 [DEBUG] NPC cache generated", -- [25573]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [25574]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.32.0", -- [25575]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [25576]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [25577]
+	"0/0/1999 -1:-1 [DEBUG] Only Tracking Missing Achievements Enabled", -- [25578]
+	"0/0/1999 -1:-1 [DEBUG] true", -- [25579]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [25580]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [25581]
+	"8/10/2021 21:28 [DEBUG] Showing Minimap Icon", -- [25582]
+	"8/10/2021 21:28 [DEBUG] NPC cache generated", -- [25583]
+	"8/10/2021 21:51 [DEBUG] Player has entered instance", -- [25584]
+	"8/10/2021 21:51 [DEBUG] 2290", -- [25585]
+	"8/10/2021 21:51 [DEBUG] Offical Instance Name: 2290 _2290", -- [25586]
+	"8/10/2021 21:51 [DEBUG] Expansion: 2", -- [25587]
+	"8/10/2021 21:51 [DEBUG] Instance Type: Dungeons", -- [25588]
+	"8/10/2021 21:51 [DEBUG] Instance: 2290", -- [25589]
+	"8/10/2021 21:51 [DEBUG] DifficultyID: 23", -- [25590]
+	"8/10/2021 21:51 [DEBUG] Expansion: 2", -- [25591]
+	"8/10/2021 21:51 [DEBUG] Instance Type: Dungeons", -- [25592]
+	"8/10/2021 21:51 [DEBUG] Instance: 2290", -- [25593]
+	"8/10/2021 21:51 [DEBUG] Asking user whether they want to track this instance", -- [25594]
+	"8/10/2021 21:51 [DEBUG] Creating Tracking UI", -- [25595]
+	"8/10/2021 21:51 [DEBUG] InfoFrame Setup Complete", -- [25596]
+	"8/10/2021 22:26 [DEBUG] Hiding Tracking UI", -- [25597]
+	"8/10/2021 22:26 [DEBUG] Clearing Instance Variables", -- [25598]
+	"8/10/2021 22:26 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1904: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [25599]
+	"8/10/2021 22:26 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1912: attempt to call method 'InstanceCleanup' (a nil value).", -- [25600]
+	"8/10/2021 22:26 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [25601]
+	"8/10/2021 22:26 [DEBUG] Clearing Instance Variables if exists", -- [25602]
+	"8/10/2021 22:26 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3771: attempt to call method 'clearVariables' (a nil value).", -- [25603]
+	"8/10/2021 22:26 [DEBUG] Clearing Instance Variables if exists", -- [25604]
+	"8/10/2021 22:26 [DEBUG] Clearing Instance Variables", -- [25605]
+	"8/10/2021 22:26 [DEBUG] Resetting Global Variables", -- [25606]
+	"8/10/2021 22:26 [DEBUG] InfoFrame does not need to be reset", -- [25607]
+	"8/10/2021 22:26 [DEBUG] Resetting PlayerRank", -- [25608]
+	"8/10/2021 22:26 [DEBUG] InfoFrame was not active", -- [25609]
+	"8/10/2021 22:30 [DEBUG] Hiding Tracking UI", -- [25610]
+	"8/10/2021 22:31 [DEBUG] Hiding Tracking UI", -- [25611]
+	"8/10/2021 22:31 [DEBUG] Hiding Tracking UI", -- [25612]
+	"8/10/2021 22:31 [DEBUG] Hiding Tracking UI", -- [25613]
+	"8/10/2021 22:33 [DEBUG] Hiding Tracking UI", -- [25614]
+	"8/10/2021 22:33 [DEBUG] Player has entered instance", -- [25615]
+	"8/10/2021 22:33 [DEBUG] 2285", -- [25616]
+	"8/10/2021 22:33 [DEBUG] Offical Instance Name: 2285 _2285", -- [25617]
+	"8/10/2021 22:33 [DEBUG] Expansion: 2", -- [25618]
+	"8/10/2021 22:33 [DEBUG] Instance Type: Dungeons", -- [25619]
+	"8/10/2021 22:33 [DEBUG] Instance: 2285", -- [25620]
+	"8/10/2021 22:33 [DEBUG] DifficultyID: 23", -- [25621]
+	"8/10/2021 22:33 [DEBUG] Expansion: 2", -- [25622]
+	"8/10/2021 22:33 [DEBUG] Instance Type: Dungeons", -- [25623]
+	"8/10/2021 22:33 [DEBUG] Instance: 2285", -- [25624]
+	"8/10/2021 22:33 [DEBUG] Asking user whether they want to track this instance", -- [25625]
+	"8/10/2021 22:33 [DEBUG] Displaying Tracking UI since it was already created", -- [25626]
+	"8/10/2021 22:33 [DEBUG] Player has entered instance", -- [25627]
+	"8/10/2021 22:33 [DEBUG] 2285", -- [25628]
+	"8/10/2021 22:33 [DEBUG] Offical Instance Name: 2285 _2285", -- [25629]
+	"8/10/2021 22:33 [DEBUG] Expansion: 2", -- [25630]
+	"8/10/2021 22:33 [DEBUG] Instance Type: Dungeons", -- [25631]
+	"8/10/2021 22:33 [DEBUG] Instance: 2285", -- [25632]
+	"8/10/2021 22:33 [DEBUG] DifficultyID: 23", -- [25633]
+	"8/10/2021 22:33 [DEBUG] Expansion: 2", -- [25634]
+	"8/10/2021 22:33 [DEBUG] Instance Type: Dungeons", -- [25635]
+	"8/10/2021 22:33 [DEBUG] Instance: 2285", -- [25636]
+	"8/10/2021 22:33 [DEBUG] No Achievements to track for this instance", -- [25637]
+	"8/10/2021 22:34 [DEBUG] Clearing Instance Variables", -- [25638]
+	"8/10/2021 22:34 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1904: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [25639]
+	"8/10/2021 22:34 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1912: attempt to call method 'InstanceCleanup' (a nil value).", -- [25640]
+	"8/10/2021 22:34 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [25641]
+	"8/10/2021 22:34 [DEBUG] Clearing Instance Variables if exists", -- [25642]
+	"8/10/2021 22:34 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3771: attempt to call method 'clearVariables' (a nil value).", -- [25643]
+	"8/10/2021 22:34 [DEBUG] Clearing Instance Variables if exists", -- [25644]
+	"8/10/2021 22:34 [DEBUG] Clearing Instance Variables", -- [25645]
+	"8/10/2021 22:34 [DEBUG] Resetting Global Variables", -- [25646]
+	"8/10/2021 22:34 [DEBUG] InfoFrame does not need to be reset", -- [25647]
+	"8/10/2021 22:34 [DEBUG] Resetting PlayerRank", -- [25648]
+	"8/10/2021 22:34 [DEBUG] InfoFrame was not active", -- [25649]
+	"8/10/2021 22:34 [DEBUG] 6", -- [25650]
+	"8/10/2021 22:34 [DEBUG] Hiding Tracking UI", -- [25651]
+	"8/10/2021 22:35 [DEBUG] Hiding Tracking UI", -- [25652]
+	"8/10/2021 22:35 [DEBUG] Player has entered instance", -- [25653]
+	"8/10/2021 22:35 [DEBUG] 2285", -- [25654]
+	"8/10/2021 22:35 [DEBUG] Offical Instance Name: 2285 _2285", -- [25655]
+	"8/10/2021 22:35 [DEBUG] Expansion: 2", -- [25656]
+	"8/10/2021 22:35 [DEBUG] Instance Type: Dungeons", -- [25657]
+	"8/10/2021 22:35 [DEBUG] Instance: 2285", -- [25658]
+	"8/10/2021 22:35 [DEBUG] DifficultyID: 23", -- [25659]
+	"8/10/2021 22:35 [DEBUG] Expansion: 2", -- [25660]
+	"8/10/2021 22:35 [DEBUG] Instance Type: Dungeons", -- [25661]
+	"8/10/2021 22:35 [DEBUG] Instance: 2285", -- [25662]
+	"8/10/2021 22:35 [DEBUG] Asking user whether they want to track this instance", -- [25663]
+	"8/10/2021 22:35 [DEBUG] Displaying Tracking UI since it was already created", -- [25664]
+	"8/10/2021 23:14 [DEBUG] Hiding Tracking UI", -- [25665]
+	"8/10/2021 23:14 [DEBUG] Clearing Instance Variables", -- [25666]
+	"8/10/2021 23:14 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1904: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [25667]
+	"8/10/2021 23:14 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1912: attempt to call method 'InstanceCleanup' (a nil value).", -- [25668]
+	"8/10/2021 23:14 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [25669]
+	"8/10/2021 23:14 [DEBUG] Clearing Instance Variables if exists", -- [25670]
+	"8/10/2021 23:14 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3771: attempt to call method 'clearVariables' (a nil value).", -- [25671]
+	"8/10/2021 23:14 [DEBUG] Clearing Instance Variables if exists", -- [25672]
+	"8/10/2021 23:14 [DEBUG] Clearing Instance Variables", -- [25673]
+	"8/10/2021 23:14 [DEBUG] Resetting Global Variables", -- [25674]
+	"8/10/2021 23:14 [DEBUG] InfoFrame does not need to be reset", -- [25675]
+	"8/10/2021 23:14 [DEBUG] Resetting PlayerRank", -- [25676]
+	"8/10/2021 23:14 [DEBUG] InfoFrame was not active", -- [25677]
+	"8/10/2021 23:17 [DEBUG] Hiding Tracking UI", -- [25678]
+	"8/10/2021 23:20 [DEBUG] Hiding Tracking UI", -- [25679]
+	"8/10/2021 23:25 [DEBUG] Hiding Tracking UI", -- [25680]
+	"8/10/2021 23:26 [DEBUG] Hiding Tracking UI", -- [25681]
+	"8/10/2021 23:28 [DEBUG] Hiding Tracking UI", -- [25682]
+	"8/10/2021 23:29 [DEBUG] Hiding Tracking UI", -- [25683]
+	"8/10/2021 23:46 [DEBUG] Hiding Tracking UI", -- [25684]
+	"8/10/2021 23:46 [DEBUG] Player has entered instance", -- [25685]
+	"8/10/2021 23:46 [DEBUG] 757", -- [25686]
+	"8/10/2021 23:46 [DEBUG] Offical Instance Name: 757 _757", -- [25687]
+	"8/10/2021 23:46 [DEBUG] DifficultyID: 4", -- [25688]
+	"8/10/2021 23:46 [DEBUG] Achievements cannot be earned for the following difficulty 4", -- [25689]
+	"8/10/2021 23:46 [DEBUG] Player has entered instance", -- [25690]
+	"8/10/2021 23:46 [DEBUG] 757", -- [25691]
+	"8/10/2021 23:46 [DEBUG] Offical Instance Name: 757 _757", -- [25692]
+	"8/10/2021 23:46 [DEBUG] DifficultyID: 4", -- [25693]
+	"8/10/2021 23:46 [DEBUG] Achievements cannot be earned for the following difficulty 4", -- [25694]
+	"8/10/2021 23:48 [DEBUG] Hiding Tracking UI", -- [25695]
+	"8/10/2021 23:48 [DEBUG] Hiding Tracking UI", -- [25696]
+	"8/10/2021 23:49 [DEBUG] Hiding Tracking UI", -- [25697]
+	"9/10/2021 0:2 [DEBUG] Hiding Tracking UI", -- [25698]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [25699]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.32.0", -- [25700]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [25701]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [25702]
+	"0/0/1999 -1:-1 [DEBUG] Only Tracking Missing Achievements Enabled", -- [25703]
+	"0/0/1999 -1:-1 [DEBUG] true", -- [25704]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [25705]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [25706]
+	"9/10/2021 15:26 [DEBUG] Showing Minimap Icon", -- [25707]
+	"9/10/2021 15:26 [DEBUG] NPC cache generated", -- [25708]
+	"9/10/2021 15:27 [DEBUG] Player has entered instance", -- [25709]
+	"9/10/2021 15:27 [DEBUG] 967", -- [25710]
+	"9/10/2021 15:27 [DEBUG] Offical Instance Name: 967 _967", -- [25711]
+	"9/10/2021 15:27 [DEBUG] Expansion: 7", -- [25712]
+	"9/10/2021 15:27 [DEBUG] Instance Type: Raids", -- [25713]
+	"9/10/2021 15:27 [DEBUG] Instance: 967", -- [25714]
+	"9/10/2021 15:27 [DEBUG] DifficultyID: 6", -- [25715]
+	"9/10/2021 15:27 [DEBUG] Expansion: 7", -- [25716]
+	"9/10/2021 15:27 [DEBUG] Instance Type: Raids", -- [25717]
+	"9/10/2021 15:27 [DEBUG] Instance: 967", -- [25718]
+	"9/10/2021 15:27 [DEBUG] Asking user whether they want to track this instance", -- [25719]
+	"9/10/2021 15:27 [DEBUG] Creating Tracking UI", -- [25720]
+	"9/10/2021 15:27 [DEBUG] InfoFrame Setup Complete", -- [25721]
+	"9/10/2021 15:28 [DEBUG] Player has entered instance", -- [25722]
+	"9/10/2021 15:28 [DEBUG] 967", -- [25723]
+	"9/10/2021 15:28 [DEBUG] Offical Instance Name: 967 _967", -- [25724]
+	"9/10/2021 15:28 [DEBUG] Expansion: 7", -- [25725]
+	"9/10/2021 15:28 [DEBUG] Instance Type: Raids", -- [25726]
+	"9/10/2021 15:28 [DEBUG] Instance: 967", -- [25727]
+	"9/10/2021 15:28 [DEBUG] DifficultyID: 6", -- [25728]
+	"9/10/2021 15:28 [DEBUG] Expansion: 7", -- [25729]
+	"9/10/2021 15:28 [DEBUG] Instance Type: Raids", -- [25730]
+	"9/10/2021 15:28 [DEBUG] Instance: 967", -- [25731]
+	"9/10/2021 15:28 [DEBUG] No Achievements to track for this instance", -- [25732]
+	"9/10/2021 15:34 [DEBUG] Clearing Instance Variables", -- [25733]
+	"9/10/2021 15:34 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1904: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [25734]
+	"9/10/2021 15:34 [DEBUG] Cleaning up instance events for _967", -- [25735]
+	"9/10/2021 15:34 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [25736]
+	"9/10/2021 15:34 [DEBUG] Clearing Instance Variables if exists", -- [25737]
+	"9/10/2021 15:34 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3771: attempt to call method 'clearVariables' (a nil value).", -- [25738]
+	"9/10/2021 15:34 [DEBUG] Clearing Instance Variables if exists", -- [25739]
+	"9/10/2021 15:34 [DEBUG] Clearing Instance Variables", -- [25740]
+	"9/10/2021 15:34 [DEBUG] Resetting Global Variables", -- [25741]
+	"9/10/2021 15:34 [DEBUG] InfoFrame does not need to be reset", -- [25742]
+	"9/10/2021 15:34 [DEBUG] Resetting PlayerRank", -- [25743]
+	"9/10/2021 15:34 [DEBUG] InfoFrame was not active", -- [25744]
+	"9/10/2021 15:34 [DEBUG] 6", -- [25745]
+	"9/10/2021 15:34 [DEBUG] Hiding Tracking UI", -- [25746]
+	"9/10/2021 15:35 [DEBUG] Hiding Tracking UI", -- [25747]
+	"9/10/2021 15:37 [DEBUG] Hiding Tracking UI", -- [25748]
+	"9/10/2021 15:40 [DEBUG] Hiding Tracking UI", -- [25749]
+	"9/10/2021 15:42 [DEBUG] Hiding Tracking UI", -- [25750]
+	"9/10/2021 15:42 [DEBUG] Hiding Tracking UI", -- [25751]
+	"9/10/2021 15:42 [DEBUG] Hiding Tracking UI", -- [25752]
+	"9/10/2021 15:44 [DEBUG] Hiding Tracking UI", -- [25753]
+	"9/10/2021 15:44 [DEBUG] Hiding Tracking UI", -- [25754]
+	"9/10/2021 15:45 [DEBUG] Hiding Tracking UI", -- [25755]
+	"9/10/2021 15:45 [DEBUG] Hiding Tracking UI", -- [25756]
+	"9/10/2021 15:45 [DEBUG] Hiding Tracking UI", -- [25757]
+	"9/10/2021 15:46 [DEBUG] Hiding Tracking UI", -- [25758]
+	"9/10/2021 15:50 [DEBUG] Hiding Tracking UI", -- [25759]
+	"9/10/2021 15:50 [DEBUG] Hiding Tracking UI", -- [25760]
+	"9/10/2021 15:51 [DEBUG] Hiding Tracking UI", -- [25761]
+	"9/10/2021 15:51 [DEBUG] Hiding Tracking UI", -- [25762]
+	"9/10/2021 15:51 [DEBUG] Hiding Tracking UI", -- [25763]
+	"9/10/2021 15:52 [DEBUG] Hiding Tracking UI", -- [25764]
+	"9/10/2021 15:54 [DEBUG] Hiding Tracking UI", -- [25765]
+	"9/10/2021 15:55 [DEBUG] Hiding Tracking UI", -- [25766]
+	"9/10/2021 15:59 [DEBUG] Hiding Tracking UI", -- [25767]
+	"9/10/2021 15:59 [DEBUG] Hiding Tracking UI", -- [25768]
+	"9/10/2021 16:0 [DEBUG] Hiding Tracking UI", -- [25769]
+	"9/10/2021 16:1 [DEBUG] Hiding Tracking UI", -- [25770]
+	"9/10/2021 16:1 [DEBUG] Player has entered instance", -- [25771]
+	"9/10/2021 16:1 [DEBUG] 967", -- [25772]
+	"9/10/2021 16:1 [DEBUG] Offical Instance Name: 967 _967", -- [25773]
+	"9/10/2021 16:1 [DEBUG] Expansion: 7", -- [25774]
+	"9/10/2021 16:1 [DEBUG] Instance Type: Raids", -- [25775]
+	"9/10/2021 16:1 [DEBUG] Instance: 967", -- [25776]
+	"9/10/2021 16:1 [DEBUG] DifficultyID: 6", -- [25777]
+	"9/10/2021 16:1 [DEBUG] Expansion: 7", -- [25778]
+	"9/10/2021 16:1 [DEBUG] Instance Type: Raids", -- [25779]
+	"9/10/2021 16:1 [DEBUG] Instance: 967", -- [25780]
+	"9/10/2021 16:1 [DEBUG] Asking user whether they want to track this instance", -- [25781]
+	"9/10/2021 16:1 [DEBUG] Displaying Tracking UI since it was already created", -- [25782]
+	"9/10/2021 16:32 [DEBUG] Hiding Tracking UI", -- [25783]
+	"9/10/2021 16:32 [DEBUG] Clearing Instance Variables", -- [25784]
+	"9/10/2021 16:32 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:1904: attempt to call method 'IATInstanceCleanup' (a nil value).", -- [25785]
+	"9/10/2021 16:32 [DEBUG] Cleaning up instance events for _967", -- [25786]
+	"9/10/2021 16:32 [DEBUG] Player has left instance. Unregestering events and resetting variables", -- [25787]
+	"9/10/2021 16:32 [DEBUG] Clearing Instance Variables if exists", -- [25788]
+	"9/10/2021 16:32 [DEBUG] Function failed, error text: ...nstanceAchievementTracker\\AchievementTrackerCore.lua:3771: attempt to call method 'clearVariables' (a nil value).", -- [25789]
+	"9/10/2021 16:32 [DEBUG] Clearing Instance Variables if exists", -- [25790]
+	"9/10/2021 16:32 [DEBUG] Clearing Instance Variables", -- [25791]
+	"9/10/2021 16:32 [DEBUG] Resetting Global Variables", -- [25792]
+	"9/10/2021 16:32 [DEBUG] InfoFrame does not need to be reset", -- [25793]
+	"9/10/2021 16:32 [DEBUG] Resetting PlayerRank", -- [25794]
+	"9/10/2021 16:32 [DEBUG] InfoFrame was not active", -- [25795]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [25796]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.32.0", -- [25797]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [25798]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [25799]
+	"0/0/1999 -1:-1 [DEBUG] Only Tracking Missing Achievements Enabled", -- [25800]
+	"0/0/1999 -1:-1 [DEBUG] true", -- [25801]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [25802]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [25803]
+	"9/10/2021 19:11 [DEBUG] Showing Minimap Icon", -- [25804]
+	"9/10/2021 19:11 [DEBUG] NPC cache generated", -- [25805]
+	"9/10/2021 19:12 [DEBUG] Player has entered instance", -- [25806]
+	"9/10/2021 19:12 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25807]
+	"9/10/2021 19:12 [DEBUG] Player has entered instance", -- [25808]
+	"9/10/2021 19:12 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25809]
+	"9/10/2021 19:12 [DEBUG] Player has entered instance", -- [25810]
+	"9/10/2021 19:12 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25811]
+	"9/10/2021 19:12 [DEBUG] Player has entered instance", -- [25812]
+	"9/10/2021 19:12 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25813]
+	"9/10/2021 19:12 [DEBUG] Player has entered instance", -- [25814]
+	"9/10/2021 19:12 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25815]
+	"9/10/2021 19:12 [DEBUG] Player has entered instance", -- [25816]
+	"9/10/2021 19:12 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25817]
+	"9/10/2021 19:12 [DEBUG] Player has entered instance", -- [25818]
+	"9/10/2021 19:12 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25819]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25820]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25821]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25822]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25823]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25824]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25825]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25826]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25827]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25828]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25829]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25830]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25831]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25832]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25833]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25834]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25835]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25836]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25837]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25838]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25839]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25840]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25841]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25842]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25843]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25844]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25845]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25846]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25847]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25848]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25849]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25850]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25851]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25852]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25853]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25854]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25855]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25856]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25857]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25858]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25859]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25860]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25861]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25862]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25863]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25864]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25865]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25866]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25867]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25868]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25869]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25870]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25871]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25872]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25873]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25874]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25875]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25876]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25877]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25878]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25879]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25880]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25881]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25882]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25883]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25884]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25885]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25886]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25887]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25888]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25889]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25890]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25891]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25892]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25893]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25894]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25895]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25896]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25897]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25898]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25899]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25900]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25901]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25902]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25903]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25904]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25905]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25906]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25907]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25908]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25909]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25910]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25911]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25912]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25913]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25914]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25915]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25916]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25917]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25918]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25919]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25920]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25921]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25922]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25923]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25924]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25925]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25926]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25927]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25928]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25929]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25930]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25931]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25932]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25933]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25934]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25935]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25936]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25937]
+	"9/10/2021 19:13 [DEBUG] Player has entered instance", -- [25938]
+	"9/10/2021 19:13 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25939]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [25940]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25941]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [25942]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25943]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [25944]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25945]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [25946]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25947]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [25948]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25949]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [25950]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25951]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [25952]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25953]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [25954]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25955]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [25956]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25957]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [25958]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25959]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [25960]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25961]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [25962]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25963]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [25964]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25965]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [25966]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25967]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [25968]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25969]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [25970]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25971]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [25972]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25973]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [25974]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25975]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [25976]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25977]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [25978]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25979]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [25980]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25981]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [25982]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25983]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [25984]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25985]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [25986]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25987]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [25988]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25989]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [25990]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25991]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [25992]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25993]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [25994]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25995]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [25996]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25997]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [25998]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [25999]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [26000]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26001]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [26002]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26003]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [26004]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26005]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [26006]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26007]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [26008]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26009]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [26010]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26011]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [26012]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26013]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [26014]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26015]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [26016]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26017]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [26018]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26019]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [26020]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26021]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [26022]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26023]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [26024]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26025]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [26026]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26027]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [26028]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26029]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [26030]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26031]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [26032]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26033]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [26034]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26035]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [26036]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26037]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [26038]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26039]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [26040]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26041]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [26042]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26043]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [26044]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26045]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [26046]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26047]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [26048]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26049]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [26050]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26051]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [26052]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26053]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [26054]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26055]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [26056]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26057]
+	"9/10/2021 19:14 [DEBUG] Player has entered instance", -- [26058]
+	"9/10/2021 19:14 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26059]
+	"9/10/2021 19:15 [DEBUG] Player has entered instance", -- [26060]
+	"9/10/2021 19:15 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26061]
+	"9/10/2021 19:15 [DEBUG] Player has entered instance", -- [26062]
+	"9/10/2021 19:15 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26063]
+	"9/10/2021 19:15 [DEBUG] Player has entered instance", -- [26064]
+	"9/10/2021 19:15 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26065]
+	"9/10/2021 19:15 [DEBUG] Player has entered instance", -- [26066]
+	"9/10/2021 19:15 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26067]
+	"9/10/2021 19:15 [DEBUG] Player has entered instance", -- [26068]
+	"9/10/2021 19:15 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26069]
+	"9/10/2021 19:15 [DEBUG] Player has entered instance", -- [26070]
+	"9/10/2021 19:15 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26071]
+	"9/10/2021 19:15 [DEBUG] Player has entered instance", -- [26072]
+	"9/10/2021 19:15 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26073]
+	"9/10/2021 19:15 [DEBUG] Player has entered instance", -- [26074]
+	"9/10/2021 19:15 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26075]
+	"9/10/2021 19:15 [DEBUG] Player has entered instance", -- [26076]
+	"9/10/2021 19:15 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26077]
+	"9/10/2021 19:15 [DEBUG] Player has entered instance", -- [26078]
+	"9/10/2021 19:15 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26079]
+	"9/10/2021 19:15 [DEBUG] Player has entered instance", -- [26080]
+	"9/10/2021 19:15 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26081]
+	"9/10/2021 19:15 [DEBUG] Player has entered instance", -- [26082]
+	"9/10/2021 19:15 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26083]
+	"9/10/2021 19:15 [DEBUG] Player has entered instance", -- [26084]
+	"9/10/2021 19:15 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26085]
+	"9/10/2021 19:15 [DEBUG] Player has entered instance", -- [26086]
+	"9/10/2021 19:15 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26087]
+	"9/10/2021 19:15 [DEBUG] Player has entered instance", -- [26088]
+	"9/10/2021 19:15 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26089]
+	"9/10/2021 19:15 [DEBUG] Player has entered instance", -- [26090]
+	"9/10/2021 19:15 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26091]
+	"9/10/2021 19:15 [DEBUG] Player has entered instance", -- [26092]
+	"9/10/2021 19:15 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26093]
+	"9/10/2021 19:15 [DEBUG] Player has entered instance", -- [26094]
+	"9/10/2021 19:15 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26095]
+	"9/10/2021 19:15 [DEBUG] Player has entered instance", -- [26096]
+	"9/10/2021 19:15 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26097]
+	"9/10/2021 19:15 [DEBUG] Player has entered instance", -- [26098]
+	"9/10/2021 19:15 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26099]
+	"9/10/2021 19:15 [DEBUG] Player has entered instance", -- [26100]
+	"9/10/2021 19:15 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26101]
+	"9/10/2021 19:15 [DEBUG] Player has entered instance", -- [26102]
+	"9/10/2021 19:15 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26103]
+	"9/10/2021 19:15 [DEBUG] Player has entered instance", -- [26104]
+	"9/10/2021 19:15 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26105]
+	"9/10/2021 19:15 [DEBUG] Player has entered instance", -- [26106]
+	"9/10/2021 19:15 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26107]
+	"9/10/2021 19:15 [DEBUG] Player has entered instance", -- [26108]
+	"9/10/2021 19:15 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26109]
+	"9/10/2021 19:15 [DEBUG] Player has entered instance", -- [26110]
+	"9/10/2021 19:15 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26111]
+	"9/10/2021 19:15 [DEBUG] Player has entered instance", -- [26112]
+	"9/10/2021 19:15 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26113]
+	"9/10/2021 19:15 [DEBUG] Player has entered instance", -- [26114]
+	"9/10/2021 19:15 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26115]
+	"9/10/2021 19:15 [DEBUG] Player has entered instance", -- [26116]
+	"9/10/2021 19:15 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26117]
+	"9/10/2021 19:15 [DEBUG] Player has entered instance", -- [26118]
+	"9/10/2021 19:15 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26119]
+	"9/10/2021 19:15 [DEBUG] Player has entered instance", -- [26120]
+	"9/10/2021 19:15 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26121]
+	"9/10/2021 19:15 [DEBUG] Player has entered instance", -- [26122]
+	"9/10/2021 19:15 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26123]
+	"9/10/2021 19:15 [DEBUG] Player has entered instance", -- [26124]
+	"9/10/2021 19:15 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26125]
+	"9/10/2021 19:15 [DEBUG] Player has entered instance", -- [26126]
+	"9/10/2021 19:15 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26127]
+	"9/10/2021 19:15 [DEBUG] Player has entered instance", -- [26128]
+	"9/10/2021 19:15 [DEBUG] Unable to fetch DifficultyID for current instance. Waiting 2 seconds then trying again", -- [26129]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [26130]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.32.0", -- [26131]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [26132]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [26133]
+	"0/0/1999 -1:-1 [DEBUG] Only Tracking Missing Achievements Enabled", -- [26134]
+	"0/0/1999 -1:-1 [DEBUG] true", -- [26135]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [26136]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [26137]
+	"9/10/2021 20:59 [DEBUG] Showing Minimap Icon", -- [26138]
+	"9/10/2021 20:59 [DEBUG] NPC cache generated", -- [26139]
+	"9/10/2021 21:35 [DEBUG] ---IAT Runtime---", -- [26140]
+	"9/10/2021 21:35 [DEBUG] Version: 3.32.0", -- [26141]
+	"9/10/2021 21:35 [DEBUG] Attempting to load from local NPC Cache", -- [26142]
+	"9/10/2021 21:35 [DEBUG] Generating NPC Cache...", -- [26143]
+	"9/10/2021 21:35 [DEBUG] Only Tracking Missing Achievements Enabled", -- [26144]
+	"9/10/2021 21:35 [DEBUG] true", -- [26145]
+	"9/10/2021 21:35 [DEBUG] Enabling Addon", -- [26146]
+	"9/10/2021 21:35 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [26147]
+	"9/10/2021 21:35 [DEBUG] Showing Minimap Icon", -- [26148]
+	"9/10/2021 21:35 [DEBUG] NPC cache generated", -- [26149]
+	"0/0/1999 -1:-1 [DEBUG] ---IAT Runtime---", -- [26150]
+	"0/0/1999 -1:-1 [DEBUG] Version: 3.32.0", -- [26151]
+	"0/0/1999 -1:-1 [DEBUG] Attempting to load from local NPC Cache", -- [26152]
+	"0/0/1999 -1:-1 [DEBUG] Generating NPC Cache...", -- [26153]
+	"0/0/1999 -1:-1 [DEBUG] Only Tracking Missing Achievements Enabled", -- [26154]
+	"0/0/1999 -1:-1 [DEBUG] true", -- [26155]
+	"0/0/1999 -1:-1 [DEBUG] Enabling Addon", -- [26156]
+	"0/0/1999 -1:-1 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [26157]
+	"10/10/2021 13:38 [DEBUG] Showing Minimap Icon", -- [26158]
+	"10/10/2021 13:38 [DEBUG] NPC cache generated", -- [26159]
+	"10/10/2021 13:45 [DEBUG] ---IAT Runtime---", -- [26160]
+	"10/10/2021 13:45 [DEBUG] Version: 3.32.0", -- [26161]
+	"10/10/2021 13:45 [DEBUG] Attempting to load from local NPC Cache", -- [26162]
+	"10/10/2021 13:45 [DEBUG] Generating NPC Cache...", -- [26163]
+	"10/10/2021 13:45 [DEBUG] Only Tracking Missing Achievements Enabled", -- [26164]
+	"10/10/2021 13:45 [DEBUG] true", -- [26165]
+	"10/10/2021 13:45 [DEBUG] Enabling Addon", -- [26166]
+	"10/10/2021 13:45 [DEBUG] Registering CHAT_MSG_ADDON prefix", -- [26167]
+	"10/10/2021 13:45 [DEBUG] Showing Minimap Icon", -- [26168]
+	"10/10/2021 13:45 [DEBUG] NPC cache generated", -- [26169]
 }
 AchievementTrackerNPCCache = {
 	[75829] = "Nhallish",
@@ -25201,275 +26526,275 @@ AchievementTrackerNPCCache = {
 	[33686] = "Lore Keeper of Norgannon",
 	[73638] = "Tears of the Vale",
 	[39984] = "Malignant Trogg",
-	[127503] = "Overseer Korgus",
-	[131853] = "Huntmaster Grath",
+	[52405] = "Mor'Lek the Dismantler",
+	[146107] = "Living Bomb",
 	[32919] = "Storm Lasher",
-	[107699] = "Spellblade Aluriel",
-	[145903] = "Darkforged Crusader",
-	[108600] = "Sister of the Moon",
 	[153415] = "Sha of Violence",
+	[149995] = "High Priestess Azil",
 	[178095] = "Eye of the Jailer",
+	[108996] = "Specter of Vengeance",
+	[135129] = "Projection of Yogg-Saron",
 	[70250] = "Frozen Head",
-	[55308] = "Warlord Zon'ozz",
+	[111864] = "Sticky",
 	[135513] = "Ancient Tome",
 	[177584] = "Burning Gibbet",
 	[71529] = "Thok the Bloodthirsty",
 	[60913] = "Energy Charge",
-	[74570] = "Ruination",
+	[155144] = "Abyssal Commander Sivara",
 	[155245] = "Depth Skulker",
 	[90199] = "Gorefiend",
-	[53694] = "Riplimb",
+	[155243] = "Scavenging Crab",
 	[115902] = "Razorjaw Waverunner",
-	[161375] = "Promising Specimen",
-	[53695] = "Rageface",
+	[51405] = "Angered Earth",
+	[155056] = "Robo-Waste",
 	[138967] = "Zul",
-	[32927] = "Runemaster Molgeim",
+	[86250] = "Kyrak",
 	[155760] = "Tank Buster MK2",
 	[70251] = "Venomous Head",
 	[105097] = "Glow Bug",
-	[144246] = "K.U.-J.0.",
+	[158190] = "Medivh",
 	[71466] = "Iron Juggernaut",
-	[114895] = "Nightbane",
-	[98696] = "Illysanna Ravencrest",
-	[104217] = "Talixae Flamewreath",
+	[149043] = "Heavy Barrel",
+	[114462] = "The Curator",
+	[162933] = "Thought Harvester",
 	[78736] = "Warlord Zaela",
 	[156575] = "Dark Inquisitor Xanesh",
 	[41440] = "Aberration",
-	[77814] = "Teron'gor",
+	[118924] = "Engine of Souls",
 	[68905] = "Lu'lin",
 	[99663] = "Frustrated Soul",
 	[87451] = "Fleshrender Nok'gar",
 	[39665] = "Rom'ogg Bonecrusher",
-	[101823] = "Mushroom Merchant",
+	[165408] = "Halkias",
 	[70252] = "Arcane Head",
 	[144596] = "Chest o' Booty",
-	[94996] = "Fragment of the Crone",
 	[72490] = "Overseer Mojka",
+	[139737] = "Lord Stormsong",
 	[61884] = "Xin the Weaponmaster",
-	[166246] = "Buttons",
+	[164501] = "Mistcaller",
 	[59822] = "Auntie Stormstout",
 	[162102] = "Grand Proctor Beryllia",
 	[78948] = "Tectus",
-	[150081] = "Wise Mari",
-	[180658] = "Focusing Prism",
+	[56897] = "Raigonn",
 	[71979] = "Kor'kron Warbringer",
+	[180658] = "Focusing Prism",
 	[49864] = "Twilight Fiend",
-	[56843] = "Lorewalker Stonestep",
+	[58605] = "Scarlet Judicator",
 	[67266] = "Rak'gor Bloodrazor",
 	[155595] = "Sacred Gear",
 	[99664] = "Restless Soul",
 	[64346] = "Parasitoid Sha",
 	[152910] = "Queen Azshara",
 	[34564] = "Anub'arak",
-	[102169] = "Black Bile",
+	[171474] = "Finger Food",
 	[135903] = "Manifestation of the Deep",
-	[45992] = "Valiona",
+	[160271] = "Forbidden Manifestation",
 	[68655] = "Mr. Bigglesworth",
 	[32857] = "Stormcaller Brundir",
-	[61431] = "Glintrok Scout",
+	[172386] = "Anima Conduit",
 	[91349] = "Mannoroth",
-	[172093] = "Hearty Haunch",
+	[69820] = "Son of Animus",
 	[50376] = "Angered Earth",
 	[15687] = "Moroes",
 	[73195] = "Kor'kron Jailer",
 	[136160] = "King Dazar",
 	[33113] = "Flame Leviathan",
-	[59080] = "Darkmaster Gandling",
+	[69181] = "Saurid",
 	[68336] = "Garrosh Hellscream",
 	[138718] = "Sharkbait's Empty Dish",
 	[33241] = "Freya",
-	[67231] = "Trial of the King",
+	[59789] = "Thalnos the Soulrender",
 	[67569] = "Elder Adler",
-	[132609] = "The Hivemind",
+	[169594] = "Filled Anima Container",
 	[172094] = "Dissectible Dessert",
 	[56930] = "Krik'thik Swarm Bringer",
 	[67966] = "Whirl Turtle",
 	[138719] = "Serve Sharkbait's Meal",
 	[103758] = "Star Augur Etraeus",
-	[40634] = "Naz'jar Tempest Witch",
+	[64556] = "Captain Ook",
 	[61709] = "Spawn of Anger",
-	[171456] = "Shattered Devastator",
+	[61213] = "Krik'thik Conscript",
 	[164934] = "Manastorm",
-	[53258] = "Lord Rhyolith",
+	[93145] = "Soul of the Crone",
 	[74475] = "Magmolatus",
 	[126712] = "Training Dummy",
-	[62465] = "Captain Ook",
+	[61442] = "Kuai the Brute",
 	[26627] = "Crystal Handler",
-	[93145] = "Soul of the Crone",
+	[23574] = "Akil'zon",
 	[39987] = "Evolved Twilight Zealot",
 	[116802] = "Rodent of Usual Size",
 	[108682] = "Amber Drake",
 	[83775] = "Ogron Laborer",
-	[105301] = "Expedient Elemental",
-	[141805] = "Threshanator 3000",
-	[36330] = "Lord Godfrey",
+	[169554] = "Disused Anima Container",
+	[91938] = "Haunting Soul",
+	[43468] = "Lady Naz'jar",
 	[164967] = "Doctor Ickus",
 	[172992] = "Overgrown Hydra",
 	[94808] = "Hellfire Guardian",
 	[29023] = "Jan'alai",
 	[175422] = "Coalesced Anima",
-	[178783] = "Moriaz the Red",
+	[165512] = "Cocoon of Lakali",
 	[153172] = "Stolen Scrapbot",
 	[109450] = "Saronite Vapors",
 	[67571] = "Millhouse Manastorm",
-	[56637] = "Ook-Ook",
+	[155242] = "Abyssal Clam",
 	[141792] = "Liz Vilepot",
 	[115844] = "Goroth",
 	[36535] = "Corrupted Soul Fragment",
 	[105742] = "Turbax",
-	[164218] = "Lord Chamberlain",
-	[34035] = "Feral Defender",
+	[88334] = "Croman",
+	[33768] = "Rubble",
 	[27654] = "Drakos the Interrogator",
 	[122366] = "Varimathras",
-	[172995] = "Hydra Seed",
 	[165066] = "Huntsman Altimor",
+	[80551] = "Shard of Tectus",
 	[153941] = "Zoatroid",
-	[102423] = "Mug of Mead",
-	[104528] = "High Botanist Tel'arn",
+	[147430] = "Virmen",
+	[111941] = "Hodir",
 	[36855] = "Lady Deathwhisper",
-	[44530] = "Naz'jar Honor Guard",
+	[104341] = "Torment",
 	[174018] = "Volatile Plague Bomb",
 	[100436] = "Illysanna Ravencrest",
-	[29305] = "Moorabi",
 	[61567] = "Vizier Jin'bak",
+	[129208] = "Dread Captain Lockwood",
 	[105743] = "Whipsnap",
-	[32273] = "Infinite Corruptor",
-	[59779] = "Thunderpaw Guardian",
-	[33552] = "Yogg-Saron",
+	[166266] = "Spare Parts",
+	[72436] = "Immerseus",
+	[33202] = "Ancient Water Spirit",
 	[52414] = "Tor-Tun",
 	[95833] = "Hyrja",
 	[156884] = "Essence of Vita",
 	[77927] = "Son of the Beast",
 	[69427] = "Dark Animus",
-	[52422] = "Kaulema the Mover",
+	[63091] = "Jade Quilen",
 	[164557] = "Shard of Halkias",
-	[52438] = "Mortaxx",
-	[170851] = "Volatile Plague Bomb",
+	[110758] = "High Inquisitor Whitemane",
+	[105744] = "Blaze",
 	[64061] = "Mogu'shan Warden",
 	[119938] = "Reanimated Templar",
-	[28514] = "Nalorakk",
-	[105744] = "Blaze",
 	[146016] = "Leeroy Jenkins",
-	[52392] = "Gurubashi Master Chef",
+	[111882] = "Sparky",
+	[52936] = "Druid of the Flame",
+	[76585] = "Ragewing the Untamed",
 	[115143] = "Snaplasher",
 	[76283] = "Malefic Defender",
-	[164363] = "Undying Stonefiend",
-	[33134] = "Sara",
+	[72496] = "Overseer Thathung",
+	[55419] = "Captain Varo'then",
+	[81834] = "Priceless Paraphernalia",
 	[90018] = "Hellfire Cannon",
-	[173770] = "Blazing Brazier",
 	[129440] = "Harlan Sweete",
 	[26628] = "Drakkari Scytheclaw",
-	[154074] = "Void Orb",
+	[136683] = "Trade Prince Gallywix",
 	[55334] = "Void of the Unmaking",
 	[59458] = "Hopling",
 	[110732] = "Creature of Madness",
-	[173767] = "Embered Brazier",
-	[136683] = "Trade Prince Gallywix",
-	[142949] = "Theramore Citizen",
 	[38135] = "Deformed Fanatic",
-	[67779] = "Mature Saurok Egg",
+	[154074] = "Void Orb",
+	[142949] = "Theramore Citizen",
+	[173767] = "Embered Brazier",
+	[53494] = "Baleroc",
 	[73265] = "Corrupted Amalgamation",
-	[154741] = "Squirt Bot",
-	[150995] = "Mimiron",
+	[52440] = "Gub",
+	[71984] = "Siege Engineer",
 	[129722] = "Mote of Titanic Power",
 	[58787] = "Big Bessa",
 	[33244] = "Mimiron",
 	[173768] = "Fiery Brazier",
-	[122135] = "Shatug",
+	[71603] = "Sha Puddle",
 	[69086] = "Flaming Head",
-	[34826] = "Mistress of Pain",
+	[55312] = "Yor'sahj the Unsleeping",
 	[165073] = "Forlorn Captive",
 	[33136] = "Guardian of Yogg-Saron",
 	[141800] = "Brutik Blackanvil",
-	[55312] = "Yor'sahj the Unsleeping",
+	[34826] = "Mistress of Pain",
 	[173769] = "Smoldering Brazier",
-	[71603] = "Sha Puddle",
-	[71984] = "Siege Engineer",
-	[52440] = "Gub",
-	[53494] = "Baleroc",
+	[122135] = "Shatug",
+	[150995] = "Mimiron",
+	[154741] = "Squirt Bot",
+	[67779] = "Mature Saurok Egg",
 	[158041] = "N'Zoth the Corruptor",
 	[176583] = "Energy Core",
 	[105299] = "Recursive Elemental",
-	[81834] = "Priceless Paraphernalia",
+	[173770] = "Blazing Brazier",
 	[68599] = "Ferra Pearl",
-	[55419] = "Captain Varo'then",
-	[72496] = "Overseer Thathung",
+	[33134] = "Sara",
+	[164363] = "Undying Stonefiend",
 	[50284] = "Twilight Zealot",
-	[76585] = "Ragewing the Untamed",
-	[52936] = "Druid of the Flame",
-	[111882] = "Sparky",
-	[110758] = "High Inquisitor Whitemane",
-	[63091] = "Jade Quilen",
+	[52392] = "Gurubashi Master Chef",
+	[28514] = "Nalorakk",
+	[170851] = "Volatile Plague Bomb",
+	[52438] = "Mortaxx",
+	[52422] = "Kaulema the Mover",
 	[84520] = "Pitwarden Gwarnok",
 	[49485] = "Aberration",
-	[33202] = "Ancient Water Spirit",
-	[72436] = "Immerseus",
-	[166266] = "Spare Parts",
-	[129208] = "Dread Captain Lockwood",
-	[104341] = "Torment",
-	[111941] = "Hodir",
-	[147430] = "Virmen",
-	[80551] = "Shard of Tectus",
+	[33552] = "Yogg-Saron",
+	[59779] = "Thunderpaw Guardian",
+	[32273] = "Infinite Corruptor",
+	[29305] = "Moorabi",
+	[44530] = "Naz'jar Honor Guard",
+	[104528] = "High Botanist Tel'arn",
+	[102423] = "Mug of Mead",
+	[172995] = "Hydra Seed",
 	[131318] = "Elder Leaxa",
-	[33768] = "Rubble",
-	[88334] = "Croman",
+	[34035] = "Feral Defender",
+	[164218] = "Lord Chamberlain",
 	[71983] = "Farseer Wolf Rider",
 	[78121] = "Gorian Warmage",
-	[155242] = "Abyssal Clam",
-	[165512] = "Cocoon of Lakali",
+	[56637] = "Ook-Ook",
+	[178783] = "Moriaz the Red",
 	[101976] = "Millificent Manastorm",
 	[80557] = "Mote of Tectus",
-	[43468] = "Lady Naz'jar",
-	[91938] = "Haunting Soul",
-	[169554] = "Disused Anima Container",
+	[36330] = "Lord Godfrey",
+	[141805] = "Threshanator 3000",
+	[105301] = "Expedient Elemental",
 	[64479] = "Gatecrusher",
-	[61442] = "Kuai the Brute",
-	[23574] = "Akil'zon",
-	[61213] = "Krik'thik Conscript",
+	[62465] = "Captain Ook",
+	[53258] = "Lord Rhyolith",
+	[171456] = "Shattered Devastator",
 	[38009] = "Reanimated Fanatic",
-	[64556] = "Captain Ook",
+	[40634] = "Naz'jar Tempest Witch",
 	[145898] = "Anointed Disciple",
-	[169594] = "Filled Anima Container",
-	[59789] = "Thalnos the Soulrender",
-	[69181] = "Saurid",
-	[69820] = "Son of Animus",
+	[132609] = "The Hivemind",
+	[67231] = "Trial of the King",
+	[59080] = "Darkmaster Gandling",
+	[172093] = "Hearty Haunch",
 	[33118] = "Ignis the Furnace Master",
-	[172386] = "Anima Conduit",
-	[160271] = "Forbidden Manifestation",
-	[171474] = "Finger Food",
+	[61431] = "Glintrok Scout",
+	[45992] = "Valiona",
+	[102169] = "Black Bile",
 	[178763] = "Buttons",
 	[148201] = "Crawler Mine",
 	[96223] = "Gamon",
-	[58605] = "Scarlet Judicator",
+	[56843] = "Lorewalker Stonestep",
 	[151654] = "Deuce Mecha-Buffer",
-	[56897] = "Raigonn",
+	[150081] = "Wise Mari",
 	[137588] = "Gasping Flounder",
 	[124164] = "Torment of Golganneth",
-	[164501] = "Mistcaller",
-	[139737] = "Lord Stormsong",
-	[165408] = "Halkias",
+	[166246] = "Buttons",
+	[94996] = "Fragment of the Crone",
+	[101823] = "Mushroom Merchant",
 	[99868] = "Fenryr",
 	[45906] = "Camel",
-	[118924] = "Engine of Souls",
+	[77814] = "Teron'gor",
 	[65407] = "Shado-Pan Novice",
 	[138740] = "Musashitake",
 	[127809] = "Reorigination Module",
-	[162933] = "Thought Harvester",
-	[114462] = "The Curator",
-	[149043] = "Heavy Barrel",
-	[158190] = "Medivh",
+	[104217] = "Talixae Flamewreath",
+	[98696] = "Illysanna Ravencrest",
+	[114895] = "Nightbane",
+	[144246] = "K.U.-J.0.",
 	[38010] = "Reanimated Adherent",
-	[86250] = "Kyrak",
-	[155056] = "Robo-Waste",
-	[51405] = "Angered Earth",
-	[155243] = "Scavenging Crab",
+	[32927] = "Runemaster Molgeim",
+	[53695] = "Rageface",
+	[161375] = "Promising Specimen",
+	[53694] = "Riplimb",
 	[61699] = "Sik'thik Amberwing",
-	[155144] = "Abyssal Commander Sivara",
+	[74570] = "Ruination",
 	[171094] = "Grisly Curio",
-	[111864] = "Sticky",
-	[135129] = "Projection of Yogg-Saron",
-	[149995] = "High Priestess Azil",
-	[108996] = "Specter of Vengeance",
-	[146107] = "Living Bomb",
-	[52405] = "Mor'Lek the Dismantler",
+	[55308] = "Warlord Zon'ozz",
+	[108600] = "Sister of the Moon",
+	[145903] = "Darkforged Crusader",
+	[107699] = "Spellblade Aluriel",
+	[131853] = "Huntmaster Grath",
+	[127503] = "Overseer Korgus",
 }

@@ -1,5 +1,5 @@
 --
--- RaiderIO Client Data. Generated on 2021-09-24T18:16:48Z
+-- RaiderIO Client Data. Generated on 2021-10-10T23:11:11Z
 --
 local _, ns = ...
 ns.GUILD_BEST_DATA = {
@@ -11,242 +11,344 @@ ns.GUILD_BEST_DATA = {
     },
     ["season_best"] = {
       [1] = {
-        ["zone_id"] = 13334,
-        ["level"] = 17,
-        ["upgrades"] = 0,
-        ["fraction"] = 1.0441604909275353,
-        ["clear_time"] = "00:31:20.532",
+        ["zone_id"] = 12841,
+        ["level"] = 21,
+        ["upgrades"] = 1,
+        ["fraction"] = 0.9664874907880275,
+        ["clear_time"] = "00:36:44.557",
         ["party"] = {
           [1] = {
-            ["name"] = "Achilless",
+            ["name"] = "Elunegirl",
             ["role"] = "tank",
-            ["class_id"] = 12
+            ["class_id"] = 11
           },
           [2] = {
-            ["name"] = "Jizas",
+            ["name"] = "Mastérchéf",
             ["role"] = "healer",
             ["class_id"] = 7
           },
           [3] = {
-            ["name"] = "Acewar",
-            ["role"] = "dps",
-            ["class_id"] = 10
-          },
-          [4] = {
-            ["name"] = "Anamarria",
-            ["role"] = "dps",
-            ["class_id"] = 8
-          },
-          [5] = {
-            ["name"] = "Eferalgan",
+            ["name"] = "Achilless",
             ["role"] = "dps",
             ["class_id"] = 12
+          },
+          [4] = {
+            ["name"] = "Ombládon",
+            ["role"] = "dps",
+            ["class_id"] = 4
+          },
+          [5] = {
+            ["name"] = "Выйдии",
+            ["role"] = "dps",
+            ["class_id"] = 5
           }
         }
       },
       [2] = {
-        ["zone_id"] = 12837,
-        ["level"] = 17,
-        ["upgrades"] = 0,
-        ["fraction"] = 1.0650752093443867,
-        ["clear_time"] = "00:41:33.340",
+        ["zone_id"] = 12916,
+        ["level"] = 20,
+        ["upgrades"] = 1,
+        ["fraction"] = 0.8828421484692959,
+        ["clear_time"] = "00:31:47.821",
         ["party"] = {
           [1] = {
-            ["name"] = "Littlewhat",
+            ["name"] = "Ouboar",
             ["role"] = "tank",
-            ["class_id"] = 1
-          },
-          [2] = {
-            ["name"] = "Meøw",
-            ["role"] = "healer",
             ["class_id"] = 11
           },
+          [2] = {
+            ["name"] = "Mastérchéf",
+            ["role"] = "healer",
+            ["class_id"] = 7
+          },
           [3] = {
-            ["name"] = "Lâciä",
+            ["name"] = "Achilless",
             ["role"] = "dps",
-            ["class_id"] = 10
+            ["class_id"] = 12
           },
           [4] = {
-            ["name"] = "Szabone",
+            ["name"] = "Boromirr",
             ["role"] = "dps",
-            ["class_id"] = 8
+            ["class_id"] = 1
           },
           [5] = {
-            ["name"] = "Морталайс",
+            ["name"] = "Телькул",
             ["role"] = "dps",
-            ["class_id"] = 3
+            ["class_id"] = 4
           }
         }
       },
       [3] = {
-        ["zone_id"] = 12831,
-        ["level"] = 17,
-        ["upgrades"] = 0,
-        ["fraction"] = 1.2225565968540326,
-        ["clear_time"] = "00:39:08.530",
+        ["zone_id"] = 12837,
+        ["level"] = 20,
+        ["upgrades"] = 1,
+        ["fraction"] = 0.8915949985454927,
+        ["clear_time"] = "00:34:47.223",
         ["party"] = {
           [1] = {
-            ["name"] = "Eferalgan",
+            ["name"] = "Dimms",
             ["role"] = "tank",
-            ["class_id"] = 12
+            ["class_id"] = 10
           },
           [2] = {
-            ["name"] = "Leshinata",
+            ["name"] = "Cricket",
             ["role"] = "healer",
-            ["class_id"] = 10
+            ["class_id"] = 7
           },
           [3] = {
-            ["name"] = "Acewar",
+            ["name"] = "Achilless",
             ["role"] = "dps",
-            ["class_id"] = 10
+            ["class_id"] = 12
           },
           [4] = {
-            ["name"] = "Babarici",
+            ["name"] = "Bodytackle",
             ["role"] = "dps",
-            ["class_id"] = 3
+            ["class_id"] = 6
           },
           [5] = {
-            ["name"] = "Numên",
+            ["name"] = "Khearon",
             ["role"] = "dps",
-            ["class_id"] = 9
+            ["class_id"] = 3
           }
         }
       },
       [4] = {
-        ["zone_id"] = 12842,
-        ["level"] = 16,
+        ["zone_id"] = 12916,
+        ["level"] = 20,
         ["upgrades"] = 1,
-        ["fraction"] = 0.8935245402375215,
-        ["clear_time"] = "00:36:38.963",
+        ["fraction"] = 0.8933317414769744,
+        ["clear_time"] = "00:32:10.489",
         ["party"] = {
           [1] = {
-            ["name"] = "Achilless",
+            ["name"] = "Джиммиджи",
             ["role"] = "tank",
-            ["class_id"] = 12
+            ["class_id"] = 2
           },
           [2] = {
-            ["name"] = "Sokká",
+            ["name"] = "Амелисента",
             ["role"] = "healer",
-            ["class_id"] = 10
+            ["class_id"] = 2
           },
           [3] = {
-            ["name"] = "Brankcial",
+            ["name"] = "Achilless",
             ["role"] = "dps",
             ["class_id"] = 12
           },
           [4] = {
-            ["name"] = "Giambax",
+            ["name"] = "Rashiya",
             ["role"] = "dps",
-            ["class_id"] = 9
+            ["class_id"] = 3
           },
           [5] = {
-            ["name"] = "Splatted",
+            ["name"] = "Týroné",
             ["role"] = "dps",
-            ["class_id"] = 8
+            ["class_id"] = 9
           }
         }
       },
       [5] = {
-        ["zone_id"] = 13309,
-        ["level"] = 16,
+        ["zone_id"] = 13228,
+        ["level"] = 20,
         ["upgrades"] = 1,
-        ["fraction"] = 0.9541809198686245,
-        ["clear_time"] = "00:41:02.740",
+        ["fraction"] = 0.9045764597003331,
+        ["clear_time"] = "00:34:23.338",
         ["party"] = {
           [1] = {
-            ["name"] = "Achilless",
+            ["name"] = "Bobleboble",
             ["role"] = "tank",
-            ["class_id"] = 12
+            ["class_id"] = 2
           },
           [2] = {
-            ["name"] = "Leshinata",
+            ["name"] = "Thantrus",
             ["role"] = "healer",
-            ["class_id"] = 10
+            ["class_id"] = 5
           },
           [3] = {
-            ["name"] = "Acewar",
-            ["role"] = "dps",
-            ["class_id"] = 10
-          },
-          [4] = {
-            ["name"] = "Eferalgan",
+            ["name"] = "Achilless",
             ["role"] = "dps",
             ["class_id"] = 12
           },
-          [5] = {
-            ["name"] = "Szabone",
+          [4] = {
+            ["name"] = "Cyrïon",
             ["role"] = "dps",
             ["class_id"] = 8
+          },
+          [5] = {
+            ["name"] = "Ombládon",
+            ["role"] = "dps",
+            ["class_id"] = 4
           }
         }
       }
     },
     ["weekly_best"] = {
       [1] = {
-        ["zone_id"] = 12837,
-        ["level"] = 17,
-        ["upgrades"] = 0,
-        ["fraction"] = 1.0650752093443867,
-        ["clear_time"] = "00:41:33.340",
+        ["zone_id"] = 12916,
+        ["level"] = 20,
+        ["upgrades"] = 1,
+        ["fraction"] = 0.8828421484692959,
+        ["clear_time"] = "00:31:47.821",
         ["party"] = {
           [1] = {
-            ["name"] = "Littlewhat",
+            ["name"] = "Ouboar",
             ["role"] = "tank",
-            ["class_id"] = 1
-          },
-          [2] = {
-            ["name"] = "Meøw",
-            ["role"] = "healer",
             ["class_id"] = 11
           },
+          [2] = {
+            ["name"] = "Mastérchéf",
+            ["role"] = "healer",
+            ["class_id"] = 7
+          },
           [3] = {
-            ["name"] = "Lâciä",
+            ["name"] = "Achilless",
             ["role"] = "dps",
-            ["class_id"] = 10
+            ["class_id"] = 12
           },
           [4] = {
-            ["name"] = "Szabone",
+            ["name"] = "Boromirr",
             ["role"] = "dps",
-            ["class_id"] = 8
+            ["class_id"] = 1
           },
           [5] = {
-            ["name"] = "Морталайс",
+            ["name"] = "Телькул",
             ["role"] = "dps",
-            ["class_id"] = 3
+            ["class_id"] = 4
           }
         }
       },
       [2] = {
         ["zone_id"] = 12841,
-        ["level"] = 15,
+        ["level"] = 19,
         ["upgrades"] = 1,
-        ["fraction"] = 0.9200657255877798,
-        ["clear_time"] = "00:34:58.669",
+        ["fraction"] = 0.9837373887494032,
+        ["clear_time"] = "00:37:23.904",
         ["party"] = {
           [1] = {
-            ["name"] = "Didit",
+            ["name"] = "Luchano",
             ["role"] = "tank",
-            ["class_id"] = 2
+            ["class_id"] = 11
           },
           [2] = {
-            ["name"] = "Palatruzzo",
+            ["name"] = "Vallenà",
             ["role"] = "healer",
-            ["class_id"] = 2
+            ["class_id"] = 7
           },
           [3] = {
-            ["name"] = "Jayspec",
+            ["name"] = "Boromirr",
             ["role"] = "dps",
             ["class_id"] = 1
           },
           [4] = {
-            ["name"] = "Numên",
+            ["name"] = "Sapzilla",
+            ["role"] = "dps",
+            ["class_id"] = 4
+          },
+          [5] = {
+            ["name"] = "Shyba",
+            ["role"] = "dps",
+            ["class_id"] = 9
+          }
+        }
+      },
+      [3] = {
+        ["zone_id"] = 13309,
+        ["level"] = 19,
+        ["upgrades"] = 1,
+        ["fraction"] = 0.9979945749688396,
+        ["clear_time"] = "00:42:55.823",
+        ["party"] = {
+          [1] = {
+            ["name"] = "Sukaku",
+            ["role"] = "tank",
+            ["class_id"] = 11
+          },
+          [2] = {
+            ["name"] = "Syriesh",
+            ["role"] = "healer",
+            ["class_id"] = 7
+          },
+          [3] = {
+            ["name"] = "Blackswàn",
             ["role"] = "dps",
             ["class_id"] = 9
           },
-          [5] = {
-            ["name"] = "Vetokss",
+          [4] = {
+            ["name"] = "Solmazz",
             ["role"] = "dps",
             ["class_id"] = 3
+          },
+          [5] = {
+            ["name"] = "Vîce",
+            ["role"] = "dps",
+            ["class_id"] = 4
+          }
+        }
+      },
+      [4] = {
+        ["zone_id"] = 12842,
+        ["level"] = 19,
+        ["upgrades"] = 0,
+        ["fraction"] = 1.0979130832641542,
+        ["clear_time"] = "00:45:01.963",
+        ["party"] = {
+          [1] = {
+            ["name"] = "Иарлис",
+            ["role"] = "tank",
+            ["class_id"] = 11
+          },
+          [2] = {
+            ["name"] = "Sukaku",
+            ["role"] = "healer",
+            ["class_id"] = 11
+          },
+          [3] = {
+            ["name"] = "Calie",
+            ["role"] = "dps",
+            ["class_id"] = 10
+          },
+          [4] = {
+            ["name"] = "Lichèal",
+            ["role"] = "dps",
+            ["class_id"] = 4
+          },
+          [5] = {
+            ["name"] = "Хафаза",
+            ["role"] = "dps",
+            ["class_id"] = 8
+          }
+        }
+      },
+      [5] = {
+        ["zone_id"] = 12916,
+        ["level"] = 18,
+        ["upgrades"] = 1,
+        ["fraction"] = 0.8776783330302328,
+        ["clear_time"] = "00:31:36.662",
+        ["party"] = {
+          [1] = {
+            ["name"] = "Kakamoling",
+            ["role"] = "tank",
+            ["class_id"] = 6
+          },
+          [2] = {
+            ["name"] = "Endléss",
+            ["role"] = "healer",
+            ["class_id"] = 7
+          },
+          [3] = {
+            ["name"] = "Atrojin",
+            ["role"] = "dps",
+            ["class_id"] = 3
+          },
+          [4] = {
+            ["name"] = "Boromirr",
+            ["role"] = "dps",
+            ["class_id"] = 1
+          },
+          [5] = {
+            ["name"] = "Крракен",
+            ["role"] = "dps",
+            ["class_id"] = 6
           }
         }
       }

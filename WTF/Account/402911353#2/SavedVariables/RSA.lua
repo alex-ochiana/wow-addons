@@ -4,26 +4,26 @@ RSADB = {
 		["LibDualSpec-1.0"] = {
 		},
 	},
-	["global"] = {
-		["ID"] = "424325992782",
-		["revision"] = "546",
-		["version"] = 4,
-		["releaseType"] = "Release",
-	},
 	["profileKeys"] = {
 		["Mortifèrous - Kazzak"] = "WARLOCK",
 		["Towerpog - Sylvanas"] = "PRIEST",
 		["Crëtz - Kazzak"] = "DEMONHUNTER",
 		["Latthrias - Sylvanas"] = "PRIEST",
 		["Jiglèr - Sylvanas"] = "WARRIOR",
-		["Cìchìcean - Sylvanas"] = "MONK",
+		["Kynaeth - Sylvanas"] = "DEMONHUNTER",
 		["Plüto - Sylvanas"] = "ROGUE",
 		["Egidus - Sylvanas"] = "MAGE",
-		["Kynaeth - Sylvanas"] = "DEMONHUNTER",
-		["Cretz - Moonglade"] = "DRUID",
-		["Crètz - Sylvanas"] = "DRUID",
-		["Vòlkmer - Kazzak"] = "SHAMAN",
 		["Gnomèrcy - Sylvanas"] = "WARLOCK",
+		["Vòlkmer - Kazzak"] = "SHAMAN",
+		["Crètz - Sylvanas"] = "DRUID",
+		["Cretz - Moonglade"] = "DRUID",
+		["Cìchìcean - Sylvanas"] = "MONK",
+	},
+	["global"] = {
+		["ID"] = "424325992782",
+		["revision"] = "546",
+		["version"] = 4,
+		["releaseType"] = "Release",
 	},
 	["profiles"] = {
 		["WARRIOR"] = {

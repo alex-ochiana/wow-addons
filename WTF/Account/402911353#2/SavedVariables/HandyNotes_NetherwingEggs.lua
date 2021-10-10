@@ -8,8 +8,8 @@ HandyNotes_NetherwingEggsDB = {
 		["Egidus - Sylvanas"] = "Default",
 		["Kynaeth - Sylvanas"] = "Default",
 		["Crètz - Sylvanas"] = "Default",
-		["Cìchìcean - Sylvanas"] = "Default",
 		["Gnomèrcy - Sylvanas"] = "Default",
+		["Cìchìcean - Sylvanas"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

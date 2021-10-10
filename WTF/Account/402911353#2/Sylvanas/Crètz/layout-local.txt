@@ -50,8 +50,8 @@ W: 232
 H: 100
 Frame: SpellBookFrame
 FrameLevel: 1
-Anchor: TOP
-X: -304
+Anchor: TOPLEFT
+X: 16
 Y: -116
 W: 550
 H: 525
@@ -67,8 +67,8 @@ FrameLevel: 1
 Anchor: LEFT
 X: 252
 Y: 24
-W: 128
-H: 64
+W: 36
+H: 20
 Frame: ColorPickerFrame
 FrameLevel: 23
 Anchor: CENTER

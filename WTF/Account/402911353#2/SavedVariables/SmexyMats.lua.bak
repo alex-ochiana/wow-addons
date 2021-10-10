@@ -13,17 +13,17 @@ SmexyMatsDB = {
 		["cbOneB"] = 1,
 		["cbOneG"] = 1,
 		["IconsEnabled"] = false,
-		["ExpackIconsEnabled"] = false,
+		["SM_EP_One_Title"] = "|cFF00CCFF",
 		["SMText"] = true,
-		["SMMsg"] = false,
+		["cbTwoR"] = 1,
 		["cbTwoG"] = 1,
 		["SM_EP_One_Text"] = "|cFFFFFF00",
 		["AllRealms"] = true,
 		["IDs"] = {
 		},
 		["Professions"] = true,
-		["cbTwoR"] = 1,
-		["SM_EP_One_Title"] = "|cFF00CCFF",
+		["SMMsg"] = false,
+		["ExpackIconsEnabled"] = false,
 		["TooltipIconSize"] = 20,
 	},
 	["ProTree"] = {
@@ -35,23 +35,11 @@ SmexyMatsDB = {
 				},
 			},
 		},
-		["Sylvanas"] = {
+		["Herbalism"] = {
 			["Alliance"] = {
-				["Cooking"] = {
-				},
-				["Tailoring"] = {
-				},
-				["Archaeology"] = {
-				},
-				["Alchemy"] = {
-				},
-				["Fishing"] = {
-				},
-				["Leatherworking"] = {
-				},
-				["Herbalism"] = {
-				},
-				["Enchanting"] = {
+				["Sylvanas"] = {
+					["Crètz"] = {
+					},
 				},
 			},
 		},
@@ -63,7 +51,7 @@ SmexyMatsDB = {
 				},
 			},
 		},
-		["Alchemy"] = {
+		["Fishing"] = {
 			["Alliance"] = {
 				["Sylvanas"] = {
 					["Crètz"] = {
@@ -71,7 +59,7 @@ SmexyMatsDB = {
 				},
 			},
 		},
-		["Herbalism"] = {
+		["Alchemy"] = {
 			["Alliance"] = {
 				["Sylvanas"] = {
 					["Crètz"] = {
@@ -101,28 +89,40 @@ SmexyMatsDB = {
 					["Mortifèrous"] = {
 					},
 				},
-				["Fishing"] = {
+				["Engineering"] = {
 					["Mortifèrous"] = {
 					},
 				},
-				["Engineering"] = {
+				["Fishing"] = {
 					["Mortifèrous"] = {
 					},
 				},
 			},
 		},
-		["Fishing"] = {
+		["Sylvanas"] = {
 			["Alliance"] = {
-				["Sylvanas"] = {
-					["Crètz"] = {
-					},
+				["Cooking"] = {
+				},
+				["Tailoring"] = {
+				},
+				["Archaeology"] = {
+				},
+				["Fishing"] = {
+				},
+				["Herbalism"] = {
+				},
+				["Leatherworking"] = {
+				},
+				["Alchemy"] = {
+				},
+				["Enchanting"] = {
 				},
 			},
 		},
 	},
 	["profileKeys"] = {
-		["Crètz - Sylvanas"] = "profile",
 		["Mòloch - Kazzak"] = "profile",
+		["Crètz - Sylvanas"] = "profile",
 	},
 	["profiles"] = {
 		["profile"] = {

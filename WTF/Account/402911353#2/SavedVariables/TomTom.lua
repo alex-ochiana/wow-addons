@@ -12,17 +12,17 @@ TomTomDB = {
 		["Mòloch - Kazzak"] = "Default",
 		["Towerpog - Sylvanas"] = "Default",
 		["Crëtz - Kazzak"] = "Default",
-		["Cretz - Moonglade"] = "Default",
+		["Vòlkmer - Kazzak"] = "Default",
 		["Jiglèr - Sylvanas"] = "Default",
 		["Lastones - Kazzak"] = "Default",
-		["Plüto - Sylvanas"] = "Default",
 		["Needzafemale - Kazzak"] = "Default",
-		["Cìchìcean - Sylvanas"] = "Default",
+		["Plüto - Sylvanas"] = "Default",
 		["Kynaeth - Sylvanas"] = "Default",
+		["Cìchìcean - Sylvanas"] = "Default",
 		["Mortifèrous - Kazzak"] = "Default",
 		["Crètz - Sylvanas"] = "Default",
 		["Brovar - Sylvanas"] = "Default",
-		["Vòlkmer - Kazzak"] = "Default",
+		["Cretz - Moonglade"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -59,14 +59,14 @@ TomTomWaypointsM = {
 		["Towerpog - Sylvanas"] = "Towerpog - Sylvanas",
 		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
 		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
-		["Cretz - Moonglade"] = "Cretz - Moonglade",
+		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
 		["Plüto - Sylvanas"] = "Plüto - Sylvanas",
-		["Cìchìcean - Sylvanas"] = "Cìchìcean - Sylvanas",
 		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
+		["Cìchìcean - Sylvanas"] = "Cìchìcean - Sylvanas",
 		["Mòloch - Kazzak"] = "Mòloch - Kazzak",
 		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
 		["Brovar - Sylvanas"] = "Brovar - Sylvanas",
-		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
+		["Cretz - Moonglade"] = "Cretz - Moonglade",
 	},
 	["profiles"] = {
 		["Kakaròt - Kazzak"] = {
@@ -91,13 +91,13 @@ TomTomWaypointsM = {
 		},
 		["Jiglèr - Sylvanas"] = {
 		},
-		["Cretz - Moonglade"] = {
+		["Vòlkmer - Kazzak"] = {
 		},
 		["Plüto - Sylvanas"] = {
 		},
-		["Cìchìcean - Sylvanas"] = {
-		},
 		["Kynaeth - Sylvanas"] = {
+		},
+		["Cìchìcean - Sylvanas"] = {
 		},
 		["Mòloch - Kazzak"] = {
 		},
@@ -105,7 +105,7 @@ TomTomWaypointsM = {
 		},
 		["Brovar - Sylvanas"] = {
 		},
-		["Vòlkmer - Kazzak"] = {
+		["Cretz - Moonglade"] = {
 		},
 	},
 }

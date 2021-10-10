@@ -1,21 +1,16 @@
 # <DBM> World Bosses (Shadowlands)
 
-## [9.1.14](https://github.com/DeadlyBossMods/DBM-Retail/tree/9.1.14) (2021-09-20)
-[Full Changelog](https://github.com/DeadlyBossMods/DBM-Retail/compare/9.1.13...9.1.14) [Previous Releases](https://github.com/DeadlyBossMods/DBM-Retail/releases)
+## [9.1.17](https://github.com/DeadlyBossMods/DBM-Retail/tree/9.1.17) (2021-10-07)
+[Full Changelog](https://github.com/DeadlyBossMods/DBM-Retail/compare/9.1.16...9.1.17) [Previous Releases](https://github.com/DeadlyBossMods/DBM-Retail/releases)
 
-- Squelch destiny switch warning on LFR and normal. honestly people just blow up add and not worry about it hitting tank.  
-- Move reaver marking to a later event to avoid calling SetRaidTarget on a boss unit ID before the boss frame is visible. This should prevent icons failing on reavers hopefully.  
-- Update ci.yml (#673)  
-- Add trigger for workflow\_dispatch (#672)  
-- Fix shard marking on KT  
-- Update .pkgmeta (#671)  
-- Add version marker to DBM-Shadowlands (#670)  
-- Double call on external dependency (#669)  
-- Update .pkgmeta (#668)  
-- Unified? Maybe? (#667)  
-- Revert "Revert "Revert "PROBABLY SOME ABSOLUTELY BROKEN SHIT THAT'LL END ALL LIFE IN UNIVERSE"""  
-- Revert "Revert "PROBABLY SOME ABSOLUTELY BROKEN SHIT THAT'LL END ALL LIFE IN UNIVERSE""  
-- Revert "PROBABLY SOME ABSOLUTELY BROKEN SHIT THAT'LL END ALL LIFE IN UNIVERSE"  
-- PROBABLY SOME ABSOLUTELY BROKEN SHIT THAT'LL END ALL LIFE IN UNIVERSE  
-    (DON'T DOWNLOAD THIS VERSION, I'LL DO BEST TO DELETE IT ASAP)  
-- Forgot to push this  
+- Update retail version  
+- Fix last  
+- KT Update for October 21st hotfixes:  
+     - Fixed detection of Frost Blast (P1) (fixes P1 CD timer)  
+     - Fixed detection of Howling Blizzard (fixes CD timer, cast timer, and alerts)  
+     - Fixed detection of Soul Fracture cast (fixes CD timer and shard marking)  
+     - Fixed detection off Oblivions echo (fixes CD timer and alerts)  
+     - Fixed detection of glacial wrath (fixes CD timer and icons)  
+     - Fixed initial Stage 3 Onslaught of the damn timer on mythic difficulty  
+- Fix some missed tocs  
+- bump alphas  
