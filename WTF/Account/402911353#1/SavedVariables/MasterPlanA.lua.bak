@@ -1,9 +1,0 @@
-
-MasterPlanAG = {
-	["Sylvanas"] = {
-		["Crétz"] = {
-			["class"] = "MONK",
-			["faction"] = "Alliance",
-		},
-	},
-}

@@ -1,3 +1,0 @@
-HandyNotes_Lorewalkers: disabled
-SlideBar: disabled
-Stubby: disabled
