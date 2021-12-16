@@ -23,6 +23,7 @@ GW_DEFAULT["NPC_CAM_ENABLED"] = false
 GW_DEFAULT["FONTS_ENABLED"] = true
 GW_DEFAULT["CASTINGBAR_ENABLED"] = true
 GW_DEFAULT["HIDEACTIONBAR_BACKGROUND_ENABLED"] = false
+GW_DEFAULT["SHOWACTIONBAR_MACRO_NAME_ENABLED"] = false
 GW_DEFAULT["SHOW_QUESTTRACKER_COMPASS"] = true
 GW_DEFAULT["MINIMAP_HOVER"] = "NONE"
 GW_DEFAULT["CLASS_POWER"] = true
@@ -32,6 +33,7 @@ GW_DEFAULT["PETBAR_ENABLED"] = true
 GW_DEFAULT["BORDER_ENABLED"] = true
 GW_DEFAULT["TOOLTIP_MOUSE"] = false
 GW_DEFAULT["ADVANCED_TOOLTIP"] = true
+GW_DEFAULT["TOOLTIP_FONT_SIZE"] = 12
 GW_DEFAULT["ADVANCED_TOOLTIP_OPTION_ITEMCOUNT"] = "BOTH"
 GW_DEFAULT["ADVANCED_TOOLTIP_SHOW_MOUNT"] = true
 GW_DEFAULT["ADVANCED_TOOLTIP_SHOW_TARGET_INFO"] = true
@@ -43,6 +45,7 @@ GW_DEFAULT["ADVANCED_TOOLTIP_SHOW_CLASS_COLOR"] = true
 GW_DEFAULT["ADVANCED_TOOLTIP_SHOW_GENDER"] = false
 GW_DEFAULT["ADVANCED_TOOLTIP_SHOW_DUNGEONSCORE"] = true
 GW_DEFAULT["ADVANCED_TOOLTIP_SHOW_KEYSTONEINFO"] = true
+GW_DEFAULT["ADVANCED_TOOLTIP_SHOW_HEALTHBAR_TEXT"] = true
 GW_DEFAULT["ADVANCED_TOOLTIP_ID_MODIFIER"] = "NONE"
 GW_DEFAULT["DYNAMIC_CAM"] = false
 GW_DEFAULT["PIXEL_PERFECTION"] = false
@@ -147,6 +150,7 @@ GW_DEFAULT["FADE_MULTIACTIONBAR_1"] = "ALWAYS"
 GW_DEFAULT["FADE_MULTIACTIONBAR_2"] = "ALWAYS"
 GW_DEFAULT["FADE_MULTIACTIONBAR_3"] = "ALWAYS"
 GW_DEFAULT["FADE_MULTIACTIONBAR_4"] = "ALWAYS"
+GW_DEFAULT["FADE_MULTIACTIONBAR_5"] = "ALWAYS"
 GW_DEFAULT["HIDE_CHATSHADOW"] = false
 GW_DEFAULT["HIDE_QUESTVIEW"] = false
 GW_DEFAULT["USE_CHAT_BUBBLES"] = false
@@ -244,15 +248,16 @@ GW_DEFAULT["focustarget_pos"]["xOfs"] = -80
 GW_DEFAULT["focustarget_pos"]["yOfs"] = -10
 GW_DEFAULT["focustarget_pos_scale"] = 1
 
+GW_DEFAULT.MULTIBAR_MARGIIN = 2
+GW_DEFAULT.MAINBAR_MARGIIN = 5
+
 GW_DEFAULT["MultiBarBottomLeft"] = {}
 GW_DEFAULT["MultiBarBottomLeft"]["point"] = "BOTTOMLEFT"
 GW_DEFAULT["MultiBarBottomLeft"]["relativePoint"] = "BOTTOM"
 GW_DEFAULT["MultiBarBottomLeft"]["xOfs"] = -372
 GW_DEFAULT["MultiBarBottomLeft"]["yOfs"] = 120
 GW_DEFAULT["MultiBarBottomLeft_scale"] = 1
-
 GW_DEFAULT["MultiBarBottomLeft"]["size"] = 38
-GW_DEFAULT["MultiBarBottomLeft"]["margin"] = 2
 GW_DEFAULT["MultiBarBottomLeft"]["ButtonsPerRow"] = 6
 GW_DEFAULT["MultiBarBottomLeft"]["hideDefaultBackground"] = true
 
@@ -262,11 +267,29 @@ GW_DEFAULT["MultiBarBottomRight"]["relativePoint"] = "BOTTOM"
 GW_DEFAULT["MultiBarBottomRight"]["xOfs"] = 372
 GW_DEFAULT["MultiBarBottomRight"]["yOfs"] = 120
 GW_DEFAULT["MultiBarBottomRight_scale"] = 1
-
 GW_DEFAULT["MultiBarBottomRight"]["size"] = 38
-GW_DEFAULT["MultiBarBottomRight"]["margin"] = 2
 GW_DEFAULT["MultiBarBottomRight"]["ButtonsPerRow"] = 6
 GW_DEFAULT["MultiBarBottomRight"]["hideDefaultBackground"] = true
+
+GW_DEFAULT["MultiBarRight"] = {}
+GW_DEFAULT["MultiBarRight"]["point"] = "RIGHT"
+GW_DEFAULT["MultiBarRight"]["relativePoint"] = "RIGHT"
+GW_DEFAULT["MultiBarRight"]["xOfs"] = -320
+GW_DEFAULT["MultiBarRight"]["yOfs"] = 0
+GW_DEFAULT["MultiBarRight_scale"] = 1
+GW_DEFAULT["MultiBarRight"]["size"] = 38
+GW_DEFAULT["MultiBarRight"]["ButtonsPerRow"] = 1
+GW_DEFAULT["MultiBarRight"]["hideDefaultBackground"] = true
+
+GW_DEFAULT["MultiBarLeft"] = {}
+GW_DEFAULT["MultiBarLeft"]["point"] = "RIGHT"
+GW_DEFAULT["MultiBarLeft"]["relativePoint"] = "RIGHT"
+GW_DEFAULT["MultiBarLeft"]["xOfs"] = -368
+GW_DEFAULT["MultiBarLeft"]["yOfs"] = 0
+GW_DEFAULT["MultiBarLeft_scale"] = 1
+GW_DEFAULT["MultiBarLeft"]["size"] = 38
+GW_DEFAULT["MultiBarLeft"]["ButtonsPerRow"] = 1
+GW_DEFAULT["MultiBarLeft"]["hideDefaultBackground"] = true
 
 GW_DEFAULT["MULTIBAR_RIGHT_COLS"] = 1
 
@@ -285,30 +308,6 @@ GW_DEFAULT["PlayerDebuffFrame"]["xOfs"] = 53
 GW_DEFAULT["PlayerDebuffFrame"]["yOfs"] = 220
 GW_DEFAULT["PlayerDebuffFrame_GrowDirection"] = "UP"
 GW_DEFAULT["PlayerDebuffFrame_scale"] = 1
-
-GW_DEFAULT["MultiBarRight"] = {}
-GW_DEFAULT["MultiBarRight"]["point"] = "RIGHT"
-GW_DEFAULT["MultiBarRight"]["relativePoint"] = "RIGHT"
-GW_DEFAULT["MultiBarRight"]["xOfs"] = -320
-GW_DEFAULT["MultiBarRight"]["yOfs"] = 0
-GW_DEFAULT["MultiBarRight_scale"] = 1
-
-GW_DEFAULT["MultiBarRight"]["size"] = 38
-GW_DEFAULT["MultiBarRight"]["margin"] = 2
-GW_DEFAULT["MultiBarRight"]["ButtonsPerRow"] = 1
-GW_DEFAULT["MultiBarRight"]["hideDefaultBackground"] = true
-
-GW_DEFAULT["MultiBarLeft"] = {}
-GW_DEFAULT["MultiBarLeft"]["point"] = "RIGHT"
-GW_DEFAULT["MultiBarLeft"]["relativePoint"] = "RIGHT"
-GW_DEFAULT["MultiBarLeft"]["xOfs"] = -368
-GW_DEFAULT["MultiBarLeft"]["yOfs"] = 0
-GW_DEFAULT["MultiBarLeft_scale"] = 1
-
-GW_DEFAULT["MultiBarLeft"]["size"] = 38
-GW_DEFAULT["MultiBarLeft"]["margin"] = 2
-GW_DEFAULT["MultiBarLeft"]["ButtonsPerRow"] = 1
-GW_DEFAULT["MultiBarLeft"]["hideDefaultBackground"] = true
 
 GW_DEFAULT["GameTooltipPos"] = {}
 GW_DEFAULT["GameTooltipPos"]["point"] = "BOTTOMRIGHT"
@@ -465,6 +464,31 @@ GW_DEFAULT["raid_pos"]["relativePoint"] = "TOPLEFT"
 GW_DEFAULT["raid_pos"]["xOfs"] = 65
 GW_DEFAULT["raid_pos"]["yOfs"] = -60
 
+GW_DEFAULT["raid_pet_pos"] = {}
+GW_DEFAULT["raid_pet_pos"]["point"] = "TOPLEFT"
+GW_DEFAULT["raid_pet_pos"]["relativePoint"] = "TOPLEFT"
+GW_DEFAULT["raid_pet_pos"]["xOfs"] = 315
+GW_DEFAULT["raid_pet_pos"]["yOfs"] = -60
+
+GW_DEFAULT["RAID_CLASS_COLOR_PET"] = true -- always
+GW_DEFAULT["RAID_UNIT_FLAGS_PET"] = "NONE" -- always
+GW_DEFAULT["RAID_UNIT_MARKERS_PET"] = false
+GW_DEFAULT["RAID_WIDTH_PET"] = 50
+GW_DEFAULT["RAID_HEIGHT_PET"] = 25
+GW_DEFAULT["RAID_POWER_BARS_PET"] = false -- always
+GW_DEFAULT["RAID_UNITS_PER_COLUMN_PET"] = 5
+GW_DEFAULT["RAID_GROW_PET"] = "DOWN+RIGHT"
+GW_DEFAULT["RAID_ANCHOR_PET"] = "TOPLEFT"
+GW_DEFAULT["RAID_CONT_WIDTH_PET"] = 410
+GW_DEFAULT["RAID_CONT_HEIGHT_PET"] = 150
+GW_DEFAULT["RAID_SHOW_DEBUFFS_PET"] = true
+GW_DEFAULT["RAID_ONLY_DISPELL_DEBUFFS_PET"] = false
+GW_DEFAULT["RAID_SHOW_IMPORTEND_RAID_INSTANCE_DEBUFF_PET"] = true
+GW_DEFAULT["RAID_AURA_TOOLTIP_INCOMBAT_PET"] = "IN_COMBAT"
+GW_DEFAULT["RAID_UNIT_HEALTH_PET"] = "NONE"
+
+GW_DEFAULT["RAID_PET_FRAMES"] = false
+
 GW_DEFAULT["RAID_CLASS_COLOR"] = false
 GW_DEFAULT["RAID_UNIT_FLAGS"] = "NONE"
 GW_DEFAULT["RAID_UNIT_MARKERS"] = false
@@ -582,6 +606,10 @@ GW_DEFAULT["MERCHANT_SKIN_ENABLED"] = true
 GW_DEFAULT["ENCOUNTER_JOURNAL_SKIN_ENABLED"] = true
 GW_DEFAULT["CONCENANT_SANCTUM_SKIN_ENABLED"] = true
 GW_DEFAULT["SOULBINDS_SKIN_ENABLED"] = true
+GW_DEFAULT["CHROMIE_TIME_SKIN_ENABLED"] = true
+GW_DEFAULT["ALLIEND_RACES_UI_SKIN_ENABLED"] = true
+GW_DEFAULT["WEEKLY_REWARDS_SKIN_ENABLED"] = true
+GW_DEFAULT["LFG_SKIN_ENABLED"] = true
 
 GW_DEFAULT["USE_BATTLEGROUND_HUD"] = true
 
@@ -603,6 +631,7 @@ GW_DEFAULT["PLAYER_AS_TARGET_FRAME"] = false
 GW_DEFAULT["PLAYER_AS_TARGET_FRAME_SHOW_RESSOURCEBAR"] = false
 GW_DEFAULT["player_CLASS_COLOR"] = false
 GW_DEFAULT["PLAYER_SHOW_PVP_INDICATOR"] = true
+GW_DEFAULT["PLAYER_CASTBAR_SHOW_SPELL_QUEUEWINDOW"] = true
 
 GW_DEFAULT["player_pos"] = {}
 GW_DEFAULT["player_pos"]["point"] = "CENTER"

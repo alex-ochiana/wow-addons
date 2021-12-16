@@ -1,6 +1,7 @@
 
 BattleGroundEnemiesDB = {
 	["profileKeys"] = {
+		["Blanitza - Kazzak"] = "Default",
 		["Mortifèrous - Kazzak"] = "Default",
 		["Towerpog - Sylvanas"] = "Default",
 		["Crëtz - Kazzak"] = "Default",

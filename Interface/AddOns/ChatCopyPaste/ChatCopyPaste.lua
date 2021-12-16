@@ -110,6 +110,13 @@ function CCP:OnInitialize()
 	CCP:loadUrlColor();
 end
 
+local f = CreateFrame("Frame");
+f:RegisterEvent("PLAYER_ENTERING_WORLD");
+f:SetScript("OnEvent", function(self, event, ...)
+	CCP:loadChatButtons();
+	f:UnregisterEvent("PLAYER_ENTERING_WORLD");
+end)
+
 function CCP.openCcpCopyFrame(window, url)
 	if (not window) then
 		window = 1;
@@ -287,21 +294,21 @@ function CCP.makeChatWindowButtons(i)
     obj.Tooltip:SetFrameStrata("TOOLTIP");
 	obj.Tooltip:Hide();
 	--Show/Hide the click box when moving mouse curson in and out of the chat window.
-	_G['ChatFrame'..i]:SetScript("OnEnter", function(self)
+	_G['ChatFrame'..i]:HookScript("OnEnter", function(self)
 		if (CCP.db.global.chat_copy) then
 			obj:Show();
 		end
 	end)
-	_G['ChatFrame'..i]:SetScript("OnLeave", function(self)
+	_G['ChatFrame'..i]:HookScript("OnLeave", function(self)
 		obj:Hide();
 		obj.Tooltip:Hide();
 	end)
-	_G['ChatFrame'..i].ScrollToBottomButton:SetScript("OnEnter", function(self)
+	_G['ChatFrame'..i].ScrollToBottomButton:HookScript("OnEnter", function(self)
 		if (CCP.db.global.chat_copy) then
 			obj:Show();
 		end
 	end)
-	_G['ChatFrame'..i].ScrollToBottomButton:SetScript("OnLeave", function(self)
+	_G['ChatFrame'..i].ScrollToBottomButton:HookScript("OnLeave", function(self)
 		obj:Hide();
 		obj.Tooltip:Hide();
 	end)
@@ -318,8 +325,10 @@ function CCP.makeChatWindowButtons(i)
 	obj:SetScript("OnLeave", obj.hide);
 end
 
-for i=1, NUM_CHAT_WINDOWS do
-	CCP.makeChatWindowButtons(i);
+function CCP:loadChatButtons()
+	for i = 1, NUM_CHAT_WINDOWS do
+		CCP.makeChatWindowButtons(i);
+	end
 end
 
 --Clickable website links.

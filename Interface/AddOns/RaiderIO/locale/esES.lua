@@ -1,4 +1,4 @@
--- Generated from CurseForge on Sun Oct 10 19:31:23 UTC 2021
+-- Generated from CurseForge on Thu Dec 16 19:14:56 UTC 2021
 local ns = select(2, ...) ---@type ns @The addon namespace.
 
 if ns:IsSameLocale("esES") then
@@ -23,10 +23,8 @@ L["API_DEPRECATED_WITH"] = [=[| cffFF0000"Aviso! | r El complemento | cffFFFFFF%
 ]=]
 L["API_INVALID_DATABASE"] = [=[| cffFF0000 ¡Advertencia! | r Se detectó una base de datos Raider.IO no válida en | cffffffff% s | r. Actualice todas las regiones y facciones en el cliente Raider.IO, o reinstale el complemento manualmente.
 ]=]
---[[Translation missing --]]
---[[ L["AUTO_COMBATLOG"] = ""--]] 
---[[Translation missing --]]
---[[ L["AUTO_COMBATLOG_DESC"] = ""--]] 
+L["AUTO_COMBATLOG"] = "Habilitar automáticamente el registro de combate en Bandas y Mazmorras"
+L["AUTO_COMBATLOG_DESC"] = "Activa o desactiva el registro de combate automáticamente al entrar y salir de las mazmorras y bandas admitidas."
 L["BEST_FOR_DUNGEON"] = "Mejor en esta mazmorra"
 L["BEST_RUN"] = "Mejor mazmorra"
 L["BEST_SCORE"] = "Mejor puntuacion M + (% s)"
@@ -53,35 +51,27 @@ L["DUNGEON_SHORT_NAME_BRH"] = "Torreón"
 L["DUNGEON_SHORT_NAME_COEN"] = "Catedral"
 L["DUNGEON_SHORT_NAME_COS"] = "Corte"
 L["DUNGEON_SHORT_NAME_DHT"] = "Arboleda"
---[[Translation missing --]]
---[[ L["DUNGEON_SHORT_NAME_DOS"] = ""--]] 
+L["DUNGEON_SHORT_NAME_DOS"] = "El Otro Lado - DOS"
 L["DUNGEON_SHORT_NAME_EOA"] = "Ojo"
 L["DUNGEON_SHORT_NAME_FH"] = "Fuerte Libre"
---[[Translation missing --]]
---[[ L["DUNGEON_SHORT_NAME_HOA"] = ""--]] 
+L["DUNGEON_SHORT_NAME_HOA"] = "Salas de la Expiación - HOA"
 L["DUNGEON_SHORT_NAME_HOV"] = "Valor"
 L["DUNGEON_SHORT_NAME_KR"] = "Reposo "
 L["DUNGEON_SHORT_NAME_LOWR"] = "Kara-I"
---[[Translation missing --]]
---[[ L["DUNGEON_SHORT_NAME_MISTS"] = ""--]] 
+L["DUNGEON_SHORT_NAME_MISTS"] = "Nieblas de Tirna Scithe - MISTS"
 L["DUNGEON_SHORT_NAME_ML"] = "Veta Madre"
 L["DUNGEON_SHORT_NAME_MOS"] = "Fauce"
 L["DUNGEON_SHORT_NAME_NL"] = "Guarida"
---[[Translation missing --]]
---[[ L["DUNGEON_SHORT_NAME_NW"] = ""--]] 
---[[Translation missing --]]
---[[ L["DUNGEON_SHORT_NAME_PF"] = ""--]] 
---[[Translation missing --]]
---[[ L["DUNGEON_SHORT_NAME_SD"] = ""--]] 
+L["DUNGEON_SHORT_NAME_NW"] = "Estela Necrótica - NW"
+L["DUNGEON_SHORT_NAME_PF"] = "Bajapeste - PF"
+L["DUNGEON_SHORT_NAME_SD"] = "Cavernas Sanguinas - SD"
 L["DUNGEON_SHORT_NAME_SEAT"] = "Trono"
 L["DUNGEON_SHORT_NAME_SIEGE"] = "Asedio"
---[[Translation missing --]]
---[[ L["DUNGEON_SHORT_NAME_SOA"] = ""--]] 
+L["DUNGEON_SHORT_NAME_SOA"] = "Agujas de Ascensión - SOA"
 L["DUNGEON_SHORT_NAME_SOTS"] = "Altar "
 L["DUNGEON_SHORT_NAME_TD"] = "Tol Dagor"
 L["DUNGEON_SHORT_NAME_TM"] = "Veta Madre"
---[[Translation missing --]]
---[[ L["DUNGEON_SHORT_NAME_TOP"] = ""--]] 
+L["DUNGEON_SHORT_NAME_TOP"] = "Teatro del Dolor - TOP"
 L["DUNGEON_SHORT_NAME_TOS"] = "Templo "
 L["DUNGEON_SHORT_NAME_UNDR"] = "Catacumbas"
 L["DUNGEON_SHORT_NAME_UPPR"] = "Kara-S"
@@ -134,18 +124,12 @@ L["OUT_OF_SYNC_DATABASE_S"] = "|cffFFFFFF%s|r tiene datos de facción sin sincro
 L["OUTDATED_DATABASE"] = "Estas puntuaciones son de hace %d día(s)"
 L["OUTDATED_DATABASE_HOURS"] = "Estas puntuaciones son de hace %d hora(s)"
 L["OUTDATED_DATABASE_S"] = "|cffFFFFFF%s|r está usando datos de hace |cffFF6666%d|r día(s). Por favor, actualiza el addon para disponer de las puntuaciones de M+ más recientes."
---[[Translation missing --]]
---[[ L["OUTDATED_DOWNLOAD_LINK"] = ""--]] 
---[[Translation missing --]]
---[[ L["OUTDATED_EXPIRED_ALERT"] = ""--]] 
---[[Translation missing --]]
---[[ L["OUTDATED_EXPIRED_TITLE"] = ""--]] 
---[[Translation missing --]]
---[[ L["OUTDATED_EXPIRES_IN_DAYS"] = ""--]] 
---[[Translation missing --]]
---[[ L["OUTDATED_EXPIRES_IN_HOURS"] = ""--]] 
---[[Translation missing --]]
---[[ L["OUTDATED_EXPIRES_IN_MINUTES"] = ""--]] 
+L["OUTDATED_DOWNLOAD_LINK"] = "Descargar: |cffffbd0a%s|r"
+L["OUTDATED_EXPIRED_ALERT"] = "|cffFFFFFF%s|r está utilizando datos caducados. Actualice ahora para ver los datos más precisos: |cffFFFFFF%s|r"
+L["OUTDATED_EXPIRED_TITLE"] = "Raider.IO Los datos han expirado"
+L["OUTDATED_EXPIRES_IN_DAYS"] = "Raider.IO Los Datos caducan en %d días"
+L["OUTDATED_EXPIRES_IN_HOURS"] = "Raider.IO Los Datos caducan en %d horas"
+L["OUTDATED_EXPIRES_IN_MINUTES"] = "Raider.IO Los Datos caducan en %d minutos"
 --[[Translation missing --]]
 --[[ L["OUTDATED_PROFILE_TOOLTIP_MESSAGE"] = ""--]] 
 L["PLAYER_PROFILE_TITLE"] = "Perfil de M+"
@@ -175,26 +159,16 @@ L["RAID_BOSS_BOD_6"] = "Rey Rastakhan"
 L["RAID_BOSS_BOD_7"] = "Manitas mayor Mekkatorque"
 L["RAID_BOSS_BOD_8"] = "Bloqueo de la tormenta"
 L["RAID_BOSS_BOD_9"] = "Lady Jaina Valiente"
---[[Translation missing --]]
---[[ L["RAID_BOSS_CN_1"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_CN_10"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_CN_2"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_CN_3"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_CN_4"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_CN_5"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_CN_6"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_CN_7"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_CN_8"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_CN_9"] = ""--]] 
+L["RAID_BOSS_CN_1"] = "Alachilla"
+L["RAID_BOSS_CN_10"] = "Sire Denathrius"
+L["RAID_BOSS_CN_2"] = "Altimor el Cazador"
+L["RAID_BOSS_CN_3"] = "Destructor hambriento"
+L["RAID_BOSS_CN_4"] = "Artificiero Xy'Mox"
+L["RAID_BOSS_CN_5"] = "Salvación del Rey del Sol"
+L["RAID_BOSS_CN_6"] = "Lady Inerva Venaoscura"
+L["RAID_BOSS_CN_7"] = "El Consejo de Sangre"
+L["RAID_BOSS_CN_8"] = "Puñolodo"
+L["RAID_BOSS_CN_9"] = "Generales de la Legión Pétrea"
 L["RAID_BOSS_EP_1"] = "Comandante abisal Sivara"
 L["RAID_BOSS_EP_2"] = "Behemoth de Aguasnegras"
 L["RAID_BOSS_EP_3"] = "Radiancia de Azshara"
@@ -203,48 +177,29 @@ L["RAID_BOSS_EP_5"] = "Orgozoa"
 L["RAID_BOSS_EP_6"] = "Corte de la reina"
 L["RAID_BOSS_EP_7"] = "Za'qul"
 L["RAID_BOSS_EP_8"] = "Reina Azshara"
---[[Translation missing --]]
---[[ L["RAID_BOSS_NYA_1"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_NYA_10"] = ""--]] 
+L["RAID_BOSS_NYA_1"] = "Wrathion, el Emperador Negro"
+L["RAID_BOSS_NYA_10"] = "Ra Den el Arrasado"
 L["RAID_BOSS_NYA_11"] = "Caparazón"
---[[Translation missing --]]
---[[ L["RAID_BOSS_NYA_12"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_NYA_2"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_NYA_3"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_NYA_4"] = ""--]] 
+L["RAID_BOSS_NYA_12"] = "N'Zoth, el Corruptor"
+L["RAID_BOSS_NYA_2"] = "Maut"
+L["RAID_BOSS_NYA_3"] = "Profeta Skitra"
+L["RAID_BOSS_NYA_4"] = "Inquisidora oscura Xanesh"
 L["RAID_BOSS_NYA_5"] = "Mente"
---[[Translation missing --]]
---[[ L["RAID_BOSS_NYA_6"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_NYA_7"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_NYA_8"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_NYA_9"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_SOD_1"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_SOD_10"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_SOD_2"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_SOD_3"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_SOD_4"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_SOD_5"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_SOD_6"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_SOD_7"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_SOD_8"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_SOD_9"] = ""--]] 
+L["RAID_BOSS_NYA_6"] = "Shad'har el Insaciable"
+L["RAID_BOSS_NYA_7"] = [=[Drest'agath
+]=]
+L["RAID_BOSS_NYA_8"] = "Il'gynoth"
+L["RAID_BOSS_NYA_9"] = "Vexiona"
+L["RAID_BOSS_SOD_1"] = "El Tarragrue"
+L["RAID_BOSS_SOD_10"] = "Sylvanas Brisaveloz"
+L["RAID_BOSS_SOD_2"] = "Mirada del Carcelero"
+L["RAID_BOSS_SOD_3"] = "Las Nueve"
+L["RAID_BOSS_SOD_4"] = "Remanente de Ner'zhul"
+L["RAID_BOSS_SOD_5"] = "Desgarrador de almas Dormazain"
+L["RAID_BOSS_SOD_6"] = "Forjapenas Raznal"
+L["RAID_BOSS_SOD_7"] = "Guardián de los Primeros"
+L["RAID_BOSS_SOD_8"] = "Escriba del destino Roh-Kalo"
+L["RAID_BOSS_SOD_9"] = "Kel'Thuzad"
 L["RAID_BOSS_ULD_1"] = "Taloc"
 L["RAID_BOSS_ULD_2"] = "MADRE"
 L["RAID_BOSS_ULD_3"] = "Devorador fétido"
@@ -264,8 +219,7 @@ L["RAID_PROGRESS_TITLE"] = "Progreso de banda"
 L["RAIDERIO_AVERAGE_PLAYER_SCORE"] = "Puntuación media de +%s en tiempo"
 L["RAIDERIO_BEST_RUN"] = "Raider.IO Mejor resultado en M+"
 L["RAIDERIO_CLIENT_CUSTOMIZATION"] = "Personalización del cliente de RaiderIO"
---[[Translation missing --]]
---[[ L["RAIDERIO_LIVE_TRACKING"] = ""--]] 
+L["RAIDERIO_LIVE_TRACKING"] = "Raider.IO seguimiento en vivo"
 L["RAIDERIO_MP_BASE_SCORE"] = "Puntuación de M+ base"
 L["RAIDERIO_MP_BEST_SCORE"] = "Raider.IO Puntuación M+ (%s)"
 L["RAIDERIO_MP_SCORE"] = "Puntuación de M+"
@@ -321,8 +275,7 @@ L["SHOW_ROLE_ICONS"] = "Mostrar iconos de rol en el tooltip"
 L["SHOW_ROLE_ICONS_DESC"] = "Cuando está activado, se muestran los mejores roles del jugador en míticas+ en el tooltip."
 L["SHOW_SCORE_IN_COMBAT"] = "Mostrar puntuación en combate"
 L["SHOW_SCORE_IN_COMBAT_DESC"] = "Desactiva esta opción para mejorar el rendimiento al pasar el ratón por encima de jugadores cuando estás en combate."
---[[Translation missing --]]
---[[ L["SHOW_SCORE_WITH_MODIFIER"] = ""--]] 
+L["SHOW_SCORE_WITH_MODIFIER"] = "Mostrar Raider.IO en la información sobre herramientas con modificador"
 --[[Translation missing --]]
 --[[ L["SHOW_SCORE_WITH_MODIFIER_DESC"] = ""--]] 
 L["TANK"] = "Tanque"

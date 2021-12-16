@@ -1,5 +1,88 @@
 
 EncounterDetailsDB = {
+	["emotes"] = {
+		{
+			{
+				0.7519999999785796, -- [1]
+				"Storms! I summon you to my side!", -- [2]
+				"Al'Akir", -- [3]
+				7, -- [4]
+			}, -- [1]
+			{
+				7.253000000026077, -- [1]
+				"Enough! I will no longer be contained!", -- [2]
+				"Al'Akir", -- [3]
+				7, -- [4]
+			}, -- [2]
+			["boss"] = "Al'Akir",
+		}, -- [1]
+		{
+			{
+				2.87699999997858, -- [1]
+				"You think to outrun the wind? A fatal mistake.", -- [2]
+				"Anshal", -- [3]
+				7, -- [4]
+			}, -- [1]
+			{
+				3.278999999980442, -- [1]
+				"You throw away your honor and flee as cowards? Then die!", -- [2]
+				"Nezir", -- [3]
+				7, -- [4]
+			}, -- [2]
+			{
+				4.510000000009313, -- [1]
+				"The intruders stand fast, brothers, I cannot break them. Allow me a brief respite to strengthen my winds.", -- [2]
+				"Rohash", -- [3]
+				7, -- [4]
+			}, -- [3]
+			{
+				4.510000000009313, -- [1]
+				"%s begins to gather strength from the remaining Wind Lords!", -- [2]
+				"Rohash", -- [3]
+				1, -- [4]
+			}, -- [4]
+			{
+				18.27999999996973, -- [1]
+				"Brothers, beware! These mortals are dangerous. I must pause and gather my strength.", -- [2]
+				"Nezir", -- [3]
+				7, -- [4]
+			}, -- [5]
+			{
+				18.27999999996973, -- [1]
+				"%s begins to gather strength from the remaining Wind Lord!", -- [2]
+				"Nezir", -- [3]
+				1, -- [4]
+			}, -- [6]
+			{
+				26.8859999999986, -- [1]
+				"You think to outrun the wind? A fatal mistake.", -- [2]
+				"Anshal", -- [3]
+				7, -- [4]
+			}, -- [7]
+			["boss"] = "Conclave of Wind",
+		}, -- [2]
+		{
+			{
+				1.619999999878928, -- [1]
+				"Your futile persistance angers me!", -- [2]
+				"Al'Akir", -- [3]
+				7, -- [4]
+			}, -- [1]
+			{
+				2.827000000048429, -- [1]
+				"Storms! I summon you to my side!", -- [2]
+				"Al'Akir", -- [3]
+				7, -- [4]
+			}, -- [2]
+			{
+				8.929999999934807, -- [1]
+				"Enough! I will no longer be contained!", -- [2]
+				"Al'Akir", -- [3]
+				7, -- [4]
+			}, -- [3]
+			["boss"] = "Al'Akir",
+		}, -- [3]
+	},
 	["encounter_spells"] = {
 		[15589] = {
 			["school"] = 1,
@@ -697,14 +780,11 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Rohash",
 		},
-		[87904] = {
+		[95218] = {
 			["school"] = 8,
-			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_HEAL"] = true,
 			},
-			["source"] = "Stormling",
 		},
 		[37156] = {
 			["school"] = 1,
@@ -714,21 +794,22 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Phoenix-Hawk",
 		},
-		[108922] = {
-			["school"] = 32,
+		[37110] = {
+			["school"] = 4,
 			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Dark Globule",
+			["source"] = "Astromancer",
 		},
-		[93059] = {
+		[36132] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Rohash",
+			["source"] = "Bloodwarder Marshal",
 		},
 		[108042] = {
 			["school"] = 1,
@@ -738,12 +819,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Warmaster Blackhorn",
 		},
-		[37317] = {
-			["school"] = 1,
+		[107018] = {
+			["school"] = 4,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Tempest Falconer",
+			["source"] = "Deathwing",
 		},
 		[108051] = {
 			["school"] = 32,
@@ -752,12 +834,21 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Goriona",
 		},
-		[86081] = {
-			["school"] = 16,
+		[36980] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Netherstrand Longbow",
+		},
+		[107589] = {
+			["school"] = 32,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Nezir",
+			["source"] = "Goriona",
 		},
 		[36965] = {
 			["school"] = 1,
@@ -769,19 +860,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Thaladred the Darkener",
 		},
-		[107589] = {
-			["school"] = 32,
+		[18431] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Goriona",
-		},
-		[86192] = {
-			["school"] = 8,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
+			["source"] = "Onyxia",
 		},
 		[36981] = {
 			["school"] = 1,
@@ -792,19 +876,23 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Devastation",
 		},
-		[18431] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Onyxia",
-		},
-		[37276] = {
+		[104322] = {
 			["school"] = 32,
 			["token"] = {
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_HEAL"] = true,
+			},
+			["source"] = "Warlord Zon'ozz",
+		},
+		[86281] = {
+			["school"] = 8,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Crimson Hand Inquisitor",
+			["source"] = "Ravenous Creeper",
 		},
 		[37260] = {
 			["school"] = 2,
@@ -824,14 +912,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Crimson Hand Centurion",
 		},
-		[86281] = {
-			["school"] = 8,
-			["type"] = "BUFF",
+		[37276] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Ravenous Creeper",
+			["source"] = "Crimson Hand Inquisitor",
 		},
 		[109247] = {
 			["school"] = 1,
@@ -856,15 +942,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Rohash",
 		},
-		[84645] = {
-			["school"] = 16,
-			["type"] = "DEBUFF",
+		[109017] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Nezir",
+			["source"] = "Morchok",
 		},
 		[37249] = {
 			["school"] = 2,
@@ -875,14 +958,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Bloodwarder Vindicator",
 		},
-		[106400] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
+		[105846] = {
+			["school"] = 4,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Mutated Corruption",
+			["source"] = "Hideous Amalgamation",
 		},
 		[106834] = {
 			["school"] = 4,
@@ -899,19 +980,25 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Rohash",
 		},
-		[13005] = {
-			["school"] = 2,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Bloodwarder Vindicator",
-		},
-		[108419] = {
+		[85422] = {
 			["school"] = 8,
+			["type"] = "BUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Acidic Globule",
+			["source"] = "Anshal",
+		},
+		[104849] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "Yor'sahj the Unsleeping",
 		},
 		[37109] = {
 			["school"] = 4,
@@ -930,16 +1017,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Thaladred the Darkener",
 		},
-		[104849] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
+		[108419] = {
+			["school"] = 8,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Yor'sahj the Unsleeping",
+			["source"] = "Acidic Globule",
 		},
 		[105563] = {
 			["school"] = 4,
@@ -950,21 +1033,22 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Spawner",
 		},
-		[108045] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Warmaster Blackhorn",
-		},
-		[87908] = {
-			["school"] = 8,
+		[108649] = {
+			["school"] = 32,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Stormling",
+			["source"] = "Deathwing",
+		},
+		[105248] = {
+			["school"] = 4,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+			},
+			["source"] = "Corrupted Blood",
 		},
 		[37157] = {
 			["school"] = 1,
@@ -989,13 +1073,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Phaseshift Bulwark",
 		},
-		[37016] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Phaseshift Bulwark",
-		},
 		[35948] = {
 			["school"] = 1,
 			["type"] = "BUFF",
@@ -1004,22 +1081,28 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Bloodwarder Legionnaire",
 		},
-		[105248] = {
-			["school"] = 4,
-			["type"] = "BUFF",
+		[37016] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Corrupted Blood",
+			["source"] = "Phaseshift Bulwark",
 		},
-		[108649] = {
-			["school"] = 32,
+		[87908] = {
+			["school"] = 8,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Deathwing",
+			["source"] = "Stormling",
+		},
+		[108045] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Warmaster Blackhorn",
 		},
 		[44863] = {
 			["school"] = 1,
@@ -1039,14 +1122,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Thaladred the Darkener",
 		},
-		[85422] = {
-			["school"] = 8,
-			["type"] = "BUFF",
+		[13005] = {
+			["school"] = 2,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Anshal",
+			["source"] = "Bloodwarder Vindicator",
 		},
 		[36982] = {
 			["school"] = 1,
@@ -1063,12 +1144,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Staff of Disintegration",
 		},
-		[105846] = {
-			["school"] = 4,
+		[106400] = {
+			["school"] = 1,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Hideous Amalgamation",
+			["source"] = "Mutated Corruption",
 		},
 		[103846] = {
 			["school"] = 1,
@@ -1079,12 +1162,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Morchok",
 		},
-		[109017] = {
-			["school"] = 1,
+		[84645] = {
+			["school"] = 16,
+			["type"] = "DEBUFF",
 			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Morchok",
+			["source"] = "Nezir",
 		},
 		[93168] = {
 			["school"] = 32,
@@ -1102,14 +1188,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Mutated Corruption",
 		},
-		[104322] = {
-			["school"] = 32,
+		[86192] = {
+			["school"] = 8,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_HEAL"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Warlord Zon'ozz",
 		},
 		[86331] = {
 			["school"] = 8,
@@ -1118,22 +1202,19 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Grand Vizier Ertan",
 		},
-		[36980] = {
-			["school"] = 1,
+		[86081] = {
+			["school"] = 16,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Netherstrand Longbow",
+			["source"] = "Nezir",
 		},
-		[107018] = {
-			["school"] = 4,
+		[37317] = {
+			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Deathwing",
+			["source"] = "Tempest Falconer",
 		},
 		[33500] = {
 			["school"] = 1,
@@ -1144,111 +1225,30 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Bloodwarder Legionnaire",
 		},
-		[36132] = {
+		[93059] = {
 			["school"] = 1,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Bloodwarder Marshal",
+			["source"] = "Rohash",
 		},
-		[37110] = {
-			["school"] = 4,
+		[108922] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Astromancer",
+			["source"] = "Dark Globule",
 		},
-		[95218] = {
+		[87904] = {
 			["school"] = 8,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_HEAL"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_AURA_APPLIED"] = true,
 			},
+			["source"] = "Stormling",
 		},
-	},
-	["emotes"] = {
-		{
-			{
-				0.7519999999785796, -- [1]
-				"Storms! I summon you to my side!", -- [2]
-				"Al'Akir", -- [3]
-				7, -- [4]
-			}, -- [1]
-			{
-				7.253000000026077, -- [1]
-				"Enough! I will no longer be contained!", -- [2]
-				"Al'Akir", -- [3]
-				7, -- [4]
-			}, -- [2]
-			["boss"] = "Al'Akir",
-		}, -- [1]
-		{
-			{
-				2.87699999997858, -- [1]
-				"You think to outrun the wind? A fatal mistake.", -- [2]
-				"Anshal", -- [3]
-				7, -- [4]
-			}, -- [1]
-			{
-				3.278999999980442, -- [1]
-				"You throw away your honor and flee as cowards? Then die!", -- [2]
-				"Nezir", -- [3]
-				7, -- [4]
-			}, -- [2]
-			{
-				4.510000000009313, -- [1]
-				"The intruders stand fast, brothers, I cannot break them. Allow me a brief respite to strengthen my winds.", -- [2]
-				"Rohash", -- [3]
-				7, -- [4]
-			}, -- [3]
-			{
-				4.510000000009313, -- [1]
-				"%s begins to gather strength from the remaining Wind Lords!", -- [2]
-				"Rohash", -- [3]
-				1, -- [4]
-			}, -- [4]
-			{
-				18.27999999996973, -- [1]
-				"Brothers, beware! These mortals are dangerous. I must pause and gather my strength.", -- [2]
-				"Nezir", -- [3]
-				7, -- [4]
-			}, -- [5]
-			{
-				18.27999999996973, -- [1]
-				"%s begins to gather strength from the remaining Wind Lord!", -- [2]
-				"Nezir", -- [3]
-				1, -- [4]
-			}, -- [6]
-			{
-				26.8859999999986, -- [1]
-				"You think to outrun the wind? A fatal mistake.", -- [2]
-				"Anshal", -- [3]
-				7, -- [4]
-			}, -- [7]
-			["boss"] = "Conclave of Wind",
-		}, -- [2]
-		{
-			{
-				1.619999999878928, -- [1]
-				"Your futile persistance angers me!", -- [2]
-				"Al'Akir", -- [3]
-				7, -- [4]
-			}, -- [1]
-			{
-				2.827000000048429, -- [1]
-				"Storms! I summon you to my side!", -- [2]
-				"Al'Akir", -- [3]
-				7, -- [4]
-			}, -- [2]
-			{
-				8.929999999934807, -- [1]
-				"Enough! I will no longer be contained!", -- [2]
-				"Al'Akir", -- [3]
-				7, -- [4]
-			}, -- [3]
-			["boss"] = "Al'Akir",
-		}, -- [3]
 	},
 }

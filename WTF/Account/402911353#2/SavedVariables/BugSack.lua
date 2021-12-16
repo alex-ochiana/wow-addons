@@ -1,9 +1,11 @@
 
 BugSackDB = {
-	["fontSize"] = "GameFontHighlight",
 	["auto"] = false,
-	["soundMedia"] = "None",
+	["altwipe"] = false,
+	["useMaster"] = false,
+	["fontSize"] = "GameFontHighlight",
 	["mute"] = true,
+	["soundMedia"] = "None",
 	["chatframe"] = false,
 }
 BugSackLDBIconDB = {

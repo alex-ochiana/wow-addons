@@ -1,7 +1,9 @@
 local mod	= DBM:NewMod("ArtifactXylem", "DBM-Challenges", 3)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20210404132247")
+mod.statTypes = "normal,timewalker"
+
+mod:SetRevision("20211208050610")
 mod:SetCreatureID(115244)
 mod:SetZone()--Healer (1710), Tank (1698), DPS (1703-The God-Queen's Fury), DPS (Fel Totem Fall)
 mod.soloChallenge = true
@@ -14,7 +16,7 @@ mod:RegisterEventsInCombat(
 --	"SPELL_AURA_APPLIED_DOSE",
 --	"SPELL_AURA_REMOVED",
 	"SPELL_CAST_SUCCESS 232661 231522",
---	"UNIT_DIED",
+	"UNIT_DIED",
 	"UNIT_SPELLCAST_SUCCEEDED boss1"
 )
 --Notes:
@@ -38,10 +40,10 @@ local specWarnSeeds					= mod:NewSpecialWarningRun(233248, nil, nil, nil, 4, 2)
 --Frost Phase
 local timerRazorIceCD				= mod:NewCDTimer(25.5, 232661, nil, nil, nil, 3)--25.5-38.9 (other casts can delay it a lot)
 --Transition
-local timerArcaneAnnihilationCD		= mod:NewNextTimer(5, 234728, nil, nil, nil, 4, nil, DBM_CORE_L.INTERRUPT_ICON)
+local timerArcaneAnnihilationCD		= mod:NewNextTimer(5, 234728, nil, nil, nil, 4, nil, DBM_COMMON_L.INTERRUPT_ICON)
 local timerShadowBarrageCD			= mod:NewCDTimer(40.0, 231443, nil, nil, nil, 3)--Actually used both phases
 --Arcane Phase
-local timerDrawPowerCD				= mod:NewCDTimer(18.2, 231522, nil, nil, nil, 4, nil, DBM_CORE_L.INTERRUPT_ICON)
+local timerDrawPowerCD				= mod:NewCDTimer(18.2, 231522, nil, nil, nil, 4, nil, DBM_COMMON_L.INTERRUPT_ICON)
 
 local activeBossGUIDS = {}
 
@@ -100,6 +102,7 @@ function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, spellId)
 		timerArcaneAnnihilationCD:Start()
 		--timerShadowBarrageCD:Start(11)
 		timerDrawPowerCD:Start(27)--27-42
-	elseif spellId == 164393 then--Cancel Channeling (Successfully interrupted Arcane Annihilation)
+--	elseif spellId == 164393 then--Cancel Channeling (Successfully interrupted Arcane Annihilation)
+
 	end
 end

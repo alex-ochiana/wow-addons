@@ -4,33 +4,33 @@ RSADB = {
 		["LibDualSpec-1.0"] = {
 		},
 	},
+	["global"] = {
+		["ID"] = "424325992782",
+		["revision"] = "547",
+		["version"] = 4,
+		["releaseType"] = "Release",
+	},
 	["profileKeys"] = {
+		["Blanitza - Kazzak"] = "ROGUE",
 		["Mortifèrous - Kazzak"] = "WARLOCK",
 		["Towerpog - Sylvanas"] = "PRIEST",
 		["Crëtz - Kazzak"] = "DEMONHUNTER",
 		["Latthrias - Sylvanas"] = "PRIEST",
 		["Jiglèr - Sylvanas"] = "WARRIOR",
-		["Kynaeth - Sylvanas"] = "DEMONHUNTER",
+		["Gnomèrcy - Sylvanas"] = "WARLOCK",
 		["Plüto - Sylvanas"] = "ROGUE",
 		["Egidus - Sylvanas"] = "MAGE",
-		["Gnomèrcy - Sylvanas"] = "WARLOCK",
-		["Vòlkmer - Kazzak"] = "SHAMAN",
-		["Crètz - Sylvanas"] = "DRUID",
-		["Cretz - Moonglade"] = "DRUID",
 		["Cìchìcean - Sylvanas"] = "MONK",
-	},
-	["global"] = {
-		["ID"] = "424325992782",
-		["revision"] = "546",
-		["version"] = 4,
-		["releaseType"] = "Release",
+		["Cretz - Moonglade"] = "DRUID",
+		["Crètz - Sylvanas"] = "DRUID",
+		["Vòlkmer - Kazzak"] = "SHAMAN",
+		["Kynaeth - Sylvanas"] = "DEMONHUNTER",
 	},
 	["profiles"] = {
 		["WARRIOR"] = {
 			["Modules"] = {
 				["Racials"] = true,
 				["Utilities"] = true,
-				["Warrior"] = true,
 			},
 			["Fixed"] = true,
 			["General"] = {
@@ -51,7 +51,6 @@ RSADB = {
 		["MAGE"] = {
 			["Modules"] = {
 				["Racials"] = true,
-				["Mage"] = true,
 				["Utilities"] = true,
 			},
 			["Fixed"] = true,
@@ -63,7 +62,6 @@ RSADB = {
 			["Modules"] = {
 				["Racials"] = true,
 				["Utilities"] = true,
-				["Priest"] = true,
 			},
 			["Fixed"] = true,
 			["General"] = {
@@ -73,8 +71,8 @@ RSADB = {
 		["WARLOCK"] = {
 			["Modules"] = {
 				["Racials"] = true,
-				["Warlock"] = true,
 				["Utilities"] = true,
+				["Warlock"] = true,
 			},
 			["Fixed"] = true,
 			["General"] = {
@@ -146,7 +144,6 @@ RSADB = {
 			["Modules"] = {
 				["Racials"] = true,
 				["Utilities"] = true,
-				["Rogue"] = true,
 			},
 			["Fixed"] = true,
 			["General"] = {

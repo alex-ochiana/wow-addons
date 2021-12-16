@@ -1,6 +1,66 @@
 local _, GW = ...
 local v = GW.vernotes
 
+v("5.23.0", [=[
+NEW
+    - Skins:
+        - LFG
+        - Allied Races
+        - Weekly Rewards
+        - Chromie Time
+    - Added option to change tooltip font size
+    - Added option to show "SpellQueueWindow" on castbar
+
+FIXES
+    - Fix some cooldown issues for extra action buttons
+    - Show correct buffs in vehicle UI
+    - Some actionbar hotkey issues
+]=])
+
+v("5.22.1", [=[
+FIXES
+    - Fix cooldown lua error
+]=])
+
+v("5.22.0", [=[
+NEW
+    - Added option to set mainbar and multibar button spacing
+    - Added System datainfo to minimap fps text
+FIXES
+    - Some tooltip issues
+]=])
+
+v("5.21.1", [=[
+FIXES
+    - Tooltip statusbar color
+]=])
+
+v("5.21.0", [=[
+NEW
+- Added text option to tooltip healthbar
+
+FIXES
+- Fix some tooltip issues
+- Aura tooltips are now updating correctly to show remaning time
+- Fix item upgrade skin
+]=])
+
+v("5.20.1", [=[
+FIXES
+    - 9.1.5 tooltip issue
+]=])
+
+v("5.19.0", [=[
+NEW
+    - Added raid pet grid
+    - Added option to fade main actionbar
+
+FIXES
+    - Raid buff indicators should now show as expected
+    - Fix charged combo points
+
+]=])
+
 v("5.19.2", [=[
 FIXES
     - Minimap button issue

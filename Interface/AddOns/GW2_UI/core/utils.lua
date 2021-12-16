@@ -82,6 +82,13 @@ local function CountTable(T)
 end
 GW.CountTable = CountTable
 
+local function SetPointsRestricted(frame)
+	if frame and not pcall(frame.GetPoint, frame) then
+		return true
+	end
+end
+GW.SetPointsRestricted = SetPointsRestricted
+
 local function FormatMoneyForChat(amount)
     local str, coppercolor, silvercolor, goldcolor = "", "|cffb16022", "|cffaaaaaa", "|cffddbc44"
 
@@ -91,13 +98,13 @@ local function FormatMoneyForChat(amount)
     local copper = mod(value, COPPER_PER_SILVER)
 
     if gold > 0 then
-        str = format("%s%s |r|TInterface/MoneyFrame/UI-GoldIcon:12:12|t%s", goldcolor, GW.CommaValue(gold), " ")
+        str = format("%s%s |r|TInterface/AddOns/GW2_UI/textures/icons/Coins:12:12:0:0:64:32:22:42:1:20|t%s", goldcolor, GW.CommaValue(gold), " ")
     end
     if silver > 0 or gold > 0 then
-        str = format("%s%s%d |r|TInterface/MoneyFrame/UI-SilverIcon:12:12|t%s", str, silvercolor, silver, (copper > 0 or gold > 0) and " " or "")
+        str = format("%s%s%d |r|TInterface/AddOns/GW2_UI/textures/icons/Coins:12:12:0:0:64:32:43:64:1:20|t%s", str, silvercolor, silver, (copper > 0 or gold > 0) and " " or "")
     end
     if copper > 0 or value == 0 or value > 0 then
-        str = format("%s%s%d |r|TInterface/MoneyFrame/UI-CopperIcon:12:12|t", str, coppercolor, copper)
+        str = format("%s%s%d |r|TInterface/AddOns/GW2_UI/textures/icons/Coins:12:12:0:0:64:32:0:21:1:20|t", str, coppercolor, copper)
     end
 
     return str
@@ -653,6 +660,29 @@ local function ColorGradient(perc, ...)
     return r1 + (r2 - r1) * relperc, g1 + (g2 - g1) * relperc, b1 + (b2 - b1) * relperc
 end
 GW.ColorGradient = ColorGradient
+
+local function StatusBarColorGradient(bar, value, max, backdrop)
+	if not (bar and value) then return end
+
+	local current = (not max and value) or (value and max and max ~= 0 and value / max)
+	if not current then return end
+
+	local r, g, b = ColorGradient(current, 0.8, 0, 0, 0.8, 0.8, 0, 0, 0.8,  0)
+	bar:SetStatusBarColor(r, g, b)
+
+	if not backdrop then
+		backdrop = bar.backdrop
+	end
+
+	if backdrop then
+		backdrop:SetBackdropColor(r * 0.25, g * 0.25, b * 0.25)
+	end
+end
+GW.StatusBarColorGradient = StatusBarColorGradient
+
+
+
+
 
 local Fn = function (...) return not GW.Matches(...) end
 

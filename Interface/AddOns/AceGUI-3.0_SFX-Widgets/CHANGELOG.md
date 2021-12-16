@@ -1,3 +1,5 @@
-## 1.0.9
+## 1.1.2
 
-- Updated the `Interface` version for _Retail_ to `90100`.
+- Initial support for a unified package.
+- Updated the `Interface` version for _Classic_ to `11401`.
+- Updated the `Interface` version for _Retail_ to `90105`.

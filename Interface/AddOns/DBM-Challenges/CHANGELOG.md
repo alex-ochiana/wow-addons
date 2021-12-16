@@ -1,6 +1,11 @@
 # <DBM> Challenges
 
-## [r142](https://github.com/DeadlyBossMods/DBM-Challenges/tree/r142) (2021-09-07)
-[Full Changelog](https://github.com/DeadlyBossMods/DBM-Challenges/compare/r141...r142) [Previous Releases](https://github.com/DeadlyBossMods/DBM-Challenges/releases)
+## [r144](https://github.com/DeadlyBossMods/DBM-Challenges/tree/r144) (2021-12-08)
+[Full Changelog](https://github.com/DeadlyBossMods/DBM-Challenges/compare/r143...r144) [Previous Releases](https://github.com/DeadlyBossMods/DBM-Challenges/releases)
 
-- Added some more 9.1 spells to torghast, especially the 3 dreadlords which can be very dangerous if not interrupted or dodged  
+- Update localization.ru.lua (#21)  
+- Update min core too  
+- Update some local paths  
+- Difficulty does in fact report as timewalker, which means stats record there too, so update legion mage tower scenarios to show timewalker stats category  
+- Fixed another bug where stack count reported incorectly on clear  
+- Fixed voice pack support not working on two fel totem abilities  

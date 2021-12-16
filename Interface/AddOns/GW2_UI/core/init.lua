@@ -42,7 +42,8 @@ GW.myspec = GetSpecialization()
 GW.CheckRole()
 GW.screenwidth, GW.screenHeight = GetPhysicalScreenSize()
 GW.resolution = format("%dx%d", GW.screenwidth, GW.screenHeight)
-GW.wowpatch, GW.wowbuild = GetBuildInfo()
+GW.wowpatch, GW.wowbuild, _ , GW.wowToc = GetBuildInfo()
+
 GW.wowbuild = tonumber(GW.wowbuild)
 GW.Gw2Color = "|cffffedba" -- Color used for chat prints or buttons
 
@@ -50,6 +51,8 @@ GW.ScanTooltip = CreateFrame("GameTooltip", "GW2_UI_ScanTooltip", UIParent, "Sha
 GW.HiddenFrame = CreateFrame("Frame")
 GW.HiddenFrame.HiddenString = GW.HiddenFrame:CreateFontString(nil, "OVERLAY")
 GW.HiddenFrame:Hide()
+GW.BorderSize = 1
+GW.SpacingSize = 1
 
 --Tables
 GW.unitIlvlsCache = {}

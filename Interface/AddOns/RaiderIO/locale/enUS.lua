@@ -42,6 +42,8 @@ L.ENABLE_SIMPLE_SCORE_COLORS = "Use Simple Mythic+ Score Colors"
 L.ENABLE_SIMPLE_SCORE_COLORS_DESC = "Shows scores with standard item quality colors only. This can make it easier for those with color vision deficiencies to distinguish score tiers."
 L.ENABLE_NO_SCORE_COLORS = "Disable All Mythic+ Score Colors"
 L.ENABLE_NO_SCORE_COLORS_DESC = "Disables colorization of scores. All scores will be shown as white."
+L.SHOW_CHESTS_AS_MEDALS = "Show Mythic+ Medal Icons"
+L.SHOW_CHESTS_AS_MEDALS_DESC = "Shows keystone medals earned as icons instead of the plus (+) signs."
 L.SHOW_SCORE_IN_COMBAT = "Show Raider.IO Tooltip Info in Combat"
 L.SHOW_SCORE_IN_COMBAT_DESC = "Disable to minimize performance impact while hovering players during combat."
 L.SHOW_SCORE_WITH_MODIFIER = "Show Raider.IO Tooltip Info with Modifier"
@@ -198,5 +200,8 @@ L.WIPE_RWF_MODE_BUTTON_TOOLTIP = "Click to wipe the log from the storage file.\r
 L.RWF_TITLE = "|cffFFFFFFRaider.IO|r Race World First"
 L.RWF_SUBTITLE_LOGGING_LOOT = "(logging loot)"
 L.RWF_SUBTITLE_LOGGING_FILTERED_LOOT = "(logging relevant items)"
+L.SEARCH_REGION_LABEL = "Region"
+L.SEARCH_REALM_LABEL = "Realm"
+L.SEARCH_NAME_LABEL = "Name"
 
 ns.L = L

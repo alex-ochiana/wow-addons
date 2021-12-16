@@ -1,11 +1,25 @@
-VER 3 0000000000000015 "Burst" "INV_MISC_QUESTIONMARK"
-#showtooltip Ravenous Frenzy
+VER 3 0000000000000019 "C1" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast Door of Shadows
+/cast Soulshape
+/cast Fleshcraft
+/cast Summon Steward
+/run local G=GetSpellInfo SetMacroSpell(GetRunningMacro(), G"Door of Shadows" or G"Soulshape" or G"Fleshcraft" or G"Summon Steward")
+END
+VER 3 000000000000001A "C2" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast Ravenous Frenzy
+/cast Convoke the Spirits
+/cast Adaptive Swarm
+/cast Kindred Spirits
+/run local G=GetSpellInfo SetMacroSpell(GetRunningMacro(), G"Ravenous Frenzy" or G"Convoke the Spirits" or G"Adaptive Swarm" or G"Kindred Spirits")
+END
+VER 3 0000000000000015 "CA" "INV_MISC_QUESTIONMARK"
+#showtooltip
 /cast Celestial Alignment
 /target player
-/use 13
+/use Inscrutable Quantum Device
 /targetlasttarget
-/use 14
-/cast Ravenous Frenzy
 END
 VER 3 0000000000000002 "Dark skies" "236151"
 /tar Dread A
@@ -26,9 +40,6 @@ VER 3 0000000000000009 "SB" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000003 "Shado-Pan" "629482"
 /run local a=7298 print(format("\124cffFFFF00TODO for %s\124r",GetAchievementLink(a)))for i=1,GetAchievementNumCriteria(a)do local d,_,c,x,y=GetAchievementCriteriaInfo(a,i)if not c then print(format("%s %d/%d",d,x,y))end end
-END
-VER 3 0000000000000018 "SIT" "INV_MISC_QUESTIONMARK"
-/pet
 END
 VER 3 0000000000000011 "T1" "INV_MISC_QUESTIONMARK"
 #showtooltip 13

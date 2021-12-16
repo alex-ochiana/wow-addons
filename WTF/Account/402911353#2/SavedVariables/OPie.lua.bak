@@ -2,7 +2,7 @@
 OneRing_Config = {
 	["CharProfiles"] = {
 	},
-	["_GameVersion"] = "9.1.0",
+	["_GameVersion"] = "9.1.5",
 	["_OPieVersion"] = "Xe 6 (3.106)",
 	["ProfileStorage"] = {
 		["default"] = {
@@ -10,9 +10,6 @@ OneRing_Config = {
 				["DruidShift"] = "ALT-F",
 				["OPieTracking"] = false,
 				["DruidUtility"] = false,
-			},
-			["RotationTokens"] = {
-				["OPCTAt"] = "OPCHSs",
 			},
 		},
 	},

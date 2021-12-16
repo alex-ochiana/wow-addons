@@ -2,6 +2,7 @@ local _, GW = ...
 local L = GW.L
 local addOption = GW.AddOption
 local addOptionDropdown = GW.AddOptionDropdown
+local addOptionSlider = GW.AddOptionSlider
 local createCat = GW.CreateCat
 local GetSetting = GW.GetSetting
 local SetSetting = GW.SetSetting
@@ -18,6 +19,8 @@ local function setMultibarCols()
     mb2["ButtonsPerRow"] = cols
     SetSetting("MultiBarRight", mb1)
     SetSetting("MultiBarLeft", mb2)
+    --#regionto update the cols
+    GW.UpdateMultibarButtonMargin()
 end
 AddForProfiling("panel_actionbar", "setMultibarCols", setMultibarCols)
 
@@ -86,6 +89,30 @@ local function LoadActionbarPanel(sWindow)
         {["ACTIONBARS_ENABLED"] = true, ["GW_SHOW_MULTI_ACTIONBAR_3"] = true},
         "Actionbars"
     )
+    addOptionSlider(
+        p,
+        BINDING_HEADER_ACTIONBAR .. ": " .. L["Button Spacing"],
+        nil,
+        "MAINBAR_MARGIIN",
+        GW.UpdateMainBarMargin,
+        0,
+        10,
+        nil,
+        1,
+        {["ACTIONBARS_ENABLED"] = true}
+    )
+    addOptionSlider(
+        p,
+        BINDING_HEADER_MULTIACTIONBAR .. ": " .. L["Button Spacing"],
+        nil,
+        "MULTIBAR_MARGIIN",
+        GW.UpdateMultibarButtonMargin,
+        0,
+        10,
+        nil,
+        1,
+        {["ACTIONBARS_ENABLED"] = true}
+    )
     addOptionDropdown(
         p,
         L["Right Bar Width"],
@@ -116,7 +143,20 @@ local function LoadActionbarPanel(sWindow)
     )
     addOptionDropdown(
         p,
-        BINDING_HEADER_ACTIONBAR .. ": '" .. SHOW_MULTIBAR1_TEXT .. "' " .. SHOW,
+        BINDING_HEADER_ACTIONBAR .. ": '" .. BINDING_HEADER_ACTIONBAR .. "' " .. SHOW,
+        nil,
+        "FADE_MULTIACTIONBAR_5",
+        nil,
+        {"ALWAYS", "INCOMBAT", "MOUSE_OVER"},
+        {ALWAYS, GARRISON_LANDING_STATUS_MISSION_COMBAT, L["Only on Mouse Over"]},
+        nil,
+        {["ACTIONBARS_ENABLED"] = true},
+        nil,
+        "Actionbars"
+    )
+    addOptionDropdown(
+        p,
+        BINDING_HEADER_MULTIACTIONBAR .. ": '" .. SHOW_MULTIBAR1_TEXT .. "' " .. SHOW,
         nil,
         "FADE_MULTIACTIONBAR_1",
         nil,
@@ -129,7 +169,7 @@ local function LoadActionbarPanel(sWindow)
     )
     addOptionDropdown(
         p,
-        BINDING_HEADER_ACTIONBAR .. ": '" .. SHOW_MULTIBAR2_TEXT .. "' " .. SHOW,
+        BINDING_HEADER_MULTIACTIONBAR .. ": '" .. SHOW_MULTIBAR2_TEXT .. "' " .. SHOW,
         nil,
         "FADE_MULTIACTIONBAR_2",
         nil,
@@ -142,7 +182,7 @@ local function LoadActionbarPanel(sWindow)
     )
     addOptionDropdown(
         p,
-        BINDING_HEADER_ACTIONBAR .. ": '" .. SHOW_MULTIBAR3_TEXT .. "' " .. SHOW,
+        BINDING_HEADER_MULTIACTIONBAR .. ": '" .. SHOW_MULTIBAR3_TEXT .. "' " .. SHOW,
         nil,
         "FADE_MULTIACTIONBAR_3",
         nil,
@@ -155,7 +195,7 @@ local function LoadActionbarPanel(sWindow)
     )
     addOptionDropdown(
         p,
-        BINDING_HEADER_ACTIONBAR .. ": '" .. SHOW_MULTIBAR4_TEXT .. "' " .. SHOW,
+        BINDING_HEADER_MULTIACTIONBAR .. ": '" .. SHOW_MULTIBAR4_TEXT .. "' " .. SHOW,
         nil,
         "FADE_MULTIACTIONBAR_4",
         nil,
@@ -179,6 +219,7 @@ local function LoadActionbarPanel(sWindow)
         nil,
         "Actionbars"
     )
+    addOption(p, L["Show Macro Name"], L["Show Macro Name on Action Button"], "SHOWACTIONBAR_MACRO_NAME_ENABLED", nil, nil, {["ACTIONBARS_ENABLED"] = true}, "Actionbars")
 
     InitPanel(p)
 end

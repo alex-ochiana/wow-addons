@@ -4,11 +4,11 @@ CliqueDB3 = {
 	["char"] = {
 		["Vòlkmer - Kazzak"] = {
 			["spec1_profileKey"] = "Vòlkmer - Kazzak",
-			["spec2_profileKey"] = "Vòlkmer - Kazzak",
+			["spec3_profileKey"] = "Vòlkmer - Kazzak",
 			["downclick"] = false,
 			["fastooc"] = false,
+			["spec2_profileKey"] = "Vòlkmer - Kazzak",
 			["specswap"] = false,
-			["spec3_profileKey"] = "Vòlkmer - Kazzak",
 		},
 		["Crëtz - Kazzak"] = {
 			["spec1_profileKey"] = "Crëtz - Kazzak",
@@ -19,11 +19,11 @@ CliqueDB3 = {
 		},
 		["Jiglèr - Sylvanas"] = {
 			["spec1_profileKey"] = "Jiglèr - Sylvanas",
-			["spec3_profileKey"] = "Jiglèr - Sylvanas",
+			["specswap"] = false,
 			["downclick"] = false,
 			["fastooc"] = false,
+			["spec3_profileKey"] = "Jiglèr - Sylvanas",
 			["spec2_profileKey"] = "Jiglèr - Sylvanas",
-			["specswap"] = false,
 		},
 		["Plüto - Sylvanas"] = {
 			["spec1_profileKey"] = "Plüto - Sylvanas",
@@ -61,11 +61,11 @@ CliqueDB3 = {
 		},
 		["Mortifèrous - Kazzak"] = {
 			["spec1_profileKey"] = "Mortifèrous - Kazzak",
-			["spec3_profileKey"] = "Mortifèrous - Kazzak",
+			["specswap"] = false,
 			["downclick"] = false,
 			["fastooc"] = false,
+			["spec3_profileKey"] = "Mortifèrous - Kazzak",
 			["spec2_profileKey"] = "Mortifèrous - Kazzak",
-			["specswap"] = false,
 		},
 		["Kynaeth - Sylvanas"] = {
 			["spec1_profileKey"] = "Kynaeth - Sylvanas",
@@ -76,21 +76,41 @@ CliqueDB3 = {
 		},
 	},
 	["profileKeys"] = {
+		["Blanitza - Kazzak"] = "Blanitza - Kazzak",
 		["Mortifèrous - Kazzak"] = "Mortifèrous - Kazzak",
 		["Towerpog - Sylvanas"] = "Towerpog - Sylvanas",
 		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
 		["Latthrias - Sylvanas"] = "Latthrias - Sylvanas",
 		["Jiglèr - Sylvanas"] = "Jiglèr - Sylvanas",
-		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
+		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
 		["Plüto - Sylvanas"] = "Plüto - Sylvanas",
 		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
-		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
+		["Cìchìcean - Sylvanas"] = "Cìchìcean - Sylvanas",
 		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
 		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
 		["Cretz - Moonglade"] = "Cretz - Moonglade",
-		["Cìchìcean - Sylvanas"] = "Cìchìcean - Sylvanas",
+		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
 	},
 	["profiles"] = {
+		["Blanitza - Kazzak"] = {
+			["bindings"] = {
+				{
+					["type"] = "target",
+					["sets"] = {
+						["default"] = true,
+					},
+					["key"] = "BUTTON1",
+					["unit"] = "mouseover",
+				}, -- [1]
+				{
+					["type"] = "menu",
+					["key"] = "BUTTON2",
+					["sets"] = {
+						["default"] = true,
+					},
+				}, -- [2]
+			},
+		},
 		["Mortifèrous - Kazzak"] = {
 			["bindings"] = {
 				{
@@ -186,7 +206,7 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Kynaeth - Sylvanas"] = {
+		["Gnomèrcy - Sylvanas"] = {
 			["bindings"] = {
 				{
 					["type"] = "target",
@@ -243,7 +263,7 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Gnomèrcy - Sylvanas"] = {
+		["Cìchìcean - Sylvanas"] = {
 			["bindings"] = {
 				{
 					["type"] = "target",
@@ -364,7 +384,7 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Cìchìcean - Sylvanas"] = {
+		["Kynaeth - Sylvanas"] = {
 			["bindings"] = {
 				{
 					["type"] = "target",

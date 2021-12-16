@@ -1246,6 +1246,7 @@ do
 		L["The specified item was not found."] = "The specified item was not found."
 		L["The unlearned filter was ignored because the CanIMogIt addon was not found."] = "The unlearned filter was ignored because the CanIMogIt addon was not found."
 		L["The value must be greater than 0."] = "The value must be greater than 0."
+		L["The value must be greater than or equal of 0."] = "The value must be greater than or equal of 0."
 		L["The value was greater than the maximum allowed auction house price."] = "The value was greater than the maximum allowed auction house price."
 		L["Themes"] = "Themes"
 		L["There is currently no profession open, so cannot create profession groups."] = "There is currently no profession open, so cannot create profession groups."
@@ -18013,7 +18014,7 @@ L["At above max price and not undercut."] = "你的售價高於設定最高價�
 L["At normal price and not undercut."] = "你的售價是你設定的正常價格，同時也是市場最低價"
 L["Attachments"] = "附件"
 L["Auction"] = "拍賣"
-L["Auction duration"] = "拍賣時限"
+L["Auction duration"] = "拍賣競標時間"
 L["Auction has been bid on."] = "拍賣已結標"
 L["Auction House Cut"] = "拍賣費"
 L["Auction House Sounds"] = "拍賣場音效"
@@ -18063,7 +18064,7 @@ L["Average Earned per Day"] = "日均收益"
 L["Average Prices:"] = "平均價格："
 L["Average Profit per Day"] = "日均利潤"
 L["Average Spent per Day"] = "日均支出"
-L["Avg Buy Price"] = "平均買價"
+L["Avg Buy Price"] = "平均進價"
 L["Avg Profit"] = "平均利潤"
 L["Avg Sell Price"] = "平均售價"
 L["Back"] = "上一頁"
@@ -18217,8 +18218,7 @@ L["Click and drag to resize this window."] = "Click and drag to resize this wind
 L["Click to hide this item for the current session. Hold shift to hide this item permanently."] = "Click to hide this item for the current session. Hold shift to hide this item permanently."
 --[[Translation missing --]]
 L["COD"] = "COD"
---[[Translation missing --]]
-L["Coins (%s)"] = "Coins (%s)"
+L["Coins (%s)"] = "貨幣 (%s)"
 --[[Translation missing --]]
 L["Combine Partial Stacks"] = "Combine Partial Stacks"
 --[[Translation missing --]]
@@ -18434,7 +18434,7 @@ L["Don't prompt to record trades"] = "Don't prompt to record trades"
 L["Down"] = "下"
 --[[Translation missing --]]
 L["Duplicate the profile"] = "Duplicate the profile"
-L["Duration"] = "有效時限"
+L["Duration"] = "競標時間"
 --[[Translation missing --]]
 L["Duskwood"] = "Duskwood"
 --[[Translation missing --]]
@@ -18558,9 +18558,8 @@ L["Failed to start sniper. No groups have a Sniper operation applied."] = "Faile
 --[[Translation missing --]]
 L["Favorite Scans"] = "Favorite Scans"
 L["Favorite Searches"] = "喜愛的搜索"
-L["Favorited Patterns"] = "喜愛的菜色"
---[[Translation missing --]]
-L["Filter by duration"] = "Filter by duration"
+L["Favorited Patterns"] = "喜愛的配方"
+L["Filter by duration"] = "以競標時間篩選"
 L["Filter by groups"] = "以群組篩選"
 L["Filter by keyword"] = "以關鍵字篩選"
 L["Filter by Keyword"] = "以關鍵字篩選"
@@ -18612,8 +18611,7 @@ L["Great Deals Search"] = "Great Deals Search"
 --[[Translation missing --]]
 L["Group already exists."] = "Group already exists."
 L["Group Management"] = "群組管理"
---[[Translation missing --]]
-L["Group name"] = "Group name"
+L["Group name"] = "群組名稱"
 --[[Translation missing --]]
 L["Group Search"] = "Group Search"
 L["Grouped Items"] = "已被群組的物品"
@@ -18858,8 +18856,7 @@ L["Materials"] = "材料"
 L["Materials to Gather"] = "Materials to Gather"
 --[[Translation missing --]]
 L["Max"] = "Max"
---[[Translation missing --]]
-L["Max Buy Price"] = "Max Buy Price"
+L["Max Buy Price"] = "最高進價"
 --[[Translation missing --]]
 L["Max destroy value (Enter '0c' to disable)"] = "Max destroy value (Enter '0c' to disable)"
 --[[Translation missing --]]
@@ -18872,8 +18869,7 @@ L["Max Price"] = "Max Price"
 L["Max quantity"] = "Max quantity"
 --[[Translation missing --]]
 L["Max restock quantity"] = "Max restock quantity"
---[[Translation missing --]]
-L["Max Sell Price"] = "Max Sell Price"
+L["Max Sell Price"] = "最高售價"
 --[[Translation missing --]]
 L["Max Shopping Price"] = "Max Shopping Price"
 --[[Translation missing --]]
@@ -18904,8 +18900,7 @@ L["Min"] = "Min"
 L["Min 0 - Max 20"] = "最少 0 - 最多 20"
 --[[Translation missing --]]
 L["Min 0.5 - Max 10"] = "Min 0.5 - Max 10"
---[[Translation missing --]]
-L["Min Buy Price"] = "Min Buy Price"
+L["Min Buy Price"] = "最低進價"
 --[[Translation missing --]]
 L["Min Buyout"] = "Min Buyout"
 --[[Translation missing --]]
@@ -18915,8 +18910,7 @@ L["Min number of expires"] = "Min number of expires"
 L["Min profit amount"] = "最低利潤"
 --[[Translation missing --]]
 L["Min restock quantity"] = "Min restock quantity"
---[[Translation missing --]]
-L["Min Sell Price"] = "Min Sell Price"
+L["Min Sell Price"] = "最低售價"
 L["Min/Normal/Max price"] = "最低/正常/最高 價格"
 L["Min/Normal/Max Prices"] = "最低/正常/最高 價格"
 --[[Translation missing --]]
@@ -19123,8 +19117,7 @@ L["Post cap"] = "發佈上限"
 L["Post cap to bags"] = "Post cap to bags"
 --[[Translation missing --]]
 L["Post from Shopping Scan"] = "Post from Shopping Scan"
---[[Translation missing --]]
-L["Post Items from Bags"] = "Post Items from Bags"
+L["Post Items from Bags"] = "發佈背包裡的物品"
 --[[Translation missing --]]
 L["Post Quantity"] = "Post Quantity"
 --[[Translation missing --]]
@@ -19361,10 +19354,8 @@ L["Run Advanced Item Search"] = "Run Advanced Item Search"
 L["Run Bid Sniper"] = "Run Bid Sniper"
 --[[Translation missing --]]
 L["Run Buyout Sniper"] = "Run Buyout Sniper"
---[[Translation missing --]]
-L["Run Cancel Scan"] = "Run Cancel Scan"
---[[Translation missing --]]
-L["Run Post Scan"] = "Run Post Scan"
+L["Run Cancel Scan"] = "執行撤銷掃描"
+L["Run Post Scan"] = "執行發佈掃描"
 --[[Translation missing --]]
 L["Run Shopping Scan"] = "Run Shopping Scan"
 --[[Translation missing --]]
@@ -19644,8 +19635,7 @@ L["Target shortfall to bags"] = "Target shortfall to bags"
 L["Tasks Added to Task List"] = "Tasks Added to Task List"
 --[[Translation missing --]]
 L["Tells you why a specific item is not being restocked and added to the queue."] = "Tells you why a specific item is not being restocked and added to the queue."
---[[Translation missing --]]
-L["Text (%s)"] = "Text (%s)"
+L["Text (%s)"] = "文字 (%s)"
 --[[Translation missing --]]
 L["The '%s' custom price source is invalid."] = "The '%s' custom price source is invalid."
 --[[Translation missing --]]
@@ -19873,15 +19863,12 @@ L["Values"] = "Values"
 --[[Translation missing --]]
 L["Various under-the-hood tweaks and tuning have been implemented, with an aim to improve stability and reduce lag throughout the addon."] = "Various under-the-hood tweaks and tuning have been implemented, with an aim to improve stability and reduce lag throughout the addon."
 L["Vendor"] = "供應商"
-L["Vendor Buy Price"] = "買價"
---[[Translation missing --]]
-L["Vendor buy price"] = "Vendor buy price"
+L["Vendor Buy Price"] = "供應商進價"
+L["Vendor buy price"] = "供應商進價"
 L["Vendor Search"] = "供應商搜尋"
---[[Translation missing --]]
-L["Vendor Sell"] = "Vendor Sell"
-L["Vendor Sell Price"] = "賣價"
---[[Translation missing --]]
-L["Vendor sell price"] = "Vendor sell price"
+L["Vendor Sell"] = "供應商銷售"
+L["Vendor Sell Price"] = "供應商售價"
+L["Vendor sell price"] = "供應商售價"
 L["Vendoring"] = "供應"
 --[[Translation missing --]]
 L["Vendoring %s button"] = "Vendoring %s button"

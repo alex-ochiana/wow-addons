@@ -13,7 +13,7 @@ local animations = GW.animations
 
 local l = CreateFrame("Frame", nil, UIParent) -- Main event frame
 
-GW.VERSION_STRING = "GW2_UI 5.19.2"
+GW.VERSION_STRING = "GW2_UI 5.23.0"
 
 -- setup Binding Header color
 BINDING_HEADER_GW2UI = GetAddOnMetadata(..., "Title")
@@ -473,6 +473,10 @@ local function loadAddon(self)
     GW.LoadEncounterJournalSkin()
     GW.LoadCovenantSanctumSkin()
     GW.LoadSoulbindsSkin()
+    GW.LoadChromieTimerSkin()
+    GW.LoadAlliedRacesUISkin()
+    GW.LoadWeeklyRewardsSkin()
+    GW.LoadLFGSkin()
 
     GW.LoadImmersionAddonSkin()
 
@@ -662,6 +666,7 @@ local function loadAddon(self)
     if GetSetting("RAID_FRAMES") then
         GW.LoadRaidFrames()
         GW.LoadPartyGrid()
+        GW.LoadPetGrid()
     end
 
     GW.UpdateHudScale()

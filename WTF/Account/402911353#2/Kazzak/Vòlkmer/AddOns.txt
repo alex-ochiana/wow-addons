@@ -61,3 +61,4 @@ SmexyMats: enabled
 GW2_UI: enabled
 !BugGrabber: enabled
 BugSack: enabled
+OPie_Classic: disabled

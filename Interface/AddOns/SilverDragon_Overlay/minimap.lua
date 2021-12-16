@@ -18,11 +18,14 @@ local dataProvider = {
 module.MiniMapDataProvider = dataProvider
 
 function dataProvider:RefreshAllData()
-    if GetCVar('rotateMinimap') == '1' and self.facing == nil then return end
+    -- if we're here really early for some reason
+    if not module.db then return end
 
     HBDPins:RemoveAllMinimapIcons(self)
     self:ReleaseAllPins()
 
+    -- if we either can't display anything meaningful, or are disabled
+    if GetCVar('rotateMinimap') == '1' and self.facing == nil then return end
     if not module.db.profile.minimap.enabled then return end
 
     local uiMapID = HBD:GetPlayerZone()
@@ -233,7 +236,7 @@ function SilverDragonOverlayMinimapRoutePinMixin:OnReleased()
     end
 end
 function SilverDragonOverlayMinimapRoutePinMixin:UpdateRotation()
-    if self.rotation == nil then return end
+    if self.rotation == nil or self.provider.facing == nil then return end
     self.texture:SetRotation(self.rotation + math.pi*2 - self.provider.facing)
 end
 

@@ -1,6 +1,7 @@
 
 SimulationCraftDB = {
 	["profileKeys"] = {
+		["Blanitza - Kazzak"] = "Blanitza - Kazzak",
 		["Mortifèrous - Kazzak"] = "Mortifèrous - Kazzak",
 		["Towerpog - Sylvanas"] = "Towerpog - Sylvanas",
 		["Crëtz - Kazzak"] = "Crëtz - Kazzak",
@@ -10,12 +11,14 @@ SimulationCraftDB = {
 		["Plüto - Sylvanas"] = "Plüto - Sylvanas",
 		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
 		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
-		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
-		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
 		["Cretz - Moonglade"] = "Cretz - Moonglade",
+		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
+		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
 		["Cìchìcean - Sylvanas"] = "Cìchìcean - Sylvanas",
 	},
 	["profiles"] = {
+		["Blanitza - Kazzak"] = {
+		},
 		["Mortifèrous - Kazzak"] = {
 		},
 		["Towerpog - Sylvanas"] = {
@@ -34,7 +37,7 @@ SimulationCraftDB = {
 		},
 		["Gnomèrcy - Sylvanas"] = {
 		},
-		["Vòlkmer - Kazzak"] = {
+		["Cretz - Moonglade"] = {
 		},
 		["Crètz - Sylvanas"] = {
 			["frame"] = {
@@ -42,7 +45,7 @@ SimulationCraftDB = {
 				["ofsy"] = -2.99998950958252,
 			},
 		},
-		["Cretz - Moonglade"] = {
+		["Vòlkmer - Kazzak"] = {
 		},
 		["Cìchìcean - Sylvanas"] = {
 		},

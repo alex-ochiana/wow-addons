@@ -48,7 +48,7 @@ local function SkinDungeons()
         b1.hovertex:Hide()
         b1:HookScript("OnEnter", SetModifiedBackdrop)
         b1:HookScript("OnLeave", SetOriginalBackdrop)
-        GW.SetInside(b1.bgImage)
+        b1.bgImage:SetInside(2, 2)
         b1.bgImage:SetTexCoord(.08, .6, .08, .6)
         b1.bgImage:SetDrawLayer("ARTWORK", 5)
         b1.isSkinned = true
@@ -68,7 +68,7 @@ local function SkinDungeons()
             b.hovertex:Hide()
             b:HookScript("OnEnter", SetModifiedBackdrop)
             b:HookScript("OnLeave", SetOriginalBackdrop)
-            GW.SetInside(b.bgImage)
+            b.bgImage:SetInside(2, 2)
             b.bgImage:SetTexCoord(0.08, 0.6, 0.08, 0.6)
             b.bgImage:SetDrawLayer("ARTWORK", 5)
             b.isSkinned = true
@@ -81,8 +81,8 @@ local function SkinBosses()
     local _, _, bossID = EJ_GetEncounterInfoByIndex(bossIndex)
     local bossButton
 
-    local encounter = EncounterJournal.encounter
-    encounter.info.instanceButton.icon:SetMask("")
+    --local encounter = EncounterJournal.encounter
+    --encounter.info.instanceButton.icon:SetMask(nil) --buggyc
 
     while bossID do
         bossButton = _G["EncounterJournalBossButton" .. bossIndex]
@@ -365,7 +365,8 @@ local function LoadEncounterJournalSkin()
 
     local items = EncounterJournal.encounter.info.lootScroll.buttons
     for i = 1, #items do
-        local item = items[i]
+        -- 9.1.5 changes
+        local item = items[i].lootFrame
 
         item.bossTexture:SetAlpha(0)
         item.bosslessTexture:SetAlpha(0)
@@ -400,11 +401,6 @@ local function LoadEncounterJournalSkin()
         item.boss:SetTextColor(1, 1, 1)
         item.slot:SetTextColor(1, 1, 1)
         item.armorType:SetTextColor(1, 1, 1)
-
-        if i == 1 then
-            item:ClearAllPoints()
-            item:SetPoint("TOPLEFT", EncounterJournal.encounter.info.lootScroll.scrollChild, "TOPLEFT", 5, 0)
-        end
     end
 
     EncounterJournalSearchResults:StripTextures()
@@ -479,7 +475,7 @@ local function LoadEncounterJournalSkin()
         local rewardData = sugg.reward.data
         if rewardData then
             if not sugg.reward.icon.backdrop then
-                sugg.reward.icon:CreateBackdrop(GW.constBackdropFrameColorBorder, true)
+                sugg.reward.icon:CreateBackdrop("Transparent", true)
                 sugg.reward.icon.backdrop:SetFrameLevel(3)
             end
 
@@ -532,7 +528,7 @@ local function LoadEncounterJournalSkin()
                 btn.BackgroundOverlay:SetAlpha(0)
                 btn.CircleMask:Hide()
                 GW.HandleIcon(btn.Icon)
-                btn.Icon:CreateBackdrop(GW.constBackdropFrameColorBorder, true)
+                btn.Icon:CreateBackdrop("Transparent", true)
                 btn.Icon.backdrop:SetBackdropBorderColor(r, g, b)
 
                 btn:CreateBackdrop(GW.skins.constBackdropFrameSmallerBorder, true)

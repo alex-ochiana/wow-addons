@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(2440, "DBM-SanctumOfDomination", nil, 1193)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20211007000437")
+mod:SetRevision("20211203195942")
 mod:SetCreatureID(175559)
 mod:SetEncounterID(2422)
 mod:SetUsedIcons(1, 2, 3, 4, 5, 6, 7, 8)
@@ -22,8 +22,7 @@ mod:RegisterEventsInCombat(
 	"SPELL_AURA_REMOVED 354198 362494 348978 347292 355948 353808 348760 355389 348787",
 --	"SPELL_PERIODIC_DAMAGE",
 --	"SPELL_PERIODIC_MISSED",
-	"UNIT_DIED",
-	"INSTANCE_ENCOUNTER_ENGAGE_UNIT"
+	"UNIT_DIED"
 )
 
 --TODO, track https://ptr.wowhead.com/spell=354289/necrotic-miasma on infoframe?
@@ -84,15 +83,15 @@ local specWarnUndyingWrath							= mod:NewSpecialWarningRun(352355, nil, nil, ni
 local timerHowlingBlizzardCD						= mod:NewCDTimer(114.3, 354198, nil, nil, nil, 2)--Boss Mana timer
 local timerHowlingBlizzard							= mod:NewBuffActiveTimer(23, 354198, nil, nil, nil, 5)
 local timerDarkEvocationCD							= mod:NewCDTimer(86.2, 352530, nil, nil, nil, 3)--Boss Mana timer
-local timerSoulFractureCD							= mod:NewCDTimer(32.7, 348071, nil, "Tank|Healer", nil, 5, nil, DBM_CORE_L.TANK_ICON)
+local timerSoulFractureCD							= mod:NewCDTimer(32.7, 348071, nil, "Tank|Healer", nil, 5, nil, DBM_COMMON_L.TANK_ICON)
 local timerSoulExaustion							= mod:NewTargetTimer(60, 348978, nil, "Tank|Healer", nil, 5)
-local timerGlacialWrathCD							= mod:NewCDTimer(109.9, 346459, nil, nil, nil, 3, nil, DBM_CORE_L.DAMAGE_ICON)
+local timerGlacialWrathCD							= mod:NewCDTimer(109.9, 346459, nil, nil, nil, 3, nil, DBM_COMMON_L.DAMAGE_ICON)
 local timerOblivionsEchoCD							= mod:NewCDTimer(37, 347291, nil, nil, nil, 3)--37-60, 48.6 is the good median but it truly depends on dps
-local timerFrostBlastCD								= mod:NewCDTimer(40.1, 348756, nil, nil, nil, 3, nil, DBM_CORE_L.MAGIC_ICON)
+local timerFrostBlastCD								= mod:NewCDTimer(40.1, 348756, nil, nil, nil, 3, nil, DBM_COMMON_L.MAGIC_ICON)
 --Stage Two: The Phylactery Opens
 local timerVengefulDestruction						= mod:NewCastTimer(23, 352293, nil, nil, nil, 6)
 ----Remnant of Kel'Thuzad
-local timerFoulWindsCD								= mod:NewCDTimer(12.1, 355127, nil, nil, nil, 2, nil, DBM_CORE_L.MYTHIC_ICON)
+local timerFoulWindsCD								= mod:NewCDTimer(12.1, 355127, nil, nil, nil, 2, nil, DBM_COMMON_L.MYTHIC_ICON)
 local timerFreezingBlastCD							= mod:NewNextCountTimer(4.9, 352379, nil, nil, nil, 3)
 local timerGlacialWindsCD							= mod:NewNextTimer(13.3, 352379, nil, nil, nil, 3)
 --Stage Three
@@ -118,7 +117,6 @@ mod.vb.frostBlastCount = 0
 mod.vb.freezingBlastCount = 0
 mod.vb.oblivionEchoCast = 0
 local playerPhased = false
-local activeBossGUIDS = {}
 
 function mod:OnCombatStart(delay)
 	self.vb.echoIcon = 1
@@ -156,7 +154,6 @@ function mod:OnCombatStart(delay)
 end
 
 function mod:OnCombatEnd()
-	table.wipe(activeBossGUIDS)
 	if self.Options.InfoFrame then
 		DBM.InfoFrame:Hide()
 	end
@@ -264,7 +261,7 @@ function mod:SPELL_CAST_SUCCESS(args)
 		local cid = self:GetCIDFromGUID(args.sourceGUID)
 		if cid == 176605 then--Soul Shard
 			if self.Options.SetIconOnShards then
-				self:ScanForMobs(args.sourceGUID, 2, self.vb.shardIcon, 1, 0.2, 12, "SetIconOnShards", nil, nil, nil, true)
+				self:ScanForMobs(args.sourceGUID, 2, self.vb.shardIcon, 1, nil, 12, "SetIconOnShards", nil, nil, true)
 			end
 			self.vb.shardIcon = self.vb.shardIcon - 1
 		end
@@ -275,19 +272,23 @@ function mod:SPELL_SUMMON(args)
 	local spellId = args.spellId
 	--https://ptr.wowhead.com/npc=176703/frostbound-devoted / https://ptr.wowhead.com/npc=176974/soul-reaver / https://ptr.wowhead.com/npc=176973/unstoppable-abomination
 	if spellId == 352096 or spellId == 352094 or spellId == 352092 then
-		if spellId == 352096 and self:AntiSpam(5, 3) then
+		if spellId == 352096 and self:AntiSpam(8, 3) then
 			warnFrostboundDevoted:Show()
 		elseif spellId == 352094 then
-			if self:AntiSpam(5, 4) then
+			if self:AntiSpam(8, 4) then
 				warnSoulReaver:Show()
---				self.vb.addIcon = 8
+				self.vb.addIcon = 8
 			end
-		elseif spellId == 352092 and self:AntiSpam(5, 5) then
+			if self.Options.SetIconOnReaper then
+				self:ScanForMobs(args.destGUID, 2, self.vb.addIcon, 1, nil, 12, "SetIconOnReaper", nil, nil, true)
+			end
+			self.vb.addIcon = self.vb.addIcon - 1
+		elseif spellId == 352092 and self:AntiSpam(8, 5) then
 			warnAbom:Show()
 		end
 	elseif spellId == 346469 then--Glacial Spikes
 		if self.Options.SetIconOnGlacialSpike then
-			self:ScanForMobs(args.destGUID, 2, self.vb.spikeIcon, 1, 0.2, 12, "SetIconOnGlacialSpike", nil, nil, nil, true)
+			self:ScanForMobs(args.destGUID, 2, self.vb.spikeIcon, 1, nil, 12, "SetIconOnGlacialSpike", nil, nil, true)
 		end
 		self.vb.spikeIcon = self.vb.spikeIcon + 1
 	end
@@ -351,7 +352,7 @@ function mod:SPELL_AURA_APPLIED(args)
 		end
 	elseif spellId == 348760 then--and self:AntiSpam(5, args.destName)
 		if args:IsPlayer() then
-			specWarnFrostBlast:Show(DBM_CORE_L.ALLIES)
+			specWarnFrostBlast:Show(DBM_COMMON_L.ALLIES)
 			specWarnFrostBlast:Play("gathershare")
 			yellFrostBlast:Yell()
 			yellFrostBlastFades:Countdown(spellId)
@@ -442,23 +443,6 @@ function mod:UNIT_DIED(args)
 		timerFrostBlastCD:Start(7.4)
 		if not self:IsLFR() then--LFR get continued march of forsaken adds instead
 			timerOnslaughtoftheDamnedCD:Start(self:IsMythic() and 15.3 or 45.1)
-		end
-	end
-end
-
-function mod:INSTANCE_ENCOUNTER_ENGAGE_UNIT()
-	for i = 1, 5 do
-		local unitID = "boss"..i
-		local unitGUID = UnitGUID(unitID)
-		if UnitExists(unitID) and not activeBossGUIDS[unitGUID] then
-			activeBossGUIDS[unitGUID] = true
-			local cid = self:GetUnitCreatureId(unitID)
-			if cid == 176974 then--Soul Reaver
-				if self.Options.SetIconOnReaper then
-					self:ScanForMobs(unitGUID, 2, self.vb.addIcon, 1, 0.2, 12, "SetIconOnReaper", nil, nil, nil, true)
-				end
-				self.vb.addIcon = self.vb.addIcon - 1
-			end
 		end
 	end
 end
