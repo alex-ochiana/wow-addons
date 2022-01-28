@@ -1,3 +1,30 @@
+9.1.42 - 27th January 2022
+- Added 'Mechstriders' to 'Mute game sounds' ('System').  If enabled, mechanostriders will be muted.
+- Released again to address CurseForge App issue.
+
+9.1.40 - 26th January 2022
+- If 'Automate quests' ('Automation') is enabled, you can now set the override key to be shift, alt or control.
+- For 'Mute game sounds' ('System'), the 'Chimes' setting will now mute the Ironforge hourly horn sound.  Also added a new 'Anima' setting which makes the 'Experimental Anima Cell' toy quieter.
+
+9.1.39 - 19th January 2022
+- The 'Faster auto loot' option ('System') will now work with TSM Destroy.  You no longer need to disable faster auto loot when using TSM Destroy.
+- Added 'Soul Eaters' to 'Mute game sounds' ('System').
+
+9.1.37 - 5th January 2022
+- Fixed an issue with 'Release in PvP' which caused the 'Exclude Wintergrasp' and 'Exlude Ashran' settings to be ignored.
+
+9.1.36 - 29th December 2021
+- Fixed an issue which caused the 'Razorwings' setting ('Mute game sounds' in 'System') to not mute the mount sounds.
+
+9.1.35 - 22nd December 2021
+- If 'Combine addon buttons' ('Enhance minimap)' is enabled, addon button tooltips will no longer show together with game tooltips.  Non-standard buttons are now always replaced with LibDBIcon buttons so the 'Replace non-standard buttons' setting has been removed.  In addition, non-standard buttons will (for now) be described as such in the button tooltips.  You can now set the cluster scale again (note that adjusting the cluster scale has side effects so read the setting tooltip).  Method Raid Tools now has a standard LibDBIcon (though it's based on the original, custom icon).  If you come across any addons that aren't given a standard icon, please let me know.  Special thanks to tflo for providing valuable feedback and axelady for updating ZonePet with LibDBIcon.
+
+9.1.34 - 18th December 2021
+- If 'Combine addon buttons' ('Enhance minimap)' is enabled, addon button tooltips will now be shown under the minimap so as not to clutter the button frame.  This should work with most addon buttons.  Fixed an issue with TomCatTours non-standard minimap button.
+
+9.1.33 - 17th December 2021
+- Fixed a situational issue with 'Replace non-standard buttons' for 'Enhance minimap' ('Interface') creating unintended minimap buttons.
+
 9.1.31 - 15th December 2021
 - For 'Enhance minimap' ('Interface'), added a new setting to give you the choice of whether to show the new covenant button on the round minimap (it will always be shown on the square minimap regardless of this setting).  Added a new setting called 'Replace non-standard buttons'.  Most addons use the standard LibDBIcon library for their minimap buttons but a few addons use non-standard buttons instead.  The new setting will replace any non-standard buttons with LibDBIcon buttons.  This will solve the problems with non-standard buttons such as not hiding automatically, not following the minimap shape and not being placed in the button frame.  Added a new setting called 'Exclude BugSack' which will keep the BugSack addon minimap button visible if you have BugSack installed and the minimap button enabled.
 

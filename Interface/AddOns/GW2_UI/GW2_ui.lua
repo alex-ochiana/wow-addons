@@ -13,7 +13,7 @@ local animations = GW.animations
 
 local l = CreateFrame("Frame", nil, UIParent) -- Main event frame
 
-GW.VERSION_STRING = "GW2_UI 5.23.0"
+GW.VERSION_STRING = "GW2_UI 5.24.1"
 
 -- setup Binding Header color
 BINDING_HEADER_GW2UI = GetAddOnMetadata(..., "Title")

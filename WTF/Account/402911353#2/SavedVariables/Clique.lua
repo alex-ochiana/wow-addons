@@ -7,8 +7,8 @@ CliqueDB3 = {
 			["spec3_profileKey"] = "Vòlkmer - Kazzak",
 			["downclick"] = false,
 			["fastooc"] = false,
-			["spec2_profileKey"] = "Vòlkmer - Kazzak",
 			["specswap"] = false,
+			["spec2_profileKey"] = "Vòlkmer - Kazzak",
 		},
 		["Crëtz - Kazzak"] = {
 			["spec1_profileKey"] = "Crëtz - Kazzak",
@@ -22,15 +22,15 @@ CliqueDB3 = {
 			["specswap"] = false,
 			["downclick"] = false,
 			["fastooc"] = false,
-			["spec3_profileKey"] = "Jiglèr - Sylvanas",
 			["spec2_profileKey"] = "Jiglèr - Sylvanas",
+			["spec3_profileKey"] = "Jiglèr - Sylvanas",
 		},
 		["Plüto - Sylvanas"] = {
 			["spec1_profileKey"] = "Plüto - Sylvanas",
-			["specswap"] = false,
+			["spec2_profileKey"] = "Plüto - Sylvanas",
 			["downclick"] = false,
 			["fastooc"] = false,
-			["spec2_profileKey"] = "Plüto - Sylvanas",
+			["specswap"] = false,
 			["spec3_profileKey"] = "Plüto - Sylvanas",
 		},
 		["Egidus - Sylvanas"] = {
@@ -38,16 +38,16 @@ CliqueDB3 = {
 			["specswap"] = false,
 			["downclick"] = false,
 			["fastooc"] = false,
-			["spec2_profileKey"] = "Egidus - Sylvanas",
 			["spec3_profileKey"] = "Egidus - Sylvanas",
+			["spec2_profileKey"] = "Egidus - Sylvanas",
 		},
 		["Gnomèrcy - Sylvanas"] = {
 			["spec1_profileKey"] = "Gnomèrcy - Sylvanas",
 			["spec2_profileKey"] = "Gnomèrcy - Sylvanas",
 			["downclick"] = false,
 			["fastooc"] = false,
-			["specswap"] = false,
 			["spec3_profileKey"] = "Gnomèrcy - Sylvanas",
+			["specswap"] = false,
 		},
 		["Crètz - Sylvanas"] = {
 			["spec1_profileKey"] = "Crètz - Sylvanas",
@@ -55,17 +55,9 @@ CliqueDB3 = {
 			["spec3_profileKey"] = "Crètz - Sylvanas",
 			["downclick"] = false,
 			["spec4_profileKey"] = "Crètz - Sylvanas",
-			["specswap"] = false,
-			["spec2_profileKey"] = "Crètz - Sylvanas",
 			["alerthidden"] = true,
-		},
-		["Mortifèrous - Kazzak"] = {
-			["spec1_profileKey"] = "Mortifèrous - Kazzak",
+			["spec2_profileKey"] = "Crètz - Sylvanas",
 			["specswap"] = false,
-			["downclick"] = false,
-			["fastooc"] = false,
-			["spec3_profileKey"] = "Mortifèrous - Kazzak",
-			["spec2_profileKey"] = "Mortifèrous - Kazzak",
 		},
 		["Kynaeth - Sylvanas"] = {
 			["spec1_profileKey"] = "Kynaeth - Sylvanas",
@@ -73,6 +65,14 @@ CliqueDB3 = {
 			["downclick"] = false,
 			["fastooc"] = false,
 			["specswap"] = false,
+		},
+		["Mortifèrous - Kazzak"] = {
+			["spec1_profileKey"] = "Mortifèrous - Kazzak",
+			["specswap"] = false,
+			["downclick"] = false,
+			["fastooc"] = false,
+			["spec2_profileKey"] = "Mortifèrous - Kazzak",
+			["spec3_profileKey"] = "Mortifèrous - Kazzak",
 		},
 	},
 	["profileKeys"] = {
@@ -86,19 +86,19 @@ CliqueDB3 = {
 		["Plüto - Sylvanas"] = "Plüto - Sylvanas",
 		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
 		["Cìchìcean - Sylvanas"] = "Cìchìcean - Sylvanas",
-		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
-		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
 		["Cretz - Moonglade"] = "Cretz - Moonglade",
+		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
+		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
 		["Kynaeth - Sylvanas"] = "Kynaeth - Sylvanas",
 	},
 	["profiles"] = {
 		["Blanitza - Kazzak"] = {
 			["bindings"] = {
 				{
-					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -114,10 +114,10 @@ CliqueDB3 = {
 		["Mortifèrous - Kazzak"] = {
 			["bindings"] = {
 				{
+					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
-					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -133,10 +133,10 @@ CliqueDB3 = {
 		["Towerpog - Sylvanas"] = {
 			["bindings"] = {
 				{
+					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
-					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -152,10 +152,10 @@ CliqueDB3 = {
 		["Crëtz - Kazzak"] = {
 			["bindings"] = {
 				{
-					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -171,10 +171,10 @@ CliqueDB3 = {
 		["Latthrias - Sylvanas"] = {
 			["bindings"] = {
 				{
-					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -190,10 +190,10 @@ CliqueDB3 = {
 		["Jiglèr - Sylvanas"] = {
 			["bindings"] = {
 				{
-					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -209,10 +209,10 @@ CliqueDB3 = {
 		["Gnomèrcy - Sylvanas"] = {
 			["bindings"] = {
 				{
-					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -228,10 +228,10 @@ CliqueDB3 = {
 		["Plüto - Sylvanas"] = {
 			["bindings"] = {
 				{
+					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
-					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -247,10 +247,10 @@ CliqueDB3 = {
 		["Egidus - Sylvanas"] = {
 			["bindings"] = {
 				{
+					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
-					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -266,10 +266,10 @@ CliqueDB3 = {
 		["Cìchìcean - Sylvanas"] = {
 			["bindings"] = {
 				{
-					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -282,13 +282,13 @@ CliqueDB3 = {
 				}, -- [2]
 			},
 		},
-		["Vòlkmer - Kazzak"] = {
+		["Cretz - Moonglade"] = {
 			["bindings"] = {
 				{
-					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -299,24 +299,15 @@ CliqueDB3 = {
 						["default"] = true,
 					},
 				}, -- [2]
-				{
-					["type"] = "spell",
-					["key"] = "ALT-MOUSEWHEELDOWN",
-					["sets"] = {
-						["default"] = true,
-					},
-					["icon"] = 236288,
-					["spell"] = "Cleanse Spirit",
-				}, -- [3]
 			},
 		},
 		["Crètz - Sylvanas"] = {
 			["bindings"] = {
 				{
+					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
-					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -365,13 +356,13 @@ CliqueDB3 = {
 				}, -- [6]
 			},
 		},
-		["Cretz - Moonglade"] = {
+		["Vòlkmer - Kazzak"] = {
 			["bindings"] = {
 				{
-					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -382,15 +373,24 @@ CliqueDB3 = {
 						["default"] = true,
 					},
 				}, -- [2]
+				{
+					["type"] = "spell",
+					["key"] = "ALT-MOUSEWHEELDOWN",
+					["sets"] = {
+						["default"] = true,
+					},
+					["icon"] = 236288,
+					["spell"] = "Cleanse Spirit",
+				}, -- [3]
 			},
 		},
 		["Kynaeth - Sylvanas"] = {
 			["bindings"] = {
 				{
-					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]

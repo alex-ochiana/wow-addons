@@ -1,16 +1,16 @@
 
 dbBFA = {
 	["char"] = {
-		["Kynaeth - Sylvanas"] = {
+		["Crëtz - Kazzak"] = {
 			["firstun"] = false,
 		},
-		["Vòlkmer - Kazzak"] = {
+		["Mortifèrous - Kazzak"] = {
 			["firstun"] = false,
 		},
 		["Egidus - Sylvanas"] = {
 			["firstun"] = false,
 		},
-		["Crëtz - Kazzak"] = {
+		["Kynaeth - Sylvanas"] = {
 			["firstun"] = false,
 		},
 		["Plüto - Sylvanas"] = {
@@ -22,19 +22,19 @@ dbBFA = {
 		["Jiglèr - Sylvanas"] = {
 			["firstun"] = false,
 		},
-		["Mortifèrous - Kazzak"] = {
+		["Vòlkmer - Kazzak"] = {
 			["firstun"] = false,
 		},
 	},
 	["profileKeys"] = {
-		["Kynaeth - Sylvanas"] = "Default",
-		["Vòlkmer - Kazzak"] = "Default",
-		["Egidus - Sylvanas"] = "Default",
 		["Crëtz - Kazzak"] = "Default",
+		["Mortifèrous - Kazzak"] = "Default",
+		["Egidus - Sylvanas"] = "Default",
+		["Kynaeth - Sylvanas"] = "Default",
 		["Plüto - Sylvanas"] = "Default",
 		["Crètz - Sylvanas"] = "Default",
 		["Jiglèr - Sylvanas"] = "Default",
-		["Mortifèrous - Kazzak"] = "Default",
+		["Vòlkmer - Kazzak"] = "Default",
 	},
 	["global"] = {
 		["warn01_seen"] = 0,

@@ -2,7 +2,7 @@
 ## Notes: A simple chat copy paste addon.
 ## Title: ChatCopyPaste
 ## Author: Novaspark-Arugal OCE
-## Version: 1.9
+## Version: 1.11
 ## SavedVariables: CCPOptions
 
 embeds.xml

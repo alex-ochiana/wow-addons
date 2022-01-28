@@ -11,9 +11,9 @@ SimulationCraftDB = {
 		["Plüto - Sylvanas"] = "Plüto - Sylvanas",
 		["Egidus - Sylvanas"] = "Egidus - Sylvanas",
 		["Gnomèrcy - Sylvanas"] = "Gnomèrcy - Sylvanas",
-		["Cretz - Moonglade"] = "Cretz - Moonglade",
-		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
 		["Vòlkmer - Kazzak"] = "Vòlkmer - Kazzak",
+		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
+		["Cretz - Moonglade"] = "Cretz - Moonglade",
 		["Cìchìcean - Sylvanas"] = "Cìchìcean - Sylvanas",
 	},
 	["profiles"] = {
@@ -37,7 +37,7 @@ SimulationCraftDB = {
 		},
 		["Gnomèrcy - Sylvanas"] = {
 		},
-		["Cretz - Moonglade"] = {
+		["Vòlkmer - Kazzak"] = {
 		},
 		["Crètz - Sylvanas"] = {
 			["frame"] = {
@@ -45,7 +45,7 @@ SimulationCraftDB = {
 				["ofsy"] = -2.99998950958252,
 			},
 		},
-		["Vòlkmer - Kazzak"] = {
+		["Cretz - Moonglade"] = {
 		},
 		["Cìchìcean - Sylvanas"] = {
 		},

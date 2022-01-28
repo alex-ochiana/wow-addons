@@ -1,880 +1,5 @@
 
 EncounterDetailsDB = {
-	["emotes"] = {
-		{
-			{
-				2.547999999951571, -- [1]
-				"|TInterface\\Icons\\ability_warrior_bloodnova.blp:20|tThe %s is injured and sprouts |cFFFE9A2EBlistering Tentacles|r!", -- [2]
-				"Arm Tentacle", -- [3]
-				1, -- [4]
-			}, -- [1]
-			{
-				2.880000000004657, -- [1]
-				"|TInterface\\Icons\\ability_deathwing_assualtaspects.blp:20|t%s begins to cast |cFFFF0000|Hspell:107018|h[Assault Aspects]|h|r!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [2]
-			{
-				4.896999999997206, -- [1]
-				"|TInterface\\Icons\\ability_deathwing_assualtaspects.blp:20|t%s assaults |cFF04FC32|Hspell:107018|h[Ysera]|h|r!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [3]
-			{
-				4.896999999997206, -- [1]
-				"I will bring you closer to the Emerald Dream. Seek safety there when the fight becomes too intense.", -- [2]
-				"Ysera", -- [3]
-				7, -- [4]
-			}, -- [4]
-			{
-				4.896999999997206, -- [1]
-				"|TInterface\\Icons\\ability_warrior_bloodnova.blp:20|tThe %s is injured and sprouts |cFFFE9A2EBlistering Tentacles|r!", -- [2]
-				"Arm Tentacle", -- [3]
-				1, -- [4]
-			}, -- [5]
-			{
-				4.896999999997206, -- [1]
-				"|TInterface\\Icons\\ability_warrior_bloodnova.blp:20|tThe %s is injured and sprouts |cFFFE9A2EBlistering Tentacles|r!", -- [2]
-				"Arm Tentacle", -- [3]
-				1, -- [4]
-			}, -- [6]
-			{
-				11.50399999995716, -- [1]
-				"%s begins to impale the Aspect! Stop it!", -- [2]
-				"Mutated Corruption", -- [3]
-				1, -- [4]
-			}, -- [7]
-			{
-				14.74699999997392, -- [1]
-				"|TInterface\\Icons\\ability_warrior_bloodnova.blp:20|tThe %s is injured and sprouts |cFFFE9A2EBlistering Tentacles|r!", -- [2]
-				"Wing Tentacle", -- [3]
-				1, -- [4]
-			}, -- [8]
-			{
-				15.16399999998976, -- [1]
-				"|TInterface\\Icons\\ability_deathwing_assualtaspects.blp:20|t%s begins to cast |cFFFF0000|Hspell:107018|h[Assault Aspects]|h|r!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [9]
-			{
-				18.29899999999907, -- [1]
-				"|TInterface\\Icons\\ability_warrior_bloodnova.blp:20|tThe %s is injured and sprouts |cFFFE9A2EBlistering Tentacles|r!", -- [2]
-				"Wing Tentacle", -- [3]
-				1, -- [4]
-			}, -- [10]
-			{
-				21.26500000001397, -- [1]
-				"%s begins to impale the Aspect! Stop it!", -- [2]
-				"Mutated Corruption", -- [3]
-				1, -- [4]
-			}, -- [11]
-			{
-				25.19799999997485, -- [1]
-				"|TInterface\\Icons\\ability_deathwing_assualtaspects.blp:20|t%s assaults |cFFFF0000|Hspell:107018|h[Alexstrasza]|h|r!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [12]
-			{
-				25.19799999997485, -- [1]
-				"I will cleanse whatever corruption I can; my fire will not harm you.", -- [2]
-				"Alexstrasza", -- [3]
-				7, -- [4]
-			}, -- [13]
-			{
-				27.20400000002701, -- [1]
-				"%s begins to impale the Aspect! Stop it!", -- [2]
-				"Mutated Corruption", -- [3]
-				1, -- [4]
-			}, -- [14]
-			{
-				27.74699999997392, -- [1]
-				"|TInterface\\Icons\\ability_deathwing_assualtaspects.blp:20|t%s begins to cast |cFFFF0000|Hspell:107018|h[Assault Aspects]|h|r!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [15]
-			{
-				31.80200000002515, -- [1]
-				"|TInterface\\Icons\\ability_warrior_bloodnova.blp:20|tThe %s is injured and sprouts |cFFFE9A2EBlistering Tentacles|r!", -- [2]
-				"Arm Tentacle", -- [3]
-				1, -- [4]
-			}, -- [16]
-			{
-				33.40000000002328, -- [1]
-				"%s begins to impale the Aspect! Stop it!", -- [2]
-				"Mutated Corruption", -- [3]
-				1, -- [4]
-			}, -- [17]
-			{
-				34.2149999999674, -- [1]
-				"|TInterface\\Icons\\ability_warrior_bloodnova.blp:20|tThe %s is injured and sprouts |cFFFE9A2EBlistering Tentacles|r!", -- [2]
-				"Arm Tentacle", -- [3]
-				1, -- [4]
-			}, -- [18]
-			{
-				37.76699999999255, -- [1]
-				"|TInterface\\Icons\\ability_deathwing_assualtaspects.blp:20|t%s assaults |cFFFFFF00|Hspell:107018|h[Nozdormu]|h|r!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [19]
-			{
-				37.76699999999255, -- [1]
-				"I will slow the Destroyer's attacks when I can.", -- [2]
-				"Nozdormu", -- [3]
-				7, -- [4]
-			}, -- [20]
-			{
-				39.48399999993853, -- [1]
-				"%s begins to impale the Aspect! Stop it!", -- [2]
-				"Mutated Corruption", -- [3]
-				1, -- [4]
-			}, -- [21]
-			{
-				40.52299999992829, -- [1]
-				"|TInterface\\Icons\\ability_deathwing_assualtaspects.blp:20|t%s begins to cast |cFFFF0000|Hspell:107018|h[Assault Aspects]|h|r!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [22]
-			{
-				43.92599999997765, -- [1]
-				"|TInterface\\Icons\\ability_warrior_bloodnova.blp:20|tThe %s is injured and sprouts |cFFFE9A2EBlistering Tentacles|r!", -- [2]
-				"Wing Tentacle", -- [3]
-				1, -- [4]
-			}, -- [23]
-			{
-				45.13699999998789, -- [1]
-				"|TInterface\\Icons\\ability_warrior_bloodnova.blp:20|tThe %s is injured and sprouts |cFFFE9A2EBlistering Tentacles|r!", -- [2]
-				"Wing Tentacle", -- [3]
-				1, -- [4]
-			}, -- [24]
-			{
-				45.53899999998976, -- [1]
-				"%s begins to impale the Aspect! Stop it!", -- [2]
-				"Mutated Corruption", -- [3]
-				1, -- [4]
-			}, -- [25]
-			{
-				48.40399999998044, -- [1]
-				"I AM DEATHWING, THE DESTROYER, THE END OF ALL THINGS, INEVITABLE, INDOMITABLE; I AM THE CATACLYSM!", -- [2]
-				"Deathwing", -- [3]
-				7, -- [4]
-			}, -- [26]
-			{
-				48.40399999998044, -- [1]
-				"|TInterface\\Icons\\inv_stave_2h_deathwingraiddw_d_01.blp:20|t%s falls forward, get to |cFF04FC32Ysera's|r platform!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [27]
-			{
-				50.69599999999628, -- [1]
-				"|TInterface\\Icons\\ability_deathwing_assualtaspects.blp:20|t%s assaults |cFFFFFF00|Hspell:107018|h[Nozdormu]|h|r!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [28]
-			{
-				56.36499999999069, -- [1]
-				"%s begins to impale the Aspect! Stop it!", -- [2]
-				"Mutated Corruption", -- [3]
-				1, -- [4]
-			}, -- [29]
-			{
-				57.91099999996368, -- [1]
-				"|TInterface\\Icons\\ability_vehicle_sonicshockwave.blp:20|t%s begins to cast |cFFFF0000|Hspell:106886|h[Cauterize]|h|r!", -- [2]
-				"Alexstrasza", -- [3]
-				1, -- [4]
-			}, -- [30]
-			{
-				58.90500000002794, -- [1]
-				"|TInterface\\Icons\\ability_vehicle_sonicshockwave.blp:20|t%s begins to cast |cFFFF0000|Hspell:106886|h[Cauterize]|h|r!", -- [2]
-				"Alexstrasza", -- [3]
-				1, -- [4]
-			}, -- [31]
-			{
-				59.40099999995437, -- [1]
-				"|TInterface\\Icons\\ability_vehicle_sonicshockwave.blp:20|t%s begins to cast |cFFFF0000|Hspell:106886|h[Cauterize]|h|r!", -- [2]
-				"Alexstrasza", -- [3]
-				1, -- [4]
-			}, -- [32]
-			["boss"] = "Madness of Deathwing",
-		}, -- [1]
-		{
-			{
-				0.2460000000428408, -- [1]
-				"The plates! He's coming apart! Tear up the plates and we've got a shot at bringing him down!", -- [2]
-				"Sky Captain Swayze", -- [3]
-				7, -- [4]
-			}, -- [1]
-			{
-				1.161000000080094, -- [1]
-				"Don't worry about me. Stop the Destroyer! Enshu-falah-nah, dorini.", -- [2]
-				"Sky Captain Swayze", -- [3]
-				7, -- [4]
-			}, -- [2]
-			{
-				13.83600000001025, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [3]
-			{
-				23.84700000006706, -- [1]
-				"%s rolls left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [4]
-			{
-				33.84799999999814, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [5]
-			{
-				37.21000000007916, -- [1]
-				"You are less than dust, fit only to be brushed from my back.", -- [2]
-				"Deathwing", -- [3]
-				7, -- [4]
-			}, -- [6]
-			{
-				43.85700000007637, -- [1]
-				"%s rolls left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [7]
-			{
-				53.83299999998417, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [8]
-			{
-				63.8179999999702, -- [1]
-				"%s rolls left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [9]
-			{
-				69.71400000003632, -- [1]
-				"Your tenacity is admirable, but pointless. You ride into the jaws of the apocalypse.", -- [2]
-				"Deathwing", -- [3]
-				7, -- [4]
-			}, -- [10]
-			{
-				73.84499999997206, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [11]
-			{
-				83.82799999997951, -- [1]
-				"%s rolls left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [12]
-			{
-				93.83100000000559, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [13]
-			{
-				101.4050000000279, -- [1]
-				"Your tenacity is admirable, but pointless. You ride into the jaws of the apocalypse.", -- [2]
-				"Deathwing", -- [3]
-				7, -- [4]
-			}, -- [14]
-			{
-				103.7610000000568, -- [1]
-				"%s rolls left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [15]
-			{
-				113.8610000000335, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [16]
-			{
-				123.8570000000764, -- [1]
-				"%s rolls left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [17]
-			{
-				133.8310000000056, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [18]
-			{
-				137.9620000000577, -- [1]
-				"Your efforts are insignificant. I carry you to your deaths.", -- [2]
-				"Deathwing", -- [3]
-				7, -- [4]
-			}, -- [19]
-			{
-				138.7789999999804, -- [1]
-				"%s feels players on his right side. He's about to roll right!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [20]
-			{
-				141.8400000000838, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [21]
-			{
-				143.8329999999842, -- [1]
-				"%s feels players on his right side. He's about to roll right!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [22]
-			{
-				145.6850000000559, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [23]
-			{
-				146.8370000000577, -- [1]
-				"%s feels players on his right side. He's about to roll right!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [24]
-			{
-				150.8520000000717, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [25]
-			{
-				153.8340000000317, -- [1]
-				"%s feels players on his right side. He's about to roll right!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [26]
-			{
-				154.8220000000438, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [27]
-			{
-				159.8250000000699, -- [1]
-				"%s feels players on his right side. He's about to roll right!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [28]
-			{
-				161.8340000000317, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [29]
-			{
-				163.8179999999702, -- [1]
-				"%s feels players on his right side. He's about to roll right!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [30]
-			{
-				164.3070000000298, -- [1]
-				"|TInterface\\Icons\\inv_gizmo_supersappercharge.blp:20|t%s is casting |c0087CEFA|Hspell:105845|h[Nuclear Blast]|h|r!", -- [2]
-				"Hideous Amalgamation", -- [3]
-				1, -- [4]
-			}, -- [31]
-			{
-				164.8390000000363, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [32]
-			{
-				166.7299999999814, -- [1]
-				"%s feels players on his right side. He's about to roll right!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [33]
-			{
-				167.829000000027, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [34]
-			{
-				169.8340000000317, -- [1]
-				"%s feels players on his right side. He's about to roll right!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [35]
-			{
-				170.8270000000484, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [36]
-			{
-				171.8260000000009, -- [1]
-				"%s feels players on his right side. He's about to roll right!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [37]
-			{
-				176.829000000027, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [38]
-			{
-				177.8250000000699, -- [1]
-				"%s feels players on his right side. He's about to roll right!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [39]
-			{
-				178.8350000000792, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [40]
-			{
-				182.8320000000531, -- [1]
-				"%s feels players on his right side. He's about to roll right!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [41]
-			{
-				183.7419999999693, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [42]
-			{
-				185.8320000000531, -- [1]
-				"%s feels players on his right side. He's about to roll right!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [43]
-			{
-				186.8479999999981, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [44]
-			{
-				188.8660000000382, -- [1]
-				"%s feels players on his right side. He's about to roll right!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [45]
-			{
-				190.6909999999916, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [46]
-			{
-				191.8279999999795, -- [1]
-				"%s feels players on his right side. He's about to roll right!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [47]
-			{
-				192.8300000000745, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [48]
-			{
-				194.8270000000484, -- [1]
-				"%s feels players on his right side. He's about to roll right!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [49]
-			{
-				196.8549999999814, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [50]
-			{
-				198.859999999986, -- [1]
-				"%s feels players on his right side. He's about to roll right!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [51]
-			{
-				200.8470000000671, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [52]
-			{
-				205.6990000000224, -- [1]
-				"%s feels players on his right side. He's about to roll right!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [53]
-			{
-				207.4720000000671, -- [1]
-				"Ha! I had not realized you fools were still there.", -- [2]
-				"Deathwing", -- [3]
-				7, -- [4]
-			}, -- [54]
-			{
-				207.8649999999907, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [55]
-			{
-				212.829000000027, -- [1]
-				"%s feels players on his right side. He's about to roll right!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [56]
-			{
-				214.7249999999767, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [57]
-			{
-				216.8669999999693, -- [1]
-				"%s feels players on his right side. He's about to roll right!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [58]
-			{
-				220.420999999973, -- [1]
-				"|TInterface\\Icons\\inv_gizmo_supersappercharge.blp:20|t%s is casting |c0087CEFA|Hspell:105845|h[Nuclear Blast]|h|r!", -- [2]
-				"Hideous Amalgamation", -- [3]
-				1, -- [4]
-			}, -- [59]
-			{
-				220.7100000000792, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [60]
-			{
-				221.8470000000671, -- [1]
-				"%s feels players on his right side. He's about to roll right!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [61]
-			{
-				223.8229999999749, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [62]
-			{
-				224.7640000000829, -- [1]
-				"%s feels players on his right side. He's about to roll right!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [63]
-			{
-				226.8640000000596, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [64]
-			{
-				227.8400000000838, -- [1]
-				"%s feels players on his right side. He's about to roll right!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [65]
-			{
-				231.8240000000224, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [66]
-			{
-				235.7000000000699, -- [1]
-				"%s feels players on his right side. He's about to roll right!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [67]
-			{
-				237.7299999999814, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [68]
-			{
-				239.1269999999786, -- [1]
-				"Your efforts are insignificant. I carry you to your deaths.", -- [2]
-				"Deathwing", -- [3]
-				7, -- [4]
-			}, -- [69]
-			{
-				240.7150000000838, -- [1]
-				"%s feels players on his right side. He's about to roll right!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [70]
-			{
-				243.8200000000652, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [71]
-			{
-				245.8229999999749, -- [1]
-				"%s feels players on his right side. He's about to roll right!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [72]
-			{
-				248.8360000000102, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [73]
-			{
-				250.7060000000056, -- [1]
-				"%s feels players on his right side. He's about to roll right!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [74]
-			{
-				251.8310000000056, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [75]
-			{
-				253.8179999999702, -- [1]
-				"%s feels players on his right side. He's about to roll right!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [76]
-			{
-				254.8229999999749, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [77]
-			{
-				256.8499999999767, -- [1]
-				"%s feels players on his right side. He's about to roll right!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [78]
-			{
-				259.8300000000745, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [79]
-			{
-				261.8209999999963, -- [1]
-				"%s feels players on his right side. He's about to roll right!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [80]
-			{
-				264.8220000000438, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [81]
-			{
-				266.8200000000652, -- [1]
-				"%s feels players on his right side. He's about to roll right!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [82]
-			{
-				267.8250000000699, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [83]
-			{
-				270.8260000000009, -- [1]
-				"%s feels players on his right side. He's about to roll right!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [84]
-			{
-				272.2700000000186, -- [1]
-				"|TInterface\\Icons\\inv_gizmo_supersappercharge.blp:20|t%s is casting |c0087CEFA|Hspell:105845|h[Nuclear Blast]|h|r!", -- [2]
-				"Hideous Amalgamation", -- [3]
-				1, -- [4]
-			}, -- [85]
-			{
-				272.7469999999739, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [86]
-			{
-				273.7249999999767, -- [1]
-				"%s feels players on his right side. He's about to roll right!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [87]
-			{
-				274.4490000000224, -- [1]
-				"You are less than dust, fit only to be brushed from my back.", -- [2]
-				"Deathwing", -- [3]
-				7, -- [4]
-			}, -- [88]
-			{
-				274.8209999999963, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [89]
-			{
-				276.8300000000745, -- [1]
-				"%s feels players on his right side. He's about to roll right!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [90]
-			{
-				277.8179999999702, -- [1]
-				"%s feels players on his left side. He's about to roll left!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [91]
-			{
-				278.8200000000652, -- [1]
-				"%s feels players on his right side. He's about to roll right!", -- [2]
-				"Deathwing", -- [3]
-				1, -- [4]
-			}, -- [92]
-			["boss"] = "Spine of Deathwing",
-		}, -- [2]
-		{
-			{
-				20.75199999997858, -- [1]
-				"Goriona! Give them hell!", -- [2]
-				"Warmaster Blackhorn", -- [3]
-				7, -- [4]
-			}, -- [1]
-			{
-				20.75199999997858, -- [1]
-				"|TInterface\\Icons\\spell_fire_twilightflamebreath.blp:20|t%s prepares to unleash a |cFF9900CC|Hspell:106401|h[Twilight Onslaught]|h|r!", -- [2]
-				"Goriona", -- [3]
-				1, -- [4]
-			}, -- [2]
-			{
-				30.7259999999078, -- [1]
-				"|Tinterface\\icons\\spell_fire_twilightrainoffire.blp:0|t%s fires a |cFF9900CC|Hspell:110153|h[Broadside]|h|r at the Skyfire!", -- [2]
-				"Goriona", -- [3]
-				1, -- [4]
-			}, -- [3]
-			{
-				42.4649999999674, -- [1]
-				"A drake swoops down to drop a Twilight Sapper onto the deck!", -- [2]
-				"Twilight Infiltrator", -- [3]
-				1, -- [4]
-			}, -- [4]
-			{
-				55.74499999999534, -- [1]
-				"Goriona! Give them hell!", -- [2]
-				"Warmaster Blackhorn", -- [3]
-				7, -- [4]
-			}, -- [5]
-			{
-				55.74499999999534, -- [1]
-				"|TInterface\\Icons\\spell_fire_twilightflamebreath.blp:20|t%s prepares to unleash a |cFF9900CC|Hspell:106401|h[Twilight Onslaught]|h|r!", -- [2]
-				"Goriona", -- [3]
-				1, -- [4]
-			}, -- [6]
-			{
-				82.39999999990687, -- [1]
-				"A drake swoops down to drop a Twilight Sapper onto the deck!", -- [2]
-				"Twilight Infiltrator", -- [3]
-				1, -- [4]
-			}, -- [7]
-			{
-				90.74399999994785, -- [1]
-				"Goriona! Give them hell!", -- [2]
-				"Warmaster Blackhorn", -- [3]
-				7, -- [4]
-			}, -- [8]
-			{
-				90.74399999994785, -- [1]
-				"|TInterface\\Icons\\spell_fire_twilightflamebreath.blp:20|t%s prepares to unleash a |cFF9900CC|Hspell:106401|h[Twilight Onslaught]|h|r!", -- [2]
-				"Goriona", -- [3]
-				1, -- [4]
-			}, -- [9]
-			{
-				100.7219999999506, -- [1]
-				"|Tinterface\\icons\\spell_fire_twilightrainoffire.blp:0|t%s fires a |cFF9900CC|Hspell:110153|h[Broadside]|h|r at the Skyfire!", -- [2]
-				"Goriona", -- [3]
-				1, -- [4]
-			}, -- [10]
-			{
-				104.0279999999329, -- [1]
-				"|Tinterface\\icons\\spell_fire_ragnaros_lavabolt.blp:0|tStructural damage to the Skyfire triggers a sudden |cFFFF0000|Hspell:110095|h[Deck Fire]|h|r!", -- [2]
-				"The Skyfire", -- [3]
-				1, -- [4]
-			}, -- [11]
-			{
-				122.3819999999832, -- [1]
-				"A drake swoops down to drop a Twilight Sapper onto the deck!", -- [2]
-				"Twilight Infiltrator", -- [3]
-				1, -- [4]
-			}, -- [12]
-			{
-				125.7749999999069, -- [1]
-				"Goriona! Give them hell!", -- [2]
-				"Warmaster Blackhorn", -- [3]
-				7, -- [4]
-			}, -- [13]
-			{
-				125.7749999999069, -- [1]
-				"|TInterface\\Icons\\spell_fire_twilightflamebreath.blp:20|t%s prepares to unleash a |cFF9900CC|Hspell:106401|h[Twilight Onslaught]|h|r!", -- [2]
-				"Goriona", -- [3]
-				1, -- [4]
-			}, -- [14]
-			{
-				137.1449999999022, -- [1]
-				"Concentrate everything on the armored drake!", -- [2]
-				"Sky Captain Swayze", -- [3]
-				7, -- [4]
-			}, -- [15]
-			{
-				151.9729999999981, -- [1]
-				"Looks like I'm doing this myself. Good!", -- [2]
-				"Warmaster Blackhorn", -- [3]
-				7, -- [4]
-			}, -- [16]
-			{
-				161.7119999999413, -- [1]
-				"%s siphons vitality from Goriona and attacks with renewed vigor!", -- [2]
-				"Warmaster Blackhorn", -- [3]
-				1, -- [4]
-			}, -- [17]
-			{
-				165.3659999999218, -- [1]
-				"%s siphons vitality from Goriona and attacks with renewed vigor!", -- [2]
-				"Warmaster Blackhorn", -- [3]
-				1, -- [4]
-			}, -- [18]
-			{
-				169.420999999973, -- [1]
-				"%s siphons vitality from Goriona and attacks with renewed vigor!", -- [2]
-				"Warmaster Blackhorn", -- [3]
-				1, -- [4]
-			}, -- [19]
-			{
-				171.859999999986, -- [1]
-				"%s screeches in pain and retreats into the swirling clouds.", -- [2]
-				"Goriona", -- [3]
-				1, -- [4]
-			}, -- [20]
-			["boss"] = "Warmaster Blackhorn",
-		}, -- [3]
-	},
 	["encounter_spells"] = {
 		[205014] = {
 			["school"] = 32,
@@ -1626,12 +751,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Millificent Manastorm",
 		},
-		[107595] = {
+		[107761] = {
 			["school"] = 1,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Twilight Elite Dreadblade",
+			["source"] = "Twilight Sapper",
 		},
 		[104322] = {
 			["school"] = 32,
@@ -1642,28 +767,30 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Warlord Zon'ozz",
 		},
-		[201303] = {
+		[105401] = {
+			["school"] = 4,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Wing Tentacle",
+		},
+		[106264] = {
 			["school"] = 4,
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Mechanical Bomb Squirrel",
+			["source"] = "Hideous Amalgamation",
 		},
-		[201432] = {
+		[200345] = {
 			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Millificent Manastorm",
-		},
-		[103434] = {
-			["school"] = 32,
-			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Warlord Zon'ozz",
+			["source"] = "Risen Archer",
 		},
 		[106005] = {
 			["school"] = 4,
@@ -1681,15 +808,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Twilight Sapper",
 		},
-		[106548] = {
+		[201240] = {
 			["school"] = 1,
-			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Wing Tentacle",
+			["source"] = "Millificent Manastorm",
 		},
 		[103414] = {
 			["school"] = 1,
@@ -1700,13 +825,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Morchok",
 		},
-		[199143] = {
+		[200343] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Dantalionax",
+			["source"] = "Risen Archer",
 		},
 		[202300] = {
 			["school"] = 8,
@@ -1720,12 +844,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Unknown",
 		},
-		[93163] = {
-			["school"] = 16,
+		[106835] = {
+			["school"] = 4,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Nezir",
+			["source"] = "Deathwing",
 		},
 		[107558] = {
 			["school"] = 32,
@@ -1764,6 +888,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Kur'talos Ravencrest",
 		},
+		[108419] = {
+			["school"] = 8,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Acidic Globule",
+		},
 		[200261] = {
 			["school"] = 1,
 			["token"] = {
@@ -1772,20 +904,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Soul-Torn Champion",
 		},
-		[308463] = {
-			["school"] = 1,
+		[305913] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Tunk",
-		},
-		[108419] = {
-			["school"] = 8,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Acidic Globule",
+			["source"] = "Gor'groth",
 		},
 		[308527] = {
 			["school"] = 32,
@@ -1813,21 +937,23 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Dantalionax",
 		},
-		[86081] = {
-			["school"] = 16,
+		[202019] = {
+			["school"] = 32,
 			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Nezir",
+			["source"] = "Dantalionax",
 		},
-		[106372] = {
-			["school"] = 34,
-			["type"] = "BUFF",
+		[105563] = {
+			["school"] = 4,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Ultraxion",
+			["source"] = "Spawner",
 		},
 		[1604] = {
 			["school"] = 1,
@@ -1849,14 +975,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Illysanna Ravencrest",
 		},
-		[105285] = {
-			["school"] = 1,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-			},
-			["source"] = "Unknown",
-		},
 		[105248] = {
 			["school"] = 4,
 			["type"] = "BUFF",
@@ -1865,6 +983,15 @@ EncounterDetailsDB = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
 			["source"] = "Corrupted Blood",
+		},
+		[87908] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Stormling",
 		},
 		[197521] = {
 			["school"] = 4,
@@ -1884,14 +1011,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Fel Lord Betrug",
 		},
-		[87908] = {
-			["school"] = 8,
+		[105285] = {
+			["school"] = 1,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Stormling",
+			["source"] = "Unknown",
 		},
 		[85422] = {
 			["school"] = 8,
@@ -1902,23 +1028,21 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Anshal",
 		},
-		[105563] = {
-			["school"] = 4,
-			["type"] = "DEBUFF",
+		[106372] = {
+			["school"] = 34,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_DAMAGE"] = true,
-			},
-			["source"] = "Spawner",
-		},
-		[202019] = {
-			["school"] = 32,
-			["token"] = {
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Ultraxion",
+		},
+		[86081] = {
+			["school"] = 16,
+			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Dantalionax",
+			["source"] = "Nezir",
 		},
 		[193633] = {
 			["school"] = 1,
@@ -1938,12 +1062,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Morchok",
 		},
-		[305913] = {
-			["school"] = 32,
+		[308463] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Gor'groth",
+			["source"] = "Tunk",
 		},
 		[93168] = {
 			["school"] = 32,
@@ -1961,27 +1085,30 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Mutated Corruption",
 		},
-		[106835] = {
-			["school"] = 4,
+		[93163] = {
+			["school"] = 16,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Deathwing",
+			["source"] = "Nezir",
 		},
-		[200343] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Risen Archer",
-		},
-		[201240] = {
+		[199143] = {
 			["school"] = 1,
 			["token"] = {
 				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Millificent Manastorm",
+			["source"] = "Dantalionax",
+		},
+		[106548] = {
+			["school"] = 1,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Wing Tentacle",
 		},
 		[107018] = {
 			["school"] = 4,
@@ -1991,37 +1118,766 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Deathwing",
 		},
-		[200345] = {
-			["school"] = 1,
-			["type"] = "BUFF",
+		[103434] = {
+			["school"] = 32,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Risen Archer",
+			["source"] = "Warlord Zon'ozz",
 		},
-		[106264] = {
+		[201432] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
+			},
+			["source"] = "Millificent Manastorm",
+		},
+		[201303] = {
 			["school"] = 4,
+			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Mechanical Bomb Squirrel",
+		},
+		[107595] = {
+			["school"] = 1,
 			["token"] = {
 				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Hideous Amalgamation",
+			["source"] = "Twilight Elite Dreadblade",
 		},
-		[105401] = {
-			["school"] = 4,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Wing Tentacle",
-		},
-		[107761] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Twilight Sapper",
-		},
+	},
+	["emotes"] = {
+		{
+			{
+				0.8449999999720603, -- [1]
+				"|TInterface\\Icons\\ability_deathwing_assualtaspects.blp:20|t%s begins to cast |cFFFF0000|Hspell:107018|h[Assault Aspects]|h|r!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [1]
+			{
+				2.851999999955297, -- [1]
+				"|TInterface\\Icons\\ability_deathwing_assualtaspects.blp:20|t%s assaults |cFFFFFF00|Hspell:107018|h[Nozdormu]|h|r!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [2]
+			{
+				2.851999999955297, -- [1]
+				"I will slow the Destroyer's attacks when I can.", -- [2]
+				"Nozdormu", -- [3]
+				7, -- [4]
+			}, -- [3]
+			{
+				9.34299999999348, -- [1]
+				"%s begins to impale the Aspect! Stop it!", -- [2]
+				"Mutated Corruption", -- [3]
+				1, -- [4]
+			}, -- [4]
+			{
+				10.58799999998882, -- [1]
+				"|TInterface\\Icons\\ability_warrior_bloodnova.blp:20|tThe %s is injured and sprouts |cFFFE9A2EBlistering Tentacles|r!", -- [2]
+				"Wing Tentacle", -- [3]
+				1, -- [4]
+			}, -- [5]
+			{
+				11.7730000000447, -- [1]
+				"|TInterface\\Icons\\ability_warrior_bloodnova.blp:20|tThe %s is injured and sprouts |cFFFE9A2EBlistering Tentacles|r!", -- [2]
+				"Wing Tentacle", -- [3]
+				1, -- [4]
+			}, -- [6]
+			{
+				19.05599999998231, -- [1]
+				"%s begins to impale the Aspect! Stop it!", -- [2]
+				"Mutated Corruption", -- [3]
+				1, -- [4]
+			}, -- [7]
+			{
+				21.12100000004284, -- [1]
+				"|TInterface\\Icons\\ability_deathwing_assualtaspects.blp:20|t%s begins to cast |cFFFF0000|Hspell:107018|h[Assault Aspects]|h|r!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [8]
+			{
+				23.95299999997951, -- [1]
+				"|TInterface\\Icons\\ability_warrior_bloodnova.blp:20|tThe %s is injured and sprouts |cFFFE9A2EBlistering Tentacles|r!", -- [2]
+				"Arm Tentacle", -- [3]
+				1, -- [4]
+			}, -- [9]
+			{
+				25.17399999999907, -- [1]
+				"%s begins to impale the Aspect! Stop it!", -- [2]
+				"Mutated Corruption", -- [3]
+				1, -- [4]
+			}, -- [10]
+			{
+				26.41099999996368, -- [1]
+				"|TInterface\\Icons\\ability_warrior_bloodnova.blp:20|tThe %s is injured and sprouts |cFFFE9A2EBlistering Tentacles|r!", -- [2]
+				"Arm Tentacle", -- [3]
+				1, -- [4]
+			}, -- [11]
+			{
+				31.11600000003818, -- [1]
+				"|TInterface\\Icons\\ability_deathwing_assualtaspects.blp:20|t%s assaults |cFF04FC32|Hspell:107018|h[Ysera]|h|r!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [12]
+			{
+				31.11600000003818, -- [1]
+				"I will bring you closer to the Emerald Dream. Seek safety there when the fight becomes too intense.", -- [2]
+				"Ysera", -- [3]
+				7, -- [4]
+			}, -- [13]
+			{
+				32.5, -- [1]
+				"%s begins to impale the Aspect! Stop it!", -- [2]
+				"Mutated Corruption", -- [3]
+				1, -- [4]
+			}, -- [14]
+			{
+				34.10499999998137, -- [1]
+				"|TInterface\\Icons\\ability_deathwing_assualtaspects.blp:20|t%s begins to cast |cFFFF0000|Hspell:107018|h[Assault Aspects]|h|r!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [15]
+			{
+				34.92399999999907, -- [1]
+				"|TInterface\\Icons\\ability_warrior_bloodnova.blp:20|tThe %s is injured and sprouts |cFFFE9A2EBlistering Tentacles|r!", -- [2]
+				"Arm Tentacle", -- [3]
+				1, -- [4]
+			}, -- [16]
+			{
+				37.16899999999441, -- [1]
+				"|TInterface\\Icons\\ability_warrior_bloodnova.blp:20|tThe %s is injured and sprouts |cFFFE9A2EBlistering Tentacles|r!", -- [2]
+				"Arm Tentacle", -- [3]
+				1, -- [4]
+			}, -- [17]
+			{
+				38.56400000001304, -- [1]
+				"%s begins to impale the Aspect! Stop it!", -- [2]
+				"Mutated Corruption", -- [3]
+				1, -- [4]
+			}, -- [18]
+			{
+				44.10300000000279, -- [1]
+				"|TInterface\\Icons\\ability_deathwing_assualtaspects.blp:20|t%s assaults |cFF5858FA|Hspell:107018|h[Kalecgos]|h|r!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [19]
+			{
+				44.10300000000279, -- [1]
+				"I will charge you with arcane energy to blast your foes.", -- [2]
+				"Kalecgos", -- [3]
+				7, -- [4]
+			}, -- [20]
+			{
+				44.67299999995157, -- [1]
+				"%s begins to impale the Aspect! Stop it!", -- [2]
+				"Mutated Corruption", -- [3]
+				1, -- [4]
+			}, -- [21]
+			{
+				45.86100000003353, -- [1]
+				"|TInterface\\Icons\\ability_warrior_bloodnova.blp:20|tThe %s is injured and sprouts |cFFFE9A2EBlistering Tentacles|r!", -- [2]
+				"Wing Tentacle", -- [3]
+				1, -- [4]
+			}, -- [22]
+			{
+				47.52899999998044, -- [1]
+				"|TInterface\\Icons\\ability_deathwing_assualtaspects.blp:20|t%s begins to cast |cFFFF0000|Hspell:107018|h[Assault Aspects]|h|r!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [23]
+			{
+				49.52800000004936, -- [1]
+				"|TInterface\\Icons\\ability_warrior_bloodnova.blp:20|tThe %s is injured and sprouts |cFFFE9A2EBlistering Tentacles|r!", -- [2]
+				"Wing Tentacle", -- [3]
+				1, -- [4]
+			}, -- [24]
+			{
+				54.3760000000475, -- [1]
+				"%s begins to impale the Aspect! Stop it!", -- [2]
+				"Mutated Corruption", -- [3]
+				1, -- [4]
+			}, -- [25]
+			{
+				54.81700000003912, -- [1]
+				"I AM DEATHWING, THE DESTROYER, THE END OF ALL THINGS, INEVITABLE, INDOMITABLE; I AM THE CATACLYSM!", -- [2]
+				"Deathwing", -- [3]
+				7, -- [4]
+			}, -- [26]
+			{
+				54.81700000003912, -- [1]
+				"|TInterface\\Icons\\inv_stave_2h_deathwingraiddw_d_01.blp:20|t%s falls forward, get to |cFF04FC32Ysera's|r platform!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [27]
+			{
+				57.49100000003818, -- [1]
+				"|TInterface\\Icons\\ability_deathwing_assualtaspects.blp:20|t%s assaults |cFF5858FA|Hspell:107018|h[Kalecgos]|h|r!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [28]
+			{
+				60.47499999997672, -- [1]
+				"%s begins to impale the Aspect! Stop it!", -- [2]
+				"Mutated Corruption", -- [3]
+				1, -- [4]
+			}, -- [29]
+			{
+				64.82499999995343, -- [1]
+				"|TInterface\\Icons\\ability_vehicle_sonicshockwave.blp:20|t%s begins to cast |cFFFF0000|Hspell:106886|h[Cauterize]|h|r!", -- [2]
+				"Alexstrasza", -- [3]
+				1, -- [4]
+			}, -- [30]
+			{
+				65.32600000000093, -- [1]
+				"|TInterface\\Icons\\ability_vehicle_sonicshockwave.blp:20|t%s begins to cast |cFFFF0000|Hspell:106886|h[Cauterize]|h|r!", -- [2]
+				"Alexstrasza", -- [3]
+				1, -- [4]
+			}, -- [31]
+			{
+				66.31200000003446, -- [1]
+				"|TInterface\\Icons\\ability_vehicle_sonicshockwave.blp:20|t%s begins to cast |cFFFF0000|Hspell:106886|h[Cauterize]|h|r!", -- [2]
+				"Alexstrasza", -- [3]
+				1, -- [4]
+			}, -- [32]
+			["boss"] = "Madness of Deathwing",
+		}, -- [1]
+		{
+			{
+				0.2100000000791624, -- [1]
+				"Don't worry about me. Stop the Destroyer! Enshu-falah-nah, dorini.", -- [2]
+				"Sky Captain Swayze", -- [3]
+				7, -- [4]
+			}, -- [1]
+			{
+				10.0230000000447, -- [1]
+				"%s feels players on his left side. He's about to roll left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [2]
+			{
+				20.01900000008754, -- [1]
+				"%s rolls left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [3]
+			{
+				28.54200000001583, -- [1]
+				"Ha! I had not realized you fools were still there.", -- [2]
+				"Deathwing", -- [3]
+				7, -- [4]
+			}, -- [4]
+			{
+				30.00900000007823, -- [1]
+				"%s feels players on his left side. He's about to roll left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [5]
+			{
+				39.90900000010151, -- [1]
+				"%s rolls left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [6]
+			{
+				50.02000000001863, -- [1]
+				"%s feels players on his left side. He's about to roll left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [7]
+			{
+				59.95900000003167, -- [1]
+				"%s rolls left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [8]
+			{
+				68.63300000003073, -- [1]
+				"Your efforts are insignificant. I carry you to your deaths.", -- [2]
+				"Deathwing", -- [3]
+				7, -- [4]
+			}, -- [9]
+			{
+				70.03800000005867, -- [1]
+				"%s feels players on his left side. He's about to roll left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [10]
+			{
+				80.01800000004005, -- [1]
+				"%s rolls left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [11]
+			{
+				90.04700000002049, -- [1]
+				"%s feels players on his left side. He's about to roll left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [12]
+			{
+				100.0340000001015, -- [1]
+				"%s rolls left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [13]
+			{
+				104.9680000001099, -- [1]
+				"Your efforts are insignificant. I carry you to your deaths.", -- [2]
+				"Deathwing", -- [3]
+				7, -- [4]
+			}, -- [14]
+			{
+				110.0420000000158, -- [1]
+				"%s feels players on his left side. He's about to roll left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [15]
+			{
+				112.8540000000503, -- [1]
+				"%s feels players on his right side. He's about to roll right!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [16]
+			{
+				115.0190000000875, -- [1]
+				"%s feels players on his left side. He's about to roll left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [17]
+			{
+				117.015000000014, -- [1]
+				"%s feels players on his right side. He's about to roll right!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [18]
+			{
+				119.0350000000326, -- [1]
+				"%s feels players on his left side. He's about to roll left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [19]
+			{
+				122.8970000001136, -- [1]
+				"%s feels players on his right side. He's about to roll right!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [20]
+			{
+				126.0240000000922, -- [1]
+				"%s feels players on his left side. He's about to roll left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [21]
+			{
+				128.0340000001015, -- [1]
+				"%s feels players on his right side. He's about to roll right!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [22]
+			{
+				128.6610000000801, -- [1]
+				"|TInterface\\Icons\\inv_gizmo_supersappercharge.blp:20|t%s is casting |c0087CEFA|Hspell:105845|h[Nuclear Blast]|h|r!", -- [2]
+				"Hideous Amalgamation", -- [3]
+				1, -- [4]
+			}, -- [23]
+			{
+				129.0220000001136, -- [1]
+				"%s feels players on his left side. He's about to roll left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [24]
+			{
+				131.0420000000158, -- [1]
+				"%s feels players on his right side. He's about to roll right!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [25]
+			{
+				133.8510000000242, -- [1]
+				"%s feels players on his left side. He's about to roll left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [26]
+			{
+				139.0140000000829, -- [1]
+				"%s feels players on his right side. He's about to roll right!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [27]
+			{
+				141.0180000000401, -- [1]
+				"%s feels players on his left side. He's about to roll left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [28]
+			{
+				151.0290000000969, -- [1]
+				"%s rolls left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [29]
+			{
+				161.048000000068, -- [1]
+				"%s feels players on his left side. He's about to roll left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [30]
+			{
+				171.0340000001015, -- [1]
+				"%s rolls left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [31]
+			{
+				180.8530000000028, -- [1]
+				"%s feels players on his left side. He's about to roll left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [32]
+			{
+				191.0120000001043, -- [1]
+				"%s rolls left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [33]
+			{
+				200.877000000095, -- [1]
+				"%s feels players on his right side. He's about to roll right!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [34]
+			{
+				202.0140000000829, -- [1]
+				"%s feels players on his left side. He's about to roll left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [35]
+			{
+				204.0080000000307, -- [1]
+				"%s feels players on his right side. He's about to roll right!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [36]
+			{
+				206.112000000081, -- [1]
+				"Your tenacity is admirable, but pointless. You ride into the jaws of the apocalypse.", -- [2]
+				"Deathwing", -- [3]
+				7, -- [4]
+			}, -- [37]
+			{
+				210.0200000000186, -- [1]
+				"%s feels players on his left side. He's about to roll left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [38]
+			{
+				212.017000000109, -- [1]
+				"%s feels players on his right side. He's about to roll right!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [39]
+			{
+				214.0070000000997, -- [1]
+				"%s feels players on his left side. He's about to roll left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [40]
+			{
+				216.015000000014, -- [1]
+				"%s feels players on his right side. He's about to roll right!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [41]
+			{
+				219.0200000000186, -- [1]
+				"%s feels players on his left side. He's about to roll left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [42]
+			{
+				219.9510000000009, -- [1]
+				"|TInterface\\Icons\\inv_gizmo_supersappercharge.blp:20|t%s is casting |c0087CEFA|Hspell:105845|h[Nuclear Blast]|h|r!", -- [2]
+				"Hideous Amalgamation", -- [3]
+				1, -- [4]
+			}, -- [43]
+			{
+				221.0070000000997, -- [1]
+				"%s feels players on his right side. He's about to roll right!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [44]
+			{
+				222.0160000000615, -- [1]
+				"%s feels players on his left side. He's about to roll left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [45]
+			{
+				224.0230000000447, -- [1]
+				"%s feels players on his right side. He's about to roll right!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [46]
+			{
+				226.0240000000922, -- [1]
+				"%s feels players on his left side. He's about to roll left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [47]
+			{
+				232.0250000000233, -- [1]
+				"%s feels players on his right side. He's about to roll right!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [48]
+			{
+				234.0200000000186, -- [1]
+				"%s feels players on his left side. He's about to roll left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [49]
+			{
+				244.0200000000186, -- [1]
+				"%s rolls left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [50]
+			{
+				254.0080000000307, -- [1]
+				"%s feels players on his left side. He's about to roll left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [51]
+			{
+				264.0120000001043, -- [1]
+				"%s rolls left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [52]
+			{
+				274.0210000000661, -- [1]
+				"%s feels players on his right side. He's about to roll right!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [53]
+			{
+				276.0030000000261, -- [1]
+				"%s feels players on his left side. He's about to roll left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [54]
+			{
+				277.9700000000885, -- [1]
+				"Your tenacity is admirable, but pointless. You ride into the jaws of the apocalypse.", -- [2]
+				"Deathwing", -- [3]
+				7, -- [4]
+			}, -- [55]
+			{
+				278.814000000013, -- [1]
+				"%s feels players on his right side. He's about to roll right!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [56]
+			{
+				280.0140000000829, -- [1]
+				"%s feels players on his left side. He's about to roll left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [57]
+			{
+				282.0440000001108, -- [1]
+				"%s feels players on his right side. He's about to roll right!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [58]
+			{
+				285.0190000000875, -- [1]
+				"%s feels players on his left side. He's about to roll left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [59]
+			{
+				288.0070000000997, -- [1]
+				"%s feels players on his right side. He's about to roll right!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [60]
+			{
+				292.0310000000754, -- [1]
+				"%s feels players on his left side. He's about to roll left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [61]
+			{
+				295.0110000000568, -- [1]
+				"%s feels players on his right side. He's about to roll right!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [62]
+			{
+				296.6470000001136, -- [1]
+				"|TInterface\\Icons\\inv_gizmo_supersappercharge.blp:20|t%s is casting |c0087CEFA|Hspell:105845|h[Nuclear Blast]|h|r!", -- [2]
+				"Hideous Amalgamation", -- [3]
+				1, -- [4]
+			}, -- [63]
+			{
+				296.8580000000075, -- [1]
+				"%s feels players on his left side. He's about to roll left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [64]
+			{
+				298.9520000000484, -- [1]
+				"%s feels players on his right side. He's about to roll right!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [65]
+			{
+				302.0050000000047, -- [1]
+				"%s feels players on his left side. He's about to roll left!", -- [2]
+				"Deathwing", -- [3]
+				1, -- [4]
+			}, -- [66]
+			["boss"] = "Spine of Deathwing",
+		}, -- [2]
+		{
+			{
+				21.26399999996647, -- [1]
+				"Goriona! Give them hell!", -- [2]
+				"Warmaster Blackhorn", -- [3]
+				7, -- [4]
+			}, -- [1]
+			{
+				21.26399999996647, -- [1]
+				"|TInterface\\Icons\\spell_fire_twilightflamebreath.blp:20|t%s prepares to unleash a |cFF9900CC|Hspell:106401|h[Twilight Onslaught]|h|r!", -- [2]
+				"Goriona", -- [3]
+				1, -- [4]
+			}, -- [2]
+			{
+				31.27000000001863, -- [1]
+				"|Tinterface\\icons\\spell_fire_twilightrainoffire.blp:0|t%s fires a |cFF9900CC|Hspell:110153|h[Broadside]|h|r at the Skyfire!", -- [2]
+				"Goriona", -- [3]
+				1, -- [4]
+			}, -- [3]
+			{
+				43.02199999999721, -- [1]
+				"A drake swoops down to drop a Twilight Sapper onto the deck!", -- [2]
+				"Twilight Infiltrator", -- [3]
+				1, -- [4]
+			}, -- [4]
+			{
+				56.26299999991898, -- [1]
+				"Goriona! Give them hell!", -- [2]
+				"Warmaster Blackhorn", -- [3]
+				7, -- [4]
+			}, -- [5]
+			{
+				56.26299999991898, -- [1]
+				"|TInterface\\Icons\\spell_fire_twilightflamebreath.blp:20|t%s prepares to unleash a |cFF9900CC|Hspell:106401|h[Twilight Onslaught]|h|r!", -- [2]
+				"Goriona", -- [3]
+				1, -- [4]
+			}, -- [6]
+			{
+				83.18299999996088, -- [1]
+				"A drake swoops down to drop a Twilight Sapper onto the deck!", -- [2]
+				"Twilight Infiltrator", -- [3]
+				1, -- [4]
+			}, -- [7]
+			{
+				91.28799999994226, -- [1]
+				"Goriona! Give them hell!", -- [2]
+				"Warmaster Blackhorn", -- [3]
+				7, -- [4]
+			}, -- [8]
+			{
+				91.28799999994226, -- [1]
+				"|TInterface\\Icons\\spell_fire_twilightflamebreath.blp:20|t%s prepares to unleash a |cFF9900CC|Hspell:106401|h[Twilight Onslaught]|h|r!", -- [2]
+				"Goriona", -- [3]
+				1, -- [4]
+			}, -- [9]
+			{
+				101.2229999999981, -- [1]
+				"|Tinterface\\icons\\spell_fire_twilightrainoffire.blp:0|t%s fires a |cFF9900CC|Hspell:110153|h[Broadside]|h|r at the Skyfire!", -- [2]
+				"Goriona", -- [3]
+				1, -- [4]
+			}, -- [10]
+			{
+				104.5359999999637, -- [1]
+				"|Tinterface\\icons\\spell_fire_ragnaros_lavabolt.blp:0|tStructural damage to the Skyfire triggers a sudden |cFFFF0000|Hspell:110095|h[Deck Fire]|h|r!", -- [2]
+				"The Skyfire", -- [3]
+				1, -- [4]
+			}, -- [11]
+			{
+				122.9139999999898, -- [1]
+				"A drake swoops down to drop a Twilight Sapper onto the deck!", -- [2]
+				"Twilight Infiltrator", -- [3]
+				1, -- [4]
+			}, -- [12]
+			{
+				126.2469999999739, -- [1]
+				"Goriona! Give them hell!", -- [2]
+				"Warmaster Blackhorn", -- [3]
+				7, -- [4]
+			}, -- [13]
+			{
+				126.2469999999739, -- [1]
+				"|TInterface\\Icons\\spell_fire_twilightflamebreath.blp:20|t%s prepares to unleash a |cFF9900CC|Hspell:106401|h[Twilight Onslaught]|h|r!", -- [2]
+				"Goriona", -- [3]
+				1, -- [4]
+			}, -- [14]
+			{
+				137.3639999999432, -- [1]
+				"Concentrate everything on the armored drake!", -- [2]
+				"Sky Captain Swayze", -- [3]
+				7, -- [4]
+			}, -- [15]
+			{
+				152.1649999999208, -- [1]
+				"Looks like I'm doing this myself. Good!", -- [2]
+				"Warmaster Blackhorn", -- [3]
+				7, -- [4]
+			}, -- [16]
+			{
+				158.2600000000093, -- [1]
+				"%s siphons vitality from Goriona and attacks with renewed vigor!", -- [2]
+				"Warmaster Blackhorn", -- [3]
+				1, -- [4]
+			}, -- [17]
+			{
+				161.9170000000158, -- [1]
+				"%s siphons vitality from Goriona and attacks with renewed vigor!", -- [2]
+				"Warmaster Blackhorn", -- [3]
+				1, -- [4]
+			}, -- [18]
+			{
+				165.5760000000009, -- [1]
+				"%s siphons vitality from Goriona and attacks with renewed vigor!", -- [2]
+				"Warmaster Blackhorn", -- [3]
+				1, -- [4]
+			}, -- [19]
+			{
+				169.2079999999842, -- [1]
+				"%s siphons vitality from Goriona and attacks with renewed vigor!", -- [2]
+				"Warmaster Blackhorn", -- [3]
+				1, -- [4]
+			}, -- [20]
+			{
+				172.8499999999767, -- [1]
+				"%s siphons vitality from Goriona and attacks with renewed vigor!", -- [2]
+				"Warmaster Blackhorn", -- [3]
+				1, -- [4]
+			}, -- [21]
+			{
+				173.6529999999329, -- [1]
+				"%s screeches in pain and retreats into the swirling clouds.", -- [2]
+				"Goriona", -- [3]
+				1, -- [4]
+			}, -- [22]
+			["boss"] = "Warmaster Blackhorn",
+		}, -- [3]
 	},
 }

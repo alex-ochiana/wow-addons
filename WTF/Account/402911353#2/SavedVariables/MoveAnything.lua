@@ -29,10 +29,10 @@ MADB = {
 			},
 		},
 	},
-	["closeGUIOnEscape"] = false,
+	["frameListRows"] = 18,
 	["modifiedFramesOnly"] = true,
 	["squareMM"] = false,
-	["playSound"] = false,
 	["noBags"] = true,
-	["frameListRows"] = 18,
+	["playSound"] = false,
+	["closeGUIOnEscape"] = false,
 }

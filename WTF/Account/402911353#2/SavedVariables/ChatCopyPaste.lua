@@ -10,9 +10,9 @@ CCPOptions = {
 		["Plüto - Sylvanas"] = "Default",
 		["Egidus - Sylvanas"] = "Default",
 		["Gnomèrcy - Sylvanas"] = "Default",
-		["Vòlkmer - Kazzak"] = "Default",
+		["Kynaeth - Sylvanas"] = "Default",
 		["Crètz - Sylvanas"] = "Default",
 		["Cìchìcean - Sylvanas"] = "Default",
-		["Kynaeth - Sylvanas"] = "Default",
+		["Vòlkmer - Kazzak"] = "Default",
 	},
 }

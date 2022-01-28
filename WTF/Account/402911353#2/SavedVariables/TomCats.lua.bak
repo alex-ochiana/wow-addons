@@ -1,7 +1,7 @@
 
 TomCats_Account = {
-	["discoveriesVersion"] = "2.3.24",
-	["lastVersionSeen"] = "2.3.24",
+	["discoveriesVersion"] = "2.3.25",
+	["lastVersionSeen"] = "2.3.25",
 	["preferences"] = {
 		["TomCats-MinimapButton"] = {
 			["hidden"] = false,

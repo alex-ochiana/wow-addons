@@ -11,9 +11,9 @@ Details_StreamerDB = {
 		["Plüto - Sylvanas"] = "Crètz - Sylvanas",
 		["Egidus - Sylvanas"] = "Crètz - Sylvanas",
 		["Gnomèrcy - Sylvanas"] = "Crètz - Sylvanas",
-		["Cretz - Moonglade"] = "Crètz - Sylvanas",
-		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
 		["Vòlkmer - Kazzak"] = "Crètz - Sylvanas",
+		["Crètz - Sylvanas"] = "Crètz - Sylvanas",
+		["Cretz - Moonglade"] = "Crètz - Sylvanas",
 		["Cìchìcean - Sylvanas"] = "Crètz - Sylvanas",
 	},
 	["profiles"] = {

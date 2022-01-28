@@ -17,6 +17,7 @@ END
 VER 3 0000000000000015 "CA" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast Celestial Alignment
+/cast Ravenous Frenzy
 /target player
 /use Inscrutable Quantum Device
 /targetlasttarget

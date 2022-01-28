@@ -8,8 +8,8 @@ OneRing_Config = {
 		["default"] = {
 			["Bindings"] = {
 				["DruidShift"] = "ALT-F",
-				["DruidUtility"] = false,
 				["OPieTracking"] = false,
+				["DruidUtility"] = false,
 			},
 		},
 	},

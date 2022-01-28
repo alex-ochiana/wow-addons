@@ -1,11 +1,7 @@
 # <DBM> Challenges
 
-## [r144](https://github.com/DeadlyBossMods/DBM-Challenges/tree/r144) (2021-12-08)
-[Full Changelog](https://github.com/DeadlyBossMods/DBM-Challenges/compare/r143...r144) [Previous Releases](https://github.com/DeadlyBossMods/DBM-Challenges/releases)
+## [r146](https://github.com/DeadlyBossMods/DBM-Challenges/tree/r146) (2021-12-27)
+[Full Changelog](https://github.com/DeadlyBossMods/DBM-Challenges/compare/r145...r146) [Previous Releases](https://github.com/DeadlyBossMods/DBM-Challenges/releases)
 
-- Update localization.ru.lua (#21)  
-- Update min core too  
-- Update some local paths  
-- Difficulty does in fact report as timewalker, which means stats record there too, so update legion mage tower scenarios to show timewalker stats category  
-- Fixed another bug where stack count reported incorectly on clear  
-- Fixed voice pack support not working on two fel totem abilities  
+- Apparently this lua error has been there since Legion, and no one reported it until shadowlands (and they chose to report it on curse which I don't read, oops). This will fix lua errors happening any time Fixate stage starts, as well as now have the timers working on fixate stage starts as well for twins encounter.  
+- eliminate redundancy  
